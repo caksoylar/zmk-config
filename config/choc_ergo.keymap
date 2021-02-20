@@ -51,7 +51,7 @@
             &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
             &kp EXCL  &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp MINUS &kp UNDER &kp EQUAL &kp PLUS
             &kp LSHFT &kp LGUI &kp RALT &kp SEMI  &kp AMPS    &kp STAR  &kp BSLH  &kp LALT  &kp RGUI  &kp LSHFT
-                                        &kp LCTRL &trans      &trans    &kp LSHFT
+                                        &kp LCTRL &mo FUN     &trans    &kp LSHFT
             >;
         };
 
@@ -60,15 +60,15 @@
             &kp LA(F4)       &kp LC(LS(TAB)) &kp LC(TAB)  &kp LC(F4)          &kp C_VOL_UP &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp K_CALC
             &kp LC(LG(LEFT)) &kp LALT        &kp TAB      &kp LC(LG(RIGHT))   &kp C_VOL_DN &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp PAUSE_BREAK
             &kp LCTRL        &kp LGUI        &kp RALT     &kp LS(INS)         &kp C_PP     &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
-                                             &kp LCTRL    &trans              &trans       &kp LSHFT
+                                             &kp LCTRL    &trans              &mo FUN      &kp LSHFT
             >;
         };
 
         fun_layer {
-            bindings = <INS
+            bindings = <
             &kp F1   &kp F2   &kp F3   &kp F4       &kp F5    &kp CAPS  &kp KP_N7 &kp KP_N8      &kp KP_N9      &bt BT_CLR
             &kp F6   &kp F7   &kp F8   &kp F9       &kp F10   &kp LNLCK &kp KP_N4 &kp KP_N5      &kp KP_N6      &reset
-            &kp LSFT &kp LGUI &kp LALT &kp F11      &kp F12   &kp KP_N0 &kp KP_N1 &mt LALT KP_N2 &mt RGUI KP_N3 &mt RCTRL KP_ENTER
+            &kp LSFT &kp LGUI &kp LALT &kp F11      &kp F12   &kp KP_N0 &kp KP_N1 &mt LALT KP_N2 &mt RGUI KP_N3 &out OUT_TOG
                                        &bt BT_SEL 0 &trans    &trans    &bt BT_SEL 1 
             >;
         };
