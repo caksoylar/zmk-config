@@ -22,5 +22,5 @@ if SHIELD_CHOC_ERGO_LEFT || SHIELD_CRADIO_RIGHT
 
 config ZMK_SPLIT
 	default y
-	
+
 endif
