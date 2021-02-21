@@ -109,19 +109,19 @@
 
         nav_layer {
             bindings = <
-            &kp LA(F4)       &kp LC(LS(TAB)) &kp LC(TAB)  &kp LC(F4)          &kp C_VOL_UP &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp K_CALC
-            &kp LC(LG(LEFT)) &kp LALT        &kp TAB      &kp LC(LG(RIGHT))   &kp C_VOL_DN &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp PAUSE_BREAK
-            &kp LCTRL        &kp LGUI        &kp RALT     &kp LS(INS)         &kp C_PP     &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
-                                             &kp LCTRL    &trans              &mo FUN      &kp LSHFT
+            &kp LA(F4)       &kp LC(LS(TAB)) &kp LC(TAB)  &kp LC(F4)        &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp C_AL_CALC
+            &kp LC(LG(LEFT)) &kp LALT        &kp TAB      &kp LC(LG(RIGHT)) &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp PAUSE_BREAK
+            &kp LCTRL        &kp LGUI        &kp RALT     &kp LS(INS)       &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
+                                             &kp LCTRL    &trans            &mo FUN        &kp LSHFT
             >;
         };
 
         fun_layer {
             bindings = <
-            &kp F1   &kp F2   &kp F3   &kp F4       &kp F5    &kp CAPS  &kp KP_N7 &kp KP_N8      &kp KP_N9      &bt BT_CLR
-            &kp F6   &kp F7   &kp F8   &kp F9       &kp F10   &kp LNLCK &kp KP_N4 &kp KP_N5      &kp KP_N6      &reset
-            &kp LSFT &kp LGUI &kp LALT &kp F11      &kp F12   &kp KP_N0 &kp KP_N1 &am LALT KP_N2 &am RGUI KP_N3 &out OUT_TOG
-                                       &bt BT_SEL 0 &trans    &trans    &bt BT_SEL 1 
+            &kp F1   &kp F2    &kp F3   &kp F4       &kp F5    &kp CAPS   &kp KP_N7 &kp KP_N8      &kp KP_N9       &bt BT_CLR
+            &kp F6   &kp F7    &kp F8   &kp F9       &kp F10   &kp KP_NUM &kp KP_N4 &kp KP_N5      &kp KP_N6       &reset
+            &kp LSFT &kp LCTRL &kp LALT &kp F11      &kp F12   &kp KP_N0  &kp KP_N1 &am LALT KP_N2 &am RCTRL KP_N3 &out OUT_TOG
+                                        &bt BT_SEL 0 &trans    &trans     &bt BT_SEL 1 
             >;
         };
     };
