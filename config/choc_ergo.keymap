@@ -13,6 +13,8 @@
 #define NAV 2
 #define FUN 3
 
+#define COMBO_TIMEOUT 60
+
 &mt {
     flavor = "balanced";
     tapping_term_ms = <150>;
@@ -32,6 +34,55 @@
             tapping_term_ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combo";
+        combo_grave {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <0 1>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_semi {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <6 7>;
+            bindings = <&kp SEMI>;
+        };
+        combo_lpar {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <12 13>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rpar {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 17>;
+            bindings = <&kp RPAR>;
+        };
+        combo_lbkt {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <11 12>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <17 18>;
+            bindings = <&kp RBKT>;
+        };
+        combo_tab {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <11 13>;
+            bindings = <&kp TAB>;
+        };
+        combo_bspc {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 18>;
+            bindings = <&kp BSPC>;
+        };
+        combo_bslh {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <18 19>;
+            bindings = <&kp BSLH>;
         };
     };
 
