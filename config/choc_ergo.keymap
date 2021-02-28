@@ -38,7 +38,7 @@
     };
 
     combos {
-        compatible = "zmk,combo";
+        compatible = "zmk,combos";
         combo_grave {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <0 1>;
