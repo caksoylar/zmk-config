@@ -4,7 +4,7 @@
 if SHIELD_CHOC_ERGO_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "HexyChoc left"
+	default "HexyChoc"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -14,7 +14,7 @@ endif
 if SHIELD_CHOC_ERGO_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "HexyChoc right"
+	default "HexyChoc Right"
 
 endif
 
