@@ -23,6 +23,7 @@
 &lt {
     flavor = "balanced";
     tapping_term_ms = <150>;
+    retro-tap;
 };
 
 / {
