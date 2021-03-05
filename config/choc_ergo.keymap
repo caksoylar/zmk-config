@@ -14,6 +14,11 @@
 #define NAV 2
 #define FUN 3
 
+#define DESK_LT LC(LG(LEFT))
+#define DESK_RT LC(LG(RIGHT))
+#define TAB_RT  LC(TAB)
+#define TAB_LT  LC(LS(TAB))
+
 #define COMBO_TIMEOUT 60
 
 &mt {
@@ -96,7 +101,7 @@
             layers = <DEF>;
         };
         combo_alttab {
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <30>;
             key-positions = <11 12>;
             bindings = <&kp LA(TAB)>;
             layers = <NAV>;
@@ -110,12 +115,12 @@
             bindings = <
 &kp Q       &kp W      &kp E         &kp R &kp T    &kp Y         &kp U &kp I          &kp O        &kp P
 &kp A       &kp S      &kp D         &kp F &kp G    &kp H         &kp J &kp K          &kp L        &kp SQT
-&am LSHFT Z &am LGUI X &am RALT C    &kp V &kp B    &kp N         &kp M &am LALT COMMA &am RGUI DOT &am RCTRL FSLH
+&am LSHFT Z &am LGUI X &am RALT C    &kp V &kp B    &kp N         &kp M &am LALT COMMA &am RGUI DOT &am RCTRL SLASH
                        &mt LCTRL ESC &lt NAV BSPC   &lt SYM SPACE &mt RSHFT RET
             >;
         };
 
-        sym_layer {
+        symbol_layer {
             bindings = <
 &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
 &kp EXCL  &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp MINUS &kp UNDER &kp EQUAL &kp PLUS
@@ -126,19 +131,19 @@
 
         nav_layer {
             bindings = <
-&kp LA(F4)       &kp LC(LS(TAB)) &kp LC(TAB)  &kp LC(F4)        &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp C_AL_CALC
-&kp LC(LG(LEFT)) &kp LALT        &kp TAB      &kp LC(LG(RIGHT)) &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp PAUSE_BREAK
-&kp LCTRL        &kp LGUI        &kp RALT     &kp LS(INS)       &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
-                                 &kp LCTRL    &trans            &mo FUN        &kp LSHFT
+&kp LA(F4)  &kp TAB_LT &kp TAB_RT &kp LC(F4)  &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
+&kp DESK_LT &kp LALT   &kp TAB    &kp DESK_RT &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
+&kp LCTRL   &kp LGUI   &kp RALT   &kp LS(INS) &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
+                                  &kp LCTRL   &trans         &mo FUN        &kp LSHFT
             >;
         };
 
-        fun_layer {
+        function_layer {
             bindings = <
-&kp F1    &kp F2    &kp F3   &kp F4       &kp F5    &kp CAPS   &kp KP_N7 &kp KP_N8      &kp KP_N9       &bt BT_CLR
-&kp F6    &kp F7    &kp F8   &kp F9       &kp F10   &kp KP_NUM &kp KP_N4 &kp KP_N5      &kp KP_N6       &reset
-&kp LSHFT &kp LCTRL &kp LALT &kp F11      &kp F12   &kp KP_N0  &kp KP_N1 &am LALT KP_N2 &am RCTRL KP_N3 &out OUT_TOG
-                             &bt BT_SEL 0 &trans    &trans     &bt BT_SEL 1 
+&kp F1    &kp F2    &kp F3   &kp F4     &kp F5    &kp CAPS   &kp KP_N7 &kp KP_N8 &kp KP_N9 &bt BT_SEL 0
+&kp F6    &kp F7    &kp F8   &kp F9     &kp F10   &kp KP_NUM &kp KP_N4 &kp KP_N5 &kp KP_N6 &bt BT_SEL 1
+&kp LSHFT &kp LCTRL &kp LALT &kp F11    &kp F12   &kp KP_N0  &kp KP_N1 &kp KP_N2 &kp KP_N3 &bt BT_SEL 2
+                             &bt BT_CLR &trans    &trans     &out OUT_TOG
             >;
         };
     };
