@@ -21,6 +21,10 @@
 
 #define COMBO_TIMEOUT 60
 
+&kscan0 {
+    debounce-period = <20>;
+};
+
 &mt {
     flavor = "balanced";
     tapping-term-ms = <150>;
