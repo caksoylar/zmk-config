@@ -23,12 +23,12 @@
 
 &mt {
     flavor = "balanced";
-    tapping_term_ms = <150>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
     flavor = "balanced";
-    tapping_term_ms = <150>;
+    tapping-term-ms = <150>;
     retro-tap;
 };
 
@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "alpha mod-taps";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
