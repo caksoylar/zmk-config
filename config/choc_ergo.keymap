@@ -19,7 +19,7 @@
 #define TAB_RT  LC(TAB)
 #define TAB_LT  LC(LS(TAB))
 
-#define COMBO_TIMEOUT 60
+#define COMBO_TIMEOUT 50
 
 &kscan0 {
     debounce-period = <20>;
@@ -110,6 +110,18 @@
             bindings = <&kp LA(TAB)>;
             layers = <NAV>;
         };
+        combo_bt4 {
+            timeout-ms = <100>;
+            key-positions = <11 12>;
+            bindings = <&bt BT_SEL 4>;
+            layers = <FUN>;
+        };
+        combo_bt5 {
+            timeout-ms = <100>;
+            key-positions = <12 13>;
+            bindings = <&bt BT_SEL 5>;
+            layers = <FUN>;
+        };
     };
 
     keymap {
@@ -138,16 +150,16 @@
 &kp LA(F4)  &kp TAB_LT &kp TAB_RT &kp LC(F4)  &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
 &kp DESK_LT &kp LALT   &kp TAB    &kp DESK_RT &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
 &kp LCTRL   &kp LGUI   &kp RALT   &kp LS(INS) &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
-                                  &kp LCTRL   &trans         &mo FUN        &kp LSHFT
+                                  &kp LCTRL   &trans         &mo FUN  &kp LSHFT
             >;
         };
 
         function_layer {
             bindings = <
-&kp F1    &kp F2    &kp F3   &kp F4     &kp F5    &kp CAPS   &kp KP_N7 &kp KP_N8 &kp KP_N9 &bt BT_SEL 0
-&kp F6    &kp F7    &kp F8   &kp F9     &kp F10   &kp KP_NUM &kp KP_N4 &kp KP_N5 &kp KP_N6 &bt BT_SEL 1
-&kp LSHFT &kp LCTRL &kp LALT &kp F11    &kp F12   &kp KP_N0  &kp KP_N1 &kp KP_N2 &kp KP_N3 &bt BT_SEL 2
-                             &bt BT_CLR &trans    &trans     &out OUT_TOG
+&kp F1    &kp F2    &kp F3   &kp F4       &kp F5    &kp CAPS   &kp KP_N7 &kp KP_N8 &kp KP_N9 &bt BT_SEL 0
+&kp F6    &kp F7    &kp F8   &kp F9       &kp F10   &kp KP_NUM &kp KP_N4 &kp KP_N5 &kp KP_N6 &bt BT_SEL 1
+&kp LSHFT &kp LCTRL &kp LALT &kp F11      &kp F12   &kp KP_N0  &kp KP_N1 &kp KP_N2 &kp KP_N3 &bt BT_SEL 2
+                             &out OUT_TOG &trans    &trans     &bt BT_CLR 
             >;
         };
     };
