@@ -19,7 +19,7 @@
 #define TAB_RT  LC(TAB)
 #define TAB_LT  LC(LS(TAB))
 
-#define COMBO_TIMEOUT 50
+#define COMBO_TIMEOUT 40
 
 &kscan0 {
     debounce-period = <20>;
