@@ -107,7 +107,7 @@
         };
         combo_alttab {
             timeout-ms = <30>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             bindings = <&kp LA(TAB)>;
             layers = <NAV>;
         };
