@@ -42,8 +42,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "alpha mod-taps";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -148,10 +148,10 @@
 
         nav_layer {
             bindings = <
-&kp LA(F4)  &kp TAB_LT &kp TAB_RT &kp LC(F4)  &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
-&kp DESK_LT &kp LALT   &kp TAB    &kp DESK_RT &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
-&none       &none      &none      &kp LS(INS) &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
-                                  &kp LCTRL   &trans         &mo FUN  &kp LSHFT
+&kp LA(F4)        &kp TAB_LT       &kp TAB_RT &kp LC(F4)    &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
+&am LCTRL DESK_LT &am LGUI DESK_RT &kp LALT   &am LSHFT TAB &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
+&none             &none            &none      &kp LS(INS)   &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
+                                              &kp LCTRL     &trans         &mo FUN  &kp LSHFT
             >;
         };
 
