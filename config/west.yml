@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: zephyr-2.5-upgrade
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
