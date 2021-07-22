@@ -49,6 +49,14 @@
         };
     };
 
+    multi_layers {
+        compatible = "zmk,multi-layers";
+        func_tristate {
+            if-layers = <NAV SYM>;
+            then-layer = <FUN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,7 +74,7 @@
 &kp N1   &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
 &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp MINUS &kp UNDER &kp EQUAL &kp PLUS
 &none    &none    &none    &kp SEMI  &kp AMPS    &kp STAR  &kp BSLH  &none     &none     &none
-                           &kp LCTRL &mo FUN     &trans    &kp LSHFT
+                           &kp LCTRL &trans      &trans    &kp LSHFT
             >;
         };
 
@@ -75,7 +83,7 @@
 &kp LA(F4)        &kp TAB_LT       &kp TAB_RT &kp LC(F4)    &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
 &am LCTRL DESK_LT &am LGUI DESK_RT &kp LALT   &am LSHFT TAB &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
 &none             &none            &none      &kp LS(INS)   &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
-                                              &kp LCTRL     &trans         &mo FUN  &kp LSHFT
+                                              &kp LCTRL     &trans         &trans   &kp LSHFT
             >;
         };
 
