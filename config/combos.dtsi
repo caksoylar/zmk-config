@@ -1,0 +1,38 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+COMBO(grave,  &kp GRAVE,     0  1, DEF, 40)
+COMBO(semi,   &kp SEMI,      6  7, DEF, 40)
+COMBO(lpar,   &kp LPAR,     12 13, DEF, 40)
+COMBO(rpar,   &kp RPAR,     16 17, DEF, 40)
+COMBO(lbkt,   &kp LBKT,     11 12, DEF, 40)
+COMBO(rbkt,   &kp RBKT,     17 18, DEF, 40)
+COMBO(tab,    &kp TAB,      11 13, DEF, 40)
+COMBO(bspc,   &kp BSPC,     16 18, DEF, 40)
+COMBO(bslh,   &kp BSLH,     18 19, DEF, 40)
+
+COMBO(alttab, &kp LA(TAB),  12 13, NAV, 30)
+
+COMBO(bt4,    &bt BT_SEL 4, 11 12, FUN, 100)
+COMBO(bt5,    &bt BT_SEL 5, 12 13, FUN, 100)
+
+    };
+};

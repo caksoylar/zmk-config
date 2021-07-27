@@ -19,7 +19,7 @@
 #define TAB_RT  LC(TAB)
 #define TAB_LT  LC(LS(TAB))
 
-#define COMBO_TIMEOUT 40
+#include "combos.dtsi"
 
 &kscan0 {
     debounce-period = <20>;
@@ -46,82 +46,6 @@
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-        combo_grave {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <0 1>;
-            bindings = <&kp GRAVE>;
-            layers = <DEF>;
-        };
-        combo_semi {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <6 7>;
-            bindings = <&kp SEMI>;
-            layers = <DEF>;
-        };
-        combo_lpar {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <12 13>;
-            bindings = <&kp LPAR>;
-            layers = <DEF>;
-        };
-        combo_rpar {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <16 17>;
-            bindings = <&kp RPAR>;
-            layers = <DEF>;
-        };
-        combo_lbkt {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <11 12>;
-            bindings = <&kp LBKT>;
-            layers = <DEF>;
-        };
-        combo_rbkt {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <17 18>;
-            bindings = <&kp RBKT>;
-            layers = <DEF>;
-        };
-        combo_tab {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <11 13>;
-            bindings = <&kp TAB>;
-            layers = <DEF>;
-        };
-        combo_bspc {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <16 18>;
-            bindings = <&kp BSPC>;
-            layers = <DEF>;
-        };
-        combo_bslh {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <18 19>;
-            bindings = <&kp BSLH>;
-            layers = <DEF>;
-        };
-        combo_alttab {
-            timeout-ms = <30>;
-            key-positions = <12 13>;
-            bindings = <&kp LA(TAB)>;
-            layers = <NAV>;
-        };
-        combo_bt4 {
-            timeout-ms = <100>;
-            key-positions = <11 12>;
-            bindings = <&bt BT_SEL 4>;
-            layers = <FUN>;
-        };
-        combo_bt5 {
-            timeout-ms = <100>;
-            key-positions = <12 13>;
-            bindings = <&bt BT_SEL 5>;
-            layers = <FUN>;
         };
     };
 
