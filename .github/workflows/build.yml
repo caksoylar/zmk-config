@@ -1,13 +1,25 @@
-on: [push, pull_request, workflow_dispatch]
-
 name: Build
-
+on:
+  - push
+  - pull_request
+  - workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
       image: zmkfirmware/zmk-build-arm:2.5
-    name: Build
+    strategy:
+      fail-fast: false
+      matrix:
+        board:
+          - nice_nano
+          - nice_nano_v2
+        shield:
+          - choc_ergo_left
+          - choc_ergo_right
+          - hypergolic_left
+          - hypergolic_right
+          - settings-reset
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -17,45 +29,48 @@ jobs:
           cache-name: cache-zephyr-modules
         with:
           path: |
+            bootloader/
             modules/
             tools/
             zephyr/
-            bootloader/
             zmk/
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('manifest-dir/west.yml') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('config/west.yml') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: West Init
+        timeout-minutes: 2
+        continue-on-error: true
+      - name: Initialize workspace (west init)
         run: west init -l config
-      - name: West Update
+      - name: Update modules (west update)
         run: west update
-      - name: West Zephyr export
+      - name: Export Zephyr CMake package (west zephyr-export)
         run: west zephyr-export
-      - name: West Build (HexyChoc Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=choc_ergo_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: HexyChoc DTS File
-        if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
-      - name: HexyChoc Left Kconfig file
-        run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
-      - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 choc_ergo_left_nice_nano.uf2
-      - name: Archive (HexyChoc Left)
-        uses: actions/upload-artifact@v2
-        with:
-          name: firmware
-          path: choc_ergo_left_nice_nano.uf2
-      - name: West Build (HexyChoc Right)
-        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=choc_ergo_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Prepare variables
+        id: variables
+        run: |
+          if [ -n "${{ matrix.shield }}" ]; then
+            SHIELD_ARG="-DSHIELD=${{ matrix.shield }}"
+            ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
+          else
+            SHIELD_ARG=
+            ARTIFACT_NAME="${{ matrix.board }}-zmk"
+          fi
 
-      - name: HexyChoc Right Kconfig file
-        run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
-      - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 choc_ergo_right_nice_nano.uf2
-      - name: Archive (HexyChoc Right)
+          echo ::set-output name=shield-arg::${SHIELD_ARG}
+          echo ::set-output name=artifact-name::${ARTIFACT_NAME}
+      - name: Build (west build)
+        run: west build -s zmk/app -b ${{ matrix.board }} -- ${{ steps.variables.outputs.shield-arg }}
+          -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Generated DTS file
+        if: always()
+        run: cat -n build/zephyr/${{ matrix.board }}.dts.pre.tmp
+      - name: Archive artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: firmware
-          path: choc_ergo_right_nice_nano.uf2
+          name: ${{ steps.variables.outputs.artifact-name }}
+          path: |
+            build/zephyr/zmk.hex
+            build/zephyr/zmk.uf2
+        continue-on-error: true
