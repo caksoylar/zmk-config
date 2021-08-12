@@ -19,7 +19,6 @@ jobs:
           - choc_ergo_right
           - hypergolic_left
           - hypergolic_right
-          - settings-reset
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -52,17 +51,21 @@ jobs:
         run: |
           if [ -n "${{ matrix.shield }}" ]; then
             SHIELD_ARG="-DSHIELD=${{ matrix.shield }}"
-            ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
+            FILE_NAME="${{ matrix.shield }}".uf2
+            ARTIFACT_NAME="$(echo ${{ matrix.shield }} | perl -pe 's/_left|_right//g')-${{ matrix.board }}"
           else
+            FILE_NAME="${{ matrix.board }}".uf2
             SHIELD_ARG=
-            ARTIFACT_NAME="${{ matrix.board }}-zmk"
+            ARTIFACT_NAME="${{ matrix.board }}"
           fi
 
           echo ::set-output name=shield-arg::${SHIELD_ARG}
+          echo ::set-output name=file-name::${FILE_NAME}
           echo ::set-output name=artifact-name::${ARTIFACT_NAME}
       - name: Build (west build)
-        run: west build -s zmk/app -b ${{ matrix.board }} -- ${{ steps.variables.outputs.shield-arg }}
-          -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: |
+          west build -s zmk/app -b ${{ matrix.board }} -- ${{ steps.variables.outputs.shield-arg }} -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+          mv build/zephyr/zmk.uf2 ${{ steps.variables.outputs.file-name }}
       - name: Generated DTS file
         if: always()
         run: cat -n build/zephyr/${{ matrix.board }}.dts.pre.tmp
@@ -70,7 +73,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ${{ steps.variables.outputs.artifact-name }}
-          path: |
-            build/zephyr/zmk.hex
-            build/zephyr/zmk.uf2
+          path: '*.uf2'
         continue-on-error: true
