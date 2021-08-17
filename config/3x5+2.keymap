@@ -4,9 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
-#define SYM 1
-#define NAV 2
-#define FUN 3
+#define CLM 1
+#define SYM 2
+#define NAV 3
+#define FUN 4
 
 #define DESK_LT LC(LG(LEFT))
 #define DESK_RT LC(LG(RIGHT))
@@ -52,9 +53,18 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W      &kp E      &kp R         &kp T          &kp Y         &kp U       &kp I      &kp O  &kp P
+&kp Q       &kp W      &kp E      &kp R         &kp T          &kp Y         &kp U       &kp I      &kp O      &kp P
 &am LCTRL A &am LGUI S &am LALT D &am LSHFT F   &kp G          &kp H         &am RSHFT J &am LALT K &am RGUI L &am RCTRL SQT
 &kp Z       &kp X      &kp C      &kp V         &kp B          &kp N         &kp M       &kp COMMA  &kp DOT    &kp SLASH
+                                  &mt LCTRL ESC &lt NAV BSPC   &lt SYM SPACE &mt RSHFT RET
+            >;
+        };
+
+        colemak_layer {
+            bindings = <
+&kp Q       &kp W      &kp F      &kp P         &kp B          &kp J         &kp L       &kp U      &kp Y      &kp SQT
+&am LCTRL A &am LGUI R &am LALT S &am LSHFT T   &kp G          &kp M         &am RSHFT N &am LALT E &am RGUI I &am RCTRL O
+&kp Z       &kp X      &kp C      &kp D         &kp V          &kp K         &kp H       &kp COMMA  &kp DOT    &kp SLASH
                                   &mt LCTRL ESC &lt NAV BSPC   &lt SYM SPACE &mt RSHFT RET
             >;
         };
@@ -72,7 +82,7 @@
             bindings = <
 &kp LA(F4)        &kp TAB_LT       &kp TAB_RT &kp LC(F4)    &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
 &am LCTRL DESK_LT &am LGUI DESK_RT &kp LALT   &am LSHFT TAB &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
-&none             &none            &none      &kp LS(INS)   &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
+&tog CLM          &none            &none      &kp LS(INS)   &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
                                               &kp LCTRL     &trans         &trans   &kp LSHFT
             >;
         };
