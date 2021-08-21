@@ -4,10 +4,11 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
-#define CLM 1
-#define SYM 2
-#define NAV 3
-#define FUN 4
+#define GME 1
+#define CLM 2
+#define SYM 3
+#define NAV 4
+#define FUN 5
 
 #define DESK_LT LC(LG(LEFT))
 #define DESK_RT LC(LG(RIGHT))
@@ -60,6 +61,15 @@
             >;
         };
 
+        game_layer {
+            bindings = <
+&kp TAB   &kp Q &kp W &kp E     &kp R       &kp Y    &kp U   &kp I     &kp O   &kp P
+&kp ESC   &kp A &kp S &kp D     &kp F       &kp H    &kp J   &kp K     &kp L   &tog GME
+&kp LSHFT &kp Z &kp X &kp C     &kp V       &kp N    &kp M   &kp COMMA &kp DOT &kp SLASH
+                      &kp LCTRL &kp SPACE   &kp LALT &kp RET
+            >;
+        };
+
         colemak_layer {
             bindings = <
 &kp Q       &kp W      &kp F      &kp P         &kp B          &kp J         &kp L       &kp U      &kp Y      &kp SQT
@@ -82,7 +92,7 @@
             bindings = <
 &kp LA(F4)        &kp TAB_LT       &kp TAB_RT &kp LC(F4)    &kp C_VOL_UP   &kp HOME &kp PG_DN &kp PG_UP  &kp END    &kp PAUSE_BREAK
 &am LCTRL DESK_LT &am LGUI DESK_RT &kp LALT   &am LSHFT TAB &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp C_AL_CALC
-&tog CLM          &none            &none      &kp LS(INS)   &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
+&tog CLM          &tog GME         &none      &kp LS(INS)   &kp C_PP       &kp INS  &kp DEL   &kp C_PREV &kp C_NEXT &kp PSCRN
                                               &kp LCTRL     &trans         &trans   &kp LSHFT
             >;
         };
