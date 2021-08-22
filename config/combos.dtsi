@@ -19,15 +19,15 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(grave,  &kp GRAVE,     0  1, DEF, 40)
-COMBO(semi,   &kp SEMI,      6  7, DEF, 40)
-COMBO(lpar,   &kp LPAR,     12 13, DEF, 40)
-COMBO(rpar,   &kp RPAR,     16 17, DEF, 40)
-COMBO(lbkt,   &kp LBKT,     11 12, DEF, 40)
-COMBO(rbkt,   &kp RBKT,     17 18, DEF, 40)
-COMBO(tab,    &kp TAB,      11 13, DEF, 40)
-COMBO(bspc,   &kp BSPC,     16 18, DEF, 40)
-COMBO(bslh,   &kp BSLH,     18 19, DEF, 40)
+COMBO(grave,  &kp GRAVE,     0  1, DEF CLM, 40)
+COMBO(semi,   &kp SEMI,      6  7, DEF CLM, 40)
+COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40)
+COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40)
+COMBO(lbkt,   &kp LBKT,     11 12, DEF CLM, 40)
+COMBO(rbkt,   &kp RBKT,     17 18, DEF CLM, 40)
+COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40)
+COMBO(bspc,   &kp BSPC,     16 18, DEF CLM, 40)
+COMBO(bslh,   &kp BSLH,     18 19, DEF CLM, 40)
 
 COMBO(alttab, &kp LA(TAB),  12 13, NAV, 30)
 
