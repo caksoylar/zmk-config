@@ -32,12 +32,44 @@
     behaviors {
         am: alpha_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "alpha mod-taps";
+            label = "ALPHA_MT";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+        ftab: f_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp TAB>;
+            mods = <MOD_LALT>;
+        };
+        ttab: t_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp TAB>;
+            mods = <MOD_LALT>;
+        };
+        am_f: alpha_mod_f_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "F_MT";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&ftab>;
+        };
+        am_t: alpha_mod_t_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "T_MT";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&ttab>;
         };
     };
 
@@ -55,7 +87,7 @@
         default_layer {
             bindings = <
 &kp Q       &kp W      &kp E      &kp R         &kp T          &kp Y         &kp U       &kp I      &kp O      &kp P
-&am LCTRL A &am LGUI S &am LALT D &am LSHFT F   &kp G          &kp H         &am RSHFT J &am RALT K &am RGUI L &am RCTRL SQT
+&am LCTRL A &am LGUI S &am LALT D &am_f LSHFT 0 &kp G          &kp H         &am RSHFT J &am RALT K &am RGUI L &am RCTRL SQT
 &kp Z       &kp X      &kp C      &kp V         &kp B          &kp N         &kp M       &kp COMMA  &kp DOT    &kp SLASH
                                   &mt LCTRL ESC &lt NAV BSPC   &lt SYM SPACE &mt RSHFT RET
             >;
@@ -73,7 +105,7 @@
         colemak_layer {
             bindings = <
 &kp Q       &kp W      &kp F      &kp P         &kp B          &kp J         &kp L       &kp U      &kp Y      &kp SQT
-&am LCTRL A &am LGUI R &am LALT S &am LSHFT T   &kp G          &kp M         &am RSHFT N &am LALT E &am RGUI I &am RCTRL O
+&am LCTRL A &am LGUI R &am LALT S &am_t LSHFT T   &kp G          &kp M         &am RSHFT N &am LALT E &am RGUI I &am RCTRL O
 &kp Z       &kp X      &kp C      &kp D         &kp V          &kp K         &kp H       &kp COMMA  &kp DOT    &kp SLASH
                                   &mt LCTRL ESC &lt NAV BSPC   &lt SYM SPACE &mt RSHFT RET
             >;
