@@ -11,13 +11,6 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CHOC_ERGO_RIGHT
-
-config ZMK_KEYBOARD_NAME
-	default "HexyChoc Right"
-
-endif
-
 if SHIELD_CHOC_ERGO_LEFT || SHIELD_CHOC_ERGO_RIGHT
 
 config ZMK_SPLIT
