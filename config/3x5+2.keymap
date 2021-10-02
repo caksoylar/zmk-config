@@ -73,8 +73,8 @@
         };
     };
 
-    multi_layers {
-        compatible = "zmk,multi-layers";
+    cond_layers {
+        compatible = "zmk,conditional-layers";
         func_tristate {
             if-layers = <NAV SYM>;
             then-layer = <FUN>;
