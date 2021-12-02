@@ -31,6 +31,8 @@ COMBO(bslh,   &kp BSLH,     18 19, DEF CLM, 40)
 
 COMBO(alttab, &kp LA(TAB),  12 13, NAV, 30)
 
+COMBO(capswd, &caps_word,   10 19, DEF CLM, 60)
+
 COMBO(bt3,    &bt BT_SEL 3, 11 12, FUN, 100)
 COMBO(bt4,    &bt BT_SEL 4, 12 13, FUN, 100)
 
