@@ -29,8 +29,6 @@ COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40)
 COMBO(bspc,   &kp BSPC,     16 18, DEF CLM, 40)
 COMBO(bslh,   &kp BSLH,     18 19, DEF CLM, 40)
 
-COMBO(alttab, &kp LA(TAB),  12 13, NAV, 30)
-
 COMBO(capswd, &caps_word,   10 19, DEF CLM, 60)
 
 COMBO(bt3,    &bt BT_SEL 3, 11 12, FUN, 100)
