@@ -27,7 +27,6 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <150>;
-    retro-tap;
 };
 
 &caps_word {
@@ -60,7 +59,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
-            retro-tap;
             bindings = <&mo>, <&bstab>;
         };
     };
