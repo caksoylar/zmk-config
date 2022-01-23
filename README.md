@@ -16,3 +16,5 @@ OS-dependent shortcuts are present on the `Nav` layer, e.g. for Windows:
 It also contains shield definitions for two keyboards using Pro Micro format daughterboards:
 - [`choc_ergo`](https://keypcb.xyz/choc_ergo)
 - [`hypergolic`](https://github.com/davidphilipbarr/hypergolic) -- you should probably use [the official Cradio shield](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio/) instead
+
+Also see my [QMK userspace](https://github.com/caksoylar/qmk_userspace/) for equivalent keymap definitions for QMK.
