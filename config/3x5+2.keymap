@@ -30,7 +30,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0>;
+    continue-list = <UNDERSCORE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
 / {
@@ -124,11 +124,11 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
+     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp BSLH      &kp N7        &kp N8        &kp N9        &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp MINUS     &kp UNDER     &kp EQUAL     &kp PLUS
+     &kp PLUS      &kp EQUAL     &kp UNDER     &kp MINUS     &kp CARET         &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &none         &kp SEMI      &kp AMPS          &kp STAR      &kp BSLH      &none         &none         &none
+     &none         &none         &kp BSLH      &kp STAR      &kp AMPS          &kp SEMI      &kp N1        &kp N2        &kp N3        &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &kp LCTRL     &trans            &trans        &kp LSHFT
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -139,11 +139,11 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4)    &kp TAB_LT    &kp TAB_RT    &kp LC(F4)    &kp C_VOL_UP      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp PAUSE_BREAK
+     &kp LA(F4)    &kp TAB_LT    &kp TAB_RT    &kp LC(F4)    &kp C_VOL_UP      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &am LCTRL D_LT &am LGUI D_RT &kp LALT     &am LSHFT TAB  &kp C_VOL_DN      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_AL_CALC
+     &kp LCTRL     &kp LGUI      &kp LALT     &am LSHFT TAB  &kp C_VOL_DN      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_AL_CALC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &tog CLM      &tog GME      &none         &kp LS(INS)   &kp C_PP          &kp INS       &kp DEL       &kp C_PREV    &kp C_NEXT    &kp PSCRN
+     &kp D_LT      &kp D_RT      &none         &kp LS(INS)   &kp C_PP          &kp INS       &kp DEL       &kp C_PREV    &kp C_NEXT    &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &kp LCTRL     &trans            &trans        &kp LSHFT
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -154,13 +154,13 @@
             label = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp CAPS      &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp COMMA
+     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp CAPS      &out OUT_USB  &out OUT_BLE  &tog CLM      &tog GME
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &kp KP_NUM    &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_DOT
+     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F11       &kp F12           &kp KP_N0     &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER
+     &none         &none         &none         &kp F11       &kp F12           &kp KP_N0     &kp KP_N1     &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &bt BT_CLR    &trans            &trans        &out OUT_TOG
+                                               &reset        &trans            &trans        &reset
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
