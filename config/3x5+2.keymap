@@ -81,6 +81,20 @@
         };
     };
 
+    macros {
+        inv_qm: inverted_question_mark {
+            label = "ZM_INV_QM";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
+                , <&macro_release &kp LALT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -137,7 +151,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp PLUS      &kp EQUAL     &kp UNDER     &kp MINUS     &kp CARET         &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &kp BSLH      &kp STAR      &kp AMPS          &kp SEMI      &kp N1        &kp N2        &kp N3        &kp SLASH
+     &none         &inv_qm       &kp BSLH      &kp STAR      &kp AMPS          &kp SEMI      &kp N1        &kp N2        &kp N3        &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &kp LCTRL     &trans            &trans        &kp LSHFT
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
