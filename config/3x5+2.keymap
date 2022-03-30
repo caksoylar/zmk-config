@@ -82,17 +82,14 @@
     };
 
     macros {
-        inv_qm: inverted_question_mark {
-            label = "ZM_INV_QM";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(inv_qm,
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
                 , <&macro_release &kp LALT>;
-        };
+        )
     };
 
     keymap {
