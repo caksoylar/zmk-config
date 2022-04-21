@@ -1,0 +1,3 @@
+&kscan0 {
+    debounce-period = <20>;
+};
