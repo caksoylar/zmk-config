@@ -18,8 +18,9 @@ I also use a nifty mod-morph trick: While holding <kbd>Alt</kbd> on the left hom
 
 (Visualization generated with [@caksoylar/keymap](https://github.com/caksoylar/keymap))
 
-This repo also contains shield definitions for two keyboards using Pro Micro format daughterboards:
+This repo also contains shield definitions for a few keyboards using Pro Micro format daughterboards:
 - [`choc_ergo`](https://keypcb.xyz/choc_ergo)
 - [`hypergolic`](https://github.com/davidphilipbarr/hypergolic) -- you should probably use [the official Cradio shield](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio/) instead
+- [`ffkb` v1](https://fingerpunch.xyz/product/faux-fox-keyboard/) with an OLED, building upon [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-ffkb) and [NCKiser's](https://github.com/NCKiser/zmk-ffkb) definitions
 
 See my [QMK userspace](https://github.com/caksoylar/qmk_userspace/) for equivalent keymap definitions for QMK.
