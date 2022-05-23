@@ -83,8 +83,8 @@
 
     macros {
         ZMK_MACRO(inv_qm,
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
@@ -160,7 +160,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp PLUS      &kp EQUAL     &kp UNDER     &kp MINUS     &kp CARET         &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &inv_qm       &kp BSLH      &kp STAR      &kp AMPS          &kp SEMI      &kp N1        &kp N2        &kp N3        &kp SLASH
+     &none         &none         &inv_qm       &kp STAR      &kp AMPS          &kp SEMI      &kp N1        &kp N2        &kp N3        &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
                                  &kp LGUI      &kp SPACE     &trans            &trans        &kp LSHFT     &kp RALT

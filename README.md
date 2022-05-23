@@ -1,6 +1,6 @@
 # zmk-config
 
-This is a [ZMK](https://zmk.dev) config repo for my 34 key split keyboards, arranged in 3 rows of 5 columns with 2 thumb keys on each side. It uses three non-base layers activated through two thumb keys along with combos. It has <kbd>Ctrl</kbd>/<kbd>Shift</kbd> thumb hold-taps along with home row mods, which are also available on the left side of `NAV` layer. `FUN` layer is implemented as a tri-layer (active when both `NAV` and `SYM` are active).
+This is a [ZMK](https://zmk.dev) config repo for my 34-36 key split keyboards, arranged in 3 rows of 5 columns with 2 or 3 thumb keys on each side. It uses three non-base layers activated through two thumb keys along with combos. It has <kbd>Ctrl</kbd>/<kbd>Shift</kbd> thumb hold-taps along with home row mods, which are also available on the left side of `NAV` layer. `FUN` layer is implemented as a tri-layer (active when both `NAV` and `SYM` are active).
 
 OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
 - `Win Close`: <kbd>Alt</kbd><kbd>F4</kbdy>
@@ -14,7 +14,7 @@ OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
 
 I also use a nifty mod-morph trick: While holding <kbd>Alt</kbd> on the left home row, tapping the backspace thumb emits <kbd>Tab</kbd> for one-handed window switching. <kbd>Alt</kbd><kbd>Backspace</kbd> can still be performed with the right hand modifier.
 
-![3x5+2 layout](https://caksoylar.github.io/zmk-config/3x5+2.full.svg)
+![3x5 layout](https://caksoylar.github.io/zmk-config/3x5.full.svg)
 
 (Visualization generated with [@caksoylar/keymap](https://github.com/caksoylar/keymap))
 
