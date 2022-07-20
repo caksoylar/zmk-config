@@ -7,31 +7,32 @@
   ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
               ╰────────╯ ╰────────╯            */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
         combo_##NAME { \
             timeout-ms = <TERM>; \
             bindings = <BINDINGS>; \
             key-positions = <KEYPOS>; \
             layers = <LAYERS>; \
+            global-quick-tap-ms = <QUICKTAP>; \
         };
 
 / {
     combos {
         compatible = "zmk,combos";
 
-COMBO(semi,   &kp SEMI,      6  7, DEF CLM, 40)
-COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40)
-COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40)
-COMBO(lbkt,   &kp LBKT,     11 12, DEF CLM, 40)
-COMBO(rbkt,   &kp RBKT,     17 18, DEF CLM, 40)
-COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40)
-COMBO(bspc,   &kp BSPC,     16 18, DEF CLM, 40)
-COMBO(grave,  &kp GRAVE,    22 23, DEF CLM, 40)
-COMBO(tilde,  &kp TILDE,    21 22, DEF CLM, 40)
-COMBO(bslh,   &kp BSLH,     26 27, DEF CLM, 40)
-COMBO(pipe,   &kp PIPE,     27 28, DEF CLM, 40)
+COMBO(semi,   &kp SEMI,      6  7, DEF CLM, 40, 100)
+COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40, 100)
+COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40, 100)
+COMBO(lbkt,   &kp LBKT,     11 12, DEF CLM, 40, 100)
+COMBO(rbkt,   &kp RBKT,     17 18, DEF CLM, 40, 100)
+COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40, 100)
+COMBO(bspc,   &kp BSPC,     16 18, DEF CLM, 40, 100)
+COMBO(grave,  &kp GRAVE,    22 23, DEF CLM, 40, 100)
+COMBO(tilde,  &kp TILDE,    21 22, DEF CLM, 40, 100)
+COMBO(bslh,   &kp BSLH,     26 27, DEF CLM, 40, 100)
+COMBO(pipe,   &kp PIPE,     27 28, DEF CLM, 40, 100)
 
-COMBO(capswd, &caps_word,   13 16, DEF CLM, 60)
+COMBO(capswd, &caps_word,   13 16, DEF CLM, 60, 100)
 
     };
 };

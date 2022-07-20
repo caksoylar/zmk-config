@@ -57,7 +57,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
-            global-quick-tap;
+            global-quick-tap-ms = <100>;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
@@ -80,7 +80,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
-            global-quick-tap;
+            global-quick-tap-ms = <100>;
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
