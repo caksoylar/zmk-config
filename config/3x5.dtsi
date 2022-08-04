@@ -94,23 +94,6 @@
             hold-trigger-on-release;
         };
 
-        // Easy alt-tab with alt+backspace thumb using mod-morphs
-        bstab: backspace_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BSPC_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp TAB>;
-            mods = <MOD_LALT>;
-        };
-        lt_bspc: layer_tap_backspace_tab {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_BT";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-            bindings = <&mo>, <&bstab>;
-        };
-
         // Swapper for smart alt+tab
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
@@ -155,9 +138,9 @@
      &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                 &mt LGUI TAB  &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
+                                 &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
 #else
-                                               &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET
+                                               &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET
 #endif
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
@@ -174,9 +157,9 @@
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                 &mt LGUI TAB  &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
+                                 &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
 #else
-                                               &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET
+                                               &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET
 #endif
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
