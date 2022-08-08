@@ -19,7 +19,6 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(grave,  &kp GRAVE,    22 23, DEF CLM, 40)
 COMBO(semi,   &kp SEMI,      6  7, DEF CLM, 40)
 COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40)
 COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40)
@@ -27,6 +26,8 @@ COMBO(lbkt,   &kp LBKT,     11 12, DEF CLM, 40)
 COMBO(rbkt,   &kp RBKT,     17 18, DEF CLM, 40)
 COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40)
 COMBO(bspc,   &kp BSPC,     16 18, DEF CLM, 40)
+COMBO(grave,  &kp GRAVE,    22 23, DEF CLM, 40)
+COMBO(tilde,  &kp TILDE,    21 22, DEF CLM, 40)
 COMBO(bslh,   &kp BSLH,     26 27, DEF CLM, 40)
 COMBO(pipe,   &kp PIPE,     27 28, DEF CLM, 40)
 
