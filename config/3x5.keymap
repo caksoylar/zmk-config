@@ -150,9 +150,9 @@
      &kp LSHFT     &kp Z         &kp X         &kp C         &kp V             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                 &kp TAB       &kp LCTRL     &kp SPACE         &kp LALT      &kp RET       &mt RALT DEL
+                                 &kp LCTRL     &kp LALT      &kp SPACE         &mo NAV       &kp RET       &tog GME
 #else
-                                               &kp LCTRL     &kp SPACE         &kp LALT      &kp RET
+                                               &kp LALT      &kp SPACE         &mo NAV       &kp RET
 #endif
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
