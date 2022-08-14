@@ -21,8 +21,8 @@
         compatible = "zmk,combos";
 
 COMBO(semi,   &kp SEMI,      6  7, DEF CLM, 40, 100)
-COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40, 100)
-COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40, 100)
+COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40,   0)
+COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40,   0)
 COMBO(lbkt,   &kp LBKT,     11 12, DEF CLM, 40, 100)
 COMBO(rbkt,   &kp RBKT,     17 18, DEF CLM, 40, 100)
 COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40, 100)
