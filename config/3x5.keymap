@@ -93,9 +93,6 @@
                 , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
                 , <&macro_release &kp LALT>;
         )
-		ZMK_MACRO(unstick_mods,
-			bindings = <&kp LSHFT &kp RSHFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
-		)
     };
 
     keymap {
@@ -205,9 +202,9 @@
      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 #ifdef EXTERNAL_POWER
-     &unstick_mods &kp D_LT      &kp D_RT      &kp F11       &kp F12           &out OUT_USB  &out OUT_BLE &ext_power EP_ON &ext_power EP_OFF &bt BT_CLR
+     &none         &kp D_LT      &kp D_RT      &kp F11       &kp F12           &out OUT_USB  &out OUT_BLE &ext_power EP_ON &ext_power EP_OFF &bt BT_CLR
 #else
-     &unstick_mods &kp D_LT      &kp D_RT      &kp F11       &kp F12           &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR
+     &none         &kp D_LT      &kp D_RT      &kp F11       &kp F12           &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR
 #endif
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
