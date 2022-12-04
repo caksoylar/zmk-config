@@ -20,4 +20,8 @@ include:
   - board: nice_nano
     shield: ffkb
   - board: nice_nano
+    shield: swweeep_left
+  - board: nice_nano
+    shield: swweeep_right
+  - board: nice_nano
     shield: settings_reset

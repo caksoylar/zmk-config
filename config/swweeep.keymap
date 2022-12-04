@@ -1,0 +1,3 @@
+#define THREE_THUMBS
+
+#include "3x5.keymap"
