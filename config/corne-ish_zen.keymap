@@ -1,9 +1,0 @@
-#define THREE_THUMBS
-
-#include "3x5.dtsi"
-
-/ {
-    chosen {
-        zmk,matrix_transform = &five_column_transform;
-    };
-};

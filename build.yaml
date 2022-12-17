@@ -23,6 +23,7 @@ include:
     shield: swweeep_right nice_view_adapter nice_view
   - board: nice_nano
     shield: settings_reset
-  - board: corne-ish_zen_left
-  - board: corne-ish_zen_right
-
+  - board: corneish_zen_v1_left
+  - board: corneish_zen_v1_right
+  - board: corneish_zen_v2_left
+  - board: corneish_zen_v2_right
