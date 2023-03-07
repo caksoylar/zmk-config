@@ -1,5 +1,7 @@
 # 8-bit status screen for Corne-ish Zen
 
+![Picture of status screen](https://repository-images.githubusercontent.com/340512296/020f96b5-a5cd-4d94-939a-2f70d6075a18)
+
 ## Output widget
 
 Ranks:
