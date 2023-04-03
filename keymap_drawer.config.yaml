@@ -1,0 +1,109 @@
+# configuration for https://github.com/caksoylar/keymap-drawer
+parse_config:
+  raw_binding_map:
+    '&reset': Reset
+    '&sys_reset': Reset
+    '&bootloader': Boot
+    '&swapper': Win Next
+    '&caps_word': Caps Wrd
+
+  zmk_combos:
+    combo_tab:    {align: top, o: 0.1}
+    combo_bspc:   {align: top, o: 0.1}
+    combo_capswd: {align: top}
+
+  zmk_keycode_map:
+    # custom mappings
+    LC(LG(LEFT)): Desk Left
+    LC(LG(RIGHT)): Desk Right
+    LC(TAB): Tab Left
+    LC(LS(TAB)): Tab Right
+    LA(F4): Win Close
+    LC(F4): Tab Close
+    C_VOL_UP: Vol Up
+    C_VOL_DN: Vol Down
+    C_AL_CALC: Calc
+    C_PP: Play Pause
+    LS(TAB): Win Prev
+    LS(INS): Paste
+
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Gui
+    RGUI: Gui
+    LSHFT: Shift
+    RSHFT: Shift
+    ESC: Esc
+    SPACE: Space
+    BSPC: BSpc
+    RET: Enter
+    TAB: Tab
+    DEL: Delete
+
+    # defaults
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS: .
+    APOSTROPHE: <
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH: \
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA: ','
+    DLLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: '='
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    GRAVE: '`'
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    LBKT: '['
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: '-'
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: '|'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT: ']'
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: ;
+    SEMICOLON: ;
+    SINGLE_QUOTE: ''''
+    SLASH: /
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
