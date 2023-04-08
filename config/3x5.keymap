@@ -245,9 +245,9 @@
 #endif
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                 &bootloader   &reset        &trans            &trans        &reset        &bootloader
+                                 &bootloader   &sys_reset    &trans            &trans        &sys_reset    &bootloader
 #else
-                                               &reset        &trans            &trans        &reset
+                                               &sys_reset    &trans            &trans        &sys_reset
 #endif
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
