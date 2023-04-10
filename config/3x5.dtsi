@@ -262,11 +262,11 @@
             label = "MSE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &none         &none         &none         &none          &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_UP &mwh SCROLL_RIGHT &none
+     &none         &none         &none         &none         &none          &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mmv MOVE_UP &mwh SCROLL_UP &mwh SCROLL_RIGHT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none            &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
+     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &none         &none         &none             &none         &none         &mkp MCLK     &none         &none
+     &none         &none         &none         &none         &none             &none         &mkp MB4       &mkp MCLK    &mkp MB5      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
                                  &none         &none         &none             &mkp LCLK     &mkp RCLK     &none 
