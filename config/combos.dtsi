@@ -34,5 +34,10 @@ COMBO(pipe,   &kp PIPE,     27 28, DEF CLM, 40, 100)
 
 COMBO(capswd, &caps_word,   13 16, DEF CLM, 60, 100)
 
+#ifdef MOUSE_KEYS
+#ifndef THREE_THUMBS
+COMBO(mse_l,  &mo MSE,      30 31, DEF CLM, 100,  0)
+#endif
+#endif
     };
 };
