@@ -20,25 +20,25 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(semi,   &kp SEMI,      6  7, DEF CLM, 40, 100)
-COMBO(lpar,   &kp LPAR,     12 13, DEF CLM, 40,   0)
-COMBO(rpar,   &kp RPAR,     16 17, DEF CLM, 40,   0)
-COMBO(lbkt,   &kp LBKT,     11 12, DEF CLM, 40, 100)
-COMBO(rbkt,   &kp RBKT,     17 18, DEF CLM, 40, 100)
-COMBO(tab,    &kp TAB,      11 13, DEF CLM, 40, 100)
-COMBO(bspc,   &kp BSPC,     16 18, DEF CLM, 40, 100)
-COMBO(grave,  &kp GRAVE,    22 23, DEF CLM, 40, 100)
-COMBO(tilde,  &kp TILDE,    21 22, DEF CLM, 40, 100)
-COMBO(bslh,   &kp BSLH,     26 27, DEF CLM, 40, 100)
-COMBO(pipe,   &kp PIPE,     27 28, DEF CLM, 40, 100)
+COMBO(semi,   &kp SEMI,      6  7, DEF QWE, 40, 100)
+COMBO(lpar,   &kp LPAR,     12 13, DEF QWE, 40,   0)
+COMBO(rpar,   &kp RPAR,     16 17, DEF QWE, 40,   0)
+COMBO(lbkt,   &kp LBKT,     11 12, DEF QWE, 40, 100)
+COMBO(rbkt,   &kp RBKT,     17 18, DEF QWE, 40, 100)
+COMBO(tab,    &kp TAB,      11 13, DEF QWE, 40, 100)
+COMBO(bspc,   &kp BSPC,     16 18, DEF QWE, 40, 100)
+COMBO(grave,  &kp GRAVE,    22 23, DEF QWE, 40, 100)
+COMBO(tilde,  &kp TILDE,    21 22, DEF QWE, 40, 100)
+COMBO(bslh,   &kp BSLH,     26 27, DEF QWE, 40, 100)
+COMBO(pipe,   &kp PIPE,     27 28, DEF QWE, 40, 100)
 
-COMBO(capswd, &caps_word,   13 16, DEF CLM, 60, 100)
+COMBO(capswd, &caps_word,   13 16, DEF QWE, 60, 100)
 
 #ifdef MOUSE_KEYS
 #    ifndef THREE_THUMBS
-COMBO(mse_l,  &mo MSE,      30 31, DEF CLM, 100,  0)
+COMBO(mse_l,  &mo MSE,      30 31, DEF QWE, 100,  0)
 #    else
-COMBO(mse_l,  &mo MSE,      31 32, DEF CLM, 100,  0)
+COMBO(mse_l,  &mo MSE,      31 32, DEF QWE, 100,  0)
 #    endif
 #endif
     };
