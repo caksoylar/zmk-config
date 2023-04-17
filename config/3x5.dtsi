@@ -13,7 +13,6 @@
 #define SYM 3
 #define NAV 4
 #define FUN 5
-#define MSE 6
 
 // Desktop and tab navigation shortcuts
 #define D_LT   LC(LG(LEFT))
@@ -94,13 +93,6 @@
 #    define FN_EXTRA2 &kp PAUSE_BREAK
 #endif
 
-#ifdef MOUSE_KEYS
-#    include "mouse.dtsi"
-#    define MS_ACT(key) &lt MSE key
-#else
-#    define MS_ACT(key) &kp key
-#endif
-
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
@@ -160,12 +152,21 @@
             hold-trigger-on-release;
         };
 
-        // Swapper for smart alt+tab
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
+        // Easy alt-tab with alt+space thumb using mod-morphs
+        stab: space_tab {
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <SWP_POS>;
+            bindings = <&kp SPACE>, <&kp TAB>;
+            mods = <MOD_LALT>;
+            keep-mods = <MOD_LALT>;
+        };
+        lt_spc: layer_tap_space_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            bindings = <&mo>, <&stab>;
         };
     };
 
@@ -200,9 +201,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     P_L_DEF       &kp X         &kp C         MS_ACT(D)     I_L_DEF           I_R_DEF       &kp H         &kp COMMA     &kp DOT       P_R_DEF
+     P_L_DEF       &kp X         &kp C         &kp D         I_L_DEF           I_R_DEF       &kp H         &kp COMMA     &kp DOT       P_R_DEF
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
+                                 T3_L_DEF      &mt LCTRL ESC &lt_spc NAV 0     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -215,9 +216,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp W         &kp M         MS_ACT(G)     ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
+     ALP_XXX       &kp W         &kp M         &kp G         ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
+                                 T3_L_DEF      &mt LCTRL ESC &lt_spc NAV 0     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -260,7 +261,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB &kp C_VOL_DN      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp LS(TAB)   &swapper      &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
+     ALP_XXX       &none         &none         &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_L_SYM      &none         &trans            &trans        &kp SPACE     T3_R_SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -281,22 +282,5 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-
-#ifdef MOUSE_KEYS
-        mouse_layer {
-            display-name = "MSE";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &none         &none         &none         &none           &msc SCRL_LEFT &msc SCRL_DOWN &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_RIGHT
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &none         &none         &none         ALP_XXX           ALP_XXX       &mkp MB4      &mkp MCLK     &mkp MB5      ALP_XXX
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_XXX        &none         &none             &mkp LCLK     &mkp RCLK     T3_XXX
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-#endif
     };
 };
