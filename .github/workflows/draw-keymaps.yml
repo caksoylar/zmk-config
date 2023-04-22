@@ -13,6 +13,6 @@ jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     with:
-      keymap_patterns: "config/corneish_zen.keymap"
+      keymap_patterns: "config/*.keymap"
       config_path: "keymap_drawer.config.yaml"
       draw_args: "corneish_zen:'-k corne_rotated -l LAYOUT_split_3x5_3'"
