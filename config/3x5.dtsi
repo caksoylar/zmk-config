@@ -11,7 +11,7 @@
 
 // Layer aliases
 #define DEF 0
-#define QWE 1
+#define APT 1
 #define GME 2
 #define SYM 3
 #define NAV 4
@@ -158,19 +158,19 @@
             >;
         };
 
-        qwerty_layer {
-            label = "QWE";
+        apt30_layer {
+            label = "APT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
+     &kp W         &kp C         &kp G         &kp D         &kp K             &kp J         &kp L         &kp U         &kp O         &kp Y
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 #ifdef MOUSE_KEYS
-     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &lt MSE G         &kp H         &asr RSHFT J  &amr RALT K   &amr RGUI L   &amr RCTRL SQT
+     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &lt MSE B         &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
 #else
-     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr RSHFT J  &amr RALT K   &amr RGUI L   &amr RCTRL SQT
+     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &kp B             &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
 #endif
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
+     &none         &kp F         &kp M         &kp P         &none             &none         &kp SQT       &kp COMMA     &kp DOT       &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
                                  &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
@@ -242,7 +242,7 @@
             label = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &to DEF       &to QWE       &to GME
+     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &to DEF       &to APT       &to GME
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
