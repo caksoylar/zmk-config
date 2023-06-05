@@ -20,7 +20,7 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(k,      &kp K,       2  3, DEF,      80,  50)
+COMBO(j,      &kp J,       2  3, DEF,      80,  50)
 COMBO(q,      &kp Q,       2  3,     APT,  80,  50)
 COMBO(z,      &kp Z,      21 22, DEF APT,  80,  50)
 COMBO(v,      &kp V,      22 23, DEF,      40,  50)

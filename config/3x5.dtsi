@@ -139,7 +139,7 @@
             label = "DEF";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp K         &kp L         &kp U         &kp Y         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 #ifdef MOUSE_KEYS
      &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &lt MSE G         &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
@@ -147,7 +147,7 @@
      &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 #endif
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp J         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
                                  &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
@@ -162,12 +162,12 @@
             label = "APT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp C         &kp G         &kp D         &kp K             &kp J         &kp L         &kp U         &kp O         &kp Y
+     &kp W         &kp C         &kp G         &kp D         &kp B             &kp J         &kp L         &kp U         &kp O         &kp Y
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 #ifdef MOUSE_KEYS
-     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &lt MSE B         &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
+     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &lt MSE K         &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
 #else
-     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &kp B             &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
+     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &kp K             &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
 #endif
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp F         &kp M         &kp P         &none             &none         &kp SQT       &kp COMMA     &kp DOT       &none
