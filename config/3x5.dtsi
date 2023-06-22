@@ -27,16 +27,42 @@
 // Key position groups
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
+
 #ifdef THREE_THUMBS
 #    define THUMBS 30 31 32 33 34 35 
+#    define T3_L_DEF &mt LGUI TAB
+#    define T3_R_DEF &mt RALT DEL
+#    define T3_L_GME &kp LCTRL
+#    define T3_R_GME &tog GME
+#    define T3_L_SYM &kp LGUI
+#    define T3_R_SYM &kp RALT
+#    define T3_DUMMY &none
 #else
 #    define THUMBS 30 31 32 33
+#    define T3_L_DEF
+#    define T3_R_DEF
+#    define T3_L_GME
+#    define T3_R_GME
+#    define T3_L_SYM
+#    define T3_R_SYM
+#    define T3_DUMMY
 #endif
 
 #include "combos.dtsi"
 
+#ifdef EXTERNAL_POWER
+#    define FN_EXTRA1 &ext_power EP_ON
+#    define FN_EXTRA2 &ext_power EP_OFF
+#else
+#    define FN_EXTRA1 &kp PSCRN
+#    define FN_EXTRA2 &kp PAUSE_BREAK
+#endif
+
 #ifdef MOUSE_KEYS
 #    include "mouse.dtsi"
+#    define MS_ACT(key) &lt MSE key
+#else
+#    define MS_ACT(key) &kp key
 #endif
 
 &mt {
@@ -141,19 +167,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q         &kp W         &kp F         &kp P         &kp B             &kp K         &kp L         &kp U         &kp Y         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-#ifdef MOUSE_KEYS
-     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &lt MSE G         &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
-#else
-     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
-#endif
+     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  MS_ACT(G)         &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp J         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
-#else
-                                               &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET
-#endif
+                                 T3_L_DEF      &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -164,19 +182,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp C         &kp G         &kp D         &kp B             &kp J         &kp L         &kp U         &kp O         &kp Y
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-#ifdef MOUSE_KEYS
-     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &lt MSE K         &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
-#else
-     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &kp K             &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
-#endif
+     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  MS_ACT(K)         &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp F         &kp M         &kp P         &none             &none         &kp SQT       &kp COMMA     &kp DOT       &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &mt LGUI TAB  &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
-#else
-                                               &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET
-#endif
+                                 T3_L_DEF      &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -191,11 +201,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LSHFT     &kp Z         &kp X         &kp C         &kp V             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &kp LCTRL     &kp LALT      &kp SPACE         &mo NAV       &kp RET       &tog GME
-#else
-                                               &kp LALT      &kp SPACE         &mo NAV       &kp RET
-#endif
+                                 T3_L_GME      &kp LALT      &kp SPACE         &mo NAV       &kp RET       T3_R_GME
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -210,11 +216,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &inv_qm       &kp STAR      &kp AMPS      &none             &kp SEMI      &kp N1        &kp N2        &kp N3        &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &kp LGUI      &kp SPACE     &trans            &trans        &kp LSHFT     &kp RALT
-#else
-                                               &kp SPACE     &trans            &trans        &kp LSHFT
-#endif
+                                 T3_L_SYM      &kp SPACE     &trans            &trans        &sys_reset    T3_R_SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -229,11 +231,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp LS(TAB)   &swapper      &kp LS(INS)   &kp C_PP          &none         &kp DEL       &kp C_PREV    &kp C_NEXT    &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &kp LGUI      &kp LCTRL     &trans            &trans        &kp LSHFT     &kp RALT
-#else
-                                               &kp LCTRL     &trans            &trans        &kp LSHFT
-#endif
+                                 T3_L_SYM      &sys_reset    &trans            &trans        &kp LSHFT     T3_R_SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -246,17 +244,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-#ifdef EXTERNAL_POWER
-     &none         &kp D_LT      &kp D_RT      &kp F11       &kp F12           &none         &kp CAPS     &ext_power EP_ON &ext_power EP_OFF &none
-#else
-     &none         &kp D_LT      &kp D_RT      &kp F11       &kp F12           &none         &kp CAPS      &kp PSCRN    &kp PAUSE_BREAK &none
-#endif
+     &none         &kp D_LT      &kp D_RT      &kp F11       &kp F12           &none         &kp CAPS      FN_EXTRA1     FN_EXTRA2     &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &bootloader   &sys_reset    &trans            &trans        &sys_reset    &bootloader
-#else
-                                               &sys_reset    &trans            &trans        &sys_reset
-#endif
+                                 T3_DUMMY      &bootloader   &trans            &trans        &bootloader   T3_DUMMY
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -272,11 +262,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &none         &none         &none         &none             &none         &mkp MB4       &mkp MCLK    &mkp MB5      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-#ifdef THREE_THUMBS
-                                 &none         &none         &none             &mkp LCLK     &mkp RCLK     &none 
-#else
-                                               &none         &none             &mkp LCLK     &mkp RCLK
-#endif
+                                 T3_DUMMY      &none         &none             &mkp LCLK     &mkp RCLK     T3_DUMMY 
 //                                            ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
