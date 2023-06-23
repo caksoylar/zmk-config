@@ -6,11 +6,39 @@ parse_config:
     '&bootloader': Boot
     '&swapper': Win Next
     '&caps_word': Caps Wrd
+    '&inv_qm': ¿
+
+    '&out OUT_USB': Out USB
+    '&out OUT_BLE': Out BLE
+
+    '&bt BT_SEL 0': BT 1
+    '&bt BT_SEL 1': BT 2
+    '&bt BT_SEL 2': BT 3
+    '&bt BT_SEL 3': BT 4
+    '&bt BT_SEL 4': BT 5
+
+    '&mmv M_UP': M🡅
+    '&mmv M_DOWN': M🡇
+    '&mmv M_LEFT': M🡄
+    '&mmv M_RIGHT': M🡆
+
+    '&mwh S_UP': MW🡅
+    '&mwh S_DOWN': MW🡇
+    '&mwh S_LEFT': MW🡄
+    '&mwh S_RIGHT': MW🡆
+
+    '&mkp LCLK': Left Click
+    '&mkp RCLK': Right Click
+    '&mkp MCLK': Middle Click
+    '&mkp MB4': Back Click
+    '&mkp MB5': Forward Click
 
   zmk_combos:
-    combo_tab:    {align: top, o: 0.1}
-    combo_bspc:   {align: top, o: 0.1}
+    combo_tab:    {align: top, o: 0.15}
+    combo_bspc:   {align: top, o: 0.15}
     combo_capswd: {align: top}
+    combo_f12:    {align: bottom}
+    combo_btclr:  {align: bottom}
 
   zmk_keycode_map:
     # custom mappings
@@ -36,11 +64,29 @@ parse_config:
     LSHFT: Shift
     RSHFT: Shift
     ESC: Esc
-    SPACE: Space
-    BSPC: BSpc
-    RET: Enter
-    TAB: Tab
-    DEL: Delete
+    SPACE: ␣
+    BSPC: ⌫
+    RET: ⮠
+    TAB: ↹
+    DEL: ⌦
+
+    PG_UP: Page Up
+    PG_DN: Page Down
+    INS: Insert
+    HOME: Home
+    END: End
+    CAPS: Caps Lock
+    PSCRN: Print Scrn
+    PAUSE_BREAK: Pause Break
+
+    UP: 🡅
+    DOWN: 🡇
+    LEFT: 🡄
+    RIGHT: 🡆
+
+    C_PP: ⏯
+    C_NEXT: ⏭️
+    C_PREV: ⏮️
 
     # defaults
     AMPERSAND: '&'
