@@ -1,0 +1,783 @@
+<svg width="788.0" height="2387.371468712625" viewBox="0 0 788.0 2387.371468712625" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>/* inherit to force styles through use tags*/
+svg path {
+    fill: inherit;
+}
+/* font and background color specifications */
+svg.keymap {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 14px;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    fill: #24292e;
+}
+
+/* default key styling */
+rect.key {
+    fill: #f6f8fa;
+    stroke: #c9cccf;
+    stroke-width: 1;
+}
+
+/* color accent for combo boxes */
+rect.combo {
+    fill: #cdf;
+}
+
+/* color accent for held keys */
+rect.held, rect.combo.held {
+    fill: #fdd;
+}
+
+/* color accent for ghost (optional) keys */
+rect.ghost, rect.combo.ghost {
+    stroke-dasharray: 4, 4;
+    stroke-width: 2;
+}
+
+text {
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+/* styling for layer labels */
+text.label {
+    font-weight: bold;
+    text-anchor: start;
+    stroke: white;
+    stroke-width: 2;
+    paint-order: stroke;
+}
+
+/* styling for combo tap, and key hold/shifted label text */
+text.combo, text.hold, text.shifted {
+    font-size: 11px;
+}
+
+text.hold {
+    text-anchor: middle;
+    dominant-baseline: auto;
+}
+
+text.shifted {
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+/* styling for hold/shifted label text in combo box */
+text.combo.hold, text.combo.shifted {
+    font-size: 8px;
+}
+
+/* lighter symbol for transparent keys */
+text.trans {
+    fill: #7b7e81;
+}
+
+/* styling for combo dendrons */
+path.combo {
+    stroke-width: 1;
+    stroke: gray;
+    fill: none;
+}
+
+/* Start Tabler Icons Cleanup */
+/* cannot use height/width with glyphs */
+.icon-tabler > path {
+    fill: inherit;
+    stroke: inherit;
+}
+/* hide tabler's default box */
+.icon-tabler > path[stroke="none"][fill="none"] {
+    visibility: collapse;
+}
+/* End Tabler Icons Cleanup */
+</style>
+<g class="layer-DEF">
+<text x="30.0" y="28.0" class="label">DEF:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="87.4" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="113.4" class="tap">Q</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="73.4" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="99.4" class="tap">W</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="66.4" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="92.4" class="tap">F</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="73.4" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="99.4" class="tap">P</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="80.4" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="106.4" class="tap">B</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="80.4" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="106.4" class="tap">K</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="73.4" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="99.4" class="tap">L</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="66.4" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="92.4" class="tap">U</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="73.4" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="99.4" class="tap">Y</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="87.4" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="113.4" class="tap">&#x27;</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="143.4" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="169.4" class="tap">A</text>
+<text x="58.0" y="193.4" class="hold">Ctrl</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="129.4" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="155.4" class="tap">R</text>
+<text x="114.0" y="179.4" class="hold">Gui</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="122.4" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="148.4" class="tap">S</text>
+<text x="170.0" y="172.4" class="hold">Alt</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="129.4" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="155.4" class="tap">T</text>
+<text x="226.0" y="179.4" class="hold">Shift</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="136.4" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="162.4" class="tap">G</text>
+<text x="282.0" y="186.4" class="hold">MSE</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="136.4" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="162.4" class="tap">M</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="129.4" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="155.4" class="tap">N</text>
+<text x="562.0" y="179.4" class="hold">Shift</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="122.4" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="148.4" class="tap">E</text>
+<text x="618.0" y="172.4" class="hold">Alt</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="129.4" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="155.4" class="tap">I</text>
+<text x="674.0" y="179.4" class="hold">Gui</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="143.4" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="169.4" class="tap">O</text>
+<text x="730.0" y="193.4" class="hold">Ctrl</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="199.4" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="225.4" class="tap">Z</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="185.4" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="211.4" class="tap">X</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="178.4" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="204.4" class="tap">C</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="185.4" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="211.4" class="tap">D</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="192.4" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="218.4" class="tap">V</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="192.4" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="218.4" class="tap">J</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="185.4" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="211.4" class="tap">H</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="178.4" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="204.4" class="tap">,</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="185.4" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="211.4" class="tap">.</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="199.4" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="225.4" class="tap">/</text>
+<rect rx="6.0" ry="6.0" x="172.0" y="243.248" width="52.0" height="52.0" class="key"/>
+<text x="198.0" y="269.248" class="tap">↹</text>
+<text x="198.0" y="293.248" class="hold">Gui</text>
+<g transform="rotate(15.0, 259.59999999999997, 277.48)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="251.48000000000002" width="52.0" height="52.0" class="key"/>
+<text x="259.59999999999997" y="277.48" class="tap">Esc</text>
+<text x="259.59999999999997" y="301.48" class="hold">Ctrl</text>
+</g>
+<g transform="rotate(30.0, 325.12, 288.68)">
+<rect rx="6.0" ry="6.0" x="299.12" y="248.68" width="52.0" height="80.0" class="key"/>
+<text x="325.12" y="288.68" class="tap">⌫</text>
+<text x="325.12" y="326.68" class="hold">NAV</text>
+</g>
+<g transform="rotate(-30.0, 462.88, 288.68)">
+<rect rx="6.0" ry="6.0" x="436.88" y="248.68" width="52.0" height="80.0" class="key"/>
+<text x="462.88" y="288.68" class="tap">␣</text>
+<text x="462.88" y="326.68" class="hold">SYM</text>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 277.48)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="251.48000000000002" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="277.48" class="tap">⮠</text>
+<text x="528.4000000000001" y="301.48" class="hold">Shift</text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="243.248" width="52.0" height="52.0" class="key"/>
+<text x="590.0" y="269.248" class="tap">⌦</text>
+<text x="590.0" y="293.248" class="hold">Alt</text>
+<rect rx="6.0" ry="6.0" x="184.0" y="82.9" width="28.0" height="26.0" class="combo"/>
+<text x="198.0" y="95.9" class="combo tap">J</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="194.9" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="207.9" class="combo tap">Z</text>
+<rect rx="6.0" ry="6.0" x="184.0" y="194.9" width="28.0" height="26.0" class="combo"/>
+<text x="198.0" y="207.9" class="combo tap">V</text>
+<rect rx="6.0" ry="6.0" x="576.0" y="82.9" width="28.0" height="26.0" class="combo"/>
+<text x="590.0" y="95.9" class="combo tap">;</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="82.9" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="95.9" class="combo tap">`</text>
+<rect rx="6.0" ry="6.0" x="576.0" y="194.9" width="28.0" height="26.0" class="combo"/>
+<text x="590.0" y="207.9" class="combo tap">\</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="194.9" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="207.9" class="combo tap">/</text>
+<rect rx="6.0" ry="6.0" x="184.0" y="138.9" width="28.0" height="26.0" class="combo"/>
+<text x="198.0" y="151.9" class="combo tap">(</text>
+<rect rx="6.0" ry="6.0" x="576.0" y="138.9" width="28.0" height="26.0" class="combo"/>
+<text x="590.0" y="151.9" class="combo tap">)</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="138.9" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="151.9" class="combo tap">[</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="138.9" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="151.9" class="combo tap">]</text>
+<path d="M170.0,118.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v12.733333333333338" class="combo"/>
+<path d="M170.0,118.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v12.733333333333338" class="combo"/>
+<rect rx="6.0" ry="6.0" x="156.0" y="105.0" width="28.0" height="26.0" class="combo"/>
+<text x="170.0" y="118.0" class="combo tap">↹</text>
+<path d="M618.0,118.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v12.733333333333338" class="combo"/>
+<path d="M618.0,118.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v12.733333333333338" class="combo"/>
+<rect rx="6.0" ry="6.0" x="604.0" y="105.0" width="28.0" height="26.0" class="combo"/>
+<text x="618.0" y="118.0" class="combo tap">⌫</text>
+<path d="M394.0,126.4 h-162.0 a6.0,6.0 0 0 0 -6.0,6.0 v4.333333333333332" class="combo"/>
+<path d="M394.0,126.4 h162.0 a6.0,6.0 0 0 1 6.0,6.0 v4.333333333333332" class="combo"/>
+<rect rx="6.0" ry="6.0" x="380.0" y="113.4" width="28.0" height="26.0" class="combo"/>
+<text x="394.0" y="126.4" class="combo tap">
+<tspan x="394.0" dy="-0.6em">Caps</tspan><tspan x="394.0" dy="1.2em">Wrd</tspan></text>
+<rect rx="6.0" ry="6.0" x="278.36" y="270.08000000000004" width="28.0" height="26.0" class="combo"/>
+<text x="292.36" y="283.08000000000004" class="combo tap">MSE</text>
+</g>
+<g class="layer-APT">
+<text x="30.0" y="367.0530669589464" class="label">APT:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="426.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="452.45306695894635" class="tap">W</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="412.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="438.45306695894635" class="tap">C</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="405.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="431.45306695894635" class="tap">G</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="412.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="438.45306695894635" class="tap">D</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="419.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="445.45306695894635" class="tap">B</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="419.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="445.45306695894635" class="tap">J</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="412.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="438.45306695894635" class="tap">L</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="405.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="431.45306695894635" class="tap">U</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="412.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="438.45306695894635" class="tap">O</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="426.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="452.45306695894635" class="tap">Y</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="482.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="508.45306695894635" class="tap">R</text>
+<text x="58.0" y="532.4530669589464" class="hold">Ctrl</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="468.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="494.45306695894635" class="tap">S</text>
+<text x="114.0" y="518.4530669589464" class="hold">Gui</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="461.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="487.45306695894635" class="tap">T</text>
+<text x="170.0" y="511.45306695894635" class="hold">Alt</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="468.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="494.45306695894635" class="tap">H</text>
+<text x="226.0" y="518.4530669589464" class="hold">Shift</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="475.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="501.45306695894635" class="tap">K</text>
+<text x="282.0" y="525.4530669589464" class="hold">MSE</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="475.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="501.45306695894635" class="tap">X</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="468.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="494.45306695894635" class="tap">N</text>
+<text x="562.0" y="518.4530669589464" class="hold">Shift</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="461.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="487.45306695894635" class="tap">E</text>
+<text x="618.0" y="511.45306695894635" class="hold">Alt</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="468.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="494.45306695894635" class="tap">A</text>
+<text x="674.0" y="518.4530669589464" class="hold">Gui</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="482.45306695894635" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="508.45306695894635" class="tap">I</text>
+<text x="730.0" y="532.4530669589464" class="hold">Ctrl</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="538.4530669589464" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="88.0" y="524.4530669589464" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="550.4530669589464" class="tap">F</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="517.4530669589464" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="543.4530669589464" class="tap">M</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="524.4530669589464" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="550.4530669589464" class="tap">P</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="531.4530669589464" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="480.0" y="531.4530669589464" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="536.0" y="524.4530669589464" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="550.4530669589464" class="tap">&#x27;</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="517.4530669589464" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="543.4530669589464" class="tap">,</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="524.4530669589464" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="550.4530669589464" class="tap">.</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="538.4530669589464" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="172.0" y="582.3010669589463" width="52.0" height="52.0" class="key"/>
+<text x="198.0" y="608.3010669589463" class="tap">↹</text>
+<text x="198.0" y="632.3010669589463" class="hold">Gui</text>
+<g transform="rotate(15.0, 259.59999999999997, 616.5330669589464)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="590.5330669589464" width="52.0" height="52.0" class="key"/>
+<text x="259.59999999999997" y="616.5330669589464" class="tap">Esc</text>
+<text x="259.59999999999997" y="640.5330669589464" class="hold">Ctrl</text>
+</g>
+<g transform="rotate(30.0, 325.12, 627.7330669589463)">
+<rect rx="6.0" ry="6.0" x="299.12" y="587.7330669589463" width="52.0" height="80.0" class="key"/>
+<text x="325.12" y="627.7330669589463" class="tap">⌫</text>
+<text x="325.12" y="665.7330669589463" class="hold">NAV</text>
+</g>
+<g transform="rotate(-30.0, 462.88, 627.7330669589463)">
+<rect rx="6.0" ry="6.0" x="436.88" y="587.7330669589463" width="52.0" height="80.0" class="key"/>
+<text x="462.88" y="627.7330669589463" class="tap">␣</text>
+<text x="462.88" y="665.7330669589463" class="hold">SYM</text>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 616.5330669589464)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="590.5330669589464" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="616.5330669589464" class="tap">⮠</text>
+<text x="528.4000000000001" y="640.5330669589464" class="hold">Shift</text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="582.3010669589463" width="52.0" height="52.0" class="key"/>
+<text x="590.0" y="608.3010669589463" class="tap">⌦</text>
+<text x="590.0" y="632.3010669589463" class="hold">Alt</text>
+<rect rx="6.0" ry="6.0" x="184.0" y="421.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="198.0" y="434.95306695894635" class="combo tap">Q</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="533.9530669589464" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="546.9530669589464" class="combo tap">Z</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="421.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="434.95306695894635" class="combo tap">V</text>
+<rect rx="6.0" ry="6.0" x="576.0" y="421.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="590.0" y="434.95306695894635" class="combo tap">;</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="421.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="434.95306695894635" class="combo tap">`</text>
+<rect rx="6.0" ry="6.0" x="576.0" y="533.9530669589464" width="28.0" height="26.0" class="combo"/>
+<text x="590.0" y="546.9530669589464" class="combo tap">\</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="533.9530669589464" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="546.9530669589464" class="combo tap">/</text>
+<rect rx="6.0" ry="6.0" x="184.0" y="477.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="198.0" y="490.95306695894635" class="combo tap">(</text>
+<rect rx="6.0" ry="6.0" x="576.0" y="477.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="590.0" y="490.95306695894635" class="combo tap">)</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="477.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="490.95306695894635" class="combo tap">[</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="477.95306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="490.95306695894635" class="combo tap">]</text>
+<path d="M170.0,457.0530669589464 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v12.73333333333331" class="combo"/>
+<path d="M170.0,457.0530669589464 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v12.73333333333331" class="combo"/>
+<rect rx="6.0" ry="6.0" x="156.0" y="444.0530669589464" width="28.0" height="26.0" class="combo"/>
+<text x="170.0" y="457.0530669589464" class="combo tap">↹</text>
+<path d="M618.0,457.0530669589464 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v12.73333333333331" class="combo"/>
+<path d="M618.0,457.0530669589464 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v12.73333333333331" class="combo"/>
+<rect rx="6.0" ry="6.0" x="604.0" y="444.0530669589464" width="28.0" height="26.0" class="combo"/>
+<text x="618.0" y="457.0530669589464" class="combo tap">⌫</text>
+<path d="M394.0,465.45306695894635 h-162.0 a6.0,6.0 0 0 0 -6.0,6.0 v4.333333333333332" class="combo"/>
+<path d="M394.0,465.45306695894635 h162.0 a6.0,6.0 0 0 1 6.0,6.0 v4.333333333333332" class="combo"/>
+<rect rx="6.0" ry="6.0" x="380.0" y="452.45306695894635" width="28.0" height="26.0" class="combo"/>
+<text x="394.0" y="465.45306695894635" class="combo tap">
+<tspan x="394.0" dy="-0.6em">Caps</tspan><tspan x="394.0" dy="1.2em">Wrd</tspan></text>
+<rect rx="6.0" ry="6.0" x="278.36" y="609.1330669589463" width="28.0" height="26.0" class="combo"/>
+<text x="292.36" y="622.1330669589463" class="combo tap">MSE</text>
+</g>
+<g class="layer-GME">
+<text x="30.0" y="706.1061339178927" class="label">GME:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="757.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="783.1061339178927" class="tap">↹</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="743.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="769.1061339178927" class="tap">Q</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="736.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="762.1061339178927" class="tap">W</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="743.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="769.1061339178927" class="tap">E</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="750.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="776.1061339178927" class="tap">R</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="750.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="776.1061339178927" class="tap">Y</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="743.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="769.1061339178927" class="tap">U</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="736.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="762.1061339178927" class="tap">I</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="743.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="769.1061339178927" class="tap">O</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="757.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="783.1061339178927" class="tap">P</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="813.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="839.1061339178927" class="tap">Esc</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="799.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="825.1061339178927" class="tap">A</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="792.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="818.1061339178927" class="tap">S</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="799.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="825.1061339178927" class="tap">D</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="806.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="832.1061339178927" class="tap">F</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="806.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="832.1061339178927" class="tap">H</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="799.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="825.1061339178927" class="tap">J</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="792.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="818.1061339178927" class="tap">K</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="799.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="825.1061339178927" class="tap">L</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="813.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="839.1061339178927" class="tap">GME</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="869.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="895.1061339178927" class="tap">Shift</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="855.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="881.1061339178927" class="tap">Z</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="848.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="874.1061339178927" class="tap">X</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="855.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="881.1061339178927" class="tap">C</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="862.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="888.1061339178927" class="tap">V</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="862.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="888.1061339178927" class="tap">N</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="855.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="881.1061339178927" class="tap">M</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="848.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="874.1061339178927" class="tap">,</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="855.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="881.1061339178927" class="tap">.</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="869.1061339178927" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="895.1061339178927" class="tap">/</text>
+<rect rx="6.0" ry="6.0" x="172.0" y="912.9541339178927" width="52.0" height="52.0" class="key"/>
+<text x="198.0" y="938.9541339178927" class="tap">Ctrl</text>
+<g transform="rotate(15.0, 259.59999999999997, 947.1861339178928)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="921.1861339178928" width="52.0" height="52.0" class="key"/>
+<text x="259.59999999999997" y="947.1861339178928" class="tap">Alt</text>
+</g>
+<g transform="rotate(30.0, 325.12, 958.3861339178927)">
+<rect rx="6.0" ry="6.0" x="299.12" y="918.3861339178927" width="52.0" height="80.0" class="key"/>
+<text x="325.12" y="958.3861339178927" class="tap">␣</text>
+</g>
+<g transform="rotate(-30.0, 462.88, 958.3861339178927)">
+<rect rx="6.0" ry="6.0" x="436.88" y="918.3861339178927" width="52.0" height="80.0" class="key"/>
+<text x="462.88" y="958.3861339178927" class="tap">NAV</text>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 947.1861339178928)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="921.1861339178928" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="947.1861339178928" class="tap">⮠</text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="912.9541339178927" width="52.0" height="52.0" class="key"/>
+<text x="590.0" y="938.9541339178927" class="tap">GME</text>
+</g>
+<g class="layer-SYM">
+<text x="30.0" y="1036.7592008768393" class="label">SYM:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1087.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="1113.7592008768393" class="tap">!</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1073.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1099.7592008768393" class="tap">@</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1066.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1092.7592008768393" class="tap">#</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1073.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1099.7592008768393" class="tap">$</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1080.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1106.7592008768393" class="tap">%</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1080.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1106.7592008768393" class="tap">/</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1073.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1099.7592008768393" class="tap">7</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1066.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1092.7592008768393" class="tap">8</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1073.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1099.7592008768393" class="tap">9</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1087.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1113.7592008768393" class="tap">,</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1143.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="1169.7592008768393" class="tap">+</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1129.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1155.7592008768393" class="tap">=</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1122.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1148.7592008768393" class="tap">_</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1129.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1155.7592008768393" class="tap">-</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1136.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1162.7592008768393" class="tap">^</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1136.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1162.7592008768393" class="tap">0</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1129.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1155.7592008768393" class="tap">4</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1122.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1148.7592008768393" class="tap">5</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1129.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1155.7592008768393" class="tap">6</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1143.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1169.7592008768393" class="tap">.</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1199.7592008768393" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="88.0" y="1185.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1211.7592008768393" class="tap">¿</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1178.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1204.7592008768393" class="tap">*</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1185.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1211.7592008768393" class="tap">&amp;</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1192.7592008768393" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="480.0" y="1192.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1218.7592008768393" class="tap">;</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1185.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1211.7592008768393" class="tap">1</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1178.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1204.7592008768393" class="tap">2</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1185.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1211.7592008768393" class="tap">3</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1199.7592008768393" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1225.7592008768393" class="tap">/</text>
+<rect rx="6.0" ry="6.0" x="172.0" y="1243.6072008768392" width="52.0" height="52.0" class="key"/>
+<text x="198.0" y="1269.6072008768392" class="tap">Gui</text>
+<g transform="rotate(15.0, 259.59999999999997, 1277.8392008768392)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="1251.8392008768392" width="52.0" height="52.0" class="key"/>
+<text x="259.59999999999997" y="1277.8392008768392" class="tap">␣</text>
+</g>
+<g transform="rotate(30.0, 325.12, 1289.0392008768392)">
+<rect rx="6.0" ry="6.0" x="299.12" y="1249.0392008768392" width="52.0" height="80.0" class="trans key"/>
+<text x="325.12" y="1289.0392008768392" class="trans tap">▽</text>
+</g>
+<g transform="rotate(-30.0, 462.88, 1289.0392008768392)">
+<rect rx="6.0" ry="6.0" x="436.88" y="1249.0392008768392" width="52.0" height="80.0" class="held key"/>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 1277.8392008768392)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="1251.8392008768392" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="1277.8392008768392" class="tap">Reset</text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="1243.6072008768392" width="52.0" height="52.0" class="key"/>
+<text x="590.0" y="1269.6072008768392" class="tap">Alt</text>
+</g>
+<g class="layer-NAV">
+<text x="30.0" y="1367.4122678357858" class="label">NAV:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1418.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="1444.4122678357858" class="tap">
+<tspan x="58.0" dy="-0.6em">Win</tspan><tspan x="58.0" dy="1.2em">Close</tspan></text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1404.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1430.4122678357858" class="tap">
+<tspan x="114.0" dy="-0.6em">Tab</tspan><tspan x="114.0" dy="1.2em">Right</tspan></text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1397.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1423.4122678357858" class="tap">
+<tspan x="170.0" dy="-0.6em">Tab</tspan><tspan x="170.0" dy="1.2em">Left</tspan></text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1404.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1430.4122678357858" class="tap">
+<tspan x="226.0" dy="-0.6em">Tab</tspan><tspan x="226.0" dy="1.2em">Close</tspan></text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1411.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1437.4122678357858" class="tap">
+<tspan x="282.0" dy="-0.6em">Vol</tspan><tspan x="282.0" dy="1.2em">Up</tspan></text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1411.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1437.4122678357858" class="tap">Insert</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1404.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1430.4122678357858" class="tap">
+<tspan x="562.0" dy="-0.6em">Page</tspan><tspan x="562.0" dy="1.2em">Down</tspan></text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1397.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1423.4122678357858" class="tap">🡅</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1404.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1430.4122678357858" class="tap">
+<tspan x="674.0" dy="-0.6em">Page</tspan><tspan x="674.0" dy="1.2em">Up</tspan></text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1418.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1444.4122678357858" class="tap">Calc</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1474.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="1500.4122678357858" class="tap">Ctrl</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1460.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1486.4122678357858" class="tap">Gui</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1453.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1479.4122678357858" class="tap">Alt</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1460.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1486.4122678357858" class="tap">↹</text>
+<text x="226.0" y="1510.4122678357858" class="hold">Shift</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1467.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1493.4122678357858" class="tap">
+<tspan x="282.0" dy="-0.6em">Vol</tspan><tspan x="282.0" dy="1.2em">Down</tspan></text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1467.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1493.4122678357858" class="tap">Home</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1460.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1486.4122678357858" class="tap">🡄</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1453.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1479.4122678357858" class="tap">🡇</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1460.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1486.4122678357858" class="tap">🡆</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1474.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1500.4122678357858" class="tap">End</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1530.4122678357858" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="88.0" y="1516.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1542.4122678357858" class="tap">
+<tspan x="114.0" dy="-0.6em">Win</tspan><tspan x="114.0" dy="1.2em">Prev</tspan></text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1509.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1535.4122678357858" class="tap">
+<tspan x="170.0" dy="-0.6em">Win</tspan><tspan x="170.0" dy="1.2em">Next</tspan></text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1516.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1542.4122678357858" class="tap">Paste</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1523.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1549.4122678357858" class="tap">⏯</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1523.4122678357858" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="536.0" y="1516.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1542.4122678357858" class="tap">⌦</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1509.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1535.4122678357858" class="tap">⏮️</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1516.4122678357858" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1542.4122678357858" class="tap">⏭️</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1530.4122678357858" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="172.0" y="1574.2602678357857" width="52.0" height="52.0" class="key"/>
+<text x="198.0" y="1600.2602678357857" class="tap">Gui</text>
+<g transform="rotate(15.0, 259.59999999999997, 1608.4922678357857)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="1582.4922678357857" width="52.0" height="52.0" class="key"/>
+<text x="259.59999999999997" y="1608.4922678357857" class="tap">Reset</text>
+</g>
+<g transform="rotate(30.0, 325.12, 1619.6922678357857)">
+<rect rx="6.0" ry="6.0" x="299.12" y="1579.6922678357857" width="52.0" height="80.0" class="held key"/>
+</g>
+<g transform="rotate(-30.0, 462.88, 1619.6922678357857)">
+<rect rx="6.0" ry="6.0" x="436.88" y="1579.6922678357857" width="52.0" height="80.0" class="trans key"/>
+<text x="462.88" y="1619.6922678357857" class="trans tap">▽</text>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 1608.4922678357857)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="1582.4922678357857" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="1608.4922678357857" class="tap">Shift</text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="1574.2602678357857" width="52.0" height="52.0" class="key"/>
+<text x="590.0" y="1600.2602678357857" class="tap">Alt</text>
+<rect rx="6.0" ry="6.0" x="268.0" y="1452.4122678357858" width="28.0" height="26.0" class="combo"/>
+<text x="282.0" y="1465.4122678357858" class="combo tap">⏯</text>
+</g>
+<g class="layer-FUN">
+<text x="30.0" y="1698.0653347947323" class="label">FUN:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1749.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="1775.0653347947323" class="tap">F1</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1735.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1761.0653347947323" class="tap">F2</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1728.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1754.0653347947323" class="tap">F3</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1735.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1761.0653347947323" class="tap">F4</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1742.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1768.0653347947323" class="tap">F5</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1742.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1768.0653347947323" class="tap">
+<tspan x="506.0" dy="-0.6em">Out</tspan><tspan x="506.0" dy="1.2em">USB</tspan></text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1735.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1761.0653347947323" class="tap">
+<tspan x="562.0" dy="-0.6em">Out</tspan><tspan x="562.0" dy="1.2em">BLE</tspan></text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1728.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1754.0653347947323" class="tap">DEF</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1735.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1761.0653347947323" class="tap">APT</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1749.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1775.0653347947323" class="tap">GME</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1805.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="1831.0653347947323" class="tap">F6</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1791.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1817.0653347947323" class="tap">F7</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1784.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1810.0653347947323" class="tap">F8</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1791.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1817.0653347947323" class="tap">F9</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1798.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1824.0653347947323" class="tap">F10</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1798.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="1824.0653347947323" class="tap">
+<tspan x="506.0" dy="-0.6em">BT</tspan><tspan x="506.0" dy="1.2em">1</tspan></text>
+<rect rx="6.0" ry="6.0" x="536.0" y="1791.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1817.0653347947323" class="tap">
+<tspan x="562.0" dy="-0.6em">BT</tspan><tspan x="562.0" dy="1.2em">2</tspan></text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1784.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1810.0653347947323" class="tap">
+<tspan x="618.0" dy="-0.6em">BT</tspan><tspan x="618.0" dy="1.2em">3</tspan></text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1791.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1817.0653347947323" class="tap">
+<tspan x="674.0" dy="-0.6em">BT</tspan><tspan x="674.0" dy="1.2em">4</tspan></text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1805.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="1831.0653347947323" class="tap">
+<tspan x="730.0" dy="-0.6em">BT</tspan><tspan x="730.0" dy="1.2em">5</tspan></text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1861.0653347947323" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="88.0" y="1847.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1873.0653347947323" class="tap">
+<tspan x="114.0" dy="-0.6em">Desk</tspan><tspan x="114.0" dy="1.2em">Left</tspan></text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1840.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1866.0653347947323" class="tap">
+<tspan x="170.0" dy="-0.6em">Desk</tspan><tspan x="170.0" dy="1.2em">Right</tspan></text>
+<rect rx="6.0" ry="6.0" x="200.0" y="1847.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="1873.0653347947323" class="tap">F11</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="1854.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="1880.0653347947323" class="tap">F12</text>
+<rect rx="6.0" ry="6.0" x="480.0" y="1854.0653347947323" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="536.0" y="1847.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="1873.0653347947323" class="tap">
+<tspan x="562.0" dy="-0.6em">Caps</tspan><tspan x="562.0" dy="1.2em">Lock</tspan></text>
+<rect rx="6.0" ry="6.0" x="592.0" y="1840.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="1866.0653347947323" class="tap">
+<tspan x="618.0" dy="-0.6em">Print</tspan><tspan x="618.0" dy="1.2em">Scrn</tspan></text>
+<rect rx="6.0" ry="6.0" x="648.0" y="1847.0653347947323" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="1873.0653347947323" class="tap">
+<tspan x="674.0" dy="-0.6em">Pause</tspan><tspan x="674.0" dy="1.2em">Break</tspan></text>
+<rect rx="6.0" ry="6.0" x="704.0" y="1861.0653347947323" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="172.0" y="1904.9133347947322" width="52.0" height="52.0" class="key"/>
+<g transform="rotate(15.0, 259.59999999999997, 1939.1453347947322)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="1913.1453347947322" width="52.0" height="52.0" class="key"/>
+<text x="259.59999999999997" y="1939.1453347947322" class="tap">Boot</text>
+</g>
+<g transform="rotate(30.0, 325.12, 1950.3453347947323)">
+<rect rx="6.0" ry="6.0" x="299.12" y="1910.3453347947323" width="52.0" height="80.0" class="held key"/>
+</g>
+<g transform="rotate(-30.0, 462.88, 1950.3453347947323)">
+<rect rx="6.0" ry="6.0" x="436.88" y="1910.3453347947323" width="52.0" height="80.0" class="held key"/>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 1939.1453347947322)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="1913.1453347947322" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="1939.1453347947322" class="tap">Boot</text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="1904.9133347947322" width="52.0" height="52.0" class="key"/>
+<path d="M142.0,1902.0653347947323 h-22.0 a6.0,6.0 0 0 1 -6.0,-6.0 v-4.333333333333332" class="combo"/>
+<path d="M142.0,1902.0653347947323 h22.0 a6.0,6.0 0 0 0 6.0,-6.0 v-11.333333333333332" class="combo"/>
+<rect rx="6.0" ry="6.0" x="128.0" y="1889.0653347947323" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="1902.0653347947323" class="combo tap">F12</text>
+<path d="M646.0,1902.0653347947323 h-22.0 a6.0,6.0 0 0 1 -6.0,-6.0 v-11.333333333333332" class="combo"/>
+<path d="M646.0,1902.0653347947323 h22.0 a6.0,6.0 0 0 0 6.0,-6.0 v-4.333333333333332" class="combo"/>
+<rect rx="6.0" ry="6.0" x="632.0" y="1889.0653347947323" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="1902.0653347947323" class="combo tap">
+<tspan x="646.0" dy="-0.6em">BT</tspan><tspan x="646.0" dy="1.2em">CLR</tspan></text>
+</g>
+<g class="layer-MSE">
+<text x="30.0" y="2028.7184017536788" class="label">MSE:</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="2079.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="88.0" y="2065.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="144.0" y="2058.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="200.0" y="2065.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="256.0" y="2072.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="480.0" y="2072.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="506.0" y="2098.718401753679" class="tap">MW🡄</text>
+<rect rx="6.0" ry="6.0" x="536.0" y="2065.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="2091.718401753679" class="tap">MW🡇</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="2058.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="2084.718401753679" class="tap">M🡅</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="2065.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="2091.718401753679" class="tap">MW🡅</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="2079.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="730.0" y="2105.718401753679" class="tap">MW🡆</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="2135.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="58.0" y="2161.718401753679" class="tap">Ctrl</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="2121.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="2147.718401753679" class="tap">Gui</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="2114.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="2140.718401753679" class="tap">Alt</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="2121.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="2147.718401753679" class="tap">Shift</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="2128.718401753679" width="52.0" height="52.0" class="held key"/>
+<rect rx="6.0" ry="6.0" x="480.0" y="2128.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="536.0" y="2121.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="2147.718401753679" class="tap">M🡄</text>
+<rect rx="6.0" ry="6.0" x="592.0" y="2114.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="2140.718401753679" class="tap">M🡇</text>
+<rect rx="6.0" ry="6.0" x="648.0" y="2121.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="2147.718401753679" class="tap">M🡆</text>
+<rect rx="6.0" ry="6.0" x="704.0" y="2135.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="2191.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="88.0" y="2177.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="144.0" y="2170.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="200.0" y="2177.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="256.0" y="2184.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="480.0" y="2184.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="536.0" y="2177.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="562.0" y="2203.718401753679" class="tap">
+<tspan x="562.0" dy="-0.6em">Back</tspan><tspan x="562.0" dy="1.2em">Click</tspan></text>
+<rect rx="6.0" ry="6.0" x="592.0" y="2170.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="618.0" y="2196.718401753679" class="tap">
+<tspan x="618.0" dy="-0.6em">Middle</tspan><tspan x="618.0" dy="1.2em">Click</tspan></text>
+<rect rx="6.0" ry="6.0" x="648.0" y="2177.718401753679" width="52.0" height="52.0" class="key"/>
+<text x="674.0" y="2203.718401753679" class="tap">
+<tspan x="674.0" dy="-0.6em">Forward</tspan><tspan x="674.0" dy="1.2em">Click</tspan></text>
+<rect rx="6.0" ry="6.0" x="704.0" y="2191.718401753679" width="52.0" height="52.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="172.0" y="2235.5664017536787" width="52.0" height="52.0" class="key"/>
+<g transform="rotate(15.0, 259.59999999999997, 2269.7984017536787)">
+<rect rx="6.0" ry="6.0" x="233.59999999999997" y="2243.7984017536787" width="52.0" height="52.0" class="key"/>
+</g>
+<g transform="rotate(30.0, 325.12, 2280.998401753679)">
+<rect rx="6.0" ry="6.0" x="299.12" y="2240.998401753679" width="52.0" height="80.0" class="key"/>
+</g>
+<g transform="rotate(-30.0, 462.88, 2280.998401753679)">
+<rect rx="6.0" ry="6.0" x="436.88" y="2240.998401753679" width="52.0" height="80.0" class="key"/>
+<text x="462.88" y="2280.998401753679" class="tap">
+<tspan x="462.88" dy="-0.6em">Left</tspan><tspan x="462.88" dy="1.2em">Click</tspan></text>
+</g>
+<g transform="rotate(-15.0, 528.4000000000001, 2269.7984017536787)">
+<rect rx="6.0" ry="6.0" x="502.4000000000001" y="2243.7984017536787" width="52.0" height="52.0" class="key"/>
+<text x="528.4000000000001" y="2269.7984017536787" class="tap">
+<tspan x="528.4000000000001" dy="-0.6em">Right</tspan><tspan x="528.4000000000001" dy="1.2em">Click</tspan></text>
+</g>
+<rect rx="6.0" ry="6.0" x="564.0" y="2235.5664017536787" width="52.0" height="52.0" class="key"/>
+</g>
+</svg>
