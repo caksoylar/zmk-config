@@ -7,12 +7,13 @@ on:
       - 'config/*.keymap'
       - 'config/*.dtsi'
       - keymap_drawer.config.yaml
-      # - 'config/boards/*/*/*.keymap'
+      - .github/workflows/draw-keymaps.yml
 
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     with:
-      keymap_patterns: "config/*.keymap"
-      config_path: "keymap_drawer.config.yaml"
-      draw_args: "corneish_zen:'-k corne_rotated -l LAYOUT_split_3x5_3'"
+      keymap_patterns: 'config/*.keymap'
+      config_path: keymap_drawer.config.yaml
+      output_folder: svg
+      install_branch: main
