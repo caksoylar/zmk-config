@@ -1,0 +1,253 @@
+layout: {qmk_keyboard: obosob/arch_36}
+layers:
+  DEF:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - K
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Ctrl}
+  - {t: R, h: Gui}
+  - {t: S, h: Alt}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: O, h: Ctrl}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - J
+  - H
+  - ','
+  - .
+  - /
+  - {t: ↹, h: Gui}
+  - {t: Esc, h: Ctrl}
+  - {t: ⌫, h: NAV}
+  - {t: ␣, h: SYM}
+  - {t: ⮠, h: Shift}
+  - {t: ⌦, h: Alt}
+  APT:
+  - W
+  - C
+  - G
+  - D
+  - B
+  - J
+  - L
+  - U
+  - O
+  - Y
+  - {t: R, h: Ctrl}
+  - {t: S, h: Gui}
+  - {t: T, h: Alt}
+  - {t: H, h: Shift}
+  - K
+  - X
+  - {t: N, h: Shift}
+  - {t: E, h: Alt}
+  - {t: A, h: Gui}
+  - {t: I, h: Ctrl}
+  - ''
+  - F
+  - M
+  - P
+  - ''
+  - ''
+  - ''''
+  - ','
+  - .
+  - ''
+  - {t: ↹, h: Gui}
+  - {t: Esc, h: Ctrl}
+  - {t: ⌫, h: NAV}
+  - {t: ␣, h: SYM}
+  - {t: ⮠, h: Shift}
+  - {t: ⌦, h: Alt}
+  GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Shift, Z, X, C, V, N, M, ',', ., /, Ctrl, Alt, ␣, NAV, ⮠, GME]
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - '='
+  - _
+  - '-'
+  - ^
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - ''
+  - ¿
+  - '*'
+  - '&'
+  - ''
+  - ;
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - Gui
+  - ␣
+  - {t: ▽, type: trans}
+  - {type: held}
+  - Reset
+  - Alt
+  NAV:
+  - Win Close
+  - Tab Right
+  - Tab Left
+  - Tab Close
+  - Vol Up
+  - Insert
+  - Page Down
+  - 🡅
+  - Page Up
+  - Calc
+  - Ctrl
+  - Gui
+  - Alt
+  - {t: ↹, h: Shift}
+  - Vol Down
+  - Home
+  - 🡄
+  - 🡇
+  - 🡆
+  - End
+  - ''
+  - Win Prev
+  - Win Next
+  - Paste
+  - ⏯
+  - ''
+  - ⌦
+  - ⏮️
+  - ⏭️
+  - ''
+  - Gui
+  - Reset
+  - {type: held}
+  - {t: ▽, type: trans}
+  - Shift
+  - Alt
+  FUN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - Out USB
+  - Out BLE
+  - DEF
+  - APT
+  - GME
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - ''
+  - Desk Left
+  - Desk Right
+  - F11
+  - F12
+  - ''
+  - Caps Lock
+  - Print Scrn
+  - Pause Break
+  - ''
+  - ''
+  - Boot
+  - {type: held}
+  - {type: held}
+  - Boot
+  - ''
+combos:
+- p: [2, 3]
+  k: J
+  l: [DEF]
+- p: [2, 3]
+  k: Q
+  l: [APT]
+- p: [21, 22]
+  k: Z
+  l: [DEF, APT]
+- p: [22, 23]
+  k: V
+  l: [DEF]
+- p: [1, 2]
+  k: V
+  l: [APT]
+- p: [6, 7]
+  k: ;
+  l: [DEF, APT]
+- p: [7, 8]
+  k: '`'
+  l: [DEF, APT]
+- p: [26, 27]
+  k: \
+  l: [DEF, APT]
+- p: [27, 28]
+  k: /
+  l: [DEF, APT]
+- p: [12, 13]
+  k: (
+  l: [DEF, APT]
+- p: [16, 17]
+  k: )
+  l: [DEF, APT]
+- p: [11, 12]
+  k: '['
+  l: [DEF, APT]
+- p: [17, 18]
+  k: ']'
+  l: [DEF, APT]
+- p: [11, 13]
+  k: ↹
+  l: [DEF, APT]
+  a: top
+  o: 0.15
+- p: [16, 18]
+  k: ⌫
+  l: [DEF, APT]
+  a: top
+  o: 0.15
+- p: [13, 16]
+  k: Caps Wrd
+  l: [DEF, APT]
+  a: top
+- p: [4, 14]
+  k: ⏯
+  l: [NAV]
+- p: [21, 22]
+  k: F12
+  l: [FUN]
+  a: bottom
+- p: [27, 28]
+  k: BT CLR
+  l: [FUN]
+  a: bottom
