@@ -15,5 +15,6 @@ jobs:
     with:
       keymap_patterns: 'config/*.keymap'
       config_path: keymap_drawer.config.yaml
-      output_folder: svg
+      output_folder: keymap-drawer
       install_branch: main
+      amend_commit: true
