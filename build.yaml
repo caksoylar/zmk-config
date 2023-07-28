@@ -28,6 +28,6 @@ include:
   - board: corneish_zen_v2_left
   - board: corneish_zen_v2_right
   - board: seeeduino_xiao_ble
-    shield: rommana_left
+    shield: rommana_left rgbled_widget
   - board: seeeduino_xiao_ble
-    shield: rommana_right
+    shield: rommana_right rgbled_widget
