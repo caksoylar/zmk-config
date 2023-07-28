@@ -193,12 +193,6 @@ combos:
 - p: [2, 3]
   k: Q
   l: [APT]
-- p: [21, 22]
-  k: Z
-  l: [DEF, APT]
-- p: [22, 23]
-  k: V
-  l: [DEF]
 - p: [1, 2]
   k: V
   l: [APT]
@@ -207,12 +201,6 @@ combos:
   l: [DEF, APT]
 - p: [7, 8]
   k: '`'
-  l: [DEF, APT]
-- p: [26, 27]
-  k: \
-  l: [DEF, APT]
-- p: [27, 28]
-  k: /
   l: [DEF, APT]
 - p: [12, 13]
   k: (
@@ -243,6 +231,18 @@ combos:
 - p: [4, 14]
   k: ⏯
   l: [NAV]
+- p: [21, 22]
+  k: Z
+  l: [DEF, APT]
+- p: [22, 23]
+  k: V
+  l: [DEF]
+- p: [26, 27]
+  k: \
+  l: [DEF, APT]
+- p: [27, 28]
+  k: /
+  l: [DEF, APT]
 - p: [21, 22]
   k: F12
   l: [FUN]

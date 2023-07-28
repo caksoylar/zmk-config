@@ -205,18 +205,10 @@ path.combo {
 </g>
 <rect rx="6.0" ry="6.0" x="218.748" y="89.87200000000001" width="28.0" height="26.0" class="combo"/>
 <text x="232.748" y="102.87200000000001" class="combo tap">J</text>
-<rect rx="6.0" ry="6.0" x="158.4079467257733" y="202.90677981960155" width="28.0" height="26.0" class="combo"/>
-<text x="172.4079467257733" y="215.90677981960155" class="combo tap">Z</text>
-<rect rx="6.0" ry="6.0" x="218.748" y="201.84400000000002" width="28.0" height="26.0" class="combo"/>
-<text x="232.748" y="214.84400000000002" class="combo tap">V</text>
 <rect rx="6.0" ry="6.0" x="656.556" y="89.87200000000001" width="28.0" height="26.0" class="combo"/>
 <text x="670.556" y="102.87200000000001" class="combo tap">;</text>
 <rect rx="6.0" ry="6.0" x="721.7680532742268" y="91.15877981960153" width="28.0" height="26.0" class="combo"/>
 <text x="735.7680532742268" y="104.15877981960153" class="combo tap">`</text>
-<rect rx="6.0" ry="6.0" x="656.556" y="201.84400000000002" width="28.0" height="26.0" class="combo"/>
-<text x="670.556" y="214.84400000000002" class="combo tap">\</text>
-<rect rx="6.0" ry="6.0" x="716.8960532742268" y="202.90677981960155" width="28.0" height="26.0" class="combo"/>
-<text x="730.8960532742268" y="215.90677981960155" class="combo tap">/</text>
 <rect rx="6.0" ry="6.0" x="218.748" y="145.844" width="28.0" height="26.0" class="combo"/>
 <text x="232.748" y="158.844" class="combo tap">(</text>
 <rect rx="6.0" ry="6.0" x="656.556" y="145.844" width="28.0" height="26.0" class="combo"/>
@@ -238,6 +230,14 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="437.652" y="127.344" width="28.0" height="26.0" class="combo"/>
 <text x="451.652" y="140.344" class="combo tap">
 <tspan x="451.652" dy="-0.6em">Caps</tspan><tspan x="451.652" dy="1.2em">Wrd</tspan></text>
+<rect rx="6.0" ry="6.0" x="158.4079467257733" y="202.90677981960155" width="28.0" height="26.0" class="combo"/>
+<text x="172.4079467257733" y="215.90677981960155" class="combo tap">Z</text>
+<rect rx="6.0" ry="6.0" x="218.748" y="201.84400000000002" width="28.0" height="26.0" class="combo"/>
+<text x="232.748" y="214.84400000000002" class="combo tap">V</text>
+<rect rx="6.0" ry="6.0" x="656.556" y="201.84400000000002" width="28.0" height="26.0" class="combo"/>
+<text x="670.556" y="214.84400000000002" class="combo tap">\</text>
+<rect rx="6.0" ry="6.0" x="716.8960532742268" y="202.90677981960155" width="28.0" height="26.0" class="combo"/>
+<text x="730.8960532742268" y="215.90677981960155" class="combo tap">/</text>
 </g>
 <g class="layer-APT">
 <text x="30.0" y="382.4876723947367" class="label">APT:</text>
@@ -347,18 +347,12 @@ path.combo {
 </g>
 <rect rx="6.0" ry="6.0" x="218.748" y="444.35967239473666" width="28.0" height="26.0" class="combo"/>
 <text x="232.748" y="457.35967239473666" class="combo tap">Q</text>
-<rect rx="6.0" ry="6.0" x="158.4079467257733" y="557.3944522143382" width="28.0" height="26.0" class="combo"/>
-<text x="172.4079467257733" y="570.3944522143382" class="combo tap">Z</text>
 <rect rx="6.0" ry="6.0" x="153.53605327422673" y="445.64889257513516" width="28.0" height="26.0" class="combo"/>
 <text x="167.53605327422673" y="458.64889257513516" class="combo tap">V</text>
 <rect rx="6.0" ry="6.0" x="656.556" y="444.35967239473666" width="28.0" height="26.0" class="combo"/>
 <text x="670.556" y="457.35967239473666" class="combo tap">;</text>
 <rect rx="6.0" ry="6.0" x="721.7680532742268" y="445.6464522143382" width="28.0" height="26.0" class="combo"/>
 <text x="735.7680532742268" y="458.6464522143382" class="combo tap">`</text>
-<rect rx="6.0" ry="6.0" x="656.556" y="556.3316723947366" width="28.0" height="26.0" class="combo"/>
-<text x="670.556" y="569.3316723947366" class="combo tap">\</text>
-<rect rx="6.0" ry="6.0" x="716.8960532742268" y="557.3944522143382" width="28.0" height="26.0" class="combo"/>
-<text x="730.8960532742268" y="570.3944522143382" class="combo tap">/</text>
 <rect rx="6.0" ry="6.0" x="218.748" y="500.33167239473664" width="28.0" height="26.0" class="combo"/>
 <text x="232.748" y="513.3316723947366" class="combo tap">(</text>
 <rect rx="6.0" ry="6.0" x="656.556" y="500.33167239473664" width="28.0" height="26.0" class="combo"/>
@@ -380,6 +374,12 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="437.652" y="481.8316723947367" width="28.0" height="26.0" class="combo"/>
 <text x="451.652" y="494.8316723947367" class="combo tap">
 <tspan x="451.652" dy="-0.6em">Caps</tspan><tspan x="451.652" dy="1.2em">Wrd</tspan></text>
+<rect rx="6.0" ry="6.0" x="158.4079467257733" y="557.3944522143382" width="28.0" height="26.0" class="combo"/>
+<text x="172.4079467257733" y="570.3944522143382" class="combo tap">Z</text>
+<rect rx="6.0" ry="6.0" x="656.556" y="556.3316723947366" width="28.0" height="26.0" class="combo"/>
+<text x="670.556" y="569.3316723947366" class="combo tap">\</text>
+<rect rx="6.0" ry="6.0" x="716.8960532742268" y="557.3944522143382" width="28.0" height="26.0" class="combo"/>
+<text x="730.8960532742268" y="570.3944522143382" class="combo tap">/</text>
 </g>
 <g class="layer-GME">
 <text x="30.0" y="736.9753447894734" class="label">GME:</text>

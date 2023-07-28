@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
+layout: {qmk_keyboard: berylline}
 layers:
   DEF:
   - Q
@@ -21,22 +21,16 @@ layers:
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: O, h: Ctrl}
-  - Z
   - X
   - C
   - {t: D, h: MSE}
-  - V
-  - J
   - H
   - ','
   - .
-  - /
-  - {t: ↹, h: Gui}
   - {t: Esc, h: Ctrl}
   - {t: ⌫, h: NAV}
   - {t: ␣, h: SYM}
   - {t: ⮠, h: Shift}
-  - {t: ⌦, h: Alt}
   APT:
   - W
   - C
@@ -58,23 +52,17 @@ layers:
   - {t: E, h: Alt}
   - {t: A, h: Gui}
   - {t: I, h: Ctrl}
-  - ''
   - F
   - M
   - {t: P, h: MSE}
-  - ''
-  - ''
   - ''''
   - ','
   - .
-  - ''
-  - {t: ↹, h: Gui}
   - {t: Esc, h: Ctrl}
   - {t: ⌫, h: NAV}
   - {t: ␣, h: SYM}
   - {t: ⮠, h: Shift}
-  - {t: ⌦, h: Alt}
-  GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Shift, Z, X, C, V, N, M, ',', ., /, Ctrl, Alt, ␣, NAV, ⮠, GME]
+  GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Z, X, C, M, ',', ., Alt, ␣, NAV, ⮠]
   SYM:
   - '!'
   - '@'
@@ -96,22 +84,16 @@ layers:
   - '5'
   - '6'
   - .
-  - ''
   - ¿
   - '*'
   - '&'
-  - ''
-  - ;
   - '1'
   - '2'
   - '3'
-  - /
-  - Gui
   - ␣
   - {t: ▽, type: trans}
   - {type: held}
   - Reset
-  - Alt
   NAV:
   - Win Close
   - Tab Right
@@ -133,22 +115,16 @@ layers:
   - 🡇
   - 🡆
   - End
-  - ''
   - Win Prev
   - Win Next
   - Paste
-  - ⏯
-  - ''
   - ⌦
   - ⏮️
   - ⏭️
-  - ''
-  - Gui
   - Reset
   - {type: held}
   - {t: ▽, type: trans}
   - Shift
-  - Alt
   FUN:
   - F1
   - F2
@@ -170,22 +146,16 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - ''
   - Desk Left
   - Desk Right
   - F11
-  - F12
-  - ''
   - Caps Lock
   - Print Scrn
   - Pause Break
-  - ''
-  - ''
   - Boot
   - {type: held}
   - {type: held}
   - Boot
-  - ''
   MSE:
   - ''
   - ''
@@ -209,20 +179,14 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
-  - ''
-  - ''
   - Back Click
   - Middle Click
   - Forward Click
   - ''
   - ''
-  - ''
-  - ''
   - Left Click
   - Right Click
-  - ''
 combos:
 - p: [2, 3]
   k: J
@@ -268,26 +232,26 @@ combos:
 - p: [4, 14]
   k: ⏯
   l: [NAV]
-- p: [21, 22]
+- p: [20, 21]
   k: Z
   l: [DEF, APT]
-- p: [22, 23]
+- p: [21, 22]
   k: V
   l: [DEF]
-- p: [26, 27]
+- p: [23, 24]
   k: \
   l: [DEF, APT]
-- p: [27, 28]
+- p: [24, 25]
   k: /
   l: [DEF, APT]
-- p: [21, 22]
+- p: [20, 21]
   k: F12
   l: [FUN]
   a: bottom
-- p: [27, 28]
+- p: [24, 25]
   k: BT CLR
   l: [FUN]
   a: bottom
-- p: [31, 32]
+- p: [26, 27]
   k: MSE
   l: [DEF, APT]
