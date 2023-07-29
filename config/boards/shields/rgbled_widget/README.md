@@ -12,3 +12,5 @@ Currently the widget does the following:
 - Blink blue for connection, red for disconnection on peripheral side
 
 Blink durations can also be adjusted, see the [Kconfig file](Kconfig.defconfig).
+
+See [this video](https://cdn.discordapp.com/attachments/1134635625455292426/1134639930501496832/rgbled_widget.mp4) for a short demo, running through power on, profile switching and power offs.
