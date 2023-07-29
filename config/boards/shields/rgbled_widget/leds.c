@@ -161,6 +161,7 @@ extern void led_thread(void *d0, void *d1, void *d2) {
             // wait interval before processing another blink
             k_sleep(K_MSEC(CONFIG_RGBLED_WIDGET_INTERVAL_MS));
         }
+        k_sleep(K_MSEC(200)); // limit how frequently the queue is checked
         k_yield(); // yield to main thread
     }
 }
