@@ -116,6 +116,25 @@ extern void led_thread(void *d0, void *d1, void *d2) {
     ARG_UNUSED(d1);
     ARG_UNUSED(d2);
 
+#if IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
+    // check and indicate battery level on thread start
+    struct blink_item blink = {.duration_ms = CONFIG_RGBLED_WIDGET_BATTERY_BLINK_MS};
+    uint8_t battery_level = bt_bas_get_battery_level();
+
+    if (battery_level >= CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_HIGH) {
+        LOG_INF("Battery level %d, blinking green", battery_level);
+        blink.color = LED_GREEN;
+    } else if (battery_level >= CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_LOW) {
+        LOG_INF("Battery level %d, blinking yellow", battery_level);
+        blink.color = LED_YELLOW;
+    } else {
+        LOG_INF("Battery level %d, blinking red", battery_level);
+        blink.color = LED_RED;
+    }
+
+    k_msgq_put(&led_msgq, &blink, K_NO_WAIT);
+#endif // IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
+
     while (true) {
         // process blinks until message queue is empty
         while (k_msgq_num_used_get(&led_msgq)) {
@@ -155,25 +174,6 @@ static int leds_init(const struct device *device) {
         LOG_ERR("Device %s is not ready", led_dev->name);
         return -ENODEV;
     }
-
-#if IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
-    // check and indicate battery level on boot
-    struct blink_item blink = {.duration_ms = CONFIG_RGBLED_WIDGET_BATTERY_BLINK_MS};
-    uint8_t battery_level = bt_bas_get_battery_level();
-
-    if (battery_level >= CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_HIGH) {
-        LOG_INF("Battery level %d, blinking green", battery_level);
-        blink.color = LED_GREEN;
-    } else if (battery_level >= CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_LOW) {
-        LOG_INF("Battery level %d, blinking yellow", battery_level);
-        blink.color = LED_YELLOW;
-    } else {
-        LOG_INF("Battery level %d, blinking red", battery_level);
-        blink.color = LED_RED;
-    }
-
-    k_msgq_put(&led_msgq, &blink, K_NO_WAIT);
-#endif // IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
 
     return 0;
 }
