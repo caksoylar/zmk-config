@@ -21,34 +21,34 @@
         compatible = "zmk,combos";
 
 COMBO(j,      &kp J,       2  3, DEF,      80,  50)
-COMBO(q,      &kp Q,       2  3,     APT,  80,  50)
-COMBO(v_apt,  &kp V,       1  2,     APT,  80,  50)
-COMBO(semi,   &kp SEMI,    6  7, DEF APT,  40, 100)
-COMBO(grave,  &kp GRAVE,   7  8, DEF APT,  40, 100)
-COMBO(lpar,   &kp LPAR,   12 13, DEF APT,  40, 100)
-COMBO(rpar,   &kp RPAR,   16 17, DEF APT,  40, 100)
-COMBO(lbkt,   &kp LBKT,   11 12, DEF APT,  40, 100)
-COMBO(rbkt,   &kp RBKT,   17 18, DEF APT,  40, 100)
-COMBO(tab,    &kp TAB,    11 13, DEF APT,  40, 200)
-COMBO(bspc,   &kp BSPC,   16 18, DEF APT,  40, 200)
+COMBO(q,      &kp Q,       2  3,     BRD,  80,  50)
+COMBO(v_brd,  &kp V,       1  2,     BRD,  80,  50)
+COMBO(semi,   &kp SEMI,    6  7, DEF BRD,  40, 100)
+COMBO(grave,  &kp GRAVE,   7  8, DEF BRD,  40, 100)
+COMBO(lpar,   &kp LPAR,   12 13, DEF BRD,  40, 100)
+COMBO(rpar,   &kp RPAR,   16 17, DEF BRD,  40, 100)
+COMBO(lbkt,   &kp LBKT,   11 12, DEF BRD,  40, 100)
+COMBO(rbkt,   &kp RBKT,   17 18, DEF BRD,  40, 100)
+COMBO(tab,    &kp TAB,    11 13, DEF BRD,  40, 200)
+COMBO(bspc,   &kp BSPC,   16 18, DEF BRD,  40, 200)
 
-COMBO(capswd, &caps_word, 13 16, DEF APT,  60, 200)
+COMBO(capswd, &caps_word, 13 16, DEF BRD,  60, 200)
 
 COMBO(play,   &kp C_PP,    4 14, NAV,     200, 200)
 
 #ifdef ALPHA_23332
-COMBO(z,      &kp Z,      20 21, DEF APT,  80,  50)
+COMBO(z,      &kp Z,      20 21, DEF BRD,  80,  50)
 COMBO(v,      &kp V,      21 22, DEF,      40,  50)
-COMBO(bslh,   &kp BSLH,   23 24, DEF APT,  80, 100)
-COMBO(slsh,   &kp SLASH,  24 25, DEF APT,  80,  50)
+COMBO(bslh,   &kp BSLH,   23 24, DEF BRD,  80, 100)
+COMBO(slsh,   &kp SLASH,  24 25, DEF BRD,  80,  50)
 
 COMBO(f12,    &kp F12,    20 21, FUN,     100, 200)
 COMBO(btclr,  &bt BT_CLR, 24 25, FUN,     100, 200)
 #else
-COMBO(z,      &kp Z,      21 22, DEF APT,  80,  50)
+COMBO(z,      &kp Z,      21 22, DEF BRD,  80,  50)
 COMBO(v,      &kp V,      22 23, DEF,      40,  50)
-COMBO(bslh,   &kp BSLH,   26 27, DEF APT,  80, 100)
-COMBO(slsh,   &kp SLASH,  27 28, DEF APT,  80,  50)
+COMBO(bslh,   &kp BSLH,   26 27, DEF BRD,  80, 100)
+COMBO(slsh,   &kp SLASH,  27 28, DEF BRD,  80,  50)
 
 COMBO(f12,    &kp F12,    21 22, FUN,     100, 200)
 COMBO(btclr,  &bt BT_CLR, 27 28, FUN,     100, 200)
@@ -57,15 +57,15 @@ COMBO(btclr,  &bt BT_CLR, 27 28, FUN,     100, 200)
 #ifdef MOUSE_KEYS
 #    ifdef THREE_THUMBS
 #        ifdef ALPHA_23332
-COMBO(mse_l,  &mo MSE,    27 28, DEF APT, 100,   0)
+COMBO(mse_l,  &mo MSE,    27 28, DEF BRD, 100,   0)
 #        else
-COMBO(mse_l,  &mo MSE,    31 32, DEF APT, 100,   0)
+COMBO(mse_l,  &mo MSE,    31 32, DEF BRD, 100,   0)
 #        endif
 #    else
 #        ifdef ALPHA_23332
-COMBO(mse_l,  &mo MSE,    26 27, DEF APT, 100,   0)
+COMBO(mse_l,  &mo MSE,    26 27, DEF BRD, 100,   0)
 #        else
-COMBO(mse_l,  &mo MSE,    30 31, DEF APT, 100,   0)
+COMBO(mse_l,  &mo MSE,    30 31, DEF BRD, 100,   0)
 #        endif
 #    endif
 #endif

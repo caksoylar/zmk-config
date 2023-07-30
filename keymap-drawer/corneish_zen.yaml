@@ -37,34 +37,34 @@ layers:
   - {t: ␣, h: SYM}
   - {t: ⮠, h: Shift}
   - {t: ⌦, h: Alt}
-  APT:
-  - W
+  BRD:
+  - X
   - C
-  - G
-  - D
+  - L
+  - F
   - B
   - J
-  - L
-  - U
-  - O
   - Y
+  - O
+  - U
+  - ''''
   - {t: R, h: Ctrl}
   - {t: S, h: Gui}
-  - {t: T, h: Alt}
-  - {t: H, h: Shift}
+  - {t: N, h: Alt}
+  - {t: T, h: Shift}
+  - P
   - K
-  - X
-  - {t: N, h: Shift}
+  - {t: H, h: Shift}
   - {t: E, h: Alt}
-  - {t: A, h: Gui}
-  - {t: I, h: Ctrl}
+  - {t: I, h: Gui}
+  - {t: A, h: Ctrl}
   - ''
-  - F
+  - W
   - M
-  - {t: P, h: MSE}
+  - {t: G, h: MSE}
   - ''
   - ''
-  - ''''
+  - D
   - ','
   - .
   - ''
@@ -158,7 +158,7 @@ layers:
   - Out USB
   - Out BLE
   - DEF
-  - APT
+  - BRD
   - GME
   - F6
   - F7
@@ -229,57 +229,57 @@ combos:
   l: [DEF]
 - p: [2, 3]
   k: Q
-  l: [APT]
+  l: [BRD]
 - p: [1, 2]
   k: V
-  l: [APT]
+  l: [BRD]
 - p: [6, 7]
   k: ;
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [7, 8]
   k: '`'
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [12, 13]
   k: (
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [16, 17]
   k: )
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [11, 12]
   k: '['
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [17, 18]
   k: ']'
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [11, 13]
   k: ↹
-  l: [DEF, APT]
+  l: [DEF, BRD]
   a: top
   o: 0.15
 - p: [16, 18]
   k: ⌫
-  l: [DEF, APT]
+  l: [DEF, BRD]
   a: top
   o: 0.15
 - p: [13, 16]
   k: Caps Wrd
-  l: [DEF, APT]
+  l: [DEF, BRD]
   a: top
 - p: [4, 14]
   k: ⏯
   l: [NAV]
 - p: [21, 22]
   k: Z
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [22, 23]
   k: V
   l: [DEF]
 - p: [26, 27]
   k: \
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [27, 28]
   k: /
-  l: [DEF, APT]
+  l: [DEF, BRD]
 - p: [21, 22]
   k: F12
   l: [FUN]
@@ -290,4 +290,4 @@ combos:
   a: bottom
 - p: [31, 32]
   k: MSE
-  l: [DEF, APT]
+  l: [DEF, BRD]

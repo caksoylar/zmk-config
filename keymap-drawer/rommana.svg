@@ -226,35 +226,35 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="283.428" y="288.784" width="28.0" height="26.0" class="combo"/>
 <text x="297.428" y="301.784" class="combo tap">MSE</text>
 </g>
-<g class="layer-APT">
-<text x="30.0" y="365.00800000000004" class="label">APT:</text>
+<g class="layer-BRD">
+<text x="30.0" y="365.00800000000004" class="label">BRD:</text>
 <g transform="rotate(-8.0, 59.65172750592476, 494.64410315317315)">
 <rect rx="6.0" ry="6.0" x="31.999727505924763" y="468.64410315317315" width="55.303999999999995" height="52.0" class="key"/>
-<text x="59.65172750592476" y="494.64410315317315" class="tap">W</text>
+<text x="59.65172750592476" y="494.64410315317315" class="tap">X</text>
 </g>
 <g transform="rotate(-3.0, 124.66803837302687, 447.1614654067748)">
 <rect rx="6.0" ry="6.0" x="97.01603837302687" y="421.1614654067748" width="55.303999999999995" height="52.0" class="key"/>
 <text x="124.66803837302687" y="447.1614654067748" class="tap">C</text>
 </g>
 <rect rx="6.0" ry="6.0" x="163.15200000000002" y="403.408" width="55.303999999999995" height="52.0" class="key"/>
-<text x="190.804" y="429.408" class="tap">G</text>
+<text x="190.804" y="429.408" class="tap">L</text>
 <rect rx="6.0" ry="6.0" x="224.08000000000004" y="417.8" width="55.303999999999995" height="52.0" class="key"/>
-<text x="251.73200000000003" y="443.8" class="tap">D</text>
+<text x="251.73200000000003" y="443.8" class="tap">F</text>
 <rect rx="6.0" ry="6.0" x="285.008" y="446.64" width="55.303999999999995" height="52.0" class="key"/>
 <text x="312.65999999999997" y="472.64" class="tap">B</text>
 <rect rx="6.0" ry="6.0" x="450.992" y="446.64" width="55.303999999999995" height="52.0" class="key"/>
 <text x="478.644" y="472.64" class="tap">J</text>
 <rect rx="6.0" ry="6.0" x="511.92000000000013" y="417.8" width="55.303999999999995" height="52.0" class="key"/>
-<text x="539.5720000000001" y="443.8" class="tap">L</text>
+<text x="539.5720000000001" y="443.8" class="tap">Y</text>
 <rect rx="6.0" ry="6.0" x="572.848" y="403.408" width="55.303999999999995" height="52.0" class="key"/>
-<text x="600.5" y="429.408" class="tap">U</text>
+<text x="600.5" y="429.408" class="tap">O</text>
 <g transform="rotate(3.0, 666.636038373027, 447.1585345932252)">
 <rect rx="6.0" ry="6.0" x="638.9840383730269" y="421.1585345932252" width="55.303999999999995" height="52.0" class="key"/>
-<text x="666.636038373027" y="447.1585345932252" class="tap">O</text>
+<text x="666.636038373027" y="447.1585345932252" class="tap">U</text>
 </g>
 <g transform="rotate(8.0, 731.6522724940753, 494.64410315317315)">
 <rect rx="6.0" ry="6.0" x="704.0002724940753" y="468.64410315317315" width="55.303999999999995" height="52.0" class="key"/>
-<text x="731.6522724940753" y="494.64410315317315" class="tap">Y</text>
+<text x="731.6522724940753" y="494.64410315317315" class="tap">&#x27;</text>
 </g>
 <g transform="rotate(-8.0, 67.65972750592476, 551.7081031531732)">
 <rect rx="6.0" ry="6.0" x="40.00772750592476" y="525.7081031531732" width="55.303999999999995" height="52.0" class="key"/>
@@ -267,42 +267,42 @@ path.combo {
 <text x="127.69196162697313" y="528.7265345932252" class="hold">Gui</text>
 </g>
 <rect rx="6.0" ry="6.0" x="163.15200000000002" y="461.03200000000004" width="55.303999999999995" height="52.0" class="key"/>
-<text x="190.804" y="487.03200000000004" class="tap">T</text>
+<text x="190.804" y="487.03200000000004" class="tap">N</text>
 <text x="190.804" y="511.03200000000004" class="hold">Alt</text>
 <rect rx="6.0" ry="6.0" x="224.08000000000004" y="475.48" width="55.303999999999995" height="52.0" class="key"/>
-<text x="251.73200000000003" y="501.48" class="tap">H</text>
+<text x="251.73200000000003" y="501.48" class="tap">T</text>
 <text x="251.73200000000003" y="525.48" class="hold">Shift</text>
 <rect rx="6.0" ry="6.0" x="285.008" y="504.264" width="55.303999999999995" height="52.0" class="key"/>
-<text x="312.65999999999997" y="530.264" class="tap">K</text>
+<text x="312.65999999999997" y="530.264" class="tap">P</text>
 <rect rx="6.0" ry="6.0" x="450.992" y="504.264" width="55.303999999999995" height="52.0" class="key"/>
-<text x="478.644" y="530.264" class="tap">X</text>
+<text x="478.644" y="530.264" class="tap">K</text>
 <rect rx="6.0" ry="6.0" x="511.92000000000013" y="475.48" width="55.303999999999995" height="52.0" class="key"/>
-<text x="539.5720000000001" y="501.48" class="tap">N</text>
+<text x="539.5720000000001" y="501.48" class="tap">H</text>
 <text x="539.5720000000001" y="525.48" class="hold">Shift</text>
 <rect rx="6.0" ry="6.0" x="572.848" y="461.03200000000004" width="55.303999999999995" height="52.0" class="key"/>
 <text x="600.5" y="487.03200000000004" class="tap">E</text>
 <text x="600.5" y="511.03200000000004" class="hold">Alt</text>
 <g transform="rotate(3.0, 663.612038373027, 504.7265345932252)">
 <rect rx="6.0" ry="6.0" x="635.9600383730269" y="478.7265345932252" width="55.303999999999995" height="52.0" class="key"/>
-<text x="663.612038373027" y="504.7265345932252" class="tap">A</text>
+<text x="663.612038373027" y="504.7265345932252" class="tap">I</text>
 <text x="663.612038373027" y="528.7265345932252" class="hold">Gui</text>
 </g>
 <g transform="rotate(8.0, 723.6437275059247, 551.7158968468269)">
 <rect rx="6.0" ry="6.0" x="695.9917275059247" y="525.7158968468269" width="55.303999999999995" height="52.0" class="key"/>
-<text x="723.6437275059247" y="551.7158968468269" class="tap">I</text>
+<text x="723.6437275059247" y="551.7158968468269" class="tap">A</text>
 <text x="723.6437275059247" y="575.7158968468269" class="hold">Ctrl</text>
 </g>
 <g transform="rotate(-3.0, 130.71596162697313, 562.2945345932252)">
 <rect rx="6.0" ry="6.0" x="103.06396162697312" y="536.2945345932252" width="55.303999999999995" height="52.0" class="key"/>
-<text x="130.71596162697313" y="562.2945345932252" class="tap">F</text>
+<text x="130.71596162697313" y="562.2945345932252" class="tap">W</text>
 </g>
 <rect rx="6.0" ry="6.0" x="163.15200000000002" y="518.712" width="55.303999999999995" height="52.0" class="key"/>
 <text x="190.804" y="544.712" class="tap">M</text>
 <rect rx="6.0" ry="6.0" x="224.08000000000004" y="533.104" width="55.303999999999995" height="52.0" class="key"/>
-<text x="251.73200000000003" y="559.104" class="tap">P</text>
+<text x="251.73200000000003" y="559.104" class="tap">G</text>
 <text x="251.73200000000003" y="583.104" class="hold">MSE</text>
 <rect rx="6.0" ry="6.0" x="511.92000000000013" y="533.104" width="55.303999999999995" height="52.0" class="key"/>
-<text x="539.5720000000001" y="559.104" class="tap">&#x27;</text>
+<text x="539.5720000000001" y="559.104" class="tap">D</text>
 <rect rx="6.0" ry="6.0" x="572.848" y="518.712" width="55.303999999999995" height="52.0" class="key"/>
 <text x="600.5" y="544.712" class="tap">,</text>
 <g transform="rotate(3.0, 660.5880383730268, 562.2945345932252)">
@@ -645,7 +645,7 @@ path.combo {
 <text x="600.5" y="1743.84" class="tap">DEF</text>
 <g transform="rotate(3.0, 666.636038373027, 1761.5905345932251)">
 <rect rx="6.0" ry="6.0" x="638.9840383730269" y="1735.5905345932251" width="55.303999999999995" height="52.0" class="key"/>
-<text x="666.636038373027" y="1761.5905345932251" class="tap">APT</text>
+<text x="666.636038373027" y="1761.5905345932251" class="tap">BRD</text>
 </g>
 <g transform="rotate(8.0, 731.6522724940753, 1809.076103153173)">
 <rect rx="6.0" ry="6.0" x="704.0002724940753" y="1783.076103153173" width="55.303999999999995" height="52.0" class="key"/>

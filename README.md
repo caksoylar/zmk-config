@@ -12,6 +12,8 @@ Currently these keyboards are:
 It mainly uses three non-base layers activated through two thumb keys, along with combos. It has <kbd>Ctrl</kbd>/<kbd>Shift</kbd> thumb hold-taps along with home row mods, which are also available on the left side of `NAV` layer.
 `FUN` layer is implemented as a tri-layer, i.e. it is active when both `NAV` and `SYM` are active.
 
+The default alpha layer is a modification of Colemak-DH and an alternative is the [Bird layout](https://github.com/jcmkk3/bird-layout) by @jcmkk3.
+
 OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
 - `Win Close`: <kbd>Alt</kbd><kbd>F4</kbdy>
 - `Tab Next`: <kbd>Ctrl</kbd><kbd>Tab</kbd>

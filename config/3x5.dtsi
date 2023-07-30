@@ -11,7 +11,7 @@
 
 // Layer aliases
 #define DEF 0
-#define APT 1
+#define BRD 1
 #define GME 2
 #define SYM 3
 #define NAV 4
@@ -215,15 +215,15 @@
             >;
         };
 
-        apt30_layer {
-            label = "APT";
+        bird_layer {
+            label = "BRD";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp C         &kp G         &kp D         &kp B             &kp J         &kp L         &kp U         &kp O         &kp Y
+     &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL R  &aml LGUI S   &aml LALT T   &asl LSHFT H  &kp K             &kp X         &asr RSHFT N  &amr RALT E   &amr RGUI A   &amr RCTRL I
+     &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp F         &kp M         MS_ACT(P)     ALP_XXX           ALP_XXX       &kp SQT       &kp COMMA     &kp DOT       ALP_XXX
+     ALP_XXX       &kp W         &kp M         MS_ACT(G)     ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_L_DEF      &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -279,7 +279,7 @@
             label = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &to DEF       &to APT       &to GME
+     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &to DEF       &to BRD       &to GME
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
