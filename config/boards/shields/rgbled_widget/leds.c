@@ -48,10 +48,6 @@ K_MSGQ_DEFINE(led_msgq, sizeof(struct blink_item), 16, 4);
 #if IS_ENABLED(CONFIG_ZMK_BLE)
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 static int led_profile_listener_cb(const zmk_event_t *eh) {
-    if (zmk_endpoints_selected() != ZMK_ENDPOINT_BLE) {
-        return 0;
-    }
-
     uint8_t profile_index = zmk_ble_active_profile_index();
     struct blink_item blink = {.duration_ms = CONFIG_RGBLED_WIDGET_OUTPUT_BLINK_MS};
     if (zmk_ble_active_profile_is_connected()) {
@@ -136,33 +132,30 @@ extern void led_thread(void *d0, void *d1, void *d2) {
 #endif // IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
 
     while (true) {
-        // process blinks until message queue is empty
-        while (k_msgq_num_used_get(&led_msgq)) {
-            struct blink_item blink;
-            k_msgq_get(&led_msgq, &blink, K_NO_WAIT);
+        // wait until a blink item is received and process it
+        struct blink_item blink;
+        k_msgq_get(&led_msgq, &blink, K_FOREVER);
+        LOG_DBG("Got a blink item from msgq, color %d, duration %d", blink.color, blink.duration_ms);
 
-            // turn appropriate LEDs on
-            for (uint8_t pos = 0; pos < 3; pos++) {
-                if (BIT(pos) & blink.color) {
-                    led_on(led_dev, rgb_idx[pos]);
-                }
+        // turn appropriate LEDs on
+        for (uint8_t pos = 0; pos < 3; pos++) {
+            if (BIT(pos) & blink.color) {
+                led_on(led_dev, rgb_idx[pos]);
             }
-
-            // wait for blink duration
-            k_sleep(K_MSEC(blink.duration_ms));
-
-            // turn appropriate LEDs off
-            for (uint8_t pos = 0; pos < 3; pos++) {
-                if (BIT(pos) & blink.color) {
-                    led_off(led_dev, rgb_idx[pos]);
-                }
-            }
-
-            // wait interval before processing another blink
-            k_sleep(K_MSEC(CONFIG_RGBLED_WIDGET_INTERVAL_MS));
         }
-        k_sleep(K_MSEC(200)); // limit how frequently the queue is checked
-        k_yield(); // yield to main thread
+
+        // wait for blink duration
+        k_sleep(K_MSEC(blink.duration_ms));
+
+        // turn appropriate LEDs off
+        for (uint8_t pos = 0; pos < 3; pos++) {
+            if (BIT(pos) & blink.color) {
+                led_off(led_dev, rgb_idx[pos]);
+            }
+        }
+
+        // wait interval before processing another blink
+        k_sleep(K_MSEC(CONFIG_RGBLED_WIDGET_INTERVAL_MS));
     }
 }
 
