@@ -6,7 +6,7 @@ on:
     paths:
       - 'config/*.keymap'
       - 'config/*.dtsi'
-      - keymap_drawer.config.yaml
+      - keymap-drawer/config.yaml
       - .github/workflows/draw-keymaps.yml
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     with:
       keymap_patterns: 'config/*.keymap'
-      config_path: keymap_drawer.config.yaml
+      config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
