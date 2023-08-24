@@ -251,7 +251,7 @@ path.combo {
 </g>
 <g transform="rotate(-15.0, 528, 277)" class="key keypos-34">
 <rect rx="6" ry="6" x="502" y="251" width="52" height="52" class="key"/>
-<text x="528" y="277" class="key tap">⮠</text>
+<text x="528" y="277" class="key tap">⏎</text>
 <text x="528" y="301" class="key hold">Shift</text>
 </g>
 <g class="key keypos-35">
@@ -477,7 +477,7 @@ path.combo {
 </g>
 <g transform="rotate(-15.0, 528, 617)" class="key keypos-34">
 <rect rx="6" ry="6" x="502" y="591" width="52" height="52" class="key"/>
-<text x="528" y="617" class="key tap">⮠</text>
+<text x="528" y="617" class="key tap">⏎</text>
 <text x="528" y="641" class="key hold">Shift</text>
 </g>
 <g class="key keypos-35">
@@ -694,7 +694,7 @@ path.combo {
 </g>
 <g transform="rotate(-15.0, 528, 947)" class="key keypos-34">
 <rect rx="6" ry="6" x="502" y="921" width="52" height="52" class="key"/>
-<text x="528" y="947" class="key tap">⮠</text>
+<text x="528" y="947" class="key tap">⏎</text>
 </g>
 <g class="key keypos-35">
 <rect rx="6" ry="6" x="564" y="913" width="52" height="52" class="key"/>
@@ -889,7 +889,7 @@ path.combo {
 </g>
 <g class="key keypos-7">
 <rect rx="6" ry="6" x="592" y="1397" width="52" height="52" class="key"/>
-<text x="618" y="1423" class="key tap">🡅</text>
+<text x="618" y="1423" class="key tap">↑</text>
 </g>
 <g class="key keypos-8">
 <rect rx="6" ry="6" x="648" y="1404" width="52" height="52" class="key"/>
@@ -930,15 +930,15 @@ path.combo {
 </g>
 <g class="key keypos-16">
 <rect rx="6" ry="6" x="536" y="1460" width="52" height="52" class="key"/>
-<text x="562" y="1486" class="key tap">🡄</text>
+<text x="562" y="1486" class="key tap">←</text>
 </g>
 <g class="key keypos-17">
 <rect rx="6" ry="6" x="592" y="1453" width="52" height="52" class="key"/>
-<text x="618" y="1479" class="key tap">🡇</text>
+<text x="618" y="1479" class="key tap">↓</text>
 </g>
 <g class="key keypos-18">
 <rect rx="6" ry="6" x="648" y="1460" width="52" height="52" class="key"/>
-<text x="674" y="1486" class="key tap">🡆</text>
+<text x="674" y="1486" class="key tap">→</text>
 </g>
 <g class="key keypos-19">
 <rect rx="6" ry="6" x="704" y="1474" width="52" height="52" class="key"/>
@@ -1210,23 +1210,23 @@ path.combo {
 </g>
 <g class="key keypos-5">
 <rect rx="6" ry="6" x="480" y="2073" width="52" height="52" class="key"/>
-<text x="506" y="2099" class="key tap">MW🡄</text>
+<text x="506" y="2099" class="key tap">MW←</text>
 </g>
 <g class="key keypos-6">
 <rect rx="6" ry="6" x="536" y="2066" width="52" height="52" class="key"/>
-<text x="562" y="2092" class="key tap">MW🡇</text>
+<text x="562" y="2092" class="key tap">MW↓</text>
 </g>
 <g class="key keypos-7">
 <rect rx="6" ry="6" x="592" y="2059" width="52" height="52" class="key"/>
-<text x="618" y="2085" class="key tap">M🡅</text>
+<text x="618" y="2085" class="key tap">M↑</text>
 </g>
 <g class="key keypos-8">
 <rect rx="6" ry="6" x="648" y="2066" width="52" height="52" class="key"/>
-<text x="674" y="2092" class="key tap">MW🡅</text>
+<text x="674" y="2092" class="key tap">MW↑</text>
 </g>
 <g class="key keypos-9">
 <rect rx="6" ry="6" x="704" y="2080" width="52" height="52" class="key"/>
-<text x="730" y="2106" class="key tap">MW🡆</text>
+<text x="730" y="2106" class="key tap">MW→</text>
 </g>
 <g class="key keypos-10">
 <rect rx="6" ry="6" x="32" y="2136" width="52" height="52" class="key"/>
@@ -1252,15 +1252,15 @@ path.combo {
 </g>
 <g class="key keypos-16">
 <rect rx="6" ry="6" x="536" y="2122" width="52" height="52" class="key"/>
-<text x="562" y="2148" class="key tap">M🡄</text>
+<text x="562" y="2148" class="key tap">M←</text>
 </g>
 <g class="key keypos-17">
 <rect rx="6" ry="6" x="592" y="2115" width="52" height="52" class="key"/>
-<text x="618" y="2141" class="key tap">M🡇</text>
+<text x="618" y="2141" class="key tap">M↓</text>
 </g>
 <g class="key keypos-18">
 <rect rx="6" ry="6" x="648" y="2122" width="52" height="52" class="key"/>
-<text x="674" y="2148" class="key tap">M🡆</text>
+<text x="674" y="2148" class="key tap">M→</text>
 </g>
 <g class="key keypos-19">
 <rect rx="6" ry="6" x="704" y="2136" width="52" height="52" class="key"/>

@@ -17,15 +17,15 @@ parse_config:
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
 
-    '&mmv M_UP': M🡅
-    '&mmv M_DOWN': M🡇
-    '&mmv M_LEFT': M🡄
-    '&mmv M_RIGHT': M🡆
+    '&mmv M_UP': M↑
+    '&mmv M_DOWN': M↓
+    '&mmv M_LEFT': M←
+    '&mmv M_RIGHT': M→
 
-    '&mwh S_UP': MW🡅
-    '&mwh S_DOWN': MW🡇
-    '&mwh S_LEFT': MW🡄
-    '&mwh S_RIGHT': MW🡆
+    '&mwh S_UP': MW↑
+    '&mwh S_DOWN': MW↓
+    '&mwh S_LEFT': MW←
+    '&mwh S_RIGHT': MW→
 
     '&mkp LCLK': Left Click
     '&mkp RCLK': Right Click
@@ -66,7 +66,7 @@ parse_config:
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
-    RET: ⮠
+    RET: ⏎
     TAB: ↹
     DEL: ⌦
 
@@ -79,10 +79,10 @@ parse_config:
     PSCRN: Print Scrn
     PAUSE_BREAK: Pause Break
 
-    UP: 🡅
-    DOWN: 🡇
-    LEFT: 🡄
-    RIGHT: 🡆
+    UP: ↑
+    DOWN: ↓
+    LEFT: ←
+    RIGHT: →
 
     C_PP: ⏯
     C_NEXT: ⏭️

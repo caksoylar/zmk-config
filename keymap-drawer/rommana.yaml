@@ -30,7 +30,7 @@ layers:
   - {t: Esc, h: Ctrl}
   - {t: ⌫, h: NAV}
   - {t: ␣, h: SYM}
-  - {t: ⮠, h: Shift}
+  - {t: ⏎, h: Shift}
   BRD:
   - X
   - C
@@ -61,8 +61,8 @@ layers:
   - {t: Esc, h: Ctrl}
   - {t: ⌫, h: NAV}
   - {t: ␣, h: SYM}
-  - {t: ⮠, h: Shift}
-  GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Z, X, C, M, ',', ., Alt, ␣, NAV, ⮠]
+  - {t: ⏎, h: Shift}
+  GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Z, X, C, M, ',', ., Alt, ␣, NAV, ⏎]
   SYM:
   - '!'
   - '@'
@@ -102,7 +102,7 @@ layers:
   - Vol Up
   - Insert
   - Page Down
-  - 🡅
+  - ↑
   - Page Up
   - Calc
   - Ctrl
@@ -111,9 +111,9 @@ layers:
   - {t: ↹, h: Shift}
   - Vol Down
   - Home
-  - 🡄
-  - 🡇
-  - 🡆
+  - ←
+  - ↓
+  - →
   - End
   - Win Prev
   - Win Next
@@ -162,20 +162,20 @@ layers:
   - ''
   - ''
   - ''
-  - MW🡄
-  - MW🡇
-  - M🡅
-  - MW🡅
-  - MW🡆
+  - MW←
+  - MW↓
+  - M↑
+  - MW↑
+  - MW→
   - Ctrl
   - Gui
   - Alt
   - Shift
   - ''
   - ''
-  - M🡄
-  - M🡇
-  - M🡆
+  - M←
+  - M↓
+  - M→
   - ''
   - ''
   - ''

@@ -230,7 +230,7 @@ path.combo {
 </g>
 <g class="key keypos-29">
 <rect rx="6" ry="6" x="497" y="269" width="55" height="52" class="key"/>
-<text x="524" y="295" class="key tap">⮠</text>
+<text x="524" y="295" class="key tap">⏎</text>
 <text x="524" y="319" class="key hold">Shift</text>
 </g>
 <g class="combo combopos-0">
@@ -434,7 +434,7 @@ path.combo {
 </g>
 <g class="key keypos-29">
 <rect rx="6" ry="6" x="497" y="606" width="55" height="52" class="key"/>
-<text x="524" y="632" class="key tap">⮠</text>
+<text x="524" y="632" class="key tap">⏎</text>
 <text x="524" y="656" class="key hold">Shift</text>
 </g>
 <g class="combo combopos-0">
@@ -626,7 +626,7 @@ path.combo {
 </g>
 <g class="key keypos-29">
 <rect rx="6" ry="6" x="497" y="934" width="55" height="52" class="key"/>
-<text x="524" y="960" class="key tap">⮠</text>
+<text x="524" y="960" class="key tap">⏎</text>
 </g>
 </g>
 <g class="layer-SYM">
@@ -795,7 +795,7 @@ path.combo {
 </g>
 <g class="key keypos-7">
 <rect rx="6" ry="6" x="573" y="1389" width="55" height="52" class="key"/>
-<text x="600" y="1415" class="key tap">🡅</text>
+<text x="600" y="1415" class="key tap">↑</text>
 </g>
 <g transform="rotate(3.0, 667, 1433)" class="key keypos-8">
 <rect rx="6" ry="6" x="639" y="1407" width="55" height="52" class="key"/>
@@ -836,15 +836,15 @@ path.combo {
 </g>
 <g class="key keypos-16">
 <rect rx="6" ry="6" x="512" y="1461" width="55" height="52" class="key"/>
-<text x="540" y="1487" class="key tap">🡄</text>
+<text x="540" y="1487" class="key tap">←</text>
 </g>
 <g class="key keypos-17">
 <rect rx="6" ry="6" x="573" y="1447" width="55" height="52" class="key"/>
-<text x="600" y="1473" class="key tap">🡇</text>
+<text x="600" y="1473" class="key tap">↓</text>
 </g>
 <g transform="rotate(3.0, 664, 1491)" class="key keypos-18">
 <rect rx="6" ry="6" x="636" y="1465" width="55" height="52" class="key"/>
-<text x="664" y="1491" class="key tap">🡆</text>
+<text x="664" y="1491" class="key tap">→</text>
 </g>
 <g transform="rotate(8.0, 724, 1538)" class="key keypos-19">
 <rect rx="6" ry="6" x="696" y="1512" width="55" height="52" class="key"/>
@@ -1076,23 +1076,23 @@ path.combo {
 </g>
 <g class="key keypos-5">
 <rect rx="6" ry="6" x="451" y="2090" width="55" height="52" class="key"/>
-<text x="479" y="2116" class="key tap">MW🡄</text>
+<text x="479" y="2116" class="key tap">MW←</text>
 </g>
 <g class="key keypos-6">
 <rect rx="6" ry="6" x="512" y="2061" width="55" height="52" class="key"/>
-<text x="540" y="2087" class="key tap">MW🡇</text>
+<text x="540" y="2087" class="key tap">MW↓</text>
 </g>
 <g class="key keypos-7">
 <rect rx="6" ry="6" x="573" y="2046" width="55" height="52" class="key"/>
-<text x="600" y="2072" class="key tap">M🡅</text>
+<text x="600" y="2072" class="key tap">M↑</text>
 </g>
 <g transform="rotate(3.0, 667, 2090)" class="key keypos-8">
 <rect rx="6" ry="6" x="639" y="2064" width="55" height="52" class="key"/>
-<text x="667" y="2090" class="key tap">MW🡅</text>
+<text x="667" y="2090" class="key tap">MW↑</text>
 </g>
 <g transform="rotate(8.0, 732, 2138)" class="key keypos-9">
 <rect rx="6" ry="6" x="704" y="2112" width="55" height="52" class="key"/>
-<text x="732" y="2138" class="key tap">MW🡆</text>
+<text x="732" y="2138" class="key tap">MW→</text>
 </g>
 <g transform="rotate(-8.0, 68, 2195)" class="key keypos-10">
 <rect rx="6" ry="6" x="40" y="2169" width="55" height="52" class="key"/>
@@ -1118,15 +1118,15 @@ path.combo {
 </g>
 <g class="key keypos-16">
 <rect rx="6" ry="6" x="512" y="2119" width="55" height="52" class="key"/>
-<text x="540" y="2145" class="key tap">M🡄</text>
+<text x="540" y="2145" class="key tap">M←</text>
 </g>
 <g class="key keypos-17">
 <rect rx="6" ry="6" x="573" y="2104" width="55" height="52" class="key"/>
-<text x="600" y="2130" class="key tap">M🡇</text>
+<text x="600" y="2130" class="key tap">M↓</text>
 </g>
 <g transform="rotate(3.0, 664, 2148)" class="key keypos-18">
 <rect rx="6" ry="6" x="636" y="2122" width="55" height="52" class="key"/>
-<text x="664" y="2148" class="key tap">M🡆</text>
+<text x="664" y="2148" class="key tap">M→</text>
 </g>
 <g transform="rotate(8.0, 724, 2195)" class="key keypos-19">
 <rect rx="6" ry="6" x="696" y="2169" width="55" height="52" class="key"/>
