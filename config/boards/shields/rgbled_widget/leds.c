@@ -40,6 +40,7 @@ enum color_t {
 struct blink_item {
     enum color_t color;
     uint16_t duration_ms;
+    bool first_item;
 };
 
 // define message queue of blink work items, that will be processed by a separate thread
@@ -114,7 +115,8 @@ extern void led_thread(void *d0, void *d1, void *d2) {
 
 #if IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
     // check and indicate battery level on thread start
-    struct blink_item blink = {.duration_ms = CONFIG_RGBLED_WIDGET_BATTERY_BLINK_MS};
+    struct blink_item blink = {.duration_ms = CONFIG_RGBLED_WIDGET_BATTERY_BLINK_MS,
+                               .first_item = true};
     uint8_t battery_level = bt_bas_get_battery_level();
 
     if (battery_level >= CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_HIGH) {
@@ -129,13 +131,28 @@ extern void led_thread(void *d0, void *d1, void *d2) {
     }
 
     k_msgq_put(&led_msgq, &blink, K_NO_WAIT);
+
+    // reorder message queue so the first item is always the battery level
+    struct blink_item cur_item;
+    int err;
+    for (uint8_t item_no = 0; item_no < 16; item_no++) {
+        err = k_msgq_peek(&led_msgq, &cur_item);
+        if (err < 0 || cur_item.first_item) {
+            break;
+        }
+        LOG_DBG("Pushing blink item with color %d, duration %d to the end", cur_item.color,
+                cur_item.duration_ms);
+        k_msgq_get(&led_msgq, &cur_item, K_NO_WAIT);
+        k_msgq_put(&led_msgq, &cur_item, K_NO_WAIT);
+    }
 #endif // IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING)
 
     while (true) {
         // wait until a blink item is received and process it
         struct blink_item blink;
         k_msgq_get(&led_msgq, &blink, K_FOREVER);
-        LOG_DBG("Got a blink item from msgq, color %d, duration %d", blink.color, blink.duration_ms);
+        LOG_DBG("Got a blink item from msgq, color %d, duration %d", blink.color,
+                blink.duration_ms);
 
         // turn appropriate LEDs on
         for (uint8_t pos = 0; pos < 3; pos++) {
