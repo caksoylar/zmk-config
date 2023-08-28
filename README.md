@@ -5,9 +5,9 @@
 This is a [ZMK](https://zmk.dev) config repo for my 30-36 key split keyboards, arranged in 3 rows of 5 columns with 2 or 3 thumb keys on each side.
 The keymap is optimized to be usable with 30 keys, with dropped keys from inner index and pinky columns and two thumb keys each, like the [Hummingbird](https://github.com/PJE66/hummingbird) layout.
 Currently these keyboards are:
-- [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen)
-- A hand-wired [Rommana](https://github.com/AlaaSaadAbdo/Rommana)
-- [Hypergolic (1.2 BM variant)](https://github.com/davidphilipbarr/hypergolic)
+- [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys)
+- A hand-wired [Rommana](https://github.com/AlaaSaadAbdo/Rommana) (30 keys)
+- [Hypergolic (1.2 BM variant)](https://github.com/davidphilipbarr/hypergolic) (34 keys)
 
 It mainly uses three non-base layers activated through two thumb keys, along with combos. It has <kbd>Ctrl</kbd>/<kbd>Shift</kbd> thumb hold-taps along with home row mods, which are also available on the left side of `NAV` layer.
 `FUN` layer is implemented as a tri-layer, i.e. it is active when both `NAV` and `SYM` are active.
