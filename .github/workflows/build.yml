@@ -6,7 +6,7 @@ on:
       - config/west.yml
       - config/*.keymap
       - config/*.dtsi
-      - config/boards/
+      - config/boards/**
       - build.yaml
 
 jobs:
