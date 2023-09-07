@@ -35,7 +35,7 @@ parse_config:
 
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
-    combo_bspc:   {align: top, o: 0.15}
+    combo_del:    {align: top, o: 0.15}
     combo_capswd: {align: top}
     combo_f12:    {align: bottom}
     combo_btclr:  {align: bottom}
