@@ -25,7 +25,8 @@ OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
 - `Win Prev`: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Tab</kbd> (hold Alt while layer active)
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) -- check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
-![3x5 layout](./keymap-drawer/corneish_zen.svg)
+
+![Keymap Representation](./keymap-drawer/corneish_zen.svg?raw=true "Keymap Representation")
 
 See my [QMK userspace](https://github.com/caksoylar/qmk_userspace/) for equivalent keymap definitions for QMK.
 
