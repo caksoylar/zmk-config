@@ -15,13 +15,14 @@
       ╰───────╮ 26  27 │ │ 28  29 ╭───────╯
               ╰────────╯ ╰────────╯            */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP, ...) \
     combo_##NAME { \
         timeout-ms = <TERM>; \
         bindings = <BINDINGS>; \
         key-positions = <KEYPOS>; \
         layers = <LAYERS>; \
         global-quick-tap-ms = <QUICKTAP>; \
+		__VA_ARGS__ \
     };
 
 / {
@@ -65,15 +66,15 @@ COMBO(btclr,  &bt BT_CLR, 27 28, FUN,     100, 200)
 #ifdef MOUSE_KEYS
 #    ifdef THREE_THUMBS
 #        ifdef ALPHA_23332
-COMBO(mse_l,  &mo MSE,    27 28, DEF BRD, 100,   0)
+COMBO(mse_l,  &mo MSE,    27 28, DEF BRD, 150,   0, slow-release;)
 #        else
-COMBO(mse_l,  &mo MSE,    31 32, DEF BRD, 100,   0)
+COMBO(mse_l,  &mo MSE,    31 32, DEF BRD, 150,   0, slow-release;)
 #        endif
 #    else
 #        ifdef ALPHA_23332
-COMBO(mse_l,  &mo MSE,    26 27, DEF BRD, 100,   0)
+COMBO(mse_l,  &mo MSE,    26 27, DEF BRD, 150,   0, slow-release;)
 #        else
-COMBO(mse_l,  &mo MSE,    30 31, DEF BRD, 100,   0)
+COMBO(mse_l,  &mo MSE,    30 31, DEF BRD, 150,   0, slow-release;)
 #        endif
 #    endif
 #endif
