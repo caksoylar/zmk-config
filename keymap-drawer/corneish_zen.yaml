@@ -257,10 +257,8 @@ combos:
   a: top
   o: 0.15
 - p: [16, 18]
-  k: ⌫
+  k: ⌦
   l: [DEF, BRD]
-  a: top
-  o: 0.15
 - p: [13, 16]
   k: Caps Wrd
   l: [DEF, BRD]

@@ -92,10 +92,11 @@ path.combo {
 .icon-tabler > path {
     fill: inherit;
     stroke: inherit;
+    stroke-width: 2;
 }
 /* hide tabler's default box */
 .icon-tabler > path[stroke="none"][fill="none"] {
-    visibility: collapse;
+    visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
 </style>
@@ -285,10 +286,10 @@ path.combo {
 <text x="170" y="68" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-8">
-<path d="M674,68 h-57 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
-<path d="M674,68 h57 a6.0,6.0 0 0 1 6.0,6.0 v15" class="combo"/>
-<rect rx="6" ry="6" x="660" y="55" width="28" height="26" class="combo"/>
-<text x="674" y="68" class="combo tap">⌫</text>
+<path d="M674,106 l-43,-1" class="combo"/>
+<path d="M674,106 l43,1" class="combo"/>
+<rect rx="6" ry="6" x="660" y="93" width="28" height="26" class="combo"/>
+<text x="674" y="106" class="combo tap">⌦</text>
 </g>
 <g class="combo combopos-9">
 <path d="M422,76 h-183 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
@@ -502,10 +503,10 @@ path.combo {
 <text x="170" y="68" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-9">
-<path d="M674,68 h-57 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
-<path d="M674,68 h57 a6.0,6.0 0 0 1 6.0,6.0 v15" class="combo"/>
-<rect rx="6" ry="6" x="660" y="55" width="28" height="26" class="combo"/>
-<text x="674" y="68" class="combo tap">⌫</text>
+<path d="M674,106 l-43,-1" class="combo"/>
+<path d="M674,106 l43,1" class="combo"/>
+<rect rx="6" ry="6" x="660" y="93" width="28" height="26" class="combo"/>
+<text x="674" y="106" class="combo tap">⌦</text>
 </g>
 <g class="combo combopos-10">
 <path d="M422,76 h-183 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>

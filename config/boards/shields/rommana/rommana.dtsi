@@ -25,13 +25,15 @@ RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)   RC(1,9) RC(1,8) RC(1,7) RC(1,6) RC(1,5
     };
 
     bootloader_key_left: bootloader_key_left {
-        compatible = "zmk,startup-bootloader-key";
+        compatible = "zmk,boot-magic-key";
         key-position = <0>;
+        jump-to-bootloader;
         status = "disabled";
     };
     bootloader_key_right: bootloader_key_right {
-        compatible = "zmk,startup-bootloader-key";
+        compatible = "zmk,boot-magic-key";
         key-position = <9>;
+        jump-to-bootloader;
         status = "disabled";
     };
 };
