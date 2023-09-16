@@ -1,0 +1,10 @@
+#define THREE_THUMBS
+#define MOUSE_KEYS
+
+#include "3x5.dtsi"
+
+/ {
+    chosen {
+        zmk,matrix_transform = &five_column_transform;
+    };
+};
