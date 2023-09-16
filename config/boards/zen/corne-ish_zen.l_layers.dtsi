@@ -1,0 +1,87 @@
+/*
+ Building for a 36 key on a 42 key board (outside column is unused)
+ */
+
+//                                     shorcuts & Navigation
+//╭────────────────────────────────────────────╮ ╭──────────────────────────────────────────╮
+//|  close |   quit  | ScrCp | SelCp |   ESC   | |       |  HOME  |   UP   |  PG_UP |       |
+//|   ctrl |   alt   |  gui  |  shft |   Find  | | Lword |  LEFT  |  DOWN  |   RGT  | Rword |
+//|  undo  |   cut   |  copy |  pste | findAgn | |       |   END  |        |  PG_DN |       |
+//╰──────────────────╮       | dwdlt |  dwdrt  | |  back |  fwd   |        ╭────────────────╯
+//                   ╰─────────────────────────╯ ╰─────────────────────────╯
+                l_nav {
+                    label = "l_nav";
+                    bindings = <
+&none &kp RG(W) &kp RG(Q) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp ESC  &kp LG(EQUAL) &kp HOME &kp UP     &kp PG_UP &none         &none
+&none &kp LCTRL  &kp LALT &kp LGUI &kp LSHFT   &kp RG(F)             &kp LA(LEFT)  &kp LEFT &kp DOWN   &kp RIGHT &kp LA(RIGHT) &none
+&none &kp RG(Z)  &kp RG(X) &kp RG(C) &kp RG(V) &kp RG(G)             &kp LG(MINUS) &kp END  &kp LG(N0) &kp PG_DN &none         &none
+                 &mo l_cfg &S_AppSwitch    &AppSwitch        &kp LG(LBKT) &kp LG(RBKT) &mo l_cfg
+                    >;
+                };
+
+//                                       Symbol & math
+//╭────────────────────────────────────────────╮ ╭──────────────────────────────────────────╮
+//|    Z   |    Q    | ScrCp | SelCp |   ESC   | |   ¢   |    $   |    €   |    £   |   ¥   |
+//|    <   |    [    |   (   |   {   |   TAB   | |   ¡   |    *   |    =   |    +   |   /   |
+//|    >   |    ]    |   )   |   }   |   RET   | |   _   |    |   |    &   |    ^   |   %   |
+//╰──────────────────╮       |  BKSP |   DEL   | |       |    °   |    ·   ╭────────────────╯
+//                   ╰─────────────────────────╯ ╰─────────────────────────╯
+                l_sym {
+                    label = "l_sym";
+                    bindings = <
+&none &kp Z &kp Q &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp ESC             &kp RA(N4) &kp DLLR  &kp LA(LS(N2)) &kp LA(N3) &kp RA(Y)  &none
+&none &lk_ltgt GT LT  &lk_bkt RBKT LBKT &lk_par RPAR LPAR &lk_brc RBRC LBRC &kp TAB  &kp LA(N1) &mt RSHFT STAR  &mt RGUI EQUAL &mt RALT PLUS  &mt LCTRL FSLH   &none
+&none &kp GT  &kp RBKT &kp RPAR &kp RBRC &kp RETURN                     &kp MINUS  &kp PIPE  &kp AMPS     &kp CARET &kp PRCNT  &none
+                &kp LC(LG(TAB)) &kp LA(BSPC)   &kp LA(DEL)              &none      &kp LA(N0) &kp LA(LS(9))
+                    >;
+                };
+
+//                                         Fkey & Num Row (optimized)
+//╭────────────────────────────────────────────╮ ╭───────────────────────────────────────╮
+//|    F9   |  F10   |  F11   |  F12   |  F13  | |   `   |   6   |   7   |   8   |   \   |
+//|   C/F5  |  A/F6  |  G/F7  |  S/F8  |  F14  | |   ,   |  S/1  |  G/5  |  A/9  |  C//  |
+//|    F1   |   F2   |   F3   |   F4   |  F15  | |   -   |   2   |   3   |   4   |   =   |
+//╰──────────────────╮        |  dwdlt | dwdrt | |   0   |   .   |   ;   ╭───────────────╯
+//                   ╰─────────────────────────╯ ╰───────────────────────╯
+
+                    l_fn {
+                        label = "l_fn";
+                        bindings = <
+
+&none &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp GRAVE &kp N7       &kp N8      &kp N9      &kp BSLH       &none
+&none &mt LCTRL F5 &mt LALT F6 &mt LGUI F7  &mt LSHFT F8 &kp F14 &kp CMMA  &mt RSHFT N1 &mt RGUI N2 &mt RALT N3 &mt LCTRL FSLH &none
+&none &kp F1       &kp F2      &kp F3       &kp F4       &kp F15 &kp MINUS &kp N4       &kp N5      &kp N6      &kp EQUAL      &none
+                   &sl l_cfg   &kp BSPC     &kp DEL      &kp KP_N0    &kp DOT      &kp SEMI
+                        >;
+                };
+
+
+//                                          Nav & NumPad (standard)
+//╭────────────────────────────────────────────╮ ╭────────────────────────────────────────╮
+//|   TAB  |  HOME  |   UP   |  PG_UP |  ESC   | |    /   |   7   |   8   |   9   |   -   |
+//|  Lword |  LEFT  |  DOWN  |   RGT  | Rword  | |    *   |   4   |   5   |   6   |   +   |
+//|   SPC  |   END  |  DOWN  |  PG_DN |  RET   | |    ,   |   1   |   2   |   3   |   =   |
+//╰─────────────────╮ toggle |  dwlft | dwdrt  | |    0   |   .   |   c   ╭───────────────╯
+//                  ╰──────────────────────────╯ ╰────────────────────────╯
+                    l_num {
+                        label = "l_num";
+                        bindings = <
+
+&none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
+&none &kp LA(LEFT) &kp LEFT  &kp DOWN  &kp RIGHT  &kp LA(RIGHT) &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt RGUI KP_N5 &mt RALT KP_N6 &mt LCTRL KP_PLUS  &none
+&none &kp DEL   &kp END &kp TAB &kp PG_DN  &kp SPC     &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
+                     &tog l_num &lt l_fn BSPC &lt l_nav KP_ENTER     &kp KP_N0  &kp KP_DOT  &kp C
+                        >;
+                };
+
+//                                     Keyboard & System Settings
+                    l_cfg {
+                        label = "l_cfg";
+                        bindings = <
+//&none &none &none &none &none &none &none &none &none &none &none &none
+&bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &none        &none        &none      &none      &none &none
+&none        &none        &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_VOL_UP &kp C_MUTE &kp C_NEXT &none &none
+&none        &bootloader  &kp C_PREV   &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN &kp C_BRI_DN &kp C_VOL_DN &kp C_PP   &kp C_PREV   &none  &none
+                                &none  &none &tog l_num     &none   &none        &none
+                        >;
+                };
