@@ -1,49 +1,26 @@
-# zmk-config
+# [**Hands Down**](http://handsdownlayout.com) on ![zen pic](zenlogo.png)
 
-## Keymap
+![zen pic](zen.jpg)
 
-This is a [ZMK](https://zmk.dev) config repo for my 30-36 key split keyboards, arranged in 3 rows of 5 columns with 2 or 3 thumb keys on each side.
-The keymap is optimized to be usable with 30 keys, with dropped keys from inner index and pinky columns and two thumb keys each, like the [Hummingbird](https://github.com/PJE66/hummingbird) layout.
-Currently these keyboards are:
-- [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys)
-- A hand-wired [Rommana](https://github.com/AlaaSaadAbdo/Rommana) (30 keys)
-- [Hypergolic (1.2 BM variant)](https://github.com/davidphilipbarr/hypergolic) (34 keys)
+My personal instance of [**Hands Down**](http://handsdownlayout.com) on a [Corne-ish *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/), including all my add-on features, (using only *very customized* ZMK behaviors), no custom code.
 
-It mainly uses three non-base layers activated through two thumb keys, along with combos. It has <kbd>Ctrl</kbd>/<kbd>Shift</kbd> thumb hold-taps along with home row mods, which are also available on the left side of `NAV` layer.
-`FUN` layer is implemented as a tri-layer, i.e. it is active when both `NAV` and `SYM` are active.
+```
+     ╭─────────────────────╮ ╭──────────────────────╮
+ESC  │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ BSP
+TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
+LSFT │  V   F   L   D   /* │ │  -+   U   O   Y   P  │ RSFT
+     ╰──────╮  App BSP  R  │ │  SPC RET TAB  ╭──────╯
+            ╰──────────────╯ ╰───────────────╯
+```
+[***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (a.k.a *Neu-vv*) is great with all the other [smart behaviors](https://sites.google.com/alanreiser.com/handsdown#h.8ngiif20qf4). Currently I have most of the *essential* combos (`Qu`,`Z`, `Undo`, `Cut`, `Copy`, `Paste`, etc.), *and* **`H` digraph combos** *to send* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams* (`PH` is a SFB on vv, which I always type with `PY` combo). There's a ZMK take on [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) (*using macros and sticky layers*) and [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*using macros and hold-tap behaviors*). They behave a bit differently than in QMK, but are quite usable. Eventually I hope to deploy a properly coded solution to these features.
 
-The default alpha layer is a modification of Colemak-DH and an alternative is the [Bird layout](https://github.com/jcmkk3/bird-layout) by @jcmkk3.
+Templates for [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) and [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) are in the works.
 
-OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
-- `Win Close`: <kbd>Alt</kbd><kbd>F4</kbdy>
-- `Tab Next`: <kbd>Ctrl</kbd><kbd>Tab</kbd>
-- `Tab Prev`: <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd>
-- `Tab Close`: <kbd>Ctrl</kbd><kbd>F4</kbd>
-- `Desk Next`: <kbd>Ctrl</kbd><kbd>Gui</kbd><kbd>Right</kbd>
-- `Desk Prev`: <kbd>Ctrl</kbd><kbd>Gui</kbd><kbd>Left</kbd>
-- `Win Next`: <kbd>Alt</kbd><kbd>Tab</kbd> (hold Alt while layer active) using zmkfirmware/zmk#1366
-- `Win Prev`: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Tab</kbd> (hold Alt while layer active)
 
-Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) -- check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
+Currently building only for a Mac (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this too is for later.
 
-![Keymap Representation](./keymap-drawer/corneish_zen.svg?raw=true "Keymap Representation")
+ Below is a much simplified view of my zen keymap (*no adaptive or config layers, many combos not shown*).
 
-See my [QMK userspace](https://github.com/caksoylar/qmk_userspace/) for equivalent keymap definitions for QMK.
+![zen keymap](zen_keymap.png)
 
-## ZMK customizations
-
-I use a custom ZMK branch referenced in [west.yml](config/west.yml) which contains a few extras, namely [mouse keys](https://github.com/zmkfirmware/zmk/pull/778) used in the `MSE` layer, [global quick tap for combos](https://github.com/zmkfirmware/zmk/pull/1387), [swapper behavior](https://github.com/zmkfirmware/zmk/pull/1366) and [display improvements for the Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a).
-For a variant of my configuration tailored for stock ZMK, check out the [`stock` branch](https://github.com/caksoylar/zmk-config/tree/stock).
-
-## Custom shields
-
-This repo also contains shield definitions for a few keyboards using Pro Micro format daughterboards:
-- [`choc_ergo`](https://keypcb.xyz/choc_ergo)
-- [`hypergolic`](https://github.com/davidphilipbarr/hypergolic) -- you should probably use [the official Cradio shield](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio/) instead
-- [`ffkb` v1](https://fingerpunch.xyz/product/faux-fox-keyboard/) with an OLED, building upon [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-ffkb) and [NCKiser's](https://github.com/NCKiser/zmk-ffkb) definitions
-- [`swweeep`](https://github.com/sadekbaroudi/sweep36) using [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-swweeep) definition
-
-## LED indicators widget
-
-This repo also contains an indicator widget to be used with an RGB LED, like the user LEDs on a Xiao BLE.
-Check out the [`rgbled_widget` shield](config/boards/shields/rgbled_widget/) which you can try by putting in your own config repo and adding the `rgbled_widget` in your `build.yaml`, like [this](build.yaml#L23).
+Thanks to [jcmkk3](https://github.com/jcmkk3) for the idea to implement adaptives via sticky layers, and many others on the [**Hands Down** Discord](https://discord.gg/BC3fzb2E) for the endless creativity and support. Of course, huge thanks to [Pete Johanson](https://github.com/petejohanson) *and contributors* for ZMK, and to [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the rather amazing [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board. Also thanks to [caksoylar](https://github.com/caksoylar) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer) used to make the keymap images above.
