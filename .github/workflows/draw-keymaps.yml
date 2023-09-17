@@ -1,7 +1,7 @@
 # Draw keymap diagrams using keymap-drawer ZMK user config workflow
 name: Draw ZMK keymaps
 on:
-  workflow_dispatch:
+#  workflow_dispatch:
   push:
     paths:
       - 'config/*.keymap'
