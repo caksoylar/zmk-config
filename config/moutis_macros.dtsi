@@ -24,7 +24,7 @@
                 , <&macro_pause_for_release> // enable repeats...
                 , <&macro_release &kp TAB> // stop repeating
                 , <&macro_release &kp LSHFT> //
-                , <&skapp LGUI> // this will release GUI after a timeout
+                , <&sk LGUI> // this will release GUI after a timeout
                 , <&macro_release &kp LGUI> // now release the previous hold
                 ;
         )
