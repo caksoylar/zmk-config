@@ -121,6 +121,11 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 &caps_word {
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
 };
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
 
 
 #define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
