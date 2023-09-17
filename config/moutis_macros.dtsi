@@ -516,6 +516,18 @@
                 ;
         };
 // YOU
+        typePnYour: pnYour {
+            label = "pnYour";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp Y>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp O &kp U &kp R &kp SPACE>
+                ;
+        };
         typePnYoure: pnYoure {
             label = "pnYoure";
             compatible = "zmk,behavior-macro";
