@@ -2,7 +2,7 @@
 
 ![zen pic](zen.jpg)
 
-My personal instance of [**Hands Down**](http://handsdownlayout.com) on a [Corne-ish *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/), including all my add-on features, (using only *very customized* ZMK behaviors), no custom code.
+My personal ZMK instance of [**Hands Down**](http://handsdownlayout.com) on small portable boards, like [Corne-ish *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/), [Zaphod](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/), [*Bad Wings Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/), and others.
 
 ```
      ╭─────────────────────╮ ╭──────────────────────╮
