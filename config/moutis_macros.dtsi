@@ -1,14 +1,23 @@
  
 
     macros {
-
+/*
+    ZMK_MACRO(AppSwitch,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings =  <&macro_press &kp LGUI> // leave GUI down to keep menu up
+                , <&macro_tap &kp TAB> // combines with shift fine
+                , <&skapp LGUI> // this will release GUI after a timeout
+                        ;
+        )
+*/
     ZMK_MACRO(AppSwitch,
             wait-ms = <10>;
             tap-ms = <10>;
         bindings =  <&macro_press &kp LGUI> // leave GUI down to keep menu up
                 , <&macro_tap &kp TAB> // combines with shift fine
                 , <&macro_tap &sk LGUI> // this will release GUI after a timeout
-                , <&macro_release &kp LGUI> // now release the previous hold
+//                , <&macro_release &kp LGUI> // now release the previous hold
                         ;
         )
 
