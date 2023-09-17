@@ -1151,8 +1151,11 @@ combos:
 - p: [21, 28]
   k: '&typePnId'
   l: [HD-Vv]
-- p: [21, 29]
+- p: [21, 25]
   k: '&typePnIve'
+  l: [HD-Vv]
+- p: [33, 36]
+  k: '&typePnYour'
   l: [HD-Vv]
 - p: [33, 26]
   k: '&typePnYoure'
@@ -1163,7 +1166,7 @@ combos:
 - p: [33, 28]
   k: '&typePnYoud'
   l: [HD-Vv]
-- p: [33, 29]
+- p: [33, 25]
   k: '&typePnYouve'
   l: [HD-Vv]
 - p: [1, 36]
