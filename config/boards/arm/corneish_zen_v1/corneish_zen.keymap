@@ -16,12 +16,12 @@
   };
 };
 
-#include "../../moutis_config.h"
+#include "../../../moutis_config.h"
 
 / {
-#include "../../moutis_behaviors.dtsi"
-#include "../../moutis_macros.dtsi"
-#include "../../moutis_combos.dtsi"
+#include "../../../moutis_behaviors.dtsi"
+#include "../../../moutis_macros.dtsi"
+#include "../../../moutis_combos.dtsi"
 
         keymap {
         compatible = "zmk,keymap";
