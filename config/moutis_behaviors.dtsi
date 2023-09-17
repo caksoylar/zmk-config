@@ -31,7 +31,7 @@ behaviors {
         #binding-cells = <1>;
         bindings = <&kp>;
         release-after-ms = <2000>;
-        quick-release;
+//        quick-release;
       };
         mm_bspc_del: mm_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
