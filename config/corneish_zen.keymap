@@ -5,4 +5,4 @@
 *
 */
 
-#include "boards/arm/corneish_zen_v1/corneish_zen.keymap"
+#include "boards/arm/corneish_zen/corneish_zen.keymap"
