@@ -10,7 +10,8 @@
                   , <&macro_tap &kp TAB> // combines with shift fine
                   , <&macro_pause_for_release> // hold menu up...
                   , <&skapp LGUI> // this should release GUI after a timeout
-//                  , <&macro_release &kp LGUI> // release the previous hold
+                  , <&macro_wait_time 45>
+                  , <&macro_release &kp LGUI> // release the previous hold
                   ;
         )
     ZMK_MACRO(S_AppSwitch,
