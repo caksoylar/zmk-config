@@ -17,11 +17,10 @@
             wait-ms = <20>;
             tap-ms = <20>;
         bindings =  <&macro_press &kp LGUI> // leave GUI down to keep menu up
-                  , <&macro_press &kp LSHFT> //
-                  , <&macro_press &kp TAB> // combines with shift fine
+                  , <&macro_press &kp S(TAB)> // combines with shift fine
+                  , <&macro_pause_for_release> // enable repeats...
                   , <&skapp LGUI> // this will release GUI after a timeout
                   , <&macro_release &kp LGUI> // now release the previous hold
-                  , <&macro_release &kp LSHFT> //
                   ;
         )
 
