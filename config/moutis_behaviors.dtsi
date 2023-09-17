@@ -27,12 +27,11 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 behaviors {
       skapp: sticky_key_app_switcher {
         compatible = "zmk,behavior-sticky-key";
-        label = "sticky_key_app_switcher";
+        label = "SK_APP_SWITCHER";
         #binding-cells = <1>;
         bindings = <&kp>;
         release-after-ms = <2000>;
         quick-release;
-//        ignore-modifiers;
       };
         mm_bspc_del: mm_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
