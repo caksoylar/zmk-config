@@ -124,7 +124,7 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 &sk {
     release-after-ms = <2000>;
 #    quick-release;
-    /delete-property/ ignore-modifiers;
+#    /delete-property/ ignore-modifiers;
 };
 
 
