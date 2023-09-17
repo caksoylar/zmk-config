@@ -13,8 +13,8 @@
 #
 ---
 include:
-  - board: corneish_zen_left
-  - board: corneish_zen_right
+  - board: corneish_zen_v1_left
+  - board: corneish_zen_v1_right
 #  - board: nice_nano_v2
 #    shield: hypergolic_left
 #  - board: nice_nano_v2
