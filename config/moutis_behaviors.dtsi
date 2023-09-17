@@ -30,7 +30,7 @@ behaviors {
         label = "SK_APP_SWITCHER";
         #binding-cells = <1>;
         bindings = <&kp>;
-        release-after-ms = <2000>;
+        release-after-ms = <1000>;
         quick-release;
       };
         mm_bspc_del: mm_backspace_delete {
