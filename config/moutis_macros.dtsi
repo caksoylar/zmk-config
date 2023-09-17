@@ -9,8 +9,8 @@
                   , <&macro_press &kp TAB> // combines with shift fine
                   , <&macro_pause_for_release> // enable repeats...
                   , <&macro_release &kp TAB> // stop repeating
-                  , <&sk LGUI> // this will release GUI after a timeout
-                  , <&macro_release &kp LGUI> // now release the previous hold
+                  , <&skapp LGUI> // this will release GUI after a timeout
+//                  , <&macro_release &kp LGUI> // now release the previous hold
                   ;
         )
     ZMK_MACRO(S_AppSwitch,
@@ -22,8 +22,8 @@
                   , <&macro_pause_for_release> // enable repeats...
                   , <&macro_release &kp TAB> // stop repeating
                   , <&macro_release &kp LSHFT> //
-                  , <&sk LGUI> // this will release GUI after a timeout
-                  , <&macro_release &kp LGUI> // now release the previous hold
+                  , <&skapp LGUI> // this will release GUI after a timeout
+//                  , <&macro_release &kp LGUI> // now release the previous hold
                   ;
         )
 
