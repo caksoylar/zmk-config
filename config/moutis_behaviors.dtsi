@@ -30,7 +30,7 @@ behaviors {
         label = "SK_APP_SWITCHER";
         #binding-cells = <1>;
         bindings = <&kp>;
-        release-after-ms = <1300>;
+        release-after-ms = <900>;
       };
         mm_bspc_del: mm_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
