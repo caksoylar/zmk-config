@@ -3,7 +3,7 @@
     macros {
 
     ZMK_MACRO(AppSwitch,
-            wait-ms = <30>;
+            wait-ms = <40>;
             tap-ms = <25>;
         bindings =
                     <&macro_press &kp RGUI> // leave GUI down to keep menu up
@@ -16,7 +16,7 @@
                   ;
         )
     ZMK_MACRO(S_AppSwitch,
-            wait-ms = <30>;
+            wait-ms = <40>;
             tap-ms = <25>;
         bindings =
                     <&macro_press &sk RGUI> // leave GUI down to keep menu up
