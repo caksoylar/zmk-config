@@ -7,17 +7,17 @@
                     <&macro_press &kp RGUI> // leave GUI down to keep menu up
                   , <&macro_tap &kp TAB> // combines with shift fine
                   , <&macro_pause_for_release> // hold menu up...
-                  , <&skapp LGUI> // release other GUI after a timeout
+                  , <&macro_tap &skapp LGUI> // release other GUI after a timeout
                   , <&macro_release &kp RGUI> // release the previous hold
                   ;
         )
     ZMK_MACRO(S_AppSwitch,
         bindings =
-                  <&macro_press &sk RGUI> // leave GUI down to keep menu up
+                  <&macro_press &kp RGUI> // leave GUI down to keep menu up
                 , <&macro_tap &kp S(TAB)> //
                 , <&macro_pause_for_release> // hold menu up...
-                , <&skapp LGUI> // release other GUI after a timeout
-                , <&macro_release &sk RGUI> // now release the previous hold
+                , <&macro_tap &skapp LGUI> // release other GUI after a timeout
+                , <&macro_release &kp RGUI> // now release the previous hold
                 ;
         )
 
