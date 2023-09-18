@@ -17,8 +17,10 @@
             wait-ms = <30>;
             tap-ms = <25>;
         bindings =
-                  <&macro_press &sk RGUI> // leave GUI down to keep menu up
-                , <&macro_tap &kp S(TAB)> //
+                  <&macro_press &kp LSHFT> //
+                , <&macro_press &sk RGUI> // leave GUI down to keep menu up
+                , <&macro_tap &kp TAB> //
+                  <&macro_release &kp LSHFT> //
                 , <&macro_pause_for_release> // hold menu up...
                 , <&skapp LGUI> // release other GUI after a timeout
                 , <&macro_release &sk RGUI> // now release the previous hold
