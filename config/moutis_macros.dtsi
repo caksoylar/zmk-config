@@ -8,8 +8,8 @@
         bindings =
                     <&macro_press &skapp LGUI> // leave GUI down to keep menu up
                   , <&macro_tap &kp TAB> // combines with shift fine
-//                  , <&macro_pause_for_release> // hold menu up...
-                  , <&macro_wait_time 15>
+                  , <&macro_pause_for_release> // hold menu up...
+                  , <&macro_wait_time 10>
                   , <&skapp LGUI> // this should release GUI after a timeout
                   , <&macro_wait_time 50>
                   , <&macro_release &skapp LGUI> // release the previous hold
