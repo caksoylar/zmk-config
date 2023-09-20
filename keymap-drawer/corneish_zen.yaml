@@ -6,11 +6,11 @@ layers:
   - '&ak_w'
   - '&ak_m'
   - '&ak_g'
-  - {t: '"', s: '['}
+  - '&ak_j'
   - {t: '#', s: $}
   - {t: '&dot_ak', s: ':'}
-  - {t: '''', s: ']'}
-  - '&ak_j'
+  - {t: '''', s: '['}
+  - {t: '"', s: ']'}
   - '&ak_b'
   - ⌫
   - ↹
@@ -981,14 +981,14 @@ layers:
   - Vol Down
   - ⏯
   - ⏮️
+  - Boot
   - ''
-  - ''
-  - {type: held}
+  - {t: Reset, type: held}
   - ''
   - {t: l_num, type: held}
   - ''
   - ''
-  - ''
+  - Reset
 combos:
 - p: [14, 15, 16]
   k: LANG2
