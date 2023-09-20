@@ -996,7 +996,7 @@ combos:
   k: LANG1
 - p: [39, 40]
   k: l_cfg
-- p: [4, 5]
+- p: [14, 16]
   k: '&AppSwitch'
 - p: [15, 16, 19, 20]
   k: Caps Wrd
@@ -1008,7 +1008,7 @@ combos:
   k: LG(RETURN)
 - p: [28, 29]
   k: RETURN
-- p: [1, 2]
+- p: [4, 5]
   k: ↹
   a: top
   o: 0.15
@@ -1052,7 +1052,7 @@ combos:
 - p: [2, 4]
   k: {t: '&Qu U', h: Q}
   l: [HD-Vv]
-- p: [14, 16]
+- p: [1, 2]
   k: Z
   l: [HD-Vv]
 - p: [7, 9]

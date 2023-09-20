@@ -317,8 +317,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M420,88 l-205,-3" class="combo"/>
@@ -351,10 +353,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-8">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -444,10 +446,8 @@ path.combo {
 <text x="196" y="46" class="combo hold">Q</text>
 </g>
 <g class="combo combopos-25">
-<path d="M196,91 l-37,0" class="combo"/>
-<path d="M196,91 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
-<text x="196" y="91" class="combo tap">Z</text>
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap">Z</text>
 </g>
 <g class="combo combopos-26">
 <path d="M644,35 l-37,0" class="combo"/>
@@ -873,8 +873,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -887,10 +889,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -1123,8 +1125,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -1137,10 +1141,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -1373,8 +1377,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -1387,10 +1393,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -1623,8 +1629,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -1637,10 +1645,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -1873,8 +1881,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -1887,10 +1897,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -2123,8 +2133,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -2137,10 +2149,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -2373,8 +2385,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -2387,10 +2401,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -2623,8 +2637,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -2637,10 +2653,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -2873,8 +2889,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -2887,10 +2905,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -3123,8 +3141,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -3137,10 +3157,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -3373,8 +3393,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -3387,10 +3409,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -3623,8 +3645,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -3637,10 +3661,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -3873,8 +3897,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -3887,10 +3913,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -4123,8 +4149,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -4137,10 +4165,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -4373,8 +4401,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -4387,10 +4417,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -4623,8 +4653,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -4637,10 +4669,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -4873,8 +4905,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -4887,10 +4921,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -5119,8 +5153,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -5133,10 +5169,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -5370,8 +5406,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -5384,10 +5422,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -5625,8 +5663,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -5639,10 +5679,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -5918,8 +5958,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -5932,10 +5974,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
@@ -6248,8 +6290,10 @@ path.combo {
 <text x="522" y="219" class="combo tap">l_cfg</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
-<text x="280" y="38" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
+<path d="M196,91 l-37,0" class="combo"/>
+<path d="M196,91 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="78" width="28" height="26" class="combo"/>
+<text x="196" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;AppSwitch</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M252,147 l-37,-5" class="combo"/>
@@ -6262,10 +6306,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">RETURN</text>
 </g>
 <g class="combo combopos-6">
-<path d="M112,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M112,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
-<rect rx="6" ry="6" x="98" y="-15" width="28" height="26" class="combo"/>
-<text x="112" y="-2" class="combo tap">↹</text>
+<path d="M280,-2 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M280,-2 h22 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="266" y="-15" width="28" height="26" class="combo"/>
+<text x="280" y="-2" class="combo tap">↹</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
