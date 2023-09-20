@@ -8,8 +8,9 @@
         bindings =
                     <&macro_press &kp RGUI>    // leave GUI down to keep menu up
                   , <&macro_tap &kp TAB>       // (use press for repeat)
-                  , <&mo l_nav>                // to navigate the app menu
+                  , <&tog l_nav>               // to navigate the app menu
                   , <&macro_pause_for_release> // hold to keep menu up or for repeat ...
+                  , <&tog l_nav>               // done navigating
                   , <&macro_tap &skapp LGUI>   // release other GUI after a timeout
                   , <&macro_release &kp RGUI>  // release the previous hold
                   ;
