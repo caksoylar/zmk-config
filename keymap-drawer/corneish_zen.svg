@@ -125,8 +125,7 @@ path.combo {
 </g>
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&quot;</text>
-<text x="0" y="-24" class="key shifted">[</text>
+<text x="0" y="0" class="key tap">&amp;ak_j</text>
 </g>
 <g transform="translate(532, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -141,11 +140,12 @@ path.combo {
 <g transform="translate(644, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">&#x27;</text>
-<text x="0" y="-24" class="key shifted">]</text>
+<text x="0" y="-24" class="key shifted">[</text>
 </g>
 <g transform="translate(700, 35)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;ak_j</text>
+<text x="0" y="0" class="key tap">&quot;</text>
+<text x="0" y="-24" class="key shifted">]</text>
 </g>
 <g transform="translate(756, 49)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -6250,12 +6250,14 @@ path.combo {
 </g>
 <g transform="translate(756, 161)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Boot</text>
 </g>
 <g transform="translate(812, 161)" class="key ghost keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
 </g>
 <g transform="translate(224, 205)" class="key held keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">Reset</text>
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -6272,6 +6274,7 @@ path.combo {
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Reset</text>
 </g>
 <g class="combo combopos-0">
 <path d="M196,89 l-37,2" class="combo"/>
