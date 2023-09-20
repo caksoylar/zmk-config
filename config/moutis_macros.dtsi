@@ -7,12 +7,10 @@
             tap-ms = <20>;
         bindings =
                     <&macro_press &kp RGUI>    // leave GUI down to keep menu up
-                  , <&macro_tap &kp TAB>       // just tap for no repeat
-//                  , <&macro_press &kp TAB>     // or press (and hold) for repeating
+                  , <&macro_tap &kp TAB>       // (use press for repeat)
                   , <&tog l_nav>               // to navigate the app menu
                   , <&macro_pause_for_release> // hold to keep menu up or for repeat ...
                   , <&tog l_nav>               // done navigating
-//                  , <&macro_release &kp TAB>   // stop repeating
                   , <&macro_tap &skapp LGUI>   // release other GUI after a timeout
                   , <&macro_release &kp RGUI>  // release the previous hold
                   ;
@@ -24,9 +22,7 @@
                     <&macro_press &sk RGUI> // leave GUI down to keep menu up
                   , <&macro_press &kp LSHFT> //
                   , <&macro_tap &kp TAB> // just tap for no repeat
-//                  , <&macro_press &kp TAB> // or press (and hold) for repeating
                   , <&macro_pause_for_release> // hold for repeat ...
-//                  , <&macro_release &kp TAB> // stop repeating
                   , <&macro_release &kp LSHFT> //
                   , <&macro_tap &skapp LGUI> // release other GUI after a timeout
                   , <&macro_release &sk RGUI> // now release the previous hold
