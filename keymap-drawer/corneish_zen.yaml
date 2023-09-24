@@ -1008,10 +1008,12 @@ combos:
   k: LG(RETURN)
 - p: [28, 29]
   k: RETURN
-- p: [1, 2]
+- p: [26, 28]
   k: ↹
   a: top
   o: 0.15
+- p: [26, 27, 28]
+  k: Win Prev
 - p: [16, 17]
   k: ␣
 - p: [13, 16]
@@ -1021,14 +1023,14 @@ combos:
 - p: [25, 29]
   k: '&m_selword'
   l: [HD-Vv]
-- p: [26, 28]
+- p: [25, 26]
   k: LG(Z)
-- p: [26, 27, 28]
+- p: [25, 26, 27]
   k: LG(LS(Z))
 - p: [26, 27]
   k: {t: LG(C), h: LG(X)}
 - p: [27, 28]
-  k: {t: LG(V), h: LG(LS(LA(KC V)))}
+  k: {t: LG(V), h: LG(LS(LA(V)))}
 - p: [14, 26]
   k: LG(W)
   l: [HD-Vv]
