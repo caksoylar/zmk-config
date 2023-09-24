@@ -93,7 +93,6 @@ COMBO_LAYER(typeGrav, &kp GRAVE,    RT3 RT4, l_alpha)
 COMBO_LAYER(typeatMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
 COMBO_LAYER(typeUnder, &kp UNDER,   RB1 RB3, l_alpha) // _
 COMBO_LAYER(typeEqual, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
-//COMBO_LAYER(typePercent, &kp PRCNT, RB3 RB4, l_alpha) // percent
 COMBO_LAYER(typeNdash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
 COMBO_LAYER(typeMdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
 COMBO_LAYER(typeTilde, &kp TILDE,   RB1 RB4, l_alpha) // tilde (not dead key)
@@ -165,4 +164,4 @@ COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
 
-}nss;
+};
