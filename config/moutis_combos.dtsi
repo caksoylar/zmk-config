@@ -165,4 +165,4 @@ COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
 
-}nss;
+};
