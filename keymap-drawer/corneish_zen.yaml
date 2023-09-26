@@ -990,13 +990,13 @@ layers:
   - ''
   - Reset
 combos:
-- p: [14, 15, 16]
+- p: [26, 27, 28]
   k: LANG2
-- p: [19, 20, 21]
+- p: [31, 32, 33]
   k: LANG1
 - p: [39, 40]
   k: l_cfg
-- p: [14, 16]
+- p: [26, 28]
   k: '&AppSwitch'
 - p: [15, 16, 19, 20]
   k: Caps Wrd
@@ -1008,11 +1008,11 @@ combos:
   k: LG(RETURN)
 - p: [28, 29]
   k: RETURN
-- p: [26, 28]
+- p: [14, 16]
   k: ↹
   a: top
   o: 0.15
-- p: [26, 27, 28]
+- p: [14, 15, 16]
   k: Win Prev
 - p: [16, 17]
   k: ␣
