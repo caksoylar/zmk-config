@@ -60,8 +60,8 @@ COMBO_ANY(spce, &kp SPACE,      LM1 LM0)
 COMBO_ANY(esc,  &kp ESC,        LM4 LM1)
 COMBO_ANY(sall, &kp LG(A),      LB4 LB1)
 COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
-COMBO_ANY(undo, &kp LG(Z),      LB3 LB1)
-COMBO_ANY(redo, &kp LG(LS(Z)),  LB3 LB2 LB1)
+COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
+COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
 COMBO_ANY(copy, &lk LG(X) LG(C), LB3 LB2)
 COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB2 LB1)
 COMBO_LAYER(cloz, &kp LG(W),      LM3 LB3, l_alpha)
@@ -109,7 +109,7 @@ COMBO_LAYER(ch,  &Ch,        LM3 LM2, l_alpha) // Ch
 COMBO_LAYER(wh,  &Wh,        LT3 LT2, l_alpha) // Wh
 COMBO_LAYER(sh,  &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
 COMBO_LAYER(gh,  &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
-COMBO_LAYER(ph,  &Ph,        RB4 RB3, l_alpha) // Ph
+COMBO_LAYER(ph,  &Ph,        RB3 RB1, l_alpha) // Ph
 
 #ifdef EN_PRONOUN_COMBOS
 //
