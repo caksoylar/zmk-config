@@ -25,7 +25,7 @@
 
         keymap {
         compatible = "zmk,keymap";
-#include "corneish_zen.l_alpha-HD-vv.dtsi"  // base (alpha) layer (& related adaptive layers)
+#include "corneish_zen.l_alpha-HD-vb.dtsi"  // base (alpha) layer (& related adaptive layers)
 #include "corneish_zen.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
 
     };
