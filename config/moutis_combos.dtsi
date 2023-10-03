@@ -35,15 +35,6 @@ LB5  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
      ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
              ╰─────────────╯ ╰─────────────╯
 */
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
-    Building for a 36/42 key board
-     ╭─────────────────────╮ ╭──────────────────────╮
-ESC  │  X   W   M   G   J  │ │  #$  .:  '[  "]   B  │ BSP
-TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
-LSFT │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RSFT
-     ╰──────╮  App BSP  R  │ │  SPC RET TAB  ╭──────╯
-            ╰──────────────╯ ╰───────────────╯
-*/
 
 combos {
     compatible = "zmk,combos";
@@ -54,7 +45,7 @@ combos {
 COMBO_ANY(enmode, &kp LANG2,    LB3 LB2 LB1)
 COMBO_ANY(jpmode, &kp LANG1,    RB1 RB2 RB3)
 COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
-COMBO_ANY(appswitch, &AppSwitch, LB3 LB1) // App switch
+COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
 COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
 
@@ -69,8 +60,8 @@ COMBO_ANY(spce, &kp SPACE,      LM1 LM0)
 COMBO_ANY(esc,  &kp ESC,        LM4 LM1)
 COMBO_ANY(sall, &kp LG(A),      LB4 LB1)
 COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
-COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
-COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
+COMBO_ANY(undo, &kp LG(Z),      LB3 LB1)
+COMBO_ANY(redo, &kp LG(LS(Z)),  LB3 LB2 LB1)
 COMBO_ANY(copy, &lk LG(X) LG(C), LB3 LB2)
 COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB2 LB1)
 COMBO_LAYER(cloz, &kp LG(W),      LM3 LB3, l_alpha)
@@ -84,7 +75,7 @@ COMBO_LAYER(findsel, &m_findsel,  LM4 LB0, l_alpha)
 //
 COMBO_LAYER(typeJapan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
 COMBO_LAYER(typeQ, &lk_qu Q U,      LT3 LT1, l_alpha)
-COMBO_LAYER(typeZ, &kp Z,           LT1 LT0, l_alpha)
+COMBO_LAYER(typeZ, &kp Z,           LT4 LT3, l_alpha)
 COMBO_LAYER(typeColn, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
 COMBO_LAYER(typeSemi, &kp SEMI,     RM0 RM1, l_alpha)
 COMBO_LAYER(typeExcl, &kp EXCL,     RT1 RT2, l_alpha)
@@ -118,7 +109,7 @@ COMBO_LAYER(ch,  &Ch,        LM3 LM2, l_alpha) // Ch
 COMBO_LAYER(wh,  &Wh,        LT3 LT2, l_alpha) // Wh
 COMBO_LAYER(sh,  &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
 COMBO_LAYER(gh,  &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
-COMBO_LAYER(ph,  &Ph,        RB3 RB4, l_alpha) // Ph
+COMBO_LAYER(ph,  &Ph,        RB4 RB3, l_alpha) // Ph
 
 #ifdef EN_PRONOUN_COMBOS
 //

@@ -38,11 +38,11 @@ layers:
   - F
   - Shift
   - '&AppSwitch'
-  - {t: BACKSPACE, h: l_sym, s: DELETE}
-  - {t: R, h: l_akDot}
-  - {t: ␣, h: l_nav}
-  - {t: RETURN, h: l_akDot}
-  - l_fn
+  - {t: BACKSPACE, h: l_fn, s: DELETE}
+  - {t: R, h: l_nav}
+  - {t: ␣, h: l_sym}
+  - {t: RETURN, h: l_nav}
+  - l_num
   l_akG:
   - {t: ▽, type: trans}
   - T
@@ -516,6 +516,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  l_akJ:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&l_j_g'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - U
+  - '&l_j_o'
+  - '&l_j_y'
+  - I
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - I
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akA:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -731,49 +774,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  l_akJ:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&l_j_g'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - U
-  - '&l_j_o'
-  - '&l_j_y'
-  - I
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - I
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   l_akDot:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -813,7 +813,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -854,12 +854,12 @@ layers:
   - Page Down
   - ''
   - ''
-  - l_num
+  - l_cfg
   - '&S_AppSwitch'
-  - '&AppSwitch'
-  - {t: LG(LBKT), type: held}
+  - {t: '&AppSwitch', type: held}
+  - LG(LBKT)
   - LG(RBKT)
-  - l_num
+  - l_cfg
   l_sym:
   - ''
   - Z
@@ -898,9 +898,9 @@ layers:
   - '%'
   - ''
   - LC(LG(TAB))
-  - {t: LA(BSPC), type: held}
+  - LA(BSPC)
   - LA(DEL)
-  - ''
+  - {type: held}
   - LA(0)
   - LA(LS(9))
   l_fn:
@@ -940,8 +940,8 @@ layers:
   - '6'
   - '='
   - ''
-  - {t: l_num, h: sticky}
-  - ⌫
+  - {t: l_cfg, h: sticky}
+  - {t: ⌫, type: held}
   - ⌦
   - KP 0
   - .
@@ -983,22 +983,63 @@ layers:
   - KP 3
   - KP EQUAL
   - ''
-  - {t: '&AppSwitch', type: held}
-  - {t: ⌫, h: l_sym}
-  - {t: KP ENTER, h: l_akDot}
-  - {t: KP 0, type: held}
+  - '&AppSwitch'
+  - {t: ⌫, h: l_fn}
+  - {t: KP ENTER, h: l_nav}
+  - KP 0
   - KP DOT
   - {t: ▽, type: trans}
-  l_cfg: [BT 5, BT 4, BT 3, BT 2, BT 1, BT CLR, '', '', '', '', '', '', '', '', ⏭️, ⏯, Vol Up, BRI UP, BRI UP, Vol Up, MUTE, ⏭️, '', '', '', Boot, ⏮️, MUTE, Vol Down,
-    BRI DN, BRI DN, Vol Down, ⏯, ⏮️, Boot, '', Reset, '', l_fn, '', '', Reset]
+  l_cfg:
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⏭️
+  - ⏯
+  - Vol Up
+  - BRI UP
+  - BRI UP
+  - Vol Up
+  - MUTE
+  - ⏭️
+  - ''
+  - ''
+  - ''
+  - Boot
+  - ⏮️
+  - MUTE
+  - Vol Down
+  - BRI DN
+  - BRI DN
+  - Vol Down
+  - ⏯
+  - ⏮️
+  - Boot
+  - ''
+  - {t: Reset, type: held}
+  - ''
+  - {t: l_num, type: held}
+  - ''
+  - ''
+  - Reset
 combos:
 - p: [26, 27, 28]
   k: LANG2
 - p: [31, 32, 33]
   k: LANG1
 - p: [39, 40]
-  k: l_num
-- p: [26, 28]
+  k: l_cfg
+- p: [4, 5]
   k: '&AppSwitch'
 - p: [15, 16, 19, 20]
   k: Caps Wrd
@@ -1025,9 +1066,9 @@ combos:
 - p: [25, 29]
   k: '&m_selword'
   l: [HD-Vv]
-- p: [25, 26]
+- p: [26, 28]
   k: LG(Z)
-- p: [25, 26, 27]
+- p: [26, 27, 28]
   k: LG(LS(Z))
 - p: [26, 27]
   k: {t: LG(C), h: LG(X)}
@@ -1054,7 +1095,7 @@ combos:
 - p: [2, 4]
   k: {t: '&Qu U', h: Q}
   l: [HD-Vv]
-- p: [4, 5]
+- p: [1, 2]
   k: Z
   l: [HD-Vv]
 - p: [7, 9]
@@ -1138,7 +1179,7 @@ combos:
 - p: [3, 4]
   k: {t: '&Gh G', h: '&ght H'}
   l: [HD-Vv]
-- p: [33, 34]
+- p: [34, 33]
   k: '&Ph'
   l: [HD-Vv]
 - p: [21, 22]
@@ -1185,46 +1226,46 @@ combos:
   l: [HD-Vv]
 - p: [19, 20]
   k: (
-  l: [l_fn]
+  l: [l_num]
 - p: [20, 21]
   k: )
-  l: [l_fn]
+  l: [l_num]
 - p: [21, 22]
   k: '='
-  l: [l_fn]
+  l: [l_num]
 - p: [19, 21]
   k: ':'
-  l: [l_fn]
+  l: [l_num]
 - p: [33, 34]
   k: '%'
-  l: [l_fn]
+  l: [l_num]
 - p: [18, 19]
   k: <
-  l: [l_fn]
+  l: [l_num]
 - p: [18, 22]
   k: '>'
-  l: [l_fn]
+  l: [l_num]
 - p: [30, 31]
   k: LA(MINUS)
-  l: [l_fn]
+  l: [l_num]
 - p: [30, 34]
   k: '~'
-  l: [l_fn]
+  l: [l_num]
 - p: [31, 34]
   k: LA(SEMI)
-  l: [l_fn]
+  l: [l_num]
 - p: [7, 8]
   k: $
-  l: [l_fn]
+  l: [l_num]
 - p: [6, 7]
   k: LA(4)
-  l: [l_fn]
+  l: [l_num]
 - p: [8, 9]
   k: LS(LA(2))
-  l: [l_fn]
+  l: [l_num]
 - p: [9, 10]
   k: LA(Y)
-  l: [l_fn]
+  l: [l_num]
 - p: [7, 9]
   k: LA(3)
-  l: [l_fn]
+  l: [l_num]
