@@ -21,7 +21,7 @@
         bindings = <BINDINGS>; \
         key-positions = <KEYPOS>; \
         layers = <LAYERS>; \
-        global-quick-tap-ms = <QUICKTAP>; \
+        require-prior-idle-ms = <QUICKTAP>; \
 		__VA_ARGS__ \
     };
 
