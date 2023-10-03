@@ -109,7 +109,7 @@ COMBO_LAYER(ch,  &Ch,        LM3 LM2, l_alpha) // Ch
 COMBO_LAYER(wh,  &Wh,        LT3 LT2, l_alpha) // Wh
 COMBO_LAYER(sh,  &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
 COMBO_LAYER(gh,  &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
-COMBO_LAYER(ph,  &Ph,        RB3 RB1, l_alpha) // Ph
+COMBO_LAYER(ph,  &Ph,        LB3 LB1, l_alpha) // Ph
 
 #ifdef EN_PRONOUN_COMBOS
 //
