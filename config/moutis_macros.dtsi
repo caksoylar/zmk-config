@@ -1,5 +1,4 @@
  
-
     macros {
 
     ZMK_MACRO(AppSwitch,
@@ -28,8 +27,6 @@
                   , <&macro_release &sk RGUI> // now release the previous hold
                   ;
         )
-
-
 
         m_findsel: m_findsel {
             label = "Find Selection";
@@ -171,8 +168,7 @@
             wait-ms = <10>;
             tap-ms = <10>;
         bindings = <&kp BSPC &kp L &kp M>
-                    , <&sl l_akM>
-        ;
+                    , <&sl l_akM>;
         )
     ZMK_MACRO(ak_lk,
             wait-ms = <10>;
