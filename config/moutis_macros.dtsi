@@ -242,6 +242,12 @@
             tap-ms = <10>;
         bindings = <&kp BSPC &kp C &kp K>;
         )
+    ZMK_MACRO(ak_c,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings = <&macro_tap &kp C>
+                , <&sl l_akC>;
+        )
     ZMK_MACRO(ak_a,
             wait-ms = <10>;
             tap-ms = <10>;
