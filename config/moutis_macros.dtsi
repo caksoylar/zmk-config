@@ -197,27 +197,27 @@
         bindings = <&macro_tap &kp B>
                 , <&sl l_akB>;
         )
-    ZMK_MACRO(ak_sb,
-            wait-ms = <10>;
-            tap-ms = <10>;
-        bindings = <&kp BSPC &kp S &kp B>;
-        )
     ZMK_MACRO(ak_p,
             wait-ms = <10>;
             tap-ms = <10>;
         bindings = <&macro_tap &kp P>
                 , <&sl l_akP>;
         )
-    ZMK_MACRO(ak_sf,
+    ZMK_MACRO(ak_sp,
             wait-ms = <10>;
             tap-ms = <10>;
-        bindings = <&kp BSPC &kp S &kp F>;
+        bindings = <&kp BSPC &kp S &kp P>;
         )
     ZMK_MACRO(ak_f,
             wait-ms = <10>;
             tap-ms = <10>;
         bindings = <&macro_tap &kp F>
                 , <&sl l_akF>;
+        )
+    ZMK_MACRO(ak_sf,
+            wait-ms = <10>;
+            tap-ms = <10>;
+        bindings = <&kp BSPC &kp S &kp F>;
         )
     ZMK_MACRO(ak_v,
             wait-ms = <10>;
