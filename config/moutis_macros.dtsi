@@ -150,10 +150,10 @@
         bindings = <&macro_tap &kp X>
                 , <&sl l_akX>;
         )
-    ZMK_MACRO(ak_xc,
+    ZMK_MACRO(ak_xp,
             wait-ms = <10>;
             tap-ms = <10>;
-        bindings = <&macro_tap &kp C>
+        bindings = <&macro_tap &kp P>
                 , <&sl l_akX>;
         )
     ZMK_MACRO(ak_m,
