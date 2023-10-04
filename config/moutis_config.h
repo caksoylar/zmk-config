@@ -92,8 +92,8 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 #define l_akK   5
 #define l_akD   6
 #define l_akW   7
-#define l_akP   8
-#define l_akF   9
+#define l_akF   8
+#define l_akP   9
 #define l_akB   10
 #define l_akV   11
 #define l_akJ   12
