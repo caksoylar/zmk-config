@@ -88,8 +88,8 @@ layers:
   - {t: ▽, type: trans}
   l_akM:
   - {t: ▽, type: trans}
-  - F
-  - L
+  - B
+  - '&ak_xp'
   - {t: ▽, type: trans}
   - '&ak_lg'
   - {t: ▽, type: trans}
@@ -132,7 +132,7 @@ layers:
   l_akX:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&ak_xc'
+  - '&ak_xp'
   - L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -241,7 +241,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - S
+  - '&ak_sb'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -594,7 +594,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - I
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -797,7 +797,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - P
+  - F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
