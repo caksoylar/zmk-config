@@ -36,7 +36,7 @@ behaviors {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_BACKSPACE_DELETE";
             #binding-cells = <0>;
-            bindings = <&lt l_fn BACKSPACE>, <&kp DELETE>;
+            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         hm: homerow_mods { // use on either hand
