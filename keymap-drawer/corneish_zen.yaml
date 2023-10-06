@@ -38,7 +38,7 @@ layers:
   - F
   - Shift
   - '&AppSwitch'
-  - {t: BACKSPACE, h: l_fn, s: DELETE}
+  - {t: BACKSPACE, h: l_fun, s: DELETE}
   - {t: R, h: l_nav}
   - {t: ␣, h: l_sym}
   - {t: RETURN, h: l_nav}
@@ -860,49 +860,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  l_nav:
-  - ''
-  - RG(W)
-  - RG(Q)
-  - LG(LS(4))
-  - LG(LS(LC(4)))
-  - Esc
-  - LG(EQUAL)
-  - Home
-  - ↑
-  - Page Up
-  - ''
-  - ''
-  - ''
-  - Ctrl
-  - Alt
-  - Gui
-  - Shift
-  - RG(F)
-  - LA(LEFT)
-  - ←
-  - ↓
-  - →
-  - LA(RIGHT)
-  - ''
-  - ''
-  - RG(Z)
-  - RG(X)
-  - RG(C)
-  - RG(V)
-  - RG(G)
-  - LG(MINUS)
-  - End
-  - LG(0)
-  - Page Down
-  - ''
-  - ''
-  - l_cfg
-  - '&S_AppSwitch'
-  - {t: '&AppSwitch', type: held}
-  - LG(LBKT)
-  - LG(RBKT)
-  - l_cfg
   l_sym:
   - ''
   - Z
@@ -946,7 +903,50 @@ layers:
   - {type: held}
   - LA(0)
   - LA(LS(9))
-  l_fn:
+  l_num:
+  - ''
+  - KP NUM
+  - Page Down
+  - ↑
+  - Page Up
+  - ↹
+  - KP SLASH
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - ''
+  - ''
+  - LA(LEFT)
+  - ←
+  - ↓
+  - →
+  - LA(RIGHT)
+  - KP MULTIPLY
+  - {t: KP 4, h: Shift}
+  - {t: KP 5, h: Gui}
+  - {t: KP 6, h: Alt}
+  - {t: KP PLUS, h: Ctrl}
+  - ''
+  - ''
+  - LG(Z)
+  - LG(X)
+  - LG(C)
+  - LG(V)
+  - SPC
+  - KP COMMA
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP EQUAL
+  - ''
+  - '&AppSwitch'
+  - {t: ⌫, h: l_fun}
+  - {t: KP ENTER, h: l_nav}
+  - KP 0
+  - KP DOT
+  - {t: ▽, type: trans}
+  l_fun:
   - ''
   - F9
   - F10
@@ -989,49 +989,49 @@ layers:
   - KP 0
   - .
   - ;
-  l_num:
+  l_nav:
   - ''
-  - KP NUM
-  - Page Down
+  - RG(W)
+  - RG(Q)
+  - LG(LS(4))
+  - LG(LS(LC(4)))
+  - Esc
+  - LG(EQUAL)
+  - Home
   - ↑
   - Page Up
-  - ↹
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
   - ''
   - ''
+  - ''
+  - Ctrl
+  - Alt
+  - Gui
+  - Shift
+  - RG(F)
   - LA(LEFT)
   - ←
   - ↓
   - →
   - LA(RIGHT)
-  - KP MULTIPLY
-  - {t: KP 4, h: Shift}
-  - {t: KP 5, h: Gui}
-  - {t: KP 6, h: Alt}
-  - {t: KP PLUS, h: Ctrl}
   - ''
   - ''
-  - LG(Z)
-  - LG(X)
-  - LG(C)
-  - LG(V)
-  - SPC
-  - KP COMMA
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP EQUAL
+  - RG(Z)
+  - RG(X)
+  - RG(C)
+  - RG(V)
+  - RG(G)
+  - LG(MINUS)
+  - End
+  - LG(0)
+  - Page Down
   - ''
-  - '&AppSwitch'
-  - {t: ⌫, h: l_fn}
-  - {t: KP ENTER, h: l_nav}
-  - KP 0
-  - KP DOT
-  - {t: ▽, type: trans}
+  - ''
+  - l_cfg
+  - '&S_AppSwitch'
+  - {t: '&AppSwitch', type: held}
+  - LG(LBKT)
+  - LG(RBKT)
+  - l_cfg
   l_cfg:
   - BT 5
   - BT 4
@@ -1070,8 +1070,8 @@ layers:
   - Boot
   - ''
   - {t: Reset, type: held}
-  - ''
-  - {t: l_num, type: held}
+  - {type: held}
+  - l_num
   - ''
   - ''
   - Reset
@@ -1237,7 +1237,7 @@ combos:
 - p: [21, 28]
   k: '&typePnId'
   l: [HD-Vv]
-- p: [21, 25]
+- p: [21, 29]
   k: '&typePnIve'
   l: [HD-Vv]
 - p: [33, 36]
@@ -1252,7 +1252,7 @@ combos:
 - p: [33, 28]
   k: '&typePnYoud'
   l: [HD-Vv]
-- p: [33, 25]
+- p: [33, 29]
   k: '&typePnYouve'
   l: [HD-Vv]
 - p: [1, 36]
