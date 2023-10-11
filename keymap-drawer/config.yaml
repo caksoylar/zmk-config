@@ -44,8 +44,8 @@ parse_config:
     # custom mappings
     LC(LG(LEFT)): Desk Left
     LC(LG(RIGHT)): Desk Right
-    LC(TAB): Tab Left
-    LC(LS(TAB)): Tab Right
+    LC(TAB): Tab Right
+    LC(LS(TAB)): Tab Left
     LA(F4): Win Close
     LC(F4): Tab Close
     C_VOL_UP: Vol Up

@@ -96,8 +96,8 @@ layers:
   - Reset
   NAV:
   - Win Close
-  - Tab Right
   - Tab Left
+  - Tab Right
   - Tab Close
   - Vol Up
   - Insert
