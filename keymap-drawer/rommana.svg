@@ -223,12 +223,12 @@ path.combo {
 </g>
 <g transform="translate(298, 245)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<text x="0" y="0" class="key tap">␣</text>
 <text x="0" y="24" class="key hold">NAV</text>
 </g>
 <g transform="translate(433, 245)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">␣</text>
+<text x="0" y="0" class="key tap">⌫</text>
 <text x="0" y="24" class="key hold">SYM</text>
 </g>
 <g transform="translate(494, 230)" class="key keypos-29">
@@ -429,12 +429,12 @@ path.combo {
 </g>
 <g transform="translate(298, 245)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<text x="0" y="0" class="key tap">␣</text>
 <text x="0" y="24" class="key hold">NAV</text>
 </g>
 <g transform="translate(433, 245)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">␣</text>
+<text x="0" y="0" class="key tap">⌫</text>
 <text x="0" y="24" class="key hold">SYM</text>
 </g>
 <g transform="translate(494, 230)" class="key keypos-29">
@@ -746,7 +746,7 @@ path.combo {
 </g>
 <g transform="translate(237, 230)" class="key keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">␣</text>
+<text x="0" y="0" class="key tap">⌫</text>
 </g>
 <g transform="translate(298, 245)" class="key trans keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
@@ -902,7 +902,7 @@ path.combo {
 </g>
 <g transform="translate(494, 230)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Shift</text>
+<text x="0" y="0" class="key tap">␣</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="269" y="87" width="28" height="26" class="combo"/>

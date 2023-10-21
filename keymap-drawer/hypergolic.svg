@@ -238,12 +238,12 @@ path.combo {
 </g>
 <g transform="translate(352, 248)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<text x="0" y="0" class="key tap">␣</text>
 <text x="0" y="24" class="key hold">NAV</text>
 </g>
 <g transform="translate(491, 248)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">␣</text>
+<text x="0" y="0" class="key tap">⌫</text>
 <text x="0" y="24" class="key hold">SYM</text>
 </g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
@@ -451,12 +451,12 @@ path.combo {
 </g>
 <g transform="translate(352, 248)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<text x="0" y="0" class="key tap">␣</text>
 <text x="0" y="24" class="key hold">NAV</text>
 </g>
 <g transform="translate(491, 248)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">␣</text>
+<text x="0" y="0" class="key tap">⌫</text>
 <text x="0" y="24" class="key hold">SYM</text>
 </g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
@@ -794,7 +794,7 @@ path.combo {
 </g>
 <g transform="translate(288, 255) rotate(-15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">␣</text>
+<text x="0" y="0" class="key tap">⌫</text>
 </g>
 <g transform="translate(352, 248)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
@@ -963,7 +963,7 @@ path.combo {
 </g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Shift</text>
+<text x="0" y="0" class="key tap">␣</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="278" y="73" width="28" height="26" class="combo"/>

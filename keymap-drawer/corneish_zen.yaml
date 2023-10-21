@@ -33,8 +33,8 @@ layers:
   - /
   - {t: ↹, h: Gui}
   - {t: Esc, h: Ctrl}
-  - {t: ⌫, h: NAV}
-  - {t: ␣, h: SYM}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
   - {t: ⏎, h: Shift}
   - {t: ⌦, h: Alt}
   BRD:
@@ -70,8 +70,8 @@ layers:
   - ''
   - {t: ↹, h: Gui}
   - {t: Esc, h: Ctrl}
-  - {t: ⌫, h: NAV}
-  - {t: ␣, h: SYM}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
   - {t: ⏎, h: Shift}
   - {t: ⌦, h: Alt}
   GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Shift, Z, X, C, V, N, M, ',', ., /, Ctrl, Alt, ␣, NAV, ⏎, GME]
@@ -107,7 +107,7 @@ layers:
   - '3'
   - /
   - Gui
-  - ␣
+  - ⌫
   - {t: ▽, type: trans}
   - {type: held}
   - Reset
@@ -147,7 +147,7 @@ layers:
   - Reset
   - {type: held}
   - {t: ▽, type: trans}
-  - Shift
+  - ␣
   - Alt
   FUN:
   - F1
