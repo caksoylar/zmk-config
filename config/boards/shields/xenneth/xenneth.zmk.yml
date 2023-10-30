@@ -1,0 +1,10 @@
+file_format: "1"
+id: xenneth
+name: Xenneth
+type: shield
+url: 
+requires: [seeeduino_xiao_ble]
+exposes: 
+features:
+  - keys
+  - encoder

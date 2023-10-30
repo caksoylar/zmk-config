@@ -1,0 +1,29 @@
+/*
+ * Copyright (c) 2022 PleaseWaitt
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "xenneth.dtsi"
+
+/ {
+	chosen {
+		zmk,kscan = &kscan0;
+	};
+
+	kscan0: kscan {
+		compatible = "zmk,kscan-gpio-direct";
+		label = "KSCAN";
+		input-gpios
+			= 	<&xiao_d  0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+				<&xiao_d  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+				<&xiao_d  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			;
+
+	};
+
+};
+
+&encoder {
+	status = "okay";
+};
