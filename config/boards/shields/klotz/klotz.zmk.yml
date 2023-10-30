@@ -1,0 +1,13 @@
+file_format: "1"
+id: klotz
+name: Klotz
+type: shield
+url: 
+requires: [pro_micro]
+exposes: 
+features:
+  - keys
+  - encoder
+siblings:
+  - klotz_left
+  - klotz_right
