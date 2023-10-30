@@ -1,0 +1,17 @@
+layers:
+  base:
+  - {t: ⏭️, h: red}
+  - {t: ⏯, h: orange}
+  - {t: ⏮️, h: green}
+  red:
+  - {type: held}
+  - '&td0'
+  - BT 1
+  orange:
+  - Vol Up
+  - {type: held}
+  - Vol Down
+  green:
+  - BT CLR
+  - '&td1'
+  - {type: held}
