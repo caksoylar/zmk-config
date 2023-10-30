@@ -1,0 +1,5 @@
+if SHIELD_XENNETH
+
+    config ZMK_KEYBOARD_NAME
+        default "Xenneth"
+endif
