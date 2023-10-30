@@ -13,7 +13,7 @@ config RGBLED_WIDGET_OUTPUT_BLINK_MS
 
 config RGBLED_WIDGET_INTERVAL_MS
     int "Minimum wait duration between two blinks in ms"
-    default 500
+    default 250
 
 config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
     int "High battery level percentage"
