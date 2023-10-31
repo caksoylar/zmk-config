@@ -37,6 +37,13 @@
             tapping-term-ms = <200>;
             bindings = <&sys_reset>, <&bootloader>;
         };
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C_PLAY_PAUSE, <&kp C_MUTE>;
+        };
     };
      keymap {
                  compatible = "zmk,keymap";
@@ -57,7 +64,7 @@
   bindings = <
  //
      &lt RED C_NEXT
-     &lt ORG C_PP
+     &td2
      &lt GRN C_PREV
          >;
      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
