@@ -1,7 +1,7 @@
 layers:
   base:
   - {t: ⏭️, h: red}
-  - {t: ⏯, h: orange}
+  - '&td2'
   - {t: ⏮️, h: green}
   red:
   - {type: held}
@@ -9,7 +9,7 @@ layers:
   - BT 1
   orange:
   - Vol Up
-  - {type: held}
+  - {t: ▽, type: trans}
   - Vol Down
   green:
   - BT CLR
