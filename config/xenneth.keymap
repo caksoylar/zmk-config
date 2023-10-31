@@ -42,7 +42,7 @@
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp C_PLAY_PAUSE, <&kp C_MUTE>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
         };
     };
      keymap {
