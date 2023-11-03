@@ -41,16 +41,7 @@
 		steps = <48>;
 		//status = "disabled";
 	};
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
-        io-channels = <&adc 7>;
-        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
-        output-ohms = <510000>;
-        full-ohms = <(1000000 + 510000)>;
-    };
-
+	
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&encoder>;

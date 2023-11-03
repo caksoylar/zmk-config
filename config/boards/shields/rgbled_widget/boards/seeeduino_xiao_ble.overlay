@@ -1,4 +1,17 @@
 / {
+    chosen {
+        zephyr,console = &cdc_acm_uart;
+        zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        label = "BATTERY";
+        io-channels = <&adc 7>;
+        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
+        output-ohms = <510000>;
+        full-ohms = <(1000000 + 510000)>;
+    };
     aliases {
         led-red = &led0;
         led-green = &led1;
