@@ -5,9 +5,6 @@
 #ifdef EXTERNAL_POWER
 #    include <dt-bindings/zmk/ext_power.h>
 #endif
-#ifdef MOUSE_KEYS
-#    include <dt-bindings/zmk/mouse.h>
-#endif
 
 // Layer aliases
 #define DEF 0
@@ -295,9 +292,9 @@
             label = "MSE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &none         &none         &none         &none             &mwh S_LEFT   &mwh S_DOWN   &mmv M_UP     &mwh S_UP     &mwh S_RIGHT
+     &none         &none         &none         &none         &none           &msc SCRL_LEFT &msc SCRL_DOWN &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_RIGHT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none         &mmv M_LEFT   &mmv M_DOWN   &mmv M_RIGHT  &none
+     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      ALP_XXX       &none         &none         &none         ALP_XXX           ALP_XXX       &mkp MB4      &mkp MCLK     &mkp MB5      ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯

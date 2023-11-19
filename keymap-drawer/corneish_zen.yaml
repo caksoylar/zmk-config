@@ -192,20 +192,20 @@ layers:
   - ''
   - ''
   - ''
-  - MW←
-  - MW↓
-  - M↑
-  - MW↑
-  - MW→
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - Ctrl
   - Gui
   - Alt
   - Shift
   - ''
   - ''
-  - M←
-  - M↓
-  - M→
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - ''
   - ''
   - ''

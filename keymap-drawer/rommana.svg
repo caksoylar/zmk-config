@@ -1091,23 +1091,33 @@ path.combo {
 </g>
 <g transform="translate(449, 71)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">MW←</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">SCRL_LEFT</tspan>
+</text>
 </g>
 <g transform="translate(510, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">MW↓</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">SCRL_DOWN</tspan>
+</text>
 </g>
 <g transform="translate(570, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">M↑</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;mmv</tspan><tspan x="0" dy="1.2em">MOVE_UP</tspan>
+</text>
 </g>
 <g transform="translate(637, 46) rotate(3.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">MW↑</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;msc</tspan><tspan x="0" dy="1.2em">SCRL_UP</tspan>
+</text>
 </g>
 <g transform="translate(702, 93) rotate(8.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">MW→</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 70%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 70%">SCRL_RIGHT</tspan>
+</text>
 </g>
 <g transform="translate(38, 150) rotate(-8.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -1133,15 +1143,21 @@ path.combo {
 </g>
 <g transform="translate(510, 100)" class="key keypos-16">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">M←</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">&amp;mmv</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">MOVE_LEFT</tspan>
+</text>
 </g>
 <g transform="translate(570, 86)" class="key keypos-17">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">M↓</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">&amp;mmv</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">MOVE_DOWN</tspan>
+</text>
 </g>
 <g transform="translate(634, 103) rotate(3.0)" class="key keypos-18">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">M→</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 70%">&amp;mmv</tspan><tspan x="0" dy="1.2em" style="font-size: 70%">MOVE_RIGHT</tspan>
+</text>
 </g>
 <g transform="translate(694, 150) rotate(8.0)" class="key keypos-19">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
