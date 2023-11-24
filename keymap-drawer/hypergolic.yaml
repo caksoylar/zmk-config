@@ -139,7 +139,7 @@ layers:
   - ⌫
   - {t: ▽, type: trans}
   - {type: held}
-  - Reset
+  - ''
   NAV:
   - Win Close
   - Tab Left
@@ -171,7 +171,7 @@ layers:
   - ⏮️
   - ⏭️
   - ''
-  - Reset
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - ␣

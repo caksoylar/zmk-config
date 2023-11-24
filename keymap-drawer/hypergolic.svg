@@ -806,7 +806,6 @@ path.combo {
 </g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Reset</text>
 </g>
 </g>
 </g>
@@ -953,7 +952,6 @@ path.combo {
 </g>
 <g transform="translate(288, 255) rotate(-15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Reset</text>
 </g>
 <g transform="translate(352, 248)" class="key held keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held"/>
