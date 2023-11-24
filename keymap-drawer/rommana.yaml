@@ -62,7 +62,37 @@ layers:
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
   - {t: ⏎, h: Shift}
-  GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Z, X, C, M, ',', ., Alt, ␣, NAV, ⏎]
+  GME:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - Esc
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - {t: GME, h: toggle}
+  - Z
+  - X
+  - C
+  - M
+  - ','
+  - .
+  - Alt
+  - ␣
+  - NAV
+  - ⏎
   SYM:
   - '!'
   - '@'
@@ -133,9 +163,9 @@ layers:
   - F5
   - Out USB
   - Out BLE
-  - DEF
-  - BRD
-  - GME
+  - {t: DEF, h: toggle}
+  - {t: BRD, h: toggle}
+  - {t: GME, h: toggle}
   - F6
   - F7
   - F8
@@ -162,20 +192,20 @@ layers:
   - ''
   - ''
   - ''
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
+  - MW←
+  - MW↓
+  - M↑
+  - MW↑
+  - MW→
   - Ctrl
   - Gui
   - Alt
   - Shift
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - M←
+  - M↓
+  - M→
   - ''
   - ''
   - ''

@@ -1,4 +1,4 @@
-<svg width="910" height="2149" viewBox="0 0 910 2149" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="910" height="2133" viewBox="0 0 910 2133" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -102,7 +102,7 @@ path.combo {
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
 <text x="0" y="28" class="label">DEF:</text>
-<g transform="translate(0, 64)">
+<g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Q</text>
@@ -317,9 +317,9 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 354)" class="layer-BRD">
+<g transform="translate(30, 346)" class="layer-BRD">
 <text x="0" y="28" class="label">BRD:</text>
-<g transform="translate(0, 64)">
+<g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">X</text>
@@ -530,7 +530,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 709)" class="layer-GME">
+<g transform="translate(30, 692)" class="layer-GME">
 <text x="0" y="28" class="label">GME:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
@@ -612,6 +612,7 @@ path.combo {
 <g transform="translate(799, 173) rotate(15.0)" class="key keypos-19">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">GME</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(59, 227) rotate(-15.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -671,7 +672,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1055)" class="layer-SYM">
+<g transform="translate(30, 1038)" class="layer-SYM">
 <text x="0" y="28" class="label">SYM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
@@ -809,7 +810,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1401)" class="layer-NAV">
+<g transform="translate(30, 1384)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
@@ -971,7 +972,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1747)" class="layer-FUN">
+<g transform="translate(30, 1730)" class="layer-FUN">
 <text x="0" y="28" class="label">FUN:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
@@ -1009,14 +1010,17 @@ path.combo {
 <g transform="translate(670, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEF</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(741, 52) rotate(5.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">BRD</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(814, 119) rotate(15.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">GME</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(44, 173) rotate(-15.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>

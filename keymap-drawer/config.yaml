@@ -1,12 +1,20 @@
 # configuration for https://github.com/caksoylar/keymap-drawer
 parse_config:
   raw_binding_map:
-    '&reset': Reset
     '&sys_reset': Reset
     '&bootloader': Boot
     '&swapper': Win Next
     '&caps_word': Caps Wrd
     '&inv_qm': ¿
+
+    '&kp LC(LG(LEFT))': Desk Left
+    '&kp LC(LG(RIGHT))': Desk Right
+    '&kp LC(TAB)': Tab Right
+    '&kp LC(LS(TAB))': Tab Left
+    '&kp LA(F4)': Win Close
+    '&kp LC(F4)': Tab Close
+    '&kp LS(TAB)': Win Prev
+    '&kp LS(INS)': Paste
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
@@ -17,15 +25,15 @@ parse_config:
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
 
-    '&mmv M_UP': M↑
-    '&mmv M_DOWN': M↓
-    '&mmv M_LEFT': M←
-    '&mmv M_RIGHT': M→
+    '&mmv MOVE_UP': M↑
+    '&mmv MOVE_DOWN': M↓
+    '&mmv MOVE_LEFT': M←
+    '&mmv MOVE_RIGHT': M→
 
-    '&mwh S_UP': MW↑
-    '&mwh S_DOWN': MW↓
-    '&mwh S_LEFT': MW←
-    '&mwh S_RIGHT': MW→
+    '&msc SCRL_UP': MW↑
+    '&msc SCRL_DOWN': MW↓
+    '&msc SCRL_LEFT': MW←
+    '&msc SCRL_RIGHT': MW→
 
     '&mkp LCLK': Left Click
     '&mkp RCLK': Right Click
@@ -42,18 +50,10 @@ parse_config:
 
   zmk_keycode_map:
     # custom mappings
-    LC(LG(LEFT)): Desk Left
-    LC(LG(RIGHT)): Desk Right
-    LC(TAB): Tab Right
-    LC(LS(TAB)): Tab Left
-    LA(F4): Win Close
-    LC(F4): Tab Close
     C_VOL_UP: Vol Up
     C_VOL_DN: Vol Down
     C_AL_CALC: Calc
     C_PP: Play Pause
-    LS(TAB): Win Prev
-    LS(INS): Paste
 
     LCTRL: Ctrl
     RCTRL: Ctrl
@@ -91,8 +91,8 @@ parse_config:
     # defaults
     AMPERSAND: '&'
     AMPS: '&'
-    APOS: .
-    APOSTROPHE: <
+    APOS: "'"
+    APOSTROPHE: "'"
     ASTERISK: '*'
     ASTRK: '*'
     AT: '@'
