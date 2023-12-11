@@ -45,7 +45,7 @@
 #    define I_L_DEF &kp V
 #    define I_R_DEF &kp J
 #    define P_R_DEF &kp SLASH
-#    define P_L_GME &kp LSHFT
+#    define P_L_GME &kp ESC
 #    define I_L_GME &kp V
 #    define I_R_GME &kp N
 #    define P_R_GME &kp SLASH
@@ -226,9 +226,9 @@
             display-name = "GME";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp Y         &kp U         &kp I         &kp O         &kp P
+     &kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp Y         &kp U         &kp I         &kp O         &kp ESC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp ESC       &kp A         &kp S         &kp D         &kp F             &kp H         &kp J         &kp K         &kp L         &tog GME
+     &kp LSHFT     &kp A         &kp S         &kp D         &kp F             &kp H         &kp J         &kp K         &kp L         &tog GME
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      P_L_GME       &kp Z         &kp X         &kp C         I_L_GME           I_R_GME       &kp M         &kp COMMA     &kp DOT       P_R_GME
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯

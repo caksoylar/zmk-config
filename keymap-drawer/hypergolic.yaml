@@ -80,8 +80,8 @@ layers:
   - U
   - I
   - O
-  - P
   - Esc
+  - Shift
   - A
   - S
   - D
@@ -91,7 +91,7 @@ layers:
   - K
   - L
   - {t: GME, h: toggle}
-  - Shift
+  - Esc
   - Z
   - X
   - C
@@ -222,10 +222,10 @@ combos:
   l: [BRD]
 - p: [6, 7]
   k: ;
-  l: [DEF, BRD]
+  l: [DEF, BRD, SYM]
 - p: [7, 8]
   k: '`'
-  l: [DEF, BRD]
+  l: [DEF, BRD, SYM]
 - p: [12, 13]
   k: (
   l: [DEF, BRD]
@@ -240,12 +240,12 @@ combos:
   l: [DEF, BRD]
 - p: [11, 13]
   k: ↹
-  l: [DEF, BRD]
+  l: [DEF, BRD, SYM]
   a: top
   o: 0.15
 - p: [16, 18]
   k: ⌦
-  l: [DEF, BRD]
+  l: [DEF, BRD, SYM]
   a: top
   o: 0.15
 - p: [13, 16]
@@ -263,10 +263,10 @@ combos:
   l: [DEF]
 - p: [26, 27]
   k: \
-  l: [DEF, BRD]
+  l: [DEF, BRD, SYM]
 - p: [27, 28]
   k: /
-  l: [DEF, BRD]
+  l: [DEF, BRD, SYM]
 - p: [21, 22]
   k: F12
   l: [FUN]

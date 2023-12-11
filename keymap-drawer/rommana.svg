@@ -553,11 +553,11 @@ path.combo {
 </g>
 <g transform="translate(702, 93) rotate(8.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">P</text>
+<text x="0" y="0" class="key tap">Esc</text>
 </g>
 <g transform="translate(38, 150) rotate(-8.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Esc</text>
+<text x="0" y="0" class="key tap">Shift</text>
 </g>
 <g transform="translate(98, 103) rotate(-3.0)" class="key keypos-11">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -758,6 +758,34 @@ path.combo {
 </g>
 <g transform="translate(494, 230)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="526" y="22" width="28" height="26" class="combo"/>
+<text x="540" y="35" class="combo tap">;</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="590" y="24" width="28" height="26" class="combo"/>
+<text x="604" y="37" class="combo tap">`</text>
+</g>
+<g class="combo combopos-2">
+<path d="M160,63 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v16" class="combo"/>
+<path d="M160,63 h56 a6.0,6.0 0 0 1 6.0,6.0 v13" class="combo"/>
+<rect rx="6" ry="6" x="146" y="50" width="28" height="26" class="combo"/>
+<text x="160" y="63" class="combo tap">↹</text>
+</g>
+<g class="combo combopos-3">
+<path d="M572,63 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v13" class="combo"/>
+<path d="M572,63 h56 a6.0,6.0 0 0 1 6.0,6.0 v16" class="combo"/>
+<rect rx="6" ry="6" x="558" y="50" width="28" height="26" class="combo"/>
+<text x="572" y="63" class="combo tap">⌦</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="526" y="138" width="28" height="26" class="combo"/>
+<text x="540" y="150" class="combo tap">\</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="587" y="139" width="28" height="26" class="combo"/>
+<text x="601" y="152" class="combo tap">/</text>
 </g>
 </g>
 </g>
