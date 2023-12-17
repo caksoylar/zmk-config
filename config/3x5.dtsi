@@ -152,21 +152,12 @@
             hold-trigger-on-release;
         };
 
-        // Easy alt-tab with alt+space thumb using mod-morphs
-        stab: space_tab {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp TAB>;
-            mods = <MOD_LALT>;
-            keep-mods = <MOD_LALT>;
-        };
-        lt_spc: layer_tap_space_tab {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_BT";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-            bindings = <&mo>, <&stab>;
+        // sticky key to be used for alt-tab macro
+        sk_at: sk_alttabber {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <500>;
         };
     };
 
@@ -188,6 +179,14 @@
                 , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
                 , <&macro_release &kp LALT>;
         )
+        ZMK_MACRO(alt_tabber,  // adapted from @moutis on ZMK Discord
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp LALT>    // leave ALT down to keep menu up
+                     , <&macro_tap &kp TAB>       // open the menu
+                     , <&macro_tap &sk_at RALT>   // this will release ALT after a timeout
+                     , <&macro_release &kp LALT>; // now release the initial hold
+        )
     };
 
     keymap {
@@ -203,7 +202,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      P_L_DEF       &kp X         &kp C         &kp D         I_L_DEF           I_R_DEF       &kp H         &kp COMMA     &kp DOT       P_R_DEF
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt_spc NAV 0     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
+                                 T3_L_DEF      &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -218,7 +217,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      ALP_XXX       &kp W         &kp M         &kp G         ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt_spc NAV 0     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
+                                 T3_L_DEF      &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -261,7 +260,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB &kp C_VOL_DN      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &none         &none         &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
+     ALP_XXX       &none         &alt_tabber   &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_L_SYM      &none         &trans            &trans        &kp SPACE     T3_R_SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
