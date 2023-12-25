@@ -5,8 +5,8 @@
 This is a [ZMK](https://zmk.dev) config repo for my 30-36 key split keyboards, arranged in 3 rows of 5 columns with 2 or 3 thumb keys on each side.
 The keymap is optimized to be usable with 30 keys, with dropped keys from inner index and pinky columns and two thumb keys each, like the [Hummingbird](https://github.com/PJE66/hummingbird) layout.
 Currently these keyboards are:
-- [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys)
 - A hand-wired [Rommana](https://github.com/AlaaSaadAbdo/Rommana) (30 keys)
+- [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys)
 - [Hypergolic (1.2 BM variant)](https://github.com/davidphilipbarr/hypergolic) (34 keys)
 
 It mainly uses three non-base layers activated through two thumb keys, along with combos. It has <kbd>Ctrl</kbd>/<kbd>Shift</kbd> thumb hold-taps along with home row mods, which are also available on the left side of `NAV` layer.
@@ -30,6 +30,11 @@ Below representation was generated with [`keymap-drawer`](https://github.com/cak
 
 See my [QMK userspace](https://github.com/caksoylar/qmk_userspace/) for equivalent keymap definitions for QMK.
 
+## LED indicators widget
+
+Some keyboards in this repo include an indicator widget utilizing an RGB LED, like the user LEDs on a Xiao BLE.
+This widget is a ZMK module housed in [`zmk-rgbled-widget`](https://github.com/caksoylar/zmk-rgbled-widget) -- check out the repo and the instructions to use it with your keyboards!
+
 ## ZMK customizations
 
 I use a custom ZMK branch referenced in [west.yml](config/west.yml) which contains a few extras, namely [mouse keys](https://github.com/zmkfirmware/zmk/pull/778) used in the `MSE` layer, [swapper behavior](https://github.com/zmkfirmware/zmk/pull/1366) and [display improvements for the Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a).
@@ -42,8 +47,3 @@ This repo also contains shield definitions for a few keyboards using Pro Micro f
 - [`hypergolic`](https://github.com/davidphilipbarr/hypergolic) -- you should probably use [the official Cradio shield](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio/) instead
 - [`ffkb` v1](https://fingerpunch.xyz/product/faux-fox-keyboard/) with an OLED, building upon [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-ffkb) and [NCKiser's](https://github.com/NCKiser/zmk-ffkb) definitions
 - [`swweeep`](https://github.com/sadekbaroudi/sweep36) using [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-swweeep) definition
-
-## LED indicators widget
-
-This repo also contains an indicator widget to be used with an RGB LED, like the user LEDs on a Xiao BLE.
-Check out the [`rgbled_widget` shield](config/boards/shields/rgbled_widget/) which you can try by putting in your own config repo and adding the `rgbled_widget` in your `build.yaml`, like [this](build.yaml#L23).
