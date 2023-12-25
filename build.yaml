@@ -20,6 +20,6 @@ include:
   - board: corneish_zen_v1_right
   - board: corneish_zen_v2_left
   - board: seeeduino_xiao_ble
-    shield: rommana_left rgbled_widget
+    shield: rommana_left rgbled_adapter
   - board: seeeduino_xiao_ble
-    shield: rommana_right rgbled_widget
+    shield: rommana_right rgbled_adapter

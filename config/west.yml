@@ -9,5 +9,8 @@ manifest:
       remote: caksoylar
       revision: caksoylar/zen-8bit
       import: app/west.yml
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
   self:
     path: config
