@@ -24,7 +24,7 @@ layers:
   - Z
   - X
   - C
-  - {t: D, h: MSE}
+  - D
   - V
   - J
   - H
@@ -61,7 +61,7 @@ layers:
   - ''
   - W
   - M
-  - {t: G, h: MSE}
+  - G
   - ''
   - ''
   - D
@@ -170,8 +170,8 @@ layers:
   - →
   - End
   - ''
-  - Win Prev
-  - Win Next
+  - ''
+  - '&alt_tabber'
   - Paste
   - ⏯
   - ''
@@ -221,43 +221,6 @@ layers:
   - {type: held}
   - {type: held}
   - Boot
-  - ''
-  MSE:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - MW←
-  - MW↓
-  - M↑
-  - MW↑
-  - MW→
-  - Ctrl
-  - Gui
-  - Alt
-  - Shift
-  - ''
-  - ''
-  - M←
-  - M↓
-  - M→
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - Back Click
-  - Middle Click
-  - Forward Click
-  - ''
-  - ''
-  - ''
-  - ''
-  - Left Click
-  - Right Click
   - ''
 combos:
 - p: [2, 3]
@@ -327,6 +290,3 @@ combos:
   k: BT CLR
   l: [FUN]
   a: bottom
-- p: [31, 32]
-  k: MSE
-  l: [DEF, BRD]

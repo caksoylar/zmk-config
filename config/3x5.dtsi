@@ -184,7 +184,8 @@
             tap-ms = <10>;
             bindings = <&macro_press &kp LALT>    // leave ALT down to keep menu up
                      , <&macro_tap &kp TAB>       // open the menu
-                     , <&macro_tap &sk_at RALT>   // this will release ALT after a timeout
+                     , <&macro_pause_for_release> // wait until key release
+                     , <&macro_tap &sk_at RALT>   // start timer to release ALT after timeout
                      , <&macro_release &kp LALT>; // now release the initial hold
         )
     };
