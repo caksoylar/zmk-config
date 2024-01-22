@@ -42,7 +42,7 @@ For a variant of my configuration tailored for stock ZMK, check out the [`stock`
 
 ## Custom shields
 
-This repo also contains shield definitions for a few keyboards using Pro Micro format daughterboards:
+This repo also contains shield definitions for a few keyboards using Pro Micro format daughterboards in `boards/shields/`:
 - [`choc_ergo`](https://keypcb.xyz/choc_ergo)
 - [`hypergolic`](https://github.com/davidphilipbarr/hypergolic) -- you should probably use [the official Cradio shield](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio/) instead
 - [`ffkb` v1](https://fingerpunch.xyz/product/faux-fox-keyboard/) with an OLED, building upon [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-ffkb) and [NCKiser's](https://github.com/NCKiser/zmk-ffkb) definitions
