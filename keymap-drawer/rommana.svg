@@ -285,22 +285,26 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="238" y="44" width="28" height="26" class="combo"/>
+<text x="252" y="57" class="combo tap">LG(L)</text>
+</g>
+<g class="combo combopos-11">
 <rect rx="6" ry="6" x="117" y="139" width="28" height="26" class="combo"/>
 <text x="131" y="152" class="combo tap">Z</text>
 </g>
-<g class="combo combopos-11">
+<g class="combo combopos-12">
 <rect rx="6" ry="6" x="177" y="138" width="28" height="26" class="combo"/>
 <text x="191" y="150" class="combo tap">V</text>
 </g>
-<g class="combo combopos-12">
+<g class="combo combopos-13">
 <rect rx="6" ry="6" x="526" y="138" width="28" height="26" class="combo"/>
 <text x="540" y="150" class="combo tap">\</text>
 </g>
-<g class="combo combopos-13">
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="587" y="139" width="28" height="26" class="combo"/>
 <text x="601" y="152" class="combo tap">/</text>
 </g>
-<g class="combo combopos-14">
+<g class="combo combopos-15">
 <rect rx="6" ry="6" x="253" y="224" width="28" height="26" class="combo"/>
 <text x="267" y="237" class="combo tap">MSE</text>
 </g>
@@ -495,18 +499,22 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-11">
+<rect rx="6" ry="6" x="238" y="44" width="28" height="26" class="combo"/>
+<text x="252" y="57" class="combo tap">LG(L)</text>
+</g>
+<g class="combo combopos-12">
 <rect rx="6" ry="6" x="117" y="139" width="28" height="26" class="combo"/>
 <text x="131" y="152" class="combo tap">Z</text>
 </g>
-<g class="combo combopos-12">
+<g class="combo combopos-13">
 <rect rx="6" ry="6" x="526" y="138" width="28" height="26" class="combo"/>
 <text x="540" y="150" class="combo tap">\</text>
 </g>
-<g class="combo combopos-13">
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="587" y="139" width="28" height="26" class="combo"/>
 <text x="601" y="152" class="combo tap">/</text>
 </g>
-<g class="combo combopos-14">
+<g class="combo combopos-15">
 <rect rx="6" ry="6" x="253" y="224" width="28" height="26" class="combo"/>
 <text x="267" y="237" class="combo tap">MSE</text>
 </g>

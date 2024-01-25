@@ -301,6 +301,9 @@ combos:
   k: Caps Wrd
   l: [DEF, BRD]
   a: top
+- p: [3, 4]
+  k: LG(L)
+  l: [DEF, BRD]
 - p: [4, 14]
   k: ⏯
   l: [NAV]

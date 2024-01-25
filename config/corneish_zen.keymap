@@ -5,6 +5,6 @@
 
 / {
     chosen {
-        zmk,matrix_transform = &five_column_transform;
+        zmk,matrix-transform = &five_column_transform;
     };
 };
