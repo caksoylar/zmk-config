@@ -1,156 +1,290 @@
-# configuration for https://github.com/caksoylar/keymap-drawer
-parse_config:
-  raw_binding_map:
-    '&sys_reset': Reset
-    '&bootloader': Boot
-    '&swapper': Win Next
-    '&caps_word': Caps Wrd
-    '&inv_qm': ¿
-
-    '&kp LC(LG(LEFT))': Desk Left
-    '&kp LC(LG(RIGHT))': Desk Right
-    '&kp LC(TAB)': Tab Right
-    '&kp LC(LS(TAB))': Tab Left
-    '&kp LA(F4)': Win Close
-    '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
-    '&kp LS(INS)': Paste
-
-    '&out OUT_USB': Out USB
-    '&out OUT_BLE': Out BLE
-
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
-
-    '&mmv MOVE_UP': M↑
-    '&mmv MOVE_DOWN': M↓
-    '&mmv MOVE_LEFT': M←
-    '&mmv MOVE_RIGHT': M→
-
-    '&msc SCRL_UP': MW↑
-    '&msc SCRL_DOWN': MW↓
-    '&msc SCRL_LEFT': MW←
-    '&msc SCRL_RIGHT': MW→
-
-    '&mkp LCLK': Left Click
-    '&mkp RCLK': Right Click
-    '&mkp MCLK': Middle Click
-    '&mkp MB4': Back Click
-    '&mkp MB5': Forward Click
-
-  zmk_combos:
-    combo_tab:    {align: top, o: 0.15}
-    combo_del:    {align: top, o: 0.15}
-    combo_capswd: {align: top}
-    combo_f12:    {align: bottom}
-    combo_btclr:  {align: bottom}
-
-  zmk_keycode_map:
-    # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
-    C_AL_CALC: Calc
-    C_PP: Play Pause
-
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
-    ESC: Esc
-    SPACE: ␣
-    BSPC: ⌫
-    RET: ⏎
-    TAB: ↹
-    DEL: ⌦
-
-    PG_UP: Page Up
-    PG_DN: Page Down
-    INS: Insert
-    HOME: Home
-    END: End
-    CAPS: Caps Lock
-    PSCRN: Print Scrn
-    PAUSE_BREAK: Pause Break
-
-    UP: ↑
-    DOWN: ↓
-    LEFT: ←
-    RIGHT: →
-
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
-
-    # defaults
-    AMPERSAND: '&'
-    AMPS: '&'
-    APOS: "'"
-    APOSTROPHE: "'"
-    ASTERISK: '*'
-    ASTRK: '*'
-    AT: '@'
-    AT_SIGN: '@'
-    BACKSLASH: \
-    BSLH: \
-    CARET: ^
-    COLON: ':'
-    COMMA: ','
-    DLLR: $
-    DOLLAR: $
-    DOT: .
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
-    EQUAL: '='
-    EXCL: '!'
-    EXCLAMATION: '!'
-    FSLH: /
-    GRAVE: '`'
-    GREATER_THAN: '>'
-    GT: '>'
-    HASH: '#'
-    LBKT: '['
-    LBRC: '{'
-    LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
-    LEFT_PARENTHESIS: (
-    LESS_THAN: <
-    LPAR: (
-    LT: <
-    MINUS: '-'
-    NON_US_BACKSLASH: \
-    NON_US_BSLH: '|'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    PERCENT: '%'
-    PERIOD: .
-    PIPE: '|'
-    PIPE2: '|'
-    PLUS: +
-    POUND: '#'
-    PRCNT: '%'
-    QMARK: '?'
-    QUESTION: '?'
-    RBKT: ']'
-    RBRC: '}'
-    RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
-    RIGHT_PARENTHESIS: )
-    RPAR: )
-    SEMI: ;
-    SEMICOLON: ;
-    SINGLE_QUOTE: ''''
-    SLASH: /
-    SQT: ''''
-    STAR: '*'
-    TILDE: '~'
-    TILDE2: '~'
-    UNDER: _
-    UNDERSCORE: _
-    
+layout: {qmk_keyboard: totem}
+layers:
+  DEF:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Ctrl}
+  - {t: S, h: Gui}
+  - {t: D, h: Alt}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Alt}
+  - {t: L, h: Gui}
+  - {t: '''', h: Ctrl}
+  - X
+  - C
+  - {t: V, h: MSE}
+  - M
+  - ','
+  - .
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
+  - {t: ⏎, h: Shift}
+  BRD:
+  - X
+  - C
+  - L
+  - F
+  - B
+  - J
+  - Y
+  - O
+  - U
+  - ''''
+  - {t: R, h: Ctrl}
+  - {t: S, h: Gui}
+  - {t: N, h: Alt}
+  - {t: T, h: Shift}
+  - P
+  - K
+  - {t: H, h: Shift}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: A, h: Ctrl}
+  - W
+  - M
+  - {t: G, h: MSE}
+  - D
+  - ','
+  - .
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
+  - {t: ⏎, h: Shift}
+  GME:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - Esc
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - {t: GME, h: toggle}
+  - Z
+  - X
+  - C
+  - M
+  - ','
+  - .
+  - Alt
+  - ␣
+  - NAV
+  - ⏎
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - ^
+  - '&'
+  - '*'
+  - '-'
+  - _
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - '&EQUL'
+  - +
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - ⌫
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  NAV:
+  - Win Close
+  - Tab Left
+  - Tab Right
+  - Tab Close
+  - Vol Up
+  - Insert
+  - Page Down
+  - ↑
+  - Page Up
+  - Calc
+  - Ctrl
+  - Gui
+  - Alt
+  - {t: ↹, h: Shift}
+  - Vol Down
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - Win Prev
+  - Win Next
+  - Paste
+  - ⌦
+  - ⏮️
+  - ⏭️
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ␣
+  FUN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - Out USB
+  - Out BLE
+  - {t: DEF, h: toggle}
+  - {t: BRD, h: toggle}
+  - {t: GME, h: toggle}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Desk Left
+  - Desk Right
+  - F11
+  - Caps Lock
+  - Print Scrn
+  - Pause Break
+  - Boot
+  - {type: held}
+  - {type: held}
+  - Boot
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MW←
+  - MW↓
+  - M↑
+  - MW↑
+  - MW→
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
+  - ''
+  - ''
+  - M←
+  - M↓
+  - M→
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - ''
+  - Left Click
+  - Right Click
+combos:
+- p: [2, 3]
+  k: J
+  l: [DEF]
+- p: [2, 3]
+  k: Q
+  l: [BRD]
+- p: [1, 2]
+  k: V
+  l: [BRD]
+- p: [6, 7]
+  k: ;
+  l: [DEF, BRD, SYM]
+- p: [7, 8]
+  k: '`'
+  l: [DEF, BRD, SYM]
+- p: [12, 13]
+  k: (
+  l: [DEF, BRD]
+- p: [16, 17]
+  k: )
+  l: [DEF, BRD]
+- p: [11, 12]
+  k: '['
+  l: [DEF, BRD]
+- p: [17, 18]
+  k: ']'
+  l: [DEF, BRD]
+- p: [11, 13]
+  k: ↹
+  l: [DEF, BRD, SYM]
+  a: top
+  o: 0.15
+- p: [16, 18]
+  k: ⌦
+  l: [DEF, BRD, SYM]
+  a: top
+  o: 0.15
+- p: [13, 16]
+  k: Caps Wrd
+  l: [DEF, BRD]
+  a: top
+- p: [3, 4]
+  k: LG(L)
+  l: [DEF, BRD]
+- p: [4, 14]
+  k: ⏯
+  l: [NAV]
+- p: [20, 21]
+  k: Z
+  l: [DEF, BRD]
+- p: [21, 22]
+  k: V
+  l: [DEF]
+- p: [23, 24]
+  k: \
+  l: [DEF, BRD, SYM]
+- p: [24, 25]
+  k: /
+  l: [DEF, BRD, SYM]
+- p: [20, 21]
+  k: F12
+  l: [FUN]
+  a: bottom
+- p: [24, 25]
+  k: BT CLR
+  l: [FUN]
+  a: bottom
+- p: [26, 27]
+  k: MSE
+  l: [DEF, BRD]
