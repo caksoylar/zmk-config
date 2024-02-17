@@ -2,10 +2,3 @@
 #define MOUSE_KEYS
 
 #include "3x5.dtsi"
-
-
-/ {
-    chosen {
-        zmk,matrix-transform = &five_column_transform;
-    };
-};

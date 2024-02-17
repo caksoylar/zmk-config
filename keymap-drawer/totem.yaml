@@ -1,3 +1,4 @@
+layout: {qmk_keyboard: totem}
 layers:
   DEF:
   - Q
