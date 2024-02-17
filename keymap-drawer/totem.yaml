@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: totem}
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
 layers:
   DEF:
   - Q
