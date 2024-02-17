@@ -3,31 +3,31 @@ layers:
   DEF:
   - Q
   - W
-  - F
-  - P
-  - B
-  - K
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ''''
+  - U
+  - I
+  - O
+  - P
   - {t: A, h: Ctrl}
-  - {t: R, h: Gui}
-  - {t: S, h: Alt}
-  - {t: T, h: Shift}
+  - {t: S, h: Gui}
+  - {t: D, h: Alt}
+  - {t: F, h: Shift}
   - G
-  - M
-  - {t: N, h: Shift}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
-  - {t: O, h: Ctrl}
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Alt}
+  - {t: L, h: Gui}
+  - {t: '''', h: Ctrl}
   - Z
   - X
   - C
-  - {t: D, h: MSE}
-  - V
-  - J
-  - H
+  - {t: V, h: MSE}
+  - B
+  - N
+  - M
   - ','
   - .
   - /
