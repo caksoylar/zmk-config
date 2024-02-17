@@ -1,25 +1,11 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_TOTEM_DONGLE
+config SHIELD_TOTEM_LEFT
+    def_bool $(shields_list_contains,totem_left)
 
-config ZMK_KEYBOARD_NAME
-    default "TOTEM"
-    
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config SHIELD_TOTEM_RIGHT
+    def_bool $(shields_list_contains,totem_right)
 
-config ZMK_USB
-    default y
-
-endif
-
-if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT || SHIELD_TOTEM_DONGLE
-
-config ZMK_SPLIT
-    default y
-
-config ZMK_BLE
-    default y
-
-endif
+config SHIELD_TOTEM_DONGLE
+    def_bool $(shields_list_contains,totem_dongle)
