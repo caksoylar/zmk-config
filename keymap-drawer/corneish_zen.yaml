@@ -31,12 +31,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ↹, h: Gui}
-  - {t: Esc, h: Ctrl}
-  - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
-  - {t: ⌦, h: Alt}
+  - Esc
+  - {t: ⏎, h: NAV}
+  - {t: ␣, h: MSE}
+  - {t: ⌫, h: FUN}
+  - {t: ⏎, h: '3'}
+  - ⌦
   BRD:
   - X
   - C
@@ -68,12 +68,12 @@ layers:
   - ','
   - .
   - ''
-  - {t: ↹, h: Gui}
-  - {t: Esc, h: Ctrl}
-  - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
-  - {t: ⌦, h: Alt}
+  - Esc
+  - {t: ⏎, h: NAV}
+  - {t: ␣, h: MSE}
+  - {t: ⌫, h: FUN}
+  - {t: ⏎, h: '3'}
+  - ⌦
   GME:
   - ↹
   - Q
@@ -106,10 +106,10 @@ layers:
   - .
   - /
   - Ctrl
-  - Alt
-  - ␣
-  - NAV
-  - ⏎
+  - {t: ⏎, h: NAV}
+  - {t: ␣, h: MSE}
+  - {t: ⌫, h: FUN}
+  - {t: ⏎, h: '3'}
   - {t: GME, h: toggle}
   SYM:
   - '!'
@@ -142,12 +142,12 @@ layers:
   - '2'
   - '3'
   - /
-  - Gui
-  - ⌫
-  - {t: ▽, type: trans}
-  - {type: held}
-  - ''
-  - Alt
+  - Esc
+  - {t: ⏎, h: NAV}
+  - {t: ␣, h: MSE}
+  - {t: ⌫, h: FUN}
+  - {t: ⏎, h: '3'}
+  - ⌦
   NAV:
   - Win Close
   - Tab Left
@@ -179,12 +179,12 @@ layers:
   - ⏮️
   - ⏭️
   - ''
-  - Gui
-  - ''
-  - {type: held}
-  - {t: ▽, type: trans}
-  - ␣
-  - Alt
+  - Esc
+  - {t: ⏎, h: NAV, type: held}
+  - {t: ␣, h: MSE}
+  - {t: ⌫, h: FUN}
+  - {t: ⏎, h: '3'}
+  - ⌦
   FUN:
   - F1
   - F2
@@ -218,7 +218,7 @@ layers:
   - ''
   - ''
   - Boot
-  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - Boot
   - ''
