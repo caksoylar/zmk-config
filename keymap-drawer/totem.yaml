@@ -28,7 +28,7 @@ layers:
   - ','
   - .
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   BRD:
@@ -59,7 +59,7 @@ layers:
   - ','
   - .
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   GME:
@@ -90,7 +90,7 @@ layers:
   - ','
   - .
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   SYM:
@@ -121,7 +121,7 @@ layers:
   - '2'
   - '3'
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM, type: held}
   NAV:
@@ -152,7 +152,7 @@ layers:
   - ⏮️
   - ⏭️
   - {t: ⏎, h: NAV, type: held}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   FUN:

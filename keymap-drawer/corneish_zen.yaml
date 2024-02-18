@@ -33,7 +33,7 @@ layers:
   - /
   - Esc
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   - ⌦
@@ -70,7 +70,7 @@ layers:
   - ''
   - Esc
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   - ⌦
@@ -107,7 +107,7 @@ layers:
   - /
   - Ctrl
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   - {t: GME, h: toggle}
@@ -144,7 +144,7 @@ layers:
   - /
   - Esc
   - {t: ⏎, h: NAV}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM, type: held}
   - ⌦
@@ -181,7 +181,7 @@ layers:
   - ''
   - Esc
   - {t: ⏎, h: NAV, type: held}
-  - {t: ␣, h: MSE}
+  - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM}
   - ⌦
