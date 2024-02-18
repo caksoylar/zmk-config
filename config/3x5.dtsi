@@ -202,7 +202,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      P_L_DEF       &kp X         &kp C         MS_ACT(V)     I_L_DEF           I_R_DEF       &kp M         &kp COMMA     &kp DOT       P_R_DEF
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &lt NAV SPC   &lt MSE TAB       &lt SYM RET  &lt BRD BSPC   T3_R_DEF
+                                 T3_L_DEF      &lt NAV SPACE &lt MSE TAB       &lt SYM RET  &lt BRD BSPC   T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -241,11 +241,11 @@
             display-name = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &kp LC(F4)    &kp TAB_LT    &kp TAB_RT     &none        &kp C_VOL_UP
+     &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &none         &kp F7        &kp F8        &kp F9        &kp F12
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp LA(F4)    &kp LS(TAB)   &swapper       &none        &kp C_VOL_DN
+     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &none         &kp F4        &kp F5        &kp F6        &kp F11
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp C_PP      &kp C_PREV    &kp C_NEXT     &none        &kp C_MUTE
+     &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &none         &kp F1        &kp F2        &kp F3        &kp F10
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_L_SYM      &kp RPAR      &kp UNDER         &lt SYM RET   &none         T3_XXX
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -256,13 +256,13 @@
             display-name = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
+     &kp C_VOL_UP  &none         &kp TAB_LT    &kp TAB_RT    &kp LC(F4)        &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
+     &kp C_VOL_DN  &none         &kp LS(TAB)   &swapper      &kp LA(F4)        &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp LS(TAB)   &swapper      &kp LS(INS)   ALP_PP            &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+     &kp C_MUTE    &none         &kp C_PREV    &kp C_NEXT    &kp C_PP          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_XXX        &lt NAV RET   &none             &none         &none         T3_XXX
+                                 T3_XXX        &lt NAV SPACE &none             &none         &none         T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -271,13 +271,13 @@
             display-name = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F12       &kp F7        &kp F8        &kp F9        &kp F12           &out OUT_USB  &out OUT_BLE  &to DEF       &to BRD       &to GME
+     &kp F12       &kp F7        &kp F8        &kp F9        &none             &out OUT_USB  &out OUT_BLE  &to DEF       &to BRD       &to GME
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F11       &kp F4        &kp F5        &kp F6        &kp F11           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+     &kp F11       &kp F4        &kp F5        &kp F6        &none             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_F12       &kp F1        &kp F2        &kp F3        ALP_XXX           ALP_XXX       &kp CAPS      FN_EXTRA1     FN_EXTRA2     &bootloader
+     &kp F10       &kp F1        &kp F2        &kp F3        &none             ALP_XXX       &kp CAPS      FN_EXTRA1     FN_EXTRA2     &bootloader
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_XXX        &none         &none             &none         &none         T3_XXX
+                                 T3_L_DEF      &none         &none             &none         &none         T3_XXX
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

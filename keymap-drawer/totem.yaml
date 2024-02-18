@@ -27,7 +27,7 @@ layers:
   - M
   - ','
   - .
-  - {t: SPC, h: NAV}
+  - {t: ␣, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⏎, h: SYM}
   - {t: ⌫, h: BRD}
@@ -105,65 +105,67 @@ layers:
   - '*'
   - (
   - '}'
-  - Tab Close
-  - Tab Left
-  - Tab Right
   - ''
-  - Vol Up
+  - F7
+  - F8
+  - F9
+  - F12
   - ':'
   - $
   - '%'
   - ^
   - +
-  - Win Close
-  - Win Prev
-  - Win Next
   - ''
-  - Vol Down
+  - F4
+  - F5
+  - F6
+  - F11
   - '~'
   - '!'
   - '@'
   - '#'
   - '|'
-  - ⏯
-  - ⏮️
-  - ⏭️
-  - {type: held}
-  - MUTE
+  - ''
+  - F1
+  - F2
+  - {t: F3, type: held}
+  - F10
   - )
   - _
   - {t: ⏎, h: SYM}
   - ''
   NAV:
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - LC(V)
-  - LC(Y)
+  - Vol Up
+  - ''
+  - Tab Left
+  - Tab Right
+  - Tab Close
   - Insert
   - Home
   - ↑
   - End
   - Page Up
-  - Gui
-  - Alt
-  - Ctrl
-  - Shift
+  - Vol Down
   - ''
+  - Win Prev
+  - Win Next
+  - Win Close
   - Caps Lock
   - ←
   - ↓
   - →
   - Page Down
-  - Win Prev
-  - Win Next
-  - Paste
+  - MUTE
+  - ''
+  - ⏮️
+  - ⏭️
+  - ⏯
   - LC(Y)
-  - LC(V)
+  - {t: LC(V), type: held}
   - LC(C)
-  - {t: LC(X), type: held}
+  - LC(X)
   - LC(Z)
-  - {t: ⏎, h: NAV}
+  - {t: ␣, h: NAV}
   - ''
   - ''
   - ''
@@ -172,7 +174,7 @@ layers:
   - F7
   - F8
   - F9
-  - F12
+  - ''
   - Out USB
   - Out BLE
   - {t: DEF, h: toggle}
@@ -182,21 +184,23 @@ layers:
   - F4
   - F5
   - F6
-  - F11
+  - ''
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
+  - F10
   - F1
   - F2
   - F3
+  - ''
   - Caps Lock
   - Print Scrn
   - Pause Break
-  - Boot
+  - {t: Boot, type: held}
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   MSE:
