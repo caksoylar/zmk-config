@@ -15,8 +15,8 @@
 include:
   - board: seeeduino_xiao_ble
     shield: xenneth rgbled_widget
-  - board: seeeduino_xiao_ble
-    shield: xenneth
+#  - board: seeeduino_xiao_ble
+#    shield: xenneth
 #  - board: nice_nano_v2
 #    shield: klotz_left rgbled_widget
 #  - board: nice_nano_v2
