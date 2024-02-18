@@ -30,7 +30,7 @@ layers:
   - {t: ⏎, h: NAV}
   - {t: ␣, h: MSE}
   - {t: ⌫, h: FUN}
-  - {t: ⏎, h: '3'}
+  - {t: SPASE, h: SYM}
   BRD:
   - X
   - C
@@ -61,7 +61,7 @@ layers:
   - {t: ⏎, h: NAV}
   - {t: ␣, h: MSE}
   - {t: ⌫, h: FUN}
-  - {t: ⏎, h: '3'}
+  - {t: SPASE, h: SYM}
   GME:
   - ↹
   - Q
@@ -92,7 +92,7 @@ layers:
   - {t: ⏎, h: NAV}
   - {t: ␣, h: MSE}
   - {t: ⌫, h: FUN}
-  - {t: ⏎, h: '3'}
+  - {t: SPASE, h: SYM}
   SYM:
   - '!'
   - '@'
@@ -123,7 +123,7 @@ layers:
   - {t: ⏎, h: NAV}
   - {t: ␣, h: MSE}
   - {t: ⌫, h: FUN}
-  - {t: ⏎, h: '3'}
+  - {t: SPASE, h: SYM, type: held}
   NAV:
   - Win Close
   - Tab Left
@@ -154,7 +154,7 @@ layers:
   - {t: ⏎, h: NAV, type: held}
   - {t: ␣, h: MSE}
   - {t: ⌫, h: FUN}
-  - {t: ⏎, h: '3'}
+  - {t: SPASE, h: SYM}
   FUN:
   - F1
   - F2
