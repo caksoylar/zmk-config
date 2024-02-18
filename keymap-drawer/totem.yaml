@@ -32,11 +32,11 @@ layers:
   - {t: ⏎, h: SYM}
   - {t: ⌫, h: BRD}
   BRD:
-  - LBRK
+  - '['
   - '7'
   - '8'
   - '9'
-  - RBRK
+  - ']'
   - LC(Y)
   - LC(V)
   - LC(C)
@@ -106,8 +106,8 @@ layers:
   - (
   - '}'
   - Tab Close
+  - Tab Left
   - Tab Right
-  - LC(LS(TAB)
   - ''
   - Vol Up
   - ':'
@@ -116,8 +116,8 @@ layers:
   - ^
   - +
   - Win Close
-  - LA(TAB)
-  - LA(LS(TAB)
+  - Win Prev
+  - Win Next
   - ''
   - Vol Down
   - '~'
