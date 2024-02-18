@@ -11,7 +11,7 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: michaelrommel/keymap-drawer/.github/workflows/draw-zmk.yml@artifactupload
     with:
       keymap_patterns: 'config/*.keymap'
       config_path: keymap-drawer/config.yaml
