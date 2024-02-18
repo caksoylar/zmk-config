@@ -155,9 +155,8 @@ path.combo {
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;aml</tspan><tspan x="0" dy="1.2em">LCTRL</tspan>
-</text>
+<text x="0" y="0" class="key tap">D</text>
+<text x="0" y="24" class="key hold">Ctrl</text>
 </g>
 <g transform="translate(196, 91)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

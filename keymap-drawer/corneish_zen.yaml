@@ -13,7 +13,7 @@ layers:
   - P
   - {t: A, h: Gui}
   - {t: S, h: Alt}
-  - '&aml LCTRL'
+  - {t: D, h: Ctrl}
   - {t: F, h: Shift}
   - G
   - H
