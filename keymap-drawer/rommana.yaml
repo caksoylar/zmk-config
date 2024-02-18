@@ -27,41 +27,47 @@ layers:
   - M
   - ','
   - .
-  - {t: ⏎, h: NAV}
+  - {t: SPC, h: NAV}
   - {t: ↹, h: MSE}
-  - {t: ⌫, h: FUN}
-  - {t: SPASE, h: SYM}
+  - {t: ⏎, h: SYM}
+  - {t: ⌫, h: BRD}
   BRD:
-  - X
-  - C
-  - L
-  - F
-  - B
-  - J
-  - Y
-  - O
-  - U
-  - ''''
-  - {t: R, h: Ctrl}
-  - {t: S, h: Gui}
-  - {t: N, h: Alt}
-  - {t: T, h: Shift}
-  - P
-  - K
-  - {t: H, h: Shift}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
-  - {t: A, h: Ctrl}
-  - W
-  - M
-  - {t: G, h: MSE}
-  - D
-  - ','
+  - LBRK
+  - '7'
+  - '8'
+  - '9'
+  - RBRK
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - '&LC(Z)'
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - ''
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ⏎
+  - +
+  - '-'
+  - '*'
+  - {t: /, type: held}
   - .
-  - {t: ⏎, h: NAV}
-  - {t: ↹, h: MSE}
-  - {t: ⌫, h: FUN}
-  - {t: SPASE, h: SYM}
+  - '0'
+  - '-'
+  - ''
+  - {t: ⌫, h: BRD}
+  - ''
   GME:
   - ↹
   - Q
@@ -92,73 +98,77 @@ layers:
   - {t: ⏎, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
-  - {t: SPASE, h: SYM}
+  - {t: ⌫, h: BRD}
   SYM:
   - '{'
   - '&'
   - '*'
   - (
   - '}'
+  - Tab Close
+  - Tab Right
+  - LC(LS(TAB)
   - ''
-  - '7'
-  - '8'
-  - '9'
-  - ','
-  - ;
+  - Vol Up
+  - ':'
   - $
   - '%'
   - ^
-  - '='
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - .
+  - +
+  - Win Close
+  - LA(TAB)
+  - LA(LS(TAB)
+  - ''
+  - Vol Down
   - '~'
   - '!'
-  - ATPLUS
+  - '@'
   - '#'
   - '|'
-  - '1'
-  - '2'
-  - '3'
+  - ⏯
+  - ⏮️
+  - ⏭️
+  - {type: held}
+  - MUTE
   - )
-  - {t: '-', type: held}
-  - {t: ⌫, h: FUN}
-  - {t: SPASE, h: SYM}
+  - _
+  - {t: ⏎, h: SYM}
+  - ''
   NAV:
-  - Win Close
-  - Tab Left
-  - Tab Right
-  - Tab Close
-  - Vol Up
+  - LC(Z)
+  - LC(X)
+  - LC(C)
+  - LC(V)
+  - LC(Y)
   - Insert
-  - Page Down
+  - Home
   - ↑
+  - End
   - Page Up
-  - Calc
-  - Ctrl
   - Gui
   - Alt
-  - {t: ↹, h: Shift}
-  - Vol Down
-  - Home
+  - Ctrl
+  - Shift
+  - ''
+  - Caps Lock
   - ←
   - ↓
   - →
-  - End
+  - Page Down
   - Win Prev
   - Win Next
   - Paste
-  - ⌦
-  - ⏮️
-  - ⏭️
-  - {t: ⏎, h: NAV, type: held}
-  - {t: ↹, h: MSE}
-  - {t: ⌫, h: FUN}
-  - {t: SPASE, h: SYM}
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - {t: LC(X), type: held}
+  - LC(Z)
+  - {t: ⏎, h: NAV}
+  - ''
+  - ''
+  - ''
   FUN:
-  - F1
+  - F12
   - F7
   - F8
   - F9
@@ -168,7 +178,7 @@ layers:
   - {t: DEF, h: toggle}
   - {t: BRD, h: toggle}
   - {t: GME, h: toggle}
-  - F6
+  - F11
   - F4
   - F5
   - F6
@@ -185,38 +195,41 @@ layers:
   - Print Scrn
   - Pause Break
   - Boot
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  - Boot
+  - ''
+  - ''
   MSE:
-  - ''
-  - ''
-  - ''
-  - ''
+  - LC(Z)
+  - LC(X)
+  - LC(C)
+  - LC(V)
+  - LC(Y)
   - ''
   - MW←
-  - MW↓
   - M↑
-  - MW↑
   - MW→
-  - Ctrl
+  - MW↑
   - Gui
   - Alt
+  - Ctrl
   - Shift
   - ''
   - ''
   - M←
   - M↓
   - M→
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - MW↓
+  - LC(Z)
+  - LC(X)
+  - {t: LC(C), type: held}
+  - LC(V)
+  - LC(Y)
   - Back Click
   - Middle Click
   - Forward Click
   - ''
-  - ''
+  - {t: ↹, h: MSE}
   - Left Click
   - Right Click
 combos:
