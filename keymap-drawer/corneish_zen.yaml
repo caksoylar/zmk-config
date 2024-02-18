@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: Ctrl}
-  - {t: S, h: Gui}
-  - {t: D, h: Alt}
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - '&aml LCTRL'
   - {t: F, h: Shift}
   - G
   - H
   - {t: J, h: Shift}
-  - {t: K, h: Alt}
-  - {t: L, h: Gui}
-  - {t: '''', h: Ctrl}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: '''', h: Gui}
   - Z
   - X
   - C
@@ -112,39 +112,39 @@ layers:
   - {t: SPASE, h: SYM}
   - {t: GME, h: toggle}
   SYM:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - /
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - ''
   - '7'
   - '8'
   - '9'
   - ','
+  - ;
+  - $
+  - '%'
   - ^
-  - '&'
-  - '*'
-  - '-'
-  - _
+  - '='
   - '0'
   - '4'
   - '5'
   - '6'
   - .
-  - ''
   - '~'
-  - +
-  - '='
-  - ''
+  - '!'
+  - ATPLUS
+  - '#'
+  - '|'
   - ;
   - '1'
   - '2'
   - '3'
   - /
-  - Esc
-  - {t: ⏎, h: NAV}
-  - {t: ↹, h: MSE}
+  - (
+  - )
+  - '-'
   - {t: ⌫, h: FUN}
   - {t: SPASE, h: SYM, type: held}
   - ⌦
@@ -179,7 +179,7 @@ layers:
   - ⏮️
   - ⏭️
   - ''
-  - Esc
+  - (
   - {t: ⏎, h: NAV, type: held}
   - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
@@ -187,30 +187,30 @@ layers:
   - ⌦
   FUN:
   - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - F7
+  - F8
+  - F9
+  - F12
   - Out USB
   - Out BLE
   - {t: DEF, h: toggle}
   - {t: BRD, h: toggle}
   - {t: GME, h: toggle}
   - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - F4
+  - F5
+  - F6
+  - F11
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
   - ''
-  - Desk Left
-  - Desk Right
-  - F11
-  - F12
+  - F1
+  - F2
+  - F3
+  - F10
   - ''
   - Caps Lock
   - Print Scrn
