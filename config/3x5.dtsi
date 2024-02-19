@@ -109,7 +109,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LGUI A   &aml LALT S   &aml LCTRL D  &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr RCTRL K  &amr RALT L   &amr RGUI SQT
+     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr RALT K  &amr RGUI L   &amr RCTRL SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         MS_ACT(V)     &lt MED B         &lt FUN N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -124,9 +124,9 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &LC(Z)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp RET       &kp LSHFT     &kp RCTRL     &kp RALT      &kp C_CALC
+     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp DOT       &kp COMMA     &kp RCTRL     &kp RALT      &kp C_CALC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &none         &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
+     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &kp DOT       &kp N0        &kp MINUS         &none         &lt MUN BSPC  &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -149,7 +149,7 @@
         };
 
         function_layer {
-            display-name = "FUN"; // R3
+            display-name = "FUN"; // R3 FUN BLE OUT POWER
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp F12       &kp F7        &kp F8        &kp F9        &none             &out OUT_USB  &out OUT_BLE  &to DEF       &to BRD       &to GME
@@ -164,14 +164,14 @@
         };
 
         navigation_layer {
-            display-name = "NAV"; // L1
+            display-name = "NAV"; // L1 WIN MED NAV
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp C_VOL_UP  &kp TAB_LT    &kp TAB_RT    &none         &kp LC(F4)        &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
+     &kp C_VOL_UP  &kp C_VOL_DN  &kp LC(LS(TAB)) &kp LC(TAB) &kp LC(F4)        &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp C_VOL_DN  &kp LS(TAB)   &swapper      &kp LSHIFT    &kp LA(F4)        &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
+     &kp C_PREV    &kp C_NEXT    &kp LA(LS(TAB)) &kp LA(TAB) &kp LA(F4)        &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp C_MUTE    &kp C_PREV    &kp C_NEXT    &kp C_PP      &trane            &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &none         &lt NAV SPACE &none             &none         &none         &none 
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
