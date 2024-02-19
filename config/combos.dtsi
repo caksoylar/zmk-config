@@ -23,24 +23,24 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(esc,    &kp ESC,            0  1, DEF,         80,  50)
-COMBO(del,    &kp DEL,            8  9, DEF,         80,  50)
-COMBO(tab_l,  &kp LC(LS(TAB)),    1  2, DEF,         80,  50)
-COMBO(tab_r,  &kp LC(TAB),        7  8, DEF,         80,  50)
-COMBO(win_p,  &kp LA(LS(TAB)),    2  3, DEF,         80,  50)
-COMBO(win_n,  &kp LA(TAB),       6  7, DEF,         80,  50)
+COMBO(esc,    &kp ESC,            0  1, DEF,          80,  50)
+COMBO(del,    &kp DEL,            8  9, DEF,          80,  50)
+COMBO(tab_l,  &kp LC(LS(TAB)),    1  2, DEF,          80,  50)
+COMBO(tab_r,  &kp LC(TAB),        7  8, DEF,          80,  50)
+COMBO(win_p,  &kp LA(LS(TAB)),    2  3, DEF,          80,  50)
+COMBO(win_n,  &kp LA(TAB),        6  7, DEF,          80,  50)
 
-COMBO(lbkt,   &kp LBKT,   10 11, DEF MUN,      40, 100)
-COMBO(rbkt,   &kp RBKT,   18 19, DEF MUN,      40, 100)
-COMBO(lbrc,   &kp LEFT BRACE,     11 12, DEF MUN,      40, 100)
-COMBO(rbrc,   &kp RIGHT BRACE,    17 18, DEF MUN,      40, 100)
-COMBO(lpar,   &kp LPAR,   12 13, DEF MUN,      40, 100)
-COMBO(rpar,   &kp RPAR,   16 17, DEF MUN,      40, 100)
+COMBO(lbkt,   &kp LBKT,          10 11, DEF,          40, 100)
+COMBO(rbkt,   &kp RBKT,          18 19, DEF,          40, 100)
+COMBO(lbrc,   &kp LEFT BRACE,    11 12, DEF,          40, 100)
+COMBO(rbrc,   &kp RIGHT BRACE,   17 18, DEF,          40, 100)
+COMBO(lpar,   &kp LPAR,          12 13, DEF,          40, 100)
+COMBO(rpar,   &kp RPAR,          16 17, DEF,          40, 100)
 
-COMBO(lthan,    &kp LESS THAN,    11 13, DEF BRD SYM,  40, 150)
-COMBO(rthan,    &kp GREATER THAN, 16 18, DEF BRD SYM,  40, 150)
+COMBO(lthan,  &kp LESS THAN,     11 13, DEF BRD SYM,  40, 150)
+COMBO(rthan,  &kp GREATER THAN,  16 18, DEF BRD SYM,  40, 150)
 
-COMBO(mute,  &kp C_MUTE,     0  1, DEF MUN,      80,  50)
-COMBO(pp,    &kp C_PP,      10 11, DEF MUN,      80,  50)
+COMBO(mute,   &kp C_MUTE,         0  1, NAV,          80,  50)
+COMBO(pp,     &kp C_PP,          10 11, NAV,          80,  50)
 	};
 };
