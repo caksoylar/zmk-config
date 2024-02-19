@@ -47,11 +47,11 @@ layers:
   - '5'
   - '6'
   - '='
-  - ''
+  - ←
   - Shift
   - Ctrl
   - Alt
-  - Gui
+  - CALC
   - '`'
   - '1'
   - '2'
@@ -136,9 +136,9 @@ layers:
   - ''
   NAV:
   - Vol Up
-  - ''
   - Tab Left
   - Tab Right
+  - ''
   - Tab Close
   - Insert
   - Home
@@ -146,9 +146,9 @@ layers:
   - End
   - Page Up
   - Vol Down
-  - ''
   - Win Prev
   - Win Next
+  - LSHIFT
   - Win Close
   - Caps Lock
   - ←
@@ -156,9 +156,9 @@ layers:
   - →
   - Page Down
   - MUTE
-  - ''
   - ⏮️
   - ⏭️
+  - ''
   - ⏯
   - LC(Y)
   - {t: LC(V), type: held}

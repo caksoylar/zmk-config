@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
+layout: {qmk_keyboard: totem}
 layers:
   DEF:
   - Q
@@ -21,22 +21,16 @@ layers:
   - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - Z
   - X
   - C
   - {t: V, h: MSE}
-  - B
-  - N
   - M
   - ','
   - .
-  - /
-  - Esc
   - {t: ␣, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⏎, h: SYM}
   - {t: ⌫, h: BRD}
-  - {t: ⌦, h: FUN}
   BRD:
   - '['
   - '7'
@@ -67,12 +61,12 @@ layers:
   - +
   - '-'
   - '*'
-  - /
+  - {t: /, type: held}
   - .
   - '0'
   - '-'
   - ''
-  - {t: ⌫, h: BRD, type: held}
+  - {t: ⌫, h: BRD}
   - ''
   GME:
   - ↹
@@ -95,22 +89,16 @@ layers:
   - K
   - L
   - {t: GME, h: toggle}
-  - Esc
   - Z
   - X
   - C
-  - V
-  - N
   - M
   - ','
   - .
-  - /
-  - Ctrl
   - {t: ⏎, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⌫, h: FUN}
   - {t: ⌫, h: BRD}
-  - {t: GME, h: toggle}
   SYM:
   - '{'
   - '&'
@@ -140,13 +128,11 @@ layers:
   - ''
   - F1
   - F2
-  - F3
+  - {t: F3, type: held}
   - F10
-  - (
   - )
   - _
-  - {t: ⏎, h: SYM, type: held}
-  - ''
+  - {t: ⏎, h: SYM}
   - ''
   NAV:
   - Vol Up
@@ -175,16 +161,14 @@ layers:
   - ''
   - ⏯
   - LC(Y)
-  - LC(V)
+  - {t: LC(V), type: held}
   - LC(C)
   - LC(X)
   - LC(Z)
-  - ''
-  - {t: ␣, h: NAV, type: held}
-  - ''
+  - {t: ␣, h: NAV}
   - ''
   - ''
-  - {t: ⌦, h: FUN}
+  - ''
   FUN:
   - F12
   - F7
@@ -211,17 +195,14 @@ layers:
   - F2
   - F3
   - ''
-  - ''
   - Caps Lock
   - Print Scrn
   - Pause Break
-  - Boot
-  - Esc
+  - {t: Boot, type: held}
   - ''
   - ''
   - ''
   - ''
-  - {t: ⌦, h: FUN, type: held}
   MSE:
   - LC(Z)
   - LC(X)
@@ -245,20 +226,16 @@ layers:
   - MW↓
   - LC(Z)
   - LC(X)
-  - LC(C)
-  - {t: LC(V), type: held}
+  - {t: LC(C), type: held}
+  - LC(V)
   - LC(Y)
-  - ''
   - Back Click
   - Middle Click
   - Forward Click
   - ''
-  - ''
-  - ''
   - {t: ↹, h: MSE}
   - Left Click
   - Right Click
-  - ''
 combos:
 - p: [2, 3]
   k: J
@@ -307,26 +284,26 @@ combos:
 - p: [4, 14]
   k: ⏯
   l: [NAV]
-- p: [21, 22]
+- p: [20, 21]
   k: Z
   l: [DEF, BRD]
-- p: [22, 23]
+- p: [21, 22]
   k: V
   l: [DEF]
-- p: [26, 27]
+- p: [23, 24]
   k: \
   l: [DEF, BRD, SYM]
-- p: [27, 28]
+- p: [24, 25]
   k: /
   l: [DEF, BRD, SYM]
-- p: [21, 22]
+- p: [20, 21]
   k: F12
   l: [FUN]
   a: bottom
-- p: [27, 28]
+- p: [24, 25]
   k: BT CLR
   l: [FUN]
   a: bottom
-- p: [31, 32]
+- p: [26, 27]
   k: MSE
   l: [DEF, BRD]
