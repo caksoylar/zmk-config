@@ -105,31 +105,31 @@ layers:
   - '*'
   - (
   - '}'
-  - ''
-  - F7
-  - F8
-  - F9
-  - F12
+  - Insert
+  - Home
+  - ↑
+  - End
+  - Page Up
   - ':'
   - $
   - '%'
   - ^
   - +
-  - ''
-  - F4
-  - F5
-  - F6
-  - F11
+  - Caps Lock
+  - ←
+  - ↓
+  - →
+  - Page Down
   - '~'
   - '!'
   - '@'
   - '#'
   - '|'
-  - ''
-  - F1
-  - F2
-  - {t: F3, type: held}
-  - F10
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - {t: LC(X), type: held}
+  - LC(Z)
   - )
   - _
   - {t: ⏎, h: SYM}
@@ -204,31 +204,31 @@ layers:
   - ''
   - ''
   MSE:
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - LC(V)
-  - LC(Y)
+  - Vol Up
+  - Tab Left
+  - Tab Right
+  - ''
+  - Tab Close
   - ''
   - MW←
   - M↑
   - MW→
   - MW↑
-  - Gui
-  - Alt
-  - Ctrl
-  - Shift
-  - ''
+  - Vol Down
+  - Win Prev
+  - Win Next
+  - LSHIFT
+  - Win Close
   - ''
   - M←
   - M↓
   - M→
   - MW↓
-  - LC(Z)
-  - LC(X)
-  - {t: LC(C), type: held}
-  - LC(V)
-  - LC(Y)
+  - MUTE
+  - ⏮️
+  - {t: ⏭️, type: held}
+  - ''
+  - ⏯
   - Back Click
   - Middle Click
   - Forward Click

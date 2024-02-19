@@ -208,7 +208,7 @@
         };
 
         bird_layer {
-            display-name = "BRD";
+            display-name = "BRD"; // BRD NUM
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &LC(Z)
@@ -241,11 +241,11 @@
             display-name = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &none         &kp F7        &kp F8        &kp F9        &kp F12
+     &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &none         &kp F4        &kp F5        &kp F6        &kp F11
+     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &none         &kp F1        &kp F2        &kp F3        &kp F10
+     &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_L_SYM      &kp RPAR      &kp UNDER         &lt SYM RET   &none         T3_XXX
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -287,11 +287,11 @@
             display-name = "MSE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &none       &msc SCRL_LEFT &mmv MOVE_UP   &msc SCRL_RIGHT &msc SCRL_UP
+     &kp C_VOL_UP  &kp TAB_LT    &kp TAB_RT    &none         &kp LC(F4)        &none       &msc SCRL_LEFT &mmv MOVE_UP   &msc SCRL_RIGHT &msc SCRL_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT    &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
+     &kp C_VOL_DN  &kp LS(TAB)   &swapper      &kp LSHIFT    &kp LA(F4)        &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         ALP_XXX       &mkp MB4      &mkp MCLK     &mkp MB5      ALP_XXX
+     &kp C_MUTE    &kp C_PREV    &kp C_NEXT    &none         &kp C_PP          ALP_XXX       &mkp MB4      &mkp MCLK     &mkp MB5      ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_XXX        &none         &lt MSE TAB       &mkp LCLK     &mkp RCLK     T3_XXX
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

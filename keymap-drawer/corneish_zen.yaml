@@ -117,31 +117,31 @@ layers:
   - '*'
   - (
   - '}'
-  - ''
-  - F7
-  - F8
-  - F9
-  - F12
+  - Insert
+  - Home
+  - ↑
+  - End
+  - Page Up
   - ':'
   - $
   - '%'
   - ^
   - +
-  - ''
-  - F4
-  - F5
-  - F6
-  - F11
+  - Caps Lock
+  - ←
+  - ↓
+  - →
+  - Page Down
   - '~'
   - '!'
   - '@'
   - '#'
   - '|'
-  - ''
-  - F1
-  - F2
-  - F3
-  - F10
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
   - (
   - )
   - _
@@ -223,31 +223,31 @@ layers:
   - ''
   - {t: ⌦, h: FUN, type: held}
   MSE:
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - LC(V)
-  - LC(Y)
+  - Vol Up
+  - Tab Left
+  - Tab Right
+  - ''
+  - Tab Close
   - ''
   - MW←
   - M↑
   - MW→
   - MW↑
-  - Gui
-  - Alt
-  - Ctrl
-  - Shift
-  - ''
+  - Vol Down
+  - Win Prev
+  - Win Next
+  - LSHIFT
+  - Win Close
   - ''
   - M←
   - M↓
   - M→
   - MW↓
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - {t: LC(V), type: held}
-  - LC(Y)
+  - MUTE
+  - ⏮️
+  - ⏭️
+  - {type: held}
+  - ⏯
   - ''
   - Back Click
   - Middle Click
