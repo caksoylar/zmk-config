@@ -187,39 +187,39 @@ layers:
   - Boot
   - ''
   MSE:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BT CLR
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - EP TOG
   - MW←
-  - MW↓
   - M↑
-  - MW↑
   - MW→
+  - MW↑
   - Ctrl
   - Gui
   - Alt
-  - Shift
+  - LSHIFT
   - ''
-  - ''
+  - Out BLE
   - M←
   - M↓
   - M→
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
+  - MW↓
+  - LC(Z)
+  - LC(X)
+  - LC(C)
+  - {t: LC(V), type: held}
+  - LC(Y)
+  - Out USB
   - Back Click
   - Middle Click
   - Forward Click
   - ''
   - ''
   - ''
-  - ''
+  - {t: ↹, h: MSE}
   - Left Click
   - Right Click
   - ''
