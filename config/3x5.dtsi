@@ -80,14 +80,6 @@
 
 #include "combos.dtsi"
 
-#ifdef EXTERNAL_POWER
-#    define FN_EXTRA1 &ext_power EP_ON
-#    define FN_EXTRA2 &ext_power EP_OFF
-#else
-#    define FN_EXTRA1 &kp PSCRN
-#    define FN_EXTRA2 &kp PAUSE_BREAK
-#endif
-
 #ifdef MOUSE_KEYS
 #    include "mouse.dtsi"
 #    define MS_ACT(key) &lt MSE key
@@ -154,13 +146,6 @@
             hold-trigger-on-release;
         };
 
-        // Swapper for smart alt+tab
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <SWP_POS>;
-        };
     };
 
 
