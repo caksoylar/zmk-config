@@ -21,20 +21,22 @@ layers:
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: O, h: Ctrl}
-  - Z
+  - ''
   - X
   - C
   - D
-  - V
-  - J
+  - ''
+  - ''
   - H
   - ','
   - .
-  - /
+  - ''
+  - ''
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
   - {t: ⏎, h: Shift}
+  - ''
   BRD:
   - X
   - C
@@ -59,17 +61,19 @@ layers:
   - ''
   - W
   - M
-  - G
+  - ''
   - ''
   - ''
   - D
   - ','
   - .
   - ''
+  - ''
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
   - {t: ⏎, h: Shift}
+  - ''
   GME:
   - ↹
   - Q
@@ -91,20 +95,22 @@ layers:
   - K
   - L
   - {t: GME, h: toggle}
-  - Esc
+  - ''
   - Z
   - X
   - C
-  - V
-  - N
+  - ''
+  - ''
   - M
   - ','
   - .
-  - /
+  - ''
+  - ''
   - Alt
   - ␣
   - NAV
   - ⏎
+  - ''
   SYM:
   - '!'
   - '@'
@@ -131,19 +137,21 @@ layers:
   - '*'
   - '&'
   - ''
-  - ;
+  - ''
   - '1'
   - '2'
   - '3'
-  - /
+  - ''
+  - ''
   - ⌫
   - {t: ▽, type: trans}
   - {type: held}
   - ''
+  - ''
   NAV:
   - Win Close
-  - Tab Left
-  - Tab Right
+  - ''
+  - ''
   - Tab Close
   - Vol Up
   - Insert
@@ -163,18 +171,20 @@ layers:
   - End
   - ''
   - Win Prev
-  - Win Next
+  - ''
   - Paste
-  - ⏯
+  - ''
   - ''
   - ⌦
   - ⏮️
   - ⏭️
   - ''
   - ''
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - ␣
+  - ''
   FUN:
   - F1
   - F2
@@ -183,9 +193,9 @@ layers:
   - F5
   - Out USB
   - Out BLE
-  - {t: DEF, h: toggle}
-  - {t: BRD, h: toggle}
-  - {t: GME, h: toggle}
+  - ''
+  - ''
+  - ''
   - F6
   - F7
   - F8
@@ -197,19 +207,21 @@ layers:
   - BT 4
   - BT 5
   - ''
-  - Desk Left
-  - Desk Right
+  - ''
+  - ''
   - F11
-  - F12
+  - ''
   - ''
   - Caps Lock
-  - Print Scrn
-  - Pause Break
+  - ''
+  - ''
+  - ''
   - ''
   - Boot
   - {type: held}
   - {type: held}
   - Boot
+  - ''
 combos:
 - p: [0, 1]
   k: Esc
