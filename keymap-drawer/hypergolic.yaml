@@ -30,7 +30,8 @@ layers:
   - M
   - ','
   - .
-  - SLASH td0
+  - /
+  - '&td0'
   - {t: ␣, h: NAV}
   - ↹
   - {t: ⏎, h: SYM}
@@ -70,8 +71,8 @@ layers:
   - .
   - '0'
   - '-'
-  - {type: held}
-  - {t: ⌫, h: NUM}
+  - ''
+  - {t: ⌫, h: NUM, type: held}
   - ''
   CMK:
   - Q
@@ -143,8 +144,8 @@ layers:
   - LC(Z)
   - (
   - )
-  - {t: _, type: held}
-  - {t: ⏎, h: SYM}
+  - _
+  - {t: ⏎, h: SYM, type: held}
   - ''
   - ''
   NAV:
@@ -178,8 +179,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
