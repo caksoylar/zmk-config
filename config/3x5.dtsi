@@ -146,13 +146,13 @@
             display-name = "NUM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
+     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &LC(Z)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
+     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp DOT       &kp COMMA     &kp RCTRL     &kp RALT      &kp C_CALC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp W         &kp M         &none         &none             &none         &kp D         &kp COMMA     &kp DOT       &none
+     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET &none
+                                 &kp DOT       &kp N0        &kp MINUS         &none         &lt MUN BSPC  &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
