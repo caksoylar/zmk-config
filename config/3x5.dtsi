@@ -198,26 +198,26 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr RALT K  &amr RGUI L   &amr RCTRL SQT
+     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr RSHFT J  &amr RALT K   &amr RGUI L   &amr RCTRL SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         MS_ACT(V)     &lt MED B         &lt FUN N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
+     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH  
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &lt MED ESC   &lt NAV SPACE &lt MSE TAB       &lt SYM RET  &lt MUN BSPC   &lt FUN DEL
+                                 T3_L_DEF      &mt LCTRL ESC MS_ACT(TAB)SPACE     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
-        bird_layer {
-            display-name = "BRD";
+        number_layer {
+            display-name = "NUM"; // R1 BRD NUM
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
+     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &LC(Z)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
+     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp DOT       &kp COMMA     &kp RCTRL     &kp RALT      &kp C_CALC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp W         &kp M         MS_ACT(G)     ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
+     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET T3_R_DEF
+                                 &kp DOT       &kp N0        &kp MINUS         &none         &lt MUN BSPC  &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
