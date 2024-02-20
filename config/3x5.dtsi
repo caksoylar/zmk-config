@@ -39,8 +39,8 @@
 #    else
 #        define THUMBS 30 31 32 33 34 35
 #    endif
-#    define T3_L_DEF &mt LGUI TAB
-#    define T3_R_DEF &mt RALT DEL
+#    define T3_L_DEF &kp ESC
+#    define T3_R_DEF &kp DEL
 #    define T3_XXX   &none
 #else
 #    ifdef ALPHA_23332
