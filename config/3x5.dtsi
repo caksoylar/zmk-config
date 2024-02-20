@@ -8,12 +8,12 @@
 
 // Layer aliases
 #define DEF 0
-#define MUN 1
-#define SYM 2
-#define NAV 3
-#define MSE 4
+#define NUM 1
+#define GME 2
+#define SYM 3
+#define NAV 4
 #define FUN 5
-#define MED 6
+#define MSE 6
 
 // Desktop and tab navigation shortcuts
 #define D_LT   LC(LG(LEFT))
@@ -207,8 +207,8 @@
             >;
         };
 
-        bird_layer {
-            display-name = "BRD";
+        number_layer {
+            display-name = "MUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
