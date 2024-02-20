@@ -121,12 +121,13 @@
             hold-trigger-on-release;
         };
 
-        td0: tap_dance_0 {
+        td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&mo>, <&mo>;
-// <&kp ESC>, <&mo CMK>, <&mo DEF>;
+            bindings = <&kp ESC>,
+                       <&mo CMK>,
+                       <&mo DEF>;
         };
 
     };
@@ -145,9 +146,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp V         &kp B             &lt FUN N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                              &td0 ESC CMK DEF &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
+                                 &td3          &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-// ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 &td0,    &td0 ESC CMK DEF 
+// ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 &td0,    이렇게는 못씀 &td0 ESC CMK DEF 
             >;
         };
 
@@ -176,7 +177,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &kp ESC       &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
+                                 &td3          &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
