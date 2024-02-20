@@ -114,8 +114,8 @@ layers:
   - ''
   NAV:
   - Win Close
-  - TAB LT
-  - TAB RT
+  - ''
+  - ''
   - Tab Close
   - Vol Up
   - Insert
