@@ -62,8 +62,8 @@
 #    else
 #        define THUMBS 30 31 32 33 34 35
 #    endif
-#    define T3_L_DEF &mt LGUI TAB
-#    define T3_R_DEF &mt RALT DEL
+#    define T3_L_DEF &lt MED ESC
+#    define T3_R_DEF &lt FUN DEL
 #    define T3_L_GME &kp LCTRL
 #    define T3_R_GME &tog GME
 #    define T3_L_SYM &kp LGUI
@@ -202,7 +202,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH  
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &lt MED ESC   &lt NAV SPACE MS_ACT(TAB)       &lt SYM RET  &lt MUN BSPC   &lt FUN DEL
+                                 T3_L_DEF      &lt NAV SPACE MS_ACT(TAB)       &lt SYM RET  &lt MUN BSPC   T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
