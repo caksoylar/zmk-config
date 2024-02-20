@@ -3,40 +3,40 @@ layers:
   DEF:
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - K
+  - L
+  - U
+  - Y
+  - ''''
   - {t: A, h: Ctrl}
-  - {t: S, h: Gui}
-  - {t: D, h: Alt}
-  - {t: F, h: Shift}
+  - {t: R, h: Gui}
+  - {t: S, h: Alt}
+  - {t: T, h: Shift}
   - G
-  - H
-  - {t: J, h: Shift}
-  - {t: K, h: Alt}
-  - {t: L, h: Gui}
-  - {t: '''', h: Ctrl}
-  - Z
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: O, h: Ctrl}
+  - Q
   - X
   - C
-  - V
-  - {t: B, h: CMK}
-  - {t: N, h: FUN}
-  - M
+  - {t: D, h: MSE}
+  - Q
+  - Q
+  - H
   - ','
   - .
-  - /
-  - ''
-  - ''
-  - {t: ↹, h: MSE}
-  - ''
-  - ''
-  - ''
+  - Q
+  - Q
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
+  - {t: ⏎, h: Shift}
+  - Q
   NUM: ['', '', '', '', '', LC(Y), LC(V), LC(C), LC(X), '&LC(Z)', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '']
   CMK:
@@ -64,7 +64,7 @@ layers:
   - X
   - C
   - D
-  - {t: V, h: CMK, type: held}
+  - {t: V, h: CMK}
   - K
   - H
   - ','
@@ -110,7 +110,7 @@ layers:
   - ''
   - ⌫
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - ''
   - ''
   NAV:
@@ -146,7 +146,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - ␣
   - ''
@@ -176,7 +176,7 @@ layers:
   - ''
   - F11
   - ''
-  - {type: held}
+  - ''
   - Caps Lock
   - ''
   - ''
@@ -211,7 +211,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - Back Click
@@ -220,7 +220,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - Left Click
   - Right Click
   - ''
