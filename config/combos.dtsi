@@ -35,6 +35,8 @@ COMBO(tabf4,  &kp LC(F4),         5  7, DEF,          80,  50)
 
 COMBO(lock,   &kp LG(L),          3  4, DEF,          80, 500)
 
+COMBO(capswd, &caps_word,        13 16, DEF,          60, 200)
+
 COMBO(lbkt,   &kp LBKT,          10 11, DEF,          40, 100)
 COMBO(rbkt,   &kp RBKT,          18 19, DEF,          40, 100)
 COMBO(lpar,   &kp LPAR,          12 13, DEF,          40, 100)
