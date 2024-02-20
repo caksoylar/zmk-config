@@ -206,13 +206,13 @@
             display-name = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &none &none &none
+     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &kp C_VOL_DN  &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &none         &kp F11       &none             &none         &kp CAPS      &none         &none         &none
+     &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &trans        &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none        &bootloader   &trans            &trans        &bootloader   &none
+                                 &none         &none         &none             &none         &none         &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

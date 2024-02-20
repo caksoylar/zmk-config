@@ -150,42 +150,42 @@ layers:
   - ␣
   - ''
   FUN:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - Out USB
-  - Out BLE
-  - ''
-  - ''
-  - ''
-  - F6
+  - F12
   - F7
   - F8
   - F9
-  - F10
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - ''
-  - ''
-  - ''
+  - Print Scrn
+  - Vol Up
+  - Win Close
+  - LA(TAB)
+  - Tab Close
+  - ⏮️
   - F11
-  - ''
-  - ''
-  - Caps Lock
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - Vol Down
+  - LA(LS(TAB))
+  - Tab Left
+  - Tab Right
+  - ⏭️
+  - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Boot
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ⌦, h: FUN}
 combos:
 - p: [0, 1]
   k: Esc
