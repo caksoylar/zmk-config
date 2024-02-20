@@ -125,7 +125,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&mo>;
+            bindings = <&kp ESC>, <&mo CMK>;
         };
 
     };
@@ -144,7 +144,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp V         &kp B             &lt FUN N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &kp ESC       &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
+                                 td0           &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 // ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 
             >;
@@ -166,7 +166,7 @@
         };
 
         colmakdh_layer {
-            display-name = "CMK";
+            display-name = "CMK";    // 2
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT

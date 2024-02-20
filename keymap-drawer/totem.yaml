@@ -30,8 +30,7 @@ layers:
   - M
   - ','
   - .
-  - /
-  - Esc
+  - SLASH td0
   - {t: ␣, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⏎, h: SYM}
@@ -71,8 +70,8 @@ layers:
   - .
   - '0'
   - '-'
-  - ''
-  - {t: ⌫, h: NUM, type: held}
+  - {type: held}
+  - {t: ⌫, h: NUM}
   - ''
   CMK:
   - Q
@@ -144,8 +143,8 @@ layers:
   - LC(Z)
   - (
   - )
-  - _
-  - {t: ⏎, h: SYM, type: held}
+  - {t: _, type: held}
+  - {t: ⏎, h: SYM}
   - ''
   - ''
   NAV:
@@ -179,8 +178,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -254,8 +253,8 @@ layers:
   - Forward Click
   - ''
   - ''
-  - ''
-  - {t: ↹, h: MSE, type: held}
+  - {type: held}
+  - {t: ↹, h: MSE}
   - Left Click
   - Right Click
   - ''
