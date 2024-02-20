@@ -176,13 +176,13 @@
             display-name = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp SLASH     &kp N7        &kp N8        &kp N9        &kp COMMA
+     &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp PLUS      &kp EQUAL     &kp UNDER     &kp MINUS     &kp CARET         &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT
+     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &kp STAR      &kp AMPS      &none             &none         &kp N1        &kp N2        &kp N3        &none
+     &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &kp BSPC      &trans            &trans        &none         &none
+                                 &kp LPAR      &kp RPAR      &kp UNDER         &lt SYM RET   &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -191,13 +191,13 @@
             display-name = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4)    &none         &none         &kp LC(F4)    &kp C_VOL_UP      &kp INS       &kp PG_DN     &kp UP        &kp PG_UP     &kp C_AL_CALC
+     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB &kp C_VOL_DN      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
+     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp LS(TAB)   &none         &kp LS(INS)   &none             &none         &kp DEL       &kp C_PREV    &kp C_NEXT    &none
+     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &none         &trans            &trans        &kp SPACE     &none
+                                 &none         &none         &none             &none         &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
