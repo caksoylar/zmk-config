@@ -31,7 +31,7 @@ layers:
   - ','
   - .
   - /
-  - '&td0'
+  - '&td0 ESC 2 0'
   - {t: ␣, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⏎, h: SYM}

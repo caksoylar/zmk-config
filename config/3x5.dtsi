@@ -125,7 +125,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp ESC>, <&mo CMK>, <&mo DEF>;
+            bindings = <&kp>, <&mo>, <&mo>;
+// <&kp ESC>, <&mo CMK>, <&mo DEF>;
         };
 
     };
@@ -144,9 +145,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp V         &kp B             &lt FUN N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &td0          &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
+                              &td0 ESC CMK DEF &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-// ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 
+// ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 &td0,    &td0 ESC CMK DEF 
             >;
         };
 
