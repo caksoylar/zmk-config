@@ -15,14 +15,6 @@
 #define FUN 5
 #define MED 6
 
-#ifdef EXTERNAL_POWER
-#    define FN_EXTRA1 &ext_power EP_ON
-#    define FN_EXTRA2 &ext_power EP_OFF
-#else
-#    define FN_EXTRA1 &kp PSCRN
-#    define FN_EXTRA2 &kp PAUSE_BREAK
-#endif
-
 #ifdef MOUSE_KEYS
 #    include "mouse.dtsi"
 #    define MS_ACT(key) &lt MSE key
@@ -167,11 +159,11 @@
             display-name = "NAV"; // L1 WIN MED NAV
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp C_VOL_UP  &kp C_VOL_DN  &kp LC(LS(TAB)) &kp LC(TAB) &kp LC(F4)        &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
+     &none         &none         &none         &none         &none             &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp C_PREV    &kp C_NEXT    &kp LA(LS(TAB)) &kp LA(TAB) &kp LA(F4)        &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
+     &none         &none         &none         &none         &none             &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+     &none         &none         &none         &none         &none             &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &none         &lt NAV SPACE &none             &none         &none         &none 
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
