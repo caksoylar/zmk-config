@@ -3,35 +3,35 @@ layers:
   DEF:
   - Q
   - W
-  - F
-  - P
-  - B
-  - K
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ''''
+  - U
+  - I
+  - O
+  - P
   - {t: A, h: Ctrl}
-  - {t: R, h: Gui}
-  - {t: S, h: Alt}
-  - {t: T, h: Shift}
+  - {t: S, h: Gui}
+  - {t: D, h: Alt}
+  - {t: F, h: Shift}
   - G
-  - M
-  - {t: N, h: Shift}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
-  - {t: O, h: Ctrl}
-  - ''
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Alt}
+  - {t: L, h: Gui}
+  - {t: '''', h: Ctrl}
+  - Z
   - X
   - C
-  - {t: D, h: MSE}
-  - ''
-  - ''
-  - H
+  - V
+  - B
+  - {t: N, h: FUN}
+  - M
   - ','
   - .
-  - ''
-  - ''
+  - /
+  - {t: D, h: MSE}
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
@@ -211,7 +211,7 @@ layers:
   - F2
   - F3
   - Pause Break
-  - {t: ▽, type: trans}
+  - {type: held}
   - LC(V)
   - LC(C)
   - LC(X)
@@ -246,14 +246,14 @@ layers:
   - LC(Z)
   - LC(X)
   - LC(C)
-  - {t: LC(V), type: held}
+  - LC(V)
   - LC(Y)
   - Out USB
   - Back Click
   - Middle Click
   - Forward Click
   - ''
-  - ''
+  - {type: held}
   - ''
   - {t: ↹, h: MSE}
   - Left Click
