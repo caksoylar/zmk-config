@@ -33,12 +33,11 @@ layers:
   - /
   - ''
   - ''
+  - {t: ↹, h: MSE}
   - ''
   - ''
   - ''
-  - ''
-  NUM: ['[', '7', '8', '9', ']', LC(Y), LC(V), LC(C), LC(X), '&LC(Z)', ;, '4', '5', '6', '=', ., ',', Ctrl, Alt, CALC, '`', '1', '2', '3', \, ⏎, +, '-', '*', /, '',
-    '', '', '', '', '']
+  NUM: ['', '', '', '', '', '', '', '', '', '', ;, '4', '5', '6', '=', ., ',', Ctrl, Alt, CALC, '`', '1', '2', '3', \, ⏎, +, '-', '*', /, '', '', '', '', '', '']
   CMK:
   - Q
   - W
@@ -187,8 +186,43 @@ layers:
   - {t: ▽, type: trans}
   - Boot
   - ''
-  MSE: ['', '', '', '', '', MW←, MW↓, M↑, MW↑, MW→, Ctrl, Gui, Alt, Shift, '', '', M←, M↓, M→, '', '', '', '', '', '', '', Back Click, Middle Click, Forward Click,
-    '', '', '', '', Left Click, Right Click, '']
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MW←
+  - MW↓
+  - M↑
+  - MW↑
+  - MW→
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
+  - ''
+  - ''
+  - M←
+  - M↓
+  - M→
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - Left Click
+  - Right Click
+  - ''
 combos:
 - p: [0, 1]
   k: Esc
