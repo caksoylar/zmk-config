@@ -1,0 +1,261 @@
+layout: {qmk_keyboard: totem}
+layers:
+  DEF:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Ctrl}
+  - {t: S, h: Gui}
+  - {t: D, h: Alt}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Alt}
+  - {t: L, h: Gui}
+  - {t: '''', h: Ctrl}
+  - Z
+  - X
+  - C
+  - {t: V, h: NAV}
+  - {t: B, h: MSE}
+  - {t: N, h: MED}
+  - M
+  - ','
+  - .
+  - /
+  - {t: Esc, h: MSE}
+  - {t: ␣, h: FUN}
+  - {t: ↹, h: NAV}
+  - {t: ⏎, h: SYM}
+  - {t: ⌫, h: NUM}
+  - {t: ⌦, h: MED}
+  NUM:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - '&LC(Z)'
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - .
+  - ','
+  - Ctrl
+  - Alt
+  - CALC
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ⏎
+  - +
+  - '-'
+  - '*'
+  - /
+  - .
+  - '0'
+  - '-'
+  - ''
+  - {t: ⌫, h: NUM, type: held}
+  - ''
+  SYM:
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - Insert
+  - Home
+  - ↑
+  - End
+  - Page Up
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - Caps Lock
+  - ←
+  - ↓
+  - →
+  - Page Down
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
+  - (
+  - )
+  - _
+  - {t: ⏎, h: SYM, type: held}
+  - ''
+  - ''
+  FUN:
+  - F12
+  - F7
+  - F8
+  - F9
+  - Print Scrn
+  - Vol Up
+  - Win Close
+  - LA(TAB)
+  - Tab Close
+  - ⏮️
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - Vol Down
+  - LA(LS(TAB))
+  - Tab Left
+  - Tab Right
+  - ⏭️
+  - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
+  - {t: ▽, type: trans}
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - {t: ⌦, h: MED}
+  NAV:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ␣, h: FUN}
+  - ''
+  - ''
+  - ''
+  - ''
+  MED:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - {t: K, type: held}
+  - H
+  - ','
+  - .
+  - /
+  - {t: Esc, h: MSE}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  MSE:
+  - BT CLR
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - EP TOG
+  - MW←
+  - M↑
+  - MW→
+  - MW↑
+  - Ctrl
+  - Gui
+  - Alt
+  - LSHIFT
+  - ''
+  - Out BLE
+  - M←
+  - M↓
+  - M→
+  - MW↓
+  - LC(Z)
+  - LC(X)
+  - LC(C)
+  - LC(V)
+  - {t: LC(Y), type: held}
+  - Out USB
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - ''
+  - ''
+  - {t: ↹, h: NAV}
+  - Left Click
+  - Right Click
+  - ''
