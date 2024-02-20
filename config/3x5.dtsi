@@ -7,8 +7,8 @@
 
 // Layer aliases
 #define DEF 0
-#define BRD 1
-#define GME 2
+#define NUM 1    // BRD NUM
+#define CMK 2    // GME CMK
 #define SYM 3
 #define NAV 4
 #define FUN 5
@@ -142,8 +142,8 @@
             >;
         };
 
-        bird_layer {
-            display-name = "BRD";
+        number_layer {
+            display-name = "NUM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
@@ -157,8 +157,8 @@
             >;
         };
 
-        game_layer {
-            display-name = "GME";
+        colmakdh_layer {
+            display-name = "CMK";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp Y         &kp U         &kp I         &kp O         &kp ESC

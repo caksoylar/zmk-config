@@ -342,8 +342,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 333)" class="layer-BRD">
-<text x="0" y="28" class="label">BRD:</text>
+<g transform="translate(30, 333)" class="layer-NUM">
+<text x="0" y="28" class="label">NUM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -496,8 +496,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 664)" class="layer-GME">
-<text x="0" y="28" class="label">GME:</text>
+<g transform="translate(30, 664)" class="layer-CMK">
+<text x="0" y="28" class="label">CMK:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
