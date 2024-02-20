@@ -2,9 +2,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#ifdef EXTERNAL_POWER
-#    include <dt-bindings/zmk/ext_power.h>
-#endif
+#include <dt-bindings/zmk/ext_power.h>
+
 
 // Layer aliases
 #define DEF 0
@@ -48,34 +47,6 @@
 #    define ALP_PP  &kp C_PP
 #    define ALP_XXX &none
 #    define SWP_POS 21
-#endif
-
-#ifdef THREE_THUMBS
-#    ifdef ALPHA_23332
-#        define THUMBS 26 27 28 29 30 31
-#    else
-#        define THUMBS 30 31 32 33 34 35
-#    endif
-#    define T3_L_DEF &mt LGUI TAB
-#    define T3_R_DEF &mt RALT DEL
-#    define T3_L_GME &kp LCTRL
-#    define T3_R_GME &tog GME
-#    define T3_L_SYM &kp LGUI
-#    define T3_R_SYM &kp RALT
-#    define T3_XXX   &none
-#else
-#    ifdef ALPHA_23332
-#        define THUMBS 26 27 28 29
-#    else
-#        define THUMBS 30 31 32 33
-#    endif
-#    define T3_L_DEF
-#    define T3_R_DEF
-#    define T3_L_GME
-#    define T3_R_GME
-#    define T3_L_SYM
-#    define T3_R_SYM
-#    define T3_XXX
 #endif
 
 #include "combos.dtsi"
