@@ -105,12 +105,12 @@ layers:
   - ','
   - .
   - /
-  - ''
-  - Alt
-  - ␣
-  - NAV
-  - ⏎
-  - ''
+  - Esc
+  - {t: ␣, h: NAV}
+  - {t: ↹, h: MSE}
+  - {t: ⏎, h: SYM}
+  - {t: ⌫, h: NUM}
+  - {t: ⌦, h: FUN}
   SYM:
   - '{'
   - '&'
