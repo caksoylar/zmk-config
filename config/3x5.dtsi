@@ -8,7 +8,7 @@
 
 // Layer aliases
 #define DEF 0
-#define NUM 1
+#define BRD 1
 #define GME 2
 #define SYM 3
 #define NAV 4
@@ -207,8 +207,8 @@
             >;
         };
 
-        number_layer {
-            display-name = "MUN";
+        bird_layer {
+            display-name = "BRD";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
