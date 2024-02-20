@@ -31,12 +31,12 @@ layers:
   - ','
   - .
   - /
-  - D
-  - {t: Esc, h: Ctrl}
+  - Esc
   - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
-  - ''
+  - ↹
+  - {t: ⏎, h: SYM}
+  - {t: ⌫, h: NUM}
+  - {t: ⌦, h: FUN}
   NUM:
   - '['
   - '7'
@@ -72,7 +72,7 @@ layers:
   - '0'
   - '-'
   - ''
-  - {t: ⌫, h: NUM}
+  - {t: ⌫, h: NUM, type: held}
   - ''
   CMK:
   - Q
@@ -180,8 +180,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - ''
