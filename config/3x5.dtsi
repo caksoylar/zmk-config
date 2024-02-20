@@ -15,12 +15,6 @@
 #define FUN 5
 #define MSE 6
 
-// Desktop and tab navigation shortcuts
-#define D_LT   LC(LG(LEFT))
-#define D_RT   LC(LG(RIGHT))
-#define TAB_RT LC(TAB)
-#define TAB_LT LC(LS(TAB))
-
 // Key position groups and extra key bindings
 #ifdef ALPHA_23332   /* dropped index and pinkies */
 #    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22
@@ -167,26 +161,6 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <SWP_POS>;
         };
-    };
-
-    cond_layers {
-        compatible = "zmk,conditional-layers";
-        // Define FUN layer as tri-state
-        func_tristate {
-            if-layers = <NAV SYM>;
-            then-layer = <FUN>;
-        };
-    };
-
-    macros {
-        ZMK_MACRO(inv_qm,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
-                , <&macro_release &kp LALT>;
-        )
     };
 
 
