@@ -21,61 +21,60 @@ layers:
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: O, h: Ctrl}
-  - Q
+  - ''
   - X
   - C
   - {t: D, h: MSE}
-  - Q
-  - Q
+  - ''
+  - ''
   - H
   - ','
   - .
-  - Q
-  - Q
+  - ''
+  - ''
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
   - {t: ⏎, h: Shift}
-  - Q
-  NUM: ['', '', '', '', '', LC(Y), LC(V), LC(C), LC(X), '&LC(Z)', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '']
-  CMK:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - {t: A, h: Ctrl}
-  - {t: R, h: Gui}
-  - {t: S, h: Gui}
-  - {t: T, h: Shift}
-  - G
-  - M
-  - '&asr N'
-  - '&amr E'
-  - '&amr I'
-  - '&amr O'
-  - Z
+  - ''
+  NUM:
   - X
   - C
-  - D
-  - {t: V, h: CMK}
+  - L
+  - F
+  - B
+  - J
+  - Y
+  - O
+  - U
+  - ''''
+  - {t: R, h: Ctrl}
+  - {t: S, h: Gui}
+  - {t: N, h: Alt}
+  - {t: T, h: Shift}
+  - P
   - K
-  - H
+  - {t: H, h: Shift}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: A, h: Ctrl}
+  - ''
+  - W
+  - M
+  - {t: G, h: MSE}
+  - ''
+  - ''
+  - D
   - ','
   - .
-  - /
   - ''
   - ''
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
+  - {t: ⏎, h: Shift}
   - ''
-  - ''
-  - ''
-  - ''
+  CMK: [↹, Q, W, E, R, Y, U, I, O, Esc, Shift, A, S, D, F, H, J, K, L, '', '', Z, X, C, '', '', M, ',', ., '', '', Alt, ␣, NAV, ⏎, '']
   SYM:
   - '!'
   - '@'
@@ -115,8 +114,8 @@ layers:
   - ''
   NAV:
   - Win Close
-  - ''
-  - ''
+  - TAB LT
+  - TAB RT
   - Tab Close
   - Vol Up
   - Insert
