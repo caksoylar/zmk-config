@@ -7,11 +7,11 @@
 
 // Layer aliases left thums T0L, right thums T0R
 #define DEF 0
-#define T1R 1    // sym nav
-#define T2R 2    // xxx
+#define T1R 1    // num calc
+#define T2R 2    // sym nav
 #define T3R 3    // medi ble pwr; wintab
-#define T1L 4    // num calc
-#define T3L 5    // colmakdh
+#define T1L 4    // colmakdh
+#define T3L 5    // xxx
 #define MSE 6    // fun mse    T2L
 
 // Key position groups and extra key bindings
@@ -144,7 +144,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr RALT K  &amr RGUI L   &amr RCTRL SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp V         &lt T3L B         &lt T3R N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
+     &kp Z         &kp X         &kp C         &kp V         &kp B             &lt T3R N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &td0          &lt T1L SPACE  MS_ACT(TAB)      &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -186,13 +186,13 @@
             display-name = "T3R";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp C_VOL_UP &out OUT_BLE &out OUT_USB &ext_power EP_TOG &kp C_PREV       &none         &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &none
+     &kp C_VOL_UP &out OUT_BLE &out OUT_USB &ext_power EP_TOG &kp C_PREV       &none         &none         &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp C_VOL_DN &bt BT_SEL 3 &bt BT_CLR    &bt BT_CLR_ALL &kp C_NEXT         &kp LC(Y)     &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &none
+     &kp C_VOL_DN &bt BT_SEL 3 &bt BT_CLR    &bt BT_CLR_ALL &kp C_NEXT         &kp LC(Y)     &none         &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &none             &trans        &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &none         &none             &none         &none         &lt T3R DEL
+                                 &none         &none         &none             &none         &none         &kp DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -201,13 +201,13 @@
             display-name = "T1L";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &lt T1L SPACE &none             &none         &none         &none
+                                 &td0          &kp SPACE     MS_ACT(TAB)       &lt T2R RET   &lt T1R BSPC  &kp DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -216,13 +216,13 @@
             display-name = "T3L";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
+     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &td0          &lt T1L SPACE  MS_ACT(TAB)      &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
+                                 &none         &none         &none             &none         &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
