@@ -42,8 +42,8 @@ COMBO(rbkt,   &kp RBKT,          18 19, DEF,          40, 100)
 COMBO(lpar,   &kp LPAR,          12 13, DEF,          40, 100)
 COMBO(rpar,   &kp RPAR,          16 17, DEF,          40, 100)
 
-COMBO(mute,   &kp C_MUTE,         5 15, DEF FUN,     200, 200)
-COMBO(pp,     &kp C_PP,           9 19, FUN,         200, 200)
+COMBO(mute,   &kp C_MUTE,         0 10, DEF T3R,     200, 200)
+COMBO(pp,     &kp C_PP,           4 14, T3R,         200, 200)
 
 COMBO(semi,   &kp SEMI,          27 28, DEF,          40, 100)
 COMBO(colon,  &kp COLON,         28 29, DEF,          40, 100)
