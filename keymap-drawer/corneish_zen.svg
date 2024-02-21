@@ -630,7 +630,7 @@ path.combo {
 </g>
 <g transform="translate(168, 205)" class="key ghost keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
-<text x="0" y="0" class="key ghost tap">&amp;td3</text>
+<text x="0" y="0" class="key ghost tap">&amp;td0</text>
 </g>
 <g transform="translate(230, 213) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
