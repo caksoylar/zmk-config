@@ -31,7 +31,7 @@ layers:
   - ','
   - .
   - /
-  - '&td3'
+  - '&td0'
   - {t: ␣, h: NAV}
   - {t: ↹, h: MSE}
   - {t: ⏎, h: SYM}
@@ -54,10 +54,10 @@ layers:
   - '6'
   - '='
   - .
+  - LSHIFT
   - ','
-  - Alt
   - Ctrl
-  - C
+  - CALC
   - '`'
   - '1'
   - '2'
@@ -127,7 +127,7 @@ layers:
   - '%'
   - ^
   - +
-  - Caps Lock
+  - {t: Caps Lock, h: LSHIFT}
   - ←
   - ↓
   - →
@@ -186,31 +186,31 @@ layers:
   - ''
   - ''
   FUN:
-  - F12
-  - F7
-  - F8
-  - F9
-  - Print Scrn
   - Vol Up
+  - Out BLE
+  - Out USB
+  - EP TOG
+  - ⏮️
+  - ''
   - Win Close
   - LA(TAB)
   - Tab Close
-  - ⏮️
-  - F11
-  - F4
-  - F5
-  - F6
-  - SLCK
+  - ''
   - Vol Down
+  - BT 4
+  - BT CLR
+  - BT CLR ALL
+  - ⏭️
+  - ''
   - LA(LS(TAB))
   - Tab Left
   - Tab Right
-  - ⏭️
-  - F10
-  - F1
-  - F2
-  - F3
-  - Pause Break
+  - ''
+  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - ''
   - {type: held}
   - LC(V)
   - LC(C)
@@ -223,32 +223,32 @@ layers:
   - ''
   - {t: ⌦, h: FUN}
   MSE:
-  - BT CLR
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - EP TOG
+  - F12
+  - F7
+  - F8
+  - F9
+  - Print Scrn
+  - ''
   - MW←
   - M↑
   - MW→
   - MW↑
-  - Ctrl
-  - Gui
-  - Alt
-  - LSHIFT
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
   - ''
-  - Out BLE
   - M←
   - M↓
   - M→
   - MW↓
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - LC(V)
-  - LC(Y)
-  - Out USB
+  - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
+  - ''
   - Back Click
   - Middle Click
   - Forward Click

@@ -121,7 +121,7 @@
             hold-trigger-on-release;
         };
 
-        td3: tap_dance_3 {
+        td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -146,7 +146,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp V         &kp B             &lt FUN N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &td3          &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
+                                 &td0          &lt NAV SPACE  MS_ACT(TAB)      &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 // ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 &td0,    이렇게는 못씀 &td0 ESC CMK DEF 
             >;
@@ -158,7 +158,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp DOT       &kp COMMA     &kp LALT      &kp RCTRL     &kp C
+     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp DOT       &kp LSHIFT    &kp COMMA     &kp RCTRL     &kp C_CALC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -188,7 +188,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp CAPS      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
+     &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS        &mt LSHIFT CAPS &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -216,11 +216,11 @@
             display-name = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV
+     &kp C_VOL_UP &out OUT_BLE &out OUT_USB &ext_power EP_TOG &kp C_PREV       &none         &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &kp C_VOL_DN  &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT
+     &kp C_VOL_DN &bt BT_SEL 3 &bt BT_CLR    &bt BT_CLR_ALL &kp C_NEXT         &none         &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &trans        &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+     &none         &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &none             &trans        &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &none         &none         &none             &none         &none         &lt FUN DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -232,11 +232,11 @@
             display-name = "MSE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &bt BT_CLR    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1 &bt BT_SEL 0  &ext_power EP_TOG &msc SCRL_LEFT &mmv MOVE_UP   &msc SCRL_RIGHT &msc SCRL_UP
+     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN         &none        &msc SCRL_LEFT &mmv MOVE_UP  &msc SCRL_RIGHT &msc SCRL_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHIFT    &none             &out OUT_BLE &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
+     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &none        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &out OUT_USB  &mkp MB4      &mkp MCLK     &mkp MB5      &none
+     &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &none         &none         &lt MSE TAB       &mkp LCLK     &mkp RCLK     &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
