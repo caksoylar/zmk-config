@@ -152,24 +152,21 @@
 
     cond_layers {
         compatible = "zmk,conditional-layers";
-        // Define FUN layer as tri-state
-        func_tristate {
+        t3l_tristate {
             if-layers = <T1L T2L>;
             then-layer = <T3L>;
         };
-    };    
+    };
     cond_layers {
         compatible = "zmk,conditional-layers";
-        // Define FUN layer as tri-state
-        func_tristate {
+        t3r_tristate {
             if-layers = <T1R T2R>;
             then-layer = <T3R>;
         };
     };
-        cond_layers {
+    cond_layers {
         compatible = "zmk,conditional-layers";
-        // Define FUN layer as tri-state
-        func_tristate {
+        def_tristate {
             if-layers = <T1L T1L>;
             then-layer = <DEF>;
         };
