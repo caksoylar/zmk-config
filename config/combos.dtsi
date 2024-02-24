@@ -23,30 +23,44 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(esc,    &kp ESC,            0  1, DEF,          80,  50)
-COMBO(del,    &kp DEL,            8  9, DEF,          80,  50)
+// horizontal same hand
+COMBO(tab_l,  &kp LC(LS(TAB)),    1  2, DEF T3R,      80,  50)	//거짓양성
+COMBO(tab_r,  &kp LC(TAB),        7  8, DEF T3R,      80,  50)
+COMBO(win_p,  &kp LA(LS(TAB)),    2  3, DEF T3R,      40, 100)
+COMBO(win_n,  &kp LA(TAB),        6  7, DEF T3R,      40, 100)
+COMBO(winf4,  &kp LA(F4),         1  3, DEF T3R,      40, 150)
+COMBO(tabf4,  &kp LC(F4),         6  8, DEF T3R,      40, 150)
 
-COMBO(tab_l,  &kp LC(LS(TAB)),    1  2, DEF,          80,  50)
-COMBO(tab_r,  &kp LC(TAB),        7  8, DEF,          80,  50)
-COMBO(win_p,  &kp LA(LS(TAB)),    2  3, DEF,          80,  50)
-COMBO(win_n,  &kp LA(TAB),        6  7, DEF,          80,  50)
-COMBO(winf4,  &kp LA(F4),         2  4, DEF,          80,  50)
-COMBO(tabf4,  &kp LC(F4),         5  7, DEF,          80,  50)
+COMBO(lock,   &kp LG(L),          3  4, DEF T3R,      80, 500)
 
-COMBO(lock,   &kp LG(L),          3  4, DEF,          80, 500)
+COMBO(lbkt,   &kp LBKT,          11 12, DEF T3R,      40, 100)	// 거짓음성
+COMBO(rbkt,   &kp RBKT,          17 18, DEF T3R,      40, 100)
+COMBO(lpar,   &kp LPAR,          12 13, DEF T3R,      40, 100)
+COMBO(rpar,   &kp RPAR,          16 17, DEF T3R,      40, 100)
+COMBO(tab,    &kp TAB,           11 13, DEF T3R,      40, 150)
+COMBO(del,    &kp DEL,           16 18, DEF T3R,      40, 150)
 
-COMBO(capswd, &caps_word,        13 16, DEF,          60, 200)
-
-COMBO(lbkt,   &kp LBKT,          10 11, DEF,          40, 100)
-COMBO(rbkt,   &kp RBKT,          18 19, DEF,          40, 100)
-COMBO(lpar,   &kp LPAR,          12 13, DEF,          40, 100)
-COMBO(rpar,   &kp RPAR,          16 17, DEF,          40, 100)
-
+// vertical same hand
 COMBO(mute,   &kp C_MUTE,         0 10, DEF T3R,     200, 200)
-COMBO(pp,     &kp C_PP,           4 14, T3R,         200, 200)
+
+// horizontal corse hand
+COMBO(capswd, &caps_word,        13 16, DEF T3R,      60, 200)
+
+/*
+거짓양성 콤보를 누르지 않았는데 누른 걸로 반응
+같은 손 리퀴어프라이어아이들보다 탭핑텀을 증가. 다른 손 반대
+거짓음성 콤보를 눌렀는데 누르지 않은 걸로 반응
+같은 손 리퀴어프라이어아이들보다 탬핑텀을 감소. 다른 손 반대
+
+보류
+COMBO(esc,    &kp ESC,            0  1, DEF,          80,  50)
+COMBO(del,    &kp DEL,            8  9, DEF,          80,  50)  
+
+COMBO(pp,     &kp C_PP,           4 14, T1L,         200, 200)
 
 COMBO(semi,   &kp SEMI,          27 28, DEF,          40, 100)
 COMBO(colon,  &kp COLON,         28 29, DEF,          40, 100)
+*/
 
 #ifdef MOUSE_KEYS
 #    ifdef THREE_THUMBS

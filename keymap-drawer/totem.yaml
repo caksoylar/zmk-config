@@ -260,63 +260,56 @@ layers:
   - Right Click
   - ''
 combos:
-- p: [0, 1]
-  k: Esc
-  l: [DEF]
-- p: [8, 9]
-  k: ⌦
-  l: [DEF]
-  a: top
-  o: 0.15
 - p: [1, 2]
   k: Tab Left
-  l: [DEF]
+  l: [DEF, T3R]
 - p: [7, 8]
   k: Tab Right
-  l: [DEF]
+  l: [DEF, T3R]
 - p: [2, 3]
   k: LA(LS(TAB))
-  l: [DEF]
+  l: [DEF, T3R]
 - p: [6, 7]
   k: LA(TAB)
-  l: [DEF]
-- p: [2, 4]
+  l: [DEF, T3R]
+- p: [1, 3]
   k: Win Close
-  l: [DEF]
-- p: [5, 7]
+  l: [DEF, T3R]
+- p: [6, 8]
   k: Tab Close
-  l: [DEF]
+  l: [DEF, T3R]
 - p: [3, 4]
   k: LG(L)
-  l: [DEF]
-- p: [13, 16]
-  k: Caps Wrd
-  l: [DEF]
-  a: top
-- p: [10, 11]
+  l: [DEF, T3R]
+- p: [11, 12]
   k: '['
-  l: [DEF]
-- p: [18, 19]
+  l: [DEF, T3R]
+- p: [17, 18]
   k: ']'
-  l: [DEF]
+  l: [DEF, T3R]
 - p: [12, 13]
   k: (
-  l: [DEF]
+  l: [DEF, T3R]
 - p: [16, 17]
   k: )
-  l: [DEF]
+  l: [DEF, T3R]
+- p: [11, 13]
+  k: ↹
+  l: [DEF, T3R]
+  a: top
+  o: 0.15
+- p: [16, 18]
+  k: ⌦
+  l: [DEF, T3R]
+  a: top
+  o: 0.15
 - p: [0, 10]
   k: MUTE
   l: [DEF, T3R]
-- p: [4, 14]
-  k: ⏯
-  l: [T3R]
-- p: [27, 28]
-  k: ;
-  l: [DEF]
-- p: [28, 29]
-  k: ':'
-  l: [DEF]
+- p: [13, 16]
+  k: Caps Wrd
+  l: [DEF, T3R]
+  a: top
 - p: [26, 27]
   k: MSE
   l: [DEF, T3R]
