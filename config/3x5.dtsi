@@ -127,7 +127,6 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp COMMA>,
                        <&kp SEMI>;
         };
@@ -135,7 +134,6 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp DOT>,
                        <&kp COLON>;
         };
@@ -143,7 +141,6 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            quick-tap-ms = <150>;
             bindings = <&kp SLASH>,
                        <&kp BSLH>;
         };
@@ -152,9 +149,16 @@
 
     cond_layers {
         compatible = "zmk,conditional-layers";
-        func_tristate {
+        def_tristate {
             if-layers = <T2L T2R>;
             then-layer = <DEF>;
+        };
+    };
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+        t3r_tristate {
+            if-layers = <T2R T2R>;
+            then-layer = <T3R>;
         };
     };
 
