@@ -149,21 +149,21 @@ layers:
   - {t: ⌫, h: T1R}
   - {t: ⌦, h: T3R, type: held}
   T1L:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Vol Up
+  - Win Close
+  - LA(TAB)
+  - Tab Close
+  - ⏮️
+  - LGUI(E)
+  - LGUI(T)
+  - LGUI(D)
+  - LGUI(DOT)
+  - LC(LA(DEL))
+  - Vol Down
+  - LA(LS(TAB))
+  - Tab Left
+  - Tab Right
+  - ⏭️
   - Caps Lock
   - RSHIFT
   - Ctrl
