@@ -7,12 +7,12 @@
 
 // Layer aliases left thums T0L, right thums T0R
 #define DEF 0
-#define T1R 1    // num calc
-#define T2R 2    // sym nav
-#define T3R 3    // medi ble pwr; wintab
-#define T1L 4    // colmakdh
-#define T3L 5    // xxx
-#define MSE 6    // fun mse    T2L
+#define T1R 1
+#define T2R 2
+#define T3R 3
+#define T1L 4
+#define T2L 5
+#define MSE 6
 
 // Key position groups and extra key bindings
 #ifdef ALPHA_23332   /* dropped index and pinkies */
@@ -65,11 +65,13 @@
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
 };
 
 &lt {
     flavor = "balanced";
     tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
 };
 
 &caps_word {
@@ -121,17 +123,57 @@
             hold-trigger-on-release;
         };
 
-        td0: tap_dance_0 {
+        td_comma: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp ESC>,
-                       <&mo T3L>,
-                       <&mo DEF>;
+            quick-tap-ms = <150>;
+            bindings = <&kp COMMA>,
+                       <&kp SEMI>,
+        };
+        td_dot: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&kp DOT>,
+                       <&kp COLON>,
+        };
+        td_slash: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            bindings = <&kp SLASH>,
+                       <&kp BSLH>,
         };
 
     };
 
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+        // Define FUN layer as tri-state
+        func_tristate {
+            if-layers = <T1L T2L>;
+            then-layer = <T3L>;
+        };
+    };    
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+        // Define FUN layer as tri-state
+        func_tristate {
+            if-layers = <T1R T2R>;
+            then-layer = <T3R>;
+        };
+    };
+        cond_layers {
+        compatible = "zmk,conditional-layers";
+        // Define FUN layer as tri-state
+        func_tristate {
+            if-layers = <T1L T1L>;
+            then-layer = <DEF>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -142,33 +184,33 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr RALT K  &amr RGUI L   &amr RCTRL SQT
+     &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr LALT K   &amr LGUI L   &amr LCTRL SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp V         &kp B             &lt T3R N     &kp M         &kp COMMA     &kp DOT       &kp SLASH
+     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &td_comma     &td_dot       &td_slash
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &td0          &lt T1L SPACE  MS_ACT(TAB)      &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
+                                 &lt T3L ESC   &lt T1L SPACE &lt T2L TAB       &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-// ESC를 누르고 있으면 CMK 레이어로 가고 탭하면 ESC 만들어야 &td0,    이렇게는 못씀 &td0 ESC CMK DEF 
             >;
         };
 
        t1r_layer {
-            display-name = "T1R";
+            display-name = "T1R";  // num; calc+mod
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp C_AL_CALC &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp DOT       &kp LSHIFT    &kp COMMA     &kp RCTRL     &kp C_AL_CALC
+     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &none         &kp LSHIFT    &kp LCTRL     &kp LGUI      &kp LALT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &kp PLUS      &kp MINUS     &kp STAR      &kp SLASH
+     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &none         &kp COMMA      &kp DOT      &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &kp DOT       &kp N0        &kp MINUS         &none         &lt T1R BSPC  &none
+                                 &kp DOT       &kp N0        &kp MINUS         &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// win_nav 수정남았음
             >;
         };
 
        t2r_layer {
-            display-name = "T2R";
+            display-name = "T2R";  // sym; nav
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LBRC      &kp AMPS      &kp STAR      &kp LPAR      &kp RBRC          &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP
@@ -177,43 +219,28 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &kp LPAR      &kp RPAR      &kp UNDER         &lt T2R RET   &none         &none
+                                 &kp LPAR      &kp RPAR      &kp UNDER         &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
         t3r_layer {
-            display-name = "T3R";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp C_VOL_UP &out OUT_BLE &out OUT_USB &ext_power EP_TOG &kp C_PREV       &none         &none         &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp C_VOL_DN &bt BT_SEL 3 &bt BT_CLR    &bt BT_CLR_ALL &kp C_NEXT         &kp LC(Y)     &none         &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &none             &trans        &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &none         &none             &none         &none         &kp DEL
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
-        t1l_layer {
-            display-name = "T1L";
+            display-name = "T3R";  // colmakdh
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &td_comma     &td_dot       &td_slash
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &td0          &kp SPACE     MS_ACT(TAB)       &lt T2R RET   &lt T1R BSPC  &kp DEL
+                                 &lt T3L ESC   &lt T1L SPACE &lt T2L TAB       &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
-        t3l_layer {
-            display-name = "T3L";
+        t1l_layer {
+            display-name = "T1L";  // xxx
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
@@ -222,23 +249,38 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &none         &none             &none         &none         &none
+                                 &lt T3L ESC   &lt T1L SPACE &lt T2L TAB       &none         &none         &none
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        t2l_layer {
+            display-name = "T2L";  // fun; kbsys+mod
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN    &out OUT_BLE  &out OUT_USB &ext_power EP_ON &ext_power EP_OFF &bt BT_CLR_ALL
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &none         &kp LSHIFT    &kp LCTRL     &kp LGUI      &kp LALT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                 &lt T3L ESC   &lt T1L SPACE &lt T2L TAB       &none         &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
 #ifdef MOUSE_KEYS
         mouse_layer {
-            display-name = "MSE";    //T2L
+            display-name = "MSE";    // T3L
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN         &none        &msc SCRL_LEFT &mmv MOVE_UP  &msc SCRL_RIGHT &msc SCRL_UP
+     &none         &none         &none         &none         &none             &none        &msc SCRL_LEFT &mmv MOVE_UP  &msc SCRL_RIGHT &msc SCRL_UP
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &none        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
+     &none         &none         &none         &none         &none             &none        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none
+     &none         &none         &none         &none         &none             &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none         &none         MS_ACT(TAB)       &mkp LCLK     &mkp RCLK     &none
+                                 &none         &none         &none             &mkp LCLK     &mkp RCLK     &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
