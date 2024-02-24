@@ -241,13 +241,22 @@
             display-name = "T1L";  // xxx
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &kp LGUI(E)   &kp LGUI(T)   &kp LGUI(D)   &kp LGUI(DOT) &kp LC(LA(DEL))
+     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN    &out OUT_BLE  &out OUT_USB &ext_power EP_ON &ext_power EP_OFF &bt BT_CLR_ALL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp C_VOL_DN &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT       &kp CAPS      &kp RSHIFT    &kp RCTRL     &kp RGUI      &kp RALT
+     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &none         &kp LSHIFT    &kp LCTRL     &kp LGUI      &kp LALT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+     &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &win_sleep    &kp LGUI(L)   &none
+                                 &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &none         &none         &none
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+//     &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &kp LGUI(E)   &kp LGUI(T)   &kp LGUI(D)   &kp LGUI(DOT) &kp LC(LA(DEL))
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//     &kp C_VOL_DN &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT       &kp CAPS      &kp RSHIFT    &kp RCTRL     &kp RGUI      &kp RALT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+//                                 &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &win_sleep    &kp LGUI(L)   &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
