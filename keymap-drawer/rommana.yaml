@@ -53,7 +53,7 @@ layers:
   - '5'
   - '6'
   - '='
-  - ''
+  - Caps Lock
   - LSHIFT
   - Ctrl
   - Gui
@@ -90,7 +90,7 @@ layers:
   - '%'
   - ^
   - +
-  - {t: Caps Lock, h: LSHIFT}
+  - LSHIFT
   - ←
   - ↓
   - →
@@ -164,7 +164,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Caps Lock
   - RSHIFT
   - Ctrl
   - Gui
@@ -238,7 +238,7 @@ layers:
   - ''
   - ''
   - ''
-  - Caps Lock
+  - ''
   - M←
   - M↓
   - M→
