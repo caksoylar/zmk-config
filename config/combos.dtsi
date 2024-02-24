@@ -31,8 +31,6 @@ COMBO(win_n,  &kp LA(TAB),        6  7, DEF T3R,      40, 100)
 COMBO(winf4,  &kp LA(F4),         1  3, DEF T3R,      40, 150)
 COMBO(tabf4,  &kp LC(F4),         6  8, DEF T3R,      40, 150)
 
-COMBO(lock,   &kp LG(L),          3  4, DEF T3R,      80, 500)
-
 COMBO(lbkt,   &kp LBKT,          11 12, DEF T3R,      40, 100)	// 거짓음성
 COMBO(rbkt,   &kp RBKT,          17 18, DEF T3R,      40, 100)
 COMBO(lpar,   &kp LPAR,          12 13, DEF T3R,      40, 100)
@@ -55,10 +53,9 @@ COMBO(capswd, &caps_word,        13 16, DEF T3R,      60, 200)
 
 보류
 COMBO(esc,    &kp ESC,            0  1, DEF,          80,  50)
-COMBO(del,    &kp DEL,            8  9, DEF,          80,  50)  
-
+COMBO(del,    &kp DEL,            8  9, DEF,          80,  50)
+COMBO(lock,   &kp LG(L),          3  4, DEF T3R,      80, 500)
 COMBO(pp,     &kp C_PP,           4 14, T1L,         200, 200)
-
 COMBO(semi,   &kp SEMI,          27 28, DEF,          40, 100)
 COMBO(colon,  &kp COLON,         28 29, DEF,          40, 100)
 */

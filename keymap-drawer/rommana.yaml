@@ -278,9 +278,6 @@ combos:
 - p: [6, 8]
   k: Tab Close
   l: [DEF, T3R]
-- p: [3, 4]
-  k: LG(L)
-  l: [DEF, T3R]
 - p: [11, 12]
   k: '['
   l: [DEF, T3R]
