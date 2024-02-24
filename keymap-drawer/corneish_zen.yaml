@@ -182,8 +182,8 @@ layers:
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L, type: held}
   - {t: ↹, h: T2L}
-  - ''
-  - ''
+  - '&win_sleep'
+  - LGUI(L)
   - ''
   T2L:
   - F12

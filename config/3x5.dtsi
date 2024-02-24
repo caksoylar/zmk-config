@@ -162,6 +162,18 @@
         };
     };
 
+   macros {
+        // Windows sleep key
+        win_sleep: win_sleep {
+            wait-ms = <50>;
+            tap-ms = <5>;
+            compatible = "zmk,behavior-macro";
+            label = "WIN_SLEEP_KEY";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -235,7 +247,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &none         &none         &none
+                                 &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &win_sleep    &kp LGUI(L)   &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
