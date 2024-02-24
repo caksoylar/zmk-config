@@ -47,5 +47,22 @@ COMBO(pp,     &kp C_PP,           4 14, T3R,         200, 200)
 
 COMBO(semi,   &kp SEMI,          27 28, DEF,          40, 100)
 COMBO(colon,  &kp COLON,         28 29, DEF,          40, 100)
+
+#ifdef MOUSE_KEYS
+#    ifdef THREE_THUMBS
+#        ifdef ALPHA_23332
+COMBO(mse_l,  &mo MSE,    27 28, DEF T3R,     150,   0, slow-release;)
+#        else
+COMBO(mse_l,  &mo MSE,    31 32, DEF T3R,     150,   0, slow-release;)
+#        endif
+#    else
+#        ifdef ALPHA_23332
+COMBO(mse_l,  &mo MSE,    26 27, DEF T3R,     150,   0, slow-release;)
+#        else
+COMBO(mse_l,  &mo MSE,    30 31, DEF T3R,     150,   0, slow-release;)
+#        endif
+#    endif
+#endif
+
 	};
 };
