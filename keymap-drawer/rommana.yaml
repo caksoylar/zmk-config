@@ -1,0 +1,315 @@
+layout: {qmk_keyboard: berylline}
+layers:
+  DEF:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Ctrl}
+  - {t: S, h: Gui}
+  - {t: D, h: Alt}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Alt}
+  - {t: L, h: Gui}
+  - {t: '''', h: Ctrl}
+  - Z
+  - X
+  - C
+  - {t: V, h: MSE}
+  - B
+  - N
+  - M
+  - '&td_comma'
+  - '&td_dot'
+  - '&td_slash'
+  - {t: Esc, h: MSE}
+  - {t: ␣, h: T1L}
+  - {t: ↹, h: T2L}
+  - {t: ⏎, h: T2R}
+  - {t: ⌫, h: T1R}
+  - {t: ⌦, h: T3R}
+  T1R:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - Calc
+  - +
+  - '-'
+  - '*'
+  - /
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - Caps Lock
+  - LSHIFT
+  - Ctrl
+  - Gui
+  - Alt
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ⏎
+  - ''
+  - ','
+  - .
+  - /
+  - .
+  - '0'
+  - '-'
+  - {t: ⏎, h: T2R}
+  - {t: ⌫, h: T1R, type: held}
+  - {t: ⌦, h: T3R}
+  T2R:
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - Insert
+  - Home
+  - ↑
+  - End
+  - Page Up
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - LSHIFT
+  - ←
+  - ↓
+  - →
+  - Page Down
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
+  - (
+  - )
+  - _
+  - {t: ⏎, h: T2R, type: held}
+  - {t: ⌫, h: T1R}
+  - {t: ⌦, h: T3R}
+  T3R:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Ctrl}
+  - {t: R, h: Gui}
+  - {t: S, h: Alt}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: O, h: Ctrl}
+  - Z
+  - X
+  - C
+  - {t: D, h: MSE}
+  - V
+  - K
+  - H
+  - '&td_comma'
+  - '&td_dot'
+  - '&td_slash'
+  - {t: Esc, h: MSE}
+  - {t: ␣, h: T1L}
+  - {t: ↹, h: T2L}
+  - {t: ⏎, h: T2R}
+  - {t: ⌫, h: T1R}
+  - {t: ⌦, h: T3R, type: held}
+  T1L:
+  - Vol Up
+  - Win Close
+  - LA(TAB)
+  - Tab Close
+  - ⏮️
+  - LG(E)
+  - LG(T)
+  - LG(D)
+  - LG(DOT)
+  - LC(LA(DEL))
+  - Vol Down
+  - LA(LS(TAB))
+  - Tab Left
+  - Tab Right
+  - ⏭️
+  - Caps Lock
+  - RSHIFT
+  - Ctrl
+  - Gui
+  - Alt
+  - LC(Z)
+  - LC(X)
+  - LC(C)
+  - LC(V)
+  - LC(Y)
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
+  - {t: Esc, h: MSE}
+  - {t: ␣, h: T1L, type: held}
+  - {t: ↹, h: T2L}
+  - '&win_sleep'
+  - LG(L)
+  - ''
+  T2L:
+  - F12
+  - F7
+  - F8
+  - F9
+  - Print Scrn
+  - Out BLE
+  - Out USB
+  - EP ON
+  - EP OFF
+  - BT CLR ALL
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - ''
+  - LSHIFT
+  - Ctrl
+  - Gui
+  - Alt
+  - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT CLR
+  - {t: Esc, h: MSE}
+  - {t: ␣, h: T1L}
+  - {t: ↹, h: T2L, type: held}
+  - ''
+  - ''
+  - ''
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MW←
+  - M↑
+  - MW→
+  - MW↑
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - M←
+  - M↓
+  - M→
+  - MW↓
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - ''
+  - ''
+  - ''
+  - Left Click
+  - Right Click
+  - ''
+combos:
+- p: [1, 2]
+  k: Tab Left
+  l: [DEF, T3R]
+- p: [7, 8]
+  k: Tab Right
+  l: [DEF, T3R]
+- p: [2, 3]
+  k: LA(LS(TAB))
+  l: [DEF, T3R]
+- p: [6, 7]
+  k: LA(TAB)
+  l: [DEF, T3R]
+- p: [1, 3]
+  k: Win Close
+  l: [DEF, T3R]
+- p: [6, 8]
+  k: Tab Close
+  l: [DEF, T3R]
+- p: [11, 12]
+  k: '['
+  l: [DEF, T3R]
+- p: [17, 18]
+  k: ']'
+  l: [DEF, T3R]
+- p: [12, 13]
+  k: (
+  l: [DEF, T3R]
+- p: [16, 17]
+  k: )
+  l: [DEF, T3R]
+- p: [11, 13]
+  k: ↹
+  l: [DEF, T3R]
+  a: top
+  o: 0.15
+- p: [16, 18]
+  k: ⌦
+  l: [DEF, T3R]
+  a: top
+  o: 0.15
+- p: [0, 10]
+  k: MUTE
+  l: [DEF, T1L, T3R]
+- p: [4, 14]
+  k: ⏯
+  l: [T1L]
+- p: [13, 16]
+  k: Caps Wrd
+  l: [DEF, T3R]
+  a: top
+- p: [26, 27]
+  k: MSE
+  l: [DEF, T3R]
