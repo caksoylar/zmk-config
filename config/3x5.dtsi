@@ -150,6 +150,9 @@
 
     };
 
+ZMK_CONDITIONAL_LAYER(T1L T2L, T3L)
+
+/*
     cond_layers {
         compatible = "zmk,conditional-layers";
         t3l_tristate {
@@ -171,6 +174,7 @@
             then-layer = <DEF>;
         };
     };
+*/
 
     keymap {
         compatible = "zmk,keymap";
