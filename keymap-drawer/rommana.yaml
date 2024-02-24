@@ -149,21 +149,21 @@ layers:
   - {t: ⌫, h: T1R}
   - {t: ⌦, h: T3R, type: held}
   T1L:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LGUI(E)
-  - LGUI(T)
-  - LGUI(D)
-  - LGUI(DOT)
+  - Vol Up
+  - Win Close
+  - LA(TAB)
+  - Tab Close
+  - ⏮️
+  - LG(E)
+  - LG(T)
+  - LG(D)
+  - LG(DOT)
   - LC(LA(DEL))
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Vol Down
+  - LA(LS(TAB))
+  - Tab Left
+  - Tab Right
+  - ⏭️
   - Caps Lock
   - RSHIFT
   - Ctrl
@@ -183,7 +183,7 @@ layers:
   - {t: ␣, h: T1L, type: held}
   - {t: ↹, h: T2L}
   - '&win_sleep'
-  - LGUI(L)
+  - LG(L)
   - ''
   T2L:
   - F12
