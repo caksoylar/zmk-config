@@ -24,7 +24,7 @@ layers:
   - Z
   - X
   - C
-  - V
+  - {t: V, h: MSE}
   - B
   - N
   - M
@@ -135,7 +135,7 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, h: MSE}
   - V
   - K
   - H
@@ -246,14 +246,14 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - Back Click
   - Middle Click
   - Forward Click
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - Left Click
