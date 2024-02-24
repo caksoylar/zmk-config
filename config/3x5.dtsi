@@ -129,7 +129,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             bindings = <&kp COMMA>,
-                       <&kp SEMI>,
+                       <&kp SEMI>;
         };
         td_dot: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -137,7 +137,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             bindings = <&kp DOT>,
-                       <&kp COLON>,
+                       <&kp COLON>;
         };
         td_slash: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
@@ -145,7 +145,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <150>;
             bindings = <&kp SLASH>,
-                       <&kp BSLH>,
+                       <&kp BSLH>;
         };
 
     };
