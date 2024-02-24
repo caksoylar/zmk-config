@@ -21,6 +21,7 @@ layers:
   - {t: K, h: Alt}
   - {t: L, h: Gui}
   - {t: '''', h: Ctrl}
+  - Esc
   - Z
   - X
   - C
@@ -74,8 +75,8 @@ layers:
   - .
   - '0'
   - '-'
-  - {t: ⏎, h: T2R, type: held}
-  - {t: ⌫, h: T1R}
+  - {t: ⏎, h: T2R}
+  - {t: ⌫, h: T1R, type: held}
   - {t: ⌦, h: T3R}
   T2R:
   - '{'
@@ -112,8 +113,8 @@ layers:
   - ⏎
   - (
   - )
-  - {t: _, type: held}
-  - {t: ⏎, h: T2R}
+  - _
+  - {t: ⏎, h: T2R, type: held}
   - {t: ⌫, h: T1R}
   - {t: ⌦, h: T3R}
   T3R:
@@ -153,8 +154,8 @@ layers:
   - {t: ␣, h: T1L}
   - {t: ↹, h: T2L}
   - {t: ⏎, h: T2R}
-  - {t: ⌫, h: T1R, type: held}
-  - {t: ⌦, h: T3R}
+  - {t: ⌫, h: T1R}
+  - {t: ⌦, h: T3R, type: held}
   T1L:
   - Vol Up
   - Win Close
@@ -188,8 +189,8 @@ layers:
   - LC(X)
   - LC(Z)
   - ⏎
-  - {t: Esc, h: MSE, type: held}
-  - {t: ␣, h: T1L}
+  - {t: Esc, h: MSE}
+  - {t: ␣, h: T1L, type: held}
   - {t: ↹, h: T2L}
   - '&win_sleep'
   - LG(L)
@@ -228,8 +229,8 @@ layers:
   - BT CLR
   - ⏎
   - {t: Esc, h: MSE}
-  - {t: ␣, h: T1L, type: held}
-  - {t: ↹, h: T2L}
+  - {t: ␣, h: T1L}
+  - {t: ↹, h: T2L, type: held}
   - ''
   - ''
   - ''
@@ -257,8 +258,8 @@ layers:
   - Esc
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - Back Click
