@@ -26,10 +26,10 @@
 #else
 #    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
 #    define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
-#    define P_L_DEF &kp ESC
+#    define P_L_DEF &kp Z
 #    define I_L_DEF &kp V
-#    define I_R_DEF &kp J
-#    define P_R_DEF &kp RET
+#    define I_R_DEF &kp K
+#    define P_R_DEF &kp SLASH
 #    define ALP_XXX &none
 #endif
 
@@ -185,7 +185,7 @@
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &aml LCTRL A  &aml LGUI S   &aml LALT D   &asl LSHFT F  &kp G             &kp H         &asr LSHFT J  &amr LALT K   &amr LGUI L   &amr LCTRL SQT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &kp Z         &kp X         &kp C         MS_ACT(V)     &kp B             &kp N         &kp M         &td_comma     &td_dot       &td_slash    P_R_DEF
+&kp ESC  &kp Z         &kp X         &kp C         MS_ACT(V)     &kp B             &kp N         &kp M         &td_comma     &td_dot       &td_slash    &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -200,7 +200,7 @@ P_L_DEF  &kp Z         &kp X         &kp C         MS_ACT(V)     &kp B          
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL         &kp CAPS      &kp LSHIFT    &kp LCTRL     &kp LGUI      &kp LALT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &none         &kp COMMA      &kp DOT      &kp SLASH    P_R_DEF
+&kp ESC  &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH          &kp RET       &none         &kp COMMA      &kp DOT      &kp SLASH    &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &kp DOT       &kp N0        &kp MINUS         &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -215,7 +215,7 @@ P_L_DEF  &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH       
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS          &kp LSHIFT    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)    P_R_DEF
+&kp ESC  &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE          &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)    &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &kp LPAR      &kp RPAR      &kp UNDER         &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -230,7 +230,7 @@ P_L_DEF  &kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE       
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &kp Z         &kp X         &kp C         MS_ACT(D)     &kp V             &kp K         &kp H         &td_comma     &td_dot       &td_slash    P_R_DEF
+&kp ESC  &kp Z         &kp X         &kp C         MS_ACT(D)     &kp V             &kp K         &kp H         &td_comma     &td_dot       &td_slash    &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &lt T2R RET   &lt T1R BSPC  &lt T3R DEL
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -245,7 +245,7 @@ P_L_DEF  &kp Z         &kp X         &kp C         MS_ACT(D)     &kp V          
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp C_VOL_DN  &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT      &kp CAPS      &kp RSHIFT    &kp RCTRL     &kp RGUI      &kp RALT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)    P_R_DEF
+&kp ESC  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &kp LC(Y)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Z)    &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &win_sleep    &kp LG(L)   &none
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -260,7 +260,7 @@ P_L_DEF  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)      
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK          &none         &kp LSHIFT    &kp LCTRL     &kp LGUI      &kp LALT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR    P_R_DEF
+&kp ESC  &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR    &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &lt MSE ESC   &lt T1L SPACE &lt T2L TAB       &none         &none         &none
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -276,7 +276,7 @@ P_L_DEF  &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &none         &none         &none         &none         &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-P_L_DEF  &none         &none         &none         &none         &none             &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none        P_R_DEF
+&kp ESC  &none         &none         &none         &none         &none             &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none        &kp RET
 //     ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                      &none         &none         &none             &mkp LCLK     &mkp RCLK     &none
 //                                               ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

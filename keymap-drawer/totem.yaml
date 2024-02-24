@@ -21,6 +21,7 @@ layers:
   - {t: K, h: Alt}
   - {t: L, h: Gui}
   - {t: '''', h: Ctrl}
+  - Esc
   - Z
   - X
   - C
@@ -31,6 +32,7 @@ layers:
   - '&td_comma'
   - '&td_dot'
   - '&td_slash'
+  - ⏎
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L}
   - {t: ↹, h: T2L}
@@ -58,6 +60,7 @@ layers:
   - Ctrl
   - Gui
   - Alt
+  - Esc
   - '`'
   - '1'
   - '2'
@@ -68,6 +71,7 @@ layers:
   - ','
   - .
   - /
+  - ⏎
   - .
   - '0'
   - '-'
@@ -95,6 +99,7 @@ layers:
   - ↓
   - →
   - Page Down
+  - Esc
   - '~'
   - '!'
   - '@'
@@ -105,6 +110,7 @@ layers:
   - LC(C)
   - LC(X)
   - LC(Z)
+  - ⏎
   - (
   - )
   - _
@@ -132,6 +138,7 @@ layers:
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: O, h: Ctrl}
+  - Esc
   - Z
   - X
   - C
@@ -142,6 +149,7 @@ layers:
   - '&td_comma'
   - '&td_dot'
   - '&td_slash'
+  - ⏎
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L}
   - {t: ↹, h: T2L}
@@ -169,6 +177,7 @@ layers:
   - Ctrl
   - Gui
   - Alt
+  - Esc
   - LC(Z)
   - LC(X)
   - LC(C)
@@ -179,6 +188,7 @@ layers:
   - LC(C)
   - LC(X)
   - LC(Z)
+  - ⏎
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L, type: held}
   - {t: ↹, h: T2L}
@@ -206,6 +216,7 @@ layers:
   - Ctrl
   - Gui
   - Alt
+  - Esc
   - F10
   - F1
   - F2
@@ -216,6 +227,7 @@ layers:
   - BT 3
   - BT 4
   - BT CLR
+  - ⏎
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L}
   - {t: ↹, h: T2L, type: held}
@@ -243,6 +255,7 @@ layers:
   - M↓
   - M→
   - MW↓
+  - Esc
   - ''
   - ''
   - ''
@@ -253,6 +266,7 @@ layers:
   - Middle Click
   - Forward Click
   - ''
+  - ⏎
   - ''
   - ''
   - ''
