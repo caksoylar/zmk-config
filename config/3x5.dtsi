@@ -147,14 +147,14 @@
 
     };
 
-    cond_layers {
+    cond_lr_layers {
         compatible = "zmk,conditional-layers";
         def_tristate {
             if-layers = <T2L T2R>;
             then-layer = <DEF>;
         };
     };
-    cond_layers {
+    cond_r_layers {
         compatible = "zmk,conditional-layers";
         t3r_tristate {
             if-layers = <T2R T2R>;
