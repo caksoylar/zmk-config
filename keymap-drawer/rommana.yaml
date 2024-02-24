@@ -149,41 +149,41 @@ layers:
   - {t: ⌫, h: T1R}
   - {t: ⌦, h: T3R, type: held}
   T1L:
-  - F12
-  - F7
-  - F8
-  - F9
-  - Print Scrn
-  - Out BLE
-  - Out USB
-  - EP ON
-  - EP OFF
-  - BT CLR ALL
-  - F11
-  - F4
-  - F5
-  - F6
-  - SLCK
   - ''
-  - LSHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - LGUI(E)
+  - LGUI(T)
+  - LGUI(D)
+  - LGUI(DOT)
+  - LC(LA(DEL))
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Caps Lock
+  - RSHIFT
   - Ctrl
   - Gui
   - Alt
-  - F10
-  - F1
-  - F2
-  - F3
-  - Pause Break
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT CLR
+  - LC(Z)
+  - LC(X)
+  - LC(C)
+  - LC(V)
+  - LC(Y)
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L, type: held}
   - {t: ↹, h: T2L}
-  - ''
-  - ''
+  - '&win_sleep'
+  - LGUI(L)
   - ''
   T2L:
   - F12
