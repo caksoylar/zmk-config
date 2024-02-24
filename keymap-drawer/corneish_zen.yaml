@@ -305,7 +305,10 @@ combos:
   o: 0.15
 - p: [0, 10]
   k: MUTE
-  l: [DEF, T3R]
+  l: [DEF, T1L, T3R]
+- p: [4, 14]
+  k: ⏯
+  l: [T1L]
 - p: [13, 16]
   k: Caps Wrd
   l: [DEF, T3R]

@@ -41,7 +41,8 @@ COMBO(tab,    &kp TAB,           11 13, DEF T3R,      40, 150)
 COMBO(del,    &kp DEL,           16 18, DEF T3R,      40, 150)
 
 // vertical same hand
-COMBO(mute,   &kp C_MUTE,         0 10, DEF T3R,     200, 200)
+COMBO(mute,   &kp C_MUTE,         0 10, DEF T1L T3R, 200, 200)
+COMBO(pp,     &kp C_PP,           4 14, T1L,         200, 200)
 
 // horizontal corse hand
 COMBO(capswd, &caps_word,        13 16, DEF T3R,      60, 200)

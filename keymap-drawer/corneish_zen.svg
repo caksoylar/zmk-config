@@ -1064,6 +1064,14 @@ path.combo {
 <g transform="translate(560, 205)" class="key ghost keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="14" y="64" width="28" height="26" class="combo"/>
+<text x="28" y="77" class="combo tap">MUTE</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="238" y="57" width="28" height="26" class="combo"/>
+<text x="252" y="70" class="combo tap">⏯</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1653)" class="layer-T2L">
