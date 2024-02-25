@@ -18,16 +18,16 @@
 
 // Key position groups and extra key bindings
 #ifdef ALPHA_23332   /* dropped index and pinkies */
-#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22
-#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 23 24 25
+#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
+#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 26 28 29
 #    define P_L_DEF  /* left pinky        */
 #    define I_L_DEF  /* left inner index  */
 #    define I_R_DEF  /* right inner index */
 #    define P_R_DEF  /* right pinky       */
 #    define ALP_XXX
 #else
-#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
-#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
+#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25
+#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31
 #    define P_L_DEF &kp ESC
 #    define I_L_DEF &kp V
 #    define I_R_DEF &kp K
@@ -37,9 +37,9 @@
 
 #ifdef THREE_THUMBS
 #    ifdef ALPHA_23332
-#        define THUMBS 26 27 28 29 30 31
-#    else
 #        define THUMBS 30 31 32 33 34 35
+#    else
+#        define THUMBS 32 33 34 35 36 37
 #    endif
 #    define T3_L_DEF &kp ESC
 #    define T3_R_DEF &kp DEL
