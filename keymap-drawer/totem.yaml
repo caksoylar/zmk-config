@@ -162,8 +162,8 @@ layers:
   - LA(TAB)
   - Tab Close
   - ⏮️
-  - ''
-  - ''
+  - '&kr_qwert_ly'
+  - '&en_cmkdh_ly'
   - LG(T)
   - LG(D)
   - LG(DOT)
@@ -192,7 +192,7 @@ layers:
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L, type: held}
   - {t: ↹, h: T2L}
-  - ''
+  - '&win_sleep'
   - LG(L)
   - ''
   T2L:
