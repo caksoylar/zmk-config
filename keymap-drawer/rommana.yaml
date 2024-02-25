@@ -162,11 +162,11 @@ layers:
   - LA(TAB)
   - Tab Close
   - ⏮️
-  - LG(E)
+  - '&e_cmk_ly'
+  - '&k_qrt_ly'
   - LG(T)
   - LG(D)
   - LG(DOT)
-  - LC(LA(DEL))
   - Vol Down
   - LA(LS(TAB))
   - Tab Left

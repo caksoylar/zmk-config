@@ -960,23 +960,23 @@ path.combo {
 </g>
 <g transform="translate(516, 65)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LG(E)</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;e_cmk_ly</tspan></text>
 </g>
 <g transform="translate(575, 56)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LG(T)</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;k_qrt_ly</tspan></text>
 </g>
 <g transform="translate(634, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LG(D)</text>
+<text x="0" y="0" class="key tap">LG(T)</text>
 </g>
 <g transform="translate(702, 62) rotate(4.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LG(DOT)</text>
+<text x="0" y="0" class="key tap">LG(D)</text>
 </g>
 <g transform="translate(769, 113) rotate(10.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">LC(LA(DEL))</tspan></text>
+<text x="0" y="0" class="key tap">LG(DOT)</text>
 </g>
 <g transform="translate(83, 168) rotate(-10.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>

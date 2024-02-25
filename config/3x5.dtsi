@@ -190,7 +190,7 @@
             wait-ms = <50>;
             tap-ms = <5>;
             compatible = "zmk,behavior-macro";
-            label = "en_colmakdh";
+            label = "kr_qwerty";
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &to DEF>;
         };
@@ -263,7 +263,7 @@
             display-name = "T1L";  // xxx
             bindings = <
 //     ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &kp LG(E)     &kp LG(T)     &kp LG(D)     &kp LG(DOT)   &kp LC(LA(DEL))
+         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &e_cmk_ly     &k_qrt_ly &kp LG(T)     &kp LG(D)     &kp LG(DOT)
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp C_VOL_DN  &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT      &kp CAPS      &kp RSHIFT    &kp RCTRL     &kp RGUI      &kp RALT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
