@@ -147,7 +147,7 @@
                        <&kp BSLH>;
         };
     };
-
+/*
     macros {
         ZMK_MACRO_0(win_sleep,
             wait-ms = <10>;
@@ -156,7 +156,7 @@
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
         )
     };
-
+*/
 // 아래 매크로 사용 조건
 // 설정>시간및언어>언어및지역>언어;언어추가 ENGLISH(UNAIE STATE), 
 // 설정>시간및언어>언어및지역>언어;한국어;언어옵션 키보드;한컴입력기 삭제
