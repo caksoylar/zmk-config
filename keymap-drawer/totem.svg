@@ -960,11 +960,11 @@ path.combo {
 </g>
 <g transform="translate(516, 65)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;e_cmk_ly</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">&amp;en_cmkdh_ly</tspan></text>
 </g>
 <g transform="translate(575, 56)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;k_qrt_ly</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">&amp;kr_qwert_ly</tspan></text>
 </g>
 <g transform="translate(634, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>

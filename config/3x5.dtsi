@@ -155,13 +155,13 @@
             bindings
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
         )
-        ZMK_MACRO(e_cmk_ly,
+        ZMK_MACRO(en_cmkdh_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
                 = <&macro_tap &kp LG(SPACE) &to T3R>;
         )
-        ZMK_MACRO(k_qrt_ly,
+        ZMK_MACRO(kr_qwert_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
@@ -236,7 +236,7 @@
             display-name = "T1L";  // xxx
             bindings = <
 //     ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &e_cmk_ly     &k_qrt_ly     &kp LG(T)     &kp LG(D)     &kp LG(DOT)
+         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &en_cmkdh_ly  &kr_qwert_ly  &kp LG(T)     &kp LG(D)     &kp LG(DOT)
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp C_VOL_DN  &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT      &kp CAPS      &kp RSHIFT    &kp RCTRL     &kp RGUI      &kp RALT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
