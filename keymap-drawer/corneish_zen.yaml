@@ -294,7 +294,7 @@ layers:
   - K
   - L
   - ''''
-  - {t: '8', h: LSHIFT}
+  - {t: '8', h: Ctrl}
   - Z
   - X
   - C
@@ -305,7 +305,7 @@ layers:
   - ','
   - .
   - {t: DEF, h: toggle}
-  - {t: '8', h: LSHIFT}
+  - {t: '8', h: Ctrl}
   - Ctrl
   - Alt
   - LSHIFT
