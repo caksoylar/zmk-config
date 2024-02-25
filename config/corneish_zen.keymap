@@ -1,4 +1,4 @@
-#define 3X5_KEYS
+#define KEYS_3X5
 #define THREE_THUMBS
 #define MOUSE_KEYS
 
