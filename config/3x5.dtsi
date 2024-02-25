@@ -149,11 +149,17 @@
     };
 
     macros {
-        ZMK_MACRO_0(win_sleep,
+        ZMK_MACRO(win_sleep,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
+        )
+        ZMK_MACRO(e_cmk_ly,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_tap &kp LG(SPACE) &to T3L>;
         )
     };
 
