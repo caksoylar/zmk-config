@@ -1,1 +1,3 @@
+#define 30KEY
+
 #include "3x5.dtsi"
