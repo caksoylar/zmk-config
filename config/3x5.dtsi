@@ -148,8 +148,15 @@
         };
     };
 
-    macros_0 {
+    macros {
+
         ZMK_MACRO(win_sleep,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_tap &kp LG(X) &kp U &kp S>;
+        )
+        ZMK_MACRO(win_sleeep,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
