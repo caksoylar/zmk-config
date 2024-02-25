@@ -149,7 +149,7 @@
     };
 
     macros {
-        ZMK_MACRO(win_sleep,
+        ZMK_MACRO_0(win_sleep,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
