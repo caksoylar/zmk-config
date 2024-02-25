@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+
 // Layer aliases left thums T0L, right thums T0R
 #define DEF 0
 #define T1R 1
@@ -16,34 +17,38 @@
 #define GM1 8
 
 // Key position groups and extra key bindings
-#ifedf KEYS_3X5
-#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
-#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
+#ifdef ALPHA_23332   /* dropped index and pinkies */
+#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22
+#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 23 24 25
 #    define P_L_DEF  /* left pinky        */
+#    define I_L_DEF  /* left inner index  */
+#    define I_R_DEF  /* right inner index */
 #    define P_R_DEF  /* right pinky       */
 #    define ALP_XXX
 #else
-#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25
-#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31
+#    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
+#    define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #    define P_L_DEF &kp ESC
+#    define I_L_DEF &kp V
+#    define I_R_DEF &kp K
 #    define P_R_DEF &kp RET
 #    define ALP_XXX &none
 #endif
 
 #ifdef THREE_THUMBS
-#    ifdef 3X5_KEYS
-#        define THUMBS 30 31 32 33 34 35
+#    ifdef ALPHA_23332
+#        define THUMBS 26 27 28 29 30 31
 #    else
-#        define THUMBS 32 33 34 35 36 37
+#        define THUMBS 30 31 32 33 34 35
 #    endif
 #    define T3_L_DEF &kp ESC
 #    define T3_R_DEF &kp DEL
 #    define T3_XXX   &none
 #else
-#    ifdef 3X5_KEYS
-#        define THUMBS 30 31 32 33
+#    ifdef ALPHA_23332
+#        define THUMBS 26 27 28 29
 #    else
-#        define THUMBS 32 33 34 35
+#        define THUMBS 30 31 32 33
 #    endif
 #    define T3_L_DEF
 #    define T3_R_DEF
@@ -143,25 +148,24 @@
         };
     };
 
-    macros {
-
-        ZMK_MACRO(win_sleep,
+     macros {
+        ZMK_MACRO_0(win_sleep,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
         )
-        ZMK_MACRO(en_cmkdh_ly,
+        ZMK_MACRO_1(e_cmk_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
                 = <&macro_tap &kp LG(SPACE) &to T3R>;
         )
-        ZMK_MACRO(kr_qwert_ly,
+        ZMK_MACRO_2(k_qrt_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
-                = <&macro_tap &kp LG(SPACE) &to DEF &kp LANG_HANGEUL>;
+                = <&macro_tap &kp LG(SPACE) &to DEF>;
         )
     };
 
@@ -232,7 +236,7 @@
             display-name = "T1L";  // xxx
             bindings = <
 //     ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &kr_qwert_ly  &en_cmkdh_ly  &kp LG(T)     &kp LG(D)     &kp LG(DOT)
+         &kp C_VOL_UP  &kp LA(F4)    &kp LA(TAB)   &kp LC(F4)    &kp C_PREV        &e_cmk_ly     &k_qrt_ly     &kp LG(T)     &kp LG(D)     &kp LG(DOT)
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp C_VOL_DN  &kp LA(LS(TAB)) &kp LC(LS(TAB)) &kp LC(TAB) &kp C_NEXT      &kp CAPS      &kp RSHIFT    &kp RCTRL     &kp RGUI      &kp RALT
 //     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -283,7 +287,7 @@
 //         ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SQT
 //         ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&mt LCTRL GM1 &kp Z       &kp X         &kp C         MS_ACT(V)     &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &to DEF       &mt LCTRL GM1
+&mt LSHIFT GM1 &kp Z       &kp X         &kp C         MS_ACT(V)     &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &to DEF      &mt LSHIFT GM1
 //         ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                          &kp LCTRL     &kp LALT      &kp LSHIFT        &kp LSHIFT    &kp LALT      &kp LCTRL
 //                                                   ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -298,11 +302,12 @@
 //         ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp P
 //         ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&trans       &kp Z         &kp X         &kp C         MS_ACT(V)     &kp B             &kp N         &kp M          &kp COMMA     &kp DOT       &to DEF     &trans
+&trans      &kp Z         &kp X         &kp C         MS_ACT(V)     &kp B             &kp N         &kp M          &kp COMMA     &kp DOT       &to DEF       &trans
 //         ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                          &kp LCTRL     &kp LALT      &kp LSHIFT        &kp LSHIFT    &kp LALT      &kp LCTRL
 //                                                   ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+
     };
 };
