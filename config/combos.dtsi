@@ -75,13 +75,13 @@ COMBO(colon,  &kp COLON,         28 29, DEF,          40, 100)
 
 #ifdef MOUSE_KEYS
 #    ifdef THREE_THUMBS
-#        ifdef 30KEY
+#        ifdef ALPHA_23332
 COMBO(mse_l,  &mo MSE,    31 32, DEF T3R,     150,   0, slow-release;)
 #        else
 COMBO(mse_l,  &mo MSE,    33 34, DEF T3R,     150,   0, slow-release;)
 #        endif
 #    else
-#        ifdef 30KEY
+#        ifdef ALPHA_23332
 COMBO(mse_l,  &mo MSE,    30 31, DEF T3R,     150,   0, slow-release;)
 #        else
 COMBO(mse_l,  &mo MSE,    32 33, DEF T3R,     150,   0, slow-release;)
