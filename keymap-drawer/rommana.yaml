@@ -205,7 +205,7 @@ layers:
   - Out USB
   - EP ON
   - EP OFF
-  - BT CLR ALL
+  - ''
   - F11
   - F4
   - F5
@@ -222,11 +222,11 @@ layers:
   - F2
   - F3
   - Pause Break
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT CLR
+  - LC(Y)
+  - LC(V)
+  - LC(C)
+  - LC(X)
+  - LC(Z)
   - ⏎
   - {t: Esc, h: MSE}
   - {t: ␣, h: T1L}

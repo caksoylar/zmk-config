@@ -1161,10 +1161,6 @@ path.combo {
 </g>
 <g transform="translate(769, 113) rotate(10.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan>
-<tspan x="0" dy="1.2em">ALL</tspan>
-</text>
 </g>
 <g transform="translate(83, 168) rotate(-10.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -1233,33 +1229,23 @@ path.combo {
 </g>
 <g transform="translate(516, 177)" class="key keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">1</tspan>
-</text>
+<text x="0" y="0" class="key tap">LC(Y)</text>
 </g>
 <g transform="translate(575, 168)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">2</tspan>
-</text>
+<text x="0" y="0" class="key tap">LC(V)</text>
 </g>
 <g transform="translate(634, 140)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">3</tspan>
-</text>
+<text x="0" y="0" class="key tap">LC(C)</text>
 </g>
 <g transform="translate(694, 174) rotate(4.0)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">4</tspan>
-</text>
+<text x="0" y="0" class="key tap">LC(X)</text>
 </g>
 <g transform="translate(749, 223) rotate(10.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan>
-</text>
+<text x="0" y="0" class="key tap">LC(Z)</text>
 </g>
 <g transform="translate(812, 209) rotate(10.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
