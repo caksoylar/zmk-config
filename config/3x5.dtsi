@@ -147,25 +147,12 @@
 
     };
 
-
-   macros {
-        // Windows sleep key
-        win_sleep: win_sleep {
-            wait-ms = <50>;
-            tap-ms = <5>;
-            compatible = "zmk,behavior-macro";
-            label = "WIN_SLEEP_KEY";
-            #binding-cells = <0>;
-            bindings = <&kp LG(X) &kp U &kp S>;
-        };
-    };
-
      macros {
         ZMK_MACRO(win_sleep,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
-                = <&kp LG(X) &kp U &kp S>;
+                = <&macro_tap &kp LG(X) &kp U &kp S>;
         )
     };
 // 아래 매크로 사용 조건
@@ -177,7 +164,7 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
-                = <&kp LG(SPACE) &to T3R>;
+                = <&macro_tap &kp LG(SPACE) &to T3R>;
         )
     };
      macros {
@@ -185,7 +172,7 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
-                = <&kp LG(SPACE) &to DEF>;
+                = <&macro_tap &kp LG(SPACE) &to DEF>;
         )
     };
 
