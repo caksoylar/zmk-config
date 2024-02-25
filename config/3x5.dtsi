@@ -156,11 +156,11 @@
             bindings
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
         )
-        ZMK_MACRO(win_sleeep,
+        ZMK_MACRO(e_cmk_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
-                = <&macro_tap &kp LG(X) &kp U &kp S>;
+                = <&macro_tap &kp LG(SPACE) &to T3R>;
         )
     };
 
