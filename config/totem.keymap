@@ -1,4 +1,4 @@
-#define ALPHA_23332
+#define THREE_THUMBS
 #define MOUSE_KEYS
 
 #include "3x5.dtsi"
