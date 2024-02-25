@@ -162,8 +162,8 @@ layers:
   - LA(TAB)
   - Tab Close
   - ⏮️
-  - '&kr_qwert_ly'
-  - '&en_cmkdh_ly'
+  - '&e_cmk_ly'
+  - '&k_qrt_ly'
   - LG(T)
   - LG(D)
   - LG(DOT)
@@ -255,7 +255,7 @@ layers:
   - K
   - L
   - ''''
-  - {t: '8', h: Ctrl}
+  - {t: '8', h: LSHIFT}
   - Z
   - X
   - C
@@ -266,7 +266,7 @@ layers:
   - ','
   - .
   - {t: DEF, h: toggle}
-  - {t: '8', h: Ctrl}
+  - {t: '8', h: LSHIFT}
   - {t: Ctrl, type: held}
   - Alt
   - LSHIFT
