@@ -162,6 +162,12 @@
             bindings
                 = <&macro_tap &kp LG(SPACE) &to T3R>;
         )
+        ZMK_MACRO(k_qty_ly,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_tap &kp LG(SPACE) &to DEF &kp LANG_HANGEUL>;
+        )
     };
 
     keymap {
