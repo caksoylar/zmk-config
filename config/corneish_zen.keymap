@@ -1,5 +1,5 @@
-#define THREE_THUMBS
 #define 3X5_KEYS
+#define THREE_THUMBS
 #define MOUSE_KEYS
 
 #include "3x5.dtsi"
