@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-
+#define 30KEY
 // Layer aliases left thums T0L, right thums T0R
 #define DEF 0
 #define T1R 1
