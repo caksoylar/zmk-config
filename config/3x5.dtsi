@@ -148,19 +148,21 @@
     };
 
      macros {
-        ZMK_MACRO(win_sleep,
+        ZMK_MACRO_0(win_sleep,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
         )
     };
+
 // 아래 매크로 사용 조건
 // 설정>시간및언어>언어및지역>언어;언어추가 ENGLISH(UNAIE STATE), 
 // 설정>시간및언어>언어및지역>언어;한국어;언어옵션 키보드;한컴입력기 삭제
 // LGUI+SPACE 영-한/영변환
+
      macros {
-        ZMK_MACRO(e_cmk_ly,
+        ZMK_MACRO_1(e_cmk_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
@@ -168,7 +170,7 @@
         )
     };
      macros {
-        ZMK_MACRO(k_qrt_ly,
+        ZMK_MACRO_2(k_qrt_ly,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
