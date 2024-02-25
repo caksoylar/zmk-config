@@ -1,3 +1,3 @@
-#define 3X5_KEYS
+#define KEYS_3X5
 
 #include "3x5.dtsi"
