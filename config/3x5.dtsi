@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define 30KEY
 // Layer aliases left thums T0L, right thums T0R
 #define DEF 0
 #define T1R 1
@@ -17,7 +16,7 @@
 #define GM1 8
 
 // Key position groups and extra key bindings
-#ifdef 30KEY   /* dropped index and pinkies */
+#ifdef 3X5_KEYS   /* dropped index and pinkies */
 #    define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
 #    define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #    define P_L_DEF  /* left pinky        */
@@ -32,7 +31,7 @@
 #endif
 
 #ifdef THREE_THUMBS
-#    ifdef 30KEY
+#    ifdef 3X5_KEYS
 #        define THUMBS 30 31 32 33 34 35
 #    else
 #        define THUMBS 32 33 34 35 36 37
@@ -41,7 +40,7 @@
 #    define T3_R_DEF &kp DEL
 #    define T3_XXX   &none
 #else
-#    ifdef 30KEY
+#    ifdef 3X5_KEYS
 #        define THUMBS 30 31 32 33
 #    else
 #        define THUMBS 32 33 34 35
