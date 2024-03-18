@@ -214,4 +214,4 @@ combos:
 - p: [0, 1]
   k: Esc
 - p: [11, 12, 13]
-  k: tvp2
+  k: {t: tvp2, h: toggle}

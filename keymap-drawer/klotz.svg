@@ -16,6 +16,9 @@ svg.keymap {
 /* default key styling */
 rect.key {
     fill: #f6f8fa;
+}
+
+rect.key, rect.combo {
     stroke: #c9cccf;
     stroke-width: 1;
 }
@@ -259,6 +262,7 @@ path.combo {
 <path d="M163,104 l41,3" class="combo"/>
 <rect rx="6" ry="6" x="149" y="91" width="28" height="26" class="combo"/>
 <text x="163" y="104" class="combo tap">tvp2</text>
+<text x="163" y="115" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -449,6 +453,7 @@ path.combo {
 <path d="M163,104 l41,3" class="combo"/>
 <rect rx="6" ry="6" x="149" y="91" width="28" height="26" class="combo"/>
 <text x="163" y="104" class="combo tap">tvp2</text>
+<text x="163" y="115" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -599,6 +604,7 @@ path.combo {
 <path d="M163,104 l41,3" class="combo"/>
 <rect rx="6" ry="6" x="149" y="91" width="28" height="26" class="combo"/>
 <text x="163" y="104" class="combo tap">tvp2</text>
+<text x="163" y="115" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -748,6 +754,7 @@ path.combo {
 <path d="M163,104 l41,3" class="combo"/>
 <rect rx="6" ry="6" x="149" y="91" width="28" height="26" class="combo"/>
 <text x="163" y="104" class="combo tap">tvp2</text>
+<text x="163" y="115" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -898,6 +905,7 @@ path.combo {
 <path d="M163,104 l41,3" class="combo"/>
 <rect rx="6" ry="6" x="149" y="91" width="28" height="26" class="combo"/>
 <text x="163" y="104" class="combo tap">tvp2</text>
+<text x="163" y="115" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1049,6 +1057,7 @@ path.combo {
 <path d="M163,104 l41,3" class="combo"/>
 <rect rx="6" ry="6" x="149" y="91" width="28" height="26" class="combo"/>
 <text x="163" y="104" class="combo tap">tvp2</text>
+<text x="163" y="115" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
