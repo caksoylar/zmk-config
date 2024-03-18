@@ -18,7 +18,7 @@
    quick-tap-ms = <100>;
    global-quick-tap;
    flavor = "tap-preferred";
-   tapping-term-ms = <250>;
+   tapping-term-ms = <300>;
  };
  
  / {
@@ -27,21 +27,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             bindings = <&sys_reset>, <&bootloader>;
         };
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
         };
     };
