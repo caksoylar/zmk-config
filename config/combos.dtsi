@@ -49,6 +49,8 @@ COMBO(lock,   &kp LG(L),   3  4, DEF BRD,      80, 500)
 
 COMBO(play,   &kp C_PP,    4 14, NAV,         200, 200)
 
+COMBO(boot,   &bootloader, 4  5, FUN,         100, 500)
+
 #ifdef ALPHA_23332
 COMBO(z,      &kp Z,      20 21, DEF BRD,      80,  50)
 COMBO(v,      &kp V,      21 22, DEF,          40,  50)
