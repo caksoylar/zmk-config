@@ -7,8 +7,8 @@
 
         default_layer {
             bindings = <
-                &kp Q &kp W &kp E &kp R &kp T &kp H &kp U &kp I     &kp O   &kp P
-                &kp A &kp S &kp D &kp F &kp G &kp N &kp J &kp K     &kp L   &kp QUOT
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I     &kp O   &kp P
+                &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K     &kp L   &kp QUOT
                       &kp X &kp C &kp V             &kp M &kp COMMA &kp DOT
                                   &bootloader       &kp SPACE
             >;
