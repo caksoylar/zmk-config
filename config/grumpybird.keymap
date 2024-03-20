@@ -1,0 +1,10 @@
+#define ALPHA_23332
+#define MOUSE_KEYS
+
+#include "3x5.dtsi"
+
+/ {
+	chosen {
+		zmk,matrix-transform = &hummingbird_transform;
+    };
+};
