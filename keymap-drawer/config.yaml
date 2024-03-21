@@ -44,9 +44,22 @@ parse_config:
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
     combo_del:    {align: top, o: 0.15}
-    combo_capswd: {align: top}
     combo_f12:    {align: bottom}
     combo_btclr:  {align: bottom}
+    combo_capswd: {draw_separate: true}
+    combo_semi:   {draw_separate: true}
+    combo_grave:  {draw_separate: true}
+    combo_lpar:   {draw_separate: true}
+    combo_rpar:   {draw_separate: true}
+    combo_lbkt:   {draw_separate: true}
+    combo_rbkt:   {draw_separate: true}
+    combo_tab:    {draw_separate: true}
+    combo_del:    {draw_separate: true}
+    combo_esc:    {draw_separate: true}
+    combo_ret:    {draw_separate: true}
+    combo_lock:   {draw_separate: true}
+    combo_bslh:   {draw_separate: true}
+    combo_slsh:   {draw_separate: true}
 
   zmk_keycode_map:
     # custom mappings
