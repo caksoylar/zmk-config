@@ -1,6 +1,6 @@
 if SHIELD_GRUMPYBIRD
 
 config ZMK_KEYBOARD_NAME
-    default "GrumpyBird"
+    default "Grumpy(bird)"
 
 endif
