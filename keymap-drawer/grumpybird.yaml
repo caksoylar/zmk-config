@@ -1,4 +1,3 @@
-layout: {qmk_keyboard: berylline}
 layers:
   DEF:
   - Q
@@ -27,10 +26,8 @@ layers:
   - H
   - ','
   - .
-  - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
   BRD:
   - X
   - C
@@ -58,10 +55,8 @@ layers:
   - D
   - ','
   - .
-  - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
   GME:
   - ↹
   - Q
@@ -89,10 +84,8 @@ layers:
   - M
   - ','
   - .
-  - Alt
   - ␣
   - NAV
-  - ⏎
   SYM:
   - '!'
   - '@'
@@ -120,10 +113,8 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ⌫
   - {t: ▽, type: trans}
   - {type: held}
-  - ''
   NAV:
   - Win Close
   - Tab Left
@@ -151,10 +142,8 @@ layers:
   - ⌦
   - ⏮️
   - ⏭️
-  - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - ␣
   FUN:
   - F1
   - F2
@@ -182,10 +171,8 @@ layers:
   - Caps Lock
   - Print Scrn
   - Pause Break
-  - Boot
   - {type: held}
   - {type: held}
-  - Boot
   MSE:
   - ''
   - ''
@@ -202,7 +189,7 @@ layers:
   - Alt
   - Shift
   - ''
-  - ''
+  - Right Click
   - M←
   - M↓
   - M→
@@ -214,9 +201,7 @@ layers:
   - Middle Click
   - Forward Click
   - ''
-  - ''
   - Left Click
-  - Right Click
 combos:
 - p: [2, 3]
   k: J
@@ -303,6 +288,3 @@ combos:
   k: BT CLR
   l: [FUN]
   a: bottom
-- p: [26, 27]
-  k: MSE
-  l: [DEF, BRD]
