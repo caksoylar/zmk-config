@@ -1,10 +1,234 @@
-#define ALPHA_23332
-#define MOUSE_KEYS
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
-#include "3x5.dtsi"
+// Layer aliases
+#define DEF 0
+#define BRD 1
+#define GME 2
+#define SYM 3
+#define NAV 4
+#define FUN 5
+#define MSE 6
+
+// Desktop and tab navigation shortcuts
+#define D_LT   LC(LG(LEFT))
+#define D_RT   LC(LG(RIGHT))
+#define TAB_RT LC(TAB)
+#define TAB_LT LC(LS(TAB))
+
+// Key position groups and extra key bindings
+#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22
+#define KEYS_R 5 6 7 8 9 15 16 17 18 19 23 24 25
+#define THUMBS 26 27
+#define SWP_POS 20
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP, ...) \
+    combo_##NAME { \
+        timeout-ms = <TERM>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+        require-prior-idle-ms = <QUICKTAP>; \
+        __VA_ARGS__ \
+    };
+
+#include "mouse.dtsi"
+
+&mt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <150>;
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
 
 / {
-	chosen {
-		zmk,matrix-transform = &hummingbird_transform;
+    behaviors {
+        aml: alpha_mods_l {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <100>;
+        };
+        asl: alpha_shift_l {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+        amr: alpha_mods_r {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <100>;
+        };
+        asr: alpha_shift_r {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+        };
+
+        // Swapper for smart alt+tab
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <SWP_POS>;
+        };
+    };
+
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+        // Define FUN layer as tri-state
+        func_tristate {
+            if-layers = <NAV SYM>;
+            then-layer = <FUN>;
+        };
+    };
+
+    macros {
+        ZMK_MACRO(inv_qm,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
+                , <&macro_release &kp LALT>;
+        )
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        COMBO(j,      &kp J,       2  3, DEF,          80,  50)
+        COMBO(q,      &kp Q,       2  3,     BRD,      80,  50)
+        COMBO(v_brd,  &kp V,       1  2,     BRD,      80,  50)
+        COMBO(semi,   &kp SEMI,    6  7, DEF BRD SYM,  40, 100)
+        COMBO(grave,  &kp GRAVE,   7  8, DEF BRD SYM,  40, 100)
+        COMBO(lpar,   &kp LPAR,   12 13, DEF BRD,      40, 100)
+        COMBO(rpar,   &kp RPAR,   16 17, DEF BRD,      40, 100)
+        COMBO(lbkt,   &kp LBKT,   11 12, DEF BRD,      40, 100)
+        COMBO(rbkt,   &kp RBKT,   17 18, DEF BRD,      40, 100)
+        COMBO(tab,    &kp TAB,    11 13, DEF BRD SYM,  40, 150)
+        COMBO(del,    &kp DEL,    16 18, DEF BRD SYM,  40, 150)
+        COMBO(esc,    &kp ESC,     2 13, DEF BRD SYM,  40, 100)
+        COMBO(ret,    &kp RET,     7 16, DEF BRD SYM,  40, 100)
+
+        COMBO(capswd, &caps_word, 13 16, DEF BRD,      60, 200)
+
+        COMBO(lock,   &kp LG(L),   3  4, DEF BRD,      80, 500)
+
+        COMBO(play,   &kp C_PP,    4 14, NAV,         200, 200)
+
+        COMBO(boot,   &bootloader, 4  5, FUN,         100, 500)
+
+        COMBO(z,      &kp Z,      20 21, DEF BRD,      80,  50)
+        COMBO(v,      &kp V,      21 22, DEF,          40,  50)
+        COMBO(bslh,   &kp BSLH,   23 24, DEF BRD SYM,  80, 100)
+        COMBO(slsh,   &kp SLASH,  24 25, DEF BRD SYM,  80,  50)
+
+        COMBO(f12,    &kp F12,    20 21, FUN,         100, 200)
+        COMBO(btclr,  &bt BT_CLR, 24 25, FUN,         100, 200)
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "DEF";
+            bindings = <
+     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp K         &kp L         &kp U         &kp Y         &kp SQT
+     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
+                   &kp X         &kp C         &lt MSE D                                     &kp H         &kp COMMA     &kp DOT
+                                                             &lt NAV SPACE     &lt SYM BSPC
+            >;
+        };
+
+        bird_layer {
+            display-name = "BRD";
+            bindings = <
+     &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
+     &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
+                   &kp W         &kp M         &lt MSE G                                     &kp D         &kp COMMA     &kp DOT
+                                                             &lt NAV SPACE     &lt SYM BSPC
+            >;
+        };
+
+        game_layer {
+            display-name = "GME";
+            bindings = <
+     &kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp Y         &kp U         &kp I         &kp O         &kp ESC
+     &kp LSHFT     &kp A         &kp S         &kp D         &kp F             &kp H         &kp J         &kp K         &kp L         &tog GME
+                   &kp Z         &kp X         &kp C                                         &kp M         &kp COMMA     &kp DOT
+                                                             &kp SPACE         &mo NAV
+            >;
+        };
+
+        symbol_layer {
+            display-name = "SYM";
+            bindings = <
+     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp SLASH     &kp N7        &kp N8        &kp N9        &kp COMMA
+     &kp PLUS      &kp EQUAL     &kp UNDER     &kp MINUS     &kp CARET         &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT
+                   &inv_qm       &kp STAR      &kp AMPS                                      &kp N1        &kp N2        &kp N3
+                                                             &trans            &trans
+            >;
+        };
+
+        nav_layer {
+            display-name = "NAV";
+            bindings = <
+     &kp LA(F4)    &kp TAB_LT    &kp TAB_RT    &kp LC(F4)    &kp C_VOL_UP      &kp INS       &kp PG_DN     &kp UP        &kp PG_UP     &kp C_AL_CALC
+     &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB &kp C_VOL_DN      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
+                   &kp LS(TAB)   &swapper      &kp LS(INS)                                   &kp DEL       &kp C_PREV    &kp C_NEXT
+                                                             &trans            &trans
+            >;
+        };
+
+        function_layer {
+            display-name = "FUN";
+            bindings = <
+     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &to DEF       &to BRD       &to GME
+     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                   &kp D_LT      &kp D_RT      &kp F11                                       &kp CAPS      &kp PSCRN     &kp PAUSE_BREAK
+                                                             &trans            &trans
+            >;
+        };
+
+        mouse_layer {
+            display-name = "MSE";
+            bindings = <
+     &none         &none         &none         &none         &none           &msc SCRL_LEFT &msc SCRL_DOWN &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_RIGHT
+     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none           &mkp RCLK      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+                   &none         &none         &none                                         &mkp MB4      &mkp MCLK     &mkp MB5
+                                                             &none             &mkp LCLK
+            >;
+        };
     };
 };
