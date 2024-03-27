@@ -244,11 +244,11 @@ combos:
   k: ⌦
   l: [DEF, BRD, SYM]
   draw_separate: true
-- p: [2, 13]
+- p: [11, 12, 13]
   k: Esc
   l: [DEF, BRD, SYM]
   draw_separate: true
-- p: [7, 16]
+- p: [16, 17, 18]
   k: ⏎
   l: [DEF, BRD, SYM]
   draw_separate: true

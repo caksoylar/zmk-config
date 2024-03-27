@@ -138,8 +138,8 @@
         COMBO(rbkt,   &kp RBKT,   17 18, DEF BRD,      40, 100)
         COMBO(tab,    &kp TAB,    11 13, DEF BRD SYM,  40, 150)
         COMBO(del,    &kp DEL,    16 18, DEF BRD SYM,  40, 150)
-        COMBO(esc,    &kp ESC,     2 13, DEF BRD SYM,  40, 100)
-        COMBO(ret,    &kp RET,     7 16, DEF BRD SYM,  40, 100)
+        COMBO(esc,    &kp ESC, 11 12 13, DEF BRD SYM,  40, 100)
+        COMBO(ret,    &kp RET, 16 17 18, DEF BRD SYM,  40, 100)
 
         COMBO(capswd, &caps_word, 13 16, DEF BRD,      60, 200)
 
