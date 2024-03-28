@@ -39,7 +39,7 @@
 
 	soft_off_direct_scan: soft_off_direct_scan {
         compatible = "zmk,kscan-gpio-direct";
-        input-keys = <&on_off_key>;
+        input-gpios = <&xiao_d  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         wakeup-source;
 	};
 
