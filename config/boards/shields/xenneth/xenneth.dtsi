@@ -45,7 +45,6 @@
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-direct";
-		label = "KSCAN";
 		input-gpios =
 			<&xiao_d  0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
 			<&xiao_d  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
@@ -68,7 +67,6 @@
 
 	encoder: encoder {
 		compatible = "alps,ec11";
-		label = "ENCODER";
 		a-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <48>;
