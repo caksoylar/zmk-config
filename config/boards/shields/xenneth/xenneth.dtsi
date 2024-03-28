@@ -80,11 +80,6 @@
         wakeup-source;
     };
 
-	soft_off_wakers {
-        compatible = "zmk,soft-off-wakeup-sources";
-        wakeup-sources = <&soft_off_direct_scan>;
-    };
-
 	keys {
 		compatible = "gpio-keys";
 		soft_off_key: soft_off_key {
