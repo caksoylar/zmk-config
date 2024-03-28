@@ -268,7 +268,7 @@ combos:
   l: [DEF, BRD, SYM]
   draw_separate: true
 - p: [13, 16]
-  k: Caps Wrd
+  k: Caps Word
   l: [DEF, BRD]
   draw_separate: true
 - p: [3, 4]

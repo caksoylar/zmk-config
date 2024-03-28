@@ -4,7 +4,7 @@ parse_config:
     '&sys_reset': Reset
     '&bootloader': Boot
     '&swapper': Win Next
-    '&caps_word': Caps Wrd
+    '&caps_word': Caps Word
     '&inv_qm': ¿
 
     '&kp LC(LG(LEFT))': Desk Left
