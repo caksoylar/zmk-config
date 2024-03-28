@@ -82,7 +82,7 @@
 
 	keys {
 		compatible = "gpio-keys";
-		soft_off_key: soft_off_key {
+		on_off_key: on_off_key {
 			gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 		};
 	};
