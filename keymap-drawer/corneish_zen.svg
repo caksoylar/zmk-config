@@ -919,8 +919,10 @@ path.combo {
 <text x="0" y="0" class="key ghost tap">Alt</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="57" width="28" height="26" class="combo"/>
-<text x="252" y="70" class="combo tap">⏯</text>
+<path d="M281,70 v-22 a6.0,6.0 0 0 0 -6.0,-6.0 h-4" class="combo"/>
+<path d="M281,70 v22 a6.0,6.0 0 0 1 -6.0,6.0 h-4" class="combo"/>
+<rect rx="6" ry="6" x="267" y="57" width="28" height="26" class="combo"/>
+<text x="281" y="70" class="combo tap">⏯</text>
 </g>
 </g>
 </g>

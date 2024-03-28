@@ -803,8 +803,10 @@ path.combo {
 <text x="0" y="0" class="key tap">␣</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="269" y="87" width="28" height="26" class="combo"/>
-<text x="283" y="100" class="combo tap">⏯</text>
+<path d="M313,100 v-23 a6.0,6.0 0 0 0 -6.0,-6.0 h-5" class="combo"/>
+<path d="M313,100 v23 a6.0,6.0 0 0 1 -6.0,6.0 h-5" class="combo"/>
+<rect rx="6" ry="6" x="299" y="87" width="28" height="26" class="combo"/>
+<text x="313" y="100" class="combo tap">⏯</text>
 </g>
 </g>
 </g>
