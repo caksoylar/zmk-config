@@ -34,7 +34,7 @@
         __VA_ARGS__ \
     };
 
-#include "mouse.dtsi"
+#include "includes/mouse.dtsi"
 
 &mt {
     flavor = "hold-preferred";
