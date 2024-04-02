@@ -4,7 +4,7 @@ parse_config:
     '&sys_reset': Reset
     '&bootloader': Boot
     '&swapper': Win Next
-    '&caps_word': Caps Wrd
+    '&caps_word': Caps Word
     '&inv_qm': ¿
 
     '&kp LC(LG(LEFT))': Desk Left
@@ -15,6 +15,7 @@ parse_config:
     '&kp LC(F4)': Tab Close
     '&kp LS(TAB)': Win Prev
     '&kp LS(INS)': Paste
+    '&kp LG(L)': Lock
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
@@ -25,15 +26,15 @@ parse_config:
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
 
-    '&mmv MOVE_UP': M↑
-    '&mmv MOVE_DOWN': M↓
-    '&mmv MOVE_LEFT': M←
-    '&mmv MOVE_RIGHT': M→
+    '&mmv MOVE_UP': Mouse ↑
+    '&mmv MOVE_DOWN': Mouse ↓
+    '&mmv MOVE_LEFT': Mouse ←
+    '&mmv MOVE_RIGHT': Mouse →
 
-    '&msc SCRL_UP': MW↑
-    '&msc SCRL_DOWN': MW↓
-    '&msc SCRL_LEFT': MW←
-    '&msc SCRL_RIGHT': MW→
+    '&msc SCRL_UP': Scroll ↑
+    '&msc SCRL_DOWN': Scroll ↓
+    '&msc SCRL_LEFT': Scroll ←
+    '&msc SCRL_RIGHT': Scroll →
 
     '&mkp LCLK': Left Click
     '&mkp RCLK': Right Click
@@ -46,6 +47,7 @@ parse_config:
     combo_del:    {align: top, o: 0.15}
     combo_f12:    {align: bottom}
     combo_btclr:  {align: bottom}
+    combo_play:   {align: right}
     combo_capswd: {draw_separate: true}
     combo_semi:   {draw_separate: true}
     combo_grave:  {draw_separate: true}

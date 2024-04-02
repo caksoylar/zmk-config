@@ -192,20 +192,20 @@ layers:
   - ''
   - ''
   - ''
-  - MW←
-  - MW↓
-  - M↑
-  - MW↑
-  - MW→
+  - Scroll ←
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - Scroll →
   - Ctrl
   - Gui
   - Alt
   - Shift
   - ''
   - ''
-  - M←
-  - M↓
-  - M→
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
   - ''
   - ''
   - ''
@@ -230,41 +230,58 @@ combos:
 - p: [6, 7]
   k: ;
   l: [DEF, BRD, SYM]
+  draw_separate: true
 - p: [7, 8]
   k: '`'
   l: [DEF, BRD, SYM]
+  draw_separate: true
 - p: [12, 13]
   k: (
   l: [DEF, BRD]
+  draw_separate: true
 - p: [16, 17]
   k: )
   l: [DEF, BRD]
+  draw_separate: true
 - p: [11, 12]
   k: '['
   l: [DEF, BRD]
+  draw_separate: true
 - p: [17, 18]
   k: ']'
   l: [DEF, BRD]
+  draw_separate: true
 - p: [11, 13]
   k: ↹
   l: [DEF, BRD, SYM]
-  a: top
-  o: 0.15
+  draw_separate: true
 - p: [16, 18]
   k: ⌦
   l: [DEF, BRD, SYM]
-  a: top
-  o: 0.15
+  draw_separate: true
+- p: [11, 12, 13]
+  k: Esc
+  l: [DEF, BRD, SYM]
+  draw_separate: true
+- p: [16, 17, 18]
+  k: ⏎
+  l: [DEF, BRD, SYM]
+  draw_separate: true
 - p: [13, 16]
-  k: Caps Wrd
+  k: Caps Word
   l: [DEF, BRD]
-  a: top
+  draw_separate: true
 - p: [3, 4]
-  k: LG(L)
+  k: Lock
   l: [DEF, BRD]
+  draw_separate: true
 - p: [4, 14]
   k: ⏯
   l: [NAV]
+  a: right
+- p: [4, 5]
+  k: Boot
+  l: [FUN]
 - p: [20, 21]
   k: Z
   l: [DEF, BRD]
@@ -274,9 +291,11 @@ combos:
 - p: [23, 24]
   k: \
   l: [DEF, BRD, SYM]
+  draw_separate: true
 - p: [24, 25]
   k: /
   l: [DEF, BRD, SYM]
+  draw_separate: true
 - p: [20, 21]
   k: F12
   l: [FUN]
