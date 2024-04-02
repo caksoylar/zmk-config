@@ -1,6 +1,5 @@
-#define THREE_THUMBS
 #define MOUSE_KEYS
-
+#include "keypos_def/keypos_36keys.h"
 #include "includes/3x5.dtsi"
 
 / {
