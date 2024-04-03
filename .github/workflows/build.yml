@@ -5,7 +5,8 @@ on:
     paths:
       - config/west.yml
       - config/*.keymap
-      - config/*.dtsi
+      - config/*.conf
+      - config/includes/*.dtsi
       - boards/**
       - build.yaml
 
