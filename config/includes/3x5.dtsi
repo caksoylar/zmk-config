@@ -24,52 +24,6 @@
 // Extra key bindings
 #define SWP_POS RB2
 
-#if defined(LB4) && defined(LB0) && defined(RB0) && defined(RB4)
-#    define LB4_DEF &kp Z
-#    define LB0_DEF &kp V
-#    define RB0_DEF &kp J
-#    define RB4_DEF &kp SLASH
-#    define LB4_GME &kp ESC
-#    define LB0_GME &kp V
-#    define RB0_GME &kp N
-#    define RB4_GME &kp SLASH
-#    define ALP_SCL &kp SEMI
-#    define ALP_F12 &kp F12
-#    define ALP_PP  &kp C_PP
-#    define ALP_XXX &none
-#else   /* dropped index and pinkies */
-#    define LB4_DEF  /* left pinky        */
-#    define LB0_DEF  /* left inner index  */
-#    define RB0_DEF  /* right inner index */
-#    define RB4_DEF  /* right pinky       */
-#    define LB4_GME
-#    define LB0_GME
-#    define RB0_GME
-#    define RB4_GME
-#    define ALP_SCL
-#    define ALP_F12
-#    define ALP_PP
-#    define ALP_XXX
-#endif
-
-#if defined(LH2) && defined(RH2)
-#    define LH2_DEF &mt LGUI TAB
-#    define RH2_DEF &mt RALT DEL
-#    define LH2_GME &kp LCTRL
-#    define RH2_GME &tog GME
-#    define LH2_SYM &kp LGUI
-#    define RH2_SYM &kp RALT
-#    define H2_XXX   &none
-#else
-#    define LH2_DEF
-#    define RH2_DEF
-#    define LH2_GME
-#    define RH2_GME
-#    define LH2_SYM
-#    define RH2_SYM
-#    define H2_XXX
-#endif
-
 #include "combos.dtsi"
 
 #ifdef EXTERNAL_POWER
@@ -180,108 +134,108 @@
 
         default_layer {
             display-name = "DEF";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp K         &kp L         &kp U         &kp Y         &kp SQT
+     &kp Q,        &kp W,        &kp F,        &kp P,        &kp B,            &kp K,        &kp L,        &kp U,        &kp Y,        &kp SQT,      \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
+     &aml LCTRL A, &aml LGUI R,  &aml LALT S,  &asl LSHFT T, &kp G,            &kp M,        &asr RSHFT N, &amr RALT E,  &amr RGUI I,  &amr RCTRL O, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     LB4_DEF       &kp X         &kp C         MS_ACT(D)     LB0_DEF           RB0_DEF       &kp H         &kp COMMA     &kp DOT       RB4_DEF
+     &kp Z,        &kp X,        &kp C,        MS_ACT(D),    &kp V,            &kp J,        &kp H,        &kp COMMA,    &kp DOT,      &kp SLASH,    \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 LH2_DEF       &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET RH2_DEF
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+                                 &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE,    &lt SYM BSPC, &mt RSHFT RET, &mt RALT DEL                              \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 
         bird_layer {
             display-name = "BRD";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp C         &kp L         &kp F         &kp B             &kp J         &kp Y         &kp O         &kp U         &kp SQT
+     &kp X,        &kp C,        &kp L,        &kp F,        &kp B,            &kp J,        &kp Y,        &kp O,        &kp U,        &kp SQT,      \
+//, ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &aml LCTRL R, &aml LGUI S,  &aml LALT N,  &asl LSHFT T, &kp P,            &kp K,        &asr RSHFT H, &amr RALT E,  &amr RGUI I,  &amr RCTRL A, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp W         &kp M         MS_ACT(G)     ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 LH2_DEF       &mt LCTRL ESC &lt NAV SPACE     &lt SYM BSPC  &mt RSHFT RET RH2_DEF
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+     &none,        &kp W,        &kp M,        MS_ACT(G),    &none,            &none,        &kp D,        &kp COMMA,    &kp DOT,      &none,        \
+//, ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                 &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE,    &lt SYM BSPC, &mt RSHFT RET, &mt RALT DEL                              \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 
         game_layer {
             display-name = "GME";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp Y         &kp U         &kp I         &kp O         &kp ESC
+     &kp TAB,      &kp Q,        &kp W,        &kp E,        &kp R,            &kp Y,        &kp U,        &kp I,        &kp O,        &kp ESC,   \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LSHFT     &kp A         &kp S         &kp D         &kp F             &kp H         &kp J         &kp K         &kp L         &tog GME
+     &kp LSHFT,    &kp A,        &kp S,        &kp D,        &kp F,            &kp H,        &kp J,        &kp K,        &kp L,        &tog GME,  \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     LB4_GME       &kp Z         &kp X         &kp C         LB0_GME           RB0_GME       &kp M         &kp COMMA     &kp DOT       RB4_GME
+     &kp ESC,      &kp Z,        &kp X,        &kp C,        &kp V,            &kp N,        &kp M,        &kp COMMA,    &kp DOT,      &kp SLASH, \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 LH2_GME       &kp LALT      &kp SPACE         &mo NAV       &kp RET       RH2_GME
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+                                 &kp LCTRL,    &kp LALT,     &kp SPACE,        &mo NAV,      &kp RET,      &tog GME                               \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 
         symbol_layer {
             display-name = "SYM";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp SLASH     &kp N7        &kp N8        &kp N9        &kp COMMA
+     &kp EXCL,     &kp AT,       &kp HASH,     &kp DLLR,     &kp PRCNT,        &kp SLASH,    &kp N7,       &kp N8,       &kp N9,       &kp COMMA, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp PLUS      &kp EQUAL     &kp UNDER     &kp MINUS     &kp CARET         &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT
+     &kp PLUS,     &kp EQUAL,    &kp UNDER,    &kp MINUS,    &kp CARET,        &kp N0,       &kp N4,       &kp N5,       &kp N6,       &kp DOT,   \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &inv_qm       &kp STAR      &kp AMPS      ALP_XXX           ALP_SCL       &kp N1        &kp N2        &kp N3        RB4_DEF
+     &none,        &inv_qm,      &kp STAR,     &kp AMPS,     &none,            &kp SEMI,     &kp N1,       &kp N2,       &kp N3,       &kp SLASH, \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 LH2_SYM       &kp BSPC      &trans            &trans        &none         RH2_SYM
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+                                 &kp LGUI,     &kp BSPC,     &trans,           &trans,       &none,        &kp RALT                               \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 
         nav_layer {
             display-name = "NAV";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4)    &kp TAB_LT    &kp TAB_RT    &kp LC(F4)    &kp C_VOL_UP      &kp INS       &kp PG_DN     &kp UP        &kp PG_UP     &kp C_AL_CALC
+     &kp LA(F4),   &kp TAB_LT,   &kp TAB_RT,   &kp LC(F4),   &kp C_VOL_UP,     &kp INS,      &kp PG_DN,    &kp UP,       &kp PG_UP,    &kp C_AL_CALC, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB &kp C_VOL_DN      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
+     &kp LCTRL,    &kp LGUI,     &kp LALT,     &mt LSHFT TAB, &kp C_VOL_DN,    &kp HOME,     &kp LEFT,     &kp DOWN,     &kp RIGHT,    &kp END,       \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp LS(TAB)   &swapper      &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
+     &none,        &kp LS(TAB),  &swapper,     &kp LS(INS),  &kp C_PP,         &none,        &kp DEL,      &kp C_PREV,   &kp C_NEXT,   &none,         \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 LH2_SYM       &none         &trans            &trans        &kp SPACE     RH2_SYM
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+                                 &kp LGUI,     &none,        &trans,           &trans,       &kp SPACE,    &kp RALT \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 
         function_layer {
             display-name = "FUN";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &to DEF       &to BRD       &to GME
+     &kp F1,       &kp F2,       &kp F3,       &kp F4,       &kp F5,           &out OUT_USB, &out OUT_BLE, &to DEF,      &to BRD,      &to GME,      \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+     &kp F6,       &kp F7,       &kp F8,       &kp F9,       &kp F10,          &bt BT_SEL 0, &bt BT_SEL 1, &bt BT_SEL 2, &bt BT_SEL 3, &bt BT_SEL 4, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp D_LT      &kp D_RT      &kp F11       ALP_F12           ALP_XXX       &kp CAPS      FN_EXTRA1     FN_EXTRA2     ALP_XXX
+     &none,        &kp D_LT,     &kp D_RT,     &kp F11,      &kp F12,          &none,        &kp CAPS,     FN_EXTRA1,    FN_EXTRA2,    &none,        \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 H2_XXX        &bootloader   &trans            &trans        &bootloader   H2_XXX
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+                                 &none,        &bootloader,  &trans,           &trans,       &bootloader,  &none                                     \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 
 #ifdef MOUSE_KEYS
         mouse_layer {
             display-name = "MSE";
-            bindings = <
+            bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &none         &none         &none         &none           &msc SCRL_LEFT &msc SCRL_DOWN &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_RIGHT
+     &none,        &none,        &none,        &none,        &none,          &msc SCRL_LEFT, &msc SCRL_DOWN, &mmv MOVE_UP, &msc SCRL_UP, &msc SCRL_RIGHT, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+     &kp LCTRL,    &kp LGUI,     &kp LALT,     &kp LSHFT,    &none,            &none,      &mmv MOVE_LEFT, &mmv MOVE_DOWN, &mmv MOVE_RIGHT, &none,         \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &none         &none         &none         ALP_XXX           ALP_XXX       &mkp MB4      &mkp MCLK     &mkp MB5      ALP_XXX
+     &none,        &none,        &none,        &none,        &none,            &none,        &mkp MB4,     &mkp MCLK,    &mkp MB5,     &none,           \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 H2_XXX        &none         &none             &mkp LCLK     &mkp RCLK     H2_XXX
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
+                                 &none,        &none,        &none,            &mkp LCLK,    &mkp RCLK,    &none                                        \
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            )>;
         };
 #endif
     };
