@@ -13,7 +13,7 @@
         key-positions = <KEYPOS>; \
         layers = <LAYERS>; \
         require-prior-idle-ms = <QUICKTAP>; \
-		__VA_ARGS__ \
+        __VA_ARGS__ \
     };
 
 / {
