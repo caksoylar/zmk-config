@@ -6,6 +6,7 @@ This is a [ZMK](https://zmk.dev) config repo for my 30-36 key split keyboards, a
 The keymap is optimized to be usable with 30 keys, with dropped keys from inner index and pinky columns and two thumb keys each, like the [Hummingbird](https://github.com/PJE66/hummingbird) layout.
 Currently these keyboards are:
 - A hand-wired [Rommana](https://github.com/AlaaSaadAbdo/Rommana) (30 keys)
+- A hand-wired, modified [Grumpy](https://github.com/caksoylar/Grumpy/tree/hummingbird-pinky) (28 keys)
 - [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys)
 - [Hypergolic (1.2 BM variant)](https://github.com/davidphilipbarr/hypergolic) (34 keys)
 
@@ -39,11 +40,3 @@ This widget is a ZMK module housed in [`zmk-rgbled-widget`](https://github.com/c
 
 I use a custom ZMK branch referenced in [west.yml](config/west.yml) which contains a few extras, namely [mouse keys](https://github.com/zmkfirmware/zmk/pull/778) used in the `MSE` layer, [swapper behavior](https://github.com/zmkfirmware/zmk/pull/1366) and [display improvements for the Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a).
 For a variant of my configuration tailored for stock ZMK, check out the [`stock` branch](https://github.com/caksoylar/zmk-config/tree/stock).
-
-## Custom shields
-
-This repo also contains shield definitions for a few keyboards using Pro Micro format daughterboards in `boards/shields/`:
-- [`choc_ergo`](https://keypcb.xyz/choc_ergo)
-- [`hypergolic`](https://github.com/davidphilipbarr/hypergolic) -- you should probably use [the official Cradio shield](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/cradio/) instead
-- [`ffkb` v1](https://fingerpunch.xyz/product/faux-fox-keyboard/) with an OLED, building upon [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-ffkb) and [NCKiser's](https://github.com/NCKiser/zmk-ffkb) definitions
-- [`swweeep`](https://github.com/sadekbaroudi/sweep36) using [sadekbaroudi's](https://github.com/sadekbaroudi/zmk-swweeep) definition
