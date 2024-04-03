@@ -102,6 +102,8 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
+
+rect.held, rect.combo.held { fill: #fcc; }
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
 <text x="0" y="28" class="label">DEF:</text>
