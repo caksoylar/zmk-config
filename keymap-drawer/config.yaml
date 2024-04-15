@@ -169,6 +169,5 @@ parse_config:
     UNDER: _
     UNDERSCORE: _
 draw_config:
-  svg_extra_style: |
-    rect.held, rect.combo.held { fill: #fcc; }
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
+  dark_mode: auto
