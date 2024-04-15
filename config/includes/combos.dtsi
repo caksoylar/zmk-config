@@ -31,8 +31,8 @@ COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF BRD,      40, 100)
 COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF BRD,      40, 100)
 COMBO(tab,    &kp TAB,     LM3 LM1,     DEF BRD SYM,  40, 150)
 COMBO(del,    &kp DEL,     RM1 RM3,     DEF BRD SYM,  40, 150)
-COMBO(esc,    &kp ESC,     LM3 LM2 LM1, DEF BRD SYM,  40, 100)
-COMBO(ret,    &kp RET,     RM1 RM2 RM3, DEF BRD SYM,  40, 100)
+COMBO(esc,    &kp ESC,     LM3 LM2 LM1, DEF BRD SYM,  40,  50)
+COMBO(ret,    &kp RET,     RM1 RM2 RM3, DEF BRD SYM,  40,  50)
 
 COMBO(capswd, &caps_word,  LM1 RM1,     DEF BRD,      60, 200)
 
