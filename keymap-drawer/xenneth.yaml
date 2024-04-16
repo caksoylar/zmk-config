@@ -15,3 +15,6 @@ layers:
   - BT CLR
   - '&td1'
   - {type: held}
+combos:
+- p: [0, 1, 2]
+  k: Reset

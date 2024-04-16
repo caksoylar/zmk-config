@@ -45,6 +45,14 @@
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
         };
     };
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1 2>;
+            bindings = <&sys_reset>;
+        };
+    };
      keymap {
                  compatible = "zmk,keymap";
  
