@@ -176,7 +176,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   tvp2:
-  - LC(F18)
+  - Ctl+ F18
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

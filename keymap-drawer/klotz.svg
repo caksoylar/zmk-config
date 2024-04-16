@@ -54,7 +54,16 @@ text.label {
     font-weight: bold;
     text-anchor: start;
     stroke: white;
-    stroke-width: 2;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for optional footer */
+text.footer {
+    text-anchor: end;
+    dominant-baseline: auto;
+    stroke: white;
+    stroke-width: 4;
     paint-order: stroke;
 }
 
@@ -914,7 +923,9 @@ path.combo {
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LC(F18)</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">F18</tspan>
+</text>
 </g>
 <g transform="translate(97, 64) rotate(-4.0)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
