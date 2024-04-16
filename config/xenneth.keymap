@@ -50,7 +50,7 @@
         combo_soft_off {
             timeout-ms = <50>;
             key-positions = <0 1 2>;
-            bindings = <&sys_reset>;
+            bindings = <&soft_off>;
         };
     };
      keymap {
