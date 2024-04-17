@@ -22,7 +22,7 @@
 #define TAB_LT LC(LS(TAB))
 
 // Extra key bindings
-#define SWP_POS RB2
+#define SWP_POS LB3
 
 #include "combos.dtsi"
 
