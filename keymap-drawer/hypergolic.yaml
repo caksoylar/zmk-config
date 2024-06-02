@@ -162,8 +162,8 @@ layers:
   - →
   - End
   - ''
-  - Win Prev
-  - Win Next
+  - ''
+  - '&alt_tabber'
   - Paste
   - ⏯
   - ''

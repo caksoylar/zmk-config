@@ -833,15 +833,10 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(112, 163) rotate(-5.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Win</tspan><tspan x="0" dy="1.2em">Prev</tspan>
-</text>
 </g>
 <g transform="translate(173, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Win</tspan><tspan x="0" dy="1.2em">Next</tspan>
-</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;alt_tabber</tspan></text>
 </g>
 <g transform="translate(232, 161)" class="key keypos-23">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
