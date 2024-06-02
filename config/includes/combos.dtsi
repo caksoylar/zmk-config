@@ -49,9 +49,5 @@ COMBO(slsh,   &kp SLASH,   RB2 RB3,     DEF BRD SYM,  80,  50)
 
 COMBO(f12,    &kp F12,     LB3 LB2,     FUN,         100, 200)
 COMBO(btclr,  &bt BT_CLR,  RB2 RB3,     FUN,         100, 200)
-
-#if defined(MOUSE_KEYS) && defined(LH1)
-COMBO(mse_l,  &mo MSE,     LH1 LH0,     DEF BRD,     150,   0, slow-release;)
-#endif
     };
 };

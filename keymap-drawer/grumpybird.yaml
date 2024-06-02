@@ -22,7 +22,7 @@ layers:
   - {t: O, h: Ctrl}
   - X
   - C
-  - {t: D, h: MSE}
+  - D
   - H
   - ','
   - .
@@ -51,7 +51,7 @@ layers:
   - {t: A, h: Ctrl}
   - W
   - M
-  - {t: G, h: MSE}
+  - G
   - D
   - ','
   - .
@@ -136,8 +136,8 @@ layers:
   - ↓
   - →
   - End
-  - Win Prev
-  - Win Next
+  - ''
+  - '&alt_tabber'
   - Paste
   - ⌦
   - ⏮️
@@ -173,35 +173,6 @@ layers:
   - Pause Break
   - {type: held}
   - {type: held}
-  MSE:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Scroll ←
-  - Scroll ↓
-  - Mouse ↑
-  - Scroll ↑
-  - Scroll →
-  - Ctrl
-  - Gui
-  - Alt
-  - Shift
-  - ''
-  - Right Click
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - Back Click
-  - Middle Click
-  - Forward Click
-  - ''
-  - Left Click
 combos:
 - p: [2, 3]
   k: J
