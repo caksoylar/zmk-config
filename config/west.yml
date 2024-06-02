@@ -6,14 +6,14 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: caksoylar/zen-8bit
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
     - name: zmk-tri-state
       remote: caksoylar
-      revision: split-locality
+      revision: main
   self:
     path: config
