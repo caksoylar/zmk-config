@@ -214,7 +214,7 @@ layers:
   - Middle Click
   - Forward Click
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - Left Click
   - Right Click
 combos:

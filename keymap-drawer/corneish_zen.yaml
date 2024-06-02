@@ -255,7 +255,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - Left Click
   - Right Click
   - ''
