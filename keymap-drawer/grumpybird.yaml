@@ -218,7 +218,7 @@ combos:
   draw_separate: true
 - p: [7, 8]
   k: '`'
-  l: [DEF, BRD, SYM]
+  l: [DEF, BRD]
   draw_separate: true
 - p: [12, 13]
   k: (
@@ -275,7 +275,7 @@ combos:
   l: [DEF]
 - p: [23, 24]
   k: \
-  l: [DEF, BRD, SYM]
+  l: [DEF, BRD]
   draw_separate: true
 - p: [24, 25]
   k: /
