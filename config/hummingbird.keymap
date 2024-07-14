@@ -1,3 +1,55 @@
 #define MOUSE_KEYS
 #include "keypos_def/keypos_30keys.h"
 #include "includes/3x5.dtsi"
+
+#include <physical_layouts.dtsi>
+
+/ {
+    chosen {
+        zmk,physical-layout = &default_layout;
+        /delete-property/ zmk,kscan;
+        /delete-property/ zmk,matrix-transform;
+    };
+
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+
+        /* generated using https://gist.github.com/caksoylar/1f6809446ab2415d4116882ed1c60db2
+         * with `python dt_layout_viz/physical_layout_to_dt.py -k hummingbird` */
+        keys  //                     w   h    x    y     rot   rx   ry
+            = <&key_physical_attrs 105 100    0   77       0    0    0>
+            , <&key_physical_attrs 105 100  108   25       0    0    0>
+            , <&key_physical_attrs 105 100  217    0       0    0    0>
+            , <&key_physical_attrs 105 100  326   25       0    0    0>
+            , <&key_physical_attrs 105 100  435   77       0    0    0>
+            , <&key_physical_attrs 105 100  731   77       0    0    0>
+            , <&key_physical_attrs 105 100  840   25       0    0    0>
+            , <&key_physical_attrs 105 100  949    0       0    0    0>
+            , <&key_physical_attrs 105 100 1058   25       0    0    0>
+            , <&key_physical_attrs 105 100 1166   77       0    0    0>
+            , <&key_physical_attrs 105 100    0  180       0    0    0>
+            , <&key_physical_attrs 105 100  108  128       0    0    0>
+            , <&key_physical_attrs 105 100  217  102       0    0    0>
+            , <&key_physical_attrs 105 100  326  128       0    0    0>
+            , <&key_physical_attrs 105 100  435  180       0    0    0>
+            , <&key_physical_attrs 105 100  731  180       0    0    0>
+            , <&key_physical_attrs 105 100  840  128       0    0    0>
+            , <&key_physical_attrs 105 100  949  102       0    0    0>
+            , <&key_physical_attrs 105 100 1058  128       0    0    0>
+            , <&key_physical_attrs 105 100 1166  180       0    0    0>
+            , <&key_physical_attrs 105 100  108  231       0    0    0>
+            , <&key_physical_attrs 105 100  217  205       0    0    0>
+            , <&key_physical_attrs 105 100  326  231       0    0    0>
+            , <&key_physical_attrs 105 100  840  231       0    0    0>
+            , <&key_physical_attrs 105 100  949  205       0    0    0>
+            , <&key_physical_attrs 105 100 1058  231       0    0    0>
+            , <&key_physical_attrs 105 100  353  361       0    0    0>
+            , <&key_physical_attrs 105 100  462  386       0    0    0>
+            , <&key_physical_attrs 105 100  704  386       0    0    0>
+            , <&key_physical_attrs 105 100  813  361       0    0    0>
+        ;
+    };
+};
