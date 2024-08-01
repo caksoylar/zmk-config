@@ -1,18 +1,5 @@
 <svg width="925" height="3778" viewBox="0 0 925 3778" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<style>:root {
-    --fg-color: #24292e;
-    --key-color: #f6f8fa;
-    --outline-color: #c9cccf;
-    --combo-color: #ccddff;
-    --held-color: #ffdddd;
-    --font-size: 14px;
-    --small-font-size: 11px;
-    --tiny-font-size: 8px;
-    --dendron-color: #808080;
-    --trans-fg-color: #7b7e81;
-}
-
-/* inherit to force styles through use tags */
+<style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
 }
@@ -20,19 +7,19 @@ svg path {
 /* font and background color specifications */
 svg.keymap {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: var(--font-size);
+    font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: var(--fg-color);
+    fill: #24292e;
 }
 
 /* default key styling */
 rect.key {
-    fill: var(--key-color);
+    fill: #f6f8fa;
 }
 
 rect.key, rect.combo {
-    stroke: var(--outline-color);
+    stroke: #c9cccf;
     stroke-width: 1;
 }
 
@@ -43,15 +30,15 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: var(--combo-color);
+    fill: #cdf;
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: var(--held-color);
+    fill: #fdd;
 }
 
-/* styling for ghost (optional) keys */
+/* color accent for ghost (optional) keys */
 rect.ghost, rect.combo.ghost {
     stroke-dasharray: 4, 4;
     stroke-width: 2;
@@ -82,7 +69,7 @@ text.footer {
 
 /* styling for combo tap, and key hold/shifted label text */
 text.combo, text.hold, text.shifted {
-    font-size: var(--small-font-size);
+    font-size: 11px;
 }
 
 text.hold {
@@ -95,20 +82,24 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
-    font-size: var(--tiny-font-size);
+    font-size: 8px;
 }
 
 /* lighter symbol for transparent keys */
 text.trans {
-    fill: var(--trans-fg-color);
+    fill: #7b7e81;
 }
 
 /* styling for combo dendrons */
 path.combo {
     stroke-width: 1;
-    stroke: var(--dendron-color);
+    stroke: gray;
     fill: none;
 }
 
@@ -126,20 +117,18 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 @media (prefers-color-scheme: dark) {
-:root {
-    --fg-color: #d1d6db;
-    --key-color: #3f4750;
-    --outline-color: #60666c;
-    --combo-color: #1f3d7a;
-    --held-color: #854747;
-    --trans-fg-color: #7e8184;
-    --dendron-color: #7f7f7f;
-}
+svg.keymap { fill: #d1d6db; }
+rect.key { fill: #3f4750; }
+rect.key, rect.combo { stroke: #60666c; }
+rect.combo, rect.combo-separate { fill: #1f3d7a; }
+rect.held, rect.combo.held { fill: #854747; }
 text.label, text.footer { stroke: black; }
+text.trans { fill: #7e8184; }
+path.combo { stroke: #7f7f7f; }
 
 }</style>
 <g transform="translate(30, 0)" class="layer-DEF">
-<text x="0" y="28" class="label">DEF:</text>
+<text x="0" y="28" class="label" id="DEF">DEF:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -277,13 +266,15 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(352, 248)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
-<text x="0" y="24" class="key hold">NAV</text>
-</g>
+<a href="#NAV">
+<text x="0" y="24" class="key hold layer-activator">NAV</text>
+</a></g>
 <g transform="translate(491, 248)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
-<text x="0" y="24" class="key hold">SYM</text>
-</g>
+<a href="#SYM">
+<text x="0" y="24" class="key hold layer-activator">SYM</text>
+</a></g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⏎</text>
@@ -304,7 +295,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 346)" class="layer-BRD">
-<text x="0" y="28" class="label">BRD:</text>
+<text x="0" y="28" class="label" id="BRD">BRD:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -438,13 +429,15 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(352, 248)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
-<text x="0" y="24" class="key hold">NAV</text>
-</g>
+<a href="#NAV">
+<text x="0" y="24" class="key hold layer-activator">NAV</text>
+</a></g>
 <g transform="translate(491, 248)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
-<text x="0" y="24" class="key hold">SYM</text>
-</g>
+<a href="#SYM">
+<text x="0" y="24" class="key hold layer-activator">SYM</text>
+</a></g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⏎</text>
@@ -465,7 +458,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 692)" class="layer-GME">
-<text x="0" y="28" class="label">GME:</text>
+<text x="0" y="28" class="label" id="GME">GME:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -545,8 +538,9 @@ text.label, text.footer { stroke: black; }
 </g>
 <g transform="translate(799, 173) rotate(15.0)" class="key keypos-19">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">GME</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<a href="#GME">
+<text x="0" y="0" class="key tap layer-activator">GME</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(59, 227) rotate(-15.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -598,8 +592,9 @@ text.label, text.footer { stroke: black; }
 </g>
 <g transform="translate(491, 248)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NAV</text>
-</g>
+<a href="#NAV">
+<text x="0" y="0" class="key tap layer-activator">NAV</text>
+</a></g>
 <g transform="translate(556, 255) rotate(15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⏎</text>
@@ -607,7 +602,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 1038)" class="layer-SYM">
-<text x="0" y="28" class="label">SYM:</text>
+<text x="0" y="28" class="label" id="SYM">SYM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -744,7 +739,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 1384)" class="layer-NAV">
-<text x="0" y="28" class="label">NAV:</text>
+<text x="0" y="28" class="label" id="NAV">NAV:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -907,7 +902,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 1730)" class="layer-FUN">
-<text x="0" y="28" class="label">FUN:</text>
+<text x="0" y="28" class="label" id="FUN">FUN:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 119) rotate(-15.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -943,18 +938,21 @@ text.label, text.footer { stroke: black; }
 </g>
 <g transform="translate(670, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DEF</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<a href="#DEF">
+<text x="0" y="0" class="key tap layer-activator">DEF</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(741, 52) rotate(5.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BRD</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<a href="#BRD">
+<text x="0" y="0" class="key tap layer-activator">BRD</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(814, 119) rotate(15.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">GME</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<a href="#GME">
+<text x="0" y="0" class="key tap layer-activator">GME</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(44, 173) rotate(-15.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -1089,7 +1087,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 </g>
-<text x="30" y="2105" class="label">Combos:</text>
+<text x="30" y="2105" class="label" id="Combos">Combos:</text>
 <g transform="translate(30, 2077)" class="layer-combopos-0">
 <g transform="translate(0, 56)">
 <g transform="translate(30, 28)" class="key  combo-separate keypos-0">
