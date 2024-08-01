@@ -12,5 +12,8 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    - name: zmk-tri-state
+      remote: caksoylar
+      revision: main
   self:
     path: config
