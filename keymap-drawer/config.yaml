@@ -6,6 +6,8 @@ parse_config:
     '&swapper': Win Next
     '&caps_word': Caps Word
     '&inv_qm': ¿
+    '&ind_bat': Show Batt
+    '&ind_con': Show Conn
 
     '&kp LC(LG(LEFT))': Desk Left
     '&kp LC(LG(RIGHT))': Desk Right
@@ -62,6 +64,8 @@ parse_config:
     combo_lock:   {draw_separate: true}
     combo_bslh:   {draw_separate: true}
     combo_slsh:   {draw_separate: true}
+    combo_indbat: {align: top, o: 0.25}
+    combo_indcon: {align: top}
 
   zmk_keycode_map:
     # custom mappings

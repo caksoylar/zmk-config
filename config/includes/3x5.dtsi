@@ -6,6 +6,8 @@
 #    include <dt-bindings/zmk/ext_power.h>
 #endif
 
+#include <behaviors/rgbled_widget.dtsi>
+
 // Layer aliases
 #define DEF 0
 #define BRD 1

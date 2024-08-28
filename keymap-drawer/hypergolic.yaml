@@ -297,3 +297,12 @@ combos:
   k: BT CLR
   l: [FUN]
   a: bottom
+- p: [2, 7]
+  k: Show Batt
+  l: [FUN]
+  a: top
+  o: 0.25
+- p: [3, 6]
+  k: Show Conn
+  l: [FUN]
+  a: top
