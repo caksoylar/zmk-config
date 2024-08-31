@@ -1,0 +1,240 @@
+layout: {qmk_keyboard: rufous}
+layers:
+  Base:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - K
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Ctrl}
+  - {t: R, h: Gui}
+  - {t: S, h: Alt}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: O, h: Ctrl}
+  - X
+  - C
+  - {t: D, h: MSE}
+  - H
+  - ','
+  - .
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: Nav}
+  - {t: ⌫, h: Sym}
+  - {t: ⏎, h: Shift}
+  Sym:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - '='
+  - _
+  - '-'
+  - ^
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - ¿
+  - '*'
+  - '&'
+  - '1'
+  - '2'
+  - '3'
+  - ⌫
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  Nav:
+  - Win Close
+  - Tab Left
+  - Tab Right
+  - Tab Close
+  - Vol Up
+  - Insert
+  - Page Down
+  - ↑
+  - Page Up
+  - Calc
+  - Ctrl
+  - Gui
+  - Alt
+  - {t: ↹, h: Shift}
+  - Vol Down
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - Win Prev
+  - Win Next
+  - Paste
+  - ⌦
+  - ⏮️
+  - ⏭️
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ␣
+  Function:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - Out USB
+  - Out BLE
+  - {t: Base, h: toggle}
+  - {t: Bird, h: toggle}
+  - {t: Gaming, h: toggle}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Desk Left
+  - Desk Right
+  - F11
+  - Caps Lock
+  - Print Scrn
+  - Pause Break
+  - Boot
+  - {type: held}
+  - {type: held}
+  - Boot
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - Scroll →
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
+  - ''
+  - Right Click
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - ''
+  - Left Click
+  - Right Click
+combos:
+- p: [2, 3]
+  k: J
+  l: [Base]
+- p: [6, 7]
+  k: ;
+  l: [Base, Sym]
+- p: [7, 8]
+  k: '`'
+  l: [Base]
+- p: [12, 13]
+  k: (
+  l: [Base]
+- p: [16, 17]
+  k: )
+  l: [Base]
+- p: [11, 12]
+  k: '['
+  l: [Base]
+- p: [17, 18]
+  k: ']'
+  l: [Base]
+- p: [11, 13]
+  k: ↹
+  l: [Base, Sym]
+  draw_separate: true
+- p: [16, 18]
+  k: ⌦
+  l: [Base, Sym]
+  draw_separate: true
+- p: [11, 12, 13]
+  k: Esc
+  l: [Base, Sym]
+  draw_separate: true
+- p: [16, 17, 18]
+  k: ⏎
+  l: [Base, Sym]
+  draw_separate: true
+- p: [13, 16]
+  k: Caps Word
+  l: [Base]
+  draw_separate: true
+- p: [3, 4]
+  k: Lock
+  l: [Base]
+  draw_separate: true
+- p: [4, 14]
+  k: ⏯
+  l: [Nav]
+  a: right
+- p: [4, 5]
+  k: Boot
+  l: [Function]
+- p: [20, 21]
+  k: Z
+  l: [Base]
+- p: [21, 22]
+  k: V
+  l: [Base]
+- p: [23, 24]
+  k: \
+  l: [Base]
+- p: [24, 25]
+  k: /
+  l: [Base, Sym]
+- p: [20, 21]
+  k: F12
+  l: [Function]
+  a: bottom
+- p: [24, 25]
+  k: BT Clr
+  l: [Function]
+  a: bottom
+- p: [2, 7]
+  k: Show Batt
+  l: [Function]
+  a: top
+- p: [3, 6]
+  k: Show Conn
+  l: [Function]
+- p: [26, 27]
+  k: MSE
+  l: [Base]
