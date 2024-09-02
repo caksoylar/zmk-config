@@ -14,29 +14,13 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
     ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
             ╰─────────────╯ ╰─────────────╯
 */
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
-    Building for a 36/42 key board
-    ╭─────────────────────╮ ╭──────────────────────╮
-LT5 │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ RT5
-LM5 │  S   C   N   T   K  | |  ,;   A   E   I   H  │ RM5
-LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
-    ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
-           ╰──────────────╯ ╰───────────────╯
-*/
 
 behaviors {
-      skapp: sticky_key_app_switcher {
-        compatible = "zmk,behavior-sticky-key";
-        label = "SK_APP_SWITCHER";
-        #binding-cells = <1>;
-        bindings = <&kp>;
-        release-after-ms = <900>;
-      };
         mm_bspc_del: mm_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_BACKSPACE_DELETE";
             #binding-cells = <0>;
-            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
+            bindings = <&lt l_fn BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         hm: homerow_mods { // use on either hand
@@ -73,15 +57,6 @@ behaviors {
             tapping-term-ms = <my_tapping_term>;
             flavor = "balanced";
             bindings = <&kp>, <&ak_t>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
-        };
-        hrm_c: hrm_c {
-            compatible = "zmk,behavior-hold-tap";
-            label = "hrm_c";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "balanced";
-            bindings = <&kp>, <&ak_c>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
         hrm_a: hrm_a {
