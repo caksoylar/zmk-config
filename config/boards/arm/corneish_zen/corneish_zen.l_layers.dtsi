@@ -11,7 +11,6 @@
 //╰──────────────────╮       | dwdlt |  dwdr   | | &none |    ¡   |        ╭────────────────╯
 //                   ╰─────────────────────────╯ ╰─────────────────────────╯
                 l_sym {
-                    label = "l_sym";
                     bindings = <
 &none &kp Z &kp Q &kp LA(N7) &kp LA(LS(N5)) &kp LA(LS(N7))                   &kp RA(N4) &kp DLLR  &kp LA(LS(N2)) &kp LA(N3) &kp RA(Y)  &none
 &none &kp LA(N5)  &lk_bkt RBKT LBKT &lk_par RPAR LPAR &lk_brc RBRC LBRC &kp LA(N8) &kp FSLH &mt RSHFT EQUAL &mt RGUI STAR   &mt RALT PLUS  &mt LCTRL MINUS   &none
@@ -28,7 +27,6 @@
 //╰─────────────────╮ toggle |  dwlft | dwdrt  | |    0   |   .   |   c   ╭───────────────╯
 //                  ╰──────────────────────────╯ ╰────────────────────────╯
                     l_num {
-                        label = "l_num";
                         bindings = <
 
 &none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
@@ -46,8 +44,7 @@
 //╰──────────────────╮        |  dwdlt | dwdrt | |   0   |   .   |   ;   ╭───────────────╯
 //                   ╰─────────────────────────╯ ╰───────────────────────╯
 
-                    l_fn {
-                        label = "l_fn";
+                    l_fun {
                         bindings = <
 
 &none &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp GRAVE &kp N7       &kp N8      &kp N9      &kp BSLH       &none
@@ -66,7 +63,6 @@
 //╰──────────────────╮       | dwdlt |  dwdrt  | |  back |  fwd   |        ╭────────────────╯
 //                   ╰─────────────────────────╯ ╰─────────────────────────╯
                 l_nav {
-                    label = "l_nav";
                     bindings = <
 &none &kp RC(W)  &kp RC(Q) &kp LC(LS(N4)) &kp LC(LS(LC(N4))) &kp ESC   &kp LC(EQUAL) &kp HOME &kp UP     &kp PG_UP &none         &none
 &none &kp LGUI   &kp LALT &kp  LCTRL &kp LSHFT   &kp RC(F)             &kp LC(LEFT)  &kp LEFT &kp DOWN   &kp RIGHT &kp LC(RIGHT) &none
@@ -77,7 +73,6 @@
 
 //                                     Keyboard & System Settings
                     l_cfg {
-                        label = "l_cfg";
                         bindings = <
 //&none &none &none &none &none &none &none &none &none &none &none &none
 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &none        &none        &none      &none      &none &none
