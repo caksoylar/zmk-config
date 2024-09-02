@@ -25,13 +25,7 @@
 
         keymap {
         compatible = "zmk,keymap";
-<<<<<<< HEAD
-#include "boards/arm/cornish_zen/corneish_zen.l_alpha-HD-vx.dtsi"  // base (alpha) layer (& related adaptive layers)
-#include "boards/arm/cornish_zen/corneish_zen.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
-=======
-#include "corneish_zen.l_alpha-HD-vx.dtsi"  // base (alpha) layer (& related adaptive layers)
-#include "corneish_zen.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
->>>>>>> dc35eb93d7f8c7b6fea7f6fd0de19cdd21084cce
-
+#include "boards/arm/corneish_zen/corneish_zen.l_alpha-HD-vx.dtsi"  // base (alpha) layer (& related adaptive layers)
+#include "boards/arm/corneish_zen/corneish_zen.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
     };
 };
