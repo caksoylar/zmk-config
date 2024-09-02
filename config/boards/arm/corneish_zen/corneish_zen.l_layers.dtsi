@@ -2,19 +2,20 @@
  Building for a 36 key on a 42 key board (outside column is unused)
  */
 
-//                                       Symbol & math
+//                                       Symbol & math (for Mac)
+//  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //╭────────────────────────────────────────────╮ ╭──────────────────────────────────────────╮
-//|    Z   |    Q    | ScrCp | SelCp |   ESC   | |   ¢   |    $   |    €   |    £   |   ¥   |
-//|    <   |    [    |   (   |   {   |   TAB   | |   ¡   |    *   |    =   |    +   |   /   |
-//|    >   |    ]    |   )   |   }   |   RET   | |   _   |    |   |    &   |    ^   |   %   |
-//╰──────────────────╮       |  BKSP |   DEL   | |       |    °   |    ·   ╭────────────────╯
+//|    Z   |    Q    |   ¶   |   †   |    ‡    | |   ¢   |    $   |    €   |    £   |   ¥   |
+//|    §   |    [    |   (   |   {   |    •    | |   /   |    =   |    *   |    +   |   -   |
+//|    ·   |    ]    |   )   |   }   |    °    | |   ^   |    |   |    &   |    <   |   >   |
+//╰──────────────────╮       | dwdlt |  dwdr   | | &none |    ¡   |        ╭────────────────╯
 //                   ╰─────────────────────────╯ ╰─────────────────────────╯
                 l_sym {
                     label = "l_sym";
                     bindings = <
-&none &kp Z &kp Q &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp ESC             &kp RA(N4) &kp DLLR  &kp LA(LS(N2)) &kp LA(N3) &kp RA(Y)  &none
-&none &lk_ltgt GT LT  &lk_bkt RBKT LBKT &lk_par RPAR LPAR &lk_brc RBRC LBRC &kp TAB  &kp LA(N1) &mt RSHFT STAR  &mt RGUI EQUAL &mt RALT PLUS  &mt LCTRL FSLH   &none
-&none &kp GT  &kp RBKT &kp RPAR &kp RBRC &kp RETURN                     &kp MINUS  &kp PIPE  &kp AMPS     &kp CARET &kp PRCNT  &none
+&none &kp Z &kp Q &kp LA(N7) &kp LA(LS(N5)) &kp LA(LS(N7))                   &kp RA(N4) &kp DLLR  &kp LA(LS(N2)) &kp LA(N3) &kp RA(Y)  &none
+&none &kp LA(N5)  &lk_bkt RBKT LBKT &lk_par RPAR LPAR &lk_brc RBRC LBRC &kp LA(N8) &kp FSLH &mt RSHFT EQUAL &mt RGUI STAR   &mt RALT PLUS  &mt LCTRL MINUS   &none
+&none &kp LA(LS(N9)) &kp RBKT &kp RPAR &kp RBRC &kp LA(LS(N8))                         &kp CARET  &kp PIPE  &kp AMPS     &lk_ltgt GT LT  &kp GT  &none
                 &kp LC(LG(TAB)) &kp LA(BSPC)   &kp LA(DEL)              &none      &kp LA(N0) &kp LA(LS(9))
                     >;
                 };

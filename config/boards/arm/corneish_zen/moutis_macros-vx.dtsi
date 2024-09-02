@@ -3,27 +3,27 @@
 
 #ifdef COMMA_CAP
      ZMK_MACRO(CmmaCap,
-                wait-ms = <0>;
-                tap-ms = <40>;
-        bindings = <&macro_tap &kp CMMA>
-                  , <&sl l_CCaps>
-//            , <&OSMod LSHFT>
-                    ;
+            	wait-ms = <0>;
+            	tap-ms = <40>;
+		bindings = <&macro_tap &kp CMMA>
+//          		, <&sl l_CCaps>
+			, <&OSMod LSHFT>
+                	;
         )
 
      cc: cc { // comma cap an adaptive key (using sticky layer)
-            compatible = "zmk,behavior-macro-two-param";
-        #binding-cells = <2>;
-                wait-ms = <0>;
-                tap-ms = <40>;
-        bindings = <&macro_tap &kp BSPC> // delete the comma
-            , <&macro_press &kp LSHFT> //
-            , <&macro_param_1to1>
-            , <&macro_tap &kp MACRO_PLACEHOLDER> // cap the letter
-            , <&macro_release &kp LSHFT> //
-            , <&macro_param_2to1>
-                , <&sl MACRO_PLACEHOLDER> // go to adaptive layer
-                   ;
+        	compatible = "zmk,behavior-macro-two-param";
+		#binding-cells = <2>;
+            	wait-ms = <0>;
+            	tap-ms = <40>;
+		bindings = <&macro_tap &kp BSPC> // delete the comma
+			, <&macro_press &kp LSHFT> //
+			, <&macro_param_1to1>
+			, <&macro_tap &kp MACRO_PLACEHOLDER> // cap the letter
+			, <&macro_release &kp LSHFT> //
+			, <&macro_param_2to1>
+        		, <&sl MACRO_PLACEHOLDER> // go to adaptive layer
+               	;
         };
 #endif
 
@@ -82,8 +82,8 @@
 
 
     ZMK_MACRO(Qu,
-                wait-ms = <0>;
-                tap-ms = <40>;
+            	wait-ms = <0>;
+            	tap-ms = <40>;
         bindings = <&macro_tap &kp Q>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -163,8 +163,8 @@
         };
 
     ZMK_MACRO(ak_g,
-                wait-ms = <0>;
-                tap-ms = <40>;
+            	wait-ms = <0>;
+            	tap-ms = <40>;
         bindings = <&macro_tap &kp G>
                 , <&sl l_akG>;
         )
@@ -189,8 +189,7 @@
     ZMK_MACRO(ak_mb,
             wait-ms = <0>;
             tap-ms = <40>;
-        bindings = <&macro_tap &kp B>
-                , <&sl l_akX>;
+        bindings = <&kp BSPC &kp M &kp B>;
         )
     ZMK_MACRO(ak_m,
             wait-ms = <0>;
@@ -214,6 +213,11 @@
             tap-ms = <40>;
         bindings = <&kp BSPC &kp L &kp K>;
         )
+    ZMK_MACRO(ak_lb,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp L &kp B>;
+        )
     ZMK_MACRO(ak_k,
             wait-ms = <0>;
             tap-ms = <40>;
@@ -236,6 +240,11 @@
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp S &kp B>;
+        )
+    ZMK_MACRO(ak_sk,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp S &kp K>;
         )
     ZMK_MACRO(ak_p,
             wait-ms = <0>;
@@ -264,6 +273,11 @@
             tap-ms = <40>;
         bindings = <&macro_tap &kp V>
                 , <&sl l_akV>;
+        )
+    ZMK_MACRO(ak_lv,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp L &kp V>;
         )
 
     ZMK_MACRO(ak_t,

@@ -5,6 +5,13 @@
 //  Created by Alan on 7/24/22.
 //
 
+#define H_DIGRAPH_COMBOS //  (th, ch, sh, wh, gh, ph)
+#define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
+//#define COMMA_CAP     // , before alpha deletes , and capitalizes alpha
+
+#define my_tapping_term 170
+#define my_quick_tapping_term 112
+#define my_ak_delay 40
 
 /*       KEY POSITIONS for Corne-ish Zen
     ╭─────────────────────╮ ╭─────────────────────╮
@@ -104,11 +111,20 @@ LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
 #define l_akO   17
 #define l_akI   18
 #define l_akDot 19
+#ifdef COMMA_CAP
+#define l_CCaps    20
+#define l_sym   21
+#define l_num   22
+#define l_fun   23
+#define l_nav   24
+#define l_cfg   25
+#else
 #define l_sym   20
 #define l_num   21
 #define l_fun   22
 #define l_nav   23
 #define l_cfg   24
+#endif
 
 #define my_tapping_term 170
 #define my_quick_tapping_term 112
