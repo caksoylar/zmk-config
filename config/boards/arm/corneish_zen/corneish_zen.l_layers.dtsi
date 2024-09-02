@@ -28,7 +28,7 @@
 //╰─────────────────╮ toggle |  dwlft | dwdrt  | |    0   |   .   |   c   ╭───────────────╯
 //                  ╰──────────────────────────╯ ╰────────────────────────╯
                 l_num {
-                    label = "l_sym";
+                    label = "Nav/Num";
                     bindings = <
 
 &none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
