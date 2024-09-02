@@ -34,7 +34,7 @@
 &none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
 &none &kp LC(LEFT) &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(RIGHT) &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt RCTRL KP_N5 &mt RALT KP_N6 &mt LGUI KP_PLUS  &none
 &none &kp DEL   &kp END &kp TAB &kp PG_DN  &kp SPC     &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
-                     &tog l_num &lt l_fn BSPC &lt l_nav KP_ENTER     &kp KP_N0  &kp KP_DOT  &kp C
+                     &none &lt l_fn BSPC &lt l_nav KP_ENTER     &kp KP_N0  &kp KP_DOT  &tog l_num
                         >;
                 };
 
