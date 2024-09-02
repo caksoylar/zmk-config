@@ -56,7 +56,6 @@
         )
 
         m_findsel: m_findsel {
-            label = "Find Selection";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -70,7 +69,6 @@
         };
 
         m_selword: m_selword {
-            label = "m_select word";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;

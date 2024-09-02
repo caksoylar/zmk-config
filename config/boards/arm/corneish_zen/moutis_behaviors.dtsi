@@ -51,7 +51,6 @@ behaviors {
         };
         hml: homerow_mods_left { // use on left hand to mod right
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow_mods";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
             quick-tap-ms = <my_quick_tapping_term>;
@@ -141,7 +140,6 @@ behaviors {
         };
         lk_E_grave: lk_E_grave { // `, è on "linger"
             compatible = "zmk,behavior-hold-tap";
-            label = "lk_E_grave";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
             flavor = "tap-preferred";

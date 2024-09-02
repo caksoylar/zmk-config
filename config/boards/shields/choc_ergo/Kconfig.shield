@@ -1,8 +1,0 @@
-# Copyright (c) 2021 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config SHIELD_CHOC_ERGO_LEFT
-	def_bool $(shields_list_contains,choc_ergo_left)
-
-config SHIELD_CHOC_ERGO_RIGHT
-	def_bool $(shields_list_contains,choc_ergo_right)
