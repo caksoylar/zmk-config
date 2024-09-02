@@ -1,8 +1,0 @@
-/*
-*
-* Copyright (c) 2021 lowprokb.ca
-* SPDX-License-Identifier: MIT
-*
-*/
-
-#include "boards/arm/corneish_zen/corneish_zen.keymap"

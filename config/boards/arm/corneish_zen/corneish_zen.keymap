@@ -20,7 +20,7 @@
 
 / {
 #include "moutis_behaviors.dtsi"
-#include "moutis_macros-vx.dtsi"
+#include "moutis_macros.dtsi"
 #include "moutis_combos-vx.dtsi"
 
         keymap {

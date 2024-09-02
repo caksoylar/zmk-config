@@ -19,6 +19,14 @@
 };
 
 
+/*
+ Some combos need to be in specific places depending on
+ the underlying alpha, esp H-Digraph combos, so they are
+ all defined here.
+*/
+
+
+
 /*    KEY POSITION Numbers for Zaphod
  ╭────────────────────╮ ╭────────────────────╮
  │  0   1   2   3   4 │ │  5   6   7   8   9 │
