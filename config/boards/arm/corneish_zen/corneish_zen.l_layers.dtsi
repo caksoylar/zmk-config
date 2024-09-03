@@ -31,8 +31,8 @@
                     label = "Nav/Num";
                     bindings = <
 
-&none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
-&none &kp LC(LEFT) &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(RIGHT) &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt RCTRL KP_N5 &mt RALT KP_N6 &mt LGUI KP_PLUS  &none
+&none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM    &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
+&none &kp LG(LEFT) &kp LEFT  &kp DOWN  &kp RIGHT  &kp LG(RIGHT)     &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt LGUI KP_N5 &mt RALT KP_N6 &mt LCTRL KP_PLUS  &none
 &none &kp DEL   &kp END &kp TAB &kp PG_DN  &kp SPC     &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
                      &kp C &lt l_fun BSPC &lt l_nav KP_ENTER     &kp KP_N0  &kp KP_DOT  &tog l_num
                         >;
@@ -68,10 +68,10 @@
                 l_nav {
                     label = "l_nav";
                     bindings = <
-&none &kp RC(W)  &kp RC(Q) &kp LC(LS(N4)) &kp LC(LS(LC(N4))) &kp ESC   &kp LC(EQUAL) &kp HOME &kp UP     &kp PG_UP &none         &none
-&none &kp LGUI   &kp LALT &kp  LCTRL &kp LSHFT   &kp RC(F)             &kp LC(LEFT)  &kp LEFT &kp DOWN   &kp RIGHT &kp LC(RIGHT) &none
-&none &kp RC(Z)  &kp RC(X) &kp RC(C) &kp RC(V) &kp RC(G)               &kp LC(MINUS) &kp END  &kp LG(N0) &kp PG_DN &none         &none
-                           &mo l_cfg &S_AppSwitch &AppSwitch           &kp LC(LBKT) &kp LC(RBKT) &mo l_cfg
+&none &kp RG(W)  &kp RG(Q) &kp LG(LS(N4)) &kp LG(LS(LG(N4))) &kp ESC   &kp LG(EQUAL) &kp HOME &kp UP     &kp PG_UP &none         &none
+&none &kp LCTRL  &kp LALT  &kp LGUI &kp LSHFT     &kp RG(F)            &kp LG(LEFT)  &kp LEFT &kp DOWN   &kp RIGHT &kp LG(RIGHT) &none
+&none &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp RG(G)            &kp LG(MINUS) &kp END  &kp LG(N0) &kp PG_DN &none         &none
+                           &mo l_cfg &S_AppSwitch &AppSwitch           &kp LG(LBKT)  &kp LG(RBKT) &mo l_cfg
                     >;
                 };
 
