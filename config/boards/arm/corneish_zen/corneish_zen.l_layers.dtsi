@@ -21,20 +21,20 @@
                 };
 
 //                                          Nav & NumPad (standard)
-//╭────────────────────────────────────────────╮ ╭────────────────────────────────────────╮
-//|   TAB  |  HOME  |   UP   |  PG_UP |  ESC   | |    /   |   7   |   8   |   9   |   -   |
-//|  Lword |  LEFT  |  DOWN  |   RGT  | Rword  | |    *   |   4   |   5   |   6   |   +   |
-//|   SPC  |   END  |  DOWN  |  PG_DN |  RET   | |    ,   |   1   |   2   |   3   |   =   |
-//╰─────────────────╮ toggle |  dwlft | dwdrt  | |    0   |   .   |   c   ╭───────────────╯
-//                  ╰──────────────────────────╯ ╰────────────────────────╯
+//╭─────────────────────────────────────────────╮ ╭────────────────────────────────────────╮
+//|  NUMLk |  HOME  |   UP   |  PG_UP |   TAB   | |    /   |   7   |   8   |   9   |   -   |
+//|  Lword |  LEFT  |  DOWN  |   RGT  |  Rword  | |    *   |   4   |   5   |   6   |   +   |
+//|   UNDO |   CUT  |  COPY  |  PASTE |  SPC    | |    ,   |   1   |   2   |   3   |   =   |
+//╰─────────────────╮   c    |  BSPC  |KP_ENTER | |    0   |   .   |toggle ╭───────────────╯
+//                  ╰───────────────────────────╯ ╰────────────────────────╯
                 l_num {
                     label = "Nav/Num";
                     bindings = <
 
-&none &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM  &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
+&none &kp KP_NUM   &kp HOME &kp UP    &kp PG_UP &kp TAB  &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
 &none &kp LA(LEFT) &kp LEFT &kp DOWN  &kp RIGHT &kp LA(RIGHT)     &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt LGUI KP_N5 &mt RALT KP_N6 &mt LCTRL KP_PLUS  &none
-&none &kp DEL   &kp END &kp TAB &kp PG_DN  &kp SPC     &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
-                     &kp C &lt l_fun BSPC &lt l_nav KP_ENTER     &kp KP_N0  &kp KP_DOT  &tog l_num
+&none &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE  &kp SPC     &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
+                     &kp C &lt l_fun BSPC &lt l_nav      &kp KP_N0  &kp KP_DOT  &tog l_num
                         >;
                 };
 
@@ -60,15 +60,15 @@
 
 //                                     shorcuts & Navigation
 //╭────────────────────────────────────────────╮ ╭──────────────────────────────────────────╮
-//|  close |   quit  | ScrCp | SelCp |   ESC   | |       |  HOME  |   UP   |  PG_UP |       |
-//|   ctrl |   alt   |  gui  |  shft |   Find  | | Lword |  LEFT  |  DOWN  |   RGT  | Rword |
+//|  close |   quit  | ScrCp | SelCp | pstmtch | |       |  HOME  |   UP   |  PG_UP |       |
+//|  ctrl  |   alt   |  gui  |  shft |   Find  | | Lword |  LEFT  |  DOWN  |   RGT  | Rword |
 //|  undo  |   cut   |  copy |  pste | findAgn | |       |   END  |        |  PG_DN |       |
 //╰──────────────────╮       | dwdlt |  dwdrt  | |  back |  fwd   |        ╭────────────────╯
 //                   ╰─────────────────────────╯ ╰─────────────────────────╯
                 l_nav {
                     label = "l_nav";
                     bindings = <
-&none &kp RG(W)  &kp RG(Q) &kp LG(LS(N4)) &kp LG(LS(LG(N4))) &kp ESC   &kp LG(UP)   &kp HOME &kp UP     &kp PG_UP &kp LA(UP)         &none
+&none &kp RG(Q)  &kp RG(W) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp LG(LS(LA(V)))   &kp LG(UP)   &kp HOME &kp UP     &kp PG_UP &kp LA(UP)         &none
 &none &kp LCTRL  &kp LALT  &kp LGUI &kp LSHFT     &kp RG(F)            &kp LA(LEFT) &kp LEFT &kp DOWN   &kp RIGHT &kp LA(RIGHT) &none
 &none &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp RG(G)            &kp LG(DOWN) &kp END  &kp LG(N0) &kp PG_DN &kp LA(DOWN)       &none
                            &mo l_cfg &S_AppSwitch &AppSwitch           &kp LG(LBKT)  &kp LG(RBKT) &mo l_cfg
