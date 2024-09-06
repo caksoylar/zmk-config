@@ -1,0 +1,100 @@
+            /*           Base (alpha) Layer  (Hands Down Vibranium)
+            Building for a 36 key on a 42 key board (outside column is unused)
+                   ╭─────────────────╮ ╭─────────────────╮
+                   │  W  X  M  G  J  │ │ #$  .: /* "[ '] │
+                   │  C  S  N  T  K  | | ,;   A  E  I  H │
+                   │  P  F  L  D  V  │ │ -+   U  O  Y  B │
+                   ╰───────╮  BSP R  │ │ SPC RET  ╭──────╯
+                           ╰─────────╯ ╰──────────╯   */
+
+                l_alpha {
+                        label = "l_alpha";
+                        bindings = <
+
+//   &none &none &none &none &none   &none &none &none &none &none
+//   &none &none &none &none &none   &none &none &none &none &none
+//   &none &none &none &none &none   &none &none &none &none &none
+//                     &none &none   &none &none
+
+&kp W      &ak_x &ak_m     &ak_g     &lt l_num J              &HashDllr  &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt
+&hml LCTRL C &hml LALT S   &hml LGUI N  &hml LSHFT T &ak_k    &CmmaSemi  &hrm_a RSHFT 0 &hrm_e RGUI 0  &hmr RALT I  &hmr RCTRL H
+&kp P       &kp F &kp L     &kp D       &kp V                 &MinusPlus  &ak_u      &ak_o       &kp Y       &kp B
+
+
+                &lt l_fn BSPC &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN
+                        >;
+                };
+
+                l_akL {
+                        label = "l_akL";
+                        bindings = <
+
+&kp P   ___     &kp L   ___     ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+&kp T   &kp G   ___     &kp P   ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };
+                l_akM {
+                        label = "l_akM";
+                        bindings = <
+
+&kp P   ___     ___     &ak_lg  ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };
+                l_akK {
+                        label = "l_akK";
+                        bindings = <
+
+___     ___     ___     &kp L   ___    ___     ___     ___     ___     ___
+___     ___     ___     &kp N   ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };
+
+                l_akA {
+                        label = "l_akA";
+                        bindings = <
+
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     &kp U
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };
+
+                l_akU {
+                        label = "l_akU";
+                        bindings = <
+
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     &kp A
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };
+
+                l_akE {
+                        label = "l_akE";
+                        bindings = <
+
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     &kp O
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };
+                l_akO {
+                        label = "l_akO";
+                        bindings = <
+
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+___     ___     ___     ___     ___    ___     ___     ___     ___     &kp E
+___     ___     ___     ___     ___    ___     ___     ___     ___     ___
+                        ___     ___    ___     ___
+                        >;
+                };

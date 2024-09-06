@@ -1,0 +1,27 @@
+            /*           Base (alpha) Layer  (Hands Down Rh)
+            Building for a 36 key on a 42 key board (outside column is unused)
+                   ╭─────────────────╮ ╭─────────────────╮
+                   │  '  B  H  G  "  │ │ #$  .: /*  J  X │
+                   │  C  S  N  T  K  | | ,;   A  E  I  M │
+                   │  P  F  L  D  V  │ │ -+   U  O  Y  W │
+                   ╰───────╮  BSP R  │ │ SPC RET  ╭──────╯
+                           ╰─────────╯ ╰──────────╯   */
+
+                default_layer {
+                        label = "HD-rh";
+                        bindings = <
+
+//   &none &none &none &none &none &none   &none &none &none &none &none &none
+//   &none &none &none &none &none &none   &none &none &none &none &none &none
+//   &none &none &none &none &none &none   &none &none &none &none &none &none
+//                     &none &none &none   &none &none &none
+
+&&SqtRbkt       &kp B &kp H     &kp G       &DqtLbkt                   &HashDllr  &DotColn    &SlshStar   &KP J    &X
+&hm LCTRL C &hm LALT S      &hm LGUI N  &hm LSHFT T &lt l_num K &CmmaSemi  &hm RSHFT A &hm RGUI E  &hm RALT I  &hm RCTRL M
+&kp P       &kp F &kp L     &kp D       &kp V                   &MinusPlus  &kp U      &kp O       &kp Y       &kp W
+
+
+                &lt l_fn BACKSPACE &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN
+                        >;
+                };
+

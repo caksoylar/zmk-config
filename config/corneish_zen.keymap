@@ -16,7 +16,8 @@
   };
 };
 
-#include "moutis_config.h"
+#include "boards/arm/corneish_zen/corneish_zen_config.h" // key name defs for this board
+#include "moutis_config.h" // my add-on feature defs
 
 / {
 #include "moutis_behaviors.dtsi"
