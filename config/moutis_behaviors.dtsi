@@ -215,7 +215,7 @@ behaviors {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
 #ifdef COMMA_CAP
-            bindings = <&lk_CmmaCap>, <&typeSemi>;
+            bindings = <&lk_CmmaCap 0 0>, <&typeSemi>;
 #else
             bindings = <&kp CMMA>, <&typeSemi>;
 #endif
