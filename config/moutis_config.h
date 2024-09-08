@@ -47,14 +47,6 @@
 &sl {
     release-after-ms = <my_tapping_term>;
 };
-&csl {
-    release-after-ms = <2000>;
-};
-&csk {
-    release-after-ms = <2000>;
-    quick-release;
-};
-
 &caps_word {
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
 };
