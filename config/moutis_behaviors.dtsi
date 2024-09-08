@@ -15,7 +15,6 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             ╰─────────────╯ ╰─────────────╯
 */
 
-//            require-prior-idle-ms = <150>;
 
 #define     my_hrm_config compatible = "zmk,behavior-hold-tap"; \
             #binding-cells = <2>; \
@@ -33,12 +32,7 @@ behaviors {
         bindings = <&kp>;
         release-after-ms = <900>;
       };
-        mm_bspc_del: mm_backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+
         hm: homerow_mods { // use on either hand
             my_hrm_config;
             bindings = <&kp>, <&kp>;
@@ -156,8 +150,6 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
-//            quick-tap-ms = <90>;
-//            global-quick-tap;
             flavor = "balanced";
             bindings = <&tion>, <&Th>;
         };
@@ -165,8 +157,6 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
-//            quick-tap-ms = <90>;
-//            global-quick-tap;
             flavor = "balanced";
             bindings = <&sion>, <&Sh>;
         };
@@ -174,8 +164,6 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
-//            quick-tap-ms = <90>;
-//            global-quick-tap;
             flavor = "balanced";
             bindings = <&ght>, <&Gh>;
         };
@@ -215,25 +203,19 @@ behaviors {
             bindings = <&pairLtGt>, <&kp>;
         };
 
-    
-#ifdef COMMA_CAP
-    slc: slc {
-        
-    };
-    OSMod:OSMod {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <5000>;
-            quick-release;
-            ignore-modifiers;
-    };
-#endif
+        lk_CmmaCap: lk_ltgt { // < on tap, <|> on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&CmmaSpc>, <&CmmaCap>;
+        };
+
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
 #ifdef COMMA_CAP
-            bindings = <&CmmaCap>, <&typeSemi>;
+            bindings = <&lk_CmmaCap>, <&typeSemi>;
 #else
             bindings = <&kp CMMA>, <&typeSemi>;
 #endif
@@ -291,6 +273,12 @@ behaviors {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        lt_bspc_del: mm_backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 };
