@@ -30,7 +30,7 @@ behaviors {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <1000>;
+            release-after-ms = <2000>;
             quick-release;
         };
         skapp: sticky_key_app_switcher {
@@ -210,17 +210,6 @@ behaviors {
             bindings = <&pairLtGt>, <&kp>;
         };
 
-        td_cmma_shift: td_cmma_shift {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <my_tapping_term>;
-            bindings = <&lk_CmmaCap 0 0>
-            , <&kp CMMA>
-            , <&typeSemi>
-//            <&caps_word>,
-//            <&kp CAPS>
-            ;
-        };
 
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             compatible = "zmk,behavior-hold-tap";
