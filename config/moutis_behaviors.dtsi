@@ -203,6 +203,15 @@ behaviors {
             bindings = <&pairLtGt>, <&kp>;
         };
 
+        td_cmma_shift: td_cmma_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <my_tapping_term>;
+            bindings = <&lk_CmmaCap 0 0>,
+            <&caps_word>,
+            <&kp CAPS>;
+        };
+
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -269,14 +278,6 @@ behaviors {
             bindings = <&kp SQT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-/*
-        BspcDel: BspcDel {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-*/
         lt_bspc_del: mm_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;

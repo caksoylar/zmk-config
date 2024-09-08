@@ -3,9 +3,9 @@
 /*  Base (alpha) Layer  Hands Down Vibranium-vb
         for 36 keys on a board with 42 keys
         ╭─────────────────────╮ ╭──────────────────────╮
-______  │  V   W   M   G   J  │ │  #$  .:  /*  "[  ']  │ ______
-______  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ ______
-______  │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ ______
+esc     │  V   W   M   G   J  │ │  #$  .:  /*  "[  ']  │ LANG2/henk
+tab     │  S   C   N   T   K  | |  ,;   A   E   I   H  │ LANG1/mhen
+ Z      │  X   P   L   D   B  │ │  -+   U   O   Y   F  │  Q
         ╰────╮    App BSP  R  │ │  SPC RET Tg(Num)╭────╯
              ╰────────────────╯ ╰─────────────────╯
 */
@@ -14,9 +14,9 @@ ______  │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ ______
                 l_alpha {
                         label = "HD-Vx";
                         bindings = <
-______  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j                           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt ______
-______  &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H ______
-______  &ak_x   &ak_p   &kp L   &ak_d   &ak_b                           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F ______
+&kp TAB  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j                          &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp LANG2
+&kp ESC &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &td_cmma_shift &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &kp LANG1
+&kp Z   &ak_x   &ak_p   &kp L   &ak_d   &ak_b                           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F    &kp Q
                         &AppSwitch &lt_bspc_del &lt l_nav R             &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
                         >;
                 };
