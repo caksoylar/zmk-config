@@ -11,7 +11,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    timeout-ms = <45>; \
+    timeout-ms = <55>; \
 };
 #define COMBO_ANY(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
