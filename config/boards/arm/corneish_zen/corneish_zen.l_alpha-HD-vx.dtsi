@@ -31,8 +31,8 @@ ______   ______   ______   ______   ______   ______       ______   ______   ____
                    };
                    l_akM {
                             bindings = <
-______   &ak_lv   &ak_xp   ______   &ak_lg   &kp N        ______   ______   ______   ______   ______   ______
-______   ______   ______   ______   ______   ______       ______   ______   ______   ______   &kp B    ______
+______   &ak_lv   &ak_xp   ______   &ak_lg   &kp B        ______   ______   ______   ______   ______   ______
+______   ______   ______   ______   ______   ______       ______   ______   ______   ______   &kp N    ______
 ______   ______   ______   ______   ______   ______       ______   ______   ______   ______   ______   ______
                            ______   ______   ______       ______   ______   ______
                             >;
@@ -180,29 +180,3 @@ ______   ______   ______   ______   ______   ______       ______   ______   ____
                            ______   ______   ______       ______   ______   ______
                             >;
                    };
-
-#ifdef COMMA_CAP2
-                l_CCaps {
-                        bindings = <
-
-______   &kp LS(V)   &kp LS(W)   &kp LS(M)   &kp LS(G)   &kp LS(J)       &caps_word  ______    ______  ______  ______   ______
-______   &kp LS(S)   &kp LS(C)   &kp LS(N)   &kp LS(T)   &kp LS(K)       &kp CMMA    &kp LS(A) &kp LS(E)   &kp LS(I)   &kp LS(H)   ______
-______   &kp LS(X)   &kp LS(P)   &kp LS(L)   &kp LS(D)   &kp LS(B)       &kp LS(V)   &kp LS(U) &kp LS(O)   &kp LS(Y)   &kp LS(F)   ______
-                                 ______      ______      &kp LS(R)       &CmmaSpc    ______    ______
-                        >;
-                };
-
-#endif
-#ifdef COMMA_CAP2
-                l_CCaps {
-                        bindings = <
-
-&cc X l_akX   &cc W l_akW   &cc M l_akM   &cc G l_akG   &cc J l_akJ    &HashDllr   &DotColn        &SlshStar      &DqtLbkt       &SqtRbkt
-&cc S l_alpha &cc C l_alpha &cc N l_alpha &cc T l_akT   &cc K l_akK    &kp CMMA    &cc A l_akA     &cc E l_akE    &cc I l_akI    &cc H l_alpha
-&cc B l_akB   &cc P l_akP   &cc L l_alpha &cc D l_akD   &cc V l_akV    &MinusPlus  &cc U l_akU     &cc O l_akO    &cc Y l_akJ    &cc F l_alpha
-
-                &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN
-                        >;
-                };
-
-#endif
