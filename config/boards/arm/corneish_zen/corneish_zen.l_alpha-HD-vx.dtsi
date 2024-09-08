@@ -16,7 +16,7 @@ LSFT │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ RSFT
                         bindings = <
 
 &kp ESC  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp BSPC
-&kp TAB &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &tog l_num
+&kp TAB &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &lk_CmmaCap 0 0  &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &tog l_num
 &kp LSHFT &ak_x   &ak_p   &kp L   &ak_d   &ak_b           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F &kp RSHFT
 
                         &AppSwitch &lt_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
@@ -183,7 +183,7 @@ ______   ______   ______   ______   ______   ______       ______   ______   ____
                             >;
                    };
 
-#ifdef COMMA_CAP
+#ifdef COMMA_CAP2
                 l_CCaps {
                         bindings = <
 
