@@ -17,7 +17,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 
 //            require-prior-idle-ms = <150>;
 
-#hrm_config flavor = "balanced"; \
+#define hrm_config flavor = "balanced"; \
             tapping-term-ms = <my_tapping_term>; \
             quick-tap-ms = <my_quick_tapping_term>
 
