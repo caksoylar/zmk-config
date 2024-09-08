@@ -188,9 +188,9 @@ ______   ______   ______   ______   ______   ______       ______   ______   ____
                         bindings = <
 
 &kp LS(V)   &kp LS(W)   &kp LS(M)   &kp LS(G)   &kp LS(J)       ______  ______  ______  ______  ______
-&kp LS(S)   &kp LS(C)   &kp LS(N)   &kp LS(T)   &kp LS(K)       &caps_word   &kp LS(A)   &kp LS(E)   &kp LS(I)   &kp LS(H)
+&kp LS(S)   &kp LS(C)   &kp LS(N)   &kp LS(T)   &kp LS(K)       &caps_word  &kp LS(A)   &kp LS(E)   &kp LS(I)   &kp LS(H)
 &kp LS(X)   &kp LS(P)   &kp LS(L)   &kp LS(D)   &kp LS(B)       &kp LS(V)   &kp LS(U)   &kp LS(O)   &kp LS(Y)   &kp LS(F)
-                        ______  &kp LS(R)       ______  ______
+                                    ______      &kp LS(R)       &CmmaSpc ______
                         >;
                 };
 
