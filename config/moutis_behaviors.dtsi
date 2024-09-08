@@ -26,19 +26,19 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 
 behaviors {
 
-&csk {
-    compatible = "zmk,behavior-sticky-key";
-    #binding-cells = <1>;
-    bindings = <&kp>;
-    release-after-ms = <my_tapping_term*8>;
-    quick-release;
-};
-      skapp: sticky_key_app_switcher {
-        compatible = "zmk,behavior-sticky-key";
-        #binding-cells = <1>;
-        bindings = <&kp>;
-        release-after-ms = <900>;
-      };
+        csk {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <my_tapping_term*8>;
+            quick-release;
+        };
+        skapp: sticky_key_app_switcher {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <900>;
+        };
 
         hm: homerow_mods { // use on either hand
             my_hrm_config;
