@@ -23,6 +23,17 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             tapping-term-ms = <my_tapping_term>; \
             quick-tap-ms = <my_quick_tapping_term>
 
+#define MY_HRM (NAME BINDINGS KEYPOS) \
+        NAME: NAME { \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            flavor = "balanced"; \
+            tapping-term-ms = <my_tapping_term>; \
+            quick-tap-ms = <my_quick_tapping_term>; \
+            bindings = <BINDINGS>; \
+            hold-trigger-key-positions = <KEYPOS>; \
+            hold-trigger-on-release; \
+        };
 
 behaviors {
 
@@ -54,12 +65,10 @@ behaviors {
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
             hold-trigger-on-release;             // delay positional check until key-release
         };
-        hrm_t: hrm_t {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_t>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
-            hold-trigger-on-release;             // delay positional check until key-release
-        };
+
+
+        MY_HRM (hrm_t, &kp &ak_t, KEYS_R THUMBS)
+
         hrm_c: hrm_c {
             my_hrm_config;
             bindings = <&kp>, <&ak_c>;
