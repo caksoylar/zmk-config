@@ -269,12 +269,14 @@ behaviors {
             bindings = <&kp SQT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        BspcDel: Bspc_Del {
+/*
+        BspcDel: BspcDel {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+*/
         lt_bspc_del: mm_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
