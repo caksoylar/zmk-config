@@ -77,7 +77,7 @@ COMBO_LAYER(typeJapan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
 COMBO_LAYER(typeQ, &lk_qu Q U,      LT3 LT1, l_alpha)
 COMBO_LAYER(typeZ, &kp Z,           LM3 LM1, l_alpha)
 COMBO_LAYER(typeColn, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
-COMBO_LAYER(typeSemi, &kp SEMI,     RM0 RM1, l_alpha)
+COMBO_LAYER(typeSemi, &CmmaSemi,    RM0 RM1, l_alpha)
 COMBO_LAYER(typeExcl, &kp EXCL,     RT1 RT2, l_alpha)
 COMBO_LAYER(typeQues, &kp QMARK,    RT2 RT3, l_alpha)
 COMBO_LAYER(typeGrav, &kp GRAVE,    RT3 RT4, l_alpha)
