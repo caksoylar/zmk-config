@@ -232,10 +232,10 @@ behaviors {
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-#ifndef COMMA_CAP
-            bindings = <&kp CMMA>, <&typeSemi>;
-#else
+#ifdef COMMA_CAP
             bindings = <&CmmaCap>, <&typeSemi>;
+#else
+            bindings = <&kp CMMA>, <&typeSemi>;
 #endif
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };

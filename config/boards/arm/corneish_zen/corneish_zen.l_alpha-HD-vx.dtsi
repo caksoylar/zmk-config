@@ -16,7 +16,7 @@ LSFT │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ RSFT
                         bindings = <
 
 &kp ESC  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp BSPC
-&kp TAB &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &tog l_num
+&kp TAB &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaCap   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &tog l_num
 &kp LSHFT &ak_x   &ak_p   &kp L   &ak_d   &ak_b           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F &kp RSHFT
 
                         &AppSwitch &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
@@ -187,10 +187,10 @@ ______   ______   ______   ______   ______   ______       ______   ______   ____
                 l_CCaps {
                         bindings = <
 
-&kp LS(V)   &kp LS(W)   &kp LS(M)   &kp LS(G)   &kp LS(J)       ______  ______  ______  ______  ______
-&kp LS(S)   &kp LS(C)   &kp LS(N)   &kp LS(T)   &kp LS(K)       &caps_word  &kp LS(A)   &kp LS(E)   &kp LS(I)   &kp LS(H)
-&kp LS(X)   &kp LS(P)   &kp LS(L)   &kp LS(D)   &kp LS(B)       &kp LS(V)   &kp LS(U)   &kp LS(O)   &kp LS(Y)   &kp LS(F)
-                                    ______      &kp LS(R)       &CmmaSpc ______
+______   &kp LS(V)   &kp LS(W)   &kp LS(M)   &kp LS(G)   &kp LS(J)       ______  ______  ______  ______  ______   ______
+______   &kp LS(S)   &kp LS(C)   &kp LS(N)   &kp LS(T)   &kp LS(K)       &caps_word  &kp LS(A)   &kp LS(E)   &kp LS(I)   &kp LS(H)   ______
+______   &kp LS(X)   &kp LS(P)   &kp LS(L)   &kp LS(D)   &kp LS(B)       &kp LS(V)   &kp LS(U)   &kp LS(O)   &kp LS(Y)   &kp LS(F)   ______
+                                 ______   ______   &kp LS(R)             &CmmaSpc ______   ______
                         >;
                 };
 
