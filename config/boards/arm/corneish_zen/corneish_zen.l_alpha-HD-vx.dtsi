@@ -15,7 +15,7 @@ tab     │  S   C   N   T   K  | |  ,;   A   E   I   H  │ LANG1/mhen
                         label = "HD-Vx";
                         bindings = <
 &kp TAB  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j                          &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp LANG2
-&kp ESC &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &lk_CmmaCap &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &kp LANG1
+&kp ESC &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &lk_CmmaCap 0 0 &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &kp LANG1
 &kp Z   &ak_x   &ak_p   &kp L   &ak_d   &ak_b                           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F    &kp Q
                         &AppSwitch &lt_bspc_del &lt l_nav R             &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
                         >;
