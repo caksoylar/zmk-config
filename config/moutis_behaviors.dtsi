@@ -30,7 +30,7 @@ behaviors {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <2000>;
+            release-after-ms = <1200>;
             quick-release;
         };
         skapp: sticky_key_app_switcher {
@@ -222,11 +222,7 @@ behaviors {
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-#ifdef COMMA_CAP
             bindings = <&lk_CmmaCap 0 0>, <&typeSemi>;
-#else
-            bindings = <&kp CMMA>, <&typeSemi>;
-#endif
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
