@@ -24,7 +24,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             quick-tap-ms = <my_quick_tapping_term>
 
 #define MY_HRM (NAME BINDINGS KEYPOS) \
-        NAME: NAME { \
+        ##NAME: ##NAME { \
             compatible = "zmk,behavior-hold-tap"; \
             #binding-cells = <2>; \
             flavor = "balanced"; \
