@@ -203,18 +203,22 @@ behaviors {
             bindings = <&pairLtGt>, <&kp>;
         };
 
-        lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on linger
+        lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
             flavor = "tap-preferred";
-            bindings = <&CmmaSemi>, <&CmmaSpc>;
+            bindings = <&CmmaSpc>, <&CmmaCap>;
         };
 
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&CmmaSpc>, <&typeSemi>;
+#ifdef COMMA_CAP
+            bindings = <&lk_CmmaCap 0 0>, <&typeSemi>;
+#else
+            bindings = <&kp CMMA>, <&typeSemi>;
+#endif
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
