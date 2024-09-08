@@ -30,7 +30,7 @@ behaviors {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <my_tapping_term*8>;
+            release-after-ms = <1000>;
             quick-release;
         };
         skapp: sticky_key_app_switcher {
