@@ -88,7 +88,7 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&Qu>;
         };
-*/        lk_E_accent: lk_E_accent { // ´, é on "linger"
+        lk_E_accent: lk_E_accent { // ´, é on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
