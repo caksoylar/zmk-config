@@ -15,6 +15,13 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             ╰─────────────╯ ╰─────────────╯
 */
 
+//            require-prior-idle-ms = <150>;
+
+#hrm_config flavor = "balanced"; \
+            tapping-term-ms = <my_tapping_term>; \
+            quick-tap-ms = <my_quick_tapping_term>
+
+
 behaviors {
 
       skapp: sticky_key_app_switcher {
@@ -32,10 +39,7 @@ behaviors {
         hm: homerow_mods { // use on either hand
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            quick-tap-ms = <my_quick_tapping_term>;
-//            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            hrm_config;
             bindings = <&kp>, <&kp>;
         };
         hmr: homerow_mods_right { // use on right hand to mod left
