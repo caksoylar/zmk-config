@@ -14,7 +14,7 @@
         bindings = <&kp CMMA &kp SPACE>
                     ;
         )
-#end
+#endif
 
 
    ZMK_MACRO(AppSwitch,
