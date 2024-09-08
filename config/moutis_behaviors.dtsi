@@ -203,7 +203,7 @@ behaviors {
             bindings = <&pairLtGt>, <&kp>;
         };
 
-        lk_CmmaCap: lk_ltgt { // < on tap, <|> on "linger"
+        lk_CmmaCap: lk_CmmaCap { // < on tap, <|> on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
