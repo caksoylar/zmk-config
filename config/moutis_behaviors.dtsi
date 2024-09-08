@@ -214,9 +214,12 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <my_tapping_term>;
-            bindings = <&lk_CmmaCap 0 0>,
-            <&caps_word>,
-            <&kp CAPS>;
+            bindings = <&lk_CmmaCap 0 0>
+            , <&kp CMMA>
+            , <&typeSemi>
+//            <&caps_word>,
+//            <&kp CAPS>
+            ;
         };
 
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"

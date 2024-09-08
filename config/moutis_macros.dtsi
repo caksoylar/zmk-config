@@ -16,7 +16,8 @@
         bindings =
             <&macro_release &kp LSHFT>
             , <&macro_release &kp RSHFT>
-            , <&kp CMMA &kp SPACE>
+            , <&kp CMMA>
+            , <&kp SPACE>
             ;
         )
 #endif
