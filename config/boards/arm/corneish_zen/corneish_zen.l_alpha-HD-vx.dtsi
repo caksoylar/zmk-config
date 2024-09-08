@@ -14,7 +14,7 @@ ______  │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ ______
                 l_alpha {
                         label = "HD-Vx";
                         bindings = <
-________  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j                           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt ______
+______  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j                           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt ______
 ______  &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H ______
 ______  &ak_x   &ak_p   &kp L   &ak_d   &ak_b                           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F ______
                         &AppSwitch &lt_bspc_del &lt l_nav R             &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
