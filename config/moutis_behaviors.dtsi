@@ -23,6 +23,15 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             tapping-term-ms = <my_tapping_term>; \
             quick-tap-ms = <my_quick_tapping_term>
 
+#define linger_key(NAME, BINDINGS) \
+            lk_NAME: lk_NAME { \
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_tapping_term>;
+            bindings = <BINDINGS>; \
+};
+
 
 behaviors {
 
@@ -80,6 +89,9 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        linger_key(lk_qu, <&kp> <&Qu>)
+/*
         lk_qu: lk_qu {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -87,7 +99,7 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&Qu>;
         };
-
+*/
         lk_E_accent: lk_E_accent { // ´, é on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

@@ -7,7 +7,7 @@
 
 #define H_DIGRAPH_COMBOS //  (th, ch, sh, wh, gh, ph)
 #define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
-#define COMMA_CAP     // , before alpha deletes , and capitalizes alpha
+#define COMMA_CAP     // , before alpha capitalizes that alpha
 
 #define my_tapping_term 170
 #define my_quick_tapping_term 112
