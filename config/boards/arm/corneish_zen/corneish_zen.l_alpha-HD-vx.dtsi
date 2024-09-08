@@ -1,25 +1,23 @@
 #define ______  &trans
 
 /*  Base (alpha) Layer  Hands Down Vibranium-vb
-    Building for a 36/42 key board
-     ╭─────────────────────╮ ╭──────────────────────╮
-ESC  │  V   W   M   G   J  │ │  #$  .:  /*  "[  ']  │ BSP
-TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
-LSFT │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ RSFT
-     ╰──────╮  App BSP  R  │ │  SPC RET TAB  ╭──────╯
-            ╰──────────────╯ ╰───────────────╯
+        for 36 keys on a board with 42 keys
+        ╭─────────────────────╮ ╭──────────────────────╮
+______  │  V   W   M   G   J  │ │  #$  .:  /*  "[  ']  │ ______
+______  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ ______
+______  │  X   P   L   D   B  │ │  -+   U   O   Y   F  │ ______
+        ╰────╮    App BSP  R  │ │  SPC RET Tg(Num)╭────╯
+             ╰────────────────╯ ╰─────────────────╯
 */
 
 
                 l_alpha {
                         label = "HD-Vx";
                         bindings = <
-
-&kp ESC  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp BSPC
-&kp TAB &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &tog l_num
-&kp LSHFT &ak_x   &ak_p   &kp L   &ak_d   &ak_b           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F &kp RSHFT
-
-                        &AppSwitch &lt_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
+_______  &ak_v   &ak_w   &ak_m   &ak_g   &ak_j                           &HashDllr   &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt ______
+______  &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k    &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H ______
+______  &ak_x   &ak_p   &kp L   &ak_d   &ak_b                           &MinusPlus  &ak_u       &ak_o       &ak_y      &kp F ______
+                        &AppSwitch &lt_bspc_del &lt l_nav R             &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
                         >;
                 };
 
