@@ -273,7 +273,7 @@ behaviors {
             bindings = <&kp SQT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        lt_bspc_del: mm_backspace_delete {
+        lt_bspc_del: lt_bspc_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
