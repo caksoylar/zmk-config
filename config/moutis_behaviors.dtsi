@@ -157,21 +157,21 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&tion>, <&Th>;
         };
         lk_sh: lk_sh { // Sh on tap, sion on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&sion>, <&Sh>;
         };
         lk_gh: lk_gh { // Gh on tap, Ght on "linger"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <my_tapping_term>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&ght>, <&Gh>;
         };
         lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
