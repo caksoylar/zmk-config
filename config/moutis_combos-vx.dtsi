@@ -35,7 +35,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             ╰─────────────╯ ╰─────────────╯
 */
 
-combos {
+combos {    
     compatible = "zmk,combos";
 
 //
