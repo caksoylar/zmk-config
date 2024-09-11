@@ -36,7 +36,7 @@
 */
         // Zaphod partition
         /delete-property/ code_partition;
-        code_partition: partition@1000 {
+        code_partition: partition@26000 {
             reg = <0x00001000 0x000d3000>;
         };
 
