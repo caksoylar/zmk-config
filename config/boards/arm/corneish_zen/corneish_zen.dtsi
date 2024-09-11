@@ -65,6 +65,7 @@
 
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
+        };
 
     };
 };
