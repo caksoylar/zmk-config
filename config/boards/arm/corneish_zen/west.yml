@@ -16,6 +16,5 @@ manifest:
       remote: caksoylar
       revision: caksoylar/zen-v1+v2  # custom branch name
       import: app/west.yml
-      shield: settings_reset
   self:
     path: config
