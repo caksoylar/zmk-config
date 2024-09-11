@@ -98,10 +98,12 @@ zephyr_udc0: &usbd {
         sd_partition: partition@0 {
             reg = <0x00000000 0x00001000>;
         };
+/*
         // Corneish-zen partition
         code_partition: partition@26000 {
             reg = <0x00026000 0x000c6000>;
         };
+*/
         // Zaphod partition
         code_partition: partition@1000 {
             reg = <0x00001000 0x000d3000>;
@@ -116,19 +118,23 @@ zephyr_udc0: &usbd {
          * Storage partition will be used by FCB/LittleFS/NVS
          * if enabled.
          */
+/*
         // Corneish-zen partition
         storage_partition: partition@ec000 {
             reg = <0x000ec000 0x00008000>;
         };
+*/
         // Zaphod partition
         storage_partition: partition@d4000 {
             reg = <0x000d4000 0x00020000>;
         };
 
+/*
         // Corneish-zen partition
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
         };
+*/
         // Zaphod partition
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
