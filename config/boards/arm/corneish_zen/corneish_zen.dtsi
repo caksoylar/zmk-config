@@ -19,23 +19,24 @@
         #size-cells = <1>;
 
 /*
-        // Corneish-zen partition
+        // Corneish-zen
         sd_partition: partition@0 {
             reg = <0x00000000 0x00026000
 */
-        // Zaphod partition
+        // Zaphod 
         /delete-property/ sd_partition;
         sd_partition: partition@0 {
             reg = <0x00000000 0x00001000>;
         };
 /*
-        // Corneish-zen partition
+        // Corneish-zen
         code_partition: partition@26000 {
             reg = <0x00026000 0x000c6000>;
         };
 */
-        // Zaphod partition
+        // Zaphod
         /delete-property/ code_partition;
+//        code_partition: partition@1000 {
         code_partition: partition@26000 {
             reg = <0x00001000 0x000d3000>;
         };
@@ -50,27 +51,17 @@
          * if enabled.
          */
 /*
-        // Corneish-zen partition
+        // Corneish-zen
         storage_partition: partition@ec000 {
             reg = <0x000ec000 0x00008000>;
         };
 */
-        // Zaphod partition
+        // Zaphod
         /delete-property/ storage_partition;
-        storage_partition: partition@d4000 {
+//        storage_partition: partition@d4000 {
+        storage_partition: partition@ec000 {
             reg = <0x000d4000 0x00020000>;
         };
 
-/*
-        // Corneish-zen partition
-        boot_partition: partition@f4000 {
-            reg = <0x000f4000 0x0000c000>;
-        };
-*/
-        // Zaphod partition
-        /delete-property/ boot_partition;
-        boot_partition: partition@f4000 {
-            reg = <0x000f4000 0x0000c000>;
-        };
     };
 };
