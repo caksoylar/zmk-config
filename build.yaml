@@ -17,3 +17,6 @@ include:
 #  - board: corneish_zen_v1_left
 #  - board: corneish_zen_v1_right
 #    shield: settings_reset
+#  - board: nice_nano_v2
+#    shield: rollow
+#    shield: kyria_v1

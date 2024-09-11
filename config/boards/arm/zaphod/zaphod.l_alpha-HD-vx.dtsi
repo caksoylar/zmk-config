@@ -34,7 +34,7 @@
 &hml LCTRL S &hrm_c LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k         &CmmaSemi   &hrm_a RSHFT A  &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H
 &ak_x        &ak_p           &kp L        &ak_d          &ak_b         &MinusPlus  &ak_u           &ak_o          &ak_y          &kp F
 
-                &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN
+                &lt_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN
                         >;
                 };
 
