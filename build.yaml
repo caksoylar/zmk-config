@@ -16,6 +16,8 @@ include:
   - board: zaphod
   - board: corneish_zen_v1_left
   - board: corneish_zen_v1_right
+  - board: corneish_zen_v1_left
+    shield: settings_reset
   - board: corneish_zen_v1_right
     shield: settings_reset
 #  - board: nice_nano_v2
