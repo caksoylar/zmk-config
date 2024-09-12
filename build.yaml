@@ -13,7 +13,7 @@
 #
 ---
 include:
-#  - board: zaphod
+  - board: zaphod
   - board: corneish_zen_v1_left
   - board: corneish_zen_v1_right
 #  - board: corneish_zen_v1_left
