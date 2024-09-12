@@ -6,7 +6,11 @@
 */
 
 
-
+/*
+ * redefine &flash0 here to match the Zaphod definitions because I accidentally
+ * flashed zaphod firmware onto the Zen, and botched it all. To correct it,
+ * caksoylar suggested this. It worked, after flashing a new settings_reset.
+ */
 
 &flash0 {
     /*
@@ -63,6 +67,7 @@
             reg = <0x000d4000 0x00020000>;
         };
 
+        // this didn't change.
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
         };

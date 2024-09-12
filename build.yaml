@@ -13,15 +13,15 @@
 #
 ---
 include:
-  - board: zaphod
+#  - board: zaphod
   - board: corneish_zen_v1_left
   - board: corneish_zen_v1_right
-  - board: corneish_zen_v1_left
-    shield: settings_reset
-    cmake-args: -DCONFIG_ZMK_DISPLAY=n
-  - board: corneish_zen_v1_right
-    shield: settings_reset
-    cmake-args: -DCONFIG_ZMK_DISPLAY=n
+#  - board: corneish_zen_v1_left
+#    shield: settings_reset
+#    cmake-args: -DCONFIG_ZMK_DISPLAY=n
+#  - board: corneish_zen_v1_right
+#    shield: settings_reset
+#    cmake-args: -DCONFIG_ZMK_DISPLAY=n
 #  - board: nice_nano_v2
 #    shield: rollow
 #  - board: nice_nano_v2
