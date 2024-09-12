@@ -7,7 +7,7 @@ config BOARD
 	default "zaphod"
 
 config ZMK_KEYBOARD_NAME
-	default "Zaphod"
+	default "Zaphod HD-Vx"
 
 if USB
 
