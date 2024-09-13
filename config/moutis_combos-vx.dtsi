@@ -124,16 +124,18 @@ COMBO_LAYER(pnIll, &typePnIll,      RM3 LB2, l_alpha) // "I'll "
 COMBO_LAYER(pnId, &typePnId,        RM3 LB1, l_alpha) // "I'd "
 COMBO_LAYER(pnIve, &typePnIve,      RM3 LT4, l_alpha) // "I've "
 
-COMBO_LAYER(pnYour,  &typePnYour,   RB3 LH1, l_alpha) // "Your "
-COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LB3, l_alpha) // "You're "
+COMBO_LAYER(pnYour,  &typePnYour,   RB3 LB3, l_alpha) // "Your "
+COMBO_LAYER(pnYoure, &typePnYoure,  RB4 LB3, l_alpha) // "You're "
 COMBO_LAYER(pnYoull, &typePnYoull,  RB3 LB2, l_alpha) // "You'll "
 COMBO_LAYER(pnYoud, &typePnYoud,    RB3 LB1, l_alpha) // "You'd "
 COMBO_LAYER(pnYouve, &typePnYouve,  RB3 LT4, l_alpha) // "You've "
 
-COMBO_LAYER(pnWere, &typePnWere,    LT4 LH1, l_alpha) // "We're "
+COMBO_LAYER(pnWere, &typePnWere,    LT4 RT4, l_alpha) // "We're "
 COMBO_LAYER(pnWell, &typePnWell,    LT4 LT2, l_alpha) // "We'll "
 COMBO_LAYER(pnWed, &typePnWed,      LT4 LT1, l_alpha) // "We'd "
 COMBO_LAYER(pnWeve, &typePnWeve,    LT4 LT0, l_alpha) // "We've "
+
+COMBO_LAYER(pnWhere, &typePnWhere,    LT4 RH1, l_alpha) // "Where "
 
 #endif // EN_PRONOUN_COMBOS
 
