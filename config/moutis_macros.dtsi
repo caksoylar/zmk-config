@@ -689,7 +689,7 @@
             bindings = <&macro_tap &kp W>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp h &kp E &kp R &kp E &kp SPACE>
+                    , <&macro_tap &kp H &kp E &kp R &kp E &kp SPACE>
                 ;
         };
 
