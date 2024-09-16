@@ -16,12 +16,19 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 */
 
 
-#define     my_hrm_config compatible = "zmk,behavior-hold-tap"; \
+#define     my_hrm_config \
+            compatible = "zmk,behavior-hold-tap"; \
             #binding-cells = <2>; \
             flavor = "balanced"; \
             hold-trigger-on-release; \
             tapping-term-ms = <my_tapping_term>; \
             quick-tap-ms = <my_quick_tapping_term>
+
+#define     my_lk_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            tapping-term-ms = <my_tapping_term>; \
+            flavor = "tap-preferred"
 
 
 behaviors {
@@ -81,141 +88,84 @@ behaviors {
         };
 
         lk: lk {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&kp>, <&kp>;
         };
 
         lk_qu: lk_qu {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&kp>, <&Qu>;
         };
         lk_E_accent: lk_E_accent { // ´, é on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeEaccent>, <&kp>;
         };
         lk_E_grave: lk_E_grave { // `, è on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeEgrave>, <&kp>;
         };
         lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeEacute>, <&kp>;
         };
         lk_O_macron: lk_O_macron { // ¯, ō on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeOmacron>, <&kp>;
         };
         lk_A_ring: lk_A_ring { // ˚, å on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeAring>, <&kp>;
         };
         lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeUumlaut>, <&kp>;
         };
         lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeCedille>, <&kp>;
         };
 
 
         lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&typeJapanese>, <&typeJapan>;
         };
         lk_th: lk_th { // Th on tap, tion on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&tion>, <&Th>;
         };
         lk_sh: lk_sh { // Sh on tap, sion on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&sion>, <&Sh>;
         };
         lk_gh: lk_gh { // Gh on tap, Ght on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&ght>, <&Gh>;
         };
         lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&pairDquo>, <&kp>;
         };
         lk_par: lk_par { // ( on tap, () on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&pairPar>, <&kp>;
         };
         lk_bkt: lk_bkt { // [ on tap, [] on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&pairBkt>, <&kp>;
         };
         lk_brc: lk_brc { // { on tap, {} on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&pairBrc>, <&kp>;
         };
         lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&pairLtGt>, <&kp>;
         };
 
 
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&CmmaSpc>, <&CmmaCap>;
         };
 
@@ -234,7 +184,7 @@ behaviors {
         SlshStar: SlshStar {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp STAR>;
+            bindings = <&ak_FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         HashDllr: HashDllr {
