@@ -40,6 +40,7 @@
 #define l_fun   22
 #define l_nav   23
 #define l_cfg   24
+#define l_akFSLH 25
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
