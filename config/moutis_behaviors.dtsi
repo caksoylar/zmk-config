@@ -66,6 +66,11 @@ behaviors {
             bindings = <&kp>, <&ak_t>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
+        hrm_h: hrm_h {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_h>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
         hrm_c: hrm_c {
             my_hrm_config;
             bindings = <&kp>, <&ak_c>;
