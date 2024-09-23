@@ -378,7 +378,7 @@
             tap-ms = <40>;
         bindings = <&kp P &kp G>;
         )
-    ZMK_MACRO(m_i_f,
+    ZMK_MACRO(m_if,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&macro_tap &kp BSPC>
@@ -386,6 +386,14 @@
             , <&macro_release &kp RSHFT>
             , <&macro_tap &kp I>
             , <&macro_tap &kp F>
+            ;
+        )
+    ZMK_MACRO(m_ib,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&macro_tap &kp BSPC>
+            , <&macro_tap &kp I>
+            , <&macro_tap &kp B>
             ;
         )
 
