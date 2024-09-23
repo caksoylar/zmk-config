@@ -72,20 +72,20 @@ COMBO_LAYER(findsel, &m_findsel,  LM4 LB0, l_alpha)
 //
 // type a glyph (tiny board accommodation)
 //
-COMBO_LAYER(typeJapan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
-COMBO_LAYER(typeQ, &lk_qu Q U,      LT3 LT1, l_alpha)
-COMBO_LAYER(typeZ, &kp Z,           LM3 LM1, l_alpha)
-COMBO_LAYER(typeColn, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
-COMBO_LAYER(typeSemi, &kp SEMI,     RM0 RM1, l_alpha)
-COMBO_LAYER(typeExcl, &kp EXCL,     RT1 RT2, l_alpha)
-COMBO_LAYER(typeQues, &kp QMARK,    RT2 RT3, l_alpha)
-COMBO_LAYER(typeGrav, &kp GRAVE,    RT3 RT4, l_alpha)
-COMBO_LAYER(typeatMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
-COMBO_LAYER(typeUnder, &kp UNDER,   RB1 RB3, l_alpha) // _
-COMBO_LAYER(typeEqual, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
-COMBO_LAYER(typeNdash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
-COMBO_LAYER(typeMdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
-COMBO_LAYER(typeTilde, &kp TILDE,   RB0 RB3, l_alpha) // ~ tilde (wave dash)
+COMBO_LAYER(t_Japan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
+COMBO_LAYER(t_Q, &lk_qu Q U,      LT3 LT1, l_alpha)
+COMBO_LAYER(t_Z, &kp Z,           LM3 LM1, l_alpha)
+COMBO_LAYER(t_Coln, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
+COMBO_LAYER(t_Semi, &kp SEMI,     RM0 RM1, l_alpha)
+COMBO_LAYER(t_Excl, &kp EXCL,     RT1 RT2, l_alpha)
+COMBO_LAYER(t_Ques, &kp QMARK,    RT2 RT3, l_alpha)
+COMBO_LAYER(t_Grav, &kp GRAVE,    RT3 RT4, l_alpha)
+COMBO_LAYER(t_atMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
+COMBO_LAYER(t_Under, &kp UNDER,   RB1 RB3, l_alpha) // _
+COMBO_LAYER(t_Equal, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
+COMBO_LAYER(t_Ndash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
+COMBO_LAYER(t_Mdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
+COMBO_LAYER(t_Tilde, &kp TILDE,   RB0 RB3, l_alpha) // ~ tilde (wave dash)
 
 COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
 COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
@@ -117,25 +117,25 @@ COMBO_LAYER(ph,  &Ph,        LB3 LB1, l_alpha) // Ph
 // Pronoun combos REQUIRE macros to process
 //
 
-COMBO_LAYER(pnI, &typePnI,          RM3 RM4, l_alpha) // "I "
+COMBO_LAYER(pnI, &t_PnI,          RM3 RM4, l_alpha) // "I "
 
-COMBO_LAYER(pnIm, &typePnIm,        RM3 LT2, l_alpha) // "I'm "
-COMBO_LAYER(pnIll, &typePnIll,      RM3 LB2, l_alpha) // "I'll "
-COMBO_LAYER(pnId, &typePnId,        RM3 LB1, l_alpha) // "I'd "
-COMBO_LAYER(pnIve, &typePnIve,      RM3 LT4, l_alpha) // "I've "
+COMBO_LAYER(pnIm, &t_PnIm,        RM3 LT2, l_alpha) // "I'm "
+COMBO_LAYER(pnIll, &t_PnIll,      RM3 LB2, l_alpha) // "I'll "
+COMBO_LAYER(pnId, &t_PnId,        RM3 LB1, l_alpha) // "I'd "
+COMBO_LAYER(pnIve, &t_PnIve,      RM3 LT4, l_alpha) // "I've "
 
-COMBO_LAYER(pnYoure, &typePnYoure,  RB3 LB4, l_alpha) // "You're "
-COMBO_LAYER(pnYour,  &typePnYour,   RB3 LB3, l_alpha) // "Your "
-COMBO_LAYER(pnYoull, &typePnYoull,  RB3 LB2, l_alpha) // "You'll "
-COMBO_LAYER(pnYoud, &typePnYoud,    RB3 LB1, l_alpha) // "You'd "
-COMBO_LAYER(pnYouve, &typePnYouve,  RB3 LT4, l_alpha) // "You've "
+COMBO_LAYER(pnYoure, &t_PnYoure,  RB3 LB4, l_alpha) // "You're "
+COMBO_LAYER(pnYour,  &t_PnYour,   RB3 LB3, l_alpha) // "Your "
+COMBO_LAYER(pnYoull, &t_PnYoull,  RB3 LB2, l_alpha) // "You'll "
+COMBO_LAYER(pnYoud, &t_PnYoud,    RB3 LB1, l_alpha) // "You'd "
+COMBO_LAYER(pnYouve, &t_PnYouve,  RB3 LT4, l_alpha) // "You've "
 
-COMBO_LAYER(pnWere, &typePnWere,    LT4 RT4, l_alpha) // "We're "
-COMBO_LAYER(pnWell, &typePnWell,    LT4 LT2, l_alpha) // "We'll "
-COMBO_LAYER(pnWed, &typePnWed,      LT4 LT1, l_alpha) // "We'd "
-COMBO_LAYER(pnWeve, &typePnWeve,    LT4 LT0, l_alpha) // "We've "
+COMBO_LAYER(pnWere, &t_PnWere,    LT4 RT4, l_alpha) // "We're "
+COMBO_LAYER(pnWell, &t_PnWell,    LT4 LT2, l_alpha) // "We'll "
+COMBO_LAYER(pnWed, &t_PnWed,      LT4 LT1, l_alpha) // "We'd "
+COMBO_LAYER(pnWeve, &t_PnWeve,    LT4 LT0, l_alpha) // "We've "
 
-COMBO_LAYER(pnWhere, &typePnWhere,    LT4 LH1, l_alpha) // "Where "
+COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_alpha) // "Where "
 
 #endif // EN_PRONOUN_COMBOS
 

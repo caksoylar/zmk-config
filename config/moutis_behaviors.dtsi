@@ -103,37 +103,37 @@ behaviors {
         };
         lk_E_accent: lk_E_accent { // ´, é on "linger"
             my_lk_config;
-            bindings = <&typeEaccent>, <&kp>;
+            bindings = <&t_Eaccent>, <&kp>;
         };
         lk_E_grave: lk_E_grave { // `, è on "linger"
             my_lk_config;
-            bindings = <&typeEgrave>, <&kp>;
+            bindings = <&t_Egrave>, <&kp>;
         };
         lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
             my_lk_config;
-            bindings = <&typeEacute>, <&kp>;
+            bindings = <&t_Eacute>, <&kp>;
         };
         lk_O_macron: lk_O_macron { // ¯, ō on "linger"
             my_lk_config;
-            bindings = <&typeOmacron>, <&kp>;
+            bindings = <&t_Omacron>, <&kp>;
         };
         lk_A_ring: lk_A_ring { // ˚, å on "linger"
             my_lk_config;
-            bindings = <&typeAring>, <&kp>;
+            bindings = <&t_Aring>, <&kp>;
         };
         lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
             my_lk_config;
-            bindings = <&typeUumlaut>, <&kp>;
+            bindings = <&t_Uumlaut>, <&kp>;
         };
         lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
             my_lk_config;
-            bindings = <&typeCedille>, <&kp>;
+            bindings = <&t_Cedille>, <&kp>;
         };
 
 
         lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
             my_lk_config;
-            bindings = <&typeJapanese>, <&typeJapan>;
+            bindings = <&t_Japanese>, <&t_Japan>;
         };
         lk_th: lk_th { // Th on tap, tion on "linger"
             my_lk_config;
@@ -177,7 +177,7 @@ behaviors {
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lk_CmmaCap 0 0>, <&typeSemi>;
+            bindings = <&lk_CmmaCap 0 0>, <&t_Semi>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
