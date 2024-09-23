@@ -18,7 +18,7 @@
 
 #include "boards/arm/corneish_zen/corneish_zen.dtsi" // override &flash0 settings
 
-#include "boards/arm/corneish_zen/corneish_zen_config_3x6.h" // my "universal" key name defs for this board
+#include "boards/arm/corneish_zen/corneish_zen_config.h" // my key name defs for this board
 #include "moutis_config.h" // my add-on feature defs
 
 / {
@@ -28,7 +28,7 @@
 
         keymap {
         compatible = "zmk,keymap";
-#include "boards/arm/corneish_zen/corneish_zen.l_alpha-HD-pm_3x6.dtsi"  // base (alpha) layer (& related adaptive layers)
-#include "boards/arm/corneish_zen/corneish_zen.l_layers_3x6.dtsi"  // all other (common) layers (shouldn't vary)
+#include "boards/arm/corneish_zen/corneish_zen.l_alpha-HD-pm.dtsi"  // base (alpha) layer (& related adaptive layers)
+#include "boards/arm/corneish_zen/corneish_zen.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
     };
 };
