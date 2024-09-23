@@ -26,21 +26,22 @@
 #define l_akW   8
 #define l_akF   9
 #define l_akP   10
-#define l_akB   11
-#define l_akV   12
-#define l_akJ   13
-#define l_akA   14
-#define l_akU   15
-#define l_akE   16
-#define l_akO   17
-#define l_akI   18
-#define l_akDot 19
-#define l_akFSLH 20
-#define l_sym   21
-#define l_num   22
-#define l_fun   23
-#define l_nav   24
-#define l_cfg   25
+#define l_akH   11
+#define l_akB   12
+#define l_akV   13
+#define l_akJ   14
+#define l_akA   15
+#define l_akU   16
+#define l_akE   17
+#define l_akO   18
+#define l_akI   19
+#define l_akDot 20
+#define l_akFSLH 21
+#define l_sym   22
+#define l_num   23
+#define l_fun   24
+#define l_nav   25
+#define l_cfg   26
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
