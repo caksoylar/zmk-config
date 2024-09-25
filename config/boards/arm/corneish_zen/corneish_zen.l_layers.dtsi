@@ -31,10 +31,10 @@
                     label = "Nav/Num";
                     bindings = <
 
-&none &kp KP_NLCK  &kp HOME  &kp UP    &kp PG_UP  &kp TAB       &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
-&none &kp LA(LEFT) &kp LEFT  &kp DOWN  &kp RIGHT  &kp LA(RIGHT) &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt LGUI KP_N5 &mt RALT KP_N6 &mt LCTRL KP_PLUS  &none
-&none &kp RG(Z)    &kp RG(X) &kp RG(C) &kp RG(V)  &kp SPC       &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
-                     &kp C &lt l_fun BSPC &lt l_nav KP_ENTER    &kp KP_N0  &kp KP_DOT  &tog l_num
+&none &kp KP_NLCK   &kp HOME  &kp UP    &kp PG_UP  &kp TAB       &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &none
+&none &kp LA(LEFT)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LA(RIGHT) &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt LGUI KP_N5 &mt RALT KP_N6 &mt LCTRL KP_PLUS   &none
+&none &kp RG(Z)     &kp RG(X) &kp RG(C) &kp RG(V)  &kp SPC       &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL &none
+                &tog l_nav &lt l_fun BSPC &lt l_nav KP_ENTER     &kp KP_N0  &kp KP_DOT  &tog l_num
                         >;
                 };
 
@@ -53,7 +53,7 @@
 &none &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp GRAVE &kp N7       &kp N8      &kp N9      &kp BSLH       &none
 &none &mt LCTRL F5 &mt LALT F6 &mt LGUI F7  &mt LSHFT F8 &kp F14 &kp CMMA  &mt RSHFT N1 &mt RGUI N2 &mt RALT N3 &mt LCTRL FSLH &none
 &none &kp F1       &kp F2      &kp F3       &kp F4       &kp F15 &kp MINUS &kp N4       &kp N5      &kp N6      &kp EQUAL      &none
-                   &sl l_cfg   &kp BSPC     &kp DEL      &kp KP_N0    &kp DOT      &kp SEMI
+                   _______     &kp BSPC     &kp DEL      &kp KP_N0    &kp DOT      &kp SEMI
                         >;
                 };
 
@@ -71,7 +71,7 @@
 &none &kp RG(Q) &kp RG(W) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp LG(LS(LA(V))) &kp LG(UP)   &kp HOME &kp UP     &kp PG_UP &kp LA(UP)    &none
 &none &kp LCTRL &kp LALT  &kp LGUI       &kp LSHFT     &kp RG(F)              &kp LA(LEFT) &kp LEFT &kp DOWN   &kp RIGHT &kp LA(RIGHT) &none
 &none &kp RG(Z) &kp RG(X) &kp RG(C)      &kp RG(V)     &kp RG(G)              &kp LG(DOWN) &kp END  &kp DOWN   &kp PG_DN &kp LA(DOWN)  &none
-                                &mo l_cfg &S_AppSwitch &AppSwitch             &kp LG(LBKT)  &kp LG(RBKT) &mo l_cfg
+                        _______  &S_AppSwitch &AppSwitch             &kp LG(LBKT)  &kp LG(RBKT) _______
                     >;
                 };
 

@@ -17,7 +17,7 @@ LSFT │  F   P   L   D   V  │ │  -+   U   O   Y   B  │ RSFT
 &kp ESC   &ak_x    &ak_w      &ak_m     &ak_g     &ak_j         &HashDllr  &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp BSPC
 &kp TAB &hml LCTRL S &hml LALT C   &hml LGUI N  &hrm_t LSHFT T &ak_k     &CmmaSemi   &hrm_a RSHFT A &hrm_e RGUI E  &hrm_i RALT I  &hmr RCTRL H &tog l_num
 &kp LSHFT &ak_f    &ak_p      &kp L     &ak_d     &ak_v         &MinusPlus &ak_u       &ak_o       &ak_y      &ak_b    &kp RSHFT
-                   &AppSwitch &lt_bspc_del &lt l_nav R          &lt l_sym SPACE &lt l_nav RETURN  &lt l_num TAB
+                   &AppSwitch &lt_bspc_del &lt l_nav R          &lt l_sym SPACE &lt l_nav RETURN  &tog l_num
                         >;
                     };
                     l_akG {
