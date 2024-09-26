@@ -936,18 +936,12 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 </g>
 <g class="combo combopos-0">
-<path d="M308,70 l-37,0" class="combo"/>
-<path d="M308,70 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="294" y="57" width="28" height="26" class="combo"/>
-<text x="308" y="70" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-1">
 <path d="M112,183 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M112,183 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-18" class="combo"/>
 <rect rx="6" ry="6" x="98" y="170" width="28" height="26" class="combo"/>
 <text x="112" y="183" class="combo tap">F12</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-1">
 <path d="M504,183 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-18" class="combo"/>
 <path d="M504,183 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="490" y="170" width="28" height="26" class="combo"/>
@@ -955,7 +949,7 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="504" dy="-0.6em">BT</tspan><tspan x="504" dy="1.2em">CLR</tspan>
 </text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <path d="M308,-15 h-162 a6.0,6.0 0 0 0 -6.0,6.0 v18" class="combo"/>
 <path d="M308,-15 h162 a6.0,6.0 0 0 1 6.0,6.0 v18" class="combo"/>
 <rect rx="6" ry="6" x="294" y="-28" width="28" height="26" class="combo"/>
@@ -963,7 +957,7 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="308" dy="-0.6em">Show</tspan><tspan x="308" dy="1.2em">Batt</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <path d="M308,13 h-106 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M308,13 h106 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
 <rect rx="6" ry="6" x="294" y="0" width="28" height="26" class="combo"/>

@@ -206,10 +206,10 @@ layers:
   - Print Scrn
   - Pause Break
   - ''
-  - Boot
+  - {t: Reset, h: Boot}
   - {type: held}
   - {type: held}
-  - Boot
+  - {t: Reset, h: Boot}
 combos:
 - p: [2, 3]
   k: J
@@ -272,9 +272,6 @@ combos:
   k: ⏯
   l: [NAV]
   a: right
-- p: [4, 5]
-  k: Boot
-  l: [FUN]
 - p: [21, 22]
   k: Z
   l: [DEF, BRD]

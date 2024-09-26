@@ -1116,7 +1116,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(230, 213) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Boot</text>
+<text x="0" y="0" class="key tap">Reset</text>
+<text x="0" y="24" class="key hold">Boot</text>
 </g>
 <g transform="translate(295, 224) rotate(30.0)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
@@ -1126,24 +1127,19 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(498, 213) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Boot</text>
+<text x="0" y="0" class="key tap">Reset</text>
+<text x="0" y="24" class="key hold">Boot</text>
 </g>
 <g transform="translate(560, 205)" class="key ghost keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
 </g>
 <g class="combo combopos-0">
-<path d="M364,42 l-93,0" class="combo"/>
-<path d="M364,42 l93,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="29" width="28" height="26" class="combo"/>
-<text x="364" y="42" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-1">
 <path d="M112,176 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M112,176 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-11" class="combo"/>
 <rect rx="6" ry="6" x="98" y="163" width="28" height="26" class="combo"/>
 <text x="112" y="176" class="combo tap">F12</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-1">
 <path d="M616,176 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-11" class="combo"/>
 <path d="M616,176 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="602" y="163" width="28" height="26" class="combo"/>
@@ -1151,7 +1147,7 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="616" dy="-0.6em">BT</tspan><tspan x="616" dy="1.2em">CLR</tspan>
 </text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <path d="M364,-15 h-218 a6.0,6.0 0 0 0 -6.0,6.0 v18" class="combo"/>
 <path d="M364,-15 h218 a6.0,6.0 0 0 1 6.0,6.0 v18" class="combo"/>
 <rect rx="6" ry="6" x="350" y="-28" width="28" height="26" class="combo"/>
@@ -1159,7 +1155,7 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="364" dy="-0.6em">Show</tspan><tspan x="364" dy="1.2em">Batt</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <path d="M364,6 h-162 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M364,6 h162 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
 <rect rx="6" ry="6" x="350" y="-7" width="28" height="26" class="combo"/>
