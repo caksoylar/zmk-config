@@ -31,11 +31,11 @@
 / {
 #include "moutis_behaviors.dtsi"
 #include "moutis_macros.dtsi"
-#include "moutis_combos-vf.dtsi"
+#include "moutis_combos-vb.dtsi"
 
     keymap {
         compatible = "zmk,keymap";
-#include "boards/arm/zaphod/zaphod.l_alpha-HD-vf.dtsi"  // base (alpha) layer (& related adaptive layers)
+#include "boards/arm/zaphod/zaphod.l_alpha-HD-vb.dtsi"  // base (alpha) layer (& related adaptive layers)
 #include "boards/arm/zaphod/zaphod.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
 
     };
