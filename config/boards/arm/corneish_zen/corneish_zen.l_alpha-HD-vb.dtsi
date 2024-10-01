@@ -13,7 +13,7 @@ LSFT │  B   P   L   D   V  │ │  -+   U   O   Y   F  │ RSFT
 
 // notice: this file is broken. some macros, etc...
 
-                    {
+                    l_alpha {
                         label = "HD-Vb";
                         bindings = <
 &kp ESC   &ak_x    &ak_w      &ak_m     &ak_g     &ak_j         &HashDllr  &DotColn    &SlshStar   &DqtLbkt   &SqtRbkt &kp BSPC
