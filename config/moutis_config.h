@@ -10,7 +10,7 @@
 #define COMMA_CAP     // , before alpha capitalizes that alpha
 
 #define my_tapping_term 170
-#define my_quick_tapping_term 112
+#define my_quick_tapping_term 55
 #define my_ak_delay 40
 
 // my layers
