@@ -18,8 +18,8 @@
 
 #include "boards/arm/corneish_zen/corneish_zen.dtsi" // override &flash0 settings
 
-#include "boards/arm/corneish_zen/corneish_zen_config.h" // my key name defs for this board
-#include "moutis_config.h" // my add-on feature defs
+#include "boards/arm/corneish_zen/corneish_zen_config.dtsi" // my key name defs for this board
+#include "moutis_config.dtsi" // my add-on feature defs
 
 / {
 #include "moutis_behaviors.dtsi"
