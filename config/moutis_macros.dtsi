@@ -128,6 +128,11 @@ macros {
         bindings = <&macro_tap &kp X>
                 , <&sl l_akX>;
         )
+    ZMK_MACRO(ak_xb, //
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp B>
+                , <&sl l_akX>;
+        )
     ZMK_MACRO(ak_xp, //
         tap-ms = <40>;
         bindings = <&macro_tap &kp P>
