@@ -108,20 +108,69 @@ macros {
                 ;
         )
 
-    ZMK_MACRO(ak_dot,
-        wait-ms = <50>; // need to slow this down for some systems.
-        bindings = <&macro_tap &kp DOT>
-                , <&sl l_akDot>;
+    ZMK_MACRO(ak_b,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp B>
+                , <&sl l_akB>;
+        )
+    ZMK_MACRO(ak_c,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp C>
+                , <&sl l_akC>;
+        )
+    ZMK_MACRO(ak_d,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp D>
+                , <&sl l_akD>;
+        )
+    ZMK_MACRO(ak_f,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp F>
+                , <&sl l_akF>;
         )
     ZMK_MACRO(ak_g,
         tap-ms = <40>;
         bindings = <&macro_tap &kp G>
                 , <&sl l_akG>;
         )
-    ZMK_MACRO(ak_d,
+    ZMK_MACRO(ak_h,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp D>
-                , <&sl l_akD>;
+        bindings = <&macro_tap &kp H>
+                , <&sl l_akH>;
+        )
+    ZMK_MACRO(ak_j,
+        tap-ms = <40>;
+        bindings = <&kp J &sl l_akJ>;
+        )
+    ZMK_MACRO(ak_k,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp K>
+                , <&sl l_akK>;
+        )
+    ZMK_MACRO(ak_m,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp M>
+                , <&sl l_akM>;
+        )
+    ZMK_MACRO(ak_p,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp P>
+                , <&sl l_akP>;
+        )
+    ZMK_MACRO(ak_t,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp T>
+                , <&sl l_akT>;
+        )
+    ZMK_MACRO(ak_v,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp V>
+                , <&sl l_akV>;
+        )
+    ZMK_MACRO(ak_w,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp W>
+                , <&sl l_akW>;
         )
     ZMK_MACRO(ak_x,
         tap-ms = <40>;
@@ -131,92 +180,43 @@ macros {
     ZMK_MACRO(ak_xb, //
         tap-ms = <40>;
         bindings = <&macro_tap &kp B>
-                , <&sl l_akX>;
+                , <&sl l_akB>;
         )
     ZMK_MACRO(ak_xp, //
         tap-ms = <40>;
         bindings = <&macro_tap &kp P>
                 , <&sl l_akX>;
         )
-    ZMK_MACRO(ak_m,
+    ZMK_MACRO(ak_y,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp M>
-                , <&sl l_akM>;
-        )
-    ZMK_MACRO(ak_k,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp K>
-                , <&sl l_akK>;
-        )
-    ZMK_MACRO(ak_w,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
-                , <&sl l_akW>;
-        )
-    ZMK_MACRO(ak_b,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp B>
-                , <&sl l_akB>;
-        )
-    ZMK_MACRO(ak_p,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp P>
-                , <&sl l_akP>;
-        )
-    ZMK_MACRO(ak_f,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp F>
-                , <&sl l_akF>;
-        )
-    ZMK_MACRO(ak_v,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp V>
-                , <&sl l_akV>;
-        )
-    ZMK_MACRO(ak_t,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp T>
-                , <&sl l_akT>;
-        )
-    ZMK_MACRO(ak_h,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp H>
-                , <&sl l_akH>;
-        )
-    ZMK_MACRO(ak_c,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp C>
-                , <&sl l_akC>;
+        bindings = <&kp Y &sl l_akJ>;
         )
     ZMK_MACRO(ak_a,
         tap-ms = <40>;
         bindings = <&macro_tap &kp A>
                 , <&sl l_akA>;
         )
-    ZMK_MACRO(ak_u,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp U>
-                , <&sl l_akU>;
-        )
     ZMK_MACRO(ak_e,
         tap-ms = <40>;
         bindings = <&kp E &sl l_akE>;
-        )
-    ZMK_MACRO(ak_o,
-        tap-ms = <40>;
-        bindings = <&kp O &sl l_akO>;
         )
     ZMK_MACRO(ak_i,
         tap-ms = <40>;
         bindings = <&kp I &sl l_akI>;
         )
-    ZMK_MACRO(ak_y,
+    ZMK_MACRO(ak_o,
         tap-ms = <40>;
-        bindings = <&kp Y &sl l_akJ>;
+        bindings = <&kp O &sl l_akO>;
         )
-    ZMK_MACRO(ak_j,
+    ZMK_MACRO(ak_u,
         tap-ms = <40>;
-        bindings = <&kp J &sl l_akJ>;
+        bindings = <&macro_tap &kp U>
+                , <&sl l_akU>;
+        )
+    ZMK_MACRO(ak_dot,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&macro_tap &kp DOT>
+                , <&sl l_akDot>;
         )
     ZMK_MACRO(ak_FSLH,
         tap-ms = <40>;
