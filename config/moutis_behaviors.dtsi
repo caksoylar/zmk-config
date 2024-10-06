@@ -162,7 +162,10 @@ behaviors {
             my_lk_config;
             bindings = <&pairLtGt>, <&kp>;
         };
-
+        lk_RstBoot: lk_RstBoot { // reset on tap, bootloader on "linger"
+            my_lk_config;
+            bindings = <&bootloader>, <&sys_reset>;
+        };
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             my_lk_config;
             bindings = <&CmmaSpc>, <&CmmaCap>;
