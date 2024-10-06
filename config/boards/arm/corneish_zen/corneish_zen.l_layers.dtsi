@@ -20,7 +20,7 @@
                     >;
                 };
 
-//                                          Nav & NumPad (standard)
+//                                        Nav & NumPad (standard)
 //╭─────────────────────────────────────────────╮ ╭────────────────────────────────────────╮
 //|   Top  |  HOME  |   UP   |  PG_UP |   ¶up   | |    /   |   7   |   8   |   9   |   -   |
 //|  Lword |  LEFT  |  DOWN  |   RGT  |  Rword  | |    *   |   4   |   5   |   6   |   +   |
