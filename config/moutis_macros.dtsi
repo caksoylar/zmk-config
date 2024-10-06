@@ -180,7 +180,6 @@ macros {
     ZMK_MACRO(ak_xb, //
         tap-ms = <40>;
         bindings = <&macro_tap &kp B>
-                , <&macro_tap &kp B>
                 , <&sl l_akX>
                 ;
         )
