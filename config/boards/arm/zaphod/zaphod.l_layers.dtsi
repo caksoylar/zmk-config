@@ -24,7 +24,7 @@
 //                                        Nav & NumPad (standard)
 //╭─────────────────────────────────────────────╮ ╭────────────────────────────────────────╮
 //|   Top  |  HOME  |   UP   |  PG_UP |   ¶up   | |    /   |   7   |   8   |   9   |   -   |
-//|  Lword |  LEFT  |  DOWN  |   RGT  |  Rword  | |    *   |   4   |   5   |   6   |   +   |
+//|  Lword |  LEFT  |  DOWN  |   RGT  |  Rword  | |    *   |  S/4  |  G/5  |  A/6  |  C/+  |
 //|   Bot  |   END  |   SPC  |  PG_DN |   ¶dn   | |    ,   |   1   |   2   |   3   |   =   |
 //╰─────────────────╮   tog  |  BSPC  |KP_ENTER | |    0   |   .   |  tog  ╭───────────────╯
 //                  ╰───────────────────────────╯ ╰────────────────────────╯
@@ -82,7 +82,7 @@
 //&none &none &none &none &none &none &none &none &none &none &none &none
 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &none        &none        &none      &none        &none
 &none        &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_VOL_UP &kp C_MUTE &kp C_NEXT &none
-&lk_RstBoot  &kp C_PREV   &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN &kp C_BRI_DN &kp C_VOL_DN &kp C_PP   &kp C_PREV   &sys_reset
+&lk_RstBoot B R   &kp C_PREV   &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN &kp C_BRI_DN &kp C_VOL_DN &kp C_PP   &kp C_PREV   &sys_reset
                                             &none &tog l_num     &none   &none
                         >;
                 };
