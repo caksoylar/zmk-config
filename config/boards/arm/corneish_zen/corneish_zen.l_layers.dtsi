@@ -50,10 +50,10 @@
                     label = "l_fun";
                     bindings = <
 
-&none &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp GRAVE &kp N7       &kp N8      &kp N9      &kp BSLH       &none
-&none &mt LCTRL F5 &mt LALT F6 &mt LGUI F7  &mt LSHFT F8 &kp F14 &kp CMMA  &mt RSHFT N1 &mt RGUI N2 &mt RALT N3 &mt LCTRL FSLH &none
-&none &kp F1       &kp F2      &kp F3       &kp F4       &kp F15 &kp MINUS &kp N4       &kp N5      &kp N6      &kp EQUAL      &none
-                   _______     &kp BSPC     &kp DEL      &kp KP_N0    &kp DOT      &kp SEMI
+&none &kp F9       &kp F10     &kp F11     &kp F12      &kp F13  &kp GRAVE  &kp N7       &kp N8      &kp N9      &kp BSLH       &none
+&none &mt LCTRL F5 &mt LALT F6 &mt LGUI F7 &mt LSHFT F8 &kp F14  &kp CMMA   &mt RSHFT N1 &mt RGUI N2 &mt RALT N3 &mt LCTRL FSLH &none
+&none &kp F1       &kp F2      &kp F3      &kp F4       &kp F15  &kp MINUS  &kp N4       &kp N5      &kp N6      &kp EQUAL      &none
+                               _______     &kp BSPC    &kp DEL   &kp KP_N0  &kp DOT      &kp SEMI
                         >;
                 };
 
