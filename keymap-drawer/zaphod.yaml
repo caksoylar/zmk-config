@@ -1,0 +1,1189 @@
+layout: {qmk_keyboard: ferris_rotated}
+layers:
+  '0':
+  - '&ak_x'
+  - '&ak_w'
+  - '&ak_m'
+  - '&ak_g'
+  - '&ak_j'
+  - {t: '#', s: $}
+  - {t: '&ak_dot', s: ':'}
+  - {t: '&ak_FSLH', s: '*'}
+  - {t: '"', s: '['}
+  - {t: '''', s: ']'}
+  - {t: S, h: Ctrl}
+  - {t: '&ak_c C', h: Alt}
+  - {t: N, h: Gui}
+  - {t: '&ak_t T', h: Shift}
+  - '&ak_k'
+  - {t: '&CmmaCap', h: '&CmmaSpc', s: '&t_Semi'}
+  - {t: '&ak_a A', h: Shift}
+  - {t: '&ak_e E', h: Gui}
+  - {t: '&ak_i I', h: Alt}
+  - {t: H, h: Ctrl}
+  - '&ak_b'
+  - '&ak_p'
+  - L
+  - '&ak_d'
+  - '&ak_v'
+  - {t: '-', s: +}
+  - '&ak_u'
+  - '&ak_o'
+  - '&ak_y'
+  - '&ak_f'
+  - {t: BACKSPACE, h: '24', s: DELETE}
+  - {t: R, h: '25'}
+  - {t: ␣, h: '22'}
+  - {t: RETURN, h: '25'}
+  '1':
+  - T
+  - D
+  - L
+  - {t: ▽, type: trans}
+  - '&t_Th'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_lk'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '2':
+  - '&ak_xb'
+  - '&ak_xp'
+  - {t: ▽, type: trans}
+  - '&b_lg'
+  - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
+  - {t: ▽, type: trans}
+  - '&ak_xp'
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '4':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&t_Ch'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_ck'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '5':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_sb'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '6':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '7':
+  - V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_lk'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_lv'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '8':
+  - S
+  - {t: ▽, type: trans}
+  - '&b_lm'
+  - '&b_lml'
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '9':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_sp'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '10':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '11':
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '12':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_sp'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '13':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '14':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&t_pg'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_if'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '15':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - U
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '16':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '17':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - O
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '18':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '19':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '20':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&t_dotcom'
+  - '&t_dotedu'
+  - '&t_dotorg'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '21':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_EXCL'
+  - {t: ▽, type: trans}
+  - '&b_QMARK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '22':
+  - Z
+  - Q
+  - Alt+ 7
+  - Alt+Sft+ 5
+  - Alt+Sft+ 7
+  - AGr+ 4
+  - $
+  - Alt+Sft+ 2
+  - Alt+ 3
+  - AGr+ Y
+  - Alt+ 5
+  - {t: '[', h: '&pairBkt RBKT'}
+  - {t: (, h: '&pairPar RPAR'}
+  - {t: '{', h: '&pairBrc RBRC'}
+  - Alt+ 8
+  - /
+  - {t: '=', h: Shift}
+  - {t: '*', h: Gui}
+  - {t: +, h: Alt}
+  - {t: '-', h: Ctrl}
+  - Alt+Sft+ 9
+  - ']'
+  - )
+  - '}'
+  - Alt+Sft+ 8
+  - ^
+  - '|'
+  - '&'
+  - {t: <, h: '&pairLtGt GT'}
+  - '>'
+  - Alt+ ⌫
+  - Alt+ ⌦
+  - {type: held}
+  - Alt+ 1
+  '23':
+  - Esc
+  - Gui+ ↑
+  - Home
+  - ↑
+  - Page Up
+  - Alt+ ↑
+  - KP SLASH
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - Alt+ ←
+  - Alt+ ←
+  - ←
+  - ↓
+  - →
+  - Alt+ →
+  - KP MULTIPLY
+  - {t: KP 4, h: Shift}
+  - {t: KP 5, h: Gui}
+  - {t: KP 6, h: Alt}
+  - {t: KP PLUS, h: Ctrl}
+  - ⌦
+  - Gui+ ↓
+  - End
+  - ␣
+  - Page Down
+  - Alt+ ↓
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP EQUAL
+  - {t: ⌫, h: '24'}
+  - {t: KP ENTER, h: '25'}
+  - KP 0
+  - KP DOT
+  '24':
+  - F9
+  - F10
+  - F11
+  - F12
+  - F13
+  - '`'
+  - '7'
+  - '8'
+  - '9'
+  - \
+  - {t: F5, h: Ctrl}
+  - {t: F6, h: Alt}
+  - {t: F7, h: Gui}
+  - {t: F8, h: Shift}
+  - F14
+  - CMMA
+  - {t: '1', h: Shift}
+  - {t: '2', h: Gui}
+  - {t: '3', h: Alt}
+  - {t: /, h: Ctrl}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F15
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - {t: ⌫, type: held}
+  - ⌦
+  - '0'
+  - .
+  '25':
+  - Gui+ Q
+  - Gui+ W
+  - Gui+Sft+ 4
+  - Gui+Sft+Ctl+ 4
+  - Esc
+  - Gui+ =
+  - Home
+  - ↑
+  - Page Up
+  - ''
+  - Ctrl
+  - Alt
+  - Gui
+  - Shift
+  - Gui+ F
+  - Alt+ ←
+  - ←
+  - ↓
+  - →
+  - Alt+ →
+  - Gui+ Z
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - Gui+ G
+  - Gui+ -
+  - End
+  - Gui+ 0
+  - Page Down
+  - ''
+  - '&S_AppSwitch'
+  - {t: '&AppSwitch', type: held}
+  - Gui+ [
+  - Gui+ ]
+  '26':
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⏭️
+  - ⏯
+  - Vol Up
+  - BRI UP
+  - BRI UP
+  - Vol Up
+  - MUTE
+  - ⏭️
+  - ''
+  - {t: '&sys_reset R', h: '&bootloader B'}
+  - ⏮️
+  - MUTE
+  - Vol Down
+  - BRI DN
+  - BRI DN
+  - Vol Down
+  - ⏯
+  - ⏮️
+  - Reset
+  - ''
+  - {t: '23', h: toggle}
+  - {type: held}
+  - {type: held}
+combos:
+- p: [11, 12, 13]
+  k: LANG2
+- p: [16, 17, 18]
+  k: LANG1
+- p: [32, 33]
+  k: '26'
+- p: [3, 4]
+  k: '&AppSwitch'
+- p: [28, 29]
+  k: Caps Wrd
+  l: ['0']
+- p: [27, 28, 29]
+  k: Caps Lock
+  l: ['0']
+- p: [22, 23, 24]
+  k: Gui+ RETURN
+- p: [23, 24]
+  k: RETURN
+- p: [0, 1]
+  k: ↹
+  a: top
+  o: 0.15
+- p: [0, 1, 2]
+  k: Win Prev
+- p: [13, 14]
+  k: ␣
+- p: [10, 13]
+  k: Esc
+- p: [20, 23]
+  k: Gui+ A
+- p: [20, 24]
+  k: '&m_selword'
+  l: ['0']
+- p: [20, 21]
+  k: Gui+ Z
+- p: [20, 21, 22]
+  k: Gui+Sft+ Z
+- p: [21, 22]
+  k: {t: Gui+ C, h: Gui+ X}
+- p: [22, 23]
+  k: {t: Gui+ V, h: Gui+Sft+Alt+ V}
+- p: [4, 14]
+  k: Gui+ Q
+  l: ['0']
+- p: [14, 24]
+  k: Gui+ N
+  l: ['0']
+- p: [5, 15]
+  k: Gui+ W
+  l: ['0']
+- p: [15, 25]
+  k: Gui+ O
+  l: ['0']
+- p: [10, 24]
+  k: '&m_findsel'
+  l: ['0']
+- p: [6, 7, 8]
+  k: {t: '&t_Japan J', h: '&t_Japanese P'}
+  l: ['0']
+- p: [1, 3]
+  k: {t: '&t_Qu U', h: Q}
+  l: ['0']
+- p: [11, 13]
+  k: Z
+  l: ['0']
+- p: [6, 8]
+  k: {t: ':', h: Alt+ ;}
+  l: ['0']
+- p: [15, 16]
+  k: ;
+  l: ['0']
+- p: [6, 7]
+  k: '!'
+  l: ['0']
+- p: [7, 8]
+  k: '?'
+  l: ['0']
+- p: [8, 9]
+  k: '`'
+  l: ['0']
+- p: [5, 6]
+  k: {t: '@', h: Sft+Alt+ ;}
+  l: ['0']
+- p: [26, 28]
+  k: _
+  l: ['0']
+- p: [27, 28]
+  k: {t: '=', h: '%'}
+  l: ['0']
+- p: [25, 26]
+  k: {t: Alt+ -, h: Alt+Sft+ -}
+  l: ['0']
+- p: [25, 27]
+  k: Alt+Sft+ -
+  l: ['0']
+- p: [25, 28]
+  k: '~'
+  l: ['0']
+- p: [16, 26]
+  k: Alt+ .
+  l: ['0']
+- p: [17, 27]
+  k: Alt+ Q
+  l: ['0']
+- p: [16, 17]
+  k: {t: Alt+ E, h: '&t_Eaccent E'}
+  l: ['0']
+- p: [17, 18]
+  k: {t: Alt+ `, h: '&t_Egrave E'}
+  l: ['0']
+- p: [16, 18]
+  k: {t: Alt+ 6, h: '&t_Eacute E'}
+  l: ['0']
+- p: [17, 19]
+  k: {t: Alt+ A, h: '&t_Omacron E'}
+  l: ['0']
+- p: [16, 19]
+  k: {t: Alt+ K, h: '&t_Aring A'}
+  l: ['0']
+- p: [26, 27]
+  k: {t: Alt+ U, h: '&t_Uumlaut U'}
+  l: ['0']
+- p: [10, 12]
+  k: {t: Alt+ C, h: '&t_Cedille C'}
+  l: ['0']
+- p: [10, 11, 12]
+  k: '&t_Sch'
+  l: ['0']
+- p: [10, 11, 13]
+  k: '&t_Tch'
+  l: ['0']
+- p: [12, 13]
+  k: {t: '&t_Th T', h: '&t_tion H'}
+  l: ['0']
+- p: [11, 12]
+  k: '&t_Ch'
+  l: ['0']
+- p: [1, 2]
+  k: '&t_Wh'
+  l: ['0']
+- p: [10, 11]
+  k: {t: '&t_Sh S', h: '&t_sion H'}
+  l: ['0']
+- p: [2, 3]
+  k: {t: '&t_Gh G', h: '&t_ght H'}
+  l: ['0']
+- p: [21, 23]
+  k: '&t_Ph'
+  l: ['0']
+- p: [18, 19]
+  k: '&t_PnI'
+  l: ['0']
+- p: [18, 2]
+  k: '&t_PnIm'
+  l: ['0']
+- p: [18, 22]
+  k: '&t_PnIll'
+  l: ['0']
+- p: [18, 23]
+  k: '&t_PnId'
+  l: ['0']
+- p: [18, 24]
+  k: '&t_PnIve'
+  l: ['0']
+- p: [28, 20]
+  k: '&t_PnYoure'
+  l: ['0']
+- p: [28, 21]
+  k: '&t_PnYour'
+  l: ['0']
+- p: [28, 22]
+  k: '&t_PnYoull'
+  l: ['0']
+- p: [28, 23]
+  k: '&t_PnYoud'
+  l: ['0']
+- p: [28, 24]
+  k: '&t_PnYouve'
+  l: ['0']
+- p: [0, 9]
+  k: '&t_PnWere'
+  l: ['0']
+- p: [0, 2]
+  k: '&t_PnWell'
+  l: ['0']
+- p: [0, 3]
+  k: '&t_PnWed'
+  l: ['0']
+- p: [0, 4]
+  k: '&t_PnWeve'
+  l: ['0']
+- p: [0, 30]
+  k: '&t_PnWhere'
+  l: ['0']
+- p: [16, 17]
+  k: (
+  l: ['23']
+- p: [17, 18]
+  k: )
+  l: ['23']
+- p: [18, 19]
+  k: '='
+  l: ['23']
+- p: [16, 18]
+  k: ':'
+  l: ['23']
+- p: [28, 29]
+  k: '%'
+  l: ['23']
+- p: [15, 16]
+  k: <
+  l: ['23']
+- p: [15, 19]
+  k: '>'
+  l: ['23']
+- p: [25, 26]
+  k: Alt+ -
+  l: ['23']
+- p: [25, 29]
+  k: '~'
+  l: ['23']
+- p: [26, 29]
+  k: Alt+ ;
+  l: ['23']
+- p: [6, 7]
+  k: $
+  l: ['23']
+- p: [5, 6]
+  k: Alt+ 4
+  l: ['23']
+- p: [7, 8]
+  k: Sft+Alt+ 2
+  l: ['23']
+- p: [8, 9]
+  k: Alt+ Y
+  l: ['23']
+- p: [6, 8]
+  k: Alt+ 3
+  l: ['23']
