@@ -4,10 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
+##    - name: ssbb
+##      url-base: https://github.com/ssbb
   projects:
     - name: zmk
       remote: caksoylar
       revision: caksoylar/zen-8bit
       import: app/west.yml
+##    - name: zmk-antecedent-morph
+##      remote: ssbb
+##      revision: v1
   self:
     path: config

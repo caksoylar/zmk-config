@@ -47,6 +47,7 @@ COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from an
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, RB3 RB4, l_alpha) // CAPSWORD
 COMBO_LAYER(capslk, &kp CAPS, RB2 RB3 RB4, l_alpha) // CAPS LOCK
+COMBO_ANY(srch, &kp LG(SPACE),    LM2 LM1 LM0) // platform search
 
 //
 // Editing actions (&whitespace)
