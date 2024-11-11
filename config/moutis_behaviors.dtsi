@@ -187,10 +187,22 @@ behaviors {
             bindings = <&ak_dot>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        DotColnJ: DotColnJ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         SlshStar: SlshStar {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&ak_FSLH>, <&kp STAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SlshStarJ: SlshStarJ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         HashDllr: HashDllr {
