@@ -7,6 +7,17 @@
  
 macros {
 
+     ZMK_MACRO(m_alpha,
+        bindings =
+            <&kp LANG2>, // switch to Roman/Latin script (m_henk)
+            <&to l_alpha>; // make alpha layer default
+       )
+     ZMK_MACRO(m_japan,
+        bindings =
+            <&kp LANG1>, // switch to Japanese script (m_henk)
+            <&to l_japan>; // make Japanese layer default
+       )
+
 #ifdef COMMA_CAP
 /*
      ZMK_MACRO(cc,
@@ -397,6 +408,12 @@ macros {
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
                     , <&macro_tap &kp A &kp P &kp A &kp N &kp E &kp S &kp E &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_nn, // from the Japanese layer, L=ん
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp N>
+                , <&macro_tap &kp N>
                 ;
         )
 
