@@ -75,18 +75,18 @@ COMBO_LAYER(findsel, &m_findsel,  LM4 LB0, l_alpha l_japan)
 //
 COMBO_LAYER(t_Japan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
 COMBO_LAYER(t_Q, &lk_qu Q U,      LT3 LT1, l_alpha)
-COMBO_LAYER(t_Z, &kp Z,           LM3 LM1, l_alpha)
-COMBO_LAYER(t_Coln, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
-COMBO_LAYER(t_Semi, &kp SEMI,     RM0 RM1, l_alpha)
-COMBO_LAYER(t_Excl, &kp EXCL,     RT1 RT2, l_alpha)
-COMBO_LAYER(t_Ques, &kp QMARK,    RT2 RT3, l_alpha)
-COMBO_LAYER(t_Grav, &kp GRAVE,    RT3 RT4, l_alpha)
-COMBO_LAYER(t_atMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
-COMBO_LAYER(t_Under, &kp UNDER,   RB1 RB3, l_alpha) // _
-COMBO_LAYER(t_Equal, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
-COMBO_LAYER(t_Ndash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
-COMBO_LAYER(t_Mdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
-COMBO_LAYER(t_Tilde, &kp TILDE,   RB0 RB3, l_alpha) // ~ tilde (wave dash)
+COMBO_LAYER(t_Z, &kp Z,           LM3 LM1, l_alpha l_japan)
+COMBO_LAYER(t_Coln, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha l_japan)
+COMBO_LAYER(t_Semi, &kp SEMI,     RM0 RM1, l_alpha l_japan)
+COMBO_LAYER(t_Excl, &kp EXCL,     RT1 RT2, l_alpha l_japan)
+COMBO_LAYER(t_Ques, &kp QMARK,    RT2 RT3, l_alpha l_japan)
+COMBO_LAYER(t_Grav, &kp GRAVE,    RT3 RT4, l_alpha l_japan)
+COMBO_LAYER(t_atMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha l_japan) // @ (№ if held)
+COMBO_LAYER(t_Under, &kp UNDER,   RB1 RB3, l_alpha l_japan) // _
+COMBO_LAYER(t_Equal, &lk PRCNT EQUAL,   RB2 RB3, l_alpha l_japan) // = (percent if held)
+COMBO_LAYER(t_Ndash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha l_japan) // N-dash (M-dash if held)
+COMBO_LAYER(t_Mdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha l_japan) // M-dash (minus)
+COMBO_LAYER(t_Tilde, &kp TILDE,   RB0 RB3, l_alpha l_japan) // ~ tilde (wave dash)
 
 COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
 COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
