@@ -59,19 +59,19 @@
                 };
 
 //                                     shorcuts & Navigation
-//╭────────────────────────────────────────────╮ ╭──────────────────────────────────────────╮
-//|  close |   quit  | ScrCp | SelCp |   ESC   | | Zoom+ |  HOME  |   UP   |  PG_UP |       |
-//|   ctrl |   alt   |  gui  |  shft |   Find  | | Lword |  LEFT  |  DOWN  |   RGT  | Rword |
-//|  undo  |   cut   |  copy |  pste | findAgn | | Zoom- |   END  | Zreset |  PG_DN |  |
-//╰──────────────────╮       | mute  |  APPSW  | |  back |  fwd   |        ╭────────────────╯
-//                   ╰─────────────────────────╯ ╰─────────────────────────╯
+//╭─────────────────────────────────────────────╮ ╭────────────────────────────────────────────╮
+//|  close |   quit  | ScrCp | SelCp |  pstmtch | |   Top   |  HOME  |   UP   |  PG_UP | ¶up   |
+//|  ctrl  |   alt   |  gui  |  shft |   Find   | |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
+//|  undo  |   cut   |  copy |  pste |  findAgn | |   Botm  |   END  |  DOWN  |  PG_DN | ¶dn   |
+//╰──────────────────╮       | APPSW |   APPSW  | |  back   |  fwd   |        ╭────────────────╯
+//                   ╰──────────────────────────╯ ╰───────────────────────────╯
                 l_nav {
                     label = "l_nav";
                     bindings = <
-&kp RG(Q) &kp RG(W) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp ESC  &kp LG(EQUAL) &kp HOME &kp UP     &kp PG_UP &none
-&kp LCTRL  &kp LALT &kp LGUI &kp LSHFT   &kp RG(F)             &kp LA(LEFT)  &kp LEFT &kp DOWN   &kp RIGHT &kp LA(RIGHT)
-&kp RG(Z)  &kp RG(X) &kp RG(C) &kp RG(V) &kp RG(G)             &kp LG(MINUS) &kp END  &kp LG(N0) &kp PG_DN &none
-                            &S_AppSwitch    &AppSwitch        &kp LG(LBKT) &kp LG(RBKT)
+&kp RG(Q) &kp RG(W) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp ESC  &kp LG(UP)   &kp HOME &kp UP   &kp PG_UP &kp LA(UP)
+&kp LCTRL  &kp LALT &kp LGUI &kp LSHFT   &kp RG(F)             &kp LA(LEFT) &kp LEFT &kp DOWN &kp RIGHT &kp LA(RIGHT)
+&kp RG(Z)  &kp RG(X) &kp RG(C) &kp RG(V) &kp RG(G)             &kp LG(DOWN) &kp END  &kp DOWN &kp PG_DN &kp LA(DOWN)
+                            &S_AppSwitch    &AppSwitch         &kp LG(LBKT) &kp LG(RBKT)
                     >;
                 };
 
@@ -79,10 +79,9 @@
                 l_cfg {
                         label = "l_cfg";
                         bindings = <
-//&none &none &none &none &none &none &none &none &none &none &none &none
-&bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &none        &none        &none      &none        &none
-&none        &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_VOL_UP &kp C_MUTE &kp C_NEXT &none
-&lk_RstBoot B R   &kp C_PREV   &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN &kp C_BRI_DN &kp C_VOL_DN &kp C_PP   &kp C_PREV   &sys_reset
-                                            &none &tog l_num     &none   &none
+&bt BT_SEL 3 &bt BT_SEL 2  &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &kp LG(EQUAL) &none        &none      &none      &none
+&none        &kp C_NEXT    &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP &kp LG(N0)    &kp C_VOL_UP &kp C_MUTE &kp C_NEXT &none
+&lk_RstBoot B R &kp C_PREV &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN &kp LG(MINUS) &kp C_VOL_DN &kp C_PP   &kp C_PREV &none
+                                             &none &tog l_num     &none   &none
                         >;
                 };
