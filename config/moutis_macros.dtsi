@@ -625,4 +625,16 @@ macros {
 
 #endif // EN_PRONOUN_COMBOS
 
+
+    ZMK_MACRO(t_wo,
+        tap-ms = <40>;
+        bindings = <&kp W &kp O>
+                ;
+        )
+    ZMK_MACRO(t_shi,
+        tap-ms = <40>;
+        bindings = <&kp W &kp A &kp T &kp A &kp S &kp I>
+                ;
+        )
+
     };

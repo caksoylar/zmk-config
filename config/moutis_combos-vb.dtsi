@@ -140,6 +140,11 @@ COMBO_LAYER(pnWhere, &t_PnWhere,  LT4 LH1, l_alpha) // "Where "
 
 #endif // EN_PRONOUN_COMBOS
 
+// Japanese layer combos
+COMBO_LAYER(wo,  &t_wo,     LT3 LT2, l_japan) // を
+COMBO_LAYER(shi, &t_shi,    RM3 RM4, l_japan) // "わたし "
+
+
 /* numpad symbol combos */
 
 COMBO_LAYER(numLPRN,  &kp LPAR,      RM1 RM2, l_num)
