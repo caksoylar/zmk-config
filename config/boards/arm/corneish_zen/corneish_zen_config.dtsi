@@ -63,9 +63,9 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 #define RB4 34
 #define RB5 35
 
-#define LH3 38
-#define LH1 37
-#define LH2 36
+#define LH1 38
+#define LH2 37
+#define LH3 36
 #define RH1 39
 #define RH2 40
 #define RH3 41
