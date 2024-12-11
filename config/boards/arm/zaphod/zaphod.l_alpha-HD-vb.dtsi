@@ -20,7 +20,7 @@
                 >;
             };
             l_jp {
-                label = "HD-Jp"; // Japanese "mode" (L, C, X not used in Japanese, so repurpose)
+                label = "HD-Jp"; // Japanese "mode" (L, C, X not used in Japanese, so repurpose to -, Z, ん)
                 bindings = <
           &kp MINUS &kp W      &kp M   &kp G         &kp J      _______    &DotColnJ    &SlshStarJ   &kp LBKT    &kp RBKT
           _______   &hml LALT Z _______ &hml LSHFT T &kp K      _______    &hmr RSHFT A &hmr RGUI E  &hmr RALT I _______
