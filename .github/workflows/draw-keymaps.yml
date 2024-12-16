@@ -18,5 +18,5 @@ jobs:
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
-      draw_args: "corneish_zen:'-k corne_rotated -l LAYOUT_split_3x5_3 --ghost-keys 20 24 25 29 30 35' hummingbird:'-k rufous'"
+      draw_args: "corneish_zen:'--ghost-keys 20 24 25 29 30 35' hummingbird:'-k rufous'"
       json_path: keymap-drawer/layouts
