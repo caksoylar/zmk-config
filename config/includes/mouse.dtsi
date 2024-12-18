@@ -2,6 +2,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
 
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &mmv {
     acceleration-exponent = <1>;      // 1
@@ -13,4 +14,11 @@
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <40>;      // 300
     trigger-period-ms = <16>;
+};
+
+&mmv_input_listener {
+    precision {
+        layers = <NAV>;
+    	input-processors = <&zip_xy_scaler 1 4>;
+    };
 };
