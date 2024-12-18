@@ -1,3 +1,2 @@
-#define MOUSE_KEYS
 #include "keypos_def/keypos_30keys.h"
 #include "includes/3x5.dtsi"
