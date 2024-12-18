@@ -1096,8 +1096,9 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="0" dy="-0.6em">Forward</tspan><tspan x="0" dy="1.2em">Click</tspan>
 </text>
 </g>
-<g transform="translate(266, 182)" class="key keypos-26">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
+<g transform="translate(266, 182)" class="key trans keypos-26">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(350, 182)" class="key keypos-27">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>

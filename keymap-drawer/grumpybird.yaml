@@ -200,7 +200,7 @@ layers:
   - Back Click
   - Middle Click
   - Forward Click
-  - ''
+  - {t: ▽, type: trans}
   - Left Click
 combos:
 - p: [2, 3]

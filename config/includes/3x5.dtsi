@@ -36,12 +36,7 @@
 #    define FN_EXTRA2 &kp PAUSE_BREAK
 #endif
 
-#ifdef MOUSE_KEYS
-#    include "mouse.dtsi"
-#    define MS_ACT(key) &lt MSE key
-#else
-#    define MS_ACT(key) &kp key
-#endif
+#include "mouse.dtsi"
 
 &mt {
     flavor = "hold-preferred";
@@ -150,7 +145,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL A, &aml LGUI R,  &aml LALT S,  &asl LSHFT T, &kp G,            &kp M,        &asr RSHFT N, &amr RALT E,  &amr RGUI I,  &amr RCTRL O, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z,        &kp X,        &kp C,        MS_ACT(D),    &kp V,            &kp J,        &kp H,        &kp COMMA,    &kp DOT,      &kp SLASH,    \
+     &kp Z,        &kp X,        &kp C,        &lt MSE D,    &kp V,            &kp J,        &kp H,        &kp COMMA,    &kp DOT,      &kp SLASH,    \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE,   &lt SYM BSPC, &mt RSHFT RET, &mt RALT DEL                             \
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -165,7 +160,7 @@
 //, ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL R, &aml LGUI S,  &aml LALT N,  &asl LSHFT T, &kp P,            &kp K,        &asr RSHFT H, &amr RALT E,  &amr RGUI I,  &amr RCTRL A, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none,        &kp W,        &kp M,        MS_ACT(G),    &none,            &none,        &kp D,        &kp COMMA,    &kp DOT,      &none,        \
+     &none,        &kp W,        &kp M,        &lt MSE G,    &none,            &none,        &kp D,        &kp COMMA,    &kp DOT,      &none,        \
 //, ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE,   &lt SYM BSPC, &mt RSHFT RET, &mt RALT DEL                             \
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -232,7 +227,6 @@
             )>;
         };
 
-#ifdef MOUSE_KEYS
         mouse_layer {
             display-name = "MSE";
             bindings = <LAYER_FROM36( \
@@ -247,6 +241,5 @@
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
             )>;
         };
-#endif
     };
 };

@@ -24,7 +24,7 @@ layers:
   - Z
   - X
   - C
-  - D
+  - {t: D, h: MSE}
   - V
   - J
   - H
@@ -59,7 +59,7 @@ layers:
   - ''
   - W
   - M
-  - G
+  - {t: G, h: MSE}
   - ''
   - ''
   - D
@@ -210,6 +210,41 @@ layers:
   - {type: held}
   - {type: held}
   - {t: Reset, h: Boot}
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - Scroll →
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
+  - ''
+  - Right Click
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
 combos:
 - p: [2, 3]
   k: J
@@ -303,3 +338,6 @@ combos:
   k: Show Conn
   l: [FUN]
   a: top
+- p: [30, 31]
+  k: MSE
+  l: [DEF, BRD]
