@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: caksoylar
+      revision: caksoylar/zen-8bit
       import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
