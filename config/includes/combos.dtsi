@@ -51,6 +51,8 @@ COMBO(btclr,  &bt BT_CLR,  RB2 RB3,     FUN,         100, 200)
 COMBO(indbat, &ind_bat,    LT2 RT2,     FUN,         100, 200)
 COMBO(indcon, &ind_con,    LT1 RT1,     FUN,         100, 200)
 
+COMBO(bootld, &bootloader, LT0 RT0,     FUN,         100, 500)
+
 #if defined(LH1)
 COMBO(mse_l,  &mo MSE,     LH1 LH0,     DEF BRD,     150,   0, slow-release;)
 #endif
