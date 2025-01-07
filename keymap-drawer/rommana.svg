@@ -1035,6 +1035,12 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="369" dy="-0.6em">Show</tspan><tspan x="369" dy="1.2em">Conn</tspan>
 </text>
 </g>
+<g class="combo combopos-4">
+<path d="M369,71 l-63,0" class="combo"/>
+<path d="M369,71 l63,0" class="combo"/>
+<rect rx="6" ry="6" x="355" y="58" width="28" height="26" class="combo"/>
+<text x="369" y="71" class="combo tap">Boot</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2000)" class="layer-MSE">

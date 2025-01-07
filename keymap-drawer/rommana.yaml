@@ -310,6 +310,9 @@ combos:
   k: Show Conn
   l: [FUN]
   a: top
+- p: [4, 5]
+  k: Boot
+  l: [FUN]
 - p: [26, 27]
   k: MSE
   l: [DEF, BRD]

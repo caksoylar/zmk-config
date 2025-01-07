@@ -1,3 +1,5 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
 
@@ -19,6 +21,25 @@
 &mmv_input_listener {
     precision {
         layers = <NAV>;
-    	input-processors = <&zip_xy_scaler 1 4>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
+};
+
+/ {
+    input_processors {
+        zip_scroll_scaler: zip_scroll_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+            track-remainders;
+        };
+    };
+};
+
+&msc_input_listener {
+    turbo {
+        layers = <NAV>;
+        input-processors = <&zip_scroll_scaler 3 1>;
     };
 };
