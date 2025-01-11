@@ -41,4 +41,4 @@ This widget is a ZMK module housed in [`zmk-rgbled-widget`](https://github.com/c
 
 While the `main` branch of this repo uses upstream ZMK `main`, in the `corneish-zen` [branch](https://github.com/caksoylar/zmk-config/tree/corneish-zen) I use a custom ZMK branch referenced in [west.yml](config/west.yml) which contains [display improvements for the Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a).
 
-My keymap also uses a swapper key for single button window switching, defined using [the tri-state behavior module](https://github.com/caksoylar/zmk-tri-state).
+My keymap also uses a swapper key for single button window switching, defined using [the smart toggle behavior module](https://github.com/caksoylar/zmk-smart-toggle).

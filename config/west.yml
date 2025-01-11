@@ -12,7 +12,7 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
-    - name: zmk-tri-state
+    - name: zmk-smart-toggle
       remote: caksoylar
       revision: main
   self:

@@ -99,10 +99,10 @@
 
         // Swapper for smart alt+tab
         swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
+            compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <SWP_POS>;
+            bindings = <&kp LALT>, <&kp TAB>;
+            ignored-key-positions = <SWP_POS RM1 RM2 RM3 RT2>;
         };
 
         rst_boot: rst_boot {
