@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: berylline}
+layout: {zmk_keyboard: rommana}
 layers:
   DEF:
   - Q

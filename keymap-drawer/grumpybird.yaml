@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: grumpybird}
 layers:
   DEF:
   - Q

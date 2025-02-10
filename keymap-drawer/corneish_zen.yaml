@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x5_3}
+layout: {zmk_keyboard: corneish_zen, layout_name: foostan_corne_5col_layout}
 layers:
   DEF:
   - Q

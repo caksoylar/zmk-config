@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: paroxysm}
+layout: {zmk_keyboard: hypergolic}
 layers:
   DEF:
   - Q

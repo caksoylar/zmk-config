@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: hummingbird}
+layout: {zmk_keyboard: hummingbird}
 layers:
   DEF:
   - Q
