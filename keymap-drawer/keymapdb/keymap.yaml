@@ -1,3 +1,7 @@
+draw_config:
+  footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
+  dark_mode: false
+  glyph_tap_size: 16
 layout: {qmk_keyboard: rufous}
 layers:
   Base:
@@ -28,9 +32,9 @@ layers:
   - ','
   - .
   - {t: Esc, h: Ctrl}
-  - {t: ␣, h: Nav}
-  - {t: ⌫, h: Sym}
-  - {t: ⏎, h: Shift}
+  - {t: $$mdi:keyboard-space$$, h: Nav}
+  - {t: $$mdi:backspace-outline$$, h: Sym}
+  - {t: $$mdi:keyboard-return$$, h: Shift}
   Sym:
   - '!'
   - '@'
@@ -58,8 +62,8 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ⌫
-  - {t: ▽, type: trans}
+  - $$mdi:backspace-outline$$
+  - {t: $$mdi:triangle-down-outline$$, type: trans}
   - {type: held}
   - ''
   Nav:
@@ -76,7 +80,7 @@ layers:
   - Ctrl
   - Gui
   - Alt
-  - {t: ↹, h: Shift}
+  - {t: $$mdi:keyboard-tab$$, h: Shift}
   - Vol Down
   - Home
   - ←
@@ -86,13 +90,13 @@ layers:
   - Win Prev
   - Win Next
   - Paste
-  - ⌦
-  - ⏮️
-  - ⏭️
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:skip-backward$$
+  - $$mdi:skip-forward$$
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - ␣
+  - {t: $$mdi:triangle-down-outline$$, type: trans}
+  - $$mdi:keyboard-space$$
   Function:
   - F1
   - F2
@@ -178,11 +182,11 @@ combos:
   k: ']'
   l: [Base]
 - p: [11, 13]
-  k: ↹
+  k: $$mdi:keyboard-tab$$
   l: [Base, Sym]
   draw_separate: true
 - p: [16, 18]
-  k: ⌦
+  k: $$mdi:backspace-reverse-outline$$
   l: [Base, Sym]
   draw_separate: true
 - p: [11, 12, 13]
@@ -190,7 +194,7 @@ combos:
   l: [Base, Sym]
   draw_separate: true
 - p: [16, 17, 18]
-  k: ⏎
+  k: $$mdi:keyboard-return$$
   l: [Base, Sym]
   draw_separate: true
 - p: [13, 16]
@@ -202,7 +206,7 @@ combos:
   l: [Base]
   draw_separate: true
 - p: [4, 14]
-  k: ⏯
+  k: $$mdi:play-pause$$
   l: [Nav]
   a: right
 - p: [4, 5]
