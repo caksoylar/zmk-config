@@ -15,8 +15,8 @@ parse_config:
     '&kp LC(F4)': Tab Close
     '&kp LS(TAB)': Win Prev
     '&kp LS(INS)': Paste
-    '&kp LC(INS)': Copy
-    '&kp LC(DEL)': Cut
+    '&kp LC(C)': Copy
+    '&kp LC(X)': Cut
     '&kp LC(Z)': Undo
     '&kp LG(L)': Lock
 
