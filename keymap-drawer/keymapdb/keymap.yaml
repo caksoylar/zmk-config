@@ -41,11 +41,11 @@ layers:
   - '#'
   - $
   - '%'
-  - /
+  - ','
   - '7'
   - '8'
   - '9'
-  - ','
+  - ''
   - +
   - '='
   - _
@@ -76,10 +76,10 @@ layers:
   - Page Down
   - ↑
   - Page Up
-  - Calc
+  - ''
   - Ctrl
-  - Gui
-  - Alt
+  - {t: Win Prev, h: Gui}
+  - {t: Win Next, h: Alt}
   - {t: $$mdi:keyboard-tab$$, h: Shift}
   - Vol Down
   - Home
@@ -87,8 +87,8 @@ layers:
   - ↓
   - →
   - End
-  - Win Prev
-  - Win Next
+  - Cut
+  - Copy
   - Paste
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:skip-backward$$
@@ -98,29 +98,29 @@ layers:
   - {t: $$mdi:triangle-down-outline$$, type: trans}
   - $$mdi:keyboard-space$$
   Function:
+  - ''
   - F1
   - F2
   - F3
   - F4
-  - F5
   - Out USB
   - Out BLE
   - {t: Base, h: toggle}
   - {t: Bird, h: toggle}
   - {t: Gaming, h: toggle}
+  - F5
   - F6
   - F7
   - F8
   - F9
-  - F10
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
-  - Desk Left
-  - Desk Right
+  - F10
   - F11
+  - F12
   - Caps Lock
   - Print Scrn
   - Pause Break
@@ -134,21 +134,21 @@ layers:
   - ''
   - ''
   - ''
-  - Scroll ←
+  - Right Click
   - Scroll ↓
   - Mouse ↑
   - Scroll ↑
-  - Scroll →
+  - ''
   - Ctrl
   - Gui
   - Alt
   - Shift
   - ''
-  - Right Click
+  - Scroll ←
   - Mouse ←
   - Mouse ↓
   - Mouse →
-  - ''
+  - Scroll →
   - ''
   - ''
   - {type: held}
@@ -156,7 +156,7 @@ layers:
   - Middle Click
   - Forward Click
   - ''
-  - ''
+  - $$mdi:triangle-down-outline$$
   - Left Click
   - Right Click
 combos:
@@ -197,6 +197,12 @@ combos:
   k: $$mdi:keyboard-return$$
   l: [Base, Sym]
   draw_separate: true
+- p: [12, 13]
+  k: '!'
+  l: [Sym]
+- p: [11, 12]
+  k: '?'
+  l: [Sym]
 - p: [13, 16]
   k: Caps Word
   l: [Base]
@@ -209,6 +215,10 @@ combos:
   k: $$mdi:play-pause$$
   l: [Nav]
   a: right
+- p: [5, 15]
+  k: Calc
+  l: [Nav]
+  a: left
 - p: [4, 5]
   k: Boot
   l: [Function]
@@ -225,8 +235,8 @@ combos:
   k: /
   l: [Base, Sym]
 - p: [20, 21]
-  k: F12
-  l: [Function]
+  k: Undo
+  l: [Nav]
   a: bottom
 - p: [24, 25]
   k: BT Clr

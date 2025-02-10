@@ -3,21 +3,21 @@ parse_config:
   raw_binding_map:
     '&sys_reset': Reset
     '&bootloader': Boot
-    '&rst_boot 0 0': {t: Reset, h: Boot}
     '&swapper': Win Next
     '&caps_word': Caps Word
     '&inv_qm': ¿
     '&ind_bat': Show Batt
     '&ind_con': Show Conn
 
-    '&kp LC(LG(LEFT))': Desk Left
-    '&kp LC(LG(RIGHT))': Desk Right
     '&kp LC(TAB)': Tab Right
     '&kp LC(LS(TAB))': Tab Left
     '&kp LA(F4)': Win Close
     '&kp LC(F4)': Tab Close
     '&kp LS(TAB)': Win Prev
     '&kp LS(INS)': Paste
+    '&kp LC(INS)': Copy
+    '&kp LC(DEL)': Cut
+    '&kp LC(Z)': Undo
     '&kp LG(L)': Lock
 
     '&out OUT_USB': Out USB
@@ -48,9 +48,10 @@ parse_config:
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
     combo_del:    {align: top, o: 0.15}
-    combo_f12:    {align: bottom}
     combo_btclr:  {align: bottom}
+    combo_undo:   {align: bottom}
     combo_play:   {align: right}
+    combo_calc:   {align: left}
     combo_capswd: {draw_separate: true}
     combo_semi:   {draw_separate: true}
     combo_grave:  {draw_separate: true}
