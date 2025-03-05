@@ -229,11 +229,11 @@
             display-name = "MSE";
             bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none,        &none,        &none,        &none,        &none,            &mkp RCLK,  &msc SCRL_DOWN, &mmv MOVE_UP, &msc SCRL_UP, &none,                \
+     &mkp MB5,     &mkp MB4,     &mkp RCLK,    &none,        &none,            &mkp RCLK,  &msc SCRL_DOWN, &mmv MOVE_UP, &msc SCRL_UP, &none,                \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LCTRL,    &kp LGUI,     &kp LALT,     &kp LSHFT,    &none,        &msc SCRL_LEFT, &mmv MOVE_LEFT, &mmv MOVE_DOWN, &mmv MOVE_RIGHT, &msc SCRL_RIGHT, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none,        &none,        &none,        &none,        &none,            &none,        &mkp MB4,     &mkp MCLK,    &mkp MB5,     &none,                \
+     &none,        &mkp MCLK,    &mkp LCLK,    &none,        &none,            &none,        &mkp MB4,     &mkp MCLK,    &mkp MB5,     &none,                \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &none,        &none,        &trans,           &mkp LCLK,    &mkp RCLK,    &none                                             \
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯

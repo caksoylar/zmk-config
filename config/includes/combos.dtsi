@@ -50,6 +50,8 @@ COMBO(bslh,   &kp BSLH,      RB1 RB2,     DEF BRD,      80, 100)
 COMBO(slsh,   &kp SLASH,     RB2 RB3,     DEF BRD SYM,  80,  50)
 COMBO(undo,   &kp LC(Z),     LB3 LB2,     NAV,          80,  50)
 
+COMBO(mouse,  &tog MSE,      LB3 LB2 LB1, DEF BRD MSE, 100, 100)
+
 COMBO(btclr,  &bt BT_CLR,    RB2 RB3,     FUN,         100, 200)
 
 COMBO(indbat, &ind_bat,      LT2 RT2,     FUN,         100, 200)

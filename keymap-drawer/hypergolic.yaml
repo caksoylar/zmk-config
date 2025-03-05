@@ -211,9 +211,9 @@ layers:
   - {type: held}
   - {t: Reset, h: Boot}
   MSE:
-  - ''
-  - ''
-  - ''
+  - Forward Click
+  - Back Click
+  - Right Click
   - ''
   - ''
   - Right Click
@@ -232,8 +232,8 @@ layers:
   - Mouse →
   - Scroll →
   - ''
-  - ''
-  - ''
+  - Middle Click
+  - Left Click
   - {type: held}
   - ''
   - ''
@@ -334,6 +334,10 @@ combos:
 - p: [21, 22]
   k: Undo
   l: [NAV]
+  a: bottom
+- p: [21, 22, 23]
+  k: {t: MSE, h: toggle}
+  l: [DEF, BRD, MSE]
   a: bottom
 - p: [27, 28]
   k: BT CLR
