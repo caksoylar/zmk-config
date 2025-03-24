@@ -46,27 +46,17 @@ parse_config:
     '&mkp MB5': Forward Click
 
   zmk_combos:
-    combo_tab:    {align: top, o: 0.15}
-    combo_del:    {align: top, o: 0.15}
     combo_btclr:  {align: bottom}
     combo_undo:   {align: bottom}
     combo_mouse:  {align: bottom}
     combo_play:   {align: right}
     combo_calc:   {align: left}
     combo_capswd: {draw_separate: true}
-    combo_semi:   {draw_separate: true}
-    combo_grave:  {draw_separate: true}
     combo_lpar:   {draw_separate: true}
     combo_rpar:   {draw_separate: true}
-    combo_lbkt:   {draw_separate: true}
-    combo_rbkt:   {draw_separate: true}
-    combo_tab:    {draw_separate: true}
-    combo_del:    {draw_separate: true}
     combo_esc:    {draw_separate: true}
     combo_ret:    {draw_separate: true}
     combo_lock:   {draw_separate: true}
-    combo_bslh:   {draw_separate: true}
-    combo_slsh:   {draw_separate: true}
     combo_indbat: {align: top, o: 0.25}
     combo_indcon: {align: top}
 

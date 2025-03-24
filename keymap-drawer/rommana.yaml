@@ -29,7 +29,7 @@ layers:
   - .
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
+  - SYM
   - {t: ⏎, h: Shift}
   BRD:
   - X
@@ -60,7 +60,7 @@ layers:
   - .
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
+  - SYM
   - {t: ⏎, h: Shift}
   GME:
   - ↹
@@ -138,7 +138,7 @@ layers:
   - Ctrl
   - {t: Win Prev, h: Gui}
   - {t: Win Next, h: Alt}
-  - {t: ↹, h: Shift}
+  - Shift
   - Vol Down
   - Home
   - ←
@@ -230,35 +230,29 @@ combos:
 - p: [6, 7]
   k: ;
   l: [DEF, BRD, SYM]
-  draw_separate: true
 - p: [7, 8]
   k: '`'
   l: [DEF, BRD]
-  draw_separate: true
-- p: [12, 13]
+- p: [11, 13]
   k: (
   l: [DEF, BRD]
   draw_separate: true
-- p: [16, 17]
+- p: [16, 18]
   k: )
   l: [DEF, BRD]
   draw_separate: true
 - p: [11, 12]
   k: '['
   l: [DEF, BRD]
-  draw_separate: true
 - p: [17, 18]
   k: ']'
   l: [DEF, BRD]
-  draw_separate: true
-- p: [11, 13]
+- p: [12, 13]
   k: ↹
   l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [16, 18]
-  k: ⌦
+- p: [16, 17]
+  k: ⌫
   l: [DEF, BRD, SYM]
-  draw_separate: true
 - p: [11, 12, 13]
   k: Esc
   l: [DEF, BRD, SYM]
@@ -298,11 +292,9 @@ combos:
 - p: [23, 24]
   k: \
   l: [DEF, BRD]
-  draw_separate: true
 - p: [24, 25]
   k: /
   l: [DEF, BRD, SYM]
-  draw_separate: true
 - p: [20, 21]
   k: Undo
   l: [NAV]
@@ -327,6 +319,3 @@ combos:
 - p: [4, 5]
   k: Boot
   l: [FUN]
-- p: [26, 27]
-  k: MSE
-  l: [DEF, BRD]
