@@ -221,31 +221,17 @@ combos:
 - p: [2, 3]
   k: J
   l: [DEF]
-- p: [2, 3]
-  k: Q
-  l: [BRD]
+- p: [21, 22]
+  k: V
+  l: [DEF]
 - p: [1, 2]
   k: V
   l: [BRD]
-- p: [6, 7]
-  k: ;
-  l: [DEF, BRD, SYM]
-- p: [7, 8]
-  k: '`'
-  l: [DEF, BRD]
-- p: [11, 13]
-  k: (
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [16, 18]
-  k: )
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [11, 12]
-  k: '['
-  l: [DEF, BRD]
-- p: [17, 18]
-  k: ']'
+- p: [2, 3]
+  k: Q
+  l: [BRD]
+- p: [20, 21]
+  k: Z
   l: [DEF, BRD]
 - p: [12, 13]
   k: ↹
@@ -261,12 +247,39 @@ combos:
   k: ⏎
   l: [DEF, BRD, SYM]
   draw_separate: true
-- p: [12, 13]
+- p: [6, 7]
+  k: ;
+  l: [DEF, BRD, SYM]
+- p: [7, 8]
+  k: '`'
+  l: [DEF, BRD, SYM]
+- p: [23, 24]
+  k: \
+  l: [DEF, BRD, SYM]
+- p: [24, 25]
+  k: /
+  l: [DEF, BRD, SYM]
+- p: [11, 13]
+  k: (
+  l: [DEF, BRD, SYM]
+  draw_separate: true
+- p: [16, 18]
+  k: )
+  l: [DEF, BRD, SYM]
+  draw_separate: true
+- p: [11, 12]
+  k: '['
+  l: [DEF, BRD, SYM]
+- p: [17, 18]
+  k: ']'
+  l: [DEF, BRD, SYM]
+- p: [2, 3]
   k: '!'
   l: [SYM]
-- p: [11, 12]
-  k: '?'
-  l: [SYM]
+- p: [20, 21, 22]
+  k: {t: MSE, h: toggle}
+  l: [DEF, BRD, MSE]
+  a: bottom
 - p: [13, 16]
   k: Caps Word
   l: [DEF, BRD]
@@ -275,6 +288,10 @@ combos:
   k: Lock
   l: [DEF, BRD]
   draw_separate: true
+- p: [20, 21]
+  k: Undo
+  l: [NAV]
+  a: bottom
 - p: [4, 14]
   k: ⏯
   l: [NAV]
@@ -283,26 +300,6 @@ combos:
   k: Calc
   l: [NAV]
   a: left
-- p: [20, 21]
-  k: Z
-  l: [DEF, BRD]
-- p: [21, 22]
-  k: V
-  l: [DEF]
-- p: [23, 24]
-  k: \
-  l: [DEF, BRD]
-- p: [24, 25]
-  k: /
-  l: [DEF, BRD, SYM]
-- p: [20, 21]
-  k: Undo
-  l: [NAV]
-  a: bottom
-- p: [20, 21, 22]
-  k: {t: MSE, h: toggle}
-  l: [DEF, BRD, MSE]
-  a: bottom
 - p: [24, 25]
   k: BT CLR
   l: [FUN]

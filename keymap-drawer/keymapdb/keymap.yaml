@@ -160,30 +160,29 @@ layers:
   - Left Click
   - Right Click
 combos:
-- { p: [16, 17],     k: $$mdi:backspace-outline$$, l: [Base] }
-- { p: [12, 13],     k: $$mdi:keyboard-tab$$,      l: [Base] }
 - { p: [2, 3],       k: J,                         l: [Base] }
-- { p: [6, 7],       k: ;,                         l: [Base, Sym] }
-- { p: [7, 8],       k: '`',                       l: [Base] }
-- { p: [11, 12],     k: '[',                       l: [Base] }
-- { p: [17, 18],     k: ']',                       l: [Base] }
+- { p: [21, 22],     k: V,                         l: [Base] }
+- { p: [20, 21],     k: Z,                         l: [Base] }
+- { p: [12, 13],     k: $$mdi:keyboard-tab$$,      l: [Base, Sym] }
+- { p: [16, 17],     k: $$mdi:backspace-outline$$, l: [Base, Sym] }
 - { p: [11, 12, 13], k: Esc,                       l: [Base, Sym], draw_separate: true }
 - { p: [16, 17, 18], k: $$mdi:keyboard-return$$,   l: [Base, Sym], draw_separate: true }
-- { p: [11, 13],     k: '(',                       l: [Base, Sym], draw_separate: true }
-- { p: [16, 18],     k: ')',                       l: [Base, Sym], draw_separate: true }
-- { p: [12, 13],     k: '!',                       l: [Sym] }
-- { p: [11, 12],     k: '?',                       l: [Sym] }
+- { p: [6, 7],       k: ;,                         l: [Base, Sym] }
+- { p: [7, 8],       k: '`',                       l: [Base, Sym] }
+- { p: [23, 24],     k: \,                         l: [Base, Sym] }
+- { p: [24, 25],     k: /,                         l: [Base, Sym] }
+- { p: [11, 13],     k: (,                         l: [Base, Sym], draw_separate: true }
+- { p: [16, 18],     k: ),                         l: [Base, Sym], draw_separate: true }
+- { p: [11, 12],     k: '[',                       l: [Base, Sym] }
+- { p: [17, 18],     k: ']',                       l: [Base, Sym] }
+- { p: [2, 3],       k: '!',                       l: [Sym] }
+- { p: [20, 21, 22], k: { t: Mouse, h: toggle },   l: [Base], a: bottom, w: 36 }
 - { p: [13, 16],     k: Caps Word,                 l: [Base], draw_separate: true }
 - { p: [3, 4],       k: Lock,                      l: [Base], draw_separate: true }
+- { p: [20, 21],     k: Undo,                      l: [Nav], a: bottom }
 - { p: [4, 14],      k: $$mdi:play-pause$$,        l: [Nav], a: right }
 - { p: [5, 15],      k: Calc,                      l: [Nav], a: left }
-- { p: [4, 5],       k: Boot,                      l: [Function] }
-- { p: [20, 21],     k: Z,                         l: [Base] }
-- { p: [21, 22],     k: V,                         l: [Base] }
-- { p: [23, 24],     k: \,                         l: [Base] }
-- { p: [24, 25],     k: /,                         l: [Base, Sym] }
-- { p: [20, 21],     k: Undo,                      l: [Nav], a: bottom }
 - { p: [24, 25],     k: BT Clr,                    l: [Function], a: bottom }
 - { p: [2, 7],       k: Show Batt,                 l: [Function], a: top }
 - { p: [3, 6],       k: Show Conn,                 l: [Function] }
-- { p: [20, 21, 22], k: { t: Mouse, h: toggle },   l: [Base], a: bottom, w: 36 }
+- { p: [4, 5],       k: Boot,                      l: [Function] }

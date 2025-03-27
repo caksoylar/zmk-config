@@ -21,36 +21,36 @@
         compatible = "zmk,combos";
 
 COMBO(j,      &kp J,         LT2 LT1,     DEF,          80,  50)
-COMBO(q,      &kp Q,         LT2 LT1,         BRD,      80,  50)
+COMBO(v,      &kp V,         LB2 LB1,     DEF,          40,  50)
 COMBO(v_brd,  &kp V,         LT3 LT2,         BRD,      80,  50)
-COMBO(semi,   &kp SEMI,      RT1 RT2,     DEF BRD SYM,  40, 100)
-COMBO(grave,  &kp GRAVE,     RT2 RT3,     DEF BRD,      40, 100)
-COMBO(lpar,   &kp LPAR,      LM3 LM1,     DEF BRD,      40, 100)
-COMBO(rpar,   &kp RPAR,      RM1 RM3,     DEF BRD,      40, 100)
-COMBO(lbkt,   &kp LBKT,      LM3 LM2,     DEF BRD,      40, 100)
-COMBO(rbkt,   &kp RBKT,      RM2 RM3,     DEF BRD,      40, 100)
+COMBO(q,      &kp Q,         LT2 LT1,         BRD,      80,  50)
+COMBO(z,      &kp Z,         LB3 LB2,     DEF BRD,      80,  50)
+
 COMBO(tab,    &kp TAB,       LM2 LM1,     DEF BRD SYM,  40, 100)
 COMBO(bspc,   &kp BSPC,      RM1 RM2,     DEF BRD SYM,  40, 100)
 COMBO(esc,    &kp ESC,       LM3 LM2 LM1, DEF BRD SYM,  40,   0)
 COMBO(ret,    &kp RET,       RM1 RM2 RM3, DEF BRD SYM,  40,   0)
 
-COMBO(excl,   &kp EXCL,      LM2 LM1,     SYM,          40, 100)
-COMBO(qmark,  &kp QMARK,     LM3 LM2,     SYM,          40, 100)
+COMBO(semi,   &kp SEMI,      RT1 RT2,     DEF BRD SYM,  40, 100)
+COMBO(grave,  &kp GRAVE,     RT2 RT3,     DEF BRD SYM,  40, 100)
+COMBO(bslh,   &kp BSLH,      RB1 RB2,     DEF BRD SYM,  40, 100)
+COMBO(slsh,   &kp SLASH,     RB2 RB3,     DEF BRD SYM,  40,  50)
+COMBO(lpar,   &kp LPAR,      LM3 LM1,     DEF BRD SYM,  40, 100)
+COMBO(rpar,   &kp RPAR,      RM1 RM3,     DEF BRD SYM,  40, 100)
+COMBO(lbkt,   &kp LBKT,      LM3 LM2,     DEF BRD SYM,  40, 100)
+COMBO(rbkt,   &kp RBKT,      RM2 RM3,     DEF BRD SYM,  40, 100)
+
+COMBO(excl,   &kp EXCL,      LT2 LT1,     SYM,          40, 100)
+
+COMBO(mouse,  &tog MSE,      LB3 LB2 LB1, DEF BRD MSE, 100, 100)
 
 COMBO(capswd, &caps_word,    LM1 RM1,     DEF BRD,      60, 200)
-
 COMBO(lock,   &kp LG(L),     LT1 LT0,     DEF BRD,      80, 500)
+
+COMBO(undo,   &kp LC(Z),     LB3 LB2,     NAV,          80,  50)
 
 COMBO(play,   &kp C_PP,      LT0 LM0,     NAV,         200, 200)
 COMBO(calc,   &kp C_AL_CALC, RT0 RM0,     NAV,         200, 200)
-
-COMBO(z,      &kp Z,         LB3 LB2,     DEF BRD,      80,  50)
-COMBO(v,      &kp V,         LB2 LB1,     DEF,          40,  50)
-COMBO(bslh,   &kp BSLH,      RB1 RB2,     DEF BRD,      80, 100)
-COMBO(slsh,   &kp SLASH,     RB2 RB3,     DEF BRD SYM,  80,  50)
-COMBO(undo,   &kp LC(Z),     LB3 LB2,     NAV,          80,  50)
-
-COMBO(mouse,  &tog MSE,      LB3 LB2 LB1, DEF BRD MSE, 100, 100)
 
 COMBO(btclr,  &bt BT_CLR,    RB2 RB3,     FUN,         100, 200)
 
