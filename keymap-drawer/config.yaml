@@ -49,6 +49,7 @@ parse_config:
     combo_btclr:  {align: bottom}
     combo_undo:   {align: bottom}
     combo_mouse:  {align: bottom}
+    combo_semi:   {align: bottom}
     combo_play:   {align: right}
     combo_calc:   {align: left}
     combo_capswd: {draw_separate: true}
