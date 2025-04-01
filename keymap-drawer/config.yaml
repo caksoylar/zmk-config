@@ -9,17 +9,6 @@ parse_config:
     '&ind_bat': Show Batt
     '&ind_con': Show Conn
 
-    '&kp LC(TAB)': Tab Right
-    '&kp LC(LS(TAB))': Tab Left
-    '&kp LA(F4)': Win Close
-    '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
-    '&kp LS(INS)': Paste
-    '&kp LC(C)': Copy
-    '&kp LC(X)': Cut
-    '&kp LC(Z)': Undo
-    '&kp LG(L)': Lock
-
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
 
@@ -100,6 +89,18 @@ parse_config:
     C_PP: ⏯
     C_NEXT: ⏭️
     C_PREV: ⏮️
+
+    LC(TAB): Tab Right
+    LC(LS(TAB)): Tab Left
+    LA(F4): Win Close
+    LC(F4): Tab Close
+    LS(TAB): Win Prev
+    LS(INS): Paste
+    LC(LS(V)): Plain Paste
+    LC(C): Copy
+    LC(X): Cut
+    LC(Z): Undo
+    LG(L): Lock
 
     # defaults
     AMPERSAND: '&'
