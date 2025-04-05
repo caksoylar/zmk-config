@@ -147,7 +147,7 @@ layers:
   - End
   - Cut
   - Copy
-  - Paste
+  - {t: Paste, h: Plain Paste}
   - ⌦
   - ⏮️
   - ⏭️
@@ -218,17 +218,20 @@ layers:
   - Left Click
   - Right Click
 combos:
+- p: [1, 2]
+  k: Q
+  l: [DEF]
 - p: [2, 3]
   k: J
   l: [DEF]
 - p: [21, 22]
   k: V
   l: [DEF]
-- p: [1, 2]
-  k: V
-  l: [BRD]
 - p: [2, 3]
   k: Q
+  l: [BRD]
+- p: [1, 2]
+  k: V
   l: [BRD]
 - p: [20, 21]
   k: Z
@@ -248,7 +251,7 @@ combos:
   l: [DEF, BRD, SYM]
   draw_separate: true
 - p: [6, 7]
-  k: ;
+  k: ''''
   l: [DEF, BRD, SYM]
 - p: [7, 8]
   k: '`'
@@ -259,6 +262,10 @@ combos:
 - p: [24, 25]
   k: /
   l: [DEF, BRD, SYM]
+- p: [23, 24, 25]
+  k: ;
+  l: [DEF, BRD, SYM]
+  a: bottom
 - p: [11, 13]
   k: (
   l: [DEF, BRD, SYM]
@@ -288,6 +295,11 @@ combos:
   k: Lock
   l: [DEF, BRD]
   draw_separate: true
+- p: [1, 2]
+  k: Win Close
+  l: [NAV]
+  a: top
+  w: 36.0
 - p: [20, 21]
   k: Undo
   l: [NAV]

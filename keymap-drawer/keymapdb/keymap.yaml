@@ -181,6 +181,7 @@ combos:
 - { p: [20, 21, 22], k: { t: Mouse, h: toggle },   l: [Base], a: bottom, w: 36 }
 - { p: [13, 16],     k: Caps Word,                 l: [Base], draw_separate: true }
 - { p: [3, 4],       k: Lock,                      l: [Base], draw_separate: true }
+- { p: [1, 2],       k: Win Close,                 l: [Nav], a: top, w: 36 }
 - { p: [20, 21],     k: Undo,                      l: [Nav], a: bottom }
 - { p: [4, 14],      k: $$mdi:play-pause$$,        l: [Nav], a: right }
 - { p: [5, 15],      k: $$mdi:calculator$$,        l: [Nav], a: left }

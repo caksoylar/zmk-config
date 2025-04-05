@@ -40,6 +40,7 @@ parse_config:
     combo_mouse:  {align: bottom}
     combo_semi:   {align: bottom}
     combo_play:   {align: right}
+    combo_winq:   {align: top, w: 36}
     combo_calc:   {align: left}
     combo_capswd: {draw_separate: true}
     combo_lpar:   {draw_separate: true}

@@ -49,6 +49,7 @@ COMBO(mouse,  &tog MSE,      LB3 LB2 LB1, DEF BRD MSE, 100, 100)
 COMBO(capswd, &caps_word,    LM1 RM1,     DEF BRD,      60, 200)
 COMBO(lock,   &kp LG(L),     LT1 LT0,     DEF BRD,      80, 500)
 
+COMBO(winq,   &kp LA(F4),    LT3 LT2,     NAV,          80, 200)
 COMBO(undo,   &kp LC(Z),     LB3 LB2,     NAV,          80,  50)
 
 COMBO(play,   &kp C_PP,      LT0 LM0,     NAV,         200, 200)
