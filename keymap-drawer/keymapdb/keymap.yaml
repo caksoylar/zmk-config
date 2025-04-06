@@ -89,7 +89,7 @@ layers:
   - End
   - Cut
   - Copy
-  - Paste
+  - {t: Paste, h: Plain P}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:skip-backward$$
   - $$mdi:skip-forward$$

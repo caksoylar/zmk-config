@@ -97,7 +97,7 @@ parse_config:
     LC(F4): Tab Close
     LS(TAB): Win Prev
     LS(INS): Paste
-    LC(LS(V)): Plain Paste
+    LC(LS(V)): Plain P
     LC(C): Copy
     LC(X): Cut
     LC(Z): Undo
