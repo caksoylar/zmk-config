@@ -5,18 +5,18 @@
 This is a [ZMK](https://zmk.dev) config repo for my ergonomic keyboards.
 The keymap is optimized to be usable with 26-30 keys, with dropped keys from inner index and pinky columns and one or two thumb keys each,
 like the [Hummingbird](https://github.com/jcmkk3/awesome-hummingbirds) layout.
-
 Currently these keyboards are:
-- A hand-wired [Rommana](https://github.com/AlaaSaadAbdo/Rommana) (30 keys)
-- A [Rufous](https://github.com/jcmkk3/trochilidae#rufous) (30 keys)
-- A hand-wired, modified [Grumpy](https://github.com/caksoylar/Grumpy/tree/hummingbird-pinky) (28 keys)
-- [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys)
+
+| <img alt="rommana" src="https://github.com/user-attachments/assets/37e15496-8543-4e1b-bdbf-23a1f3e83150" width="240"> | <img alt="rufous" src="https://github.com/user-attachments/assets/89f57eec-9929-42b7-a497-f207a2fa4282" width="240"> | <img alt="grumpy" src="https://github.com/user-attachments/assets/c0243e5c-6008-4664-ba89-2708b08e3565" width="240"> | <img alt="zen" src="https://github.com/user-attachments/assets/db295d04-eefd-4552-a73c-a26aacc976a5" width="240"> |
+| - | - | - | - |
+| [Rommana](https://github.com/AlaaSaadAbdo/Rommana) (30 keys) | [Rufous](https://github.com/jcmkk3/trochilidae#rufous) (30 keys) | Modified [Grumpy](https://github.com/caksoylar/Grumpy/tree/hummingbird-pinky) (28 keys) | [Corne-ish Zen](https://lowprokb.ca/products/corne-ish-zen) (36 keys) |
 
 A few principles used in the design of the keymap are:
 - **Reduced use of right thumb**, especially for repetitive actions
   - Overuse can lead to issues, combined with smartphone and pointing device use
 - Frequently used **combos are all horizontal** (pressed using multiple fingers within the same row) and **avoid pinkies**
-- All _reasonable_ modifier + key combinations are accessible
+- All (reasonable) **modifier + key combinations** are accessible
+- **Symbols don't require shift** outside the base layer 
 - Some affordances are made for **left-hand only** use
   - Common shortcuts and desktop operations on the `NAV` layer
   - Mouse layer can be used for mouse clicks, to complement movement/scrolling with a pointing device on right hand
