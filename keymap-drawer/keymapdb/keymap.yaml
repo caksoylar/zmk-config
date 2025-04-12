@@ -68,20 +68,20 @@ layers:
   - ''
   Nav:
   - Win Close
-  - Tab Left
-  - Tab Right
+  - Tab ←
+  - Tab →
   - Tab Close
-  - Vol Up
+  - $$mdi:volume-high$$
   - Insert
-  - Page Down
+  - Page ↓
   - ↑
-  - Page Up
+  - Page ↑
   - ''
-  - Ctrl
+  - {t: Select All, h: Ctrl}
   - {t: Win Prev, h: Gui}
   - {t: Win Next, h: Alt}
   - Shift
-  - Vol Down
+  - $$mdi:volume-medium$$
   - Home
   - ←
   - ↓
@@ -183,9 +183,9 @@ combos:
 - { p: [3, 4],       k: Lock,                      l: [Base], draw_separate: true }
 - { p: [1, 2],       k: Win Close,                 l: [Nav], a: top, w: 36 }
 - { p: [20, 21],     k: Undo,                      l: [Nav], a: bottom }
-- { p: [4, 14],      k: $$mdi:play-pause$$,        l: [Nav], a: right }
-- { p: [5, 15],      k: $$mdi:calculator$$,        l: [Nav], a: left }
-- { p: [24, 25],     k: BT Clr,                    l: [Function], a: bottom }
+- { p: [4, 14],      k: $$mdi:play-pause$$,        l: [Nav] }
+- { p: [5, 15],      k: $$mdi:calculator$$,        l: [Nav] }
+- { p: [24, 25],     k: BT Clear,                  l: [Function], a: bottom, w: 36 }
 - { p: [2, 7],       k: Show Batt,                 l: [Function], a: top }
 - { p: [3, 6],       k: Show Conn,                 l: [Function] }
 - { p: [4, 5],       k: Boot,                      l: [Function] }

@@ -39,9 +39,7 @@ parse_config:
     combo_undo:   {align: bottom}
     combo_mouse:  {align: bottom}
     combo_semi:   {align: bottom}
-    combo_play:   {align: right}
     combo_winq:   {align: top, w: 36}
-    combo_calc:   {align: left}
     combo_capswd: {draw_separate: true}
     combo_lpar:   {draw_separate: true}
     combo_rpar:   {draw_separate: true}
@@ -73,8 +71,8 @@ parse_config:
     TAB: ↹
     DEL: ⌦
 
-    PG_UP: Page Up
-    PG_DN: Page Down
+    PG_UP: Page ↑
+    PG_DN: Page ↓
     INS: Insert
     HOME: Home
     END: End
@@ -91,8 +89,8 @@ parse_config:
     C_NEXT: ⏭️
     C_PREV: ⏮️
 
-    LC(TAB): Tab Right
-    LC(LS(TAB)): Tab Left
+    LC(TAB): Tab →
+    LC(LS(TAB)): Tab ←
     LA(F4): Win Close
     LC(F4): Tab Close
     LS(TAB): Win Prev
@@ -101,6 +99,7 @@ parse_config:
     LC(C): Copy
     LC(X): Cut
     LC(Z): Undo
+    LC(A): Select All
     LG(L): Lock
 
     # defaults

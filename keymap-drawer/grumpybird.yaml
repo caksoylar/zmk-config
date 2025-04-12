@@ -118,16 +118,16 @@ layers:
   - {type: held}
   NAV:
   - Win Close
-  - Tab Left
-  - Tab Right
+  - Tab ←
+  - Tab →
   - Tab Close
   - Vol Up
   - Insert
-  - Page Down
+  - Page ↓
   - ↑
-  - Page Up
+  - Page ↑
   - ''
-  - Ctrl
+  - {t: Select All, h: Ctrl}
   - {t: Win Prev, h: Gui}
   - {t: Win Next, h: Alt}
   - Shift
@@ -293,11 +293,9 @@ combos:
 - p: [4, 14]
   k: ⏯
   l: [NAV]
-  a: right
 - p: [5, 15]
   k: Calc
   l: [NAV]
-  a: left
 - p: [24, 25]
   k: BT CLR
   l: [FUN]
