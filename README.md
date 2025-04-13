@@ -32,6 +32,8 @@ Below representation was generated with [`keymap-drawer`](https://github.com/cak
 
 ![Keymap Representation](./keymap-drawer/hummingbird.svg?raw=true "Keymap Representation")
 
+Keys with the dashed outline are optional keys that are not used for smaller keyboards.
+
 Shortcuts on the `NAV` layer are OS-dependent, and are currently defined for Windows/Linux as the following:
 - `Win Close`: <kbd>Alt</kbd><kbd>F4</kbd>
 - `Tab →`: <kbd>Ctrl</kbd><kbd>Tab</kbd>
