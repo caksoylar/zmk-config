@@ -21,16 +21,16 @@ A few principles used in the design of the keymap are:
   - Common shortcuts and desktop operations on the `NAV` layer
   - Mouse layer can be used for mouse clicks, to complement movement/scrolling with a pointing device on right hand
 
-The default alpha layer is a modification of Colemak-DH and an alternative is the [Bird layout](https://github.com/jcmkk3/bird-layout).
-
+The default alpha layer is a modification of Colemak-DH.
 It uses three non-base layers activated through two thumb keys, along with combos which are used heavily for symbols and infrequent letters.
 The keymap utilizes home row mods, which are also available on the left side of `NAV` layer.
 `FUN` layer is implemented as a tri-layer, i.e. it is active when both `NAV` and `SYM` are active.
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow)
--- check out the drawings for all keyboards in the [`keymap-drawer` folder](keymap-drawer/).
+-- check out the drawings for all keyboards in the [`keymap-drawer` folder](keymap-drawer/),
+which also include a gaming layer and the [Bird layout](https://github.com/jcmkk3/bird-layout) as an alternate base.
 
-![Keymap Representation](./keymap-drawer/hummingbird.svg?raw=true "Keymap Representation")
+![Keymap Representation](./keymap-drawer/keymapdb/keymap.svg?raw=true "Keymap Representation")
 
 Keys with the dashed outline are optional keys that are not used for smaller keyboards.
 

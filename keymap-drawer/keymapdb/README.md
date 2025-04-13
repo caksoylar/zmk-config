@@ -1,5 +1,8 @@
-This is an abbreviated/simplified keymap render used for https://keymapdb.com/keymaps/caksoylar/.
+These are abbreviated/simplified keymap renders used for the README and https://keymapdb.com/keymaps/caksoylar/.
 
 ```sh
-keymap draw -g 0 9 26 29 -- keymap-drawer/keymapdb/keymap.yaml | perl -pe 's/(<svg width=)".*?"/$1"960"/' >keymap-drawer/keymapdb/keymap.svg
+KEYMAP_dark_mode=auto keymap draw -g 0 9 26 29 -- keymap.yaml >keymap.svg
+
+# light mode and width adjusted for http://keymapdb.com/keymaps/caksoylar
+keymap draw -g 0 9 26 29 -- keymap.yaml | perl -pe 's/(<svg width=)".*?"/$1"960"/' >keymapdb.svg
 ```
