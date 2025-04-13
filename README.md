@@ -18,13 +18,13 @@ A few principles used in the design of the keymap are:
 - All (reasonable) **modifier + key combinations** are accessible
 - **Symbols don't require shift** outside the base layer 
 - Some affordances are made for **left-hand only** use
-  - Common shortcuts and desktop operations on the `NAV` layer
+  - Common shortcuts and desktop operations on the `Nav` layer
   - Mouse layer can be used for mouse clicks, to complement movement/scrolling with a pointing device on right hand
 
 The default alpha layer is a modification of Colemak-DH.
 It uses three non-base layers activated through two thumb keys, along with combos which are used heavily for symbols and infrequent letters.
-The keymap utilizes home row mods, which are also available on the left side of `NAV` layer.
-`FUN` layer is implemented as a tri-layer, i.e. it is active when both `NAV` and `SYM` are active.
+The keymap utilizes home row mods, which are also available on the left side of `Nav` layer.
+`Function` layer is implemented as a tri-layer, i.e. it is active when both `Nav` and `Sym` are active.
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow)
 -- check out the drawings for all keyboards in the [`keymap-drawer` folder](keymap-drawer/),
@@ -34,7 +34,7 @@ which also include a gaming layer and the [Bird layout](https://github.com/jcmkk
 
 Keys with the dashed outline are optional keys that are not used for smaller keyboards.
 
-Shortcuts on the `NAV` layer are OS-dependent, and are currently defined for Windows/Linux as the following:
+Shortcuts on the `Nav` layer are OS-dependent, and are currently defined for Windows/Linux as the following:
 - `Win Close`: <kbd>Alt</kbd><kbd>F4</kbd>
 - `Tab →`: <kbd>Ctrl</kbd><kbd>Tab</kbd>
 - `Tab ←`: <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd>
