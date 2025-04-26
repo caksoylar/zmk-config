@@ -11,12 +11,12 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@dev
     with:
       keymap_patterns: 'config/*.keymap'
       config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
-      install_branch: main
+      install_branch: dev
       amend_commit: true
       draw_args: "hummingbird:'-k rufous -g 0 9 26 29'"
       json_path: keymap-drawer/layouts
