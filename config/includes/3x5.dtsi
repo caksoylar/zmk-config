@@ -54,7 +54,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
@@ -75,7 +75,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
