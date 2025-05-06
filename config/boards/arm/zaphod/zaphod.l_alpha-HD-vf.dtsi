@@ -21,7 +21,7 @@
                         >;
                     };
             l_jp {
-                label = "HD-Jp"; // Japanese "mode" (L, C, X not used in Japanese, so repurpose to -, Z, ん)
+                label = "HD-Jp"; // Japanese "mode" (L, C, X not used in Japanese, so repurpose to ん, Z, -)
                 bindings = <
           &kp MINUS &kp W      &kp M   &kp G         &kp J      _______    &DotColnJ    &SlshStarJ   &kp LBKT    &kp RBKT
           _______   &hml LALT Z _______ &hml LSHFT T &kp K      _______    &hmr RSHFT A &hmr RGUI E  &hmr RALT I _______
@@ -59,9 +59,9 @@
             l_akD {
 //                label = "l_akD";
                 bindings = <
-          &kp V     _______   _______   _______   _______       _______   _______   _______   _______   _______
+          &kp J     _______   _______   _______   _______       _______   _______   _______   _______   _______
           _______   _______   _______   _______   &b_lk         _______   _______   _______   _______   _______
-          &kp T     &kp G     _______   _______   _______       _______   _______   _______   _______   _______
+          &kp V     &kp G     _______   _______   _______       _______   _______   _______   _______   _______
                                         _______   _______       _______   _______
                 >;
             };
