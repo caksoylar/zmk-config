@@ -44,6 +44,7 @@ combos {
 COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
 COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
 COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
+COMBO_ANY(navnum, &tog l_num,   LH1 LH2) // get the nav/num layer from anywhere
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, RB3 RB4, l_alpha) // CAPSWORD
 COMBO_LAYER(capslk, &kp CAPS, RB2 RB3 RB4, l_alpha) // CAPS LOCK
