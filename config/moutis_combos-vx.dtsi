@@ -68,21 +68,6 @@ COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_alpha) // "Where "
 
 #endif // EN_PRONOUN_COMBOS
 
-/* numpad symbol combos */
-
-COMBO_LAYER(numLPRN, &kp LPAR,      RM1 RM2, l_num)
-COMBO_LAYER(numRPRN, &kp RPAR,      RM2 RM3, l_num)
-COMBO_LAYER(numEQUAL, &kp EQUAL,    RM3 RM4, l_num)
-COMBO_LAYER(numCOLN, &kp COLON,     RM1 RM3, l_num)
-COMBO_LAYER(numPRCNT, &kp PRCNT,    RB3 RB4, l_num)
-COMBO_LAYER(numLT, &kp LT,          RM0 RM1, l_num)
-COMBO_LAYER(numGT, &kp GT,          RM0 RM4, l_num)
-COMBO_LAYER(numDASH, &kp LA(MINUS), RB0 RB1, l_num)
-COMBO_LAYER(numTILD, &kp TILDE,     RB0 RB4, l_num)
-COMBO_LAYER(numELIP, &kp LA(SEMI),  RB1 RB4, l_num)
-
-COMBO_LAYER(numDLLR, &kp DLLR,       RT1 RT2, l_num) // $
-COMBO_LAYER(numCENT, &kp LA(N4),     RT0 RT1, l_num) // ¢
-COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
-COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
-COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
+// Japanese layer combos
+COMBO_LAYER(wo,  &t_wo,     LT3 LT2, l_japan) // を
+COMBO_LAYER(shi, &t_shi,    RM3 RM4, l_japan) // "わたし "
