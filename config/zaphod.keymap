@@ -31,7 +31,7 @@
 / {
 #include "moutis_behaviors.dtsi"
 #include "moutis_macros.dtsi"
-#include "moutis_combos-vb.dtsi"
+#include "moutis_combos-vf.dtsi"
 
     keymap {
         compatible = "zmk,keymap";
