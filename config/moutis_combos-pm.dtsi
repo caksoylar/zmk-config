@@ -4,25 +4,10 @@
 * 
 */
 
-#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-    timeout-ms = <55>; \
-};
-#define COMBO_ANY(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    timeout-ms = <55>; \
-};
-
 
 /*
  Some combos need to be in specific places depending on
- the underlying alpha, esp H-Digraph combos, so they are
- all defined here.
+ the underlying alpha, esp H-Digraph combos. They are defined here.
 */
 
 
@@ -35,68 +20,12 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             ╰─────────────╯ ╰─────────────╯
 */
 
-combos {
-    compatible = "zmk,combos";
-
-//
-// control/modes
-//
-COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
-COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
-COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
-COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
-COMBO_LAYER(docaps, &caps_word, RB3 RB4, l_alpha) // CAPSWORD
-COMBO_LAYER(capslk, &kp CAPS, RB2 RB3 RB4, l_alpha) // CAPS LOCK
-
-//
-// Editing actions (&whitespace)
-//
-COMBO_ANY(Gent, &kp LG(RETURN), LB2 LB1 LB0)
-COMBO_ANY(entr, &kp RETURN,     LB1 LB0)
-COMBO_ANY(tab,  &kp TAB,        LT4 LT3)
-COMBO_ANY(stab, &kp LS(TAB),    LT4 LT3 LT2)
-COMBO_ANY(spce, &kp SPACE,      LM1 LM0)
-COMBO_ANY(esc,  &kp ESC,        LM4 LM1)
-COMBO_ANY(sall, &kp LG(A),      LB4 LB1)
-COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
-COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
-COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
-COMBO_ANY(copy, &lk LG(X) LG(C), LB3 LB2)
-COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB2 LB1)
-COMBO_LAYER(quit, &kp LG(Q),      LT0 LM0, l_alpha)
-COMBO_LAYER(new,  &kp LG(N),      LM0 LB0, l_alpha)
-COMBO_LAYER(cloz, &kp LG(W),      RT0 RM0, l_alpha)
-COMBO_LAYER(open, &kp LG(O),      RM0 RB0, l_alpha)
-COMBO_LAYER(findsel, &m_findsel,  LM4 LB0, l_alpha)
 
 //
 // type a glyph (tiny board accommodation)
 //
-COMBO_LAYER(t_Japan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
 COMBO_LAYER(t_Q, &lk_qu Q U,      LT3 LT1, l_alpha)
 COMBO_LAYER(t_Z, &kp Z,           LM3 LM1, l_alpha)
-COMBO_LAYER(t_Coln, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
-COMBO_LAYER(t_Semi, &kp SEMI,     RM0 RM1, l_alpha)
-COMBO_LAYER(t_Excl, &kp EXCL,     RT1 RT2, l_alpha)
-COMBO_LAYER(t_Ques, &kp QMARK,    RT2 RT3, l_alpha)
-COMBO_LAYER(t_Grav, &kp GRAVE,    RT3 RT4, l_alpha)
-COMBO_LAYER(t_atMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
-COMBO_LAYER(t_Under, &kp UNDER,   RB1 RB3, l_alpha) // _
-COMBO_LAYER(t_Equal, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
-COMBO_LAYER(t_Ndash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
-COMBO_LAYER(t_Mdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
-COMBO_LAYER(t_Tilde, &kp TILDE,   RB0 RB3, l_alpha) // ~ tilde (wave dash)
-
-COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
-COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
-
-COMBO_LAYER(diacAccent, &lk_E_accent E LA(E),  RM1 RM2, l_alpha) // ´ (É if held)
-COMBO_LAYER(diacGrave, &lk_E_grave E LA(GRAVE), RM2 RM3, l_alpha) // ` (È if held)
-COMBO_LAYER(diacAcute, &lk_E_acute E LA(N6),  RM1 RM3, l_alpha) // ˆ (Ê if held)
-COMBO_LAYER(diacMacron, &lk_O_macron E LA(A),  RM2 RM4, l_alpha) // ¯ (ō if held)
-COMBO_LAYER(diacCirc, &lk_A_ring A LA(K),    RM1 RM4, l_alpha) // ˚ (Å if held)
-COMBO_LAYER(diacUmlaut, &lk_U_umlaut U LA(U),  RB1 RB2, l_alpha) // ¨ (Ü if held)
-COMBO_LAYER(diacCedille, &lk_C_cedille C LA(C),  LM4 LM2, l_alpha) // ¸ (ç if held)
 
 #ifdef H_DIGRAPH_COMBOS 
 //
@@ -158,4 +87,3 @@ COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
 
-};
