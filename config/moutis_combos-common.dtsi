@@ -22,7 +22,7 @@
 /*
  Some combos need to be in specific places depending on
  the underlying alpha, esp H-Digraph combos, so they are
- all defined here.
+defined in the individual combo-layout dtsi file.
 */
 
 
@@ -34,9 +34,6 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
     ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
             ╰─────────────╯ ╰─────────────╯
 */
-
-combos {
-    compatible = "zmk,combos";
 
 //
 // control/modes
@@ -116,4 +113,3 @@ COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
 COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
 
-};
