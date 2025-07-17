@@ -40,7 +40,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ LHA RHA │ RB0 RB1 RB2 RB3 RB4 │ RB5
 //
 COMBO_ANY(enmode,    &m_alpha,      LM3 LM2 LM1) // switch to latin input script, and set base layer to HD
 COMBO_ANY(jpmode,    &m_japan,      RM1 RM2 RM3) // switch to Japanese input script, and set base layer to Japanese
-COMBO_ANY(navnum,    &tog l_num,    LH1 RH1)
+COMBO_ANY(navnum,    &mo l_num,    LH1 RH1)
 COMBO_ANY(cfgL,      &mo l_cfg,     LH2 LH1)     // get the settings/media layer from anywhere
 COMBO_ANY(cfgR,      &mo l_cfg,     RH1 RH2)
 COMBO_ANY(appswitch, &AppSwitch,    LT1 LT0)     // App switch
