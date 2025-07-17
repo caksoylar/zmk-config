@@ -11,7 +11,7 @@
 
 #define my_tapping_term 170
 #define my_quick_tapping_term 55
-#define my_ak_delay 40
+#define my_ak_delay 50
 
 // my layers
 #define l_any   -1
