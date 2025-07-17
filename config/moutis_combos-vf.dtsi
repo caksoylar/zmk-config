@@ -41,10 +41,10 @@ combos {
 //
 // control/modes
 //
-COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
-COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
-COMBO_ANY(config, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
-COMBO_ANY(navnum, &tog l_num,   LH2 LH1) // toggle the nav/num layer from anywhere
+COMBO_ANY(enmode,   &kp LANG2,    LM3 LM2 LM1)
+COMBO_ANY(jpmode,   &kp LANG1,    RM1 RM2 RM3)
+COMBO_ANY(config,   &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
+COMBO_ANY(navnum,   &tog l_num,   LH2 LH1) // toggle the nav/num layer from anywhere
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, RB3 RB4, l_alpha) // CAPSWORD
 COMBO_LAYER(capslk, &kp CAPS, RB2 RB3 RB4, l_alpha) // CAPS LOCK
@@ -52,50 +52,50 @@ COMBO_LAYER(capslk, &kp CAPS, RB2 RB3 RB4, l_alpha) // CAPS LOCK
 //
 // Editing actions (&whitespace)
 //
-COMBO_ANY(Gent, &kp LG(RETURN), LB2 LB1 LB0)
-COMBO_ANY(entr, &kp RETURN,     LB1 LB0)
-COMBO_ANY(tab,  &kp TAB,        LT4 LT3)
-COMBO_ANY(stab, &kp LS(TAB),    LT4 LT3 LT2)
-COMBO_ANY(spce, &kp SPACE,      LM1 LM0)
-COMBO_ANY(esc,  &kp ESC,        LM4 LM1)
-COMBO_ANY(sall, &kp LG(A),      LB4 LB1)
+COMBO_ANY(Gent,      &kp LG(RETURN), LB2 LB1 LB0)
+COMBO_ANY(entr,      &kp RETURN,     LB1 LB0)
+COMBO_ANY(tab,       &kp TAB,        LT4 LT3)
+COMBO_ANY(stab,      &kp LS(TAB),    LT4 LT3 LT2)
+COMBO_ANY(spce,      &kp SPACE,      LM1 LM0)
+COMBO_ANY(esc,       &kp ESC,        LM4 LM1)
+COMBO_ANY(sall,      &kp LG(A),      LB4 LB1)
 COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
-COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
-COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
-COMBO_ANY(copy, &lk LG(X) LG(C), LB3 LB2)
-COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB2 LB1)
-COMBO_LAYER(quit, &kp LG(Q),      LT0 LM0, l_alpha)
-COMBO_LAYER(new,  &kp LG(N),      LM0 LB0, l_alpha)
-COMBO_LAYER(cloz, &kp LG(W),      RT0 RM0, l_alpha)
-COMBO_LAYER(open, &kp LG(O),      RM0 RB0, l_alpha)
+COMBO_ANY(undo,      &kp LG(Z),      LB4 LB3)
+COMBO_ANY(redo,      &kp LG(LS(Z)),  LB4 LB3 LB2)
+COMBO_ANY(copy,      &lk LG(X) LG(C), LB3 LB2)
+COMBO_ANY(pste,      &lk LG(LS(LA(V))) LG(V), LB2 LB1)
+COMBO_LAYER(quit,    &kp LG(Q),      LT0 LM0, l_alpha)
+COMBO_LAYER(new,     &kp LG(N),      LM0 LB0, l_alpha)
+COMBO_LAYER(cloz,    &kp LG(W),      RT0 RM0, l_alpha)
+COMBO_LAYER(open,    &kp LG(O),      RM0 RB0, l_alpha)
 COMBO_LAYER(findsel, &m_findsel,  LM4 LB0, l_alpha)
 
 //
 // type a glyph (tiny board accommodation)
 //
 COMBO_LAYER(t_Japan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
-COMBO_LAYER(t_Q, &lk_qu Q U,      LT3 LT1, l_alpha)
-COMBO_LAYER(t_Z, &kp Z,           LM3 LM1, l_alpha)
-COMBO_LAYER(t_Coln, &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
-COMBO_LAYER(t_Semi, &kp SEMI,     RM0 RM1, l_alpha)
-COMBO_LAYER(t_Excl, &kp EXCL,     RT1 RT2, l_alpha)
-COMBO_LAYER(t_Ques, &kp QMARK,    RT2 RT3, l_alpha)
-COMBO_LAYER(t_Grav, &kp GRAVE,    RT3 RT4, l_alpha)
-COMBO_LAYER(t_atMk, &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
+COMBO_LAYER(t_Q,     &lk_qu Q U,      LT3 LT1, l_alpha)
+COMBO_LAYER(t_Z,     &kp Z,           LM3 LM1, l_alpha)
+COMBO_LAYER(t_Coln,  &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
+COMBO_LAYER(t_Semi,  &kp SEMI,     RM0 RM1, l_alpha)
+COMBO_LAYER(t_Excl,  &kp EXCL,     RT1 RT2, l_alpha)
+COMBO_LAYER(t_Ques,  &kp QMARK,    RT2 RT3, l_alpha)
+COMBO_LAYER(t_Grav,  &kp GRAVE,    RT3 RT4, l_alpha)
+COMBO_LAYER(t_atMk,  &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_alpha) // @ (№ if held)
 COMBO_LAYER(t_Under, &kp UNDER,   RB1 RB3, l_alpha) // _
 COMBO_LAYER(t_Equal, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
 COMBO_LAYER(t_Ndash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
 COMBO_LAYER(t_Mdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
 COMBO_LAYER(t_Tilde, &kp TILDE,   RB0 RB3, l_alpha) // ~ tilde (wave dash)
 
-COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
-COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
+COMBO_LAYER(ligAE,   &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
+COMBO_LAYER(ligOE,   &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
 
 COMBO_LAYER(diacAccent, &lk_E_accent E LA(E),  RM1 RM2, l_alpha) // ´ (É if held)
-COMBO_LAYER(diacGrave, &lk_E_grave E LA(GRAVE), RM2 RM3, l_alpha) // ` (È if held)
-COMBO_LAYER(diacAcute, &lk_E_acute E LA(N6),  RM1 RM3, l_alpha) // ˆ (Ê if held)
+COMBO_LAYER(diacGrave,  &lk_E_grave E LA(GRAVE), RM2 RM3, l_alpha) // ` (È if held)
+COMBO_LAYER(diacAcute,  &lk_E_acute E LA(N6),  RM1 RM3, l_alpha) // ˆ (Ê if held)
 COMBO_LAYER(diacMacron, &lk_O_macron E LA(A),  RM2 RM4, l_alpha) // ¯ (ō if held)
-COMBO_LAYER(diacCirc, &lk_A_ring A LA(K),    RM1 RM4, l_alpha) // ˚ (Å if held)
+COMBO_LAYER(diacCirc,   &lk_A_ring A LA(K),    RM1 RM4, l_alpha) // ˚ (Å if held)
 COMBO_LAYER(diacUmlaut, &lk_U_umlaut U LA(U),  RB1 RB2, l_alpha) // ¨ (Ü if held)
 COMBO_LAYER(diacCedille, &lk_C_cedille C LA(C),  LM4 LM2, l_alpha) // ¸ (ç if held)
 
@@ -103,14 +103,14 @@ COMBO_LAYER(diacCedille, &lk_C_cedille C LA(C),  LM4 LM2, l_alpha) // ¸ (ç if 
 //
 // H Digraphs REQUIRE macros/behaviors (defined earlier) to process
 //
-COMBO_LAYER(sch, &Sch,  LM4  LM3 LM2, l_alpha) // Sch
-COMBO_LAYER(tch, &Tch,  LM4  LM3 LM1, l_alpha) // Tch
-COMBO_LAYER(th,  &lk_th H T, LM2 LM1, l_alpha) // Th/sion
-COMBO_LAYER(ch,  &Ch,        LM3 LM2, l_alpha) // Ch
-COMBO_LAYER(wh,  &Wh,        LT3 LT2, l_alpha) // Wh
-COMBO_LAYER(sh,  &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
-COMBO_LAYER(gh,  &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
-COMBO_LAYER(ph,  &Ph,        LB3 LB1, l_alpha) // Ph
+COMBO_LAYER(sch,    &t_Sch,  LM4  LM3 LM2, l_alpha) // Sch
+COMBO_LAYER(tch,    &t_Tch,  LM4  LM3 LM1, l_alpha) // Tch
+COMBO_LAYER(th,     &lk_th H T, LM2 LM1, l_alpha) // Th/sion
+COMBO_LAYER(ch,     &t_Ch,        LM3 LM2, l_alpha) // Ch
+COMBO_LAYER(wh,     &t_Wh,        LT3 LT2, l_alpha) // Wh
+COMBO_LAYER(sh,     &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
+COMBO_LAYER(gh,     &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
+COMBO_LAYER(ph,     &t_Ph,        LB3 LB1, l_alpha) // Ph
 #endif
 
 #ifdef EN_PRONOUN_COMBOS
@@ -118,23 +118,22 @@ COMBO_LAYER(ph,  &Ph,        LB3 LB1, l_alpha) // Ph
 // Pronoun combos REQUIRE macros to process
 //
 
-COMBO_LAYER(pnI, &t_PnI,          RM3 RM4, l_alpha) // "I "
-
-COMBO_LAYER(pnIm, &t_PnIm,        RM3 LT2, l_alpha) // "I'm "
-COMBO_LAYER(pnIll, &t_PnIll,      RM3 LB2, l_alpha) // "I'll "
-COMBO_LAYER(pnId, &t_PnId,        RM3 LB1, l_alpha) // "I'd "
-COMBO_LAYER(pnIve, &t_PnIve,      RM3 LB0, l_alpha) // "I've "
+COMBO_LAYER(pnI,     &t_PnI,          RM3 RM4, l_alpha) // "I "
+COMBO_LAYER(pnIm,    &t_PnIm,        RM3 LT2, l_alpha) // "I'm "
+COMBO_LAYER(pnIll,   &t_PnIll,      RM3 LB2, l_alpha) // "I'll "
+COMBO_LAYER(pnId,    &t_PnId,        RM3 LB1, l_alpha) // "I'd "
+COMBO_LAYER(pnIve,   &t_PnIve,      RM3 LB0, l_alpha) // "I've "
 
 COMBO_LAYER(pnYoure, &t_PnYoure,  RB3 LB4, l_alpha) // "You're "
 COMBO_LAYER(pnYour,  &t_PnYour,   RB3 LB3, l_alpha) // "Your "
 COMBO_LAYER(pnYoull, &t_PnYoull,  RB3 LB2, l_alpha) // "You'll "
-COMBO_LAYER(pnYoud, &t_PnYoud,    RB3 LB1, l_alpha) // "You'd "
+COMBO_LAYER(pnYoud,  &t_PnYoud,    RB3 LB1, l_alpha) // "You'd "
 COMBO_LAYER(pnYouve, &t_PnYouve,  RB3 LB0, l_alpha) // "You've "
 
-COMBO_LAYER(pnWere, &t_PnWere,    LT4 RT4, l_alpha) // "We're "
-COMBO_LAYER(pnWell, &t_PnWell,    LT4 LT2, l_alpha) // "We'll "
-COMBO_LAYER(pnWed, &t_PnWed,      LT4 LT1, l_alpha) // "We'd "
-COMBO_LAYER(pnWeve, &t_PnWeve,    LT4 LT0, l_alpha) // "We've "
+COMBO_LAYER(pnWere,  &t_PnWere,    LT4 RT4, l_alpha) // "We're "
+COMBO_LAYER(pnWell,  &t_PnWell,    LT4 LT2, l_alpha) // "We'll "
+COMBO_LAYER(pnWed,   &t_PnWed,      LT4 LT1, l_alpha) // "We'd "
+COMBO_LAYER(pnWeve,  &t_PnWeve,    LT4 LT0, l_alpha) // "We've "
 
 COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_alpha) // "Where "
 
