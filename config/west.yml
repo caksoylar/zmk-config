@@ -1,7 +1,7 @@
 manifest:
   remotes:
-##    - name: zmkfirmware
-##      url-base: https://github.com/zmkfirmware
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
 ##    - name: caksoylar
 ##      url-base: https://github.com/caksoylar
     - name: urob
