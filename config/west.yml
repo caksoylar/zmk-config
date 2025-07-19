@@ -1,22 +1,22 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-##    - name: caksoylar
-##      url-base: https://github.com/caksoylar
+##    - name: zmkfirmware
+##      url-base: https://github.com/zmkfirmware
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     - name: urob
       url-base: https://github.com/urob
 ##    - name: ssbb
 ##      url-base: https://github.com/ssbb
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.2
-      import: app/west.yml
 ##    - name: zmk
-##      remote: caksoylar
-##      revision: caksoylar/zen-8bit
+##      remote: zmkfirmware
+##      revision: v0.2
 ##      import: app/west.yml
+    - name: zmk
+      remote: caksoylar
+      revision: caksoylar/zen-v1+v2
+      import: app/west.yml
     - name: zmk-adaptive-key
       remote: urob
       revision: main # set to same as ZMK version above
