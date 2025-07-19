@@ -40,7 +40,14 @@
 / {
 #include "moutis_behaviors.dtsi"
 #include "moutis_macros.dtsi"
+
+    combos {
+        compatible = "zmk,combos";
+
+#include "moutis_combos-common.dtsi"
 #include "moutis_combos-vf.dtsi"
+
+    };
 
         keymap {
         compatible = "zmk,keymap";
