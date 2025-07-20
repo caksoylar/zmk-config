@@ -1,0 +1,261 @@
+/*    KEY POSITION Names
+    ╭─────────────────────╮ ╭─────────────────────╮
+LT5 │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │ RT5
+LM5 │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │ RM5
+LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
+    ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
+            ╰─────────────╯ ╰─────────────╯
+*/
+
+
+#define     my_hrm_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            flavor = "balanced"; \
+            hold-trigger-on-release; \
+            tapping-term-ms = <my_tapping_term>; \
+            quick-tap-ms = <my_quick_tapping_term>
+
+#define     my_lk_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            tapping-term-ms = <my_tapping_term>; \
+            flavor = "tap-preferred"
+
+
+behaviors {
+
+        csk: csk {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1200>;
+            quick-release;
+        };
+        skapp: sticky_key_app_switcher {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <900>;
+        };
+
+        hm: homerow_mods { // use on either hand
+            my_hrm_config;
+            bindings = <&kp>, <&kp>;
+        };
+        hmr: homerow_mods_right { // use on right hand to mod left
+            my_hrm_config;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
+        hml: homerow_mods_left { // use on left hand to mod right
+            my_hrm_config;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        hrm_t: hrm_t {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_t>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        hrm_h: hrm_h {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_h>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        hrm_c: hrm_c {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_c>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+       };
+        hrm_a: hrm_a {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_a>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+       };
+        hrm_e: hrm_e {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_e>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
+        hrm_i: hrm_i {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_i>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
+
+/*
+ * lk_ linger key behaviors (approximated via hold-tap)
+ */
+        lk: lk {
+            my_lk_config;
+            bindings = <&kp>, <&kp>;
+        };
+
+        lk_qu: lk_qu {
+            my_lk_config;
+            bindings = <&kp>, <&t_Qu>;
+        };
+        lk_E_accent: lk_E_accent { // ´, é on "linger"
+            my_lk_config;
+            bindings = <&t_Eaccent>, <&kp>;
+        };
+        lk_E_grave: lk_E_grave { // `, è on "linger"
+            my_lk_config;
+            bindings = <&t_Egrave>, <&kp>;
+        };
+        lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
+            my_lk_config;
+            bindings = <&t_Eacute>, <&kp>;
+        };
+        lk_O_macron: lk_O_macron { // ¯, ō on "linger"
+            my_lk_config;
+            bindings = <&t_Omacron>, <&kp>;
+        };
+        lk_A_ring: lk_A_ring { // ˚, å on "linger"
+            my_lk_config;
+            bindings = <&t_Aring>, <&kp>;
+        };
+        lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
+            my_lk_config;
+            bindings = <&t_Uumlaut>, <&kp>;
+        };
+        lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
+            my_lk_config;
+            bindings = <&t_Cedille>, <&kp>;
+        };
+
+
+        lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
+            my_lk_config;
+            bindings = <&t_Japanese>, <&t_Japan>;
+        };
+        lk_th: lk_th { // Th on tap, tion on "linger"
+            my_lk_config;
+            bindings = <&t_tion>, <&t_Th>;
+        };
+        lk_sh: lk_sh { // Sh on tap, sion on "linger"
+            my_lk_config;
+            bindings = <&t_sion>, <&t_Sh>;
+        };
+        lk_gh: lk_gh { // Gh on tap, Ght on "linger"
+            my_lk_config;
+            bindings = <&t_ght>, <&t_Gh>;
+        };
+        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
+            my_lk_config;
+            bindings = <&pairDquo>, <&kp>;
+        };
+        lk_par: lk_par { // ( on tap, () on "linger"
+            my_lk_config;
+            bindings = <&pairPar>, <&kp>;
+        };
+        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
+            my_lk_config;
+            bindings = <&pairBkt>, <&kp>;
+        };
+        lk_brc: lk_brc { // { on tap, {} on "linger"
+            my_lk_config;
+            bindings = <&pairBrc>, <&kp>;
+        };
+        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
+            my_lk_config;
+            bindings = <&pairLtGt>, <&kp>;
+        };
+        lk_RstBoot: lk_RstBoot { // reset on tap, bootloader on "linger"
+            my_lk_config;
+            bindings = <&bootloader>, <&sys_reset>;
+        };
+        lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
+            my_lk_config;
+            bindings = <&CmmaSpc>, <&CmmaCap>;
+        };
+
+/*
+ * modmorph behaviors
+ * identified by the mixed case of each of the keycodes
+ */
+        CmmaSemi: CmmaSemi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lk_CmmaCap 0 0>, <&t_Semi>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DotColn: DotColn {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ak_dot>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DotColnJ: DotColnJ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SlshStar: SlshStar {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ak_FSLH>, <&kp STAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SlshStarJ: SlshStarJ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp STAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        HashDllr: HashDllr {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>, <&kp DLLR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        MinusPlus: MinusPlus {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp PLUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DqtLbkt: DqtLbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp LBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        DqtRbkt: DqtRbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp RBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        SqtLbkt: SqtLbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp LBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        SqtRbkt: SqtRbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp RBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        
+        ad_g: ak_g {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp G>;
+
+            // Binding two behaviors: JG->JPG
+            akt_jg { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp P &kp G>; };
+        };
+
+
+};
