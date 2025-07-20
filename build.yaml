@@ -13,13 +13,13 @@
 #
 ---
 include:
-  - board: zaphod
+#  - board: zaphod
+#  - board: seeeduino_xiao_ble
+#    shield: bad_wings_slim
 
-#  - board: corneish_zen_v1_left
-#  - board: corneish_zen_v1_right
+  - board: corneish_zen_v1_left
+  - board: corneish_zen_v1_right
   
-  - board: seeeduino_xiao_ble
-    shield: bad_wings_slim
 
 #  - board: corneish_zen_v1_left
 #    shield: settings_reset
