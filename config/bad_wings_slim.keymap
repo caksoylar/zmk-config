@@ -27,7 +27,7 @@
 
 
 #include "boards/shields/bad_wings_slim/bad_wings_slim_config.h" // key name defs for this board
-#include "moutis_config.dtsi" // my add-on feature defs
+#include "boards/shields/bad_wings_slim/moutis_config.dtsi" // my add-on feature defs
 
 / {
 #include "moutis_behaviors.dtsi"
