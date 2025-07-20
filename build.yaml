@@ -29,7 +29,8 @@ include:
 #    cmake-args: -DCONFIG_ZMK_DISPLAY=n
 
   - board: nice_nano_v2
-    shield: microdox
+    shield: microdox_left
+    shield: microdox_right
 
 
 #  - board: nice_nano_v2
