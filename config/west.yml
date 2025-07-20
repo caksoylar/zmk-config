@@ -1,7 +1,7 @@
 manifest:
   remotes:
-##    - name: zmkfirmware
-##      url-base: https://github.com/zmkfirmware
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: urob
@@ -12,8 +12,8 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-#      remote: caksoylar
-#      revision: caksoylar/zen-v1+v2
+      remote: caksoylar
+      revision: caksoylar/zen-v1+v2
       import: app/west.yml
     - name: zmk-adaptive-key
       remote: urob
