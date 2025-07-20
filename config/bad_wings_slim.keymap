@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2022 The ZMK Contributors
  *
+ * Copyright (c) 2022 The ZMK Contributors
  * SPDX-License-Identifier: MIT
  */
 
@@ -23,8 +23,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
-
 
 #include "boards/shields/bad_wings_slim/bad_wings_slim_config.h" // key name defs for this board
 #include "moutis_config.dtsi" // my add-on feature defs
@@ -32,6 +30,7 @@
 / {
 #include "moutis_behaviors.dtsi"
 #include "moutis_macros.dtsi"
+
     combos {
         compatible = "zmk,combos";
 
@@ -42,6 +41,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+
 #include "boards/shields/bad_wings_slim/bad_wings_slim.l_alpha-HD-vf.dtsi"  // base (alpha) layer (& related adaptive layers)
 #include "boards/shields/bad_wings_slim/bad_wings_slim.l_layers.dtsi"  // all other (common) layers (shouldn't vary)
 
