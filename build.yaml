@@ -15,8 +15,9 @@
 include:
   - board: zaphod
 
-#  - board: corneish_zen_v1_left
-#  - board: corneish_zen_v1_right
+  - board: corneish_zen_v1_left
+  - board: corneish_zen_v1_right
+  
 #  - board: corneish_zen_v1_left
 #    shield: settings_reset
 #    cmake-args: -DCONFIG_ZMK_DISPLAY=n
@@ -31,8 +32,8 @@ include:
 #  - board: nice_nano_v2
 #    shield: ffkb
 #  - board: seeeduino_xiao_ble
-    shield: bad_wings_slim
-    - board: seeeduino_xiao_ble
+#    shield: bad_wings_slim
+#    - board: seeeduino_xiao_ble
 #    shield: neuro36
 #  - board: seeeduino_xiao_ble
 #    shield: midge
