@@ -9,7 +9,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    require-prior-idle-ms = 0; \
+    require-prior-idle-ms = <0>; \
     timeout-ms = <45>; \
 };
 #define COMBO_ANY(NAME, BINDINGS, KEYPOS) \
