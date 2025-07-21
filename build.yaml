@@ -17,8 +17,9 @@ include:
 #  - board: seeeduino_xiao_ble
 #    shield: bad_wings_slim
   - board: seeeduino_xiao_ble
-    shield: ["dust_left", "dust_right"]
-#    shield: dust_right
+    shield: dust_left
+  - board: seeeduino_xiao_ble
+    shield: dust_right
 #    shield: settings_reset
 #  - board: seeeduino_xiao_ble
 #    shield: dust
