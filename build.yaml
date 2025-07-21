@@ -16,7 +16,7 @@ include:
   - board: zaphod
   - board: seeeduino_xiao_ble
     shield: bad_wings_slim
-#    shield: dust
+    shield: dust
 #    shield: settings_reset
 #  - board: seeeduino_xiao_ble
 #    shield: dust
