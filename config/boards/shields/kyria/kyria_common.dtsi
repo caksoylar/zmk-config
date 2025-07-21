@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "kyria-layouts.dtsi"
+#include "kyria-layout.dtsi"
 
 / {
     chosen {
