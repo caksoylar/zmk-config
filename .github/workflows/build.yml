@@ -8,6 +8,9 @@ on:
       - config/*.dtsi
       - config/*.conf
       - config/boards/**
+      - config/*.h
+      - handsdown/*.h
+      - handsdown/*.dtsi
       - build.yaml
 
 jobs:
