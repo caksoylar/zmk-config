@@ -14,7 +14,7 @@ manifest:
       revision: main
 #      remote: caksoylar
 #      revision: caksoylar/zen-v1+v2
-#      import: app/west.yml
+      import: app/west.yml
 #    - name: zmk-adaptive-key
 #      remote: urob
 #      revision: main # set to same as ZMK version above
