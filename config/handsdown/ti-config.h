@@ -101,7 +101,7 @@
 #define F_Rthm _______          _______
 
 #define l_akG_label "l_akG"
-#define G_Ltop _______          _______         &kp L           _______         _______
+#define G_Ltop _______          _______         &kp L           &b_lml          _______
 #define G_Lmid _______          _______         _______         _______         _______
 #define G_Lbtm _______          _______         _______         _______         _______
 #define G_Lthm                                                  _______         _______
@@ -156,7 +156,7 @@
 #define K_Rthm _______         _______
 
 #define l_akM_label "l_akM"
-#define M_Ltop &kp L            &ak_lg          _______         _______         &kp L
+#define M_Ltop &kp L            &b_lg           _______         _______         &kp L
 #define M_Lmid _______          _______         _______         _______         _______
 #define M_Lbtm _______          _______         _______         _______         _______
 #define M_Lthm                                                  _______         _______
