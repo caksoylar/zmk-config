@@ -26,14 +26,14 @@
 
 / {
   chosen {
-    zmk,matrix_transform = &default_transform;
-    //zmk,matrix_transform = &five_column_transform;
+    //zmk,matrix_transform = &default_transform;
+    zmk,matrix_transform = &five_column_transform;
   };
 };
 
 #include "boards/arm/corneish_zen/corneish_zen.dtsi" // override &flash0 settings
 
-#include "boards/arm/corneish_zen/corneish_zen_config.dtsi" // my key name defs for this board
+#include "HD_3x5+3.h" // key name defs for this board
 #include "moutis_config.dtsi" // my add-on feature defs
 
 / {
