@@ -24,11 +24,11 @@ I have definitions for:
 - [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (mods *Vf, Vb, Vx, Vv*)
 - [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 - [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c)
-- [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
 
  [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) is designed to work with all the other [smart behaviors](https://sites.google.com/alanreiser.com/handsdown#h.8ngiif20qf4). Currently I have most of the *essential* combos: (`Qu`,`Z`, `Undo`, `Cut`, `Copy`, `Paste`, etc.), punctuation (`@`,`!`,`?`,`;`,`:`, etc.), **`H` digraph combos** *to send* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*. There's a ZMK take on [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) (*using macros and sticky layers*) and [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*using macros and hold-tap behaviors for things like diacritics `éèôåō` and paired symbols, `{([<>])}` and more*). They behave a bit differently than in QMK, but are quite usable. Eventually I hope to deploy a properly coded solution to these features. *There's even a wonky version of my comma-shift!* (The QMK version is nearly perfect, but ZMK has some quirks. I use it so much on QMK that I sort of need it here. I'll eventually fix this, too.)
 
-In the works:
+In the works (I test the builds on several boards, with adaptives & combos):
+- [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
 - [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w)
 - [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx)
 
