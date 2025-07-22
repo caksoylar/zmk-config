@@ -1,18 +1,17 @@
-#define _______  &trans
-
 /*  Base (alpha) Layer  Hands Down Vibranium-vf
     Building for a 36 key board
-                        ╭─────────────────────╮             ╭──────────────────────╮
-                        │  X   W   M   G   J  │             │  #$  .:  /*  "[  ']  │
-                        │  S   C   N   T   K  |             |  ,;   A   E   I   H  │
-                        │  F   P   L   D   V  │             │  -+   U   O   Y   B  │
-                        ╰──────────╮  BSP  R  │             │  SPC RET  ╭──────────╯
-                                   ╰──────────╯             ╰───────────╯
-*/
+                    ╭─────────────────────╮    ╭──────────────────────╮
+                    │  X   W   M   G   J  │    │  #$  .:  /*  "[  ']  │
+                    │  S   C   N   T   K  |    |  ,;   A   E   I   H  │
+                    │  F   P   L   D   V  │    │  -+   U   O   Y   B  │
+                    ╰──────╮  App BSP  R  │    │  SPC RET l_num ╭─────╯
+                           ╰──────────────╯    ╰────────────────╯
 
+*/
+#include HD_core-vf.h // core alpha & ak_layer definitions & supplementary filenames
 
                     l_alpha {
-                        label = "HD-Vf";
+                        label = HD_Layer_label;
                         bindings = <
                                 HD_Ltop         HD_Rtop
                                 HD_Lmid         HD_Rmid
