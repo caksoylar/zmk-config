@@ -8,16 +8,16 @@
 ---
 include:
   - board: zaphod
-  - board: seeeduino_xiao_ble
-    shield: bad_wings_slim
-  - board: seeeduino_xiao_ble
-    shield: dust_left
-  - board: seeeduino_xiao_ble
-    shield: dust_right
-  - board: nice_nano_v2
-    shield: microdox_left
-  - board: nice_nano_v2
-    shield: microdox_right
+#  - board: seeeduino_xiao_ble
+#    shield: bad_wings_slim
+#  - board: seeeduino_xiao_ble
+#    shield: dust_left
+#  - board: seeeduino_xiao_ble
+#    shield: dust_right
+#  - board: nice_nano_v2
+#    shield: microdox_left
+#  - board: nice_nano_v2
+#    shield: microdox_right
 
 #    shield: settings_reset
 
