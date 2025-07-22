@@ -11,9 +11,9 @@ include:
   - board: seeeduino_xiao_ble
     shield: bad_wings_slim
 #  - board: seeeduino_xiao_ble
-    shield: dust_left
+#   shield: dust_left
 #  - board: seeeduino_xiao_ble
-    shield: dust_right
+#    shield: dust_right
 #  - board: nice_nano_v2
 #    shield: microdox_left
 #  - board: nice_nano_v2
