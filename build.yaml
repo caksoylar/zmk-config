@@ -26,10 +26,10 @@ include:
 
 #    shield: settings_reset
 
-  - board: corneish_zen_v1_left # requires calsoylar's fork (see west.yml)
+#  - board: corneish_zen_v1_left # requires calsoylar's fork (see west.yml)
 #    shield: settings_reset
 #    cmake-args: -DCONFIG_ZMK_DISPLAY=n
-  - board: corneish_zen_v1_right
+#  - board: corneish_zen_v1_right
 #    shield: settings_reset
 #    cmake-args: -DCONFIG_ZMK_DISPLAY=n
 
