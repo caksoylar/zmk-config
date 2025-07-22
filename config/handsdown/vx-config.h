@@ -1,37 +1,37 @@
 #define _______  &trans
 
-/*  Base (alpha) Layer(s) Hands Down Promethium-Pm
-        for 34 keys
-╭─────────────────────╮ ╭──────────────────────╮
-│  V   W   G   M   J  │ │  #$  .:  /*  "<  '>  │
-│  S   N   T   H   K  | |  ,;   A   E   I   C  │
-│  F   P   D   L   X  │ │  -+   U   O   Y   B  │
-╰────╮        BSP  R  │ │  SPC RET        ╭────╯
-     ╰────────────────╯ ╰─────────────────╯
+/*      Base (alpha) Layer Hands Down Vibranium-vx
+                    34 keys (core)
+ ╭─────────────────────╮ ╭──────────────────────╮
+ │  V   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
+ │  S   C   N   T   K  | |  ,;   A   E   I   H  │
+ │  X   P   L   D   B  │ │  -+   U   O   Y   F  │
+ ╰──────────╮  BSP  R  │ │  SPC RET  ╭──────────╯
+            ╰──────────╯ ╰───────────╯
 */
 
-#define HD_combo_file "moutis_combos-pm.dtsi" // the related combo file
+#define HD_combo_file "vb-combos.dtsi" // the related combo file
 
-#define HD_Layer_label "HD-Pm"
-#define HD_Ltop &ak_v           &ak_w           &ak_g           &ak_m           &ak_j
-#define HD_Lmid &hml LCTRL S    &hml LALT N     &hrm_t LGUI T   &hrm_h LSHFT H  &ak_k
-#define HD_Lbtm &ak_f           &ak_p           &ak_d           &kp L           &ak_x
+#define HD_Layer_label "HD-Vx"
+#define HD_Ltop &ak_v           &ak_w           &ak_m           &ak_g           &ak_j
+#define HD_Lmid &hml LCTRL S    &hml LALT C     &hml LGUI N     &hrm_t LSHFT T  &ak_k
+#define HD_Lbtm &ak_x           &ak_p           &kp L           &ak_d           &ak_b
 #define HD_Lthm                                                 &lt_BspcDel     &lt l_nav R
 
 #define HD_Rtop &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
-#define HD_Rmid &CmmaSemi       &hrm_a RSHFT A  &hrm_e RGUI E   &hrm_i RALT I   &hmr RCTRL C
-#define HD_Rbtm &MinusPlus      &ak_u           &ak_o           &ak_y           &ak_b
+#define HD_Rmid &CmmaSemi       &hrm_a RSHFT A  &hrm_e RGUI E   &hrm_i RALT I   &hmr RCTRL H
+#define HD_Rbtm &MinusPlus      &ak_u           &ak_o           &ak_y           &ak_f
 #define HD_Rthm &lt l_sym SPACE &lt l_nav RETURN
 
 #define JP_Layer_label "HD-JP" // Japanese "mode" (L, C, X not used in Japanese, so repurpose to ん, Z, -)
-#define JP_Ltop &kp V           &kp W           &kp G           &kp M           &kp J
-#define JP_Lmid _______         _______         _______         _______         &kp K
-#define JP_Lbtm &kp F           &kp P           &kp D           &t_nn           &kp MINUS
+#define JP_Ltop &kp MINUS       &kp W           &kp M           &kp G           &kp J
+#define JP_Lmid _______         &hml LALT Z     _______         &hml LSHFT T    &kp K
+#define JP_Lbtm &kp X           &kp P           &t_nn           &kp D           &kp B
 #define JP_Lthm                                                 _______         _______
 
 #define JP_Rtop _______         &DotColnJ       &SlshStarJ      &kp LBKT        &kp RBKT
-#define JP_Rmid _______         &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &kp Z
-#define JP_Rbtm _______         &kp U           &kp O           &kp Y           &kp B
+#define JP_Rmid _______         &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     _______
+#define JP_Rbtm _______         &kp U           &kp O           &kp Y           &kp
 #define JP_Rthm _______         _______
 
 #define l_akA_label "l_akA"
@@ -47,8 +47,8 @@
 
 #define l_akB_label "l_akB"
 #define B_Ltop _______          _______         _______         _______         _______
-#define B_Lmid _______          _______         _______         _______         _______
-#define B_Lbtm _______          _______         _______         _______         _______
+#define B_Lmid _______          &kp S           _______         _______         _______
+#define B_Lbtm &kp J            _______         _______         &kp L           _______
 #define B_Lthm                                                  _______         _______
 
 #define B_Rtop _______          _______         _______         _______         _______
@@ -57,9 +57,9 @@
 #define B_Rthm _______          _______
 
 #define l_akC_label "l_akC"
-#define C_Ltop _______          _______         _______         _______         _______
+#define C_Ltop _______          _______         &kp L           _______         _______
 #define C_Lmid _______          _______         _______         _______         _______
-#define C_Lbtm _______          _______         _______         _______         _______
+#define C_Lbtm &b_sb            _______         _______         _______         _______
 #define C_Lthm                                                  _______         _______
 
 #define C_Rtop _______          _______         _______         _______         _______
@@ -68,9 +68,9 @@
 #define C_Rthm _______          _______
 
 #define l_akD_label "l_akD"
-#define D_Ltop _______          _______         _______         _______         _______
+#define D_Ltop &kp V            _______         _______         _______         _______
 #define D_Lmid _______          _______         _______         _______         &b_lk
-#define D_Lbtm &kp V            &kp G           _______         _______         _______
+#define D_Lbtm &kp T            &kp G           _______         _______         &b_lb
 #define D_Lthm                                                  _______         _______
 
 #define D_Rtop _______          _______         _______         _______         _______
@@ -106,14 +106,14 @@
 #define G_Lbtm _______          _______         _______         _______         _______
 #define G_Lthm                                                  _______         _______
 
-#define G_Rtop &kp T            &kp D           &b_lm           _______         _______
-#define G_Rmid _______          _______         _______         _______         _______
+#define G_Rtop &kp T            &kp D           &kp L           _______         &t_Th
+#define G_Rmid _______          _______         _______         _______         &b_lk
 #define G_Rbtm _______          _______         _______         _______         _______
 #define G_Rthm _______          _______
 
 #define l_akH_label "l_akH"
 #define H_Ltop _______          _______         _______         _______         _______
-#define H_Lmid _______          _______         _______         _______         &b_nk
+#define H_Lmid _______          _______         _______         _______         _______
 #define H_Lbtm _______          _______         _______         _______         _______
 #define H_Lthm                                                  _______         _______
 
@@ -129,12 +129,12 @@
 #define I_Lthm                                                  _______         _______
 
 #define I_Rtop _______         _______          _______         _______         _______
-#define I_Rmid _______         _______          _______         _______         _______
+#define I_Rmid _______         _______          _______         _______         &kp F
 #define I_Rbtm _______         _______          _______         _______         _______
 #define I_Rthm _______         _______
 
 #define l_akJ_label "l_akJ"  // using l_akJ for Y as well
-#define J_Ltop _______         _______          &t_pg           _______         _______
+#define J_Ltop _______         _______          _______         &t_pg           _______
 #define J_Lmid _______         _______          _______         _______         _______
 #define J_Lbtm _______         _______          _______         _______         _______
 #define J_Lthm                                                  _______         _______
@@ -156,7 +156,7 @@
 #define K_Rthm _______         _______
 
 #define l_akM_label "l_akM"
-#define M_Ltop _______          _______         &kp L           &b_lg           &kp L
+#define M_Ltop _______          &ak_xp          _______         &b_lg           &kp L
 #define M_Lmid _______          _______         _______         _______         _______
 #define M_Lbtm _______          _______         _______         _______         _______
 #define M_Lthm                                                  _______         _______
@@ -190,12 +190,12 @@
 
 #define l_akT_label "l_akT"
 #define T_Ltop _______          _______         _______         _______         _______
-#define T_Lmid _______          _______         _______         _______         &b_ck
+#define T_Lmid _______          &t_Ch           _______         _______         &b_ck
 #define T_Lbtm _______          _______         _______         _______         _______
 #define T_Lthm                                                  _______         _______
 
 #define T_Rtop _______          _______         _______         _______         _______
-#define T_Rmid _______          _______         _______         _______         &t_Ch
+#define T_Rmid _______          _______         _______         _______         _______
 #define T_Rbtm _______          _______         _______         _______         _______
 #define T_Rthm _______          _______
 
@@ -211,7 +211,7 @@
 #define U_Rthm _______          _______
 
 #define l_akV_label "l_akV"
-#define V_Ltop _______          _______         _______         _______         &kp L
+#define V_Ltop _______          _______         &kp L           _______         _______
 #define V_Lmid _______          _______         _______         _______         _______
 #define V_Lbtm _______          _______         _______         _______         _______
 #define V_Lthm                                                  _______         _______
@@ -222,7 +222,7 @@
 #define V_Rthm _______          _______
 
 #define l_akW_label "l_akW"
-#define W_Ltop &kp S            _______         _______         &b_lm           &kp L
+#define W_Ltop &kp S            _______         &b_lm           &b_lml          &kp L
 #define W_Lmid _______          _______         _______         _______         _______
 #define W_Lbtm _______          _______         _______         _______         _______
 #define W_Lthm                                                  _______         _______
@@ -233,7 +233,7 @@
 #define W_Rthm _______          _______
 
 #define l_akX_label "l_akX"
-#define X_Ltop _______          _______         _______         _______         _______
+#define X_Ltop _______          &ak_xp          &kp L           _______         _______
 #define X_Lmid _______          _______         _______         _______         _______
 #define X_Lbtm _______          _______         _______         _______         _______
 #define X_Lthm                                                  _______         _______
