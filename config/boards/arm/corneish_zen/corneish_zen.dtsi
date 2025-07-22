@@ -6,10 +6,14 @@
 */
 
 
-/*
+/* NOTICE / WARNING:
+ *
  * redefine &flash0 here to match the Zaphod definitions because I accidentally
  * flashed zaphod firmware onto the Zen, and botched it all. To correct it,
- * caksoylar suggested this. It worked, after flashing a new settings_reset.
+ * caksoylar suggested this to move the flash partition on the Zen to match the
+ * partition on the Zaphod. It worked, after flashing a new settings_reset.
+ *   This means that this Zen cannot use the standard Zen definitions, and that
+ * this may not work on a stock Zen.
  */
 
 &flash0 {

@@ -1,6 +1,6 @@
 #define _______  &trans
 
-/*      Base (alpha) Layer Hands Down Vibranium-vf
+/*      Base (alpha) Layer Hands Down Vibranium-vx
                     34 keys (core)
  ╭─────────────────────╮ ╭──────────────────────╮
  │  V   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
@@ -10,7 +10,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_combo_file "moutis_combos-vx.dtsi" // the related combo file
+#define HD_combo_file "moutis_combos-vb.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Vx"
 #define HD_Ltop &ak_v           &ak_w           &ak_m           &ak_g           &ak_j
