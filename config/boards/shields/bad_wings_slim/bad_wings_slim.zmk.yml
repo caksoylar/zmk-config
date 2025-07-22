@@ -1,8 +1,0 @@
-file_format: "1"
-id: bad_wings_slim
-name: "BWS Hands Down VV"
-type: shield
-url: https://github.com/hazels-garage/bad-wings/blob/master/slim
-requires: [seeed_xiao]
-features:
-  - keys

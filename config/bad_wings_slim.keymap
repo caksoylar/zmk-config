@@ -26,7 +26,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-#include "moutis_3x5+3.dtsi"    // base (alpha) layer (& related adaptive layers)
+#include "moutis_3x5_3.dtsi"    // base (alpha) layer (& related adaptive layers)
 #include "moutis_layers.dtsi"   // all other (common) layers (shouldn't vary)
     };
 
