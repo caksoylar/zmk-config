@@ -106,14 +106,14 @@
 #define G_Lbtm _______          _______         _______         _______         _______
 #define G_Lthm                                                  _______         _______
 
-#define G_Rtop &kp T            &kp D           &m_lm           _______         _______
+#define G_Rtop &kp T            &kp D           &b_lm           _______         _______
 #define G_Rmid _______          _______         _______         _______         _______
 #define G_Rbtm _______          _______         _______         _______         _______
 #define G_Rthm _______          _______
 
 #define l_akH_label "l_akH"
 #define H_Ltop _______          _______         _______         _______         _______
-#define H_Lmid _______          _______         _______         _______         &m_nk
+#define H_Lmid _______          _______         _______         _______         &b_nk
 #define H_Lbtm _______          _______         _______         _______         _______
 #define H_Lthm                                                  _______         _______
 
@@ -222,7 +222,7 @@
 #define V_Rthm _______          _______
 
 #define l_akW_label "l_akW"
-#define W_Ltop &kp S            _______         _______         &m_lm           &kp L
+#define W_Ltop &kp S            _______         _______         &b_lm           &kp L
 #define W_Lmid _______          _______         _______         _______         _______
 #define W_Lbtm _______          _______         _______         _______         _______
 #define W_Lthm                                                  _______         _______
