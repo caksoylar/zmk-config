@@ -10,7 +10,6 @@
            ╰──────────╯ ╰───────────╯
 */
 
-#define HD_combo_file "moutis_combos-vf.dtsi" // combos corresponding to alphas
 #define HD_Layer_label "HD-Vf"
 
 #define HD_Ltop &ak_x           &ak_w           &ak_m       &ak_g          &ak_j

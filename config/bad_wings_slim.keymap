@@ -15,19 +15,16 @@
 #include "moutis_behaviors.dtsi"
 #include "moutis_macros.dtsi"
 
+    combos {
+        compatible = "zmk,combos";
+#include "moutis_combos-common.dtsi" // common/location dependent combos (cut/copy/paste, esc, app, etc.)
+#include "moutis_combos-vf.dtsi"     // alpha dependent combos (h-digraphs, etc.)
+    };
     keymap {
         compatible = "zmk,keymap";
 
-#include "HD_3x5+3-vf.dtsi"    // base (alpha) layer (& related adaptive layers) & HD related defs
+#include "HD_3x5+3-vf.dtsi"    // base (alpha) layer (& related adaptive layers)
 #include "moutis_layers.dtsi"  // all other (common) layers (shouldn't vary)
-
-    };
-    combos {
-        compatible = "zmk,combos";
-
-#include "moutis_combos-common.dtsi" // common/location dependent combos (cut/copy/paste, esc, app, etc.)
-#include <HD_combo_file>               // alpha dependent combos (h-digraphs, etc.)
-
     };
 
 };

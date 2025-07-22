@@ -8,7 +8,7 @@
                            ╰──────────────╯    ╰────────────────╯
 
 */
-#include "HD_core-vf.h" // core alpha & ak_layer definitions & supplementary filenames
+#include "HD_core-vf.h" // core alpha & ak_layer definitions
 
                     l_alpha {
                         label = HD_Layer_label;
