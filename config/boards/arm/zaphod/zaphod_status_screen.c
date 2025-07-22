@@ -47,7 +47,7 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_t *center_frame;
 
     lv_style_init(&global_style);
-    lv_style_set_text_font(&global_style, &lv_font_montserrat_26);
+    lv_style_set_text_font(&global_style, &lv_font_montserrat_20);
     lv_style_set_text_letter_space(&global_style, 1);
     lv_style_set_text_line_space(&global_style, 1);
 
