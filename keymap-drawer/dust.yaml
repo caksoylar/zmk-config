@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: zaphod}
+layout: {zmk_keyboard: dust}
 layers:
   HD-Vf:
   - '&ak_x'
@@ -31,10 +31,12 @@ layers:
   - '&ak_o'
   - '&ak_y'
   - '&ak_b'
-  - {t: BACKSPACE, h: l_fn, s: DELETE}
+  - '&AppSwitch'
+  - {t: BACKSPACE, h: l_fun, s: DELETE}
   - {t: R, h: l_nav}
   - {t: ␣, h: l_sym}
   - {t: RETURN, h: l_nav}
+  - {t: l_num, h: toggle}
   HD-JP:
   - '-'
   - W
@@ -70,6 +72,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akA:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -89,6 +93,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - U
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,7 +146,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akC:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,6 +220,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -231,6 +243,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - O
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -280,6 +294,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akG:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,7 +331,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akH:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -385,6 +405,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akK:
   - {t: ▽, type: trans}
   - L
@@ -420,6 +442,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akM:
   - L
   - '&ak_xp'
@@ -441,6 +465,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -490,6 +516,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akP:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -525,6 +553,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akT:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -541,6 +571,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&b_ck'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -595,6 +627,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -619,6 +653,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -665,10 +701,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akX:
   - {t: ▽, type: trans}
   - '&ak_xp'
   - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -735,11 +775,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   l_akFSLH:
   - {t: ▽, type: trans}
   - '&b_EXCL'
   - {t: ▽, type: trans}
   - '&b_QMARK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -801,10 +845,12 @@ layers:
   - '&'
   - {t: <, h: '&pairLtGt GT'}
   - '>'
+  - {t: ▽, type: trans}
   - Alt+⌫
   - Alt+⌦
   - {type: held}
   - Alt+1
+  - {t: ▽, type: trans}
   l_num:
   - Gui+↑
   - Home
@@ -836,11 +882,13 @@ layers:
   - KP 2
   - KP 3
   - KP EQUAL
-  - {t: ⌫, h: l_fn}
+  - {t: ▽, type: trans}
+  - {t: ⌫, h: l_fun}
   - {t: KP ENTER, h: l_nav}
   - KP 0
   - KP DOT
-  l_fn:
+  - {t: ▽, type: trans}
+  l_fun:
   - F9
   - F10
   - F11
@@ -871,21 +919,23 @@ layers:
   - '5'
   - '6'
   - '='
+  - {t: ▽, type: trans}
   - {t: ⌫, type: held}
-  - ⌦
-  - '0'
+  - KP ENTER
+  - KP 0
   - .
+  - {t: ▽, type: trans}
   l_nav:
   - Gui+Q
   - Gui+W
   - Gui+Sft+4
   - Gui+Sft+Ctl+4
   - Esc
-  - Gui+↑
+  - Gui+=
   - Home
   - ↑
   - Page Up
-  - Alt+↑
+  - ''
   - Ctrl
   - Alt
   - Gui
@@ -901,60 +951,64 @@ layers:
   - Gui+C
   - Gui+V
   - Gui+G
-  - Gui+↓
+  - Gui+-
   - End
-  - ↓
+  - Gui+0
   - Page Down
-  - Alt+↓
+  - ''
+  - {t: ▽, type: trans}
   - '&S_AppSwitch'
   - {t: '&AppSwitch', type: held}
   - Gui+[
   - Gui+]
+  - {t: ▽, type: trans}
   l_cfg:
   - BT 4
   - BT 3
   - BT 2
   - BT 1
   - BT CLR
-  - Gui+0
   - ''
   - ''
   - ''
-  - Ctl+Alt+⌦
+  - ''
+  - ''
   - ''
   - ⏭️
   - ⏯
   - Vol Up
   - BRI UP
-  - Gui+=
+  - BRI UP
   - Vol Up
   - MUTE
   - ⏭️
   - ''
-  - {t: Reset, h: Boot}
+  - Boot
   - ⏮️
   - MUTE
   - Vol Down
   - BRI DN
-  - Gui+-
+  - BRI DN
   - Vol Down
   - ⏯
   - ⏮️
-  - Gui+Alt+ESCAPE
-  - {t: Gui+=, type: held}
-  - {t: Gui+-, type: held}
-  - Gui+-
-  - Gui+=
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: l_num, h: toggle, type: held}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 12, 13]
   k: '&m_alpha'
 - p: [16, 17, 18]
   k: '&m_japan'
-- p: [30, 31]
+- p: [31, 32]
+  k: l_cfg
+- p: [33, 34]
   k: l_cfg
 - p: [32, 33]
-  k: l_cfg
-- p: [31, 32]
   k: {t: l_num, h: toggle}
 - p: [3, 4]
   k: '&AppSwitch'
@@ -1186,7 +1240,7 @@ combos:
 - p: [0, 4]
   k: '&t_PnWeve'
   l: [HD-Vf]
-- p: [0, 31]
+- p: [0, 32]
   k: '&t_PnWhere'
   l: [HD-Vf]
 - p: [1, 2]
