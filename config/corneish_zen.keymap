@@ -17,9 +17,9 @@
 
 #include "boards/arm/corneish_zen/corneish_zen.dtsi" // override &flash0 settings
 
-#include "keynames_3x5+3.h"   // key name defs for this board topology
+#include "keynames_3x5_3.h"   // key name defs for this board topology
 #include "moutis_config.dtsi" // my add-on feature defs
-#include "HD-vf.h"            // HD alpha & related ak_layer definitions
+#include "HD_Vf.h"            // HD alpha & related ak_layer definitions
 
 / {
 #include "moutis_behaviors.dtsi"
@@ -35,7 +35,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-#include "moutis_3x5+3.dtsi"    // base (alpha) layer (& related adaptive layers)
+#include "moutis_3x5_3.dtsi"    // base (alpha) layer (& related adaptive layers)
 #include "moutis_layers.dtsi"   // all other (common) layers (shouldn't vary)
     };
 

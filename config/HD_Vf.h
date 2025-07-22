@@ -1,13 +1,13 @@
 #define _______  &trans
 
 /*      Base (alpha) Layer Hands Down Vibranium-vf
-                    34 key core layout
- ╭─────────────────────╮         ╭──────────────────────╮
- │  X   W   M   G   J  │         │  #$  .:  /*  "[  ']  │
- │  S   C   N   T   K  |         |  ,;   A   E   I   H  │
- │  F   P   L   D   V  │         │  -+   U   O   Y   B  │
- ╰──────╮  App BSP  R  │         │  SPC RET l_num ╭─────╯
-        ╰──────────────╯         ╰────────────────╯
+                    34 keys (core)
+ ╭─────────────────────╮             ╭──────────────────────╮
+ │  X   W   M   G   J  │             │  #$  .:  /*  "[  ']  │
+ │  S   C   N   T   K  |             |  ,;   A   E   I   H  │
+ │  F   P   L   D   V  │             │  -+   U   O   Y   B  │
+ ╰──────────╮  BSP  R  │             │  SPC RET  ╭──────────╯
+            ╰──────────╯             ╰───────────╯
 */
 
 #define HD_combo_file "moutis_combos-vf.dtsi" // the related combo file
