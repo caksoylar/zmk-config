@@ -10,7 +10,7 @@
 
 #include "keynames_3x5_3.h"   // key name defs for this board topology
 #include "moutis_config.dtsi" // my add-on feature defs
-#include "HD_Vx.h"            // HD alpha & related ak_layer definitions
+#include "HD_Ti.h"            // HD alpha & related ak_layer definitions
 
 / {
 #include "moutis_behaviors.dtsi"
