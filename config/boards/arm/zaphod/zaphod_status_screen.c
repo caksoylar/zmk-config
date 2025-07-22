@@ -67,7 +67,7 @@ lv_obj_t *zmk_display_status_screen() {
 #endif
 
     center_frame = lv_obj_create(screen);
-    lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 26);
+    lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 0);
     lv_obj_center(center_frame);
 
 #if IS_ENABLED(CONFIG_ZAPHOD_BONGO_CAT)
@@ -87,7 +87,7 @@ lv_obj_t *zmk_display_status_screen() {
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_LAYER_STATUS)
     zmk_widget_layer_status_init(&layer_status_widget, screen);
     lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_TOP_LEFT,
-                 0, 26);
+                 0, 0);
 #endif
 
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_WPM_STATUS)
