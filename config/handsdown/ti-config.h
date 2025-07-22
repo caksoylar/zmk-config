@@ -10,7 +10,7 @@
          ╰─────────╯ ╰──────────╯
 */
 
-#define HD_combo_file "ti-combos.dtsi" // the related combo file
+#define HD_combo_file "handsdown/ti-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Ti"
 #define HD_Ltop &ak_x           &ak_g           &ak_m           &ak_p           &ak_j

@@ -15,10 +15,6 @@ include:
 #  - board: seeeduino_xiao_ble
 #    shield: dust_right
 #  - board: nice_nano_v2
-#    shield: klor_left
-#  - board: nice_nano_v2
-#    shield: klor_right
-#  - board: nice_nano_v2
 #    shield: settings_reset
 #    shield: microdox_left
 #  - board: nice_nano_v2
@@ -42,8 +38,6 @@ include:
 #    shield: kyria_right
 #  - board: nice_nano_v2
 #    shield: rollow
-#  - board: nice_nano_v2
-#    shield: kyria_v1
 
 #  - board: nice_nano_v2
 #    shield: ffkb
@@ -53,3 +47,8 @@ include:
 
 #  - board: seeeduino_xiao_ble
 #    shield: midge
+
+#  - board: nice_nano_v2
+#    shield: klor_left
+#  - board: nice_nano_v2
+#    shield: klor_right

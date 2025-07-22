@@ -10,7 +10,7 @@
             ╰──────────╯             ╰───────────╯
 */
 
-#define HD_combo_file "vf-combos.dtsi" // the related combo file
+#define HD_combo_file "handsdown/vf-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Vf"
 #define HD_Ltop &ak_x           &ak_w           &ak_m           &ak_g           &ak_j
