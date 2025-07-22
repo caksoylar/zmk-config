@@ -48,7 +48,7 @@
 #define l_akB_label "l_akB"
 #define B_Ltop _______          _______         _______         _______         _______
 #define B_Lmid _______          &kp S           _______         _______         _______
-#define B_Lbtm &kp J            ______          _______         &kp L           _______
+#define B_Lbtm &kp J            _______         _______         &kp L           _______
 #define B_Lthm                                                  _______         _______
 
 #define B_Rtop _______          _______         _______         _______         _______
