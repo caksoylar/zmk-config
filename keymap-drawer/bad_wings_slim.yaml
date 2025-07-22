@@ -1,0 +1,1251 @@
+layout: {zmk_keyboard: bad_wings_slim}
+layers:
+  HD-Vf:
+  - '&ak_x'
+  - '&ak_w'
+  - '&ak_m'
+  - '&ak_g'
+  - '&ak_j'
+  - {t: '#', s: $}
+  - {t: '&ak_dot', s: ':'}
+  - {t: '&ak_FSLH', s: '*'}
+  - {t: '"', s: '['}
+  - {t: '''', s: ']'}
+  - {t: S, h: Ctrl}
+  - {t: C, h: Alt}
+  - {t: N, h: Gui}
+  - {t: '&ak_t T', h: Shift}
+  - '&ak_k'
+  - {t: '&CmmaCap', h: '&CmmaSpc', s: '&t_Semi'}
+  - {t: '&ak_a A', h: Shift}
+  - {t: '&ak_e E', h: Gui}
+  - {t: '&ak_i I', h: Alt}
+  - {t: H, h: Ctrl}
+  - '&ak_f'
+  - '&ak_p'
+  - L
+  - '&ak_d'
+  - '&ak_v'
+  - {t: '-', s: +}
+  - '&ak_u'
+  - '&ak_o'
+  - '&ak_y'
+  - '&ak_b'
+  - '&AppSwitch'
+  - {t: BACKSPACE, h: l_fun, s: DELETE}
+  - {t: R, h: l_nav}
+  - {t: ␣, h: l_sym}
+  - {t: RETURN, h: l_nav}
+  - {t: l_num, h: toggle}
+  HD-JP:
+  - '-'
+  - W
+  - M
+  - G
+  - J
+  - {t: ▽, type: trans}
+  - {t: ., s: ':'}
+  - {t: /, s: '*'}
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: Z, h: Alt}
+  - {t: ▽, type: trans}
+  - {t: T, h: Shift}
+  - K
+  - {t: ▽, type: trans}
+  - {t: A, h: Shift}
+  - {t: E, h: Gui}
+  - {t: I, h: Alt}
+  - {t: ▽, type: trans}
+  - F
+  - P
+  - '&t_nn'
+  - D
+  - V
+  - {t: ▽, type: trans}
+  - U
+  - O
+  - Y
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akA:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - U
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akB:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_sp'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akC:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akD:
+  - J
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_lk'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - V
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - O
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akF:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_sp'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akG:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&t_pg'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akH:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akI:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akK:
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akM:
+  - L
+  - '&ak_xp'
+  - {t: ▽, type: trans}
+  - '&b_lg'
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akO:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akP:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akT:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&t_Ch'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&b_ck'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akU:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akW:
+  - S
+  - {t: ▽, type: trans}
+  - '&b_lm'
+  - '&b_lml'
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akX:
+  - {t: ▽, type: trans}
+  - '&ak_xp'
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akDOT:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - '&t_dotcom'
+  - '&t_dotedu'
+  - '&t_dotorg'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_akFSLH:
+  - {t: ▽, type: trans}
+  - '&b_EXCL'
+  - {t: ▽, type: trans}
+  - '&b_QMARK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  l_sym:
+  - Z
+  - Q
+  - Alt+7
+  - Alt+Sft+5
+  - Alt+Sft+7
+  - AltGr+4
+  - $
+  - Alt+Sft+2
+  - Alt+3
+  - AltGr+Y
+  - Alt+5
+  - {t: '[', h: '&pairBkt RBKT'}
+  - {t: (, h: '&pairPar RPAR'}
+  - {t: '{', h: '&pairBrc RBRC'}
+  - Alt+8
+  - /
+  - {t: '=', h: Shift}
+  - {t: '*', h: Gui}
+  - {t: +, h: Alt}
+  - {t: '-', h: Ctrl}
+  - Alt+Sft+9
+  - ']'
+  - )
+  - '}'
+  - Alt+Sft+8
+  - ^
+  - '|'
+  - '&'
+  - {t: <, h: '&pairLtGt GT'}
+  - '>'
+  - {t: ▽, type: trans}
+  - Alt+⌫
+  - Alt+⌦
+  - {type: held}
+  - Alt+1
+  - {t: ▽, type: trans}
+  l_num:
+  - Gui+↑
+  - Home
+  - ↑
+  - Page Up
+  - Alt+↑
+  - KP SLASH
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - Alt+←
+  - ←
+  - ↓
+  - →
+  - Alt+→
+  - KP MULTIPLY
+  - {t: KP 4, h: Shift}
+  - {t: KP 5, h: Gui}
+  - {t: KP 6, h: Alt}
+  - {t: KP PLUS, h: Ctrl}
+  - Gui+↓
+  - End
+  - ␣
+  - Page Down
+  - Alt+↓
+  - '-'
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP EQUAL
+  - {t: ▽, type: trans}
+  - {t: ⌫, h: l_fun}
+  - {t: KP ENTER, h: l_nav}
+  - KP 0
+  - KP DOT
+  - {t: ▽, type: trans}
+  l_fun:
+  - F9
+  - F10
+  - F11
+  - F12
+  - F13
+  - KP SLASH
+  - '7'
+  - '8'
+  - '9'
+  - KP MINUS
+  - {t: F5, h: Ctrl}
+  - {t: F6, h: Alt}
+  - {t: F7, h: Gui}
+  - {t: F8, h: Shift}
+  - F14
+  - KP MULTIPLY
+  - {t: '1', h: Shift}
+  - {t: '2', h: Gui}
+  - {t: '3', h: Alt}
+  - {t: KP PLUS, h: Ctrl}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F15
+  - CMMA
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ⌫, type: held}
+  - KP ENTER
+  - KP 0
+  - .
+  - {t: ▽, type: trans}
+  l_nav:
+  - Gui+Q
+  - Gui+W
+  - Gui+Sft+4
+  - Gui+Sft+Ctl+4
+  - Esc
+  - Gui+=
+  - Home
+  - ↑
+  - Page Up
+  - ''
+  - Ctrl
+  - Alt
+  - Gui
+  - Shift
+  - Gui+F
+  - Alt+←
+  - ←
+  - ↓
+  - →
+  - Alt+→
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Gui+G
+  - Gui+-
+  - End
+  - Gui+0
+  - Page Down
+  - ''
+  - {t: ▽, type: trans}
+  - '&S_AppSwitch'
+  - {t: '&AppSwitch', type: held}
+  - Gui+[
+  - Gui+]
+  - {t: ▽, type: trans}
+  l_cfg:
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⏭️
+  - ⏯
+  - Vol Up
+  - BRI UP
+  - BRI UP
+  - Vol Up
+  - MUTE
+  - ⏭️
+  - ''
+  - Boot
+  - ⏮️
+  - MUTE
+  - Vol Down
+  - BRI DN
+  - BRI DN
+  - Vol Down
+  - ⏯
+  - ⏮️
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: l_num, h: toggle, type: held}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+combos:
+- p: [11, 12, 13]
+  k: '&m_alpha'
+- p: [16, 17, 18]
+  k: '&m_japan'
+- p: [31, 32]
+  k: l_cfg
+- p: [33, 34]
+  k: l_cfg
+- p: [32, 33]
+  k: {t: l_num, h: toggle}
+- p: [3, 4]
+  k: '&AppSwitch'
+- p: [28, 29]
+  k: Caps Wrd
+  l: [HD-Vf]
+- p: [27, 28, 29]
+  k: Caps Lock
+  l: [HD-Vf]
+- p: [22, 23, 24]
+  k: Gui+RETURN
+- p: [23, 24]
+  k: RETURN
+- p: [0, 1]
+  k: ↹
+  a: top
+  o: 0.15
+- p: [0, 1, 2]
+  k: Win Prev
+- p: [13, 14]
+  k: ␣
+- p: [10, 13]
+  k: Esc
+- p: [20, 23]
+  k: Gui+A
+- p: [20, 24]
+  k: '&m_selword'
+  l: [HD-Vf]
+- p: [20, 21]
+  k: Gui+Z
+- p: [20, 21, 22]
+  k: Gui+Sft+Z
+- p: [21, 22]
+  k: {t: Gui+C, h: Gui+X}
+- p: [22, 23]
+  k: {t: Gui+V, h: Gui+Sft+Alt+V}
+- p: [4, 14]
+  k: Gui+Q
+  l: [HD-Vf]
+- p: [14, 24]
+  k: Gui+N
+  l: [HD-Vf]
+- p: [5, 15]
+  k: Gui+W
+  l: [HD-Vf]
+- p: [15, 25]
+  k: Gui+O
+  l: [HD-Vf]
+- p: [10, 24]
+  k: '&m_findsel'
+  l: [HD-Vf]
+- p: [6, 7, 8]
+  k: {t: '&t_Japan J', h: '&t_Japanese P'}
+  l: [HD-Vf]
+- p: [6, 8]
+  k: {t: ':', h: Alt+;}
+  l: [HD-Vf]
+- p: [15, 16]
+  k: ;
+  l: [HD-Vf]
+- p: [6, 7]
+  k: '!'
+  l: [HD-Vf]
+- p: [7, 8]
+  k: '?'
+  l: [HD-Vf]
+- p: [8, 9]
+  k: '`'
+  l: [HD-Vf]
+- p: [5, 6]
+  k: {t: '@', h: Sft+Alt+;}
+  l: [HD-Vf]
+- p: [26, 28]
+  k: _
+  l: [HD-Vf]
+- p: [27, 28]
+  k: {t: '=', h: '%'}
+  l: [HD-Vf]
+- p: [25, 26]
+  k: {t: Alt+-, h: Alt+Sft+-}
+  l: [HD-Vf]
+- p: [25, 27]
+  k: Alt+Sft+-
+  l: [HD-Vf]
+- p: [25, 28]
+  k: '~'
+  l: [HD-Vf]
+- p: [16, 26]
+  k: Alt+.
+  l: [HD-Vf]
+- p: [17, 27]
+  k: Alt+Q
+  l: [HD-Vf]
+- p: [16, 17]
+  k: {t: Alt+E, h: '&t_Eaccent E'}
+  l: [HD-Vf]
+- p: [17, 18]
+  k: {t: Alt+`, h: '&t_Egrave E'}
+  l: [HD-Vf]
+- p: [16, 18]
+  k: {t: Alt+6, h: '&t_Eacute E'}
+  l: [HD-Vf]
+- p: [17, 19]
+  k: {t: Alt+A, h: '&t_Omacron E'}
+  l: [HD-Vf]
+- p: [16, 19]
+  k: {t: Alt+K, h: '&t_Aring A'}
+  l: [HD-Vf]
+- p: [26, 27]
+  k: {t: Alt+U, h: '&t_Uumlaut U'}
+  l: [HD-Vf]
+- p: [10, 12]
+  k: {t: Alt+C, h: '&t_Cedille C'}
+  l: [HD-Vf]
+- p: [16, 17]
+  k: (
+  l: [l_num]
+- p: [17, 18]
+  k: )
+  l: [l_num]
+- p: [18, 19]
+  k: '='
+  l: [l_num]
+- p: [16, 18]
+  k: ':'
+  l: [l_num]
+- p: [28, 29]
+  k: '%'
+  l: [l_num]
+- p: [15, 16]
+  k: <
+  l: [l_num]
+- p: [15, 19]
+  k: '>'
+  l: [l_num]
+- p: [25, 26]
+  k: Alt+-
+  l: [l_num]
+- p: [25, 29]
+  k: '~'
+  l: [l_num]
+- p: [26, 29]
+  k: Alt+;
+  l: [l_num]
+- p: [6, 7]
+  k: $
+  l: [l_num]
+- p: [5, 6]
+  k: Alt+4
+  l: [l_num]
+- p: [7, 8]
+  k: Sft+Alt+2
+  l: [l_num]
+- p: [8, 9]
+  k: Alt+Y
+  l: [l_num]
+- p: [6, 8]
+  k: Alt+3
+  l: [l_num]
+- p: [1, 3]
+  k: {t: '&t_Qu U', h: Q}
+  l: [HD-Vf]
+- p: [11, 13]
+  k: Z
+  l: [HD-Vf]
+- p: [10, 11, 12]
+  k: '&t_Sch'
+  l: [HD-Vf]
+- p: [10, 11, 13]
+  k: '&t_Tch'
+  l: [HD-Vf]
+- p: [12, 13]
+  k: {t: '&t_Th T', h: '&t_tion H'}
+  l: [HD-Vf]
+- p: [11, 12]
+  k: '&t_Ch'
+  l: [HD-Vf]
+- p: [1, 2]
+  k: '&t_Wh'
+  l: [HD-Vf]
+- p: [10, 11]
+  k: {t: '&t_Sh S', h: '&t_sion H'}
+  l: [HD-Vf]
+- p: [2, 3]
+  k: {t: '&t_Gh G', h: '&t_ght H'}
+  l: [HD-Vf]
+- p: [21, 23]
+  k: '&t_Ph'
+  l: [HD-Vf]
+- p: [18, 19]
+  k: '&t_PnI'
+  l: [HD-Vf]
+- p: [18, 2]
+  k: '&t_PnIm'
+  l: [HD-Vf]
+- p: [18, 22]
+  k: '&t_PnIll'
+  l: [HD-Vf]
+- p: [18, 23]
+  k: '&t_PnId'
+  l: [HD-Vf]
+- p: [18, 24]
+  k: '&t_PnIve'
+  l: [HD-Vf]
+- p: [28, 20]
+  k: '&t_PnYoure'
+  l: [HD-Vf]
+- p: [28, 21]
+  k: '&t_PnYour'
+  l: [HD-Vf]
+- p: [28, 22]
+  k: '&t_PnYoull'
+  l: [HD-Vf]
+- p: [28, 23]
+  k: '&t_PnYoud'
+  l: [HD-Vf]
+- p: [28, 24]
+  k: '&t_PnYouve'
+  l: [HD-Vf]
+- p: [0, 9]
+  k: '&t_PnWere'
+  l: [HD-Vf]
+- p: [0, 2]
+  k: '&t_PnWell'
+  l: [HD-Vf]
+- p: [0, 3]
+  k: '&t_PnWed'
+  l: [HD-Vf]
+- p: [0, 4]
+  k: '&t_PnWeve'
+  l: [HD-Vf]
+- p: [0, 32]
+  k: '&t_PnWhere'
+  l: [HD-Vf]
+- p: [1, 2]
+  k: '&t_wo'
+  l: [HD-JP]
+- p: [18, 19]
+  k: '&t_shi'
+  l: [HD-JP]
