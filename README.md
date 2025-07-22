@@ -21,7 +21,7 @@ LSFT │  F   P   L   D   V  │ │  -+   U   O   Y   B  │ RSFT
 ```
 I have definitions for:
 - [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (flavors *Vf, Vb, Vv, Vx*)
-- [***Promethium***] (https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
+- [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 - [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c)
 - [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
 
