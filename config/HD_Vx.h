@@ -156,7 +156,7 @@
 #define K_Rthm _______         _______
 
 #define l_akM_label "l_akM"
-#define M_Ltop &ak_lv           &ak_xp          _______         &b_lg           &kp L
+#define M_Ltop _______          &ak_xp          _______         &b_lg           &kp L
 #define M_Lmid _______          _______         _______         _______         _______
 #define M_Lbtm _______          _______         _______         _______         _______
 #define M_Lthm                                                  _______         _______
