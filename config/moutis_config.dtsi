@@ -9,7 +9,7 @@
 #define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
 #define COMMA_CAP     // , before alpha capitalizes that alpha
 
-#define my_tapping_term 170
+#define my_tapping_term 200
 #define my_quick_tapping_term 55
 #define my_ak_delay 50
 

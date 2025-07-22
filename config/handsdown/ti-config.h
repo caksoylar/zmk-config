@@ -101,13 +101,13 @@
 #define F_Rthm _______          _______
 
 #define l_akG_label "l_akG"
-#define G_Ltop _______          _______         &kp L           &b_lml          _______
-#define G_Lmid _______          _______         _______         _______         _______
+#define G_Ltop _______          _______         &kp L           &b_lml          &t_Th
+#define G_Lmid _______          _______         _______         _______         &b_lk
 #define G_Lbtm _______          _______         _______         _______         _______
 #define G_Lthm                                                  _______         _______
 
-#define G_Rtop _______          _______         _______         _______         &t_Th
-#define G_Rmid _______          _______         _______         _______         &b_lk
+#define G_Rtop _______          _______         _______         _______         _______
+#define G_Rmid _______          _______         _______         _______         _______
 #define G_Rbtm _______          _______         _______         _______         _______
 #define G_Rthm _______          _______
 
