@@ -141,7 +141,7 @@
 
 #define J_Rtop _______         _______          _______         _______         _______
 #define J_Rmid _______         _______          _______         _______         &kp SQT
-#define J_Rbtm _______         _______          _______         _______         &kp I
+#define J_Rbtm _______         _______          _______         _______         _______
 #define J_Rthm _______         _______
 
 #define l_akK_label "l_akK"
