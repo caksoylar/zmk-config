@@ -2,11 +2,12 @@
 
 ![zen pic](zen.jpg)
 
-My personal ZMK instance of [**Hands Down**](http://handsdownlayout.com) on small portable boards.
+My personal ZMK instance of [**Hands Down**](http://handsdownlayout.com) on small portable boards:
 
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) 
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/)
+- [**Dust**](https://kbd.news/Dust-keyboard-1789.html)
 - [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92)
 - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR)
 - [**Kyria**](https://splitkb.com/products/kyria-rev3)
@@ -25,7 +26,7 @@ I have definitions for:
 - [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c)
 - [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
 
- [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) is designed to work with all the other [smart behaviors](https://sites.google.com/alanreiser.com/handsdown#h.8ngiif20qf4). Currently I have most of the *essential* combos (`Qu`,`Z`, `Undo`, `Cut`, `Copy`, `Paste`, etc.), *and* **`H` digraph combos** *to send* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*. There's a ZMK take on [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) (*using macros and sticky layers*) and [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*using macros and hold-tap behaviors for things like diacritics `éèôåō` and paired symbols, `{([<>])}` and more*). They behave a bit differently than in QMK, but are quite usable. Eventually I hope to deploy a properly coded solution to these features.
+ [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) is designed to work with all the other [smart behaviors](https://sites.google.com/alanreiser.com/handsdown#h.8ngiif20qf4). Currently I have most of the *essential* combos: (`Qu`,`Z`, `Undo`, `Cut`, `Copy`, `Paste`, etc.), punctuation (`@`,`!`,`?`,`;`,`:`, etc.), **`H` digraph combos** *to send* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*. There's a ZMK take on [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) (*using macros and sticky layers*) and [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*using macros and hold-tap behaviors for things like diacritics `éèôåō` and paired symbols, `{([<>])}` and more*). They behave a bit differently than in QMK, but are quite usable. Eventually I hope to deploy a properly coded solution to these features. Even a wonky comma-shift! (the QMK version is nearly perfect. The ZMK has some quirks.)
 
 In the works:
 - [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w)
