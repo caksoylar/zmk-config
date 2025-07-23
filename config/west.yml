@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
 #    - name: caksoylar
 #      url-base: https://github.com/caksoylar
-#    - name: urob
-#      url-base: https://github.com/urob
+    - name: urob
+      url-base: https://github.com/urob
 #    - name: ssbb
 #      url-base: https://github.com/ssbb
   projects:
