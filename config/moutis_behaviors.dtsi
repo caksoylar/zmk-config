@@ -285,7 +285,7 @@ behaviors {
             bindings = <&kp G>;
 
             ak_Gt_gl { trigger-keys = <M>; bindings = <&kp BSPC &kp L &kp G>; };
-            ak_Gt_pg { trigger-keys = <M>; bindings = <&kp P &kp G>; };
+            ak_Gt_pg { trigger-keys = <J>; bindings = <&kp P &kp G>; };
         };
         ak_H: ak_H {
             compatible = "zmk,behavior-adaptive-key";
@@ -301,7 +301,7 @@ behaviors {
         ak_J: ak_J {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp G>;
+            bindings = <&kp J>;
 
             ak_Tt_l { trigger-keys = <M W>; bindings = <&kp L>; };
         };
@@ -316,14 +316,14 @@ behaviors {
         ak_W: ak_W {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp M>;
+            bindings = <&kp W>;
 
             ak_Wb_l { trigger-keys = <X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P>; };
         };
         ak_X: ak_X {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp M>;
+            bindings = <&kp X>;
 
             ak_Xt_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; };
             ak_Xt_l { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
