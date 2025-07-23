@@ -10,10 +10,15 @@
             ╰──────────╯             ╰───────────╯
 */
 
+#ifndef ZMK_BASE_LAYER
+  #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                 \
+      ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
+#endif
+
 #define HD_combo_file "handsdown/vf-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Vf"
-#define HD_Ltop &ak_x           &ak_w           &kp M           &kp G           &kp J
+#define HD_Ltop &ak_x           &ak_w           &ak_M           &ak_G           &ak_j
 #define HD_Lmid &hml LCTRL S    &hml LALT C     &hml LGUI N     &hrm_t LSHFT T  &ak_k
 #define HD_Lbtm &ak_f           &ak_p           &kp L           &ak_d           &ak_v
 #define HD_Lthm                                                 &lt_BspcDel     &lt l_nav R

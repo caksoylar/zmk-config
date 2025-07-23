@@ -285,7 +285,7 @@ behaviors {
             bindings = <&kp G>; // when G is pressed
 
             // and prior key is M, then delete the M and send LG
-            akt_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L &kp G>; };
+            akt_gl { trigger-keys = <M>; bindings = <&kp L &kp G>; };
         };
 
         ak_M: ak_M {
