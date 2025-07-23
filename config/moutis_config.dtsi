@@ -9,7 +9,7 @@
 #define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
 #define COMMA_CAP     // , before alpha capitalizes that alpha
 
-#define my_ak_term 300 // time window for adaptive key to trigger
+#define my_ak_term 350 // behavior-adaptive-key trigger time window
 #define my_ak_delay 50
 
 #define my_tapping_term 200

@@ -275,22 +275,25 @@ behaviors {
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
+/*
+ * AdaptiveKey behaviors
+ *
+ */
         ak_G: ak_G {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp G>; // when G is pressed
 
-            // if M precedes, then delete the M and send LG
+            // and prior key is M, then delete the M and send LG
             akt_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L &kp G>; };
-            // if J precedes, then send PG (to type JPG)
-            akt_jg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; };
         };
 
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp M>;
+            bindings = <&kp M>; // when M is pressed
 
+            // and prior key is G, then send L (for GL)
             akt_ml { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
         };
 
