@@ -23,7 +23,7 @@
 /*
  Some combos need to be in specific places depending on
  the underlying alpha, esp H-Digraph combos, so they are
-defined in the individual combo-layout dtsi file.
+ defined in the individual combo-layout dtsi file.
 */
 
 

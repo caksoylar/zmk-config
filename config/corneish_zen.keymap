@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/ {
+/ { // I use a 5 column Zen
   chosen {
     //zmk,matrix_transform = &default_transform;
     zmk,matrix_transform = &five_column_transform;
@@ -18,7 +18,8 @@
 #include "boards/arm/corneish_zen/corneish_zen.dtsi" // override &flash0 settings
 
 #include "keynames_3x5_3.h"         // key name defs for this board topology
-#include "moutis_config.dtsi"       // my add-on feature defs
+#include "moutis.h"                 // my defs
+#include "moutis_config.dtsi"       // my ZMK default configs
 #include "handsdown/vf-config.h"    // HD alpha & related ak_layer definitions
 
 / {
