@@ -1,6 +1,6 @@
 /*
  *
- * Copyright (c) 2022 Alan
+ * Copyright (c) 2022 Alan Reiser
  * SPDX-License-Identifier: MIT
  */
 
@@ -9,8 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "keynames_3x5_2.h"         // key name defs for this board topology
-#include "moutis.h"                 // my defs
-#include "moutis_config.dtsi"       // my ZMK default configs
+#include "moutis_config.dtsi"       // my add-on feature defs
 #include "handsdown/vf-config.h"    // HD alpha & related ak_layer definitions
 
 / {
@@ -20,8 +19,8 @@
     combos {
         compatible = "zmk,combos";
         
-#include "moutis_combos-common.dtsi" // common/location based combos (cut/copy/paste, esc, app, etc.)
-#include HD_combo_file               // HDalpha/mnemonic based combos (h-digraphs, etc.)
+#include "moutis_combos.dtsi"       // common/location based combos (cut/copy/paste, esc, app, etc.)
+#include HD_combo_file              // HDalpha/mnemonic based combos (h-digraphs, etc.)
     };
     
     keymap {

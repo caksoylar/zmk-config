@@ -4,6 +4,10 @@
 *
 */
 
+//
+// common/location based combos (cut/copy/paste, esc, app, etc.)
+//
+
 #define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \

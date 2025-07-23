@@ -14,6 +14,7 @@
 
 // my layers
 #define l_any   -1 // for combos on any layer
+
 enum mylayers {
     l_alpha, // 1 - Hands Down Alpha layer
     l_japan, // alternate base layer in Jmode
