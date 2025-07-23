@@ -10,14 +10,14 @@ manifest:
 #      url-base: https://github.com/ssbb
   projects:
     - name: zmk
-     remote: zmkfirmware
-     revision: main
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
 #      remote: caksoylar
 #      revision: caksoylar/zen-v1+v2
-      import: app/west.yml
-#    - name: zmk-adaptive-key
-#      remote: urob
-#      revision: main # set to same as ZMK version above
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: main # set to same as ZMK version above
 #    - name: zmk-antecedent-morph
 #      remote: ssbb
 #      revision: v1
