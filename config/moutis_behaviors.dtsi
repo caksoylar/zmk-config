@@ -280,8 +280,8 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp G>;
 
-            // Binding two behaviors: JG->JPG
-            akt_jg { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp P &kp G>; };
+            akt_jg { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            akt_jg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; };
         };
 
 
