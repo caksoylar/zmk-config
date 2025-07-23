@@ -287,7 +287,6 @@ behaviors {
             ak_Gt_gl { trigger-keys = <M>; bindings = <&kp BSPC &kp L &kp G>; };
             ak_Gt_pg { trigger-keys = <M>; bindings = <&kp P &kp G>; };
         };
-
         ak_H: ak_H {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -298,6 +297,13 @@ behaviors {
             ak_Ht_o { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
             ak_Ht_u { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
             ak_Ht_y { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; };
+        };
+        ak_J: ak_J {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp G>;
+
+            ak_Tt_l { trigger-keys = <M W>; bindings = <&kp L>; };
         };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
