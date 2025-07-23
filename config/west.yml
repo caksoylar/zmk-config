@@ -9,9 +9,9 @@ manifest:
 #    - name: ssbb
 #      url-base: https://github.com/ssbb
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
+#    - name: zmk
+#      remote: zmkfirmware
+#      revision: main
 #      import: app/west.yml
 #      remote: caksoylar
 #      revision: caksoylar/zen-v1+v2
