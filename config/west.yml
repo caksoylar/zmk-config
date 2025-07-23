@@ -17,7 +17,7 @@ manifest:
 #      revision: caksoylar/zen-v1+v2
     - name: zmk
       remote: urob # or zmkfirmware, see comment below
-    revision: v0.2+fix-child-nodes
+      revision: v0.2+fix-child-nodes
       import: app/west.yml
     - name: zmk-adaptive-key
       remote: urob
