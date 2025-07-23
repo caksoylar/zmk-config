@@ -275,7 +275,7 @@ behaviors {
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
-        ad_g: ak_g {
+        ad_g: ad_g {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp G>;
