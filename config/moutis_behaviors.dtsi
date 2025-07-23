@@ -225,7 +225,7 @@ behaviors {
         DqtLbkt: DqtLbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp A(BSLH)>;
+            bindings = <&SqtGT>, <&kp LA(BSLH)>;
 //            bindings = <&DqtLT>, <&kp LBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
@@ -238,7 +238,7 @@ behaviors {
         DqtRbkt: DqtRbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp S(A(BSLH))>;
+            bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
 //            bindings = <&DqtGT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
@@ -251,7 +251,7 @@ behaviors {
         SqtLbkt: SqtLbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp A(BSLH)>;
+            bindings = <&SqtGT>, <&kp LA(BSLH)>;
 //            bindings = <&kp SqtLT>, <&kp LBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
@@ -264,7 +264,7 @@ behaviors {
         SqtRbkt: SqtRbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp S(A(BSLH))>;
+            bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
 //            bindings = <&SqtGT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
