@@ -22,16 +22,6 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             tapping-term-ms = <my_tapping_term>; \
             flavor = "tap-preferred"
 
-&mt {
-    tapping-term-ms = <my_tapping_term>;
-};
-&sl {
-    release-after-ms = <my_tapping_term>;
-};
-&caps_word {
-    continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
-};
-
 behaviors {
 
         csk: csk {

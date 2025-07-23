@@ -43,3 +43,14 @@
 #define l_fun   25
 #define l_nav   26
 #define l_cfg   27
+
+
+&mt {
+    tapping-term-ms = <my_tapping_term>;
+};
+&sl {
+    release-after-ms = <my_tapping_term>;
+};
+&caps_word {
+    continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
+};
