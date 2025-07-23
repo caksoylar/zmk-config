@@ -219,7 +219,7 @@ behaviors {
         DqtLT: DqtLT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp LT>;
+            bindings = <&kp LS(DQT)>, <&kp LS(LT)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DqtLbkt: DqtLbkt {
