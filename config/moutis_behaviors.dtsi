@@ -280,7 +280,7 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp G>;
 
-            akt_jg { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            akt_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
             akt_jg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; };
         };
 
