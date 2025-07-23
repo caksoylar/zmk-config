@@ -277,24 +277,51 @@ behaviors {
         
 /*
  * AdaptiveKey behaviors
- *
+ * (send a different behavior based on prior key)
  */
         ak_G: ak_G {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp G>; // when G is pressed
+            bindings = <&kp G>;
 
-            // and prior key is M, then delete the M and send LG
-            akt_gl { trigger-keys = <M>; bindings = <&kp L &kp G>; };
+            ak_Gt_gl { trigger-keys = <M>; bindings = <&kp BSPC &kp L &kp G>; };
+            ak_Gt_pg { trigger-keys = <M>; bindings = <&kp P &kp G>; };
         };
 
+        ak_H: ak_H {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
+
+            ak_Ht_e { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
+            ak_Ht_n { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
+            ak_Ht_o { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
+            ak_Ht_u { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
+            ak_Ht_y { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; };
+        };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp M>; // when M is pressed
+            bindings = <&kp M>;
 
-            // and prior key is G, then send L (for GL)
-            akt_ml { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            ak_Mt_l { trigger-keys = <X G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            ak_Mb_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L>; };
+        };
+        ak_W: ak_W {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp M>;
+
+            ak_Wb_l { trigger-keys = <X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P>; };
+        };
+        ak_X: ak_X {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp M>;
+
+            ak_Xt_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; };
+            ak_Xt_l { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            ak_Xb_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp S>; };
         };
 
 };
