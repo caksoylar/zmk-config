@@ -46,6 +46,49 @@ behaviors {
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 
+        mt_S: mt_S {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_S>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_C: mt_C {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_C>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_N: mt_N {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_N>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_T: mt_T {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_t>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_A: mt_A {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_A>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+       };
+        hm_E: mt_E {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_E>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
+        mt_I: mt_I {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_I>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
+        mt_H: mt_H {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_H>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+
+
+
 /*
  * lk_ linger key behaviors (approximated via hold-tap)
  */
@@ -254,6 +297,7 @@ behaviors {
             akM_t_l { trigger-keys = <G X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
             akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M>; };
         };
+/*
         ak_N: ak_N {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -262,6 +306,8 @@ behaviors {
             akN_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(N)>; };
             akN_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
         };
+*/
+/*
         ak_S: ak_S {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -269,5 +315,5 @@ behaviors {
 
             akS_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(S)>; };
         };
-
+*/
 };
