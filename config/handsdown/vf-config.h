@@ -27,7 +27,7 @@
 #define HD_Rtop &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
 #define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &hmr RCTRL H
 #define HD_Rbtm &MinusPlus      &kp U           &kp O           &kp Y           &kp B
-#define HD_Rthm &lt l_sym SPACE &lt l_nav RETUR
+#define HD_Rthm &lt l_sym SPACE &lt l_nav RETURN
 
 #define JP_Layer_label "HD-JP" // Japanese "mode" (L, C, X not used in Japanese, so repurpose to ん, Z, -)
 #define JP_Ltop &kp MINUS       &kp W           &kp M           &kp G           &kp J

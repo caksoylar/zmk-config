@@ -6,6 +6,20 @@
  *
  * using urob's behavior-adaptive-key module (https://github.com/urob/zmk-adaptive-key/)
  */
+        ak_A: ak_A {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp L>;
+
+            akA_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(A)>; };
+        };
+        ak_B: ak_B {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp B>;
+
+            akB_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(B)>; };
+        };
         ak_C: ak_C {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -27,6 +41,7 @@
             #binding-cells = <0>;
             bindings = <&kp E>;
 
+            akE_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(E)>; };
             akE_t_u { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
         };
         ak_F: ak_F {
@@ -61,6 +76,13 @@
             akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; };
 */
         };
+        ak_I: ak_I {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp I>;
+
+            akI_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(I)>; };
+        };
         ak_J: ak_J {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -79,6 +101,13 @@
             akK_b_lk { trigger-keys = <D G>; bindings = <&kp BSPC &kp L &kp K>; };
             akK_b_ck { trigger-keys = <T>; bindings = <&kp BSPC &kp C &kp K>; };
         };
+        ak_L: ak_L {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp L>;
+
+            akL_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(L)>; };
+        };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -96,6 +125,13 @@
             akN_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(N)>; };
             akN_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
         };
+        ak_O: ak_O {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp O>;
+
+            akO_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(O)>; };
+        };
         ak_P: ak_P {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -104,6 +140,41 @@
             akP_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(P)>; };
             akP_t_g { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; };
             akP_b_l { trigger-keys = <F>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S &kp P>; };
+        };
+        ak_Q: ak_Q {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp Q>;
+
+            akQ_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(Q)>; };
+        };
+        ak_R: ak_R {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp R>;
+
+            akR_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(R)>; };
+        };
+        ak_S: ak_S {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp S>;
+
+            akS_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(S)>; };
+        };
+        ak_T: ak_T {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp T>;
+
+            akT_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(T)>; };
+        };
+        ak_U: ak_U {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp U>;
+
+            akU_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(U)>; };
         };
         ak_V: ak_V {
             compatible = "zmk,behavior-adaptive-key";
@@ -130,4 +201,18 @@
             akX_t_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; };
             akX_t_l { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
             akX_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp S>; };
+        };
+        ak_Y: ak_Y {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp Y>;
+
+            akY_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(Y)>; };
+        };
+        ak_Z: ak_Z {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp Z>;
+
+            akZ_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(Z)>; };
         };
