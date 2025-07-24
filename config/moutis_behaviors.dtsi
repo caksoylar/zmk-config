@@ -251,8 +251,16 @@ behaviors {
             bindings = <&kp M>;
 
             akM_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(M)>; };
-            akM_t_l { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
-            akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L>; };
+            akM_t_l { trigger-keys = <G X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M>; };
+        };
+        ak_N: ak_N {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp N>;
+
+            akN_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(N)>; };
+            akN_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
         };
 /*
         ak_X: ak_X {

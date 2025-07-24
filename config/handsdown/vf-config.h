@@ -21,7 +21,7 @@
 
 #define HD_Layer_label "HD-Vf"
 #define HD_Ltop &kp X           &kp W           &ak_M           &kp G           &kp J
-#define HD_Lmid &hml LCTRL S    &hml LALT C     &hml LGUI N     &hml LSHFT T    &kp K
+#define HD_Lmid &hml LCTRL ak_S    &hml LALT C     &hml LGUI N     &hml LSHFT T    &kp K
 #define HD_Lbtm &kp F           &kp P           &kp L           &kp D           &kp V
 #define HD_Lthm                                                 &lt_BspcDel     &lt l_nav R
 
