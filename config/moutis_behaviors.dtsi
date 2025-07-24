@@ -334,8 +334,8 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp K>;
 
-            akK_b_lk { trigger-keys = <D G>; bindings = <&BSPC &kp L &kp K>; };
-            akK_b_ck { trigger-keys = <T>; bindings = <&BSPC &kp C &kp K>; };
+            akK_b_lk { trigger-keys = <D G>; bindings = <&kp BSPC &kp L &kp K>; };
+            akK_b_ck { trigger-keys = <T>; bindings = <&kp BSPC &kp C &kp K>; };
         };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
