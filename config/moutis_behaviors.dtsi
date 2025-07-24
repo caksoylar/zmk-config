@@ -128,11 +128,12 @@ behaviors {
             my_lk_config;
             bindings = <&bootloader>, <&sys_reset>;
         };
+/*
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             my_lk_config;
             bindings = <&CmmaSpc>, <&m_shft>;
         };
-
+*/
 /*
  * modmorph behaviors
  * identified by the mixed case of each of the keycodes

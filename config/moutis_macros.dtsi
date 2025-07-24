@@ -17,10 +17,10 @@ macros {
             <&kp LANG1>, // switch to Japanese script (m_henk)
             <&to l_japan>; // make Japanese layer default
        )
-        
+/*
      ZMK_MACRO(CmmaSpc, tap-ms = <40>; bindings = <&kp CMMA &kp SPACE>;)
      ZMK_MACRO(m_shft, tap-ms = <40>; bindings = <&sl l_akDot>;) // <&sk LSHIFT> <&sl l_akDot>
-
+*/
    ZMK_MACRO(AppSwitch,
         wait-ms = <50>;
         tap-ms = <20>;
