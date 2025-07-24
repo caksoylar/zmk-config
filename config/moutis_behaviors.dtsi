@@ -180,7 +180,7 @@ behaviors {
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp CMMA>, <&kp SEMI>;
+            bindings = <&ak_CMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
@@ -281,6 +281,14 @@ behaviors {
 
         akHASH_t_gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_gratefully>; };
         };
+        ak_CMMA: ak_CMMA {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp CMMA>;
+
+        ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&caps_word>; };
+        };
+        
 //
 #include HD_adapt_file
 //
