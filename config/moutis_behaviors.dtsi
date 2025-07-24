@@ -45,13 +45,14 @@ behaviors {
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-
+//
+// these are really layout dependent, so should be separated…but for now...
+//
         mt_S: mt_S {
             my_hrm_config;
             bindings = <&kp>, <&ak_S>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-/*
         mt_C: mt_C {
             my_hrm_config;
             bindings = <&kp>, <&ak_C>;
@@ -82,7 +83,6 @@ behaviors {
             bindings = <&kp>, <&ak_I>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
         };
-*/
         mt_H: mt_H {
             my_hrm_config;
             bindings = <&kp>, <&ak_H>;
