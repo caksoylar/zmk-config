@@ -21,23 +21,23 @@
 
 #define HD_Layer_label "HD-Vf"
 #define HD_Ltop &ak_X           &ak_W           &ak_M           &ak_G           &ak_J
-#define HD_Lmid &mt_S LCTRL S   &mt_C LALT C    &mt_N LGUI N    &mt_T LSHFT T   &ak_K
+#define HD_Lmid &mt_S RCTRL S   &mt_C RALT C    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
 #define HD_Lbtm &ak_F           &ak_P           &ak_L           &ak_D           &ak_V
 #define HD_Lthm                                                 &lt_BspcDel     &lt_R l_nav R
 
 #define HD_Rtop &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
-#define HD_Rmid &CmmaSemi       &mt_A RSHFT A   &mt_E RGUI E    &mt_I RALT I    &mt_H RCTRL H
+#define HD_Rmid &CmmaSemi       &mt_A LSHFT A   &mt_E LGUI E    &mt_I LALT I    &mt_H LCTRL H
 #define HD_Rbtm &MinusPlus      &ak_U           &ak_O           &ak_Y           &ak_B
 #define HD_Rthm &lt l_sym SPACE &lt l_nav RETURN
 
 #define JP_Layer_label "HD-JP" // Japanese "mode" (L, C, X not used in Japanese, so repurpose to ん, Z, -)
 #define JP_Ltop &kp MINUS       &kp W           &kp M           &kp G           &kp J
-#define JP_Lmid _______         &hml LALT Z     _______         &hml LSHFT T    &kp K
+#define JP_Lmid &hml RCTRL S    &hml RALT Z     &hml RGUI N     &hml RSHFT T    &kp K
 #define JP_Lbtm &kp F           &kp P           &t_nn           &kp D           &kp V
-#define JP_Lthm                                                 _______         _______
+#define JP_Lthm                                                 _______         &lt l_nav R
 
 #define JP_Rtop _______         &DotColnJ       &SlshStarJ      &kp LBKT        &kp RBKT
-#define JP_Rmid _______         &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     _______
+#define JP_Rmid _______         &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL H
 #define JP_Rbtm _______         &kp U           &kp O           &kp Y           &kp B
 #define JP_Rthm _______         _______
 
