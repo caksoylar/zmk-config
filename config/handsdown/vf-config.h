@@ -15,6 +15,7 @@
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
 
+#define HD_adapt_file "handsdown/vf-adapt.dtsi" // the related adaptive keys file
 #define HD_combo_file "handsdown/vf-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Vf"

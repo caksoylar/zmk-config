@@ -271,6 +271,6 @@ behaviors {
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
-#include HD_adaptive_file
+#include HD_adapt_file
 
 };
