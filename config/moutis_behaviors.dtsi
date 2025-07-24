@@ -140,7 +140,7 @@ behaviors {
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lk_CmmaCap LSHIFT LSHIFT>, <&t_Semi>;
+            bindings = <&kp CMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {

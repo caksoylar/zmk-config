@@ -11,6 +11,7 @@
             #binding-cells = <0>;
             bindings = <&kp C>;
 
+            akC_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(C)>; };
             akC_t_h { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp C &kp H>; };
         };
         ak_D: ak_D {
@@ -33,6 +34,7 @@
             #binding-cells = <0>;
             bindings = <&kp F>;
 
+            akF_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(F)>; };
             akF_t_d { trigger-keys = <D>; bindings = <&kp V>; };
             akF_t_s { trigger-keys = <P>; bindings = <&kp S>; };
         };
@@ -41,6 +43,7 @@
             #binding-cells = <0>;
             bindings = <&kp G>;
 
+            akG_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(G)>; };
             akG_b_gl { trigger-keys = <M>; bindings = <&kp BSPC &kp L &kp G>; };
             akG_t_pg { trigger-keys = <J>; bindings = <&kp P &kp G>; };
         };
@@ -49,6 +52,7 @@
             #binding-cells = <0>;
             bindings = <&kp H>;
 
+            akH_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(H)>; };
             akH_t_o { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
             akH_t_n { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
             akH_t_e { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
@@ -60,6 +64,7 @@
             #binding-cells = <0>;
             bindings = <&kp J>;
 
+            akJ_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(J)>; };
             akJ_t_th { trigger-keys = <G>; bindings = <&kp T &kp H>; };
             akJ_t_l { trigger-keys = <M W>; bindings = <&kp L>; };
         };
@@ -68,6 +73,7 @@
             #binding-cells = <0>;
             bindings = <&kp K>;
 
+            akK_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(K)>; };
             akK_b_lk { trigger-keys = <D G>; bindings = <&kp BSPC &kp L &kp K>; };
             akK_b_ck { trigger-keys = <T>; bindings = <&kp BSPC &kp C &kp K>; };
         };
@@ -76,6 +82,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>;
 
+            akM_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(M)>; };
             akM_t_l { trigger-keys = <X G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
             akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L>; };
         };
@@ -84,13 +91,15 @@
             #binding-cells = <0>;
             bindings = <&kp N>;
 
-            akT_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
+            akN_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(N)>; };
+            akN_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
         };
         ak_P: ak_P {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp P>;
 
+            akP_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(P)>; };
             akP_t_g { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; };
             akP_b_l { trigger-keys = <F>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S &kp P>; };
         };
@@ -99,6 +108,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>;
 
+            akV_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(V)>; };
             akV_b_lv { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp V>; };
         };
         ak_W: ak_W {
@@ -106,6 +116,7 @@
             #binding-cells = <0>;
             bindings = <&kp W>;
 
+            akW_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(W)>; };
             akW_b_l { trigger-keys = <M X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P>; };
         };
         ak_X: ak_X {
@@ -113,6 +124,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>;
 
+            akX_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(X)>; };
             akX_t_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; };
             akX_t_l { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
             akX_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp S>; };
