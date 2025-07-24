@@ -20,12 +20,12 @@
 
 #define HD_Layer_label "HD-Vf"
 #define HD_Ltop &ak_X           &ak_W           &ak_M           &ak_G           &ak_J
-#define HD_Lmid &hml LCTRL S    &hml LALT ak_C  &hml LGUI ak_N  &hml LSHFT T    &ak_K
+#define HD_Lmid &hml LCTRL S    &hml LALT C     &hml LGUI N     &hml LSHFT T    &ak_K
 #define HD_Lbtm &ak_F           &ak_P           &kp L           &ak_D           &ak_V
 #define HD_Lthm                                                 &lt_BspcDel     &lt l_nav R
 
 #define HD_Rtop &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
-#define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI ak_E  &hmr RALT I     &hmr RCTRL ak_H
+#define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &hmr RCTRL ak_H
 #define HD_Rbtm &MinusPlus      &kp U           &kp O           &kp Y           &kp B
 #define HD_Rthm &lt l_sym SPACE &lt l_nav RETUR
 
