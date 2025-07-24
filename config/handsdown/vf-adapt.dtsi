@@ -18,6 +18,7 @@
             #binding-cells = <0>;
             bindings = <&kp D>;
 
+            akD_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LSHIFT(D)>; };
             akD_t_l { trigger-keys = <V>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
         };
         ak_E: ak_E {
