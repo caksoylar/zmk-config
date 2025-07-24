@@ -68,13 +68,11 @@
             bindings = <&kp H>;
 
             akH_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(H)>; };
-/*
             akH_t_o { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
             akH_t_n { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
             akH_t_e { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
             akH_t_a { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
             akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; };
-*/
         };
         ak_I: ak_I {
             compatible = "zmk,behavior-adaptive-key";

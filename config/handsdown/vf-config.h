@@ -26,7 +26,7 @@
 #define HD_Lthm                                                 &lt_BspcDel     &lt l_nav R
 
 #define HD_Rtop &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
-#define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &hmr RCTRL H
+#define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &mt_H RCTRL H
 #define HD_Rbtm &MinusPlus      &kp U           &kp O           &kp Y           &kp B
 #define HD_Rthm &lt l_sym SPACE &lt l_nav RETURN
 

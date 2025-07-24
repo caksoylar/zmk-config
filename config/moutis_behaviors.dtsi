@@ -82,12 +82,13 @@ behaviors {
             bindings = <&kp>, <&ak_I>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
         };
+*/
         mt_H: mt_H {
             my_hrm_config;
             bindings = <&kp>, <&ak_H>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-*/
+
 
 
 /*
@@ -172,12 +173,6 @@ behaviors {
             my_lk_config;
             bindings = <&bootloader>, <&sys_reset>;
         };
-/*
-        lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
-            my_lk_config;
-            bindings = <&CmmaSpc>, <&m_shft>;
-        };
-*/
 /*
  * modmorph behaviors
  * identified by the mixed case of each of the keycodes
@@ -289,6 +284,18 @@ behaviors {
 //
 // #include HD_adapt_file
 //
+        ak_H: ak_H {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
+
+            akH_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(H)>; };
+            akH_t_o { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
+            akH_t_n { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
+            akH_t_e { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
+            akH_t_a { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
+            akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; };
+        };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
