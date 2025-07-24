@@ -19,6 +19,7 @@ macros {
        )
         
      ZMK_MACRO(CmmaSpc, tap-ms = <40>; bindings = <&kp CMMA &kp SPACE>;)
+     ZMK_MACRO(m_shft, tap-ms = <40>; bindings = <&sk LSHIFT>;)
 
    ZMK_MACRO(AppSwitch,
         wait-ms = <50>;
