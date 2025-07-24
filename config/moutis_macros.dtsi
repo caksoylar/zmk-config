@@ -19,7 +19,7 @@ macros {
        )
 
 #ifdef COMMA_CAP
-/*
+
      ZMK_MACRO(cc,
         tap-ms = <40>;
         bindings =
@@ -27,12 +27,11 @@ macros {
                 , <&macro_param_1to1 &kp 0> // cap the next letter
                 ;
         )
-*/
+
      ZMK_MACRO(CmmaCap,
         tap-ms = <40>;
         bindings =
-            <&sl l_akDOT>, // ??
-            <&csk LSHFT>;
+            <&sl l_akDOT>;
        )
         
      ZMK_MACRO(CmmaSpc,

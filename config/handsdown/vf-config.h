@@ -42,14 +42,14 @@
 
 
 #define l_akDOT_label "l_akDOT"
-#define DOT_Ltop _______        _______         _______         _______         _______
-#define DOT_Lmid _______        _______         _______         _______         _______
-#define DOT_Lbtm _______        _______         _______         _______         _______
-#define DOT_Lthm                                                _______         _______
+#define DOT_Ltop &kp LS(X)      &kp LS(W)       &kp LS(M)       &kp LS(G)       &kp LS(J)
+#define DOT_Lmid &kp LS(S)      &kp LS(C)       &kp LS(N)       &kp LS(T)       &kp LS(K)
+#define DOT_Lbtm &kp LS(F)      &kp LS(P)       &kp LS(L)       &kp LS(D)       &kp LS(V)
+#define DOT_Lthm                                                _______         &kp LS(R)
 
-#define DOT_Rtop _______        &kp DOT         &t_dotcom       &t_dotedu       &t_dotorg
-#define DOT_Rmid _______        _______         _______         _______         _______
-#define DOT_Rbtm _______        _______         _______         _______         _______
+#define DOT_Rtop &kp HASH       &kp DOT         &t_dotcom       &t_dotedu       &t_dotorg
+#define DOT_Rmid &caps_word     &kp LS(A)       &kp LS(E)       &kp LS(I)       &kp LS(H)
+#define DOT_Rbtm _______        &kp LS(U)       &kp LS(O)       &kp LS(Y)       &kp LS(B)
 #define DOT_Rthm _______        _______
 
 

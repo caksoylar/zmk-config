@@ -41,7 +41,7 @@
 #define l_any   -1
 #define l_alpha 0 // main HD alpha layer
 #define l_japan  1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
-#define l_akDot  2 // funky holdover ak layer
+#define l_akDot  2 // funky holdover ak layer (used for comma cap)
 #define l_sym    3 // 2 - symbols, punctuation, off-map alphas
 #define l_num    4 // 3 - function & number rows
 #define l_fun    5 // 4 - numpad (right); navpad (left)
