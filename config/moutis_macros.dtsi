@@ -199,6 +199,16 @@ macros {
                     , <&macro_tap &kp A &kp P &kp A &kp N &kp E &kp S &kp E &kp SPACE>
                 ;
         )
+    ZMK_MACRO(t_gratefully,
+        tap-ms = <40>;
+        bindings = <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp G>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp R &kp A &kp T &kp E &kp F &kp U &kp L &kp L &kp Y &kp CMMA &kp SPACE>
+                ;
+        )
+                    t_gratefully
     ZMK_MACRO(t_nn, // from the Japanese layer, L=ん
         tap-ms = <40>;
         bindings = <&macro_tap &kp N>

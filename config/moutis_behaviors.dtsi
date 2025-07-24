@@ -234,6 +234,14 @@ behaviors {
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
+        ak_HASH: ak_HASH {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>;
+
+        akHASH_t_gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_gratefully>; };
+        };
+
 #include HD_adapt_file
 
 };

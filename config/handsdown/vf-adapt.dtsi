@@ -6,6 +6,13 @@
  *
  * using urob's behavior-adaptive-key module (https://github.com/urob/zmk-adaptive-key/)
  */
+        ak_C: ak_C {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp C>;
+
+            akC_t_h { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp C &kp H>; };
+        };
         ak_D: ak_D {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -78,6 +85,13 @@
 
             akP_t_g { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; };
             akP_b_l { trigger-keys = <F>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S &kp P>; };
+        };
+        ak_T: ak_T {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp T>;
+
+            akT_t_ion { trigger-keys = <N>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
         };
         ak_V: ak_V {
             compatible = "zmk,behavior-adaptive-key";
