@@ -165,7 +165,7 @@ behaviors {
         SlshStar: SlshStar {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_FSLH>, <&kp STAR>;
+            bindings = <&kp FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshStarJ: SlshStarJ {
