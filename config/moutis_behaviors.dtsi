@@ -242,6 +242,6 @@ behaviors {
         akHASH_t_gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_gratefully>; };
         };
 
-#include HD_adapt_file
+//#include HD_adapt_file
 
 };
