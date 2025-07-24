@@ -20,18 +20,11 @@ macros {
 
 #ifdef COMMA_CAP
 
-     ZMK_MACRO(cc,
-        tap-ms = <40>;
-        bindings =
-                <&macro_tap &kp BSPC> // DELETE THE PREVIOUS COMMA
-                , <&macro_param_1to1 &kp 0> // cap the next letter
-                ;
-        )
-
      ZMK_MACRO(CmmaCap,
         tap-ms = <40>;
         bindings =
-            <&sl l_akDOT>;
+            <&sl l_akDOT>
+            ;
        )
         
      ZMK_MACRO(CmmaSpc,
