@@ -5,6 +5,28 @@
 //  Created by Alan on 7/24/22.
 //
 
+
+//
+// which HD alpha variation are we using?
+//
+//
+// nu = neu (no thumb alpha)    * does not use thumb
+// au = gold (T on thumb)       * most inward rolling
+// ag = silver (L on thumb)       * LOW sfbs, but high repeat on thumb
+// bz = bronze (H on thumb)     * lightest thumb use w/H-digraph combos
+// cr = chromium (C on thumb)   * RSNT typically doesn't use H-digraph combos
+// cs = cesium (C on thumb)     * lowest scissors, – lowest thumb w/o H-digraph combos
+// pm = promethium (R on thumb) * typically doesn't use H-digraph combos
+// rh = rhodium (R on thumb)    * typically doesn't use H-digraph combos
+// vf = vibranium (R on thumb, f in lower left, b on right) - "canonical"
+// vv = vibranium (R on thumb, v in lower left, f on right) - lowest SFBs
+// vx = vibranium (R on thumb, x in lower left, f on right) - better pinky balancing
+// vb = vibranium (R on thumb, b in lower left, f on right) - more rolling w/adaptives
+// mi = mithril (R on thumb)
+// xr = weird test-bed (R on thumb)
+
+
+
 #define H_DIGRAPH_COMBOS //  (th, ch, sh, wh, gh, ph)
 #define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
 #define COMMA_CAP     // , before alpha capitalizes that alpha
@@ -18,34 +40,21 @@
 // my layers
 #define l_any   -1
 #define l_alpha 0 // main HD alpha layer
-#define l_japan 1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
-#define l_akA   2
-#define l_akB   3
-#define l_akC   4
-#define l_akD   5
-#define l_akE   6
-#define l_akF   7
-#define l_akG   8
-#define l_akH   9
-#define l_akI   10
-#define l_akJ   11
-#define l_akK   12
-#define l_akM   13
-#define l_akO   14
-#define l_akP   15
-#define l_akT   16
-#define l_akU   17
-#define l_akV   18
-#define l_akW   19
-#define l_akX   20
-#define l_akDot 21
-#define l_akFSLH 22
-#define l_sym   23
-#define l_num   24
-#define l_fun   25
-#define l_nav   26
-#define l_cfg   27
+#define l_japan  1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
+#define l_akDot  2 // funky holdover ak layer 
+#define l_sym    3 // 2 - symbols, punctuation, off-map alphas
+#define l_num    4 // 3 - function & number rows
+#define l_fun    5 // 4 - numpad (right); navpad (left)
+#define l_nav    6 // 5 - nav pad (right); meta keys (left)
+#define l_cfg    7 // 6 - Media/Consumer controls; Keyboard settings
 
+    L_QWERTY,   // 0 - QWERTY compatibility layer
+    L_HD,       // 1 - Hands Down Alpha layer
+    L_SYM,      // 2 - symbols, punctuation, off-map alphas
+    L_FUN,      // 3 - function & number rows
+    L_NUM,      // 4 - numpad (right); navpad (left)
+    L_NAV,      // 5 - nav pad (right); meta keys (left)
+    L_CFG,      // 6 - Media/Consumer controls; Keyboard settings
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
