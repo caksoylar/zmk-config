@@ -128,10 +128,6 @@ behaviors {
             my_lk_config;
             bindings = <&bootloader>, <&sys_reset>;
         };
-        lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
-            my_lk_config;
-            bindings = <&CmmaSpc>, <&kp>;
-        };
 
 /*
  * modmorph behaviors
@@ -140,7 +136,7 @@ behaviors {
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lk_CmmaCap LSHFT LSHFT>, <&t_Semi>;
+            bindings = <&CmmaSpc>, <&t_Semi>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
