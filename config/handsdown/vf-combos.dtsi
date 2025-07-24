@@ -31,14 +31,14 @@ COMBO_LAYER(t_Z,     &kp Z,           LM3 LM1, l_alpha)
 //
 // H Digraphs REQUIRE macros/behaviors (defined earlier) to process
 //
-COMBO_LAYER(sch,    &t_Sch,  LM4  LM3 LM2, l_alpha) // Sch
-COMBO_LAYER(tch,    &t_Tch,  LM4  LM3 LM1, l_alpha) // Tch
-COMBO_LAYER(th,     &lk_th H T, LM2 LM1, l_alpha) // Th/sion
-COMBO_LAYER(ch,     &t_Ch,        LM3 LM2, l_alpha) // Ch
-COMBO_LAYER(wh,     &t_Wh,        LT3 LT2, l_alpha) // Wh
-COMBO_LAYER(sh,     &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
-COMBO_LAYER(gh,     &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
-COMBO_LAYER(ph,     &t_Ph,        LB3 LB1, l_alpha) // Ph
+COMBO_LAYER(sch,    &t_Sch,  LM4  LM3 LM2, l_alpha l_akDot) // Sch
+COMBO_LAYER(tch,    &t_Tch,  LM4  LM3 LM1, l_alpha l_akDot) // Tch
+COMBO_LAYER(th,     &lk_th H T, LM2 LM1, l_alpha l_akDot) // Th/sion
+COMBO_LAYER(ch,     &t_Ch,        LM3 LM2, l_alpha l_akDot) // Ch
+COMBO_LAYER(wh,     &t_Wh,        LT3 LT2, l_alpha l_akDot) // Wh
+COMBO_LAYER(sh,     &lk_sh H S, LM4 LM3, l_alpha l_akDot) // Sh/sion
+COMBO_LAYER(gh,     &lk_gh H G, LT2 LT1, l_alpha l_akDot) // Gh/ght
+COMBO_LAYER(ph,     &t_Ph,        LB3 LB1, l_alpha l_akDot) // Ph
 #endif
 
 #ifdef EN_PRONOUN_COMBOS
