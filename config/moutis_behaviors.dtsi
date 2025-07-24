@@ -307,7 +307,7 @@ behaviors {
             akN_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
         };
 */
-/*
+
         ak_S: ak_S {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -315,5 +315,5 @@ behaviors {
 
             akS_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(S)>; };
         };
-*/
+
 };
