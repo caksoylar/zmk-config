@@ -41,20 +41,12 @@
 #define l_any   -1
 #define l_alpha 0 // main HD alpha layer
 #define l_japan  1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
-#define l_akDot  2 // funky holdover ak layer 
+#define l_akDot  2 // funky holdover ak layer
 #define l_sym    3 // 2 - symbols, punctuation, off-map alphas
 #define l_num    4 // 3 - function & number rows
 #define l_fun    5 // 4 - numpad (right); navpad (left)
 #define l_nav    6 // 5 - nav pad (right); meta keys (left)
 #define l_cfg    7 // 6 - Media/Consumer controls; Keyboard settings
-
-    L_QWERTY,   // 0 - QWERTY compatibility layer
-    L_HD,       // 1 - Hands Down Alpha layer
-    L_SYM,      // 2 - symbols, punctuation, off-map alphas
-    L_FUN,      // 3 - function & number rows
-    L_NUM,      // 4 - numpad (right); navpad (left)
-    L_NAV,      // 5 - nav pad (right); meta keys (left)
-    L_CFG,      // 6 - Media/Consumer controls; Keyboard settings
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
