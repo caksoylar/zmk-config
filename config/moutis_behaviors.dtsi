@@ -29,7 +29,7 @@ behaviors {
             #binding-cells = <1>;
             bindings = <&kp>;
             release-after-ms = <1200>;
-            quick-release;
+            lazy;
         };
         skapp: sticky_key_app_switcher {
             compatible = "zmk,behavior-sticky-key";
@@ -167,7 +167,7 @@ behaviors {
         };
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             my_lk_config;
-            bindings = <&CmmaSpc>, <&CmmaCap>;
+            bindings = <&CmmaSpc>, <&csk LSHIFT>;
         };
 
 /*

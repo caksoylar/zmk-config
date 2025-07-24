@@ -17,24 +17,8 @@ macros {
             <&kp LANG1>, // switch to Japanese script (m_henk)
             <&to l_japan>; // make Japanese layer default
        )
-
-#ifdef COMMA_CAP
-
-     ZMK_MACRO(CmmaCap,
-        tap-ms = <40>;
-        bindings =
-            <&sl l_akDOT>
-            ;
-       )
         
-     ZMK_MACRO(CmmaSpc,
-        tap-ms = <40>;
-        bindings =
-             <&kp CMMA &kp SPACE>
-            ;
-        )
-#endif
-
+     ZMK_MACRO(CmmaSpc, tap-ms = <40>; bindings = <&kp CMMA &kp SPACE>;)
 
    ZMK_MACRO(AppSwitch,
         wait-ms = <50>;
