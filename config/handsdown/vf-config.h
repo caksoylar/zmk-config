@@ -18,6 +18,19 @@
 #define HD_adapt_file "handsdown/vf-adapt.dtsi"  // the related adaptive keys file
 #define HD_combo_file "handsdown/vf-combos.dtsi" // the related combo file
 
+
+#define HD_Layer_label "HD-Vf"
+#define HD_Ltop &kp X           &kp W           &kp M           &kp G           &kp J
+#define HD_Lmid &hml LCTRL S    &hml LALT C     &hml LGUI N     &hml LSHFT T    &kp K
+#define HD_Lbtm &kp F           &kp P           &kp L           &kp D           &kp V
+#define HD_Lthm                                                 &lt_BspcDel     &lt l_nav R
+
+#define HD_Rtop &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
+#define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &hmr RCTRL H
+#define HD_Rbtm &MinusPlus      &kp U           &kp O           &kp Y           &kp B
+#define HD_Rthm &lt l_sym SPACE &lt l_nav RETURN
+
+/*
 #define HD_Layer_label "HD-Vf"
 #define HD_Ltop &ak_X           &ak_W           &ak_M           &ak_G           &ak_J
 #define HD_Lmid &hml LCTRL S    &hml LALT C     &hml LGUI N     &hml LSHFT T    &ak_K
@@ -28,7 +41,7 @@
 #define HD_Rmid &CmmaSemi       &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &hmr RCTRL H
 #define HD_Rbtm &MinusPlus      &kp U           &kp O           &kp Y           &kp B
 #define HD_Rthm &lt l_sym SPACE &lt l_nav RETURN
-
+*/
 #define JP_Layer_label "HD-JP" // Japanese "mode" (L, C, X not used in Japanese, so repurpose to ん, Z, -)
 #define JP_Ltop &kp MINUS       &kp W           &kp M           &kp G           &kp J
 #define JP_Lmid _______         &hml LALT Z     _______         &hml LSHFT T    &kp K
