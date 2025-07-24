@@ -73,7 +73,7 @@ behaviors {
             bindings = <&kp>, <&ak_A>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
        };
-        hm_E: mt_E {
+        mt_E: mt_E {
             my_hrm_config;
             bindings = <&kp>, <&ak_E>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
