@@ -65,7 +65,7 @@ behaviors {
         };
         mt_T: mt_T {
             my_hrm_config;
-            bindings = <&kp>, <&ak_t>;
+            bindings = <&kp>, <&ak_T>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
         mt_A: mt_A {
