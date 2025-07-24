@@ -9,8 +9,7 @@ on:
       - config/*.conf
       - config/boards/**
       - config/*.h
-      - handsdown/*.h
-      - handsdown/*.dtsi
+      - config/handsdown/**
       - build.yaml
 
 jobs:
