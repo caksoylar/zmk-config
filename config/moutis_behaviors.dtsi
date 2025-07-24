@@ -52,36 +52,6 @@ behaviors {
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-        hrm_t: hrm_t {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_t>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
-        };
-        hrm_h: hrm_h {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_h>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
-        };
-        hrm_c: hrm_c {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_c>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
-       };
-        hrm_a: hrm_a {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_a>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
-       };
-        hrm_e: hrm_e {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_e>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
-        };
-        hrm_i: hrm_i {
-            my_hrm_config;
-            bindings = <&kp>, <&ak_i>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
-        };
 
 /*
  * lk_ linger key behaviors (approximated via hold-tap)
