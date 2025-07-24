@@ -13,7 +13,7 @@
 #include "handsdown/vf-config.h"    // HD alpha & related ak_layer definitions
 
 / {
-#include "moutis_behaviors.dtsi"
+#include "moutis_behaviors.dtsi"    // includes modtaps, modmorphs, lingers, adaptives
 #include "moutis_macros.dtsi"
 
     combos {

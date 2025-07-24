@@ -31,7 +31,7 @@ macros {
      ZMK_MACRO(CmmaCap,
         tap-ms = <40>;
         bindings =
-            <&sl l_akF>, // this needs to be longer
+            <&sl l_akDOT>, // ??
             <&csk LSHFT>;
        )
         
