@@ -16,6 +16,15 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             tapping-term-ms = <my_tapping_term>; \
             quick-tap-ms = <my_quick_tapping_term>
 
+#define     my_lt_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            flavor = "tap-preferred"; \
+            hold-trigger-on-release; \
+            hold-while-undecided-linger; \
+            tapping-term-ms = <my_tapping_term>; \
+            quick-tap-ms = <my_quick_tapping_term>
+
 #define     my_lk_config \
             compatible = "zmk,behavior-hold-tap"; \
             #binding-cells = <2>; \
@@ -86,9 +95,12 @@ behaviors {
         mt_H: mt_H {
             my_hrm_config;
             bindings = <&kp>, <&ak_H>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // right hand allowed
         };
-
+        lt_R: lt_R {
+            my_lt_config;
+            bindings = <&mo>, <&ak_R>;
+        };
 
 
 /*

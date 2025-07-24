@@ -9,7 +9,7 @@
         ak_A: ak_A {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp L>;
+            bindings = <&kp A>;
 
             akA_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(A)>; };
         };
