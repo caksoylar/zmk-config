@@ -130,7 +130,7 @@ behaviors {
         };
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             my_lk_config;
-            bindings = <&CmmaSpc>, <&sk LSHIFT>;
+            bindings = <&CmmaSpc>, <&m_shft>;
         };
 
 /*
