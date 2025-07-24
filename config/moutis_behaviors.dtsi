@@ -282,46 +282,7 @@ behaviors {
         akHASH_t_gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_gratefully>; };
         };
 //
-// #include HD_adapt_file
+#include HD_adapt_file
 //
-        ak_H: ak_H {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp H>;
-
-            akH_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(H)>; };
-            akH_t_o { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
-            akH_t_n { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
-            akH_t_e { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
-            akH_t_a { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
-            akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; };
-        };
-        ak_M: ak_M {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp M>;
-
-            akM_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(M)>; };
-            akM_t_l { trigger-keys = <G X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
-            akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M>; };
-        };
-/*
-        ak_N: ak_N {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp N>;
-
-            akN_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(N)>; };
-            akN_t_ion { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I &kp O &kp N>; };
-        };
-*/
-
-        ak_S: ak_S {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp S>;
-
-            akS_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(S)>; };
-        };
 
 };
