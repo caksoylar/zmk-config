@@ -2,7 +2,7 @@
  * t_  = type text
  * b_  = backspace then type text (often for "adaptive key")
  * m_  = macro (performs commands/behaviors, incl. typing).
- * ak_ = type a letter then switch to "adaptive key" layer.
+ * ak_ = type a letter as an adaptive key (consider the prior key).
  */
  
 macros {
@@ -219,7 +219,7 @@ macros {
 #ifdef H_DIGRAPH_COMBOS
     ZMK_MACRO(t_Th,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp T>
+        bindings = <&ak_T>
             , <&macro_release &kp LSHFT>
             , <&macro_release &kp RSHFT>
             , <&macro_tap &kp H>
@@ -232,7 +232,7 @@ macros {
         )
     ZMK_MACRO(t_Ch,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp C>
+        bindings = <&ak_C>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
@@ -240,7 +240,7 @@ macros {
         )
     ZMK_MACRO(t_Wh,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp W>
+        bindings = <&ak_W>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
@@ -248,7 +248,7 @@ macros {
         )
     ZMK_MACRO(t_Sh,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp S>
+        bindings = <&ak_S>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
@@ -261,7 +261,7 @@ macros {
         )
     ZMK_MACRO(t_Gh,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp G>
+        bindings = <&ak_G>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
@@ -274,7 +274,7 @@ macros {
         )
     ZMK_MACRO(t_Ph,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp P>
+        bindings = <&ak_P>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
@@ -283,7 +283,7 @@ macros {
 
     ZMK_MACRO(t_Sch,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp S>
+        bindings = <&ak_S>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
                     , <&macro_tap &kp C &kp H>
@@ -291,7 +291,7 @@ macros {
         )
     ZMK_MACRO(t_Tch,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp T>
+        bindings = <&ak_T>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
                     , <&macro_tap &kp C &kp H>
