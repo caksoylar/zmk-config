@@ -114,7 +114,7 @@ macros {
         
     ZMK_MACRO(t_Qu,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp Q>
+        bindings = <&ak_Q>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp U>

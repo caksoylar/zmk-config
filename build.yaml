@@ -23,10 +23,10 @@ include:
 
 # Zen uses calsoylar's fork for display enhancements (see west.yml)
 # Building will fail on ZMK main because the modules aren't there.
-#  - board: corneish_zen_v1_left
+  - board: corneish_zen_v1_left
 #    shield: settings_reset
 #    cmake-args: -DCONFIG_ZMK_DISPLAY=n
-#  - board: corneish_zen_v1_right
+  - board: corneish_zen_v1_right
 #    shield: settings_reset
 #    cmake-args: -DCONFIG_ZMK_DISPLAY=n
 

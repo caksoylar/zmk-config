@@ -25,7 +25,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 // type a glyph (tiny board accommodation)
 //
 COMBO_LAYER(t_Q,     &lk_qu Q U,      LT3 LT1, l_alpha)
-COMBO_LAYER(t_Z,     &kp Z,           LM3 LM1, l_alpha)
+COMBO_LAYER(t_Z,     &ak_Z,           LM3 LM1, l_alpha)
 
 #ifdef H_DIGRAPH_COMBOS
 //
