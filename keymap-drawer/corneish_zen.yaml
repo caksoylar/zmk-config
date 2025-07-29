@@ -34,7 +34,7 @@ layers:
   - {t: ↹, h: Gui}
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
-  - SYM
+  - {t: Num Word, h: SYM}
   - {t: ⏎, h: Shift}
   - {t: ⌦, h: Alt}
   BRD:

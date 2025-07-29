@@ -8,6 +8,8 @@ parse_config:
     '&inv_qm': ¿
     '&ind_bat': Show Batt
     '&ind_con': Show Conn
+    '&mse_tog': {t: MSE, h: toggle}
+    '&sm_num SYM SYM': {t: Num Word, h: SYM}
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE

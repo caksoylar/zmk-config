@@ -6,6 +6,7 @@
 #    include <dt-bindings/zmk/ext_power.h>
 #endif
 
+#include <behaviors/num_word.dtsi>
 #include <behaviors/rgbled_widget.dtsi>
 
 // Layer aliases
@@ -41,6 +42,10 @@
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
+
+&num_word {
+    continue-list = <BACKSPACE DOT COMMA FSLH>;
 };
 
 / {
@@ -111,12 +116,30 @@
             bindings = <&bootloader>, <&sys_reset>;
         };
 
+        // Strictly timer-based hold-tap
         tpht: tpht {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        // Smart-num: num-word on tap, layer on hold
+        sm_num: sm_num {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&num_word>;
+        };
+
+        // Mouse layer smart toggle
+        mse_tog: mse_tog {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&mo MSE>, <&none>;
+            ignored-key-positions = <LB3 LB2 LB1 KEYS_R THUMBS>;
         };
     };
 
@@ -153,7 +176,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z,        &kp X,        &kp C,        &lt MSE D,    &kp V,            &kp J,        &kp H,        &kp COMMA,    &kp DOT,      &kp SLASH,    \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE,   &mo SYM,      &mt RSHFT RET, &mt RALT DEL
+                                 &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE, &sm_num SYM SYM, &mt RSHFT RET, &mt RALT DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
             )>;
         };

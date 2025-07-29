@@ -265,8 +265,11 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(437, 245)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.9em">Num</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
 <a href="#SYM">
-<text x="0" y="0" class="key tap layer-activator">SYM</text>
+<text x="0" y="24" class="key hold layer-activator">SYM</text>
 </a></g>
 <g transform="translate(498, 230)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -891,21 +894,21 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(41, 150) rotate(-8.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Select</tspan><tspan x="0" dy="1.2em">All</tspan>
+<tspan x="0" dy="-0.9em">Select</tspan><tspan x="0" dy="1.2em">All</tspan>
 </text>
 <text x="0" y="24" class="key hold">Ctrl</text>
 </g>
 <g transform="translate(101, 103) rotate(-3.0)" class="key keypos-11">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Win</tspan><tspan x="0" dy="1.2em">Prev</tspan>
+<tspan x="0" dy="-0.9em">Win</tspan><tspan x="0" dy="1.2em">Prev</tspan>
 </text>
 <text x="0" y="24" class="key hold">Gui</text>
 </g>
 <g transform="translate(164, 86)" class="key keypos-12">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Win</tspan><tspan x="0" dy="1.2em">Next</tspan>
+<tspan x="0" dy="-0.9em">Win</tspan><tspan x="0" dy="1.2em">Next</tspan>
 </text>
 <text x="0" y="24" class="key hold">Alt</text>
 </g>

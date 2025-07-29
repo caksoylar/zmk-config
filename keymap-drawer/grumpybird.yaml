@@ -28,7 +28,7 @@ layers:
   - ','
   - .
   - {t: ␣, h: NAV}
-  - SYM
+  - {t: Num Word, h: SYM}
   BRD:
   - X
   - C
