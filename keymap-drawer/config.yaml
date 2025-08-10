@@ -8,6 +8,7 @@ parse_config:
     '&inv_qm': ¿
     '&ind_bat': Show Batt
     '&ind_con': Show Conn
+    '&mse_tog': {t: MSE, h: toggle}
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE

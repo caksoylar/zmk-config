@@ -111,12 +111,21 @@
             bindings = <&bootloader>, <&sys_reset>;
         };
 
+        // Strictly timer-based hold-tap
         tpht: tpht {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        // Mouse layer smart toggle
+        mse_tog: mse_tog {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&mo MSE>, <&none>;
+            ignored-key-positions = <LB3 LB2 LB1 KEYS_R THUMBS>;
         };
     };
 
