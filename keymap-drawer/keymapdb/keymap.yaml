@@ -104,9 +104,9 @@ layers:
   - F4
   - Out USB
   - Out BLE
-  - {t: Base, h: toggle}
-  - {t: Bird, h: toggle}
-  - {t: Gaming, h: toggle}
+  - Show Conn
+  - Show Batt
+  - ''
   - F5
   - F6
   - F7
@@ -185,6 +185,4 @@ combos:
 - { p: [4, 14],      k: $$mdi:play-pause$$,        l: [Nav] }
 - { p: [5, 15],      k: $$mdi:calculator$$,        l: [Nav] }
 - { p: [24, 25],     k: BT Clear,                  l: [Function], a: bottom, w: 36 }
-- { p: [2, 7],       k: Show Batt,                 l: [Function], a: top }
-- { p: [3, 6],       k: Show Conn,                 l: [Function] }
 - { p: [4, 5],       k: Boot,                      l: [Function] }

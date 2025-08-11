@@ -27,8 +27,7 @@ The keymap utilizes home row mods, which are also available on the left side of 
 `Function` layer is implemented as a tri-layer, i.e. it is active when both `Nav` and `Sym` are active.
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow)
--- check out the drawings for all keyboards in the [`keymap-drawer` folder](keymap-drawer/),
-which also include a gaming layer and the [Bird layout](https://github.com/jcmkk3/bird-layout) as an alternate base.
+-- check out the drawings for all keyboards in the [`keymap-drawer` folder](keymap-drawer/).
 
 ![Keymap Representation](./keymap-drawer/keymapdb/keymap.svg?raw=true "Keymap Representation")
 
