@@ -29,64 +29,6 @@ layers:
   - .
   - {t: ␣, h: NAV}
   - SYM
-  BRD:
-  - X
-  - C
-  - L
-  - F
-  - B
-  - J
-  - Y
-  - O
-  - U
-  - ''''
-  - {t: R, h: Ctrl}
-  - {t: S, h: Gui}
-  - {t: N, h: Alt}
-  - {t: T, h: Shift}
-  - P
-  - K
-  - {t: H, h: Shift}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
-  - {t: A, h: Ctrl}
-  - W
-  - M
-  - {t: G, h: MSE}
-  - D
-  - ','
-  - .
-  - {t: ␣, h: NAV}
-  - SYM
-  GME:
-  - ↹
-  - Q
-  - W
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - Esc
-  - Shift
-  - A
-  - S
-  - D
-  - F
-  - H
-  - J
-  - K
-  - L
-  - {t: GME, h: toggle}
-  - Z
-  - X
-  - C
-  - M
-  - ','
-  - .
-  - ␣
-  - NAV
   SYM:
   - '!'
   - '@'
@@ -153,9 +95,9 @@ layers:
   - F4
   - Out USB
   - Out BLE
-  - {t: DEF, h: toggle}
-  - {t: BRD, h: toggle}
-  - {t: GME, h: toggle}
+  - Show Conn
+  - Show Batt
+  - ''
   - F5
   - F6
   - F7
@@ -213,73 +155,67 @@ combos:
 - p: [21, 22]
   k: V
   l: [DEF]
-- p: [2, 3]
-  k: Q
-  l: [BRD]
-- p: [1, 2]
-  k: V
-  l: [BRD]
 - p: [20, 21]
   k: Z
-  l: [DEF, BRD]
+  l: [DEF]
 - p: [12, 13]
   k: ↹
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [16, 17]
   k: ⌫
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [11, 12, 13]
   k: Esc
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
   draw_separate: true
 - p: [16, 17, 18]
   k: ⏎
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
   draw_separate: true
 - p: [6, 7]
   k: ''''
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [7, 8]
   k: '`'
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [23, 24]
   k: \
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [24, 25]
   k: /
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [23, 24, 25]
   k: ;
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
   a: bottom
 - p: [11, 13]
   k: (
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
   draw_separate: true
 - p: [16, 18]
   k: )
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
   draw_separate: true
 - p: [11, 12]
   k: '['
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [17, 18]
   k: ']'
-  l: [DEF, BRD, SYM]
+  l: [DEF, SYM]
 - p: [2, 3]
   k: '!'
   l: [SYM]
 - p: [20, 21, 22]
   k: {t: MSE, h: toggle}
-  l: [DEF, BRD, MSE]
+  l: [DEF, MSE]
   a: bottom
 - p: [13, 16]
   k: Caps Word
-  l: [DEF, BRD]
+  l: [DEF]
   draw_separate: true
 - p: [3, 4]
   k: Lock
-  l: [DEF, BRD]
+  l: [DEF]
   draw_separate: true
 - p: [1, 2]
   k: Win Close
@@ -300,15 +236,6 @@ combos:
   k: BT CLR
   l: [FUN]
   a: bottom
-- p: [2, 7]
-  k: Show Batt
-  l: [FUN]
-  a: top
-  o: 0.25
-- p: [3, 6]
-  k: Show Conn
-  l: [FUN]
-  a: top
 - p: [4, 5]
   k: Boot
   l: [FUN]

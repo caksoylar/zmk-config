@@ -2,30 +2,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#ifdef EXTERNAL_POWER
-#    include <dt-bindings/zmk/ext_power.h>
-#endif
 
 #include <behaviors/rgbled_widget.dtsi>
 
 // Layer aliases
 #define DEF 0
-#define BRD 1
-#define GME 2
-#define SYM 3
-#define NAV 4
-#define FUN 5
-#define MSE 6
+#define SYM 1
+#define NAV 2
+#define FUN 3
+#define MSE 4
 
 #include "combos.dtsi"
-
-#ifdef EXTERNAL_POWER
-#    define FN_EXTRA1 &ext_power EP_ON
-#    define FN_EXTRA2 &ext_power EP_OFF
-#else
-#    define FN_EXTRA1 &kp PSCRN
-#    define FN_EXTRA2 &kp PAUSE_BREAK
-#endif
 
 #include "mouse.dtsi"
 
@@ -174,36 +161,6 @@
             )>;
         };
 
-        bird_layer {
-            display-name = "BRD";
-            bindings = <LAYER_FROM36( \
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X,        &kp C,        &kp L,        &kp F,        &kp B,            &kp J,        &kp Y,        &kp O,        &kp U,        &kp SQT,      \
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LCTRL R, &aml LGUI S,  &aml LALT N,  &asl LSHFT T, &kp P,            &kp K,        &asr RSHFT H, &amr RALT E,  &amr RGUI I,  &amr RCTRL A, \
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none,        &kp W,        &kp M,        &lt MSE G,    &none,            &none,        &kp D,        &kp COMMA,    &kp DOT,      &none,        \
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &mt LGUI TAB, &mt LCTRL ESC, &lt NAV SPACE,   &mo SYM,      &mt RSHFT RET, &mt RALT DEL
-//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-            )>;
-        };
-
-        game_layer {
-            display-name = "GME";
-            bindings = <LAYER_FROM36( \
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp TAB,      &kp Q,        &kp W,        &kp E,        &kp R,            &kp Y,        &kp U,        &kp I,        &kp O,        &kp ESC,   \
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LSHFT,    &kp A,        &kp S,        &kp D,        &kp F,            &kp H,        &kp J,        &kp K,        &kp L,        &tog GME,  \
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp ESC,      &kp Z,        &kp X,        &kp C,        &kp V,            &kp N,        &kp M,        &kp COMMA,    &kp DOT,      &kp SLASH, \
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &kp LCTRL,    &kp LALT,     &kp SPACE,        &mo NAV,      &kp RET,      &tog GME
-//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-            )>;
-        };
-
         symbol_layer {
             display-name = "SYM";
             bindings = <LAYER_FROM36( \
@@ -238,11 +195,11 @@
             display-name = "FUN";
             bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none,        &kp F1,       &kp F2,       &kp F3,       &kp F4,           &out OUT_USB, &out OUT_BLE, &to DEF,      &to BRD,      &to GME,      \
+     &none,        &kp F1,       &kp F2,       &kp F3,       &kp F4,           &out OUT_USB, &out OUT_BLE, &ind_con,     &ind_bat,     &none,        \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp F5,       &kp F6,       &kp F7,       &kp F8,       &kp F9,           &bt BT_SEL 0, &bt BT_SEL 1, &bt BT_SEL 2, &bt BT_SEL 3, &bt BT_SEL 4, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none,        &kp F10,      &kp F11,      &kp F12,      &none,            &none,        &kp CAPS,     FN_EXTRA1,    FN_EXTRA2,    &none,        \
+     &none,        &kp F10,      &kp F11,      &kp F12,      &none,            &none,        &kp CAPS,     &kp PSCRN,   &kp PAUSE_BREAK, &none,      \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &none,        &rst_boot 0 0, &trans,          &trans,       &rst_boot 0 0, &none
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
