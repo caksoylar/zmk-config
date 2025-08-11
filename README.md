@@ -16,6 +16,8 @@ A few principles used in the design of the keymap are:
   - Overuse can lead to issues, combined with smartphone and pointing device use
 - Frequently used **combos are all horizontal** (pressed using multiple fingers within the same row) and **avoid pinkies**
 - All (reasonable) **modifier + key combinations** are accessible
+- **Minimal statefulness** to reduce mental load
+  - Keyboard is in a singular base "state" when no keys are pressed, meaning no toggles, sticky keys etc. Only exceptions are caps word and a mouse layer toggle
 - **Symbols don't require shift** outside the base layer 
 - Some affordances are made for **left-hand only** use
   - Common shortcuts and desktop operations on the `Nav` layer
