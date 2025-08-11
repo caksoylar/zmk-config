@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 250   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200   // 10
 
 #include <dt-bindings/zmk/pointing.h>
 #include <input/processors.dtsi>
@@ -26,6 +26,6 @@
 &msc_input_listener {
     turbo {
         layers = <NAV>;
-        input-processors = <&zip_scroll_scaler 3 1>;
+        input-processors = <&zip_scroll_scaler 4 1>;
     };
 };
