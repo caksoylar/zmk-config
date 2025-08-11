@@ -111,13 +111,13 @@
             bindings = <&bootloader>, <&sys_reset>;
         };
 
-        // Strictly timer-based hold-tap
+        // Strictly timer-based hold-tap, no held keycode
         tpht: tpht {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&ktap>, <&kp>;
         };
 
         // Mouse layer smart toggle
@@ -147,6 +147,13 @@
                 , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
                 , <&macro_release &kp LALT>;
         )
+        ktap: key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            display-name = "Key Tap";
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            tap-ms = <16>;
+        };
     };
 
     keymap {

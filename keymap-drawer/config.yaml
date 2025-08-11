@@ -9,6 +9,7 @@ parse_config:
     '&ind_bat': Show Batt
     '&ind_con': Show Conn
     '&mse_tog': {t: MSE, h: toggle}
+    '&ktap LC(LS(V))': Plain P
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
@@ -96,7 +97,6 @@ parse_config:
     LC(F4): Tab Close
     LS(TAB): Win Prev
     LS(INS): Paste
-    LC(LS(V)): Plain P
     LC(C): Copy
     LC(X): Cut
     LC(Z): Undo
