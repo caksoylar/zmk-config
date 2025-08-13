@@ -25,7 +25,7 @@ COMBO(j,      &kp J,         LT2 LT1,     DEF,         80,  50)
 COMBO(v,      &kp V,         LB2 LB1,     DEF,         40,  50)
 COMBO(z,      &kp Z,         LB3 LB2,     DEF,         80,  50)
 
-COMBO(tab,    &kp TAB,       LM2 LM1,     DEF SYM NAV, 40, 100)
+COMBO(tab,    &kp TAB,       LM2 LM1,     DEF SYM,     40, 100)
 COMBO(bspc,   &kp BSPC,      RM1 RM2,     DEF SYM NAV, 40, 100)
 COMBO(esc,    &kp ESC,       LM3 LM2 LM1, DEF SYM NAV, 40,   0)
 COMBO(ret,    &kp RET,       RM1 RM2 RM3, DEF SYM NAV, 40,   0)

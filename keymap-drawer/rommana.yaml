@@ -170,7 +170,7 @@ combos:
   l: [DEF]
 - p: [12, 13]
   k: ↹
-  l: [DEF, SYM, NAV]
+  l: [DEF, SYM]
 - p: [16, 17]
   k: ⌫
   l: [DEF, SYM, NAV]

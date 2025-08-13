@@ -694,14 +694,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">␣</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="195" y="81" width="28" height="26" class="combo"/>
-<text x="209" y="94" class="combo tap">↹</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="633" y="81" width="28" height="26" class="combo"/>
 <text x="647" y="94" class="combo tap">⌫</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-1">
 <path d="M144,-1 h-30 a6.0,6.0 0 0 0 -6.0,6.0 v28" class="combo"/>
 <path d="M144,-1 h30 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
 <rect rx="6" ry="6" x="126" y="-14" width="36" height="26" class="combo"/>
@@ -709,17 +705,17 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="144" dy="-0.6em">Win</tspan><tspan x="144" dy="1.2em">Close</tspan>
 </text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <path d="M149,192 h-25 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M149,192 h25 a6.0,6.0 0 0 0 6.0,-6.0 v-27" class="combo"/>
 <rect rx="6" ry="6" x="135" y="179" width="28" height="26" class="combo"/>
 <text x="149" y="192" class="combo tap">Undo</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="284" y="73" width="28" height="26" class="combo"/>
 <text x="298" y="86" class="combo tap">⏯</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="544" y="73" width="28" height="26" class="combo"/>
 <text x="558" y="86" class="combo tap">Calc</text>
 </g>
