@@ -20,41 +20,41 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(q,      &kp Q,         LT3 LT2,     DEF,      80,  50)
-COMBO(j,      &kp J,         LT2 LT1,     DEF,      80,  50)
-COMBO(v,      &kp V,         LB2 LB1,     DEF,      40,  50)
-COMBO(z,      &kp Z,         LB3 LB2,     DEF,      80,  50)
+COMBO(q,      &kp Q,         LT3 LT2,     DEF,         80,  50)
+COMBO(j,      &kp J,         LT2 LT1,     DEF,         80,  50)
+COMBO(v,      &kp V,         LB2 LB1,     DEF,         40,  50)
+COMBO(z,      &kp Z,         LB3 LB2,     DEF,         80,  50)
 
-COMBO(tab,    &kp TAB,       LM2 LM1,     DEF SYM,  40, 100)
-COMBO(bspc,   &kp BSPC,      RM1 RM2,     DEF SYM,  40, 100)
-COMBO(esc,    &kp ESC,       LM3 LM2 LM1, DEF SYM,  40,   0)
-COMBO(ret,    &kp RET,       RM1 RM2 RM3, DEF SYM,  40,   0)
+COMBO(tab,    &kp TAB,       LM2 LM1,     DEF SYM NAV, 40, 100)
+COMBO(bspc,   &kp BSPC,      RM1 RM2,     DEF SYM NAV, 40, 100)
+COMBO(esc,    &kp ESC,       LM3 LM2 LM1, DEF SYM NAV, 40,   0)
+COMBO(ret,    &kp RET,       RM1 RM2 RM3, DEF SYM NAV, 40,   0)
 
-COMBO(sqt,    &kp SQT,       RT1 RT2,     DEF SYM,  40, 100)
-COMBO(grave,  &kp GRAVE,     RT2 RT3,     DEF SYM,  40, 100)
-COMBO(bslh,   &kp BSLH,      RB1 RB2,     DEF SYM,  40, 100)
-COMBO(slsh,   &kp SLASH,     RB2 RB3,     DEF SYM,  40,  50)
-COMBO(semi,   &kp SEMI,      RB1 RB2 RB3, DEF SYM,  40, 100)
-COMBO(lpar,   &kp LPAR,      LM3 LM1,     DEF SYM,  40, 100)
-COMBO(rpar,   &kp RPAR,      RM1 RM3,     DEF SYM,  40, 100)
-COMBO(lbkt,   &kp LBKT,      LM3 LM2,     DEF SYM,  40, 100)
-COMBO(rbkt,   &kp RBKT,      RM2 RM3,     DEF SYM,  40, 100)
+COMBO(sqt,    &kp SQT,       RT1 RT2,     DEF SYM,     40, 100)
+COMBO(grave,  &kp GRAVE,     RT2 RT3,     DEF SYM,     40, 100)
+COMBO(bslh,   &kp BSLH,      RB1 RB2,     DEF SYM,     40, 100)
+COMBO(slsh,   &kp SLASH,     RB2 RB3,     DEF SYM,     40,  50)
+COMBO(semi,   &kp SEMI,      RB1 RB2 RB3, DEF SYM,     40, 100)
+COMBO(lpar,   &kp LPAR,      LM3 LM1,     DEF SYM,     40, 100)
+COMBO(rpar,   &kp RPAR,      RM1 RM3,     DEF SYM,     40, 100)
+COMBO(lbkt,   &kp LBKT,      LM3 LM2,     DEF SYM,     40, 100)
+COMBO(rbkt,   &kp RBKT,      RM2 RM3,     DEF SYM,     40, 100)
 
-COMBO(excl,   &kp EXCL,      LT2 LT1,     SYM,      40, 100)
+COMBO(excl,   &kp EXCL,      LT2 LT1,     SYM,         40, 100)
 
-COMBO(mouse,  &mse_tog,      LB3 LB2 LB1, DEF MSE, 100, 100)
+COMBO(mouse,  &mse_tog,      LB3 LB2 LB1, DEF MSE,    100, 100)
 
-COMBO(capswd, &caps_word,    LM1 RM1,     DEF,      60, 200)
-COMBO(lock,   &kp LG(L),     LT1 LT0,     DEF,      80, 500)
+COMBO(capswd, &caps_word,    LM1 RM1,     DEF,         60, 200)
+COMBO(lock,   &kp LG(L),     LT1 LT0,     DEF,         80, 500)
 
-COMBO(winq,   &kp LA(F4),    LT3 LT2,     NAV,      80, 200)
-COMBO(undo,   &kp LC(Z),     LB3 LB2,     NAV,      80,  50)
+COMBO(winq,   &kp LA(F4),    LT3 LT2,     NAV,         80, 200)
+COMBO(undo,   &kp LC(Z),     LB3 LB2,     NAV,         80,  50)
 
-COMBO(play,   &kp C_PP,      LT0 LM0,     NAV,     200, 200)
-COMBO(calc,   &kp C_AL_CALC, RT0 RM0,     NAV,     200, 200)
+COMBO(play,   &kp C_PP,      LT0 LM0,     NAV,        200, 200)
+COMBO(calc,   &kp C_AL_CALC, RT0 RM0,     NAV,        200, 200)
 
-COMBO(btclr,  &bt BT_CLR,    RB2 RB3,     FUN,     100, 200)
+COMBO(btclr,  &bt BT_CLR,    RB2 RB3,     FUN,        100, 200)
 
-COMBO(bootld, &bootloader,   LT0 RT0,     FUN,     100, 500)
+COMBO(bootld, &bootloader,   LT0 RT0,     FUN,        100, 500)
     };
 };

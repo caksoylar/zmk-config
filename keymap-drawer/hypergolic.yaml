@@ -190,17 +190,17 @@ combos:
   l: [DEF]
 - p: [12, 13]
   k: ↹
-  l: [DEF, SYM]
+  l: [DEF, SYM, NAV]
 - p: [16, 17]
   k: ⌫
-  l: [DEF, SYM]
+  l: [DEF, SYM, NAV]
 - p: [11, 12, 13]
   k: Esc
-  l: [DEF, SYM]
+  l: [DEF, SYM, NAV]
   draw_separate: true
 - p: [16, 17, 18]
   k: ⏎
-  l: [DEF, SYM]
+  l: [DEF, SYM, NAV]
   draw_separate: true
 - p: [6, 7]
   k: ''''
