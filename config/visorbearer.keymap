@@ -1,0 +1,10 @@
+#include "keypos_def/keypos_26keys.h"
+
+/ {
+    chosen {
+        zmk,physical-layout = &visorbearer_13332_2u_layout;
+    };
+};
+
+#include "includes/3x5.dtsi"
+#include <behaviors/led_bars.dtsi>
