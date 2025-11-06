@@ -328,15 +328,6 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="592" y="81" width="28" height="26" class="combo"/>
 <text x="606" y="94" class="combo tap">]</text>
 </g>
-<g class="combo combopos-13">
-<path d="M165,190 h-54 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
-<path d="M165,190 l0,-28" class="combo"/>
-<path d="M165,190 h55 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="6" ry="6" x="151" y="177" width="28" height="26" class="combo"/>
-<a href="#MSE">
-<text x="165" y="190" class="combo tap layer-activator">MSE</text>
-</a><text x="165" y="201" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 329)" class="layer-SYM">
@@ -576,10 +567,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(164, 86)" class="key keypos-12">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.9em">Win</tspan><tspan x="0" dy="1.2em">Next</tspan>
-</text>
-<text x="0" y="24" class="key hold">Alt</text>
+<text x="0" y="0" class="key tap">Alt</text>
 </g>
 <g transform="translate(225, 100)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -714,15 +702,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(574, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Show</tspan><tspan x="0" dy="1.2em">Conn</tspan>
-</text>
 </g>
 <g transform="translate(640, 46) rotate(3.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Show</tspan><tspan x="0" dy="1.2em">Batt</tspan>
-</text>
 </g>
 <g transform="translate(705, 93) rotate(8.0)" class="key ghost keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key ghost"/>
@@ -1001,15 +983,6 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key ghost tap">
 <tspan x="0" dy="-0.6em">Right</tspan><tspan x="0" dy="1.2em">Click</tspan>
 </text>
-</g>
-<g class="combo combopos-0">
-<path d="M165,190 h-54 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
-<path d="M165,190 l0,-28" class="combo"/>
-<path d="M165,190 h55 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="6" ry="6" x="151" y="177" width="28" height="26" class="combo"/>
-<a href="#MSE">
-<text x="165" y="190" class="combo tap layer-activator">MSE</text>
-</a><text x="165" y="201" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

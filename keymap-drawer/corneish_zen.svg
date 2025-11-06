@@ -354,15 +354,6 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo"/>
 <text x="616" y="88" class="combo tap">]</text>
 </g>
-<g class="combo combopos-13">
-<path d="M140,176 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
-<path d="M140,176 l0,-17" class="combo"/>
-<path d="M140,176 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
-<rect rx="6" ry="6" x="126" y="163" width="28" height="26" class="combo"/>
-<a href="#MSE">
-<text x="140" y="176" class="combo tap layer-activator">MSE</text>
-</a><text x="140" y="187" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-SYM">
@@ -624,10 +615,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.9em">Win</tspan><tspan x="0" dy="1.2em">Next</tspan>
-</text>
-<text x="0" y="24" class="key hold">Alt</text>
+<text x="0" y="0" class="key tap">Alt</text>
 </g>
 <g transform="translate(196, 91)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -783,15 +771,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(588, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Show</tspan><tspan x="0" dy="1.2em">Conn</tspan>
-</text>
 </g>
 <g transform="translate(644, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Show</tspan><tspan x="0" dy="1.2em">Batt</tspan>
-</text>
 </g>
 <g transform="translate(700, 49)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1106,15 +1088,6 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g class="combo combopos-0">
-<path d="M140,176 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
-<path d="M140,176 l0,-17" class="combo"/>
-<path d="M140,176 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
-<rect rx="6" ry="6" x="126" y="163" width="28" height="26" class="combo"/>
-<a href="#MSE">
-<text x="140" y="176" class="combo tap layer-activator">MSE</text>
-</a><text x="140" y="187" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

@@ -2,19 +2,21 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: core/move-to-zephyr-4-1
       import: app/west.yml
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
-    - name: zmk-smart-toggle
-      remote: caksoylar
-      revision: main
+    # - name: zmk-rgbled-widget
+    #   remote: caksoylar
+    #   revision: main
+    # - name: zmk-smart-toggle
+    #   remote: caksoylar
+    #   revision: main
     - name: visorbearer-zmk-module
       url: https://github.com/carrefinho/visorbearer-zmk-module
       revision: main

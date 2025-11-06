@@ -65,7 +65,7 @@ layers:
   - Page ↑
   - {t: Select All, h: Ctrl}
   - {t: Win Prev, h: Gui}
-  - {t: Win Next, h: Alt}
+  - Alt
   - Shift
   - Vol Down
   - Home
@@ -88,8 +88,8 @@ layers:
   - F4
   - Out USB
   - Out BLE
-  - Show Conn
-  - Show Batt
+  - ''
+  - ''
   - F5
   - F6
   - F7
@@ -195,10 +195,6 @@ combos:
 - p: [1, 2]
   k: '!'
   l: [SYM]
-- p: [18, 19, 20]
-  k: {t: MSE, h: toggle}
-  l: [DEF, MSE]
-  a: bottom
 - p: [11, 14]
   k: Caps Word
   l: [DEF]
