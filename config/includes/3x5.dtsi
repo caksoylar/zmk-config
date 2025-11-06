@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#include <behaviors/rgbled_widget.dtsi>
+// #include <behaviors/rgbled_widget.dtsi>
 
 // Layer aliases
 #define DEF 0
@@ -76,19 +76,19 @@
         };
 
         // Swapper for smart alt+tab
-        swapper: swapper {
-            compatible = "zmk,behavior-smart-toggle";
-            #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp TAB>;
-            ignored-key-positions = <LM3 RM1 RM2 RM3 RT2>;
-        };
-        ht_sw: ht_sw {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&swapper>;
-        };
+        // swapper: swapper {
+        //     compatible = "zmk,behavior-smart-toggle";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp LALT>, <&kp TAB>;
+        //     ignored-key-positions = <LM3 RM1 RM2 RM3 RT2>;
+        // };
+        // ht_sw: ht_sw {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <150>;
+        //     flavor = "hold-preferred";
+        //     bindings = <&kp>, <&swapper>;
+        // };
 
         rst_boot: rst_boot {
             compatible = "zmk,behavior-hold-tap";
@@ -108,12 +108,12 @@
         };
 
         // Mouse layer smart toggle
-        mse_tog: mse_tog {
-            compatible = "zmk,behavior-smart-toggle";
-            #binding-cells = <0>;
-            bindings = <&mo MSE>, <&none>;
-            ignored-key-positions = <LB3 LB2 LB1 KEYS_R THUMBS>;
-        };
+        // mse_tog: mse_tog {
+        //     compatible = "zmk,behavior-smart-toggle";
+        //     #binding-cells = <0>;
+        //     bindings = <&mo MSE>, <&none>;
+        //     ignored-key-positions = <LB3 LB2 LB1 KEYS_R THUMBS>;
+        // };
     };
 
     cond_layers {
@@ -182,7 +182,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LA(F4), &kp LC(LS(TAB)), &kp LC(TAB), &kp LC(F4),   &kp C_VOL_UP,     &kp INS,      &kp PG_DN,    &kp UP,       &kp PG_UP,    &none,   \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
- &mt LCTRL LC(A), &mt LGUI LS(TAB), &ht_sw LALT 0, &kp LSHFT, &kp C_VOL_DN,    &kp HOME,     &kp LEFT,     &kp DOWN,     &kp RIGHT,    &kp END, \
+ &mt LCTRL LC(A), &mt LGUI LS(TAB), &kp LALT, &kp LSHFT, &kp C_VOL_DN,    &kp HOME,     &kp LEFT,     &kp DOWN,     &kp RIGHT,    &kp END, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none,        &kp LC(X),   &kp LC(C), &tpht LC(LS(V)) LS(INS), &kp C_PP,  &none,        &kp DEL,      &kp C_PREV,   &kp C_NEXT,   &none,   \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -195,7 +195,7 @@
             display-name = "FUN";
             bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none,        &kp F1,       &kp F2,       &kp F3,       &kp F4,           &out OUT_USB, &out OUT_BLE, &ind_con,     &ind_bat,     &none,        \
+     &none,        &kp F1,       &kp F2,       &kp F3,       &kp F4,           &out OUT_USB, &out OUT_BLE, &none,     &none,     &none,        \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp F5,       &kp F6,       &kp F7,       &kp F8,       &kp F9,           &bt BT_SEL 0, &bt BT_SEL 1, &bt BT_SEL 2, &bt BT_SEL 3, &bt BT_SEL 4, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤

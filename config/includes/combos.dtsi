@@ -42,7 +42,7 @@ COMBO(rbkt,   &kp RBKT,      RM2 RM3,     DEF SYM,     40, 100)
 
 COMBO(excl,   &kp EXCL,      LT2 LT1,     SYM,         40, 100)
 
-COMBO(mouse,  &mse_tog,      LB3 LB2 LB1, DEF MSE,    100, 100)
+// COMBO(mouse,  &mse_tog,      LB3 LB2 LB1, DEF MSE,    100, 100)
 
 COMBO(capswd, &caps_word,    LM1 RM1,     DEF,         60, 200)
 COMBO(lock,   &kp LG(L),     LT1 LT0,     DEF,         80, 500)
