@@ -13,19 +13,19 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: hypergolic_left
-  - board: nice_nano_v2
-    shield: hypergolic_right
-  - board: corneish_zen_v1_right
-  - board: corneish_zen_v2_left
-  - board: seeeduino_xiao_ble
+  # - board: nice_nano_v2
+  #   shield: hypergolic_left
+  # - board: nice_nano_v2
+  #   shield: hypergolic_right
+  # - board: corneish_zen_v1_right
+  # - board: corneish_zen_v2_left
+  - board: xiao_ble
     shield: rommana_left rgbled_adapter
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_right rgbled_adapter
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: grumpybird rgbled_adapter
-  - board: seeeduino_xiao_ble
-    shield: hummingbird rgbled_adapter
-  - board: seeeduino_xiao_ble
-    shield: visorbearer
+  # - board: xiao_ble
+  #   shield: hummingbird rgbled_adapter
+  # - board: xiao_ble
+  #   shield: visorbearer
