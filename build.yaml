@@ -20,11 +20,11 @@ include:
   # - board: corneish_zen_v1_right
   # - board: corneish_zen_v2_left
   - board: xiao_ble
-    shield: rommana_left rgbled_adapter
+    shield: rommana_left
   - board: xiao_ble
-    shield: rommana_right rgbled_adapter
+    shield: rommana_right
   - board: xiao_ble
-    shield: grumpybird rgbled_adapter
+    shield: grumpybird
   # - board: xiao_ble
   #   shield: hummingbird rgbled_adapter
   # - board: xiao_ble
