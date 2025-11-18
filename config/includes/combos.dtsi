@@ -56,6 +56,6 @@ COMBO(calc,   &kp C_AL_CALC, RT0 RM0,     NAV,        200, 200)
 COMBO(btclr,  &bt BT_CLR,    RB2 RB3,     FUN,        100, 200)
 
 COMBO(bootld, &bootloader,   LT0 RT0,     FUN,        100, 500)
-COMBO(sftoff, &soft_off,     LM0 RM0,     FUN,        100, 500)
+
     };
 };

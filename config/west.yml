@@ -17,7 +17,7 @@ manifest:
       revision: main
     - name: visorbearer-zmk-module
       url: https://github.com/carrefinho/visorbearer-zmk-module
-      revision: main
+      revision: zmk-zephyr-4-1
     - name: zmk-keyboards-adept
       remote: caksoylar
       revision: main

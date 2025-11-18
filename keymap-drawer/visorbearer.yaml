@@ -229,6 +229,3 @@ combos:
 - p: [3, 4]
   k: Boot
   l: [FUN]
-- p: [12, 13]
-  k: Soft Off
-  l: [FUN]
