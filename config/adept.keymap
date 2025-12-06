@@ -1,0 +1,78 @@
+#include <input/processors.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/input_transform.h>
+
+&trackball_listener {
+    scroller {
+        layers = <2>;
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+                           <&zip_xy_scaler 1 2>,
+                           <&zip_xy_to_scroll_mapper>;
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader {
+            timeout-ms = <50>;
+            key-positions = <0 3>;
+            bindings = <&bootloader>;
+        };
+        studio_unlock {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&studio_unlock>;
+        };
+    };
+
+    behaviors {
+        mlt: mlt {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "Layer-Mouse tap";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
+        mlte: mlte {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "Layer-Mouse tap (eager)";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            bindings = <
+&mlt 1 MB4   &mkp MB5 &mkp LCLK &mkp RCLK
+&mlte 2 LCLK                    &mlte 2 MCLK
+            >;
+        };
+
+        bluetooth_layer {
+            bindings = <
+&trans       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+&bt BT_SEL 0                           &bt BT_CLR
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&trans &trans &trans &trans
+&trans               &trans
+            >;
+        };
+    };
+};

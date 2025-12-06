@@ -1,0 +1,281 @@
+<svg width="326" height="938" viewBox="0 0 326 938" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>/* inherit to force styles through use tags */
+svg path {
+    fill: inherit;
+}
+
+/* font and background color specifications */
+svg.keymap {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 14px;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    fill: #24292e;
+}
+
+/* default key styling */
+rect.key {
+    fill: #f6f8fa;
+}
+
+rect.key, rect.combo {
+    stroke: #c9cccf;
+    stroke-width: 1;
+}
+
+/* default key side styling, only used is draw_key_sides is set */
+rect.side {
+    filter: brightness(90%);
+}
+
+/* color accent for combo boxes */
+rect.combo, rect.combo-separate {
+    fill: #cdf;
+}
+
+/* color accent for held keys */
+rect.held, rect.combo.held {
+    fill: #fdd;
+}
+
+/* color accent for ghost (optional) keys */
+rect.ghost, rect.combo.ghost {
+    stroke-dasharray: 4, 4;
+    stroke-width: 2;
+}
+
+text {
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+/* styling for layer labels */
+text.label {
+    font-weight: bold;
+    text-anchor: start;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for optional footer */
+text.footer {
+    text-anchor: end;
+    dominant-baseline: auto;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right {
+    font-size: 11px;
+}
+
+text.hold {
+    text-anchor: middle;
+    dominant-baseline: auto;
+}
+
+text.shifted {
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+text.left {
+    text-anchor: start;
+}
+
+text.right {
+    text-anchor: end;
+}
+
+text.layer-activator {
+    text-decoration: underline;
+}
+
+/* styling for hold/shifted label text in combo box */
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
+    font-size: 8px;
+}
+
+/* lighter symbol for transparent keys */
+text.trans {
+    fill: #7b7e81;
+}
+
+/* styling for combo dendrons */
+path.combo {
+    stroke-width: 1;
+    stroke: gray;
+    fill: none;
+}
+
+/* Start Tabler Icons Cleanup */
+/* cannot use height/width with glyphs */
+.icon-tabler > path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: 2;
+}
+/* hide tabler's default box */
+.icon-tabler > path[stroke="none"][fill="none"] {
+    visibility: hidden;
+}
+/* End Tabler Icons Cleanup */
+
+@media (prefers-color-scheme: dark) {
+svg.keymap { fill: #d1d6db; }
+rect.key { fill: #3f4750; }
+rect.key, rect.combo { stroke: #60666c; }
+rect.combo, rect.combo-separate { fill: #1f3d7a; }
+rect.held, rect.combo.held { fill: #854747; }
+text.label, text.footer { stroke: black; }
+text.trans { fill: #7e8184; }
+path.combo { stroke: #7f7f7f; }
+
+}</style>
+<g transform="translate(30, 0)" class="layer-base">
+<text x="0" y="28" class="label" id="base">base:</text>
+<g transform="translate(0, 56)">
+<g transform="translate(28, 56)" class="key keypos-0">
+<rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.9em">Back</tspan><tspan x="0" dy="1.2em">Click</tspan>
+</text>
+<a href="#bluetooth">
+<text x="0" y="52" class="key hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+</a></g>
+<g transform="translate(98, 35)" class="key keypos-1">
+<rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Forward</tspan><tspan x="0" dy="1.2em">Click</tspan>
+</text>
+</g>
+<g transform="translate(168, 35)" class="key keypos-2">
+<rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Left</tspan><tspan x="0" dy="1.2em">Click</tspan>
+</text>
+</g>
+<g transform="translate(238, 56)" class="key keypos-3">
+<rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Right</tspan><tspan x="0" dy="1.2em">Click</tspan>
+</text>
+</g>
+<g transform="translate(49, 182)" class="key keypos-4">
+<rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.9em">Left</tspan><tspan x="0" dy="1.2em">Click</tspan>
+</text>
+<a href="#scroll">
+<text x="0" y="52" class="key hold layer-activator">scroll</text>
+</a></g>
+<g transform="translate(217, 182)" class="key keypos-5">
+<rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.9em">Middle</tspan><tspan x="0" dy="1.2em">Click</tspan>
+</text>
+<a href="#scroll">
+<text x="0" y="52" class="key hold layer-activator">scroll</text>
+</a></g>
+<g class="combo combopos-0">
+<path d="M133,56 l-86,0" class="combo"/>
+<path d="M133,56 l86,0" class="combo"/>
+<rect rx="6" ry="6" x="119" y="43" width="28" height="26" class="combo"/>
+<text x="133" y="56" class="combo tap">Boot</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="119" y="22" width="28" height="26" class="combo"/>
+<text x="133" y="35" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
+</g>
+</g>
+</g>
+<g transform="translate(30, 294)" class="layer-bluetooth">
+<text x="0" y="28" class="label" id="bluetooth">bluetooth:</text>
+<g transform="translate(0, 56)">
+<g transform="translate(28, 56)" class="key held keypos-0">
+<rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key held"/>
+</g>
+<g transform="translate(98, 35)" class="key keypos-1">
+<rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">2</tspan>
+</text>
+</g>
+<g transform="translate(168, 35)" class="key keypos-2">
+<rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">3</tspan>
+</text>
+</g>
+<g transform="translate(238, 56)" class="key keypos-3">
+<rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">4</tspan>
+</text>
+</g>
+<g transform="translate(49, 182)" class="key keypos-4">
+<rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">1</tspan>
+</text>
+</g>
+<g transform="translate(217, 182)" class="key keypos-5">
+<rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan>
+</text>
+</g>
+<g class="combo combopos-0">
+<path d="M133,56 l-86,0" class="combo"/>
+<path d="M133,56 l86,0" class="combo"/>
+<rect rx="6" ry="6" x="119" y="43" width="28" height="26" class="combo"/>
+<text x="133" y="56" class="combo tap">Boot</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="119" y="22" width="28" height="26" class="combo"/>
+<text x="133" y="35" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
+</g>
+</g>
+</g>
+<g transform="translate(30, 588)" class="layer-scroll">
+<text x="0" y="28" class="label" id="scroll">scroll:</text>
+<g transform="translate(0, 56)">
+<g transform="translate(28, 56)" class="key trans keypos-0">
+<rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(98, 35)" class="key trans keypos-1">
+<rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(168, 35)" class="key trans keypos-2">
+<rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(238, 56)" class="key trans keypos-3">
+<rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(49, 182)" class="key held keypos-4">
+<rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key held"/>
+</g>
+<g transform="translate(217, 182)" class="key trans keypos-5">
+<rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M133,56 l-86,0" class="combo"/>
+<path d="M133,56 l86,0" class="combo"/>
+<rect rx="6" ry="6" x="119" y="43" width="28" height="26" class="combo"/>
+<text x="133" y="56" class="combo tap">Boot</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="119" y="22" width="28" height="26" class="combo"/>
+<text x="133" y="35" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
+</g>
+</g>
+</g>
+<text x="296.0" y="910.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>
