@@ -51,6 +51,7 @@ parse_config:
     combo_lock:   {draw_separate: true}
     combo_indbat: {align: top, o: 0.25}
     combo_indcon: {align: top}
+    adept_bl:     {align: top}
 
   zmk_keycode_map:
     # custom mappings

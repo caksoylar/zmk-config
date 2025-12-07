@@ -1,4 +1,4 @@
-<svg width="326" height="938" viewBox="0 0 326 938" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="326" height="952" viewBox="0 0 326 952" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -135,16 +135,16 @@ text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 
 }</style>
-<g transform="translate(30, 0)" class="layer-base">
-<text x="0" y="28" class="label" id="base">base:</text>
-<g transform="translate(0, 56)">
+<g transform="translate(30, 0)" class="layer-Base">
+<text x="0" y="28" class="label" id="Base">Base:</text>
+<g transform="translate(0, 70)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.9em">Back</tspan><tspan x="0" dy="1.2em">Click</tspan>
 </text>
-<a href="#bluetooth">
-<text x="0" y="52" class="key hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<a href="#Bluetooth">
+<text x="0" y="52" class="key hold layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g transform="translate(98, 35)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-33" width="52" height="66" class="key"/>
@@ -169,31 +169,27 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.9em">Left</tspan><tspan x="0" dy="1.2em">Click</tspan>
 </text>
-<a href="#scroll">
-<text x="0" y="52" class="key hold layer-activator">scroll</text>
+<a href="#Scroll">
+<text x="0" y="52" class="key hold layer-activator">Scroll</text>
 </a></g>
 <g transform="translate(217, 182)" class="key keypos-5">
 <rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.9em">Middle</tspan><tspan x="0" dy="1.2em">Click</tspan>
 </text>
-<a href="#scroll">
-<text x="0" y="52" class="key hold layer-activator">scroll</text>
+<a href="#Scroll">
+<text x="0" y="52" class="key hold layer-activator">Scroll</text>
 </a></g>
 <g class="combo combopos-0">
-<path d="M133,56 l-86,0" class="combo"/>
-<path d="M133,56 l86,0" class="combo"/>
-<rect rx="6" ry="6" x="119" y="43" width="28" height="26" class="combo"/>
-<text x="133" y="56" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="119" y="22" width="28" height="26" class="combo"/>
-<text x="133" y="35" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
+<path d="M133,-1 h-99 a6.0,6.0 0 0 0 -6.0,6.0 v14" class="combo"/>
+<path d="M133,-1 h99 a6.0,6.0 0 0 1 6.0,6.0 v14" class="combo"/>
+<rect rx="6" ry="6" x="119" y="-14" width="28" height="26" class="combo"/>
+<text x="133" y="-1" class="combo tap">Boot</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 294)" class="layer-bluetooth">
-<text x="0" y="28" class="label" id="bluetooth">bluetooth:</text>
+<g transform="translate(30, 308)" class="layer-Bluetooth">
+<text x="0" y="28" class="label" id="Bluetooth">Bluetooth:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key held keypos-0">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key held"/>
@@ -228,20 +224,10 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan>
 </text>
 </g>
-<g class="combo combopos-0">
-<path d="M133,56 l-86,0" class="combo"/>
-<path d="M133,56 l86,0" class="combo"/>
-<rect rx="6" ry="6" x="119" y="43" width="28" height="26" class="combo"/>
-<text x="133" y="56" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="119" y="22" width="28" height="26" class="combo"/>
-<text x="133" y="35" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
 </g>
 </g>
-</g>
-<g transform="translate(30, 588)" class="layer-scroll">
-<text x="0" y="28" class="label" id="scroll">scroll:</text>
+<g transform="translate(30, 602)" class="layer-Scroll">
+<text x="0" y="28" class="label" id="Scroll">Scroll:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key trans"/>
@@ -266,16 +252,6 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-47" y="-54" width="94" height="108" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g class="combo combopos-0">
-<path d="M133,56 l-86,0" class="combo"/>
-<path d="M133,56 l86,0" class="combo"/>
-<rect rx="6" ry="6" x="119" y="43" width="28" height="26" class="combo"/>
-<text x="133" y="56" class="combo tap">Boot</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="119" y="22" width="28" height="26" class="combo"/>
-<text x="133" y="35" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
 </g>
 </g>
-</g>
-<text x="296.0" y="910.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>
+<text x="296.0" y="924.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>

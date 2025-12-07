@@ -17,15 +17,11 @@
     combos {
         compatible = "zmk,combos";
 
-        bootloader {
+        adept_bl {
             timeout-ms = <50>;
             key-positions = <0 3>;
             bindings = <&bootloader>;
-        };
-        studio_unlock {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&studio_unlock>;
+            layers = <0>;
         };
     };
 
@@ -55,6 +51,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
+            display-name = "Base";
             bindings = <
 &mlt 1 MB4   &mkp MB5 &mkp LCLK &mkp RCLK
 &mlte 2 LCLK                    &mlte 2 MCLK
@@ -62,6 +59,7 @@
         };
 
         bluetooth_layer {
+            display-name = "Bluetooth";
             bindings = <
 &trans       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
 &bt BT_SEL 0                           &bt BT_CLR
@@ -69,6 +67,7 @@
         };
 
         scroll_layer {
+            display-name = "Scroll";
             bindings = <
 &trans &trans &trans &trans
 &trans               &trans
