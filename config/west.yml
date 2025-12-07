@@ -21,5 +21,6 @@ manifest:
     - name: zmk-keyboards-adept
       remote: caksoylar
       revision: main
+      import: config/deps.yml
   self:
     path: config
