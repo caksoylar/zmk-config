@@ -1,16 +1,16 @@
 layout: {zmk_keyboard: adept}
 layers:
   Base:
-  - {t: Back Click, h: Bluetooth}
+  - Back Click
   - Forward Click
-  - Left Click
+  - Bluetooth
   - Right Click
-  - {t: Left Click, h: Scroll}
+  - Left Click
   - {t: Middle Click, h: Scroll}
   Bluetooth:
-  - {type: held}
   - BT 2
   - BT 3
+  - {type: held}
   - BT 4
   - BT 1
   - BT CLR
@@ -19,8 +19,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [0, 3]
   k: Boot

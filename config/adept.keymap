@@ -53,16 +53,16 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&mlt 1 MB4   &mkp MB5 &mkp LCLK &mkp RCLK
-&mlte 2 LCLK                    &mlte 2 MCLK
+&mkp MB4  &mkp MB5 &mo 1 &mkp RCLK
+&mkp LCLK                &mlte 2 MCLK
             >;
         };
 
         bluetooth_layer {
             display-name = "Bluetooth";
             bindings = <
-&trans       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
-&bt BT_SEL 0                           &bt BT_CLR
+&bt BT_SEL 1 &bt BT_SEL 2 &trans &bt BT_SEL 3
+&bt BT_SEL 0                     &bt BT_CLR
             >;
         };
 
