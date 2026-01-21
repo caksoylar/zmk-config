@@ -7,13 +7,13 @@
 &mmv {
     acceleration-exponent = <1>;      // 1
     time-to-max-speed-ms = <500>;     // 300
-    trigger-period-ms = <16>;
+    trigger-period-ms = <8>;
 };
 
 &msc {
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <40>;      // 300
-    trigger-period-ms = <16>;
+    trigger-period-ms = <8>;
 };
 
 &mmv_input_listener {
