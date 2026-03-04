@@ -8,15 +8,12 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <behaviors/visorbearer_led.dtsi>
-
-ind_bat: &vb_ind_bat {};
-ind_con: &vb_ind_con {};
+#include <behaviors/led_bars.dtsi>
 
 #include "includes/3x5.dtsi"
 
 / {
     combos {
-        combo_sftoff { timeout-ms = <100>; bindings = <&vb_soft_off>; key-positions = <12 13>; layers = <FUN>; require-prior-idle-ms = <500>; };
+        combo_sftoff { timeout-ms = <100>; bindings = <&soft_off>; key-positions = <12 13>; layers = <FUN>; require-prior-idle-ms = <500>; };
     };
 };
