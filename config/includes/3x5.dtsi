@@ -79,7 +79,7 @@
         swapper: swapper {
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
-            bindings = <&kp LALT>, <&ktap TAB>;
+            bindings = <&ktm LALT>, <&ktm TAB>;
             ignored-key-positions = <LM3 RM1 RM2 RM3 RT2>;
         };
         ht_sw: ht_sw {
@@ -140,6 +140,14 @@
             display-name = "Key Tap";
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
             tap-ms = <16>;
+        };
+        // minimum duration key press, can still be held longer
+        ktm: key_min {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            display-name = "Key Min Duration";
+            bindings = <&macro_press>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&none>, <&macro_pause_for_release>, <&macro_release>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            wait-ms = <16>;
         };
     };
 
