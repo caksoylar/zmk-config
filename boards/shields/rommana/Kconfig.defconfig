@@ -13,4 +13,7 @@ if SHIELD_ROMMANA_LEFT || SHIELD_ROMMANA_RIGHT
 config ZMK_SPLIT
     default y
 
+config INPUT
+    default y
+
 endif

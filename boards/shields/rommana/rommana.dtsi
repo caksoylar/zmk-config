@@ -5,7 +5,7 @@
     physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        kscan = <&kscan0>;
+        input = <&kscan>;
         transform = <&default_transform>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 106 100    0  116  (-800)    53   166>
@@ -45,7 +45,7 @@
         zmk,physical-layout = &physical_layout;
     };
 
-    default_transform: keymap_transform_0 {
+    default_transform: keymap_transform {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;
@@ -57,9 +57,11 @@ RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)   RC(1,9) RC(1,8) RC(1,7) RC(1,6) RC(1,5
         >;
     };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+    kscan: kscan {
+        compatible = "gpio-kbd-matrix";
+        col-drive-inactive;
+        settle-time-us = <0>;
+        no-ghostkey-check;
         wakeup-source;
     };
 

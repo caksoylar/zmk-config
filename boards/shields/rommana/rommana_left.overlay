@@ -1,6 +1,6 @@
 #include "rommana.dtsi"
 
-&kscan0 {
+&kscan {
     row-gpios
         = <&xiao_d 10 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
         , <&xiao_d  9 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
