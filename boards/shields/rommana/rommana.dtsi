@@ -1,9 +1,48 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
+    physical_layout: physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 106 100    0  116  (-800)    53   166>
+            , <&key_physical_attrs 106 100  116   32  (-300)   169    82>
+            , <&key_physical_attrs 106 100  234    0       0     0     0>
+            , <&key_physical_attrs 106 100  343   26       0     0     0>
+            , <&key_physical_attrs 106 100  452   77       0     0     0>
+            , <&key_physical_attrs 106 100  748   77       0     0     0>
+            , <&key_physical_attrs 106 100  857   26       0     0     0>
+            , <&key_physical_attrs 106 100  966    0       0     0     0>
+            , <&key_physical_attrs 106 100 1084   32     300  1137    82>
+            , <&key_physical_attrs 106 100 1200  116     800  1253   166>
+            , <&key_physical_attrs 106 100   14  218  (-800)    67   268>
+            , <&key_physical_attrs 106 100  122  134  (-300)   174   184>
+            , <&key_physical_attrs 106 100  234  103       0     0     0>
+            , <&key_physical_attrs 106 100  343  129       0     0     0>
+            , <&key_physical_attrs 106 100  452  180       0     0     0>
+            , <&key_physical_attrs 106 100  748  180       0     0     0>
+            , <&key_physical_attrs 106 100  857  129       0     0     0>
+            , <&key_physical_attrs 106 100  966  103       0     0     0>
+            , <&key_physical_attrs 106 100 1078  134     300  1132   184>
+            , <&key_physical_attrs 106 100 1186  218     800  1239   268>
+            , <&key_physical_attrs 106 100  127  237  (-300)   180   287>
+            , <&key_physical_attrs 106 100  234  206       0     0     0>
+            , <&key_physical_attrs 106 100  343  232       0     0     0>
+            , <&key_physical_attrs 106 100  857  232       0     0     0>
+            , <&key_physical_attrs 106 100  966  206       0     0     0>
+            , <&key_physical_attrs 106 100 1073  237     300  1126   287>
+            , <&key_physical_attrs 106 100  370  361       0     0     0>
+            , <&key_physical_attrs 106 100  479  387       0     0     0>
+            , <&key_physical_attrs 106 100  721  387       0     0     0>
+            , <&key_physical_attrs 106 100  830  361       0     0     0>
+            ;
+    };
+
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &physical_layout;
     };
 
     default_transform: keymap_transform_0 {
