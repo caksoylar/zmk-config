@@ -35,6 +35,41 @@ layers:
   - {t: ␣, h: NAV}
   - SYM
   - {t: ⏎, h: Shift}
+  RDP:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - K
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Ctrl}
+  - {t: R, h: Gui}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Gui}
+  - {t: O, h: Ctrl}
+  - Z
+  - X
+  - C
+  - {t: D, h: MSE}
+  - V
+  - J
+  - H
+  - ','
+  - .
+  - /
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - SYM
+  - {t: ⏎, h: Shift}
   SYM:
   - '!'
   - '@'
@@ -133,8 +168,8 @@ layers:
   - ''
   - ''
   - Caps Lock
-  - Print Scrn
-  - Pause Break
+  - {t: DEF, h: toggle}
+  - {t: RDP, h: toggle}
   - ''
   - {t: Reset, h: Boot}
   - {type: held}
@@ -178,74 +213,74 @@ layers:
 combos:
 - p: [1, 2]
   k: Q
-  l: [DEF]
+  l: [DEF, RDP]
 - p: [2, 3]
   k: J
-  l: [DEF]
+  l: [DEF, RDP]
 - p: [22, 23]
   k: V
-  l: [DEF]
+  l: [DEF, RDP]
 - p: [21, 22]
   k: Z
-  l: [DEF]
+  l: [DEF, RDP]
 - p: [12, 13]
   k: ↹
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [16, 17]
   k: ⌫
-  l: [DEF, SYM, NAV]
+  l: [DEF, RDP, SYM, NAV]
 - p: [11, 12, 13]
   k: Esc
-  l: [DEF, SYM, NAV]
+  l: [DEF, RDP, SYM, NAV]
   draw_separate: true
 - p: [16, 17, 18]
   k: ⏎
-  l: [DEF, SYM, NAV]
+  l: [DEF, RDP, SYM, NAV]
   draw_separate: true
 - p: [6, 7]
   k: ''''
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [7, 8]
   k: '`'
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [26, 27]
   k: \
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [27, 28]
   k: /
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [26, 27, 28]
   k: ;
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
   a: bottom
 - p: [11, 13]
   k: (
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
   draw_separate: true
 - p: [16, 18]
   k: )
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
   draw_separate: true
 - p: [11, 12]
   k: '['
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [17, 18]
   k: ']'
-  l: [DEF, SYM]
+  l: [DEF, RDP, SYM]
 - p: [2, 3]
   k: '!'
   l: [SYM]
 - p: [21, 22, 23]
   k: {t: MSE, h: toggle}
-  l: [DEF, MSE]
+  l: [DEF, RDP, MSE]
   a: bottom
 - p: [13, 16]
   k: Caps Word
-  l: [DEF]
+  l: [DEF, RDP]
   draw_separate: true
 - p: [3, 4]
   k: Lock
-  l: [DEF]
+  l: [DEF, RDP]
   draw_separate: true
 - p: [1, 2]
   k: Win Close
