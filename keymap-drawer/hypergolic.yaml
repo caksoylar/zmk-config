@@ -35,6 +35,41 @@ layers:
   - {t: ␣, h: NAV}
   - SYM
   - {t: ⏎, h: Shift}
+  RDP:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - K
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Ctrl}
+  - {t: R, h: Gui}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Gui}
+  - {t: O, h: Ctrl}
+  - Z
+  - X
+  - C
+  - {t: D, h: MSE}
+  - V
+  - J
+  - H
+  - ','
+  - .
+  - /
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - SYM
+  - {t: ⏎, h: Shift}
   SYM:
   - '!'
   - '@'
@@ -133,8 +168,8 @@ layers:
   - ''
   - ''
   - Caps Lock
-  - Print Scrn
-  - Pause Break
+  - '&tog_off 1'
+  - '&tog_on 1'
   - ''
   - {t: Reset, h: Boot}
   - {type: held}
